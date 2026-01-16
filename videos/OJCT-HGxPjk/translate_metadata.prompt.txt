@@ -1,0 +1,10 @@
+Translate the following metadata to Korean.
+Rules:
+- Preserve proper nouns and product names.
+- Do not add new content.
+- Output strict JSON with keys: title, description.
+
+Title: Training General Robots for Any Task: Physical Intelligence’s Karol Hausman and Tobi Springenberg
+Description: Physical Intelligence’s Karol Hausman and Tobi Springenberg believe that robotics has been held back not by hardware limitations, but by an intelligence bottleneck that foundation models can solve. Their end-to-end learning approach combines vision, language, and action into models like π0 and π*0.6, enabling robots to learn generalizable behaviors rather than task-specific programs. The team prioritizes real-world deployment and uses RL from experience to push beyond what imitation learning alone can achieve. Their philosophy—that a single general-purpose model can handle diverse physical tasks across different robot embodiments—represents a fundamental shift in how we think about building intelligent machines for the physical world.
+
+Hosted by Alfred Lin and Sonya Huang, Sequoia Capital

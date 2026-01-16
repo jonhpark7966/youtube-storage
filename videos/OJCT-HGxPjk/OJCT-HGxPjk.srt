@@ -1,0 +1,7412 @@
+1
+00:00:00,000 --> 00:00:01,540
+just like the fact that this whole thing
+
+2
+00:00:01,540 --> 00:00:04,920
+works it's kind of mind-blowing yeah right
+
+3
+00:00:04,920 --> 00:00:05,340
+like you
+
+4
+00:00:05,340 --> 00:00:09,100
+you build this like loosely brain inspired thing
+
+5
+00:00:09,100 --> 00:00:12,080
+that has very general purpose learning algorithm
+
+6
+00:00:12,080 --> 00:00:14,600
+you feed it data and it somehow gets
+
+7
+00:00:14,600 --> 00:00:16,480
+it and gets it way better than anything
+
+8
+00:00:16,480 --> 00:00:17,460
+we've ever had before
+
+9
+00:00:17,460 --> 00:00:19,720
+and this applies to robots and it applies
+
+10
+00:00:19,720 --> 00:00:22,320
+to vision and language and sound and all
+
+11
+00:00:22,320 --> 00:00:22,640
+kinds of
+
+12
+00:00:22,640 --> 00:00:25,220
+other things and like i think if you
+
+13
+00:00:25,220 --> 00:00:27,560
+stop for a second and just think about
+
+14
+00:00:27,560 --> 00:00:29,000
+it how it works and
+
+15
+00:00:29,700 --> 00:00:31,600
+and that it works it's just like absolutely
+
+16
+00:00:31,600 --> 00:00:32,240
+mind-blowing
+
+17
+00:00:49,220 --> 00:00:51,240
+in this episode we sit down with carol
+
+18
+00:00:51,240 --> 00:00:53,680
+and toby of physical intelligence a company building
+
+19
+00:00:53,680 --> 00:00:56,960
+foundation models for robotics carol and toby explain
+
+20
+00:00:56,960 --> 00:00:58,480
+why the classical approach of breaking
+
+21
+00:00:58,480 --> 00:01:01,060
+robotics down into perception planning and control was
+
+22
+00:01:01,060 --> 00:01:03,100
+fundamentally wrong and how end-to-end
+
+23
+00:01:03,100 --> 00:01:05,540
+learning with reinforcement learning is finally making deployment
+
+24
+00:01:05,540 --> 00:01:07,540
+possible you'll hear how they
+
+25
+00:01:07,540 --> 00:01:10,400
+achieved robust real-world performance getting robots to
+
+26
+00:01:10,400 --> 00:01:12,700
+make coffee for 13 hours straight and how
+
+27
+00:01:12,700 --> 00:01:12,880
+these
+
+28
+00:01:12,880 --> 00:01:16,000
+models generalize across radically different tasks from surgical
+
+29
+00:01:16,000 --> 00:01:17,880
+robots to drone flying in ways that we
+
+30
+00:01:17,880 --> 00:01:20,640
+don't fully understand we also talk about the
+
+31
+00:01:20,640 --> 00:01:23,980
+technical insights behind pi star 0.6 which
+
+32
+00:01:23,980 --> 00:01:24,120
+is
+
+33
+00:01:24,120 --> 00:01:26,800
+physical intelligence's newest model that learns from experience
+
+34
+00:01:26,800 --> 00:01:28,940
+using reinforcement learning enjoy the
+
+35
+00:01:28,940 --> 00:01:32,700
+show carl toby thank you so much for
+
+36
+00:01:32,700 --> 00:01:34,300
+joining us here today thank you for having
+
+37
+00:01:34,300 --> 00:01:35,220
+us excited to talk
+
+38
+00:01:35,220 --> 00:01:39,240
+everything physical intelligence general robotics etc maybe before
+
+39
+00:01:39,240 --> 00:01:40,460
+we get into it just for our audience
+
+40
+00:01:40,460 --> 00:01:41,660
+can you share a little bit about what
+
+41
+00:01:41,660 --> 00:01:43,440
+physical intelligence is and the mission that you're
+
+42
+00:01:43,440 --> 00:01:43,640
+after
+
+43
+00:01:43,640 --> 00:01:46,940
+yeah so at physical intelligence we are building
+
+44
+00:01:46,940 --> 00:01:50,320
+robotic foundation models these are models that in
+
+45
+00:01:50,320 --> 00:01:53,240
+principle should have should be able to have
+
+46
+00:01:53,240 --> 00:01:57,280
+any robot do any task um and over
+
+47
+00:01:57,280 --> 00:01:58,200
+the past one and a half
+
+48
+00:01:58,200 --> 00:02:02,320
+years or so we started building the we
+
+49
+00:02:02,320 --> 00:02:05,060
+we created the right building blocks that show
+
+50
+00:02:05,060 --> 00:02:06,080
+how these models could
+
+51
+00:02:06,080 --> 00:02:09,160
+scale so we've shown that they're able to
+
+52
+00:02:09,160 --> 00:02:11,800
+control many different robotic form factors many different
+
+53
+00:02:11,800 --> 00:02:12,220
+types of
+
+54
+00:02:12,220 --> 00:02:14,400
+robots we've also shown that they're able to
+
+55
+00:02:14,400 --> 00:02:16,180
+generalize so you can bring it to completely
+
+56
+00:02:16,180 --> 00:02:17,060
+new environments and
+
+57
+00:02:17,060 --> 00:02:19,740
+what it takes for them to generalize and
+
+58
+00:02:19,740 --> 00:02:22,000
+this this last release that we just had
+
+59
+00:02:22,000 --> 00:02:23,600
+called pi star 06 that
+
+60
+00:02:23,600 --> 00:02:24,940
+we also wanted to tell you more about
+
+61
+00:02:24,940 --> 00:02:27,780
+um shows how we can get them to
+
+62
+00:02:27,780 --> 00:02:30,800
+a good performance so that they're
+
+63
+00:02:30,800 --> 00:02:34,120
+starting to become deployable and this is really
+
+64
+00:02:34,120 --> 00:02:35,520
+important to us because we want to see
+
+65
+00:02:35,520 --> 00:02:36,020
+this technology
+
+66
+00:02:36,020 --> 00:02:38,260
+actually deployed in the real world but also
+
+67
+00:02:38,260 --> 00:02:41,800
+because we don't have the benefit of having
+
+68
+00:02:41,800 --> 00:02:44,200
+the the free data on the
+
+69
+00:02:44,200 --> 00:02:47,640
+internet there is no data of robot actions
+
+70
+00:02:47,640 --> 00:02:49,260
+so we need to create the data sets
+
+71
+00:02:49,260 --> 00:02:51,280
+ourselves so we are
+
+72
+00:02:51,280 --> 00:02:53,700
+after the problem of physical intelligence after the
+
+73
+00:02:53,700 --> 00:02:56,080
+problem of creating foundation models for robots
+
+74
+00:02:56,720 --> 00:02:58,480
+and we've made quite a lot of progress
+
+75
+00:02:58,480 --> 00:03:01,120
+wonderful and can i ask why the decision
+
+76
+00:03:01,120 --> 00:03:02,060
+to build foundation
+
+77
+00:03:02,060 --> 00:03:04,300
+models as opposed to you know their companies
+
+78
+00:03:04,300 --> 00:03:06,540
+that are building fully vertically integrated robotic
+
+79
+00:03:06,540 --> 00:03:09,200
+products right now uh you you know the
+
+80
+00:03:09,200 --> 00:03:11,140
+sunday launch last month is in the back
+
+81
+00:03:11,140 --> 00:03:11,840
+of my head you can buy
+
+82
+00:03:11,840 --> 00:03:13,980
+a cute little robot helper for your household
+
+83
+00:03:13,980 --> 00:03:16,420
+there's companies working on cooking robots there's
+
+84
+00:03:16,420 --> 00:03:18,680
+obviously the humanoid companies um why build a
+
+85
+00:03:18,680 --> 00:03:21,720
+foundation model versus build a robot yourselves yeah
+
+86
+00:03:22,320 --> 00:03:23,780
+so i think if you look at the
+
+87
+00:03:23,780 --> 00:03:26,860
+history of robotics it's very very clear to
+
+88
+00:03:26,860 --> 00:03:27,840
+me and i think to many
+
+89
+00:03:27,840 --> 00:03:31,360
+roboticists that we've been always bottlenecked on intelligence
+
+90
+00:03:31,360 --> 00:03:34,100
+we've had robots that are capable of
+
+91
+00:03:34,100 --> 00:03:36,260
+doing incredible things whether it's in the home
+
+92
+00:03:36,260 --> 00:03:40,180
+or in industrial settings we've seen robots more
+
+93
+00:03:40,180 --> 00:03:40,480
+than a
+
+94
+00:03:40,480 --> 00:03:43,640
+decade ago that if tella operated they can
+
+95
+00:03:43,640 --> 00:03:47,400
+clean the entire house and that the the
+
+96
+00:03:47,400 --> 00:03:47,920
+really important
+
+97
+00:03:47,920 --> 00:03:50,920
+caveat is if tella operated so if there's
+
+98
+00:03:50,920 --> 00:03:53,180
+a human mind behind it it's clear that
+
+99
+00:03:53,180 --> 00:03:53,780
+the hardware is
+
+100
+00:03:53,780 --> 00:03:56,620
+capable of doing lots of different things and
+
+101
+00:03:56,620 --> 00:03:59,620
+for a very long time robotics companies have
+
+102
+00:03:59,620 --> 00:03:59,780
+been
+
+103
+00:03:59,780 --> 00:04:02,160
+structured the way you described where you kind
+
+104
+00:04:02,160 --> 00:04:04,200
+of think of creating a specific robot that's
+
+105
+00:04:04,200 --> 00:04:04,820
+designed to
+
+106
+00:04:04,820 --> 00:04:06,420
+do just a single task or a single
+
+107
+00:04:06,420 --> 00:04:10,240
+application and instead what we thought would be
+
+108
+00:04:10,240 --> 00:04:11,260
+would really help
+
+109
+00:04:11,260 --> 00:04:13,940
+the field is to focus on the bottleneck
+
+110
+00:04:13,940 --> 00:04:16,000
+on the intelligence so we created a company
+
+111
+00:04:16,000 --> 00:04:16,700
+to focus on
+
+112
+00:04:16,700 --> 00:04:19,080
+that bottleneck because we think that this is
+
+113
+00:04:19,080 --> 00:04:21,400
+if we if we address that bottleneck we
+
+114
+00:04:21,400 --> 00:04:22,100
+can actually make
+
+115
+00:04:22,100 --> 00:04:25,220
+robots happen and if you do it any
+
+116
+00:04:25,220 --> 00:04:27,840
+other way you're basically not making as much
+
+117
+00:04:27,840 --> 00:04:28,900
+progress on the bottleneck as
+
+118
+00:04:28,900 --> 00:04:30,840
+you could be so we thought we would
+
+119
+00:04:30,840 --> 00:04:34,260
+just target this problem head on focus on
+
+120
+00:04:34,260 --> 00:04:35,000
+the intelligence and
+
+121
+00:04:35,000 --> 00:04:36,340
+if we can do that that would lead
+
+122
+00:04:36,340 --> 00:04:38,920
+to many different vertical products it will lead
+
+123
+00:04:38,920 --> 00:04:40,160
+to you know robots
+
+124
+00:04:40,160 --> 00:04:43,340
+being deployed in the home in in industrial
+
+125
+00:04:43,340 --> 00:04:45,760
+settings basically anywhere can i just pressure that
+
+126
+00:04:45,760 --> 00:04:46,180
+test that
+
+127
+00:04:46,180 --> 00:04:48,180
+a little bit um so on the hardware
+
+128
+00:04:48,180 --> 00:04:50,260
+side like i've seen the latest videos for
+
+129
+00:04:50,260 --> 00:04:51,760
+example of the the optimist
+
+130
+00:04:51,760 --> 00:04:53,780
+hand it it's like it's exquisite it's a
+
+131
+00:04:53,780 --> 00:04:56,920
+it's a piece of art um and i
+
+132
+00:04:56,920 --> 00:04:58,620
+hadn't seen the videos of people you
+
+133
+00:04:58,620 --> 00:05:00,880
+tele-operated robots cleaning houses 10 years ago
+
+134
+00:05:00,880 --> 00:05:02,340
+but i'm wondering if there's a set of
+
+135
+00:05:02,340 --> 00:05:03,100
+tasks that's
+
+136
+00:05:03,100 --> 00:05:04,760
+you know maybe now just on the cusp
+
+137
+00:05:04,760 --> 00:05:07,860
+of becoming possible for example cooking or like
+
+138
+00:05:07,860 --> 00:05:08,260
+being able to
+
+139
+00:05:08,260 --> 00:05:10,800
+you know peel and dice an onion that
+
+140
+00:05:10,800 --> 00:05:13,200
+like you couldn't have done with with hardware
+
+141
+00:05:13,200 --> 00:05:13,840
+prior to
+
+142
+00:05:13,840 --> 00:05:15,360
+where we currently are so how much of
+
+143
+00:05:15,360 --> 00:05:16,680
+a why now do you think hardware is
+
+144
+00:05:16,680 --> 00:05:19,160
+or isn't so there's a lot of
+
+145
+00:05:19,160 --> 00:05:22,220
+progress in hardware um especially in humanoid hardware
+
+146
+00:05:22,220 --> 00:05:24,620
+like dextrous hands for instance as you
+
+147
+00:05:24,620 --> 00:05:27,740
+mentioned they're that i think they're much better
+
+148
+00:05:27,740 --> 00:05:29,220
+now than they were even a few years
+
+149
+00:05:29,220 --> 00:05:31,400
+ago yeah um but
+
+150
+00:05:31,400 --> 00:05:33,580
+it still doesn't address the bottleneck we could
+
+151
+00:05:33,580 --> 00:05:37,080
+have had robots operating you know chopping vegetables
+
+152
+00:05:37,080 --> 00:05:40,660
+or doing cooking even with simple grippers before
+
+153
+00:05:40,660 --> 00:05:43,100
+the problem is that we don't have the
+
+154
+00:05:43,100 --> 00:05:43,460
+intelligence
+
+155
+00:05:43,460 --> 00:05:46,160
+to operate these robots and the more complex
+
+156
+00:05:46,160 --> 00:05:50,420
+the hardware is um it doesn't really resolve
+
+157
+00:05:50,420 --> 00:05:50,600
+that
+
+158
+00:05:50,600 --> 00:05:53,160
+bottleneck right like it allows you to do
+
+159
+00:05:53,160 --> 00:05:56,060
+more potentially but you're still bottlenecked by the
+
+160
+00:05:56,060 --> 00:05:58,700
+fundamental challenge of robots not being intelligent i
+
+161
+00:05:58,700 --> 00:06:00,860
+see so hardware may raise the ceiling on
+
+162
+00:06:00,860 --> 00:06:01,140
+what you're
+
+163
+00:06:01,140 --> 00:06:03,540
+able to do but like the the capability
+
+164
+00:06:03,540 --> 00:06:05,260
+floor we're not even there yet that's right
+
+165
+00:06:05,260 --> 00:06:06,180
+so even with simple
+
+166
+00:06:06,180 --> 00:06:07,700
+robots we are not yet at the level
+
+167
+00:06:07,700 --> 00:06:10,740
+of a human operator so the limit being
+
+168
+00:06:10,740 --> 00:06:12,280
+the intelligence layer what's the
+
+169
+00:06:12,280 --> 00:06:14,960
+limit to developing the intelligence is that collecting
+
+170
+00:06:14,960 --> 00:06:18,600
+data is it's doing it cheaply because
+
+171
+00:06:19,220 --> 00:06:21,260
+you know you've broken down the problem we're
+
+172
+00:06:21,260 --> 00:06:22,900
+going to keep asking you why why why
+
+173
+00:06:22,900 --> 00:06:23,860
+and just drill down
+
+174
+00:06:23,860 --> 00:06:25,540
+further so what's the next layer of the
+
+175
+00:06:25,540 --> 00:06:29,060
+okay what's the bottleneck for solving intelligence generalization
+
+176
+00:06:29,640 --> 00:06:31,940
+it's a it's a good question um so
+
+177
+00:06:31,940 --> 00:06:33,900
+we thought about it in terms of three
+
+178
+00:06:33,900 --> 00:06:35,920
+factors we refer to them
+
+179
+00:06:35,920 --> 00:06:41,780
+as capability generalization and performance with capability our
+
+180
+00:06:41,780 --> 00:06:44,620
+our idea was that we want to get
+
+181
+00:06:44,620 --> 00:06:44,740
+to
+
+182
+00:06:44,740 --> 00:06:46,560
+the point where as long as you can
+
+183
+00:06:46,560 --> 00:06:48,540
+collect data for something for a task or
+
+184
+00:06:48,540 --> 00:06:49,740
+for a robot you should
+
+185
+00:06:49,740 --> 00:06:51,020
+have a model that should be able to
+
+186
+00:06:51,020 --> 00:06:54,060
+to replicate that to automate that task this
+
+187
+00:06:54,060 --> 00:06:54,580
+is something that
+
+188
+00:06:54,580 --> 00:06:57,520
+we've gotten to fairly quickly um this was
+
+189
+00:06:57,520 --> 00:06:59,520
+our pi zero release around a year ago
+
+190
+00:06:59,520 --> 00:07:01,360
+or so showing that
+
+191
+00:07:01,360 --> 00:07:03,420
+it's basically possible that if you can collect
+
+192
+00:07:03,420 --> 00:07:05,360
+data for any task for any robot you
+
+193
+00:07:05,360 --> 00:07:05,860
+should be able to
+
+194
+00:07:05,860 --> 00:07:07,060
+automate it and the model should be able
+
+195
+00:07:07,060 --> 00:07:10,400
+to learn it um the next challenge is
+
+196
+00:07:10,400 --> 00:07:11,700
+around generalization and this is
+
+197
+00:07:11,700 --> 00:07:14,180
+still an open challenge so we wanted to
+
+198
+00:07:14,180 --> 00:07:16,160
+get to the point where the robots can
+
+199
+00:07:16,160 --> 00:07:17,420
+just work zero shot and
+
+200
+00:07:17,420 --> 00:07:18,440
+you can just bring them to a new
+
+201
+00:07:18,440 --> 00:07:20,540
+home for instance and they should know how
+
+202
+00:07:20,540 --> 00:07:21,440
+to operate in that home
+
+203
+00:07:22,040 --> 00:07:23,980
+and this is a really really difficult problem
+
+204
+00:07:23,980 --> 00:07:25,920
+right like if you if you put a
+
+205
+00:07:25,920 --> 00:07:26,920
+robot in a new home it
+
+206
+00:07:26,920 --> 00:07:29,080
+needs to understand you know where different items
+
+207
+00:07:29,080 --> 00:07:31,700
+are the counters look different the lighting is
+
+208
+00:07:31,700 --> 00:07:33,240
+different than what you've seen in the past
+
+209
+00:07:33,240 --> 00:07:35,280
+and so on and i wouldn't say that
+
+210
+00:07:35,280 --> 00:07:36,260
+this problem is solved
+
+211
+00:07:36,260 --> 00:07:38,780
+but i think we start to get a
+
+212
+00:07:38,780 --> 00:07:40,780
+handle on how to how to solve it
+
+213
+00:07:40,780 --> 00:07:43,260
+and how it scales and the only answer
+
+214
+00:07:43,260 --> 00:07:45,080
+to generalization that we know in machine learning
+
+215
+00:07:45,080 --> 00:07:47,560
+is through diversity of data so if you
+
+216
+00:07:47,560 --> 00:07:48,360
+see a lot of
+
+217
+00:07:48,360 --> 00:07:50,560
+different diverse data sets you should be able
+
+218
+00:07:50,560 --> 00:07:52,720
+to generalize to to a setting that's similar
+
+219
+00:07:52,720 --> 00:07:53,080
+to the one
+
+220
+00:07:53,080 --> 00:07:55,160
+you've seen and this is something that we've
+
+221
+00:07:55,160 --> 00:07:57,400
+seen with our pi05 release in april of
+
+222
+00:07:57,400 --> 00:07:57,820
+this year
+
+223
+00:07:58,340 --> 00:08:00,000
+that we we got to the point where
+
+224
+00:08:00,000 --> 00:08:01,280
+we can bring a robot to a new
+
+225
+00:08:01,280 --> 00:08:02,640
+home that has never been to before
+
+226
+00:08:02,640 --> 00:08:04,880
+and it's able to to to operate in
+
+227
+00:08:04,880 --> 00:08:07,120
+that home it's not perfect yet but at
+
+228
+00:08:07,120 --> 00:08:08,140
+least it has some kind of
+
+229
+00:08:08,140 --> 00:08:09,780
+common sense on you know how to go
+
+230
+00:08:09,780 --> 00:08:12,000
+about simple tasks like cleaning up the kitchen
+
+231
+00:08:12,000 --> 00:08:12,560
+and things like
+
+232
+00:08:12,560 --> 00:08:15,100
+that and then the last challenge that is
+
+233
+00:08:15,100 --> 00:08:17,860
+also not fully solved yet is performance so
+
+234
+00:08:17,860 --> 00:08:18,480
+how can we get
+
+235
+00:08:18,480 --> 00:08:20,520
+these models to the point where the performance
+
+236
+00:08:20,520 --> 00:08:22,060
+is good enough so you can actually deploy
+
+237
+00:08:22,060 --> 00:08:22,300
+them
+
+238
+00:08:22,300 --> 00:08:25,540
+right and deployments here are really really important
+
+239
+00:08:25,540 --> 00:08:27,920
+because as i mentioned before we also need
+
+240
+00:08:27,920 --> 00:08:28,000
+to
+
+241
+00:08:28,000 --> 00:08:29,960
+gather data and i think that is going
+
+242
+00:08:29,960 --> 00:08:31,700
+to going to be the most scalable way
+
+243
+00:08:31,700 --> 00:08:32,500
+of collecting data
+
+244
+00:08:32,500 --> 00:08:34,180
+because you'll have robots out there in the
+
+245
+00:08:34,180 --> 00:08:37,800
+world doing economically valuable tasks and that way
+
+246
+00:08:37,800 --> 00:08:39,320
+that the cost of that data collection is
+
+247
+00:08:39,320 --> 00:08:42,720
+basically negative and the more the more broadly
+
+248
+00:08:42,720 --> 00:08:43,000
+you can
+
+249
+00:08:43,000 --> 00:08:44,780
+deploy this technology the more data you'll be
+
+250
+00:08:44,780 --> 00:08:46,760
+getting and i think in the limit that
+
+251
+00:08:46,760 --> 00:08:47,620
+will be that
+
+252
+00:08:47,620 --> 00:08:48,940
+will be the biggest source of the data
+
+253
+00:08:48,940 --> 00:08:51,320
+you can imagine much bigger than internet data
+
+254
+00:08:51,320 --> 00:08:51,880
+for instance
+
+255
+00:08:51,880 --> 00:08:53,600
+and how far away do you think we
+
+256
+00:08:53,600 --> 00:08:56,460
+are from generalization or from a performance level
+
+257
+00:08:56,460 --> 00:08:56,740
+that
+
+258
+00:08:57,340 --> 00:09:00,020
+maybe it's a control environment maybe it's a
+
+259
+00:09:00,020 --> 00:09:02,960
+general environment in homes or offices but not
+
+260
+00:09:02,960 --> 00:09:05,320
+the whole whole world if you could limit
+
+261
+00:09:05,320 --> 00:09:08,240
+that what where do you think generalization and
+
+262
+00:09:08,240 --> 00:09:09,120
+performance will
+
+263
+00:09:09,820 --> 00:09:12,860
+will need to be before we can deploy
+
+264
+00:09:12,860 --> 00:09:15,580
+these kind of robots i think we are
+
+265
+00:09:15,580 --> 00:09:16,580
+actually fairly close to
+
+266
+00:09:16,580 --> 00:09:19,080
+deploying these robots we started deploying them ourselves
+
+267
+00:09:19,080 --> 00:09:21,940
+already we thought this was something that
+
+268
+00:09:21,940 --> 00:09:23,540
+was going to take something like five years
+
+269
+00:09:23,540 --> 00:09:25,320
+to get to the point where the technology
+
+270
+00:09:25,320 --> 00:09:25,740
+is actually
+
+271
+00:09:25,740 --> 00:09:27,720
+ready to deploy a robot in a in
+
+272
+00:09:27,720 --> 00:09:29,620
+a commercial setting and have it do something
+
+273
+00:09:29,620 --> 00:09:31,400
+valuable but we've done it
+
+274
+00:09:31,400 --> 00:09:33,200
+i think two months ago or something like
+
+275
+00:09:33,200 --> 00:09:37,420
+that um so i think we're now getting
+
+276
+00:09:37,420 --> 00:09:38,780
+to that threshold that
+
+277
+00:09:38,780 --> 00:09:41,440
+that the models are useful enough they're perform
+
+278
+00:09:41,440 --> 00:09:43,800
+performant enough and they can do enough of
+
+279
+00:09:43,800 --> 00:09:45,180
+variety of tasks
+
+280
+00:09:45,180 --> 00:09:48,260
+to be actually useful so that's a really
+
+281
+00:09:48,260 --> 00:09:50,900
+really exciting moment um we i think we
+
+282
+00:09:50,900 --> 00:09:51,540
+just crossed that
+
+283
+00:09:51,540 --> 00:09:53,820
+threshold uh i think it's still to be
+
+284
+00:09:53,820 --> 00:09:56,620
+determined how wide is the aperture of where
+
+285
+00:09:56,620 --> 00:09:57,360
+we can deploy
+
+286
+00:09:57,360 --> 00:09:59,480
+there are some tasks where the failure can
+
+287
+00:09:59,480 --> 00:10:01,320
+be really catastrophic maybe these are not the
+
+288
+00:10:01,320 --> 00:10:01,500
+best
+
+289
+00:10:01,500 --> 00:10:03,460
+tests to deploy just yet there are some
+
+290
+00:10:03,460 --> 00:10:05,380
+tasks that require a ton of generalization like
+
+291
+00:10:05,380 --> 00:10:05,820
+deploying in
+
+292
+00:10:05,820 --> 00:10:07,740
+the homes or that are you know have
+
+293
+00:10:07,740 --> 00:10:10,240
+privacy concerns or safety concerns and so on
+
+294
+00:10:10,240 --> 00:10:11,100
+maybe these
+
+295
+00:10:11,100 --> 00:10:12,580
+are not the best places to deploy just
+
+296
+00:10:12,580 --> 00:10:14,940
+yet but i think there is that the
+
+297
+00:10:14,940 --> 00:10:16,600
+aperture is growing as we
+
+298
+00:10:16,600 --> 00:10:18,260
+collect more data as these models get better
+
+299
+00:10:18,260 --> 00:10:19,820
+we can deploy them in more and more
+
+300
+00:10:19,820 --> 00:10:21,880
+settings so i
+
+301
+00:10:21,880 --> 00:10:23,900
+think we're we're starting to get there where's
+
+302
+00:10:23,900 --> 00:10:26,340
+the current aperture that you're deploying right now
+
+303
+00:10:27,160 --> 00:10:29,900
+um so we're actually this is this is
+
+304
+00:10:29,900 --> 00:10:32,480
+a really difficult question to answer because with
+
+305
+00:10:32,480 --> 00:10:32,640
+these
+
+306
+00:10:32,640 --> 00:10:36,340
+foundation models sometimes you don't fully know um
+
+307
+00:10:36,340 --> 00:10:39,620
+so kind of similarly to to how with
+
+308
+00:10:39,620 --> 00:10:40,500
+uh large
+
+309
+00:10:40,500 --> 00:10:43,520
+language models um you know you you train
+
+310
+00:10:43,520 --> 00:10:45,460
+this model you kind of cook it in
+
+311
+00:10:45,460 --> 00:10:46,480
+-house you try to make
+
+312
+00:10:46,480 --> 00:10:48,460
+the best job possible and then at the
+
+313
+00:10:48,460 --> 00:10:50,640
+very end you get this artifact and you
+
+314
+00:10:50,640 --> 00:10:51,540
+can't really predict how
+
+315
+00:10:51,540 --> 00:10:52,840
+good the artifact is going to be you
+
+316
+00:10:52,840 --> 00:10:55,800
+kind of have to test it and that's
+
+317
+00:10:55,800 --> 00:10:56,840
+where we are with these models
+
+318
+00:10:56,840 --> 00:10:59,740
+as well so for instance we open source
+
+319
+00:10:59,740 --> 00:11:02,120
+them so that we are not the only
+
+320
+00:11:02,120 --> 00:11:03,360
+ones testing it and we're not
+
+321
+00:11:03,360 --> 00:11:06,500
+the bottlenecking knowing what their capabilities are and
+
+322
+00:11:06,500 --> 00:11:08,000
+by open sourcing them we see them being
+
+323
+00:11:08,000 --> 00:11:08,500
+applied to
+
+324
+00:11:08,500 --> 00:11:10,560
+actually many more applications that we could have
+
+325
+00:11:10,560 --> 00:11:15,700
+imagined things like driving or surgical robots or
+
+326
+00:11:17,500 --> 00:11:21,380
+agriculture and and places like that so i
+
+327
+00:11:21,380 --> 00:11:23,220
+don't have a very good estimate of what
+
+328
+00:11:23,220 --> 00:11:24,040
+the aperture is
+
+329
+00:11:24,040 --> 00:11:25,840
+i think it's wider than what i had
+
+330
+00:11:25,840 --> 00:11:28,220
+expected and i think it's also will be
+
+331
+00:11:28,220 --> 00:11:29,440
+it will be growing over
+
+332
+00:11:29,440 --> 00:11:31,420
+time the more data these models get the
+
+333
+00:11:31,420 --> 00:11:33,360
+more mature they get and the aperture will
+
+334
+00:11:33,360 --> 00:11:34,040
+continue to grow
+
+335
+00:11:34,520 --> 00:11:36,860
+i would add maybe like on the performance
+
+336
+00:11:36,860 --> 00:11:39,820
+level like as you said the aperture is
+
+337
+00:11:39,820 --> 00:11:40,640
+probably wider
+
+338
+00:11:41,240 --> 00:11:42,940
+the starting point is wider than we thought
+
+339
+00:11:42,940 --> 00:11:44,580
+but at the same time of course if
+
+340
+00:11:44,580 --> 00:11:45,360
+you actually want
+
+341
+00:11:45,360 --> 00:11:47,660
+each of those starting points that you start
+
+342
+00:11:47,660 --> 00:11:49,380
+out for each of those applications to be
+
+343
+00:11:49,380 --> 00:11:49,880
+at a level
+
+344
+00:11:49,880 --> 00:11:52,620
+where people would want to use this as
+
+345
+00:11:52,620 --> 00:11:55,180
+a day-to-day driving you know their
+
+346
+00:11:55,180 --> 00:11:56,640
+businesses where that's
+
+347
+00:11:56,640 --> 00:11:58,760
+probably still quite a bit of hill climbing
+
+348
+00:11:58,760 --> 00:12:00,400
+to do in terms of performance right so
+
+349
+00:12:00,400 --> 00:12:01,340
+we've with this
+
+350
+00:12:01,340 --> 00:12:02,500
+release that we're going to talk about a
+
+351
+00:12:02,500 --> 00:12:03,980
+little bit in a bit i guess the
+
+352
+00:12:03,980 --> 00:12:05,220
+pi star six we've made
+
+353
+00:12:05,220 --> 00:12:08,080
+progress on like learning from experience data getting
+
+354
+00:12:08,080 --> 00:12:09,720
+that back and making the models better
+
+355
+00:12:09,720 --> 00:12:12,960
+when they are deployed um it's still for
+
+356
+00:12:12,960 --> 00:12:14,960
+a lot of things you that i can
+
+357
+00:12:14,960 --> 00:12:16,460
+naively imagine that there'd be
+
+358
+00:12:16,460 --> 00:12:19,200
+lots of scenarios where there's a really really
+
+359
+00:12:19,200 --> 00:12:21,120
+long tale of things that can go wrong
+
+360
+00:12:21,120 --> 00:12:22,240
+or that you can
+
+361
+00:12:22,240 --> 00:12:24,900
+encounter that we we don't yet have a
+
+362
+00:12:24,900 --> 00:12:26,800
+great grasp on like how to completely solve
+
+363
+00:12:26,800 --> 00:12:27,620
+i would say as well
+
+364
+00:12:27,620 --> 00:12:29,460
+and you guys have been really great about
+
+365
+00:12:29,460 --> 00:12:32,200
+publishing your results with a lot of transparency
+
+366
+00:12:32,200 --> 00:12:35,680
+releasing an open source um so whatever you're
+
+367
+00:12:35,680 --> 00:12:37,520
+comfortable sharing can you can you talk about
+
+368
+00:12:37,520 --> 00:12:40,300
+what your overall technical architecture so to speak
+
+369
+00:12:40,300 --> 00:12:43,480
+is and do you think that the architecture
+
+370
+00:12:43,480 --> 00:12:43,740
+to
+
+371
+00:12:43,740 --> 00:12:45,240
+kind of get to this promised land is
+
+372
+00:12:45,240 --> 00:12:47,120
+you know pretty much baked and it'll be
+
+373
+00:12:47,120 --> 00:12:48,900
+variations on the theme of
+
+374
+00:12:48,900 --> 00:12:50,260
+where we are and we just need to
+
+375
+00:12:50,260 --> 00:12:52,140
+collect a ton of data or do you
+
+376
+00:12:52,140 --> 00:12:53,420
+think that you know the architecture
+
+377
+00:12:53,420 --> 00:12:55,960
+is still still being figured out i would
+
+378
+00:12:55,960 --> 00:12:57,920
+say so i we can maybe start with
+
+379
+00:12:57,920 --> 00:12:58,440
+like a little bit
+
+380
+00:12:58,440 --> 00:13:00,180
+discussing like where we are at now and
+
+381
+00:13:00,180 --> 00:13:01,580
+then we can like go into the details
+
+382
+00:13:01,580 --> 00:13:02,640
+of like how that might
+
+383
+00:13:02,640 --> 00:13:04,940
+change so at the moment you know the
+
+384
+00:13:04,940 --> 00:13:08,220
+the architecture is very analogous to how um
+
+385
+00:13:08,220 --> 00:13:09,820
+you know vlms and
+
+386
+00:13:09,820 --> 00:13:12,680
+are built today's that probably you know most
+
+387
+00:13:12,680 --> 00:13:14,220
+of you interact with on a day-to
+
+388
+00:13:14,220 --> 00:13:15,080
+-day basis right type
+
+389
+00:13:15,080 --> 00:13:16,840
+something in and put an image in and
+
+390
+00:13:16,840 --> 00:13:18,220
+ask it to read what's on the image
+
+391
+00:13:18,220 --> 00:13:20,020
+and and so on and and we've kind
+
+392
+00:13:20,020 --> 00:13:20,140
+of
+
+393
+00:13:20,140 --> 00:13:23,800
+like started from um the same standpoint of
+
+394
+00:13:23,800 --> 00:13:25,520
+you know there's a model that's trained on
+
+395
+00:13:25,520 --> 00:13:25,760
+internet
+
+396
+00:13:25,760 --> 00:13:28,860
+scale data and it's ingested um image data
+
+397
+00:13:28,860 --> 00:13:30,780
+and text and and we're adding all this
+
+398
+00:13:30,780 --> 00:13:31,460
+robotics data
+
+399
+00:13:31,460 --> 00:13:34,580
+and our training actually predominantly now is on
+
+400
+00:13:34,580 --> 00:13:36,440
+robotics data on data that we have collected
+
+401
+00:13:36,440 --> 00:13:39,180
+ourselves we have a little bit of that
+
+402
+00:13:39,180 --> 00:13:41,260
+internet data in the mix but the majority
+
+403
+00:13:41,260 --> 00:13:41,980
+of it is robotics
+
+404
+00:13:41,980 --> 00:13:44,760
+data the architecture is kind of this vision
+
+405
+00:13:44,760 --> 00:13:47,460
+language model and we add something on the
+
+406
+00:13:47,460 --> 00:13:48,120
+side which is
+
+407
+00:13:48,120 --> 00:13:51,540
+what we call the action model the action
+
+408
+00:13:51,540 --> 00:13:53,740
+expert the the part of the model that
+
+409
+00:13:53,740 --> 00:13:54,540
+actually then has to
+
+410
+00:13:54,540 --> 00:13:57,740
+drive the robot right so that basically looks
+
+411
+00:13:57,740 --> 00:13:59,780
+at the image and the instruction is getting
+
+412
+00:13:59,780 --> 00:14:00,600
+and has to
+
+413
+00:14:00,600 --> 00:14:03,260
+perform the task has to send commands to
+
+414
+00:14:03,260 --> 00:14:05,680
+the robot and so broadly it's like a
+
+415
+00:14:05,680 --> 00:14:07,580
+transformer model that is a
+
+416
+00:14:07,580 --> 00:14:09,720
+a fairly large model up to like some
+
+417
+00:14:09,720 --> 00:14:12,220
+billion parameters at this point that we use
+
+418
+00:14:12,220 --> 00:14:13,180
+that we pre-train
+
+419
+00:14:13,180 --> 00:14:15,180
+on our robotics data and on on internet
+
+420
+00:14:15,180 --> 00:14:18,360
+data um and uh it is trained largely
+
+421
+00:14:18,360 --> 00:14:20,260
+in initially from human
+
+422
+00:14:20,260 --> 00:14:22,780
+demonstration data carol mentioned this earlier a little
+
+423
+00:14:22,780 --> 00:14:24,700
+bit and we have this demonstration data
+
+424
+00:14:24,700 --> 00:14:27,440
+teleoperated data of humans trying to get the
+
+425
+00:14:27,440 --> 00:14:29,840
+robot to do stuff so that's the the
+
+426
+00:14:29,840 --> 00:14:30,500
+architecture that
+
+427
+00:14:30,500 --> 00:14:32,440
+looks like now and like roughly the scaling
+
+428
+00:14:32,440 --> 00:14:35,820
+um that we're getting is from scaling our
+
+429
+00:14:35,820 --> 00:14:37,040
+data and we use models
+
+430
+00:14:37,040 --> 00:14:39,500
+models similar to what comes from the vlm
+
+431
+00:14:39,500 --> 00:14:42,100
+world um how that might change i think
+
+432
+00:14:42,100 --> 00:14:43,080
+as an as an open
+
+433
+00:14:43,080 --> 00:14:46,900
+question i i think there's lots of opportunities
+
+434
+00:14:46,900 --> 00:14:50,100
+in in adding more capabilities to these models
+
+435
+00:14:50,100 --> 00:14:50,600
+that we're
+
+436
+00:14:50,600 --> 00:14:53,240
+also exploring right you can imagine that um
+
+437
+00:14:53,240 --> 00:14:55,960
+you know you you might want more context
+
+438
+00:14:55,960 --> 00:14:56,700
+in these models
+
+439
+00:14:56,700 --> 00:15:00,600
+you might want more um more more cameras
+
+440
+00:15:00,600 --> 00:15:02,980
+added to to the robots that the model
+
+441
+00:15:02,980 --> 00:15:04,080
+needs to be able to
+
+442
+00:15:04,540 --> 00:15:07,760
+to use you might want to have a
+
+443
+00:15:07,760 --> 00:15:10,140
+better understanding of the physical world in the
+
+444
+00:15:10,140 --> 00:15:11,620
+sense of you know
+
+445
+00:15:11,620 --> 00:15:13,820
+understanding exactly what's in the room what can
+
+446
+00:15:13,820 --> 00:15:15,860
+break what is easily movable and so on
+
+447
+00:15:15,860 --> 00:15:16,620
+so there's lots
+
+448
+00:15:16,620 --> 00:15:18,860
+to be done i think in both capabilities
+
+449
+00:15:18,860 --> 00:15:21,720
+and also changing the architecture around and i
+
+450
+00:15:21,720 --> 00:15:22,180
+i wouldn't
+
+451
+00:15:22,180 --> 00:15:24,020
+be surprised if in like five six years
+
+452
+00:15:24,020 --> 00:15:27,080
+we look back and we say oh you
+
+453
+00:15:27,080 --> 00:15:29,820
+know maybe the the backbone of
+
+454
+00:15:29,820 --> 00:15:31,720
+the model that we used at the time
+
+455
+00:15:31,720 --> 00:15:34,600
+which currently comes from this vlm land has
+
+456
+00:15:34,600 --> 00:15:35,600
+changed maybe we've
+
+457
+00:15:35,600 --> 00:15:37,840
+moved on and we we use something uh
+
+458
+00:15:37,840 --> 00:15:39,680
+slightly different i think that will evolve over
+
+459
+00:15:39,680 --> 00:15:41,560
+time but i think
+
+460
+00:15:41,560 --> 00:15:45,700
+the the foundation of like the data and
+
+461
+00:15:45,700 --> 00:15:47,380
+how we bring it into the model will
+
+462
+00:15:47,380 --> 00:15:48,440
+probably stay stay
+
+463
+00:15:48,440 --> 00:15:50,080
+like it and should i think about it
+
+464
+00:15:50,080 --> 00:15:52,880
+as it's pixels or signals in and then
+
+465
+00:15:52,880 --> 00:15:55,260
+actions out is that yeah and
+
+466
+00:15:55,260 --> 00:15:57,220
+like like a single single big neural net
+
+467
+00:15:57,220 --> 00:15:59,760
+it's one big model yeah it's really just
+
+468
+00:15:59,760 --> 00:16:01,060
+basically images in
+
+469
+00:16:01,060 --> 00:16:03,800
+text in uh text out and and actions
+
+470
+00:16:03,800 --> 00:16:05,400
+out at this point yeah and are you
+
+471
+00:16:05,400 --> 00:16:07,460
+i guess do you have a separate
+
+472
+00:16:07,460 --> 00:16:11,040
+kind of locomotion versus manipulation stack and maybe
+
+473
+00:16:11,040 --> 00:16:12,740
+this this might be a good time to
+
+474
+00:16:12,740 --> 00:16:13,200
+talk about
+
+475
+00:16:13,200 --> 00:16:15,640
+kind of just the historical evolution in and
+
+476
+00:16:15,640 --> 00:16:18,240
+robotics and the various different waves of learning
+
+477
+00:16:18,240 --> 00:16:18,780
+uh
+
+478
+00:16:18,780 --> 00:16:21,440
+and how it pertains to your stack yeah
+
+479
+00:16:21,440 --> 00:16:23,880
+so for a long time even before learning
+
+480
+00:16:23,880 --> 00:16:25,440
+arrived here people
+
+481
+00:16:25,440 --> 00:16:28,100
+thought that robotics is one of these problems
+
+482
+00:16:28,100 --> 00:16:29,820
+where you can if you put enough people
+
+483
+00:16:29,820 --> 00:16:30,740
+on enough engineers
+
+484
+00:16:31,300 --> 00:16:33,880
+they can think really hard about it and
+
+485
+00:16:33,880 --> 00:16:35,820
+eventually write the code that will you know
+
+486
+00:16:35,820 --> 00:16:36,460
+have the robot do
+
+487
+00:16:36,460 --> 00:16:40,320
+anything in the world um and you know
+
+488
+00:16:40,320 --> 00:16:42,000
+people have tried really really hard to do
+
+489
+00:16:42,000 --> 00:16:42,480
+it this way
+
+490
+00:16:43,020 --> 00:16:44,260
+and then it turned out that the world
+
+491
+00:16:44,260 --> 00:16:46,340
+is just way too complex yep right like
+
+492
+00:16:46,340 --> 00:16:46,960
+you can't just write
+
+493
+00:16:46,960 --> 00:16:49,160
+every single every single case you'll encounter in
+
+494
+00:16:49,160 --> 00:16:52,120
+the real world so that doesn't work and
+
+495
+00:16:52,120 --> 00:16:52,580
+and also
+
+496
+00:16:52,580 --> 00:16:54,180
+as we were you know trying to work
+
+497
+00:16:54,180 --> 00:16:56,760
+on on that version of the problem what
+
+498
+00:16:56,760 --> 00:16:57,700
+ended up happening is
+
+499
+00:16:57,700 --> 00:17:00,240
+people did what they usually do they try
+
+500
+00:17:00,240 --> 00:17:01,840
+to break down this problem into smaller sub
+
+501
+00:17:01,840 --> 00:17:02,460
+problems so
+
+502
+00:17:02,460 --> 00:17:03,980
+like rather than working on the full robotics
+
+503
+00:17:03,980 --> 00:17:06,060
+problem you would say there was a perception
+
+504
+00:17:06,060 --> 00:17:08,480
+aspect of the problem there's a control aspect
+
+505
+00:17:08,480 --> 00:17:10,260
+of the problem there's the planning part of
+
+506
+00:17:10,260 --> 00:17:10,360
+the
+
+507
+00:17:10,360 --> 00:17:12,440
+problem and this is almost growing to different
+
+508
+00:17:12,440 --> 00:17:14,580
+communities there's a planning community there's
+
+509
+00:17:14,580 --> 00:17:16,760
+controls community there's they have their own conferences
+
+510
+00:17:16,760 --> 00:17:18,420
+their own problems and all of that
+
+511
+00:17:19,520 --> 00:17:21,380
+so then as we realized that you know
+
+512
+00:17:21,380 --> 00:17:23,340
+it's not really possible to to handwrite all
+
+513
+00:17:23,340 --> 00:17:24,020
+of these rules
+
+514
+00:17:24,560 --> 00:17:26,820
+people thought that we should learn them we
+
+515
+00:17:26,820 --> 00:17:28,100
+should learn them from data which is
+
+516
+00:17:28,100 --> 00:17:29,920
+seems like a really good idea right this
+
+517
+00:17:29,920 --> 00:17:32,900
+is how we learn too um but what
+
+518
+00:17:32,900 --> 00:17:34,080
+ended up happening is that
+
+519
+00:17:34,080 --> 00:17:36,260
+they started learning each one of those components
+
+520
+00:17:36,260 --> 00:17:38,320
+these these broke down components
+
+521
+00:17:38,320 --> 00:17:41,260
+separate for learning separately yeah so you would
+
+522
+00:17:41,260 --> 00:17:43,520
+have a perception layer that is fully learned
+
+523
+00:17:43,520 --> 00:17:43,900
+maybe
+
+524
+00:17:43,900 --> 00:17:45,260
+you'll have a control layer that is learned
+
+525
+00:17:45,260 --> 00:17:46,620
+maybe you'll have a planner that is learned
+
+526
+00:17:46,620 --> 00:17:49,000
+and that showed
+
+527
+00:17:49,000 --> 00:17:51,160
+some progress it was better than what we
+
+528
+00:17:51,160 --> 00:17:53,280
+had before yeah but then turn out that
+
+529
+00:17:53,280 --> 00:17:54,000
+breaking down these
+
+530
+00:17:54,000 --> 00:17:56,420
+pro this problem into these sub components it
+
+531
+00:17:56,420 --> 00:17:58,600
+actually is the piece that doesn't work because
+
+532
+00:17:58,600 --> 00:17:59,320
+you know when
+
+533
+00:17:59,320 --> 00:18:00,920
+i try to you know pick up this
+
+534
+00:18:00,920 --> 00:18:02,620
+glass i don't think about it in terms
+
+535
+00:18:02,620 --> 00:18:04,340
+of perception and then planning
+
+536
+00:18:04,340 --> 00:18:06,520
+and then control i just i just go
+
+537
+00:18:06,520 --> 00:18:08,020
+for it i just pick up the glass
+
+538
+00:18:08,020 --> 00:18:09,380
+and it's just all very natural
+
+539
+00:18:10,140 --> 00:18:12,480
+so it turned out that the that this
+
+540
+00:18:12,480 --> 00:18:15,580
+pipeline approach where you have these predefined interfaces
+
+541
+00:18:15,580 --> 00:18:17,920
+that like perception gives you the position of
+
+542
+00:18:17,920 --> 00:18:19,800
+the object and then the planner gives you
+
+543
+00:18:19,800 --> 00:18:20,360
+the trajectory
+
+544
+00:18:20,360 --> 00:18:23,120
+and the control executes it those interfaces are
+
+545
+00:18:23,120 --> 00:18:25,320
+the pieces that broke down so everything that
+
+546
+00:18:25,320 --> 00:18:28,200
+we thought we knew how we work was
+
+547
+00:18:28,200 --> 00:18:31,520
+always wrong so then we then arrived to
+
+548
+00:18:31,520 --> 00:18:32,420
+the next stage of this
+
+549
+00:18:32,420 --> 00:18:34,260
+where we said well maybe just breaking down
+
+550
+00:18:34,260 --> 00:18:36,100
+this problem was a bad idea to begin
+
+551
+00:18:36,100 --> 00:18:37,480
+with yeah so let's
+
+552
+00:18:37,480 --> 00:18:39,280
+just train the whole thing end to end
+
+553
+00:18:39,280 --> 00:18:42,900
+right so we'll take whatever uh uh the
+
+554
+00:18:42,900 --> 00:18:44,140
+the kind of the sensory
+
+555
+00:18:44,140 --> 00:18:46,040
+inputs as input to the network and we'll
+
+556
+00:18:46,040 --> 00:18:47,680
+have actions as the output that's what we
+
+557
+00:18:47,680 --> 00:18:48,500
+refer to as the end
+
+558
+00:18:48,500 --> 00:18:50,440
+to end approach where you try to go
+
+559
+00:18:50,440 --> 00:18:53,200
+straight from pixels to actions and we'll we'll
+
+560
+00:18:53,200 --> 00:18:53,800
+have the network
+
+561
+00:18:53,800 --> 00:18:56,120
+figure out or the learning algorithm figure out
+
+562
+00:18:56,120 --> 00:18:58,040
+how to split it into these different components
+
+563
+00:18:58,040 --> 00:18:58,340
+if
+
+564
+00:18:58,340 --> 00:19:02,420
+it's even possible um and then while we
+
+565
+00:19:02,420 --> 00:19:04,240
+were doing that we figured that it actually
+
+566
+00:19:04,240 --> 00:19:04,980
+requires a ton of
+
+567
+00:19:04,980 --> 00:19:08,520
+data to do this and often it breaks
+
+568
+00:19:08,520 --> 00:19:10,860
+when it requires some kind of common sense
+
+569
+00:19:10,860 --> 00:19:12,060
+and to gather that common
+
+570
+00:19:12,060 --> 00:19:16,060
+sense through first first person action data sets
+
+571
+00:19:16,060 --> 00:19:17,640
+is really really hard because you would need
+
+572
+00:19:17,640 --> 00:19:17,740
+to
+
+573
+00:19:17,740 --> 00:19:19,420
+experience every single thing in the world to
+
+574
+00:19:19,420 --> 00:19:22,540
+do this and that's where we stumbled upon
+
+575
+00:19:22,540 --> 00:19:23,160
+vision
+
+576
+00:19:23,160 --> 00:19:25,660
+language action models where we can use models
+
+577
+00:19:25,660 --> 00:19:28,160
+that were pre-trained on internet data that
+
+578
+00:19:28,160 --> 00:19:28,420
+already
+
+579
+00:19:28,420 --> 00:19:30,320
+have pretty good understanding of how the world
+
+580
+00:19:30,320 --> 00:19:34,040
+works um and we can utilize that knowledge
+
+581
+00:19:34,040 --> 00:19:34,760
+so that
+
+582
+00:19:34,760 --> 00:19:37,340
+we don't need to experience everything firsthand you
+
+583
+00:19:37,340 --> 00:19:39,320
+can just add some action components on top
+
+584
+00:19:39,320 --> 00:19:39,460
+of
+
+585
+00:19:39,460 --> 00:19:41,620
+it and have a common world understanding and
+
+586
+00:19:41,620 --> 00:19:43,400
+connect it to how to actually perform things
+
+587
+00:19:43,400 --> 00:19:45,580
+in the world and that's more or less
+
+588
+00:19:45,580 --> 00:19:48,280
+where we're at today i see um now
+
+589
+00:19:48,280 --> 00:19:50,020
+at physical intelligence we
+
+590
+00:19:50,020 --> 00:19:52,160
+figured a few other things so how do
+
+591
+00:19:52,160 --> 00:19:53,460
+you scale how do you start to scale
+
+592
+00:19:53,460 --> 00:19:54,400
+these models how do you get
+
+593
+00:19:54,400 --> 00:19:56,100
+them to generalize how do you get them
+
+594
+00:19:56,100 --> 00:19:57,860
+to perform much better how do you have
+
+595
+00:19:57,860 --> 00:19:58,780
+them move much faster
+
+596
+00:19:58,780 --> 00:20:00,100
+how do you get them to the point
+
+597
+00:20:00,100 --> 00:20:02,160
+where you can start deploying them but i
+
+598
+00:20:02,160 --> 00:20:03,380
+think largely we're still in
+
+599
+00:20:03,380 --> 00:20:05,420
+this in this era of how do you
+
+600
+00:20:05,420 --> 00:20:07,340
+bring some of the common sense knowledge from
+
+601
+00:20:07,340 --> 00:20:08,400
+the internet pre-training
+
+602
+00:20:08,840 --> 00:20:10,620
+how do you make these models very general
+
+603
+00:20:10,620 --> 00:20:12,140
+so that they can work on any robot
+
+604
+00:20:12,140 --> 00:20:13,120
+and perform motions
+
+605
+00:20:13,760 --> 00:20:15,320
+and can i ask for something like reasoning
+
+606
+00:20:15,320 --> 00:20:17,500
+right there's there's so much stuff happening in
+
+607
+00:20:17,500 --> 00:20:18,060
+the you know
+
+608
+00:20:18,060 --> 00:20:19,820
+reasoning side of the large language model space
+
+609
+00:20:19,820 --> 00:20:22,320
+do you get the benefits of that uh
+
+610
+00:20:22,320 --> 00:20:23,660
+in as part of
+
+611
+00:20:23,660 --> 00:20:25,680
+your vla backbone do you have reasoning kind
+
+612
+00:20:25,680 --> 00:20:27,840
+of emerge as a consequence of what you're
+
+613
+00:20:27,840 --> 00:20:28,180
+doing as
+
+614
+00:20:28,180 --> 00:20:29,540
+you train these end to end or perhaps
+
+615
+00:20:29,540 --> 00:20:31,200
+i think about you know some of the
+
+616
+00:20:31,200 --> 00:20:31,860
+benefits of what's
+
+617
+00:20:31,860 --> 00:20:33,540
+happening in the llm world do they do
+
+618
+00:20:33,540 --> 00:20:35,740
+they benefit you or not i mean i
+
+619
+00:20:35,740 --> 00:20:37,040
+think definitely the
+
+620
+00:20:37,040 --> 00:20:40,380
+models that we have today they are already
+
+621
+00:20:40,380 --> 00:20:42,620
+planning actions not just at a what is
+
+622
+00:20:42,620 --> 00:20:43,160
+the immediate
+
+623
+00:20:43,160 --> 00:20:45,580
+action but kind of what is the what
+
+624
+00:20:45,580 --> 00:20:47,440
+are the next 50 things i i need
+
+625
+00:20:47,440 --> 00:20:49,180
+to do right so like the next 50
+
+626
+00:20:49,180 --> 00:20:51,020
+time steps in in some sense it's a
+
+627
+00:20:51,020 --> 00:20:53,220
+very short horizon 50 steps means like a
+
+628
+00:20:53,220 --> 00:20:54,660
+like a second or or two
+
+629
+00:20:54,660 --> 00:20:58,440
+right and it also additionally kind of decomposes
+
+630
+00:20:58,440 --> 00:21:01,500
+tasks into subtasks in language space already so
+
+631
+00:21:01,500 --> 00:21:03,740
+when you when we ask it oh clean
+
+632
+00:21:03,740 --> 00:21:06,880
+the kitchen the first subtask it might pick
+
+633
+00:21:06,880 --> 00:21:08,060
+out to do is like oh i have
+
+634
+00:21:08,060 --> 00:21:09,620
+to drive to the counter and then i
+
+635
+00:21:09,620 --> 00:21:12,280
+have to like uh pick up the the
+
+636
+00:21:12,280 --> 00:21:13,820
+glass move the glass into the sink
+
+637
+00:21:13,820 --> 00:21:18,100
+um so it already has those aspects in
+
+638
+00:21:18,100 --> 00:21:20,300
+in some sense right so like it decomposes
+
+639
+00:21:20,300 --> 00:21:21,440
+tasks into subtasks
+
+640
+00:21:21,440 --> 00:21:23,820
+because it gives itself its own top task
+
+641
+00:21:23,820 --> 00:21:25,660
+and it predicts like a little bit of
+
+642
+00:21:25,660 --> 00:21:26,860
+a horizon of how actions
+
+643
+00:21:26,860 --> 00:21:28,580
+go so so some of this is already
+
+644
+00:21:28,580 --> 00:21:31,460
+there i think um i think in the
+
+645
+00:21:31,460 --> 00:21:33,420
+future there will probably be more of
+
+646
+00:21:33,420 --> 00:21:36,400
+it i do totally expect that um you
+
+647
+00:21:36,400 --> 00:21:38,280
+know all the advances on like our training
+
+648
+00:21:38,280 --> 00:21:39,040
+for reasoning all
+
+649
+00:21:39,040 --> 00:21:40,780
+these things will will also make their way
+
+650
+00:21:40,780 --> 00:21:43,580
+into robotics yeah um and i think it's
+
+651
+00:21:43,580 --> 00:21:44,220
+kind of interesting
+
+652
+00:21:44,220 --> 00:21:46,960
+to think about because it's it's maybe a
+
+653
+00:21:46,960 --> 00:21:50,760
+little different than than the rl for math
+
+654
+00:21:50,760 --> 00:21:51,440
+problems that
+
+655
+00:21:51,440 --> 00:21:53,900
+people do for example right because i think
+
+656
+00:21:53,900 --> 00:21:56,580
+those are very easy for easy for us
+
+657
+00:21:56,580 --> 00:21:57,680
+humans to think of as like
+
+658
+00:21:58,720 --> 00:22:00,840
+textual problems right you think through them in
+
+659
+00:22:00,840 --> 00:22:03,660
+your head in like text okay if i
+
+660
+00:22:03,660 --> 00:22:05,580
+change this formula
+
+661
+00:22:05,580 --> 00:22:07,200
+this way i will get this outcome and
+
+662
+00:22:07,200 --> 00:22:08,840
+so on and i think for the physical
+
+663
+00:22:08,840 --> 00:22:09,980
+intelligence part of it it
+
+664
+00:22:09,980 --> 00:22:11,880
+will probably be a bit more than that
+
+665
+00:22:11,880 --> 00:22:13,560
+right it's going to be a little bit
+
+666
+00:22:13,560 --> 00:22:14,880
+different when you try to
+
+667
+00:22:14,880 --> 00:22:17,080
+learn a new sport for example when i
+
+668
+00:22:17,080 --> 00:22:19,680
+i recently started to try to learn how
+
+669
+00:22:19,680 --> 00:22:21,300
+to play tennis and you
+
+670
+00:22:21,300 --> 00:22:22,840
+know i don't think through in my head
+
+671
+00:22:22,840 --> 00:22:24,720
+of like i need to now grab the
+
+672
+00:22:24,720 --> 00:22:26,420
+racket i need to move it here and
+
+673
+00:22:26,420 --> 00:22:26,560
+i
+
+674
+00:22:26,560 --> 00:22:28,200
+need to do this thing but it's more
+
+675
+00:22:28,200 --> 00:22:30,540
+like you think through the motion itself right
+
+676
+00:22:30,540 --> 00:22:31,920
+i you you think
+
+677
+00:22:31,920 --> 00:22:33,720
+about like how does your body move how
+
+678
+00:22:33,720 --> 00:22:36,960
+maybe um maybe your plan in some sense
+
+679
+00:22:36,960 --> 00:22:38,340
+trajectories of objects
+
+680
+00:22:38,340 --> 00:22:40,200
+around you in your head and so those
+
+681
+00:22:40,200 --> 00:22:42,040
+things i think we'll see coming to the
+
+682
+00:22:42,040 --> 00:22:43,120
+models more over time
+
+683
+00:22:43,120 --> 00:22:47,460
+yeah i i suspect that over time right
+
+684
+00:22:47,460 --> 00:22:49,100
+now we're in a place where we benefit
+
+685
+00:22:49,100 --> 00:22:50,340
+quite a bit from vision
+
+686
+00:22:50,340 --> 00:22:54,320
+language models i think it's it's very very
+
+687
+00:22:54,320 --> 00:22:58,000
+likely that that that's gonna reverse that a
+
+688
+00:22:58,000 --> 00:22:58,580
+lot of the
+
+689
+00:22:58,580 --> 00:23:00,800
+the shortcomings that we see in llms today
+
+690
+00:23:00,800 --> 00:23:04,360
+are kind of baked in or because we
+
+691
+00:23:04,360 --> 00:23:05,880
+are focused on on the
+
+692
+00:23:05,880 --> 00:23:08,040
+text problem on problems like math and coding
+
+693
+00:23:08,040 --> 00:23:10,360
+yeah and i think robotics would uh will
+
+694
+00:23:10,360 --> 00:23:11,320
+offer this this
+
+695
+00:23:11,320 --> 00:23:13,220
+new avenue where you need to kind of
+
+696
+00:23:13,220 --> 00:23:16,760
+rethink how how to think about reasoning reasoning
+
+697
+00:23:16,760 --> 00:23:17,260
+should probably
+
+698
+00:23:17,260 --> 00:23:20,080
+happen in some kind of abstract space where
+
+699
+00:23:20,080 --> 00:23:21,640
+you know you can reason a little bit
+
+700
+00:23:21,640 --> 00:23:22,340
+in text you can
+
+701
+00:23:22,340 --> 00:23:23,880
+reason a little bit in images maybe you
+
+702
+00:23:23,880 --> 00:23:26,360
+can reason in trajectories or in you know
+
+703
+00:23:26,360 --> 00:23:27,100
+all kinds of different
+
+704
+00:23:27,100 --> 00:23:30,180
+spaces to arrive at the answer and robotics
+
+705
+00:23:30,180 --> 00:23:35,180
+provides this really nice test bed where um
+
+706
+00:23:35,180 --> 00:23:36,280
+you're grounded in
+
+707
+00:23:36,280 --> 00:23:39,080
+the physical world um there is not that
+
+708
+00:23:39,080 --> 00:23:41,500
+much data yet so you kind of need
+
+709
+00:23:41,500 --> 00:23:42,720
+to deal with some of the the
+
+710
+00:23:42,720 --> 00:23:45,200
+difficulties that come with that but i think
+
+711
+00:23:45,200 --> 00:23:48,600
+it will provide for for new findings that
+
+712
+00:23:48,600 --> 00:23:49,240
+will then be
+
+713
+00:23:49,240 --> 00:23:53,080
+reapplied to to the llm world speaking about
+
+714
+00:23:53,080 --> 00:23:56,140
+data give us a sense of i don't
+
+715
+00:23:56,140 --> 00:23:57,200
+know how you measure the
+
+716
+00:23:57,200 --> 00:23:59,520
+sort of magnitude of data you've already collected
+
+717
+00:23:59,520 --> 00:24:01,380
+and how much you would like to collect
+
+718
+00:24:01,380 --> 00:24:01,880
+to the next
+
+719
+00:24:01,880 --> 00:24:04,140
+year not like i'm sure more is better
+
+720
+00:24:04,140 --> 00:24:06,400
+but like what is the magnitude you're we're
+
+721
+00:24:06,400 --> 00:24:07,380
+talking about yeah
+
+722
+00:24:08,100 --> 00:24:10,440
+data is um it's one of those things
+
+723
+00:24:10,440 --> 00:24:12,200
+that's actually fairly new ones it's not just
+
+724
+00:24:12,200 --> 00:24:12,980
+a matter of quantity
+
+725
+00:24:12,980 --> 00:24:16,480
+yeah quality obviously matters but also things like
+
+726
+00:24:16,480 --> 00:24:19,440
+diversity and even when you think about the
+
+727
+00:24:19,440 --> 00:24:22,160
+quality or diversity of robot data these are
+
+728
+00:24:22,160 --> 00:24:25,420
+not very strictly defined terms um right like
+
+729
+00:24:25,420 --> 00:24:26,340
+if you if
+
+730
+00:24:26,340 --> 00:24:27,920
+you go for the same tasks in like
+
+731
+00:24:27,920 --> 00:24:30,480
+10 different ways is this diverse data or
+
+732
+00:24:30,480 --> 00:24:31,680
+not or how do you compare
+
+733
+00:24:31,680 --> 00:24:33,040
+it to the diversity of the data if
+
+734
+00:24:33,040 --> 00:24:35,580
+you go for like 10 different glasses right
+
+735
+00:24:35,580 --> 00:24:37,800
+um so this is something
+
+736
+00:24:37,800 --> 00:24:39,340
+that i don't think we as a community
+
+737
+00:24:39,340 --> 00:24:42,600
+fully understand like how to characterize the data
+
+738
+00:24:42,600 --> 00:24:45,000
+how to describe diversity how to describe the
+
+739
+00:24:45,000 --> 00:24:46,900
+quality of the data how to make it
+
+740
+00:24:46,900 --> 00:24:48,520
+very very rigorous
+
+741
+00:24:50,260 --> 00:24:54,080
+and we're also finding out that uh those
+
+742
+00:24:54,080 --> 00:24:56,440
+there are some aspects of the data of
+
+743
+00:24:56,440 --> 00:24:57,140
+the data that really
+
+744
+00:24:57,140 --> 00:24:59,340
+really matter like for instance if you want
+
+745
+00:24:59,340 --> 00:25:00,960
+to get to a certain performance on a
+
+746
+00:25:00,960 --> 00:25:02,700
+task you're not going
+
+747
+00:25:02,700 --> 00:25:04,720
+together by just increasing the quantity of the
+
+748
+00:25:04,720 --> 00:25:07,180
+data you already have uh we've been working
+
+749
+00:25:07,180 --> 00:25:08,100
+on these
+
+750
+00:25:08,100 --> 00:25:10,540
+three different tasks for the pi pi star
+
+751
+00:25:10,540 --> 00:25:13,220
+6 release and we've noticed fairly early on
+
+752
+00:25:13,220 --> 00:25:14,120
+that if we just
+
+753
+00:25:14,120 --> 00:25:16,020
+keep on collecting more and more data the
+
+754
+00:25:16,020 --> 00:25:17,660
+same way that we've been collecting so far
+
+755
+00:25:17,660 --> 00:25:18,420
+the performance
+
+756
+00:25:18,420 --> 00:25:20,780
+plateaus you're not going to just keep on
+
+757
+00:25:20,780 --> 00:25:22,840
+getting better so you need to find either
+
+758
+00:25:22,840 --> 00:25:23,500
+new ways of
+
+759
+00:25:23,500 --> 00:25:25,780
+collecting it or you need to start thinking
+
+760
+00:25:25,780 --> 00:25:28,080
+about what kind of data will result in
+
+761
+00:25:28,080 --> 00:25:28,780
+better performance
+
+762
+00:25:29,340 --> 00:25:32,320
+and this is where things like reinforcement learning
+
+763
+00:25:32,320 --> 00:25:34,240
+and and things like this can really
+
+764
+00:25:34,240 --> 00:25:37,640
+can really really help let's talk reinforcement learning
+
+765
+00:25:37,640 --> 00:25:39,640
+and let's talk let's do it pi pi
+
+766
+00:25:39,640 --> 00:25:40,740
+star 0.6
+
+767
+00:25:40,740 --> 00:25:43,320
+is the star a nod to to q
+
+768
+00:25:43,320 --> 00:25:46,680
+star or yeah okay effectively trying to get
+
+769
+00:25:46,680 --> 00:25:48,040
+to like policy star actually
+
+770
+00:25:48,040 --> 00:25:51,080
+optimal policy star okay wonderful okay maybe just
+
+771
+00:25:51,080 --> 00:25:52,380
+say a word on what you guys are
+
+772
+00:25:52,380 --> 00:25:52,640
+doing
+
+773
+00:25:53,420 --> 00:25:55,460
+with pi star 0.6 and then we
+
+774
+00:25:55,460 --> 00:25:57,200
+can dive into what rl means for your
+
+775
+00:25:57,200 --> 00:25:59,380
+world yeah for sure so i mean i
+
+776
+00:25:59,380 --> 00:26:01,180
+think the main if we want to contrast
+
+777
+00:26:01,180 --> 00:26:02,540
+it to what we talked about earlier the
+
+778
+00:26:02,540 --> 00:26:03,420
+main difference is that
+
+779
+00:26:03,960 --> 00:26:06,760
+up to that point basically all of the
+
+780
+00:26:06,760 --> 00:26:09,280
+robotics foundation model learning that that we've done
+
+781
+00:26:09,280 --> 00:26:13,520
+was basically demonstration data um tele-operated going
+
+782
+00:26:13,520 --> 00:26:14,960
+into the model the model is trained kind
+
+783
+00:26:14,960 --> 00:26:15,060
+of
+
+784
+00:26:15,060 --> 00:26:18,060
+like just imitate that data right and now
+
+785
+00:26:18,060 --> 00:26:20,620
+with this new model pi star or six
+
+786
+00:26:20,620 --> 00:26:21,760
+what we're using is
+
+787
+00:26:21,760 --> 00:26:25,520
+basically um rl from um experience that the
+
+788
+00:26:25,520 --> 00:26:28,460
+robot collects itself by actually running a policy
+
+789
+00:26:28,460 --> 00:26:29,060
+so we
+
+790
+00:26:29,060 --> 00:26:31,560
+start with the initial policy is this demonstration
+
+791
+00:26:31,560 --> 00:26:33,560
+trained policy and then you deploy it you
+
+792
+00:26:33,560 --> 00:26:33,880
+try to
+
+793
+00:26:33,880 --> 00:26:36,100
+actually have the robot solve the task and
+
+794
+00:26:36,100 --> 00:26:38,800
+then it additionally uh gets kind of reward
+
+795
+00:26:38,800 --> 00:26:39,660
+signals given by
+
+796
+00:26:39,660 --> 00:26:42,320
+humans and it can also get corrections so
+
+797
+00:26:42,320 --> 00:26:44,320
+where the human intervenes and says oh actually
+
+798
+00:26:44,320 --> 00:26:44,680
+you know what
+
+799
+00:26:44,680 --> 00:26:46,280
+this is not right let's let's do this
+
+800
+00:26:46,280 --> 00:26:49,000
+a little differently and that data that process
+
+801
+00:26:49,000 --> 00:26:49,380
+basically
+
+802
+00:26:49,380 --> 00:26:52,160
+that data is collected gets comes back in
+
+803
+00:26:52,160 --> 00:26:53,900
+and the model kind of uses that data
+
+804
+00:26:53,900 --> 00:26:54,900
+to try and figure out
+
+805
+00:26:54,900 --> 00:26:57,120
+which of the data can i kind of
+
+806
+00:26:57,120 --> 00:26:58,560
+kind of like should i reinforce should i
+
+807
+00:26:58,560 --> 00:26:59,660
+do more of and which of it
+
+808
+00:26:59,660 --> 00:27:01,880
+should i do less of and uh and
+
+809
+00:27:01,880 --> 00:27:04,340
+basically improve itself over time basically that's kind
+
+810
+00:27:04,340 --> 00:27:04,840
+of the big
+
+811
+00:27:04,840 --> 00:27:08,800
+distinction and having that stream of real data
+
+812
+00:27:08,800 --> 00:27:11,020
+coming in is kind of the missing piece
+
+813
+00:27:11,020 --> 00:27:11,680
+that carol
+
+814
+00:27:11,680 --> 00:27:13,740
+was talking about that allows us to now
+
+815
+00:27:13,740 --> 00:27:16,380
+escape this plateau that would otherwise we were
+
+816
+00:27:16,380 --> 00:27:16,820
+finding we
+
+817
+00:27:16,820 --> 00:27:20,080
+were kind of like getting to yeah and
+
+818
+00:27:20,080 --> 00:27:22,320
+i guess in my brain i i think
+
+819
+00:27:22,320 --> 00:27:23,900
+of rl is you know you're hill
+
+820
+00:27:23,900 --> 00:27:25,940
+climbing on your reward signal and so how
+
+821
+00:27:25,940 --> 00:27:27,820
+do you make sure you're how do you
+
+822
+00:27:27,820 --> 00:27:28,740
+make sure you're generalizing
+
+823
+00:27:28,740 --> 00:27:30,500
+as you as you hill climb on these
+
+824
+00:27:30,500 --> 00:27:33,020
+specific tasks the way we're thinking about this
+
+825
+00:27:33,020 --> 00:27:33,280
+for
+
+826
+00:27:33,280 --> 00:27:35,180
+for this specific kind of problem is like
+
+827
+00:27:35,180 --> 00:27:37,760
+you have this sort of general model and
+
+828
+00:27:37,760 --> 00:27:38,220
+it achieves
+
+829
+00:27:38,780 --> 00:27:41,320
+some performance that isn't isn't great and now
+
+830
+00:27:41,320 --> 00:27:45,680
+your first goal actually isn't to further generalize
+
+831
+00:27:45,680 --> 00:27:47,280
+you want to kind of solve this specific
+
+832
+00:27:47,280 --> 00:27:49,780
+task first right like so we deploy it
+
+833
+00:27:49,780 --> 00:27:50,660
+and we have we've
+
+834
+00:27:50,660 --> 00:27:52,420
+picked like three four tasks so it has
+
+835
+00:27:52,420 --> 00:27:54,860
+to generalize across tasks nonetheless the method has
+
+836
+00:27:54,860 --> 00:27:55,600
+to generalize
+
+837
+00:27:55,600 --> 00:27:57,740
+but when you're actually kind of deploying it
+
+838
+00:27:57,740 --> 00:27:59,600
+and trying to start this rl process you
+
+839
+00:27:59,600 --> 00:28:00,060
+really care
+
+840
+00:28:00,060 --> 00:28:02,580
+about let's make sure i nail down this
+
+841
+00:28:02,580 --> 00:28:04,800
+task and i kind of nail it down
+
+842
+00:28:04,800 --> 00:28:07,580
+in a way where i can um where
+
+843
+00:28:07,580 --> 00:28:07,700
+i
+
+844
+00:28:07,700 --> 00:28:10,280
+can can solve it from many different positions
+
+845
+00:28:10,280 --> 00:28:11,920
+and i can deal with all the long
+
+846
+00:28:11,920 --> 00:28:13,080
+tail of failures that i
+
+847
+00:28:13,080 --> 00:28:15,420
+that i will encounter right so and sometimes
+
+848
+00:28:15,420 --> 00:28:18,960
+the the generalization and the performance here may
+
+849
+00:28:18,960 --> 00:28:19,480
+seem at
+
+850
+00:28:19,480 --> 00:28:20,640
+odds when you look at it from like
+
+851
+00:28:20,640 --> 00:28:22,140
+oh wait but now you're like just doing
+
+852
+00:28:22,140 --> 00:28:24,920
+this one task but um but
+
+853
+00:28:24,920 --> 00:28:27,040
+really at the end of the day what
+
+854
+00:28:27,040 --> 00:28:29,340
+what we want to do is we have
+
+855
+00:28:29,340 --> 00:28:31,260
+the same method the same process that
+
+856
+00:28:31,260 --> 00:28:33,080
+deploys to each of these tasks and then
+
+857
+00:28:33,080 --> 00:28:34,760
+kind of gets the performance high and then
+
+858
+00:28:34,760 --> 00:28:35,780
+we can have all of
+
+859
+00:28:35,780 --> 00:28:37,240
+that data across all of these tasks and
+
+860
+00:28:37,240 --> 00:28:39,060
+we can bring that data back basically right
+
+861
+00:28:39,060 --> 00:28:40,900
+so in in that sense
+
+862
+00:28:40,900 --> 00:28:42,720
+it's not actually at odds you know if
+
+863
+00:28:42,720 --> 00:28:44,860
+that makes sense yeah that makes sense how
+
+864
+00:28:44,860 --> 00:28:46,160
+much of the rl are you
+
+865
+00:28:46,160 --> 00:28:48,100
+doing it sounds like there's a there's an
+
+866
+00:28:48,100 --> 00:28:51,020
+in real life rl can you talk a
+
+867
+00:28:51,020 --> 00:28:51,720
+little bit about the approach
+
+868
+00:28:51,720 --> 00:28:53,100
+to how much rl you're doing in sim
+
+869
+00:28:53,100 --> 00:28:56,280
+versus in real life um so we have
+
+870
+00:28:56,280 --> 00:28:59,200
+taken a quite uh like real world
+
+871
+00:28:59,200 --> 00:29:02,440
+first approach as opposed to uh using sim
+
+872
+00:29:02,440 --> 00:29:04,740
+we are exploring sim of course uh as
+
+873
+00:29:04,740 --> 00:29:06,880
+well as uh as a research
+
+874
+00:29:06,880 --> 00:29:09,120
+tool but all the rl we've done for
+
+875
+00:29:09,120 --> 00:29:11,140
+the pi star six paper is actually on
+
+876
+00:29:11,140 --> 00:29:12,900
+real systems in the real world
+
+877
+00:29:12,900 --> 00:29:14,740
+and the reason for that is that it's
+
+878
+00:29:14,740 --> 00:29:17,480
+actually really really hard to model again we
+
+879
+00:29:17,480 --> 00:29:17,920
+can we can
+
+880
+00:29:17,920 --> 00:29:19,920
+get back to the long tail of failures
+
+881
+00:29:19,920 --> 00:29:21,260
+that you see when you when you do
+
+882
+00:29:21,260 --> 00:29:22,760
+deployments i can give you a
+
+883
+00:29:22,760 --> 00:29:24,640
+lot of examples from the tasks that we've
+
+884
+00:29:24,640 --> 00:29:27,160
+actually looked at for this release where there
+
+885
+00:29:27,160 --> 00:29:27,560
+were failure
+
+886
+00:29:27,560 --> 00:29:29,820
+modes that we we saw that if you
+
+887
+00:29:29,820 --> 00:29:31,760
+had just done done a simulation of it
+
+888
+00:29:31,760 --> 00:29:32,720
+you might not have seen it
+
+889
+00:29:32,720 --> 00:29:35,300
+so to give you an example um we
+
+890
+00:29:35,300 --> 00:29:37,340
+have this one task which is uh you
+
+891
+00:29:37,340 --> 00:29:38,620
+have to build a box right so this
+
+892
+00:29:38,620 --> 00:29:38,820
+is an
+
+893
+00:29:38,820 --> 00:29:41,900
+actual deployment task where the goal is um
+
+894
+00:29:41,900 --> 00:29:45,300
+we build these little uh cardboard boxes to
+
+895
+00:29:45,300 --> 00:29:45,840
+put chocolate
+
+896
+00:29:45,840 --> 00:29:48,100
+into such that uh they can then be
+
+897
+00:29:48,100 --> 00:29:51,000
+packaged up and and and sent out basically
+
+898
+00:29:51,000 --> 00:29:52,020
+so that's building a
+
+899
+00:29:52,020 --> 00:29:55,360
+chocolate box basically um and building this box
+
+900
+00:29:55,360 --> 00:29:58,120
+uh initially you know worked great and then
+
+901
+00:29:58,120 --> 00:29:58,700
+there is
+
+902
+00:29:58,700 --> 00:30:01,540
+new shipments of boxes coming in and they
+
+903
+00:30:01,540 --> 00:30:03,680
+come in as like a flattened sheet of
+
+904
+00:30:03,680 --> 00:30:05,320
+cardboard and then these
+
+905
+00:30:05,320 --> 00:30:07,280
+cardboards that came in in this new shipment
+
+906
+00:30:07,280 --> 00:30:10,140
+were kind of not perfectly perforated so they
+
+907
+00:30:10,140 --> 00:30:10,240
+were
+
+908
+00:30:10,240 --> 00:30:12,300
+sticking together right and then the robot starts
+
+909
+00:30:12,300 --> 00:30:14,160
+like grabbing them puts them on a table
+
+910
+00:30:14,160 --> 00:30:15,020
+to to to
+
+911
+00:30:15,020 --> 00:30:16,160
+try to build this box and like it
+
+912
+00:30:16,160 --> 00:30:18,060
+has two boxes suddenly on the table right
+
+913
+00:30:18,060 --> 00:30:18,940
+and this is something
+
+914
+00:30:18,940 --> 00:30:20,380
+that wouldn't happen in sim if you had
+
+915
+00:30:20,380 --> 00:30:23,080
+written like a nice simulator that where you
+
+916
+00:30:23,080 --> 00:30:23,640
+would just get
+
+917
+00:30:23,640 --> 00:30:26,680
+individual cardboards and like fold them um and
+
+918
+00:30:26,680 --> 00:30:27,780
+so now you have to deal with this
+
+919
+00:30:27,780 --> 00:30:28,680
+problem right and if
+
+920
+00:30:28,680 --> 00:30:30,320
+you just learn everything in sim and then
+
+921
+00:30:30,320 --> 00:30:32,180
+try to deploy it you wouldn't encounter it
+
+922
+00:30:32,180 --> 00:30:33,060
+so we encounter it
+
+923
+00:30:33,060 --> 00:30:36,740
+and then our um kind of method can
+
+924
+00:30:36,740 --> 00:30:38,340
+kind of figure out that oh actually what
+
+925
+00:30:38,340 --> 00:30:39,140
+i need to do is i need to
+
+926
+00:30:39,140 --> 00:30:41,320
+separate this and i can i need to
+
+927
+00:30:41,320 --> 00:30:44,320
+move that uh that uh second piece back
+
+928
+00:30:44,320 --> 00:30:45,240
+and and build the box
+
+929
+00:30:45,240 --> 00:30:47,020
+basically and we see a lot of successes
+
+930
+00:30:47,020 --> 00:30:48,920
+for a rel being applied in sim and
+
+931
+00:30:48,920 --> 00:30:49,940
+transferred to the real
+
+932
+00:30:49,940 --> 00:30:54,160
+world especially in locomotion and we we haven't
+
+933
+00:30:54,160 --> 00:30:57,080
+really seen that kind of success in manipulation
+
+934
+00:30:57,660 --> 00:31:00,080
+for for these kind of methods and i
+
+935
+00:31:00,080 --> 00:31:02,060
+think maybe one reason for that is that
+
+936
+00:31:02,060 --> 00:31:03,540
+with with locomotion
+
+937
+00:31:03,540 --> 00:31:06,000
+with trying to move around it seems that
+
+938
+00:31:06,000 --> 00:31:07,800
+the the biggest part of the problem is
+
+939
+00:31:07,800 --> 00:31:08,480
+modeling your own
+
+940
+00:31:08,480 --> 00:31:10,620
+body so if you can figure out how
+
+941
+00:31:10,620 --> 00:31:13,440
+to model you yourself as a robot you're
+
+942
+00:31:13,440 --> 00:31:14,320
+basically like almost
+
+943
+00:31:14,320 --> 00:31:17,820
+there so uh you can do this modeling
+
+944
+00:31:17,820 --> 00:31:20,840
+simulation exercise once because you only can do
+
+945
+00:31:20,840 --> 00:31:21,660
+it you only have
+
+946
+00:31:21,660 --> 00:31:23,620
+to do it for you yourself for this
+
+947
+00:31:23,620 --> 00:31:25,720
+one robot and then you're basically done if
+
+948
+00:31:25,720 --> 00:31:26,220
+you do it really
+
+949
+00:31:26,220 --> 00:31:29,700
+really well it should transfer with manipulation however
+
+950
+00:31:29,700 --> 00:31:31,180
+the problem is not how you move your
+
+951
+00:31:31,180 --> 00:31:31,340
+own
+
+952
+00:31:31,340 --> 00:31:33,300
+body it's how the world reacts to it
+
+953
+00:31:33,300 --> 00:31:36,080
+you're actually changing the world around you it's
+
+954
+00:31:36,080 --> 00:31:36,740
+not difficult to
+
+955
+00:31:36,740 --> 00:31:38,040
+figure out how to move your hand from
+
+956
+00:31:38,040 --> 00:31:39,940
+a to b it's difficult to figure out
+
+957
+00:31:39,940 --> 00:31:41,620
+how this affects the objects
+
+958
+00:31:41,620 --> 00:31:44,140
+you're interacting with and now the problem is
+
+959
+00:31:44,140 --> 00:31:46,740
+no longer just modeling your own robot you
+
+960
+00:31:46,740 --> 00:31:47,480
+have to model
+
+961
+00:31:47,480 --> 00:31:50,000
+the entire world right like every single object
+
+962
+00:31:50,000 --> 00:31:51,980
+that you might be interacting with every single
+
+963
+00:31:51,980 --> 00:31:54,360
+task you can think of and that's where
+
+964
+00:31:54,360 --> 00:31:57,380
+we see scaling problems and that's i think
+
+965
+00:31:57,380 --> 00:31:58,140
+why we haven't
+
+966
+00:31:58,140 --> 00:32:00,460
+seen those kind of methods be as effective
+
+967
+00:32:00,460 --> 00:32:03,860
+in in manipulation what was the headline of
+
+968
+00:32:03,860 --> 00:32:04,320
+the results
+
+969
+00:32:04,320 --> 00:32:07,720
+from pi star 0.6 and you know
+
+970
+00:32:07,720 --> 00:32:09,580
+where where did you see the model get
+
+971
+00:32:09,580 --> 00:32:11,320
+after rl on the on the test that
+
+972
+00:32:11,320 --> 00:32:13,100
+you cared about and what do you think
+
+973
+00:32:13,100 --> 00:32:15,240
+that means about your overall training recipe going
+
+974
+00:32:15,240 --> 00:32:15,540
+forward
+
+975
+00:32:15,540 --> 00:32:18,500
+right yeah so i think for me the
+
+976
+00:32:18,500 --> 00:32:21,060
+most impressive thing honestly for me personally to
+
+977
+00:32:21,060 --> 00:32:21,720
+see was just
+
+978
+00:32:21,720 --> 00:32:24,100
+have these models run for hours at a
+
+979
+00:32:24,100 --> 00:32:27,220
+time recover from lots of different failures and
+
+980
+00:32:27,220 --> 00:32:27,760
+and basically
+
+981
+00:32:27,760 --> 00:32:29,960
+just keep going and at the same time
+
+982
+00:32:29,960 --> 00:32:32,380
+do that at a at a at a
+
+983
+00:32:32,380 --> 00:32:34,660
+rate that is actually much better than
+
+984
+00:32:34,660 --> 00:32:36,460
+the initial model that we started with right
+
+985
+00:32:36,460 --> 00:32:38,820
+so the headline figures where we increase kind
+
+986
+00:32:38,820 --> 00:32:38,980
+of
+
+987
+00:32:38,980 --> 00:32:41,700
+throughput of the policies by over 2x on
+
+988
+00:32:41,700 --> 00:32:43,520
+on these three tasks so there's one task
+
+989
+00:32:43,520 --> 00:32:44,080
+was this box
+
+990
+00:32:44,080 --> 00:32:45,800
+building task i already talked about one was
+
+991
+00:32:45,800 --> 00:32:48,820
+the making a coffee with an actual kind
+
+992
+00:32:48,820 --> 00:32:49,280
+of industrial
+
+993
+00:32:49,280 --> 00:32:52,520
+scale espresso machine and the other one was
+
+994
+00:32:52,520 --> 00:32:55,460
+kind of like folding laundry and so for
+
+995
+00:32:55,460 --> 00:32:55,880
+each of them we
+
+996
+00:32:55,880 --> 00:32:57,860
+managed to like make the base policy that
+
+997
+00:32:57,860 --> 00:33:00,140
+was trained just from demonstrations much much faster
+
+998
+00:33:00,700 --> 00:33:03,020
+and also make it be able to recover
+
+999
+00:33:03,020 --> 00:33:06,320
+from failures much much better and so seeing
+
+1000
+00:33:06,320 --> 00:33:08,060
+that actually in action
+
+1001
+00:33:08,060 --> 00:33:10,140
+when you you just you sit there right
+
+1002
+00:33:10,140 --> 00:33:11,760
+we have if you go to our website
+
+1003
+00:33:11,760 --> 00:33:13,220
+you you can look at the videos
+
+1004
+00:33:13,840 --> 00:33:17,100
+we have the robot soft coffee for 13
+
+1005
+00:33:17,100 --> 00:33:20,140
+hours in a row or fold laundry for
+
+1006
+00:33:20,140 --> 00:33:21,880
+four hours things like that
+
+1007
+00:33:21,880 --> 00:33:25,620
+um actually seeing that life changes the way
+
+1008
+00:33:25,620 --> 00:33:28,640
+you think about these models you know changes
+
+1009
+00:33:28,640 --> 00:33:29,440
+the way at
+
+1010
+00:33:29,440 --> 00:33:32,220
+least i think about um it actually being
+
+1011
+00:33:32,220 --> 00:33:34,360
+realistic that we can deploy them that that
+
+1012
+00:33:34,360 --> 00:33:35,280
+we can do it in a way
+
+1013
+00:33:35,280 --> 00:33:37,840
+where it's not just a toy demo which
+
+1014
+00:33:37,840 --> 00:33:39,960
+is shown once but is actually kind of
+
+1015
+00:33:39,960 --> 00:33:41,480
+doing the real thing fully
+
+1016
+00:33:41,480 --> 00:33:43,680
+and and that's been really a challenge in
+
+1017
+00:33:43,680 --> 00:33:45,140
+robotics that i don't think many people are
+
+1018
+00:33:45,140 --> 00:33:45,600
+aware of
+
+1019
+00:33:45,600 --> 00:33:47,140
+yeah like you know you see so many
+
+1020
+00:33:47,140 --> 00:33:49,700
+videos of robots doing cool things and you
+
+1021
+00:33:49,700 --> 00:33:50,540
+know we post these videos
+
+1022
+00:33:50,540 --> 00:33:53,220
+too they're like there's basically like anything you
+
+1023
+00:33:53,220 --> 00:33:54,940
+want robot to do there's probably already a
+
+1024
+00:33:54,940 --> 00:33:55,140
+video
+
+1025
+00:33:55,140 --> 00:33:58,440
+of a robot doing that um but you
+
+1026
+00:33:58,440 --> 00:33:59,720
+know you can take as many takes as
+
+1027
+00:33:59,720 --> 00:34:01,780
+you will as you want you can you
+
+1028
+00:34:01,780 --> 00:34:03,740
+keep on recording until you get the perfect
+
+1029
+00:34:03,740 --> 00:34:06,880
+shot um and the problem that i think
+
+1030
+00:34:06,880 --> 00:34:08,060
+everybody encounters
+
+1031
+00:34:08,060 --> 00:34:10,580
+is the reliability of these models how performant
+
+1032
+00:34:10,580 --> 00:34:12,240
+they are how fast they can they can
+
+1033
+00:34:12,240 --> 00:34:13,100
+go about the
+
+1034
+00:34:13,100 --> 00:34:15,120
+task how how for how long you can
+
+1035
+00:34:15,120 --> 00:34:18,380
+actually deploy them without failure and i think
+
+1036
+00:34:18,380 --> 00:34:19,340
+this is the biggest
+
+1037
+00:34:19,340 --> 00:34:21,620
+bottleneck in terms of deploying these models in
+
+1038
+00:34:21,620 --> 00:34:23,600
+the real world because you know if you
+
+1039
+00:34:23,600 --> 00:34:24,860
+if if they break
+
+1040
+00:34:24,860 --> 00:34:27,560
+every every other trial they're not really deployable
+
+1041
+00:34:27,560 --> 00:34:30,080
+right and this is this is i think
+
+1042
+00:34:30,080 --> 00:34:30,400
+the most
+
+1043
+00:34:30,400 --> 00:34:32,640
+important breakthrough for us with this pi star
+
+1044
+00:34:32,640 --> 00:34:35,900
+or six release that we can actually start
+
+1045
+00:34:35,900 --> 00:34:36,460
+getting to
+
+1046
+00:34:36,460 --> 00:34:38,720
+a place where they are deployable yeah where
+
+1047
+00:34:38,720 --> 00:34:40,340
+we use these robots in our office to
+
+1048
+00:34:40,340 --> 00:34:41,460
+serve us coffee or we
+
+1049
+00:34:41,460 --> 00:34:43,420
+can give them to to people at pi
+
+1050
+00:34:43,420 --> 00:34:45,400
+to fold laundry in their home or we
+
+1051
+00:34:45,400 --> 00:34:47,260
+can deploy them uh and have them
+
+1052
+00:34:47,260 --> 00:34:50,020
+fold boxes for real and that is really
+
+1053
+00:34:50,020 --> 00:34:52,740
+really exciting should we think about what you
+
+1054
+00:34:52,740 --> 00:34:53,100
+guys are doing
+
+1055
+00:34:53,100 --> 00:34:55,960
+with reinforcement learning as primarily a you know
+
+1056
+00:34:55,960 --> 00:35:00,960
+a customer deployment reliability uh points then
+
+1057
+00:35:00,960 --> 00:35:02,220
+like you can now make sure that you
+
+1058
+00:35:02,220 --> 00:35:04,840
+can you know go reliably deploy the the
+
+1059
+00:35:04,840 --> 00:35:06,060
+coffee making model on a
+
+1060
+00:35:06,060 --> 00:35:07,800
+customer site and it's it's going to be
+
+1061
+00:35:07,800 --> 00:35:09,900
+fast enough it's it's not going to fail
+
+1062
+00:35:09,900 --> 00:35:11,100
+over long time horizons
+
+1063
+00:35:11,600 --> 00:35:13,400
+um so it's it's more of a customer
+
+1064
+00:35:13,400 --> 00:35:16,780
+deployment innovations versus like a fundamental kind of
+
+1065
+00:35:16,780 --> 00:35:17,680
+capability
+
+1066
+00:35:17,680 --> 00:35:20,480
+um innovation or is it both i think
+
+1067
+00:35:20,480 --> 00:35:22,460
+it's both i think i mean carol you
+
+1068
+00:35:22,460 --> 00:35:23,260
+said this a little bit
+
+1069
+00:35:23,260 --> 00:35:26,580
+earlier i think um to some extent the
+
+1070
+00:35:26,580 --> 00:35:28,620
+robots that we really really want right the
+
+1071
+00:35:28,620 --> 00:35:29,380
+robot that you want
+
+1072
+00:35:29,380 --> 00:35:31,600
+at home which can do your laundry do
+
+1073
+00:35:31,600 --> 00:35:34,120
+your dishes cook for you drive around and
+
+1074
+00:35:34,120 --> 00:35:34,900
+also the robot that
+
+1075
+00:35:34,900 --> 00:35:37,420
+people want in these smaller businesses maybe solving
+
+1076
+00:35:37,420 --> 00:35:39,440
+a real problem that they have that they
+
+1077
+00:35:39,440 --> 00:35:40,040
+don't want
+
+1078
+00:35:40,040 --> 00:35:41,620
+to automate in the classical way because it's
+
+1079
+00:35:41,620 --> 00:35:44,360
+too expensive like building a chocolate box those
+
+1080
+00:35:44,360 --> 00:35:44,620
+are
+
+1081
+00:35:44,620 --> 00:35:47,100
+things where the robot has to be reliable
+
+1082
+00:35:47,100 --> 00:35:48,580
+it has to be good and it has
+
+1083
+00:35:48,580 --> 00:35:49,860
+to have the capability to do
+
+1084
+00:35:49,860 --> 00:35:52,260
+a new task that it hasn't seen in
+
+1085
+00:35:52,260 --> 00:35:55,020
+initial training stages i think it's unrealistic for
+
+1086
+00:35:55,020 --> 00:35:55,620
+us to assume
+
+1087
+00:35:55,620 --> 00:35:59,180
+that you know we can just go with
+
+1088
+00:35:59,180 --> 00:36:01,900
+like more and more human data collection go
+
+1089
+00:36:01,900 --> 00:36:03,060
+bigger bigger bigger we will
+
+1090
+00:36:03,060 --> 00:36:04,800
+do that but there is always going to
+
+1091
+00:36:04,800 --> 00:36:06,640
+be a limit to to how good and
+
+1092
+00:36:06,640 --> 00:36:08,320
+how much data you can you can get
+
+1093
+00:36:08,320 --> 00:36:09,940
+and how good the initial policy is going
+
+1094
+00:36:09,940 --> 00:36:11,680
+to be so i think it is that
+
+1095
+00:36:11,680 --> 00:36:13,060
+what what you said in terms of
+
+1096
+00:36:13,060 --> 00:36:15,700
+we we want deployment we need this but
+
+1097
+00:36:15,700 --> 00:36:18,720
+also i think increasingly over the next years
+
+1098
+00:36:18,720 --> 00:36:19,080
+we will
+
+1099
+00:36:19,080 --> 00:36:21,300
+i expect we will see that we will
+
+1100
+00:36:21,300 --> 00:36:23,240
+do this deployment and that data will actually
+
+1101
+00:36:23,240 --> 00:36:24,260
+become really valuable
+
+1102
+00:36:24,260 --> 00:36:27,320
+as a source for pre-training for making
+
+1103
+00:36:27,320 --> 00:36:30,560
+our models better themselves and we'll rely more
+
+1104
+00:36:30,560 --> 00:36:31,180
+and more on
+
+1105
+00:36:31,180 --> 00:36:33,560
+autonomous data collection is my prediction at least
+
+1106
+00:36:33,560 --> 00:36:36,400
+uh over the next coming years to kind
+
+1107
+00:36:36,400 --> 00:36:37,360
+of build that
+
+1108
+00:36:37,360 --> 00:36:40,260
+a host of data that convex hull of
+
+1109
+00:36:40,260 --> 00:36:42,500
+all the tasks that we want robots uh
+
+1110
+00:36:42,500 --> 00:36:44,260
+eventually to do such that
+
+1111
+00:36:44,260 --> 00:36:47,560
+the models like ingest this and and becomes
+
+1112
+00:36:47,560 --> 00:36:49,760
+good at doing them and interpolating and i
+
+1113
+00:36:49,760 --> 00:36:50,120
+think of it
+
+1114
+00:36:50,120 --> 00:36:52,180
+as a new capability we haven't so far
+
+1115
+00:36:52,180 --> 00:36:53,960
+figured out how to learn from your own
+
+1116
+00:36:53,960 --> 00:36:55,500
+experience or there's been
+
+1117
+00:36:55,500 --> 00:36:57,240
+many attempts but i don't think we've seen
+
+1118
+00:36:57,240 --> 00:37:00,160
+it done at scale uh to like a
+
+1119
+00:37:00,160 --> 00:37:02,320
+very to to the extent that i
+
+1120
+00:37:02,320 --> 00:37:04,580
+actually shows a convincing result that allows you
+
+1121
+00:37:04,580 --> 00:37:07,620
+to deploy something yeah and this is why
+
+1122
+00:37:07,620 --> 00:37:07,860
+this
+
+1123
+00:37:07,860 --> 00:37:10,000
+result was was really really important to us
+
+1124
+00:37:10,000 --> 00:37:11,400
+we wanted to get to the point where
+
+1125
+00:37:11,400 --> 00:37:12,140
+they can learn from
+
+1126
+00:37:12,140 --> 00:37:14,940
+their own experience uh because you know similarly
+
+1127
+00:37:14,940 --> 00:37:16,940
+to to how we learn you know you
+
+1128
+00:37:16,940 --> 00:37:18,060
+can learn a little
+
+1129
+00:37:18,060 --> 00:37:21,080
+bit from watching videos and practice and then
+
+1130
+00:37:21,080 --> 00:37:23,220
+you know maybe learning from others but at
+
+1131
+00:37:23,220 --> 00:37:23,520
+some point
+
+1132
+00:37:23,520 --> 00:37:25,220
+you need to learn on the job you
+
+1133
+00:37:25,220 --> 00:37:26,780
+need to try the thing yourself you need
+
+1134
+00:37:26,780 --> 00:37:27,800
+to see how your actions
+
+1135
+00:37:27,800 --> 00:37:29,960
+impact what you actually want to achieve yeah
+
+1136
+00:37:29,960 --> 00:37:32,240
+and make your own conclusions and try to
+
+1137
+00:37:32,240 --> 00:37:32,860
+learn that way
+
+1138
+00:37:32,860 --> 00:37:34,320
+yeah and i think this is the first
+
+1139
+00:37:34,320 --> 00:37:36,440
+step towards that you're reminding me of the
+
+1140
+00:37:36,440 --> 00:37:37,420
+uh do you guys read
+
+1141
+00:37:37,420 --> 00:37:39,680
+the rich satin age of experience yeah for
+
+1142
+00:37:39,680 --> 00:37:41,420
+this year i love i thought it was
+
+1143
+00:37:41,420 --> 00:37:43,600
+very profound um do you think
+
+1144
+00:37:43,600 --> 00:37:47,620
+that this unlocks kind of continual learning in
+
+1145
+00:37:47,620 --> 00:37:49,640
+robotics real will this be part of that
+
+1146
+00:37:49,640 --> 00:37:50,820
+it kind of
+
+1147
+00:37:50,820 --> 00:37:53,260
+depends what people mean by continual learning i
+
+1148
+00:37:53,260 --> 00:37:56,580
+think it's um it's definitely more continual than
+
+1149
+00:37:56,580 --> 00:37:57,040
+what
+
+1150
+00:37:57,040 --> 00:37:58,580
+we've done in the past where you know
+
+1151
+00:37:58,580 --> 00:38:01,080
+you have like a big pre-training mixture
+
+1152
+00:38:01,080 --> 00:38:01,820
+and maybe like
+
+1153
+00:38:01,820 --> 00:38:04,580
+a post-training mixture and you like you
+
+1154
+00:38:04,580 --> 00:38:06,400
+know you you you sit down you work
+
+1155
+00:38:06,400 --> 00:38:07,340
+really really hard and
+
+1156
+00:38:07,340 --> 00:38:09,220
+then you come up with an artifact and
+
+1157
+00:38:09,220 --> 00:38:10,980
+like that's it yeah right like the artifact
+
+1158
+00:38:10,980 --> 00:38:12,320
+is done and there's
+
+1159
+00:38:12,320 --> 00:38:13,500
+not much you can do to change it
+
+1160
+00:38:13,500 --> 00:38:16,400
+now this is a much more of a
+
+1161
+00:38:16,400 --> 00:38:18,820
+living thing right like we we start
+
+1162
+00:38:18,820 --> 00:38:21,320
+with a process similar to this but then
+
+1163
+00:38:21,320 --> 00:38:23,140
+you deploy it and then it keeps on
+
+1164
+00:38:23,140 --> 00:38:24,840
+learning right so it's much
+
+1165
+00:38:24,840 --> 00:38:27,160
+more continual in that sense that it tries
+
+1166
+00:38:27,160 --> 00:38:29,060
+new things it tries to learn from its
+
+1167
+00:38:29,060 --> 00:38:29,640
+own experience
+
+1168
+00:38:29,640 --> 00:38:32,620
+and it keeps on getting better yeah now
+
+1169
+00:38:32,620 --> 00:38:34,840
+i i think there is still room to
+
+1170
+00:38:34,840 --> 00:38:35,960
+for it to be much more
+
+1171
+00:38:35,960 --> 00:38:38,800
+continual where it can acquire new skills that
+
+1172
+00:38:38,800 --> 00:38:41,800
+way or it can be even much faster
+
+1173
+00:38:41,800 --> 00:38:43,620
+in doing this yeah um
+
+1174
+00:38:43,620 --> 00:38:46,060
+it can probably reason throughout this process so
+
+1175
+00:38:46,060 --> 00:38:48,760
+i i think there is a spectrum of
+
+1176
+00:38:48,760 --> 00:38:49,920
+like how much you
+
+1177
+00:38:49,920 --> 00:38:52,560
+can learn on the job and this is
+
+1178
+00:38:52,560 --> 00:38:54,160
+really promising because it shows that you can
+
+1179
+00:38:54,160 --> 00:38:55,220
+do it but i think
+
+1180
+00:38:55,220 --> 00:38:57,920
+we can make it much much better yeah
+
+1181
+00:38:57,920 --> 00:38:59,380
+i would agree i would say we're at
+
+1182
+00:38:59,380 --> 00:39:01,140
+the very beginning of of this
+
+1183
+00:39:01,140 --> 00:39:03,220
+right and it's not it's not con it's
+
+1184
+00:39:03,220 --> 00:39:05,840
+definitely not continual learning in the classical sense
+
+1185
+00:39:05,840 --> 00:39:06,020
+that
+
+1186
+00:39:06,020 --> 00:39:07,440
+people would have thought about it of like
+
+1187
+00:39:07,440 --> 00:39:09,280
+data streams and then the the whole thing
+
+1188
+00:39:09,280 --> 00:39:09,880
+churns and it
+
+1189
+00:39:09,880 --> 00:39:13,040
+just uh ultimately leads leads all the way
+
+1190
+00:39:13,040 --> 00:39:14,600
+to i don't know agi or something like
+
+1191
+00:39:14,600 --> 00:39:16,060
+this yeah but you know
+
+1192
+00:39:16,060 --> 00:39:17,780
+it's it's a first step i i would
+
+1193
+00:39:17,780 --> 00:39:19,360
+say and we're moving in the right direction
+
+1194
+00:39:19,360 --> 00:39:19,800
+there and there's
+
+1195
+00:39:19,800 --> 00:39:21,220
+lots more to be done and i think
+
+1196
+00:39:21,220 --> 00:39:23,680
+i will say from even from this release
+
+1197
+00:39:23,680 --> 00:39:25,920
+like i was personally impressed
+
+1198
+00:39:25,920 --> 00:39:28,860
+and to some extent you know shocked how
+
+1199
+00:39:28,860 --> 00:39:31,640
+good these models actually are at picking up
+
+1200
+00:39:31,640 --> 00:39:32,580
+little things that
+
+1201
+00:39:32,580 --> 00:39:34,240
+you put back into the data i was
+
+1202
+00:39:34,240 --> 00:39:37,040
+surprised that even with just like human corrections
+
+1203
+00:39:37,040 --> 00:39:38,840
+for um there was
+
+1204
+00:39:38,840 --> 00:39:41,640
+one example for uh for tamping when when
+
+1205
+00:39:41,640 --> 00:39:43,980
+we do so tamping is a specific part
+
+1206
+00:39:43,980 --> 00:39:45,340
+of making an espresso
+
+1207
+00:39:45,340 --> 00:39:46,920
+right you like put the the beans and
+
+1208
+00:39:46,920 --> 00:39:48,780
+then you have to tamp down the best
+
+1209
+00:39:48,780 --> 00:39:50,360
+part yeah the best part you
+
+1210
+00:39:50,360 --> 00:39:52,340
+have to tamp tamp down i don't get
+
+1211
+00:39:52,340 --> 00:39:55,320
+it myself so there you go see i'm
+
+1212
+00:39:55,320 --> 00:39:57,620
+not another skill issue
+
+1213
+00:39:58,200 --> 00:40:00,540
+i'm gonna get it just right that's right
+
+1214
+00:40:00,540 --> 00:40:02,460
+and so our robot in the beginning like
+
+1215
+00:40:02,460 --> 00:40:03,560
+tamped way too hard
+
+1216
+00:40:03,560 --> 00:40:06,080
+because uh it's just happened to be the
+
+1217
+00:40:06,080 --> 00:40:08,000
+case that you know the initial human demonstrations
+
+1218
+00:40:08,000 --> 00:40:09,680
+were just making sure that you know let's
+
+1219
+00:40:09,680 --> 00:40:11,180
+make sure the coffee grounds are flat so
+
+1220
+00:40:11,180 --> 00:40:11,820
+we can put it in
+
+1221
+00:40:11,820 --> 00:40:13,880
+um and then the robot was like tamping
+
+1222
+00:40:13,880 --> 00:40:15,500
+really hard and like almost lifting itself off
+
+1223
+00:40:15,500 --> 00:40:16,000
+the table when
+
+1224
+00:40:16,000 --> 00:40:17,860
+we looked at it that's that's a bit
+
+1225
+00:40:17,860 --> 00:40:19,940
+much and so with just i don't know
+
+1226
+00:40:19,940 --> 00:40:22,280
+it was i think 34 to 50 episodes
+
+1227
+00:40:22,280 --> 00:40:24,840
+there's a really small range of corrections that
+
+1228
+00:40:24,840 --> 00:40:26,800
+humans did and we feed that data back
+
+1229
+00:40:26,800 --> 00:40:27,220
+and the model
+
+1230
+00:40:27,220 --> 00:40:29,020
+actually starts like being much more gentle and
+
+1231
+00:40:29,020 --> 00:40:30,880
+doing the correct thing and i was really
+
+1232
+00:40:30,880 --> 00:40:31,240
+surprised
+
+1233
+00:40:31,240 --> 00:40:32,740
+by that because you you think you know
+
+1234
+00:40:32,740 --> 00:40:34,480
+this model has been pre-trained on these
+
+1235
+00:40:34,480 --> 00:40:35,780
+millions and
+
+1236
+00:40:35,780 --> 00:40:37,300
+millions of episodes and now you're just doing
+
+1237
+00:40:37,300 --> 00:40:39,640
+a little correction and that actually works so
+
+1238
+00:40:39,640 --> 00:40:41,800
+seeing that happen was was a thing that
+
+1239
+00:40:41,800 --> 00:40:44,040
+i think is pointing towards this continued learning
+
+1240
+00:40:44,040 --> 00:40:44,640
+part
+
+1241
+00:40:44,640 --> 00:40:46,720
+which i find impressive can i ask though
+
+1242
+00:40:46,720 --> 00:40:49,520
+and then the thing i'm still hung up
+
+1243
+00:40:49,520 --> 00:40:50,740
+on is generalization so
+
+1244
+00:40:50,740 --> 00:40:53,360
+as i learn how to tamp better does
+
+1245
+00:40:53,360 --> 00:40:55,100
+that make me better at folding boxes or
+
+1246
+00:40:55,100 --> 00:40:55,320
+not
+
+1247
+00:40:56,160 --> 00:41:00,860
+uh in this specific case no but the
+
+1248
+00:41:00,860 --> 00:41:03,300
+mechanism is the same that you can also
+
+1249
+00:41:03,300 --> 00:41:05,500
+employ to fix the oh
+
+1250
+00:41:05,500 --> 00:41:06,980
+i have two boxes in front of me
+
+1251
+00:41:06,980 --> 00:41:08,860
+that i sort of stuck together and i
+
+1252
+00:41:08,860 --> 00:41:10,160
+need to pull them apart right
+
+1253
+00:41:10,160 --> 00:41:13,000
+because you can get 30 corrections for the
+
+1254
+00:41:13,000 --> 00:41:15,480
+stamping part you get 30 corrections for the
+
+1255
+00:41:15,480 --> 00:41:16,380
+pulling boxes
+
+1256
+00:41:16,380 --> 00:41:19,820
+apart yeah but you get 30 corrections for
+
+1257
+00:41:19,820 --> 00:41:22,200
+oh you know this box wasn't like neatly
+
+1258
+00:41:22,200 --> 00:41:23,320
+folded together and
+
+1259
+00:41:23,320 --> 00:41:25,540
+all of this accumulates together to then give
+
+1260
+00:41:25,540 --> 00:41:29,160
+you this more generalized improvement okay so it's
+
+1261
+00:41:29,160 --> 00:41:29,220
+a
+
+1262
+00:41:29,220 --> 00:41:31,920
+repeatable recipe but they don't necessarily cross cross
+
+1263
+00:41:31,920 --> 00:41:34,820
+pollinate yeah i mean we i would expect
+
+1264
+00:41:34,820 --> 00:41:35,140
+that
+
+1265
+00:41:35,140 --> 00:41:37,220
+as we scale this up we might see
+
+1266
+00:41:37,220 --> 00:41:40,240
+also things actually kind of transfer from from
+
+1267
+00:41:40,240 --> 00:41:41,060
+a to b if there
+
+1268
+00:41:41,060 --> 00:41:43,720
+is motions that are kind of similar across
+
+1269
+00:41:43,720 --> 00:41:45,200
+tasks but at this point yeah i would
+
+1270
+00:41:45,200 --> 00:41:45,840
+say it's more like a
+
+1271
+00:41:45,840 --> 00:41:48,400
+repeatable recipe yeah and and yeah we we
+
+1272
+00:41:48,400 --> 00:41:50,840
+see a lot of generalization from pre-training
+
+1273
+00:41:50,840 --> 00:41:51,480
+where you train on
+
+1274
+00:41:51,480 --> 00:41:53,140
+more and more tasks more and more data
+
+1275
+00:41:53,140 --> 00:41:55,320
+you see that it's much easier to onboard
+
+1276
+00:41:55,320 --> 00:41:56,980
+a new task or you see
+
+1277
+00:41:56,980 --> 00:41:58,860
+tasks that appear zero shot that you didn't
+
+1278
+00:41:58,860 --> 00:42:02,940
+expect before and this keeps on improving we
+
+1279
+00:42:02,940 --> 00:42:04,240
+uh we kick off
+
+1280
+00:42:04,240 --> 00:42:06,680
+a pre-training run at certain cadence and
+
+1281
+00:42:06,680 --> 00:42:08,820
+every single time we start seeing that the
+
+1282
+00:42:08,820 --> 00:42:09,220
+model keeps
+
+1283
+00:42:09,220 --> 00:42:11,120
+on getting better because there's more data being
+
+1284
+00:42:11,120 --> 00:42:13,340
+fed in there's more improvements that we're making
+
+1285
+00:42:13,340 --> 00:42:13,520
+to
+
+1286
+00:42:13,520 --> 00:42:15,940
+the pre-training process and so on and
+
+1287
+00:42:15,940 --> 00:42:18,020
+i also suspect that as we have more
+
+1288
+00:42:18,020 --> 00:42:19,400
+and more of these models deployed
+
+1289
+00:42:19,400 --> 00:42:21,540
+doing all kinds of different tasks they also
+
+1290
+00:42:21,540 --> 00:42:24,680
+bring data back in and i think one
+
+1291
+00:42:24,680 --> 00:42:25,120
+way where
+
+1292
+00:42:25,120 --> 00:42:27,640
+we where i'm quite certain where we'll see
+
+1293
+00:42:27,640 --> 00:42:30,700
+more generalization is from that process that as
+
+1294
+00:42:30,700 --> 00:42:31,200
+you
+
+1295
+00:42:31,200 --> 00:42:34,280
+deploy these models the the data comes back
+
+1296
+00:42:34,280 --> 00:42:36,000
+the models get better you can deploy them
+
+1297
+00:42:36,000 --> 00:42:36,300
+more
+
+1298
+00:42:36,300 --> 00:42:38,480
+then the the models get better you can
+
+1299
+00:42:38,480 --> 00:42:40,420
+deploy them more and so on yeah and
+
+1300
+00:42:40,420 --> 00:42:41,840
+i think maybe it's worthwhile
+
+1301
+00:42:41,840 --> 00:42:43,800
+for this point that you brought up we
+
+1302
+00:42:43,800 --> 00:42:47,100
+haven't really talked about one like crucial detail
+
+1303
+00:42:47,100 --> 00:42:47,720
+aspect of
+
+1304
+00:42:47,720 --> 00:42:49,500
+this five star or six recipe which is
+
+1305
+00:42:49,500 --> 00:42:51,020
+that the model has kind of two parts
+
+1306
+00:42:51,020 --> 00:42:52,240
+one is the policy that
+
+1307
+00:42:52,240 --> 00:42:54,980
+is trying to like improve right via corrections
+
+1308
+00:42:54,980 --> 00:42:57,100
+and and rl feedback and the other part
+
+1309
+00:42:57,100 --> 00:42:57,880
+is how do you
+
+1310
+00:42:57,880 --> 00:42:59,980
+actually get this rl feedback right so we've
+
+1311
+00:42:59,980 --> 00:43:02,000
+talked a little bit i've mentioned like you
+
+1312
+00:43:02,000 --> 00:43:02,660
+know humans might
+
+1313
+00:43:02,660 --> 00:43:04,840
+correct and that's the human correction part and
+
+1314
+00:43:04,840 --> 00:43:07,280
+the rl feedback part is is a little
+
+1315
+00:43:07,280 --> 00:43:07,960
+different and it's
+
+1316
+00:43:07,960 --> 00:43:10,460
+kind of and already has some of these
+
+1317
+00:43:10,460 --> 00:43:13,060
+aspects of of generalization that i think you're
+
+1318
+00:43:13,060 --> 00:43:13,900
+you're like trying to
+
+1319
+00:43:13,900 --> 00:43:15,920
+search for which is that the way we
+
+1320
+00:43:15,920 --> 00:43:19,000
+do this is we we first basically get
+
+1321
+00:43:19,000 --> 00:43:21,500
+humans to uh to to tell us
+
+1322
+00:43:21,500 --> 00:43:24,740
+basically whether a specific attempt of making the
+
+1323
+00:43:24,740 --> 00:43:27,140
+coffee or doing the box was uh successful
+
+1324
+00:43:27,140 --> 00:43:27,700
+or not so
+
+1325
+00:43:27,700 --> 00:43:29,460
+there will be like human labels provided with
+
+1326
+00:43:29,460 --> 00:43:31,900
+these episodes and then we train something which
+
+1327
+00:43:31,900 --> 00:43:32,120
+is called
+
+1328
+00:43:32,120 --> 00:43:35,200
+a value function to try and predict basically
+
+1329
+00:43:35,200 --> 00:43:37,640
+from my given point of where i am
+
+1330
+00:43:37,640 --> 00:43:39,520
+in my in the task will i
+
+1331
+00:43:39,520 --> 00:43:43,600
+likely be succeeding or failing basically and this
+
+1332
+00:43:43,600 --> 00:43:45,780
+value function is then used as kind of
+
+1333
+00:43:45,780 --> 00:43:46,900
+a baseline to
+
+1334
+00:43:46,900 --> 00:43:50,320
+to decide whether for this data point should
+
+1335
+00:43:50,320 --> 00:43:52,220
+i like bump that up or should i
+
+1336
+00:43:52,220 --> 00:43:53,480
+bump that down depending on
+
+1337
+00:43:53,480 --> 00:43:56,800
+whether i expect that i will be uh
+
+1338
+00:43:56,800 --> 00:43:59,660
+moving towards success or or i'm more likely
+
+1339
+00:43:59,660 --> 00:44:00,700
+to move towards failure
+
+1340
+00:44:00,700 --> 00:44:02,840
+and one thing that we saw when we
+
+1341
+00:44:02,840 --> 00:44:04,860
+trained these value functions so those are trained
+
+1342
+00:44:04,860 --> 00:44:05,920
+basically from the same
+
+1343
+00:44:05,920 --> 00:44:08,480
+kind of backbone the same kind of model
+
+1344
+00:44:08,480 --> 00:44:11,740
+but they're pre-trained before the actual policy
+
+1345
+00:44:11,740 --> 00:44:12,140
+is trained
+
+1346
+00:44:12,140 --> 00:44:14,300
+that that actually runs the task when we
+
+1347
+00:44:14,300 --> 00:44:17,600
+train these value functions we see that adding
+
+1348
+00:44:17,600 --> 00:44:18,140
+more data
+
+1349
+00:44:18,140 --> 00:44:21,020
+from different tasks actually helps there and the
+
+1350
+00:44:21,020 --> 00:44:23,920
+model starts being actually really quite good at
+
+1351
+00:44:24,600 --> 00:44:26,700
+at least for for certain tasks and knowing
+
+1352
+00:44:26,700 --> 00:44:29,340
+when it will fail beforehand and before it
+
+1353
+00:44:29,340 --> 00:44:30,980
+is obvious for me
+
+1354
+00:44:30,980 --> 00:44:32,460
+for example when i look at a video
+
+1355
+00:44:32,460 --> 00:44:35,780
+of it trying to insert uh the um
+
+1356
+00:44:35,780 --> 00:44:38,900
+uh the porter filter thank you
+
+1357
+00:44:38,900 --> 00:44:41,720
+see i'm i'm not good at making it's
+
+1358
+00:44:41,720 --> 00:44:43,700
+trying to insert a porter filter into the
+
+1359
+00:44:43,700 --> 00:44:44,980
+the coffee machine it kind
+
+1360
+00:44:44,980 --> 00:44:47,220
+of knows that it doesn't quite have the
+
+1361
+00:44:47,220 --> 00:44:49,620
+right angle before that happens so like 30
+
+1362
+00:44:49,620 --> 00:44:50,820
+40 steps before that
+
+1363
+00:44:50,820 --> 00:44:52,900
+actually happens the value function kind of if
+
+1364
+00:44:52,900 --> 00:44:54,540
+you look at the prediction drops and and
+
+1365
+00:44:54,540 --> 00:44:55,120
+saying oh this
+
+1366
+00:44:55,120 --> 00:44:57,220
+is not good in this specific episode so
+
+1367
+00:44:57,220 --> 00:45:00,280
+i i shouldn't include this data interesting and
+
+1368
+00:45:00,280 --> 00:45:00,620
+this gets
+
+1369
+00:45:00,620 --> 00:45:02,580
+better with more data and more tasks and
+
+1370
+00:45:02,580 --> 00:45:04,380
+so this is an interesting counterpoint to the
+
+1371
+00:45:04,380 --> 00:45:05,320
+the carpathy
+
+1372
+00:45:05,320 --> 00:45:07,920
+like slurping bits from a straw thing right
+
+1373
+00:45:07,920 --> 00:45:09,460
+because you're not you're not waiting for that
+
+1374
+00:45:09,460 --> 00:45:09,900
+final bits
+
+1375
+00:45:09,900 --> 00:45:13,120
+at the end you're you're actually yes i
+
+1376
+00:45:13,120 --> 00:45:16,060
+think a rel is just like a such
+
+1377
+00:45:16,060 --> 00:45:17,480
+a vast field and there's so
+
+1378
+00:45:17,480 --> 00:45:20,820
+many different approaches to it and people often
+
+1379
+00:45:20,820 --> 00:45:23,620
+associate a rel with something like a policy
+
+1380
+00:45:23,620 --> 00:45:23,940
+gradient
+
+1381
+00:45:23,940 --> 00:45:27,880
+method or um you know very specific on
+
+1382
+00:45:27,880 --> 00:45:32,100
+policy learning approaches and to me a rel
+
+1383
+00:45:32,100 --> 00:45:32,440
+is more
+
+1384
+00:45:32,440 --> 00:45:34,500
+of a problem definition and there is many
+
+1385
+00:45:34,500 --> 00:45:36,920
+many approaches that get around the problem that
+
+1386
+00:45:36,920 --> 00:45:37,180
+you're
+
+1387
+00:45:37,180 --> 00:45:39,000
+referring to which is that you know you
+
+1388
+00:45:39,000 --> 00:45:40,440
+only get the reward at the very very
+
+1389
+00:45:40,440 --> 00:45:41,620
+end and it's not really
+
+1390
+00:45:41,620 --> 00:45:44,440
+scalable for very long horizon tasks there are
+
+1391
+00:45:44,440 --> 00:45:46,380
+things like value functions there are things like
+
+1392
+00:45:46,380 --> 00:45:48,660
+temporal difference learning that try to get around
+
+1393
+00:45:48,660 --> 00:45:50,980
+this problem where you constantly make predictions
+
+1394
+00:45:50,980 --> 00:45:52,940
+and you do it in a sequential way
+
+1395
+00:45:52,940 --> 00:45:56,380
+and this is maybe another one of these
+
+1396
+00:45:56,380 --> 00:45:57,640
+one of these things where
+
+1397
+00:45:57,640 --> 00:46:00,480
+i think robotics can really help the the
+
+1398
+00:46:00,480 --> 00:46:03,520
+broader ai community because we don't have the
+
+1399
+00:46:03,520 --> 00:46:04,320
+advantage of
+
+1400
+00:46:04,320 --> 00:46:07,000
+having a perfect language simulator where you can
+
+1401
+00:46:07,000 --> 00:46:09,680
+run as many simulations as you would like
+
+1402
+00:46:09,680 --> 00:46:10,620
+instead
+
+1403
+00:46:10,620 --> 00:46:11,500
+you need to do it in the real
+
+1404
+00:46:11,500 --> 00:46:12,860
+world so you need to make more efficient
+
+1405
+00:46:12,860 --> 00:46:14,260
+methods and therefore you need
+
+1406
+00:46:14,260 --> 00:46:16,260
+to learn value functions and things like this
+
+1407
+00:46:16,260 --> 00:46:18,220
+and i think this will this will be
+
+1408
+00:46:18,220 --> 00:46:19,260
+really valuable everywhere
+
+1409
+00:46:19,260 --> 00:46:21,800
+yeah can i push a little bit on
+
+1410
+00:46:21,800 --> 00:46:25,060
+i'd love to understand you know internet video
+
+1411
+00:46:25,060 --> 00:46:25,540
+seems like
+
+1412
+00:46:25,540 --> 00:46:27,000
+it's part of the recipe but not a
+
+1413
+00:46:27,000 --> 00:46:29,300
+huge focus right now as i see it
+
+1414
+00:46:29,300 --> 00:46:30,580
+like do you think that there's gold
+
+1415
+00:46:30,580 --> 00:46:32,480
+left to be mined in internet video and
+
+1416
+00:46:32,480 --> 00:46:34,680
+then if you look at what's happening in
+
+1417
+00:46:34,680 --> 00:46:35,860
+video models right now
+
+1418
+00:46:35,860 --> 00:46:40,260
+uh world models um to what extent do
+
+1419
+00:46:40,260 --> 00:46:42,320
+you think that's going to be a you
+
+1420
+00:46:42,320 --> 00:46:43,720
+know discontinuous jump in
+
+1421
+00:46:43,720 --> 00:46:45,640
+model capabilities and you know an important part
+
+1422
+00:46:45,640 --> 00:46:48,940
+of your your model uh pipeline yeah um
+
+1423
+00:46:48,940 --> 00:46:49,980
+i think maybe
+
+1424
+00:46:49,980 --> 00:46:51,560
+there are two questions there one is about
+
+1425
+00:46:51,560 --> 00:46:54,280
+the data like how do you bootstrap yourself
+
+1426
+00:46:54,280 --> 00:46:55,000
+to the point where
+
+1427
+00:46:55,000 --> 00:46:57,560
+you can start deploying um and the other
+
+1428
+00:46:57,560 --> 00:46:59,760
+question is you know what about what about
+
+1429
+00:46:59,760 --> 00:47:00,640
+video models and
+
+1430
+00:47:00,640 --> 00:47:02,520
+kind of the world model aspects of it
+
+1431
+00:47:02,520 --> 00:47:06,260
+um so on the data point i i
+
+1432
+00:47:06,260 --> 00:47:08,920
+think we are now in this bootstrap phase
+
+1433
+00:47:08,920 --> 00:47:12,520
+where basically anything goes like whatever you you
+
+1434
+00:47:12,520 --> 00:47:14,420
+can figure out how to like add to
+
+1435
+00:47:14,420 --> 00:47:14,920
+the model
+
+1436
+00:47:15,460 --> 00:47:17,860
+and to to to to its benefit i
+
+1437
+00:47:17,860 --> 00:47:19,760
+think it's good whether you can add sim
+
+1438
+00:47:19,760 --> 00:47:20,780
+whether you can add human
+
+1439
+00:47:20,780 --> 00:47:24,280
+videos some kind of handheld devices human tell
+
+1440
+00:47:24,280 --> 00:47:26,640
+operations i think it kind of doesn't matter
+
+1441
+00:47:26,640 --> 00:47:26,840
+you
+
+1442
+00:47:26,840 --> 00:47:28,380
+just need to figure out some way to
+
+1443
+00:47:28,380 --> 00:47:30,600
+bootstrap yourself to the point where you can
+
+1444
+00:47:30,600 --> 00:47:31,080
+deploy these
+
+1445
+00:47:31,080 --> 00:47:33,340
+models because i think in the long term
+
+1446
+00:47:33,340 --> 00:47:35,440
+there's going to be this bootstrap phase but
+
+1447
+00:47:35,440 --> 00:47:35,860
+then there's going
+
+1448
+00:47:35,860 --> 00:47:38,800
+going to be the deployment phase and i
+
+1449
+00:47:38,800 --> 00:47:41,560
+think deployment phase will be will provide much
+
+1450
+00:47:41,560 --> 00:47:41,740
+much
+
+1451
+00:47:41,740 --> 00:47:43,500
+more data than anything you could do in
+
+1452
+00:47:43,500 --> 00:47:45,520
+the bootstrap phase so we're in this kind
+
+1453
+00:47:45,520 --> 00:47:45,840
+of like
+
+1454
+00:47:45,840 --> 00:47:48,440
+weird spot right now where we tried many
+
+1455
+00:47:48,440 --> 00:47:50,420
+different things straight to see what what sticks
+
+1456
+00:47:50,420 --> 00:47:51,060
+to just get
+
+1457
+00:47:51,060 --> 00:47:52,920
+us to the deployment threshold i see and
+
+1458
+00:47:52,920 --> 00:47:54,500
+once you can deploy i think that will
+
+1459
+00:47:54,500 --> 00:47:56,520
+vastly be be much greater
+
+1460
+00:47:56,520 --> 00:47:58,660
+than than anything you can do uh before
+
+1461
+00:47:58,660 --> 00:48:01,580
+that um so so that's also what we
+
+1462
+00:48:01,580 --> 00:48:02,740
+are sprinting towards that's
+
+1463
+00:48:02,740 --> 00:48:04,100
+why we want to start deploying these models
+
+1464
+00:48:04,100 --> 00:48:05,660
+that's why we want to do this up
+
+1465
+00:48:05,660 --> 00:48:06,860
+you know with many
+
+1466
+00:48:06,860 --> 00:48:10,880
+different tasks in in many different environments so
+
+1467
+00:48:10,880 --> 00:48:12,820
+that we can just have this very uh
+
+1468
+00:48:12,820 --> 00:48:13,560
+powerful data
+
+1469
+00:48:13,560 --> 00:48:17,080
+engine um now on the on the world
+
+1470
+00:48:17,080 --> 00:48:20,240
+modeling side of things i think the world
+
+1471
+00:48:20,240 --> 00:48:21,440
+models and aurel
+
+1472
+00:48:21,440 --> 00:48:23,960
+approaches are kind of targeting the same problem
+
+1473
+00:48:23,960 --> 00:48:27,440
+the problem of counterfactuals of how do you
+
+1474
+00:48:27,440 --> 00:48:27,940
+or a
+
+1475
+00:48:27,940 --> 00:48:29,960
+credit assignment problem right like how do you
+
+1476
+00:48:29,960 --> 00:48:32,560
+figure out which actions were the ones that
+
+1477
+00:48:32,560 --> 00:48:32,900
+actually
+
+1478
+00:48:32,900 --> 00:48:35,520
+matter for your success and how would the
+
+1479
+00:48:35,520 --> 00:48:37,180
+world have evolved had you had had you
+
+1480
+00:48:37,180 --> 00:48:37,720
+taken a different
+
+1481
+00:48:37,720 --> 00:48:40,100
+action and one way you can do this
+
+1482
+00:48:40,100 --> 00:48:42,080
+is by predicting what would have happened right
+
+1483
+00:48:42,080 --> 00:48:42,980
+like rolling out a
+
+1484
+00:48:42,980 --> 00:48:45,320
+full video of you know if i if
+
+1485
+00:48:45,320 --> 00:48:47,020
+i put this portafilter a little bit differently
+
+1486
+00:48:47,020 --> 00:48:48,820
+you know where would i end up
+
+1487
+00:48:49,380 --> 00:48:50,920
+and would this be a failure or a
+
+1488
+00:48:50,920 --> 00:48:53,660
+success or you can do this through reinforcement
+
+1489
+00:48:53,660 --> 00:48:54,020
+learning
+
+1490
+00:48:54,880 --> 00:48:57,220
+and it does it through a slightly different
+
+1491
+00:48:57,220 --> 00:48:59,060
+mechanism a little bit more implicitly but it
+
+1492
+00:48:59,060 --> 00:49:03,160
+fundamentally targets a very similar problem uh we
+
+1493
+00:49:03,160 --> 00:49:04,600
+are exploring all of those approaches
+
+1494
+00:49:04,600 --> 00:49:06,140
+and try to see you know how to
+
+1495
+00:49:06,140 --> 00:49:10,140
+how to really solve the counterfactual problem um
+
+1496
+00:49:10,140 --> 00:49:11,440
+i don't think there
+
+1497
+00:49:11,440 --> 00:49:14,360
+is a an answer yet uh but we
+
+1498
+00:49:14,360 --> 00:49:16,300
+see we see a lot of progress with
+
+1499
+00:49:16,300 --> 00:49:17,560
+with reinforcement learning that we
+
+1500
+00:49:17,560 --> 00:49:19,420
+that we've just shown with with pi star
+
+1501
+00:49:19,420 --> 00:49:21,540
+with pi star of six but i think
+
+1502
+00:49:21,540 --> 00:49:22,780
+there is probably room for for
+
+1503
+00:49:22,780 --> 00:49:26,080
+many many other approaches too awesome can we
+
+1504
+00:49:26,080 --> 00:49:27,700
+talk about once you guys get past that
+
+1505
+00:49:27,700 --> 00:49:28,400
+bootstrap phase
+
+1506
+00:49:28,400 --> 00:49:30,120
+let's talk about customer deployments a little bit
+
+1507
+00:49:30,120 --> 00:49:32,040
+what do you bring to a customer what
+
+1508
+00:49:32,040 --> 00:49:32,320
+do you sell
+
+1509
+00:49:32,320 --> 00:49:34,540
+them and then um how do you imagine
+
+1510
+00:49:34,540 --> 00:49:35,860
+that's going to evolve over time like are
+
+1511
+00:49:35,860 --> 00:49:36,360
+you selling them a
+
+1512
+00:49:36,900 --> 00:49:39,660
+fully vertically integrated robotic solution are you selling
+
+1513
+00:49:39,660 --> 00:49:41,580
+them a model that they have to figure
+
+1514
+00:49:41,580 --> 00:49:41,700
+out
+
+1515
+00:49:41,700 --> 00:49:43,420
+how to integrate into their operations like how
+
+1516
+00:49:43,420 --> 00:49:45,960
+does this all work uh the the the
+
+1517
+00:49:45,960 --> 00:49:46,660
+real answer is we
+
+1518
+00:49:46,660 --> 00:49:49,700
+don't know yet yeah um we are we
+
+1519
+00:49:49,700 --> 00:49:52,080
+are still figuring that out yeah uh we
+
+1520
+00:49:52,080 --> 00:49:54,240
+are still quite early in in the
+
+1521
+00:49:54,240 --> 00:49:56,540
+technology as you can as you can tell
+
+1522
+00:49:56,540 --> 00:49:58,980
+we are just starting to to even get
+
+1523
+00:49:58,980 --> 00:49:59,960
+to the threshold where we
+
+1524
+00:49:59,960 --> 00:50:03,860
+can start deploying these things um so we
+
+1525
+00:50:03,860 --> 00:50:05,480
+believe we should focus on the on the
+
+1526
+00:50:05,480 --> 00:50:06,240
+technology first
+
+1527
+00:50:06,240 --> 00:50:08,060
+to figure out how to get it to
+
+1528
+00:50:08,060 --> 00:50:09,720
+the point where it's actually easy to deploy
+
+1529
+00:50:10,360 --> 00:50:12,760
+and expand this aperture that we're talking about
+
+1530
+00:50:12,760 --> 00:50:17,000
+initially and robotics the history of of
+
+1531
+00:50:17,000 --> 00:50:20,960
+robotic startups is as very often gets to
+
+1532
+00:50:20,960 --> 00:50:23,580
+this point where you develop a technology for
+
+1533
+00:50:23,580 --> 00:50:24,200
+for some
+
+1534
+00:50:24,200 --> 00:50:26,120
+period of time you started with this grand
+
+1535
+00:50:26,120 --> 00:50:28,060
+vision of what it should be able to
+
+1536
+00:50:28,060 --> 00:50:29,220
+enable how general
+
+1537
+00:50:29,220 --> 00:50:31,560
+purpose it will be and as soon as
+
+1538
+00:50:31,560 --> 00:50:32,840
+you pick an application that you want to
+
+1539
+00:50:32,840 --> 00:50:34,280
+apply it to you're kind
+
+1540
+00:50:34,280 --> 00:50:36,860
+of stuck you start cutting corners you start
+
+1541
+00:50:36,860 --> 00:50:39,560
+uh figuring out very special purpose solutions
+
+1542
+00:50:39,560 --> 00:50:42,060
+just for this application and very quickly you
+
+1543
+00:50:42,060 --> 00:50:45,140
+become you know uh an application company that
+
+1544
+00:50:45,140 --> 00:50:47,480
+just focuses on let's say warehouse pick and
+
+1545
+00:50:47,480 --> 00:50:50,300
+place robots and that's it uh and we
+
+1546
+00:50:50,300 --> 00:50:51,060
+really want to avoid
+
+1547
+00:50:51,060 --> 00:50:53,220
+that future we think we have a chance
+
+1548
+00:50:53,220 --> 00:50:57,600
+to really solve physical intelligence and the the
+
+1549
+00:50:57,600 --> 00:50:58,160
+benefits of
+
+1550
+00:50:58,160 --> 00:51:01,160
+doing this will far outweigh any single applications
+
+1551
+00:51:01,160 --> 00:51:03,200
+that we can focus on now so we
+
+1552
+00:51:03,200 --> 00:51:04,000
+want to make sure that
+
+1553
+00:51:04,000 --> 00:51:06,080
+the technology is as general as possible as
+
+1554
+00:51:06,080 --> 00:51:08,640
+easily deployable as possible this aperture is as
+
+1555
+00:51:08,640 --> 00:51:09,140
+wide as
+
+1556
+00:51:09,140 --> 00:51:12,580
+possible and and then we'll start figuring out
+
+1557
+00:51:12,580 --> 00:51:15,380
+how to commercialize it and as you said
+
+1558
+00:51:15,380 --> 00:51:15,680
+there could
+
+1559
+00:51:15,680 --> 00:51:17,360
+be you know many different ways of doing
+
+1560
+00:51:17,360 --> 00:51:19,540
+this uh there's probably ways that we can't
+
+1561
+00:51:19,540 --> 00:51:20,120
+think of just
+
+1562
+00:51:20,120 --> 00:51:22,020
+yet because they will depend on how the
+
+1563
+00:51:22,020 --> 00:51:25,380
+technology goes uh whether it's in uh whether
+
+1564
+00:51:25,380 --> 00:51:26,020
+you can be a model
+
+1565
+00:51:26,020 --> 00:51:28,260
+provider fully vertical solution or you sell robots
+
+1566
+00:51:28,260 --> 00:51:30,560
+or or whatever else but i think it's
+
+1567
+00:51:30,560 --> 00:51:31,440
+a little too
+
+1568
+00:51:31,440 --> 00:51:33,980
+premature to answer this question it will give
+
+1569
+00:51:33,980 --> 00:51:35,600
+you a lot of comfort you know just
+
+1570
+00:51:35,600 --> 00:51:36,780
+to like pick one of
+
+1571
+00:51:36,780 --> 00:51:38,400
+people give alfred a lot of comfort yeah
+
+1572
+00:51:38,400 --> 00:51:40,240
+i'll be happy with us but i think
+
+1573
+00:51:40,240 --> 00:51:40,980
+it's just too early
+
+1574
+00:51:41,560 --> 00:51:44,080
+no you guys have a grand grand vision
+
+1575
+00:51:44,080 --> 00:51:46,340
+so thank you for working on physical intelligence
+
+1576
+00:51:46,340 --> 00:51:47,060
+it's a
+
+1577
+00:51:47,060 --> 00:51:51,040
+wonderful wonderful improvement just for pi star zero
+
+1578
+00:51:51,040 --> 00:51:53,500
+six it's just a huge um sort of
+
+1579
+00:51:53,500 --> 00:51:54,040
+breakthrough
+
+1580
+00:51:54,040 --> 00:51:56,780
+and so congratulations on all the success you've
+
+1581
+00:51:56,780 --> 00:51:59,640
+had thank you can i follow up with
+
+1582
+00:51:59,640 --> 00:52:00,840
+a spicy question
+
+1583
+00:52:00,840 --> 00:52:03,300
+sure so as you said this vision is
+
+1584
+00:52:03,300 --> 00:52:05,580
+so grand so broad you're doing all these
+
+1585
+00:52:05,580 --> 00:52:06,920
+different things if i'm
+
+1586
+00:52:06,920 --> 00:52:10,560
+i'm sure you've you've studied all previous robotics
+
+1587
+00:52:10,560 --> 00:52:14,400
+like um efforts and they've largely as you
+
+1588
+00:52:14,400 --> 00:52:14,620
+said
+
+1589
+00:52:14,620 --> 00:52:17,580
+applied an application to an application and they
+
+1590
+00:52:17,580 --> 00:52:20,820
+get narrower narrower and one of the most
+
+1591
+00:52:20,820 --> 00:52:21,580
+successful
+
+1592
+00:52:21,580 --> 00:52:24,520
+cases of a large application is self-driving
+
+1593
+00:52:24,520 --> 00:52:29,580
+and waymo or tesla have done enormously well
+
+1594
+00:52:29,580 --> 00:52:31,660
+but if i had to go back in
+
+1595
+00:52:31,660 --> 00:52:35,020
+history you know i learned about self-driving
+
+1596
+00:52:35,020 --> 00:52:36,360
+when sebastian threnham
+
+1597
+00:52:36,360 --> 00:52:38,140
+was on the stage of ted and i
+
+1598
+00:52:38,140 --> 00:52:43,540
+think 2000 and 2009 2010 and he talked
+
+1599
+00:52:43,540 --> 00:52:45,400
+about the thing where they won
+
+1600
+00:52:45,400 --> 00:52:49,540
+the darpa challenge that was 2007 and we're
+
+1601
+00:52:49,540 --> 00:52:52,600
+in 2025 and the thing barely goes from
+
+1602
+00:52:52,600 --> 00:52:53,300
+san francisco
+
+1603
+00:52:53,820 --> 00:52:55,720
+down here they kind of can do it
+
+1604
+00:52:55,720 --> 00:52:58,060
+now but they take local roads they can't
+
+1605
+00:52:58,060 --> 00:52:58,880
+even get on the freeway
+
+1606
+00:52:58,880 --> 00:53:01,540
+if you do such a generalized job how
+
+1607
+00:53:01,540 --> 00:53:04,480
+long is the runway or the timeline that
+
+1608
+00:53:04,480 --> 00:53:05,160
+you're thinking about
+
+1609
+00:53:05,160 --> 00:53:09,980
+to build for generalization and performance yeah so
+
+1610
+00:53:09,980 --> 00:53:11,880
+there are some aspects of the problem that
+
+1611
+00:53:11,880 --> 00:53:12,080
+make
+
+1612
+00:53:12,080 --> 00:53:14,240
+it easier than self-driving and some that
+
+1613
+00:53:14,240 --> 00:53:17,420
+make it harder yeah um one thing that
+
+1614
+00:53:17,420 --> 00:53:18,540
+makes it easier is that
+
+1615
+00:53:19,260 --> 00:53:21,740
+we don't need to deploy it only when
+
+1616
+00:53:21,740 --> 00:53:24,800
+it's 100 reliable right there's many many tasks
+
+1617
+00:53:24,800 --> 00:53:25,260
+out there
+
+1618
+00:53:25,820 --> 00:53:29,180
+that even if you're at 95 reliability you're
+
+1619
+00:53:29,180 --> 00:53:30,940
+totally fine if you have a robot in
+
+1620
+00:53:30,940 --> 00:53:31,220
+your home
+
+1621
+00:53:31,220 --> 00:53:33,520
+folding your laundry and every 100 bite them
+
+1622
+00:53:33,520 --> 00:53:35,080
+you know it doesn't fold it perfectly you'll
+
+1623
+00:53:35,080 --> 00:53:35,420
+be totally
+
+1624
+00:53:35,420 --> 00:53:37,800
+fine you just call your your child to
+
+1625
+00:53:37,800 --> 00:53:41,100
+go fold the that's right that's right we
+
+1626
+00:53:41,100 --> 00:53:42,040
+still we still need
+
+1627
+00:53:42,040 --> 00:53:45,900
+chores yeah exactly um and with self-driving
+
+1628
+00:53:45,900 --> 00:53:47,380
+that's not the case right like if you
+
+1629
+00:53:47,380 --> 00:53:48,820
+fail every 100th time
+
+1630
+00:53:48,820 --> 00:53:51,940
+catastrophically that's that's a big problem yeah um
+
+1631
+00:53:51,940 --> 00:53:53,460
+so i think in terms of deploying this
+
+1632
+00:53:53,460 --> 00:53:53,820
+technology
+
+1633
+00:53:53,820 --> 00:53:57,420
+it might be easier now we also benefit
+
+1634
+00:53:57,420 --> 00:53:59,960
+from the fact that this is a different
+
+1635
+00:53:59,960 --> 00:54:01,320
+era of technology
+
+1636
+00:54:01,320 --> 00:54:03,600
+we we are at the era of vision
+
+1637
+00:54:03,600 --> 00:54:06,080
+language models of foundation models that that have
+
+1638
+00:54:06,080 --> 00:54:07,220
+some some common
+
+1639
+00:54:07,220 --> 00:54:09,500
+sense and we learn a lot of lessons
+
+1640
+00:54:09,500 --> 00:54:13,480
+between what was it 2009 and 2025 and
+
+1641
+00:54:13,480 --> 00:54:14,480
+we can benefit from all of
+
+1642
+00:54:14,480 --> 00:54:17,860
+those um so i think that also really
+
+1643
+00:54:17,860 --> 00:54:19,780
+really helps and these are much more general
+
+1644
+00:54:19,780 --> 00:54:20,800
+purpose solutions than
+
+1645
+00:54:20,800 --> 00:54:23,680
+what we had in the past um at
+
+1646
+00:54:23,680 --> 00:54:25,780
+the same time there are some things that
+
+1647
+00:54:25,780 --> 00:54:27,080
+will be very challenging right
+
+1648
+00:54:27,080 --> 00:54:29,300
+like there isn't just a single application this
+
+1649
+00:54:29,300 --> 00:54:31,720
+is a very general purpose solution that can
+
+1650
+00:54:31,720 --> 00:54:32,100
+be applied
+
+1651
+00:54:32,100 --> 00:54:34,720
+to driving but also to manipulation and locomotion
+
+1652
+00:54:34,720 --> 00:54:36,800
+and flying and all kinds of other things
+
+1653
+00:54:36,800 --> 00:54:37,960
+and i think
+
+1654
+00:54:37,960 --> 00:54:39,680
+it's to be seen how much harder this
+
+1655
+00:54:39,680 --> 00:54:42,740
+is so far based on what we've experienced
+
+1656
+00:54:42,740 --> 00:54:45,580
+it doesn't seem to be that
+
+1657
+00:54:45,580 --> 00:54:47,720
+much harder to be honest it seems that
+
+1658
+00:54:47,720 --> 00:54:51,980
+if you if you tackle this with with
+
+1659
+00:54:51,980 --> 00:54:53,480
+a very general purpose
+
+1660
+00:54:54,220 --> 00:54:56,460
+kind of mindset from the get-go it
+
+1661
+00:54:56,460 --> 00:54:58,240
+turns out that it can generalize fairly well
+
+1662
+00:54:58,240 --> 00:54:59,400
+and there is something
+
+1663
+00:54:59,400 --> 00:55:01,560
+about physical intelligence that we don't fully understand
+
+1664
+00:55:01,560 --> 00:55:03,040
+that allows these models to generalize
+
+1665
+00:55:03,040 --> 00:55:07,320
+between driving and making coffee and flying a
+
+1666
+00:55:07,320 --> 00:55:10,100
+drone and operating a surgical robot even though
+
+1667
+00:55:10,100 --> 00:55:11,920
+they seem so far apart from each other
+
+1668
+00:55:11,920 --> 00:55:13,280
+and it seems that these should be all
+
+1669
+00:55:13,280 --> 00:55:14,160
+different models and
+
+1670
+00:55:14,160 --> 00:55:16,940
+different applications these models somehow can make sense
+
+1671
+00:55:16,940 --> 00:55:19,220
+out of all of that data and that
+
+1672
+00:55:19,220 --> 00:55:19,420
+gives
+
+1673
+00:55:19,420 --> 00:55:20,640
+me a lot of hope that maybe the
+
+1674
+00:55:20,640 --> 00:55:22,360
+problem is not that much harder and it
+
+1675
+00:55:22,360 --> 00:55:23,320
+might be actually easier
+
+1676
+00:55:24,860 --> 00:55:27,940
+um so i think it's a fair question
+
+1677
+00:55:27,940 --> 00:55:29,480
+but i also don't want to draw the
+
+1678
+00:55:29,480 --> 00:55:30,560
+wrong conclusions from what
+
+1679
+00:55:30,560 --> 00:55:33,220
+we've seen from from self-driving that's beautiful
+
+1680
+00:55:33,220 --> 00:55:36,480
+congratulations what results is impressed you the
+
+1681
+00:55:36,480 --> 00:55:39,020
+most outside of results it's a great question
+
+1682
+00:55:39,020 --> 00:55:42,060
+yeah it's a good question actually i can
+
+1683
+00:55:42,060 --> 00:55:42,700
+start i've been
+
+1684
+00:55:42,700 --> 00:55:44,620
+i've been really impressed by the video models
+
+1685
+00:55:44,620 --> 00:55:47,980
+what you mentioned earlier i saw them a
+
+1686
+00:55:47,980 --> 00:55:49,340
+few years ago i worked
+
+1687
+00:55:49,340 --> 00:55:51,420
+on on aspects of them a few years
+
+1688
+00:55:51,420 --> 00:55:54,060
+ago and i didn't expect this trajectory to
+
+1689
+00:55:54,060 --> 00:55:55,320
+be that the improvement to
+
+1690
+00:55:55,320 --> 00:55:58,460
+be so steep like they're basically indistinguishable right
+
+1691
+00:55:58,460 --> 00:56:00,520
+now from reality and they can do incredible
+
+1692
+00:56:00,520 --> 00:56:04,840
+things um so that's been really really impressive
+
+1693
+00:56:04,840 --> 00:56:07,520
+and really surprising to me yeah i would
+
+1694
+00:56:07,520 --> 00:56:08,420
+say i'm still
+
+1695
+00:56:08,420 --> 00:56:10,680
+in awe to some extent that we've gotten
+
+1696
+00:56:10,680 --> 00:56:13,440
+to this place where we do seem to
+
+1697
+00:56:13,440 --> 00:56:15,160
+get models that do seem generally
+
+1698
+00:56:15,780 --> 00:56:18,800
+intelligent to a level that i really didn't
+
+1699
+00:56:18,800 --> 00:56:21,360
+foresee coming out of uh out of just
+
+1700
+00:56:21,360 --> 00:56:22,260
+next token prediction
+
+1701
+00:56:22,260 --> 00:56:24,300
+i'm i'm still amazed with this and like
+
+1702
+00:56:24,300 --> 00:56:26,500
+every little advance that i see you know
+
+1703
+00:56:26,500 --> 00:56:27,480
+winning imo
+
+1704
+00:56:28,040 --> 00:56:31,900
+math challenges or um you know applying it's
+
+1705
+00:56:31,900 --> 00:56:35,240
+to finding new stuff in science to me
+
+1706
+00:56:35,240 --> 00:56:36,260
+yeah there are so
+
+1707
+00:56:36,260 --> 00:56:37,920
+many things this year where i thought like
+
+1708
+00:56:37,920 --> 00:56:40,120
+wow there's still there's still a lot of
+
+1709
+00:56:40,120 --> 00:56:41,180
+progress to be made
+
+1710
+00:56:41,180 --> 00:56:42,700
+even though it felt like at the beginning
+
+1711
+00:56:42,700 --> 00:56:44,660
+of the year maybe this whole pre-training
+
+1712
+00:56:44,660 --> 00:56:45,660
+business of llms
+
+1713
+00:56:45,660 --> 00:56:47,820
+is kind of maybe uh petering out a
+
+1714
+00:56:47,820 --> 00:56:50,240
+bit um yeah realizing that there's like this
+
+1715
+00:56:50,240 --> 00:56:51,480
+whole almost second
+
+1716
+00:56:51,480 --> 00:56:54,340
+breath of uh yeah fresh air basically coming
+
+1717
+00:56:54,340 --> 00:56:55,940
+in yeah i would maybe add to this
+
+1718
+00:56:55,940 --> 00:56:56,760
+just like the fact
+
+1719
+00:56:56,760 --> 00:56:58,660
+that this whole thing works it's kind of
+
+1720
+00:56:58,660 --> 00:57:01,780
+mind-blowing yeah i don't think we like
+
+1721
+00:57:01,780 --> 00:57:02,860
+fully realize how
+
+1722
+00:57:02,860 --> 00:57:05,540
+ridiculous this is right like you you build
+
+1723
+00:57:05,540 --> 00:57:10,080
+this like loosely brain inspired thing that has
+
+1724
+00:57:10,080 --> 00:57:10,680
+very general
+
+1725
+00:57:10,680 --> 00:57:13,560
+purpose learning algorithm you feed it data and
+
+1726
+00:57:13,560 --> 00:57:15,560
+it somehow gets it and gets it way
+
+1727
+00:57:15,560 --> 00:57:15,960
+better than
+
+1728
+00:57:15,960 --> 00:57:18,360
+anything we've ever had before and this applies
+
+1729
+00:57:18,360 --> 00:57:20,300
+to robots and it applies to vision and
+
+1730
+00:57:20,300 --> 00:57:21,160
+language and
+
+1731
+00:57:21,160 --> 00:57:24,040
+sound and all kinds of other things and
+
+1732
+00:57:24,040 --> 00:57:26,260
+like i think if you stop for a
+
+1733
+00:57:26,260 --> 00:57:27,760
+second and just think about
+
+1734
+00:57:27,760 --> 00:57:30,500
+it how it works and and that it
+
+1735
+00:57:30,500 --> 00:57:33,180
+works it's just like absolutely mind-blowing like
+
+1736
+00:57:33,180 --> 00:57:33,920
+the fact that we can
+
+1737
+00:57:33,920 --> 00:57:35,320
+have robots you can put it in a
+
+1738
+00:57:35,320 --> 00:57:37,060
+home and it kind of knows what to
+
+1739
+00:57:37,060 --> 00:57:38,920
+do in a home that it's never been
+
+1740
+00:57:38,920 --> 00:57:39,060
+to
+
+1741
+00:57:39,060 --> 00:57:41,800
+before or it can make coffee for 13
+
+1742
+00:57:41,800 --> 00:57:43,800
+hours straight or you know things like that
+
+1743
+00:57:43,800 --> 00:57:45,020
+and this is from this
+
+1744
+00:57:45,020 --> 00:57:50,000
+very general purpose thing that that trains fully
+
+1745
+00:57:50,000 --> 00:57:51,840
+end to end that we don't fully understand
+
+1746
+00:57:51,840 --> 00:57:52,640
+but it
+
+1747
+00:57:52,640 --> 00:57:55,100
+seems to start to get it that to
+
+1748
+00:57:55,100 --> 00:57:57,820
+me is just mind-blowing we're in a
+
+1749
+00:57:57,820 --> 00:57:58,280
+simulation
+
+1750
+00:58:00,540 --> 00:58:03,260
+it's what that's what sonja believes that we're
+
+1751
+00:58:03,260 --> 00:58:05,320
+living in a simulation but it is interesting
+
+1752
+00:58:05,320 --> 00:58:05,680
+right like
+
+1753
+00:58:05,680 --> 00:58:07,160
+science they teach you to take a big
+
+1754
+00:58:07,160 --> 00:58:08,920
+problem and break it up into smaller and
+
+1755
+00:58:08,920 --> 00:58:09,820
+smaller problems and
+
+1756
+00:58:09,820 --> 00:58:12,480
+then basically somebody realizes that that's maybe not
+
+1757
+00:58:12,480 --> 00:58:16,480
+the best way to train machines or robots
+
+1758
+00:58:16,480 --> 00:58:17,020
+of any
+
+1759
+00:58:17,020 --> 00:58:18,820
+kind and to be honest the whole machine
+
+1760
+00:58:18,820 --> 00:58:21,000
+learning like ai field made that same mistake
+
+1761
+00:58:21,000 --> 00:58:21,520
+actually to
+
+1762
+00:58:21,520 --> 00:58:23,520
+some extent right we were working for a
+
+1763
+00:58:23,520 --> 00:58:25,780
+long time people were working on solving individual
+
+1764
+00:58:25,780 --> 00:58:26,480
+problems
+
+1765
+00:58:26,480 --> 00:58:29,120
+very deeply basically right and then over time
+
+1766
+00:58:29,120 --> 00:58:32,140
+there is this like notion of oh if
+
+1767
+00:58:32,140 --> 00:58:32,780
+we can put it all
+
+1768
+00:58:32,780 --> 00:58:34,540
+together and like do multitask learning if we
+
+1769
+00:58:34,540 --> 00:58:36,260
+could do that really really well we'd do
+
+1770
+00:58:36,260 --> 00:58:36,680
+much better
+
+1771
+00:58:37,180 --> 00:58:39,020
+and then but then the fact that that
+
+1772
+00:58:39,020 --> 00:58:41,580
+all happened just because we switched to this
+
+1773
+00:58:41,580 --> 00:58:43,260
+you know general
+
+1774
+00:58:43,260 --> 00:58:44,940
+pre-training objective and then it just all
+
+1775
+00:58:44,940 --> 00:58:46,840
+falls out that's the part that is the
+
+1776
+00:58:46,840 --> 00:58:47,640
+surprising bit right
+
+1777
+00:58:47,640 --> 00:58:49,720
+do you think it's like an accordion where
+
+1778
+00:58:49,720 --> 00:58:51,300
+we go from one framework to the other
+
+1779
+00:58:51,300 --> 00:58:52,200
+framework we take
+
+1780
+00:58:52,200 --> 00:58:53,920
+big problems break them up into small and
+
+1781
+00:58:53,920 --> 00:58:55,580
+what small and small small ones that work
+
+1782
+00:58:55,580 --> 00:58:56,400
+for a period of time
+
+1783
+00:58:56,400 --> 00:58:58,140
+then it stopped working and then we're like
+
+1784
+00:58:58,140 --> 00:58:59,220
+all right let's go back to the big
+
+1785
+00:58:59,220 --> 00:59:00,400
+problem and try to solve it more
+
+1786
+00:59:00,400 --> 00:59:02,680
+generally you can go back and forth i
+
+1787
+00:59:02,680 --> 00:59:04,880
+don't see us going back yeah i don't
+
+1788
+00:59:04,880 --> 00:59:05,900
+see us going back i think
+
+1789
+00:59:05,900 --> 00:59:08,400
+there's a lot of approaches or a lot
+
+1790
+00:59:08,400 --> 00:59:09,720
+of people saying that you know you need
+
+1791
+00:59:09,720 --> 00:59:11,020
+the best of both worlds and
+
+1792
+00:59:11,020 --> 00:59:12,660
+you need some kind of way of incorporating
+
+1793
+00:59:12,660 --> 00:59:14,660
+the rules that you already know about like
+
+1794
+00:59:14,660 --> 00:59:15,080
+you know
+
+1795
+00:59:15,080 --> 00:59:17,220
+newtonian physics you don't need to learn that
+
+1796
+00:59:17,220 --> 00:59:18,980
+we already know how it works so can
+
+1797
+00:59:18,980 --> 00:59:19,920
+you just like put
+
+1798
+00:59:19,920 --> 00:59:23,100
+it somehow into the weights but uh from
+
+1799
+00:59:23,100 --> 00:59:25,300
+what we've seen so far it doesn't work
+
+1800
+00:59:25,300 --> 00:59:26,680
+if you try to do this you
+
+1801
+00:59:26,680 --> 00:59:28,380
+kind of limit the ability to to learn
+
+1802
+00:59:28,380 --> 00:59:31,680
+new things and i don't think there's the
+
+1803
+00:59:31,680 --> 00:59:32,520
+best of both worlds
+
+1804
+00:59:32,520 --> 00:59:33,920
+i think we just go all the way
+
+1805
+00:59:33,920 --> 00:59:36,440
+learning and it's kind of interesting to you
+
+1806
+00:59:36,440 --> 00:59:37,860
+know how similarly to how
+
+1807
+00:59:37,860 --> 00:59:40,480
+we learn you would think that if there
+
+1808
+00:59:40,480 --> 00:59:41,880
+was a way to pre-bake all of
+
+1809
+00:59:41,880 --> 00:59:43,220
+the intelligence the evolution
+
+1810
+00:59:43,220 --> 00:59:44,660
+would have figured this out you would have
+
+1811
+00:59:44,660 --> 00:59:46,840
+just been born you know knowing everything there
+
+1812
+00:59:46,840 --> 00:59:47,100
+is to
+
+1813
+00:59:47,100 --> 00:59:49,220
+know and we see this with some other
+
+1814
+00:59:49,220 --> 00:59:52,180
+species right like i think deer when they
+
+1815
+00:59:52,180 --> 00:59:53,120
+when they get born
+
+1816
+00:59:53,120 --> 00:59:54,560
+they're basically like as smart as they will
+
+1817
+00:59:54,560 --> 00:59:56,760
+ever be like they don't really learn much
+
+1818
+00:59:56,760 --> 00:59:57,040
+throughout
+
+1819
+00:59:57,040 --> 01:00:00,660
+their lifetime but for intelligent species like like
+
+1820
+01:00:00,660 --> 01:00:02,820
+humans but also i think crowds for instance
+
+1821
+01:00:03,420 --> 01:00:06,280
+they have these childhood periods the adolescence period
+
+1822
+01:00:06,280 --> 01:00:09,580
+where they're not very smart to begin with
+
+1823
+01:00:09,580 --> 01:00:11,220
+but they have to learn from their own
+
+1824
+01:00:11,220 --> 01:00:13,860
+experience and it doesn't come pre-baked you
+
+1825
+01:00:13,860 --> 01:00:14,400
+kind of have to
+
+1826
+01:00:14,400 --> 01:00:17,960
+earn it on your own and um i
+
+1827
+01:00:17,960 --> 01:00:20,660
+think there is something something to that um
+
+1828
+01:00:20,660 --> 01:00:22,140
+you need to just experience
+
+1829
+01:00:22,140 --> 01:00:24,520
+the world and and learn from that and
+
+1830
+01:00:24,520 --> 01:00:26,260
+i think that's the lesson we're learning in
+
+1831
+01:00:26,260 --> 01:00:26,960
+in machine
+
+1832
+01:00:26,960 --> 01:00:30,120
+learning as well in ai that you know
+
+1833
+01:00:30,120 --> 01:00:32,100
+we we think we know how we think
+
+1834
+01:00:32,100 --> 01:00:33,180
+but we actually don't
+
+1835
+01:00:33,760 --> 01:00:36,440
+and we just need to let the algorithm
+
+1836
+01:00:36,440 --> 01:00:38,620
+learn it from data same thing with raising
+
+1837
+01:00:38,620 --> 01:00:39,980
+our child i think
+
+1838
+01:00:39,980 --> 01:00:41,700
+i know how my son is thinking but
+
+1839
+01:00:41,700 --> 01:00:44,500
+i don't yeah yeah i have a i
+
+1840
+01:00:44,500 --> 01:00:46,920
+have a small daughter and yeah it's
+
+1841
+01:00:46,920 --> 01:00:49,680
+just so surprising like they learn so fast
+
+1842
+01:00:49,680 --> 01:00:51,020
+they learn so fast and you don't know
+
+1843
+01:00:51,020 --> 01:00:51,760
+where they get it from
+
+1844
+01:00:52,760 --> 01:00:56,620
+hopefully from the parents hopefully she definitely knows
+
+1845
+01:00:56,620 --> 01:00:57,820
+some things that i didn't teach her
+
+1846
+01:00:58,980 --> 01:01:00,900
+thank you guys so much it's a really
+
+1847
+01:01:00,900 --> 01:01:03,060
+beautiful mission you're building after thank you for
+
+1848
+01:01:03,060 --> 01:01:03,320
+coming
+
+1849
+01:01:03,320 --> 01:01:05,380
+to share thank you thanks for having us
+
+1850
+01:01:05,380 --> 01:01:05,820
+thank you
+
+1851
+01:01:05,820 --> 01:01:35,800
+thanks for having us
+
+1852
+01:01:35,800 --> 01:01:36,020
+thank you
+
+1853
+01:01:36,020 --> 01:01:36,100
+You
+

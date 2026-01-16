@@ -1,0 +1,4 @@
+{
+  "title": "어떤 작업이든 수행하는 범용 로봇 훈련: Physical Intelligence의 Karol Hausman과 Tobi Springenberg",
+  "description": "Physical Intelligence의 Karol Hausman과 Tobi Springenberg는 로보틱스가 하드웨어 한계가 아니라 파운데이션 모델이 해결할 수 있는 지능 병목 때문에 정체되어 왔다고 믿습니다. 그들의 엔드투엔드 학습 접근법은 비전, 언어, 행동을 π0 및 π*0.6 같은 모델에 결합해, 로봇이 작업별 프로그램이 아니라 일반화 가능한 행동을 학습하도록 합니다. 팀은 실제 환경 배치를 우선시하며, 모방 학습만으로는 달성할 수 있는 범위를 넘어서는 데 경험 기반 RL을 사용합니다. 서로 다른 로봇 embodiments 전반에서 다양한 물리적 과제를 단일 범용 모델이 처리할 수 있다는 그들의 철학은, 물리 세계를 위한 지능형 기계를 구축하는 방식을 근본적으로 바꾸는 변화입니다.\n\nSequoia Capital의 Alfred Lin과 Sonya Huang이 진행합니다."
+}

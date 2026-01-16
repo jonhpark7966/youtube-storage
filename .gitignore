@@ -1,0 +1,33 @@
+# OAuth credentials (NEVER commit these)
+config/oauth/client_secret.json
+config/oauth/token.json
+
+# Video files (too large for git)
+videos/*/source.*
+videos/*/burnin.mp4
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.webm
+*.mkv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs (optional - uncomment to ignore)
+# videos/*/logs/

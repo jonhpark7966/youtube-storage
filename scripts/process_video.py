@@ -5,10 +5,11 @@ YouTube video processing pipeline.
 Workflow:
 1. Download metadata and extract video ID
 2. Generate/translate subtitles (yt-subs-whisper-translate)
-3. Burn in Korean subtitles (yt-burnin-upload)
+3. Burn in Korean subtitles + upload to YouTube (yt-burnin-upload)
 4. Generate markdown notes (transcript-to-markdown)
-5. Upload to YouTube (unlisted, Korean title/description)
-6. Cleanup source video (optional)
+5. Cleanup source video (optional)
+
+Note: Upload and metadata translation are handled by yt-burnin-upload skill.
 """
 
 from __future__ import annotations
@@ -164,10 +165,24 @@ def step_subtitles(url: str, out_dir: Path, logger: logging.Logger, dry_run: boo
     return ko_srt
 
 
-def step_burnin(url: str, ko_srt: Path, out_dir: Path, logger: logging.Logger, dry_run: bool = False) -> Path:
-    """Step 2: Burn in subtitles."""
+def step_burnin(
+    url: str,
+    ko_srt: Path,
+    out_dir: Path,
+    logger: logging.Logger,
+    dry_run: bool = False,
+    upload: bool = False,
+) -> tuple[Path, str | None]:
+    """Step 2: Burn in subtitles and optionally upload to YouTube.
+
+    Returns:
+        Tuple of (burnin_mp4_path, upload_url or None)
+    """
     logger.info("=" * 50)
-    logger.info("Step 2: Burning in subtitles...")
+    if upload:
+        logger.info("Step 2: Burning in subtitles + uploading to YouTube...")
+    else:
+        logger.info("Step 2: Burning in subtitles...")
 
     cmd = [
         sys.executable,
@@ -176,6 +191,19 @@ def step_burnin(url: str, ko_srt: Path, out_dir: Path, logger: logging.Logger, d
         "--ko-srt", str(ko_srt),
         "--out-dir", str(out_dir),
     ]
+
+    if upload:
+        if not CLIENT_SECRET_PATH.exists():
+            raise RuntimeError(
+                f"OAuth not configured. Missing: {CLIENT_SECRET_PATH}\n"
+                "Run: python3 scripts/auth_youtube.py"
+            )
+        cmd.extend([
+            "--upload",
+            "--client-secret", str(CLIENT_SECRET_PATH),
+            "--token", str(TOKEN_PATH),
+        ])
+
     if dry_run:
         cmd.append("--dry-run")
 
@@ -185,8 +213,19 @@ def step_burnin(url: str, ko_srt: Path, out_dir: Path, logger: logging.Logger, d
     if not dry_run and not burnin_mp4.exists():
         raise RuntimeError(f"Burn-in video not generated: {burnin_mp4}")
 
+    # Check for upload info (created by yt-burnin-upload skill)
+    upload_url = None
+    upload_info_path = out_dir / "upload_info.json"
+    if upload and upload_info_path.exists():
+        try:
+            upload_info = json.loads(upload_info_path.read_text(encoding="utf-8"))
+            upload_url = upload_info.get("url")
+            logger.info(f"Uploaded: {upload_url}")
+        except Exception:
+            pass
+
     logger.info(f"Burn-in video: {burnin_mp4}")
-    return burnin_mp4
+    return burnin_mp4, upload_url
 
 
 def step_markdown(ko_srt: Path, out_dir: Path, title: str, description: str, logger: logging.Logger, dry_run: bool = False) -> Path:
@@ -233,158 +272,6 @@ def cleanup_source(out_dir: Path, logger: logging.Logger) -> None:
     for f in source_files:
         logger.info(f"Removing source file: {f}")
         f.unlink()
-
-
-def translate_metadata(title: str, description: str, out_dir: Path, logger: logging.Logger, dry_run: bool = False) -> dict:
-    """Translate title and description to Korean using Codex."""
-    cache_path = out_dir / "metadata_ko.json"
-
-    # Use cached translation if available
-    if cache_path.exists():
-        cached = json.loads(cache_path.read_text(encoding="utf-8"))
-        if cached.get("title") and cached.get("description"):
-            logger.info("Using cached Korean metadata")
-            return cached
-
-    if dry_run:
-        return {"title": title, "description": description}
-
-    logger.info("Translating metadata to Korean...")
-
-    prompt = (
-        "Translate the following YouTube video metadata to Korean.\n"
-        "Rules:\n"
-        "- Preserve proper nouns, product names, and technical terms.\n"
-        "- Do not add new content or commentary.\n"
-        "- Output strict JSON with keys: title, description.\n\n"
-        f"Title: {title}\n\n"
-        f"Description:\n{description[:2000]}\n"
-    )
-
-    prompt_path = out_dir / "translate_metadata.prompt.txt"
-    prompt_path.write_text(prompt, encoding="utf-8")
-
-    try:
-        require_exe("codex")
-        output_path = out_dir / "translate_metadata.response.json"
-        cmd = ["codex", "exec", "--skip-git-repo-check", "-o", str(output_path), f"@file {prompt_path}"]
-        run_command(cmd, logger)
-
-        response = output_path.read_text(encoding="utf-8").strip()
-        # Parse JSON from response
-        start = response.find("{")
-        end = response.rfind("}")
-        if start != -1 and end != -1:
-            result = json.loads(response[start:end + 1])
-            cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-            return result
-    except Exception as e:
-        logger.warning(f"Translation failed: {e}. Using original metadata.")
-
-    return {"title": title, "description": description}
-
-
-def step_upload(
-    video_path: Path,
-    original_url: str,
-    title_ko: str,
-    description_ko: str,
-    out_dir: Path,
-    logger: logging.Logger,
-    dry_run: bool = False,
-) -> str | None:
-    """Step 4: Upload video to YouTube."""
-    logger.info("=" * 50)
-    logger.info("Step 4: Uploading to YouTube...")
-
-    if not video_path.exists():
-        raise RuntimeError(f"Video file not found: {video_path}")
-
-    # Check OAuth setup
-    if not CLIENT_SECRET_PATH.exists():
-        raise RuntimeError(
-            f"OAuth not configured. Missing: {CLIENT_SECRET_PATH}\n"
-            "Run: python3 scripts/auth_youtube.py"
-        )
-
-    # Build description with original link
-    full_description = f"Original: {original_url}\n\n{description_ko}"
-
-    if dry_run:
-        logger.info(f"[DRY RUN] Would upload: {video_path}")
-        logger.info(f"[DRY RUN] Title: {title_ko}")
-        logger.info(f"[DRY RUN] Description preview: {full_description[:200]}...")
-        return None
-
-    try:
-        from google.oauth2.credentials import Credentials
-        from google_auth_oauthlib.flow import InstalledAppFlow
-        from googleapiclient.discovery import build
-        from googleapiclient.http import MediaFileUpload
-    except ImportError as e:
-        raise RuntimeError(
-            "Missing Google API packages. Run:\n"
-            "pip install google-auth-oauthlib google-api-python-client"
-        ) from e
-
-    SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
-
-    # Load or refresh credentials
-    creds = None
-    if TOKEN_PATH.exists():
-        creds = Credentials.from_authorized_user_file(str(TOKEN_PATH), SCOPES)
-
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            from google.auth.transport.requests import Request
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(str(CLIENT_SECRET_PATH), SCOPES)
-            creds = flow.run_local_server(port=0)
-        TOKEN_PATH.write_text(creds.to_json(), encoding="utf-8")
-
-    youtube = build("youtube", "v3", credentials=creds)
-
-    request_body = {
-        "snippet": {
-            "title": title_ko[:100],  # YouTube title limit
-            "description": full_description[:5000],  # YouTube description limit
-            "categoryId": "22",  # People & Blogs
-        },
-        "status": {
-            "privacyStatus": "unlisted",
-            "selfDeclaredMadeForKids": False,
-        },
-    }
-
-    logger.info(f"Uploading: {video_path.name}")
-    logger.info(f"Title: {title_ko[:50]}...")
-
-    media = MediaFileUpload(str(video_path), chunksize=-1, resumable=True)
-    request = youtube.videos().insert(
-        part="snippet,status",
-        body=request_body,
-        media_body=media,
-    )
-
-    response = request.execute()
-    video_id = response.get("id")
-    upload_url = f"https://www.youtube.com/watch?v={video_id}"
-
-    logger.info(f"Upload complete: {upload_url}")
-
-    # Save upload info
-    upload_info = {
-        "video_id": video_id,
-        "url": upload_url,
-        "title": title_ko,
-        "uploaded_at": datetime.now().isoformat(),
-        "privacy": "unlisted",
-    }
-    upload_info_path = out_dir / "upload_info.json"
-    upload_info_path.write_text(json.dumps(upload_info, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    return upload_url
 
 
 def main() -> None:
@@ -438,11 +325,27 @@ def main() -> None:
         else:
             logger.info(f"Using existing subtitles: {ko_srt}")
 
-        # Step 2: Burn-in
+        # Step 2: Burn-in (+ optional upload via yt-burnin-upload skill)
+        upload_url = None
         if not args.skip_burnin:
             burnin_mp4 = out_dir / "burnin.mp4"
+            upload_info_path = out_dir / "upload_info.json"
+            do_upload = not args.no_upload
+
+            # Check if already uploaded
+            if upload_info_path.exists() and not args.dry_run:
+                upload_info = json.loads(upload_info_path.read_text(encoding="utf-8"))
+                upload_url = upload_info.get("url")
+                if upload_url:
+                    logger.info(f"Already uploaded: {upload_url}")
+                    do_upload = False  # Skip upload, but still do burn-in if needed
+
             if not burnin_mp4.exists():
-                step_burnin(args.url, ko_srt, out_dir, logger, args.dry_run)
+                burnin_mp4, new_upload_url = step_burnin(
+                    args.url, ko_srt, out_dir, logger, args.dry_run, upload=do_upload
+                )
+                if new_upload_url:
+                    upload_url = new_upload_url
             else:
                 logger.info(f"Using existing burn-in: {burnin_mp4}")
 
@@ -453,32 +356,6 @@ def main() -> None:
                 step_markdown(ko_srt, out_dir, title, description, logger, args.dry_run)
             else:
                 logger.info(f"Using existing notes: {notes_md}")
-
-        # Step 4: Upload to YouTube
-        upload_url = None
-        if not args.no_upload and not args.skip_burnin:
-            burnin_mp4 = out_dir / "burnin.mp4"
-            upload_info_path = out_dir / "upload_info.json"
-
-            if upload_info_path.exists() and not args.dry_run:
-                upload_info = json.loads(upload_info_path.read_text(encoding="utf-8"))
-                upload_url = upload_info.get("url")
-                logger.info(f"Already uploaded: {upload_url}")
-            elif burnin_mp4.exists():
-                # Translate metadata
-                translated = translate_metadata(title, description, out_dir, logger, args.dry_run)
-                title_ko = translated.get("title", title)
-                description_ko = translated.get("description", description)
-
-                upload_url = step_upload(
-                    burnin_mp4,
-                    args.url,
-                    title_ko,
-                    description_ko,
-                    out_dir,
-                    logger,
-                    args.dry_run,
-                )
 
         # Cleanup
         if not args.keep_source:

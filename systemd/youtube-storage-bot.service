@@ -1,0 +1,16 @@
+[Unit]
+Description=YouTube Storage Discord Bot
+After=network.target youtube-storage-api.service
+Wants=youtube-storage-api.service
+
+[Service]
+Type=exec
+User=jonhpark
+WorkingDirectory=/home/jonhpark/workspace/youtube-storage
+EnvironmentFile=/home/jonhpark/workspace/youtube-storage/.env
+ExecStart=/home/jonhpark/workspace/youtube-storage/.venv/bin/python -m bot.main
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

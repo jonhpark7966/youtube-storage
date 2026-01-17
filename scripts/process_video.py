@@ -353,11 +353,14 @@ Original video ID: {original_video_id}
 Instructions:
 1. Read notes.md, upload_info.json, and meta.json from the video folder
 2. Curate the content (select important points, don't copy everything)
-3. Generate meaningful tags based on content
-4. Create archive markdown file in web/src/content/archive/ko/
-5. Use a short, descriptive filename (e.g., topic-name.md, not the full title)
-6. Create git branch, commit, push, and create PR
-7. After done, output the PR URL
+3. IMPORTANT: Preserve timestamps in [MM:SS] format for each bullet point (e.g., "[01:23] 내용...")
+   - Timestamps are essential for users to jump to specific parts of the video
+   - Every bullet point should start with its timestamp
+4. Generate meaningful tags based on content
+5. Create archive markdown file in web/src/content/archive/ko/
+6. Use a short, descriptive filename (e.g., topic-name.md, not the full title)
+7. Create git branch, commit, push, and create PR
+8. After done, output the PR URL
 
 Web repo path: {WEB_REPO_PATH}
 """

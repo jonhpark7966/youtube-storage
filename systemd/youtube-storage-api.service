@@ -1,0 +1,15 @@
+[Unit]
+Description=YouTube Storage API
+After=network.target
+
+[Service]
+Type=exec
+User=jonhpark
+WorkingDirectory=/home/jonhpark/workspace/youtube-storage
+EnvironmentFile=/home/jonhpark/workspace/youtube-storage/.env
+ExecStart=/home/jonhpark/workspace/youtube-storage/.venv/bin/uvicorn server.main:app --host 127.0.0.1 --port 32500
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

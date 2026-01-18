@@ -174,27 +174,29 @@ def step_subtitles(url: str, out_dir: Path, logger: logging.Logger, dry_run: boo
 def step_burnin(
     url: str,
     ko_srt: Path,
+    en_srt: Path,
     out_dir: Path,
     logger: logging.Logger,
     dry_run: bool = False,
     upload: bool = False,
 ) -> tuple[Path, str | None]:
-    """Step 2: Burn in subtitles and optionally upload to YouTube.
+    """Step 2: Burn in dual subtitles (Korean + English) and optionally upload to YouTube.
 
     Returns:
         Tuple of (burnin_mp4_path, upload_url or None)
     """
     logger.info("=" * 50)
     if upload:
-        logger.info("Step 2: Burning in subtitles + uploading to YouTube...")
+        logger.info("Step 2: Burning in dual subtitles + uploading to YouTube...")
     else:
-        logger.info("Step 2: Burning in subtitles...")
+        logger.info("Step 2: Burning in dual subtitles...")
 
     cmd = [
         sys.executable,
         str(BURNIN_SCRIPT),
         url,
         "--ko-srt", str(ko_srt),
+        "--en-srt", str(en_srt),
         "--out-dir", str(out_dir),
     ]
 
@@ -465,10 +467,11 @@ def main() -> None:
 
         # Step 1: Subtitles
         ko_srt = out_dir / "ko.srt"
-        if not ko_srt.exists():
-            ko_srt = step_subtitles(args.url, out_dir, logger, args.dry_run)
+        en_srt = out_dir / "en.srt"
+        if not ko_srt.exists() or not en_srt.exists():
+            step_subtitles(args.url, out_dir, logger, args.dry_run)
         else:
-            logger.info(f"Using existing subtitles: {ko_srt}")
+            logger.info(f"Using existing subtitles: {ko_srt}, {en_srt}")
 
         # Step 2: Burn-in (+ optional upload via yt-burnin-upload skill)
         upload_url = None
@@ -487,7 +490,7 @@ def main() -> None:
 
             if not burnin_mp4.exists():
                 burnin_mp4, new_upload_url = step_burnin(
-                    args.url, ko_srt, out_dir, logger, args.dry_run, upload=do_upload
+                    args.url, ko_srt, en_srt, out_dir, logger, args.dry_run, upload=do_upload
                 )
                 if new_upload_url:
                     upload_url = new_upload_url

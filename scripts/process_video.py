@@ -157,6 +157,10 @@ def step_subtitles(url: str, out_dir: Path, logger: logging.Logger, dry_run: boo
         str(SUBS_SCRIPT),
         url,
         "--out-dir", str(out_dir),
+        # Optimized settings for faster translation
+        "--chunk-seconds", "300",         # 3min → 5min chunks
+        "--merge-chunk-seconds", "600",   # 5min → 10min merge chunks
+        "--merge-reasoning", "medium",    # high → medium reasoning
     ]
     if dry_run:
         cmd.append("--dry-run")

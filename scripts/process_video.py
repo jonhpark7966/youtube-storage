@@ -19,10 +19,12 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import re
 import shutil
 import subprocess
 import sys
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 
@@ -43,6 +45,50 @@ WEB_REPO_PATH = REPO_ROOT.parent / "web"
 SUBS_SCRIPT = SKILLS_DIR / "yt-subs-whisper-translate" / "scripts" / "yt_subs_whisper_translate.py"
 BURNIN_SCRIPT = SKILLS_DIR / "yt-burnin-upload" / "scripts" / "yt_burnin_upload.py"
 MARKDOWN_SCRIPT = SKILLS_DIR / "transcript-to-markdown" / "scripts" / "transcript_to_markdown.py"
+
+# Load .env file if exists
+ENV_FILE = REPO_ROOT / ".env"
+if ENV_FILE.exists():
+    for line in ENV_FILE.read_text().splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            key, _, value = line.partition("=")
+            os.environ.setdefault(key.strip(), value.strip())
+
+# Discord notification settings
+DISCORD_BOT_TOKEN = os.environ.get("DISCORD_TOKEN", "")
+DISCORD_CHANNEL_ID = os.environ.get("ALLOWED_CHANNEL_ID", "")
+
+
+def send_discord_notification(message: str, video_id: str = "", error: str = "") -> bool:
+    """Send a notification to Discord channel via bot API."""
+    if not DISCORD_BOT_TOKEN or not DISCORD_CHANNEL_ID:
+        print("Discord notification skipped: missing token or channel ID")
+        return False
+
+    content = f"**Video Processing Failed**\n"
+    if video_id:
+        content += f"Video ID: `{video_id}`\n"
+    content += f"Message: {message}\n"
+    if error:
+        # Truncate error to avoid Discord message limit
+        error_short = error[:500] + "..." if len(error) > 500 else error
+        content += f"```\n{error_short}\n```"
+
+    url = f"https://discord.com/api/v10/channels/{DISCORD_CHANNEL_ID}/messages"
+    headers = {
+        "Authorization": f"Bot {DISCORD_BOT_TOKEN}",
+        "Content-Type": "application/json",
+    }
+    data = json.dumps({"content": content}).encode("utf-8")
+
+    try:
+        req = urllib.request.Request(url, data=data, headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return resp.status == 200
+    except Exception as e:
+        print(f"Failed to send Discord notification: {e}")
+        return False
 
 
 def setup_logging(log_path: Path) -> logging.Logger:
@@ -543,6 +589,12 @@ def main() -> None:
 
     except Exception as e:
         logger.error(f"Processing failed: {e}", exc_info=True)
+        # Send Discord notification on failure
+        send_discord_notification(
+            message=f"Processing failed for video",
+            video_id=video_id,
+            error=str(e),
+        )
         raise
 
 

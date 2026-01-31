@@ -1,0 +1,1699 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.400
+So level 1. Alright, google.com. Here's the
+
+00:00:03.400 --> 00:00:06.160
+logo. Here's the search bar. Oh, and here's
+
+00:00:06.160 --> 00:00:08.700
+the buttons. Why are you still waiting? Well,
+
+00:00:08.780 --> 00:00:11.600
+it's because you were missing this. This little
+
+00:00:11.600 --> 00:00:13.200
+line of text at the bottom. See, when
+
+00:00:13.200 --> 00:00:15.720
+Google launched, it was incredibly minimalistic compared to
+
+00:00:15.720 --> 00:00:17.920
+all the other search engines out there. But
+
+00:00:17.920 --> 00:00:20.620
+because of this, they had a problem. When
+
+00:00:20.620 --> 00:00:22.460
+they started making user tests in the early
+
+00:00:22.460 --> 00:00:25.500
+2000s with Stanford students, the students would sit
+
+00:00:25.500 --> 00:00:27.680
+there for 45 seconds staring at the page
+
+00:00:27.680 --> 00:00:29.160
+waiting for it to finish loading,
+
+00:00:29.160 --> 00:00:31.840
+even though it was fully loading. And that's
+
+00:00:31.840 --> 00:00:33.360
+because all the information. And that's because all
+
+00:00:33.360 --> 00:00:34.920
+the information was at the top. So how
+
+00:00:34.920 --> 00:00:37.540
+did they fix it? Well, with this. A
+
+00:00:37.540 --> 00:00:40.600
+copyright notice that has no legal need to
+
+00:00:40.600 --> 00:00:42.620
+be there, but it was put there only
+
+00:00:42.620 --> 00:00:44.260
+to let you know that the page has
+
+00:00:44.260 --> 00:00:47.180
+finished loading. See, this is only level 1
+
+00:00:47.180 --> 00:00:49.520
+of the 7 levels of the insane rabbit
+
+00:00:49.520 --> 00:00:52.040
+hole that is designing and building tech products.
+
+00:00:52.240 --> 00:00:54.240
+And these levels are what makes the difference
+
+00:00:54.240 --> 00:00:56.600
+between products that feel really bad, that you
+
+00:00:56.600 --> 00:00:59.020
+hate using, and products that end up generating
+
+00:00:59.020 --> 00:01:01.080
+billions of billions of dollars in revenue, and
+
+00:01:01.080 --> 00:01:02.640
+that end up changing the world. We're going
+
+00:01:02.640 --> 00:01:04.800
+to go from uncovering the smallest details to
+
+00:01:04.800 --> 00:01:06.800
+the entire product strategies of some of the
+
+00:01:06.800 --> 00:01:08.840
+biggest tech companies in the world. But even
+
+00:01:08.840 --> 00:01:10.880
+here at level 1, there's so much more
+
+00:01:10.880 --> 00:01:13.020
+that you don't see behind the tech that
+
+00:01:13.020 --> 00:01:14.760
+you use every day. Take a look at
+
+00:01:14.760 --> 00:01:18.000
+this. This is a nice rounded interface. So
+
+00:01:18.000 --> 00:01:20.460
+here for these checkboxes, we're going to match
+
+00:01:20.460 --> 00:01:22.240
+the style, we're going to make them round.
+
+00:01:22.420 --> 00:01:24.500
+But now you see that there's a problem.
+
+00:01:24.860 --> 00:01:27.420
+The app feels broken. And that's because by
+
+00:01:27.420 --> 00:01:28.380
+making these round,
+
+00:01:28.380 --> 00:01:31.000
+we made them look like something else that
+
+00:01:31.000 --> 00:01:33.160
+we're used to. Radio buttons, where you can
+
+00:01:33.160 --> 00:01:35.520
+only select one option at a time. This
+
+00:01:35.520 --> 00:01:38.720
+super small difference in how rounded these boxes
+
+00:01:38.720 --> 00:01:41.500
+are completely changed how we interpret what we
+
+00:01:41.500 --> 00:01:42.940
+see and what we think we can do
+
+00:01:42.940 --> 00:01:44.680
+in this screen. And that's because we have
+
+00:01:44.680 --> 00:01:46.860
+this knowledge in our brain that got reinforced
+
+00:01:46.860 --> 00:01:50.380
+over thousands of times using technology that this
+
+00:01:50.380 --> 00:01:53.600
+means only one option and this means that
+
+00:01:53.600 --> 00:01:55.060
+you can have many. Or take a look
+
+00:01:55.060 --> 00:01:58.000
+at this. Well, of course, this is a
+
+00:01:58.000 --> 00:01:58.260
+link
+
+00:01:58.260 --> 00:02:01.500
+to something. Duh. Well, no. Turns out it
+
+00:02:01.500 --> 00:02:04.020
+was just some blue underlined text. And the
+
+00:02:04.020 --> 00:02:06.340
+reason this fell off is that we were
+
+00:02:06.340 --> 00:02:09.980
+missing this. The mouse cursor changing from the
+
+00:02:09.980 --> 00:02:12.140
+regular arrow to the little hand that says,
+
+00:02:12.280 --> 00:02:14.180
+hey, there's an action here. This might seem
+
+00:02:14.180 --> 00:02:16.820
+like a small detail, but without this, our
+
+00:02:16.820 --> 00:02:19.460
+interfaces would be completely unusable. Like, for example,
+
+00:02:19.620 --> 00:02:21.440
+trying to drag some panel without the cursor
+
+00:02:21.440 --> 00:02:24.240
+becoming their size one. Without this small visual
+
+00:02:24.240 --> 00:02:26.640
+detail on your cursor, you simply wouldn't be
+
+00:02:26.640 --> 00:02:28.180
+able to use any desktop computer,
+
+00:02:28.260 --> 00:02:30.340
+and that's why this has been around from
+
+00:02:30.340 --> 00:02:32.780
+the beginning since 1987, when it was invented
+
+00:02:32.780 --> 00:02:35.460
+by Bill Atkinson for the Macintosh app HyperCard.
+
+00:02:35.560 --> 00:02:37.640
+And it's stuck around to this day. Oh,
+
+00:02:37.720 --> 00:02:39.520
+and all these interactions that you're seeing, I
+
+00:02:39.520 --> 00:02:42.000
+build them as full working prototypes using Magic
+
+00:02:42.000 --> 00:02:43.980
+Patterns, the sponsor of this video. More about
+
+00:02:43.980 --> 00:02:45.560
+it later. But take a look at these.
+
+00:02:45.840 --> 00:02:48.040
+These are files on your computer, but the
+
+00:02:48.040 --> 00:02:50.900
+file names are really long. Now, usually when
+
+00:02:50.900 --> 00:02:52.900
+you have a really, really long string on
+
+00:02:52.900 --> 00:02:55.280
+an app, this happens. It gets cut and
+
+00:02:55.280 --> 00:02:57.400
+these dots, which are called ellipses, appear to
+
+00:02:57.400 --> 00:02:58.040
+tell you that, hey,
+
+00:02:58.040 --> 00:03:00.600
+there's more. But now, with this, we cannot
+
+00:03:00.600 --> 00:03:02.840
+see which one is the file version, for
+
+00:03:02.840 --> 00:03:05.360
+example. Say, v1 or v2, which usually is
+
+00:03:05.360 --> 00:03:07.180
+stuff that's at the end of the file
+
+00:03:07.180 --> 00:03:08.720
+name. We cannot put the ellipses at the
+
+00:03:08.720 --> 00:03:11.240
+beginning either, because otherwise we lose the file
+
+00:03:11.240 --> 00:03:11.920
+name more together.
+
+00:03:12.100 --> 00:03:14.120
+So, for example, here in macOS, when we
+
+00:03:14.120 --> 00:03:15.660
+try to reduce the size of the window,
+
+00:03:15.900 --> 00:03:17.920
+the file names get the ellipses in the
+
+00:03:17.920 --> 00:03:20.760
+center, and letters get progressively cheaped away on
+
+00:03:20.760 --> 00:03:22.940
+each side of the ellipses centered in the
+
+00:03:22.940 --> 00:03:24.260
+word. So you can see the start of
+
+00:03:24.260 --> 00:03:25.700
+the file name and the end of the
+
+00:03:25.700 --> 00:03:26.120
+file name.
+
+00:03:26.120 --> 00:03:28.420
+So this means that someone had to manually
+
+00:03:28.420 --> 00:03:29.920
+go in and write all the code that
+
+00:03:29.920 --> 00:03:31.660
+calculates how many letters to chip away at
+
+00:03:31.660 --> 00:03:33.420
+each side of the ellipses just to make
+
+00:03:33.420 --> 00:03:34.440
+sure this happens.
+
+00:03:34.620 --> 00:03:36.360
+By the way, that someone is Scott Jensen,
+
+00:03:36.660 --> 00:03:38.800
+who built this, again, for Apple in the
+
+00:03:38.800 --> 00:03:39.200
+80s.
+
+00:03:39.320 --> 00:03:41.400
+See, designing tech is not just about making
+
+00:03:41.400 --> 00:03:44.520
+things look nice. These seemingly small visual details
+
+00:03:44.520 --> 00:03:47.160
+won't get noticed by 99% of people,
+
+00:03:47.240 --> 00:03:48.960
+but it's what makes our tech usable.
+
+00:03:48.960 --> 00:03:51.080
+But yeah, sometimes they are there just because
+
+00:03:51.080 --> 00:03:53.500
+they're fun. Like, for example, you drag the
+
+00:03:53.500 --> 00:03:55.620
+Google Street View yellow guy, and you can
+
+00:03:55.620 --> 00:03:57.500
+see that he's actually holding on to the
+
+00:03:57.500 --> 00:03:59.860
+cursor and reacting to gravity as you move
+
+00:03:59.860 --> 00:04:00.240
+him around.
+
+00:04:00.500 --> 00:04:02.220
+Why? Well, why not?
+
+00:04:02.420 --> 00:04:04.000
+And now let's start to go up a
+
+00:04:04.000 --> 00:04:06.440
+level, because that's when things start to get
+
+00:04:06.440 --> 00:04:06.780
+interesting.
+
+00:04:07.080 --> 00:04:08.360
+So say you're on a call with your
+
+00:04:08.360 --> 00:04:10.440
+bank. They're telling you there is a suspicious
+
+00:04:10.440 --> 00:04:12.300
+activity on your account, and they need to
+
+00:04:12.300 --> 00:04:13.420
+verify some information.
+
+00:04:13.420 --> 00:04:15.360
+So you open your banking app to check,
+
+00:04:15.480 --> 00:04:18.300
+and you see, this, Revolut, is not calling
+
+00:04:18.300 --> 00:04:18.500
+you.
+
+00:04:18.680 --> 00:04:20.640
+The people that built this app made it
+
+00:04:20.640 --> 00:04:22.400
+so that it's detecting when you're on a
+
+00:04:22.400 --> 00:04:24.060
+phone call and when you're opening the app
+
+00:04:24.060 --> 00:04:24.740
+at the same time.
+
+00:04:24.900 --> 00:04:26.620
+And because one of the most common scams
+
+00:04:26.620 --> 00:04:28.360
+is someone pretending to be your bank and
+
+00:04:28.360 --> 00:04:29.900
+asking you to do something in the app
+
+00:04:29.900 --> 00:04:31.420
+while they're on the phone with you,
+
+00:04:31.600 --> 00:04:34.340
+Do not read it! Do not read in
+
+00:04:34.340 --> 00:04:34.780
+the card!
+
+00:04:34.980 --> 00:04:37.780
+Revolut just tells you. Whoever's on the phone,
+
+00:04:38.140 --> 00:04:38.940
+well, it's not us.
+
+00:04:39.080 --> 00:04:41.180
+And this is what Level 2 is all
+
+00:04:41.180 --> 00:04:43.260
+about. It's not just how things look.
+
+00:04:43.420 --> 00:04:45.700
+It's the interactions and how they behave.
+
+00:04:45.860 --> 00:04:48.200
+And more importantly, it's about building behaviors that
+
+00:04:48.200 --> 00:04:49.180
+feel human.
+
+00:04:49.420 --> 00:04:51.480
+Like take Google Maps. Your phone has a
+
+00:04:51.480 --> 00:04:53.940
+touchscreen, and it's perfect for moving around this
+
+00:04:53.940 --> 00:04:54.180
+map.
+
+00:04:54.300 --> 00:04:55.700
+You can just drag your finger around.
+
+00:04:55.880 --> 00:04:58.200
+But zooming in still requires you to pinch
+
+00:04:58.200 --> 00:05:00.080
+the screen, so it requires two hands.
+
+00:05:00.260 --> 00:05:02.460
+We're usually trying to navigate around. We're on
+
+00:05:02.460 --> 00:05:02.840
+a bike.
+
+00:05:03.040 --> 00:05:05.340
+It's the worst possible time to require us
+
+00:05:05.340 --> 00:05:06.060
+to pinch stuff.
+
+00:05:06.220 --> 00:05:08.740
+So you end up doing this weird contortionism
+
+00:05:08.740 --> 00:05:09.720
+just to zoom in.
+
+00:05:09.720 --> 00:05:11.280
+But actually, in Google Maps, you can double
+
+00:05:11.280 --> 00:05:13.820
+tap and hold and drag your finger up
+
+00:05:13.820 --> 00:05:15.660
+and down to zoom in and out with
+
+00:05:15.660 --> 00:05:16.240
+one finger.
+
+00:05:16.380 --> 00:05:18.220
+You can actually do it in almost all
+
+00:05:18.220 --> 00:05:20.240
+the applications where you can pinch to zoom.
+
+00:05:20.360 --> 00:05:21.620
+The first time I learned about this, I
+
+00:05:21.620 --> 00:05:23.220
+was like, I'm sorry, what?
+
+00:05:23.420 --> 00:05:25.280
+But the problem with this is that while
+
+00:05:25.280 --> 00:05:27.600
+it definitely goes into the genius category, there
+
+00:05:27.600 --> 00:05:29.380
+is no way to know that you can
+
+00:05:29.380 --> 00:05:30.200
+actually do this.
+
+00:05:30.200 --> 00:05:32.320
+Most people don't even know, but one interaction
+
+00:05:32.320 --> 00:05:34.800
+that instead gets used billions of times every
+
+00:05:34.800 --> 00:05:36.060
+single day is this.
+
+00:05:36.240 --> 00:05:37.740
+You know, when you drag down the top
+
+00:05:37.740 --> 00:05:38.720
+of a list to refresh.
+
+00:05:39.020 --> 00:05:42.040
+This interaction is incredibly intuitive, and it removes
+
+00:05:42.040 --> 00:05:44.080
+the need for an additional refresh button.
+
+00:05:44.280 --> 00:05:47.240
+But while this looks totally innocuous, today this
+
+00:05:47.240 --> 00:05:49.020
+feature is used by the biggest social media
+
+00:05:49.020 --> 00:05:49.920
+companies on the planet,
+
+00:05:50.060 --> 00:05:52.760
+paired with infinite scrolling feeds, like Instagram, to
+
+00:05:52.760 --> 00:05:55.040
+show you something new every time you refresh.
+
+00:05:55.040 --> 00:05:58.460
+And this one simple interaction is probably responsible
+
+00:05:58.460 --> 00:06:01.160
+for billions of dollars of revenue in ads
+
+00:06:01.160 --> 00:06:01.940
+on these feeds.
+
+00:06:02.240 --> 00:06:03.640
+But now, let's go up a level once
+
+00:06:03.640 --> 00:06:06.860
+again, because in 2008, music streaming had a
+
+00:06:06.860 --> 00:06:07.140
+problem.
+
+00:06:07.280 --> 00:06:08.440
+Piracy was everywhere.
+
+00:06:08.640 --> 00:06:10.900
+People were illegally downloading songs all over the
+
+00:06:10.900 --> 00:06:11.140
+place.
+
+00:06:11.280 --> 00:06:13.000
+And if I wanted to purchase my entire
+
+00:06:13.000 --> 00:06:16.240
+current Spotify library legally on iTunes back then,
+
+00:06:16.360 --> 00:06:18.220
+it would have run me $3,800.
+
+00:06:18.760 --> 00:06:20.060
+And I would have to synchronize all these
+
+00:06:20.060 --> 00:06:22.060
+songs manually on all of my devices.
+
+00:06:22.060 --> 00:06:23.960
+And that's when Spotify came in.
+
+00:06:24.120 --> 00:06:25.120
+But they had a problem.
+
+00:06:25.300 --> 00:06:27.820
+See, they started with this promise of instant
+
+00:06:27.820 --> 00:06:28.780
+music streaming.
+
+00:06:29.120 --> 00:06:31.260
+Just choose a track and immediately listen to
+
+00:06:31.260 --> 00:06:31.400
+it.
+
+00:06:31.540 --> 00:06:33.400
+But the problem is that internet speeds back
+
+00:06:33.400 --> 00:06:36.980
+then, especially mobile, weren't anywhere near as fast
+
+00:06:36.980 --> 00:06:37.640
+as they are today.
+
+00:06:37.860 --> 00:06:39.220
+They tried what anyone would.
+
+00:06:39.400 --> 00:06:41.280
+Just host the songs on their servers, and
+
+00:06:41.280 --> 00:06:43.640
+anytime someone needs a song, just stream it
+
+00:06:43.640 --> 00:06:44.480
+down to the device.
+
+00:06:44.780 --> 00:06:46.120
+And it was atrocious.
+
+00:06:46.720 --> 00:06:48.240
+It could take from 30 seconds to a
+
+00:06:48.240 --> 00:06:50.560
+full minute for a song to start playing.
+
+00:06:50.740 --> 00:06:51.880
+So that's when they had an idea.
+
+00:06:52.060 --> 00:06:55.000
+They bought a company that actually powered piracy.
+
+00:06:55.260 --> 00:06:57.540
+And that you might remember called uTorrent.
+
+00:06:57.720 --> 00:06:59.380
+And sold uTorrent almost immediately.
+
+00:06:59.620 --> 00:07:01.140
+But the reason they did this is to
+
+00:07:01.140 --> 00:07:03.020
+get this one guy.
+
+00:07:03.260 --> 00:07:04.420
+Ludwig Strigus.
+
+00:07:04.560 --> 00:07:06.920
+And he rebuilt Spotify's infrastructure at the time
+
+00:07:06.920 --> 00:07:09.540
+using the same technology that powered piracy.
+
+00:07:09.700 --> 00:07:10.220
+Peer to peer.
+
+00:07:10.360 --> 00:07:11.600
+See, when you play the song, it came
+
+00:07:11.600 --> 00:07:12.880
+from three places at once.
+
+00:07:13.040 --> 00:07:15.700
+Spotify servers, your own cash, and other Spotify
+
+00:07:15.700 --> 00:07:16.600
+users near you.
+
+00:07:16.600 --> 00:07:19.160
+A 2010 study found that only 8.8
+
+00:07:19.160 --> 00:07:21.520
+% of the music came from Spotify servers.
+
+00:07:21.640 --> 00:07:24.040
+36% came from other users, and the
+
+00:07:24.040 --> 00:07:26.620
+rest was smartly downloaded already on your device.
+
+00:07:26.820 --> 00:07:28.880
+They took the exact technology that the music
+
+00:07:28.880 --> 00:07:31.420
+industry were suing people over, and used it
+
+00:07:31.420 --> 00:07:32.940
+to build a legal alternative.
+
+00:07:33.240 --> 00:07:35.940
+And as a user, you never noticed.
+
+00:07:36.180 --> 00:07:38.540
+You just clicked on a song, and it
+
+00:07:38.540 --> 00:07:38.780
+worked.
+
+00:07:38.780 --> 00:07:40.460
+See, most people think that great products are
+
+00:07:40.460 --> 00:07:42.120
+built around great technology.
+
+00:07:42.320 --> 00:07:44.480
+But most of the times, it's the opposite
+
+00:07:44.480 --> 00:07:45.180
+that happens.
+
+00:07:45.380 --> 00:07:46.740
+You have a great idea for how the
+
+00:07:46.740 --> 00:07:49.220
+perfect interaction and experience looks like, and then
+
+00:07:49.220 --> 00:07:51.480
+you find the technology that makes it possible.
+
+00:07:51.680 --> 00:07:53.780
+Because the ones that really matter are those
+
+00:07:53.780 --> 00:07:56.040
+that make incredible experiences possible.
+
+00:07:56.220 --> 00:07:59.240
+But also where the technology disappears, and you
+
+00:07:59.240 --> 00:08:00.340
+never see it.
+
+00:08:00.340 --> 00:08:02.060
+But as we get to level 4, this
+
+00:08:02.060 --> 00:08:03.200
+is where we start to get into the
+
+00:08:03.200 --> 00:08:05.660
+really powerful laws that control how tech products
+
+00:08:05.660 --> 00:08:06.920
+are designed and built.
+
+00:08:07.100 --> 00:08:08.820
+And how they can also be used to
+
+00:08:08.820 --> 00:08:09.520
+manipulate you.
+
+00:08:09.640 --> 00:08:11.220
+So you just finished an episode on Netflix.
+
+00:08:11.480 --> 00:08:14.520
+The usual cliffhanger, credits roll, and three, two,
+
+00:08:14.720 --> 00:08:15.220
+what?
+
+00:08:15.400 --> 00:08:16.660
+The next episode already started.
+
+00:08:16.840 --> 00:08:18.780
+See, this was an example of level 4
+
+00:08:18.780 --> 00:08:19.520
+product design.
+
+00:08:19.720 --> 00:08:21.660
+And it's something that seems small, but it's
+
+00:08:21.660 --> 00:08:24.300
+incredibly powerful to control the behavior of millions
+
+00:08:24.300 --> 00:08:24.940
+of users.
+
+00:08:25.280 --> 00:08:27.320
+Both in a good and in a bad
+
+00:08:27.320 --> 00:08:27.580
+way.
+
+00:08:28.280 --> 00:08:28.760
+Defaults.
+
+00:08:28.760 --> 00:08:30.820
+Oh look, I got ghosted by a 10
+
+00:08:30.820 --> 00:08:32.380
+out of 10 on both iMessage and WhatsApp.
+
+00:08:32.700 --> 00:08:34.200
+Now, other than the fact that I need
+
+00:08:34.200 --> 00:08:36.840
+more res, there's something else going on here.
+
+00:08:37.020 --> 00:08:39.680
+On WhatsApp, read receipts are on by default.
+
+00:08:39.800 --> 00:08:41.820
+But on iMessage, you instead choose if you
+
+00:08:41.820 --> 00:08:42.440
+want them or not.
+
+00:08:42.540 --> 00:08:44.180
+Which for the most part would mean that
+
+00:08:44.180 --> 00:08:45.280
+people turn them off.
+
+00:08:45.420 --> 00:08:47.720
+Since when presented with the choice, users tend
+
+00:08:47.720 --> 00:08:49.360
+to choose the option that gives out less
+
+00:08:49.360 --> 00:08:51.040
+information about them on average.
+
+00:08:51.480 --> 00:08:53.880
+Now, this might seem like a small difference.
+
+00:08:54.040 --> 00:08:56.700
+But since most people never change their settings,
+
+00:08:56.700 --> 00:08:59.620
+this creates completely different social dynamics.
+
+00:08:59.920 --> 00:09:02.580
+On WhatsApp, seen without a reply is bloated.
+
+00:09:02.820 --> 00:09:04.000
+You saw my message.
+
+00:09:04.280 --> 00:09:05.360
+Why didn't you respond?
+
+00:09:05.760 --> 00:09:08.100
+On iMessage, nobody knows if you read it.
+
+00:09:08.280 --> 00:09:11.260
+Same feature, different default, different relationship.
+
+00:09:11.600 --> 00:09:13.160
+This is called default bias.
+
+00:09:13.160 --> 00:09:15.360
+And it's not just in your tech.
+
+00:09:15.680 --> 00:09:17.180
+This is a chart of the percentage of
+
+00:09:17.180 --> 00:09:19.480
+organ donors in different European countries.
+
+00:09:20.020 --> 00:09:21.660
+Try to guess what is the difference between
+
+00:09:21.660 --> 00:09:23.380
+the first and the second group.
+
+00:09:23.760 --> 00:09:26.860
+Well, the only difference is the default choice.
+
+00:09:27.120 --> 00:09:28.940
+In Austria, the default is to donate.
+
+00:09:29.220 --> 00:09:30.820
+And you opt out of donating.
+
+00:09:31.080 --> 00:09:32.760
+Well, in Denmark, you need to opt in
+
+00:09:32.760 --> 00:09:33.440
+to donate.
+
+00:09:33.440 --> 00:09:36.200
+And this is, well, default bias.
+
+00:09:36.400 --> 00:09:38.700
+But here is where defaults become worth billions
+
+00:09:38.700 --> 00:09:39.400
+of dollars.
+
+00:09:39.680 --> 00:09:41.500
+Have you ever wondered why did Google buy
+
+00:09:41.500 --> 00:09:41.920
+Android?
+
+00:09:42.140 --> 00:09:44.840
+Spent billions to make it a worldwide mobile
+
+00:09:44.840 --> 00:09:47.000
+operating system only to give it away for
+
+00:09:47.000 --> 00:09:47.360
+free?
+
+00:09:47.540 --> 00:09:49.220
+Or why did they build Chrome?
+
+00:09:49.440 --> 00:09:51.900
+Well, not because they love making browsers or
+
+00:09:51.900 --> 00:09:52.740
+operating systems,
+
+00:09:52.880 --> 00:09:56.200
+but because whoever controls the platform can set
+
+00:09:56.200 --> 00:09:57.100
+the defaults,
+
+00:09:57.200 --> 00:09:59.260
+including the search engine which they set to
+
+00:09:59.260 --> 00:10:01.020
+Google, where they make their money.
+
+00:10:01.020 --> 00:10:02.960
+And for the devices they don't control, Google
+
+00:10:02.960 --> 00:10:05.360
+pays Apple $20 billion a year
+
+00:10:05.360 --> 00:10:07.360
+just to be the default option on Safari.
+
+00:10:07.500 --> 00:10:09.140
+They estimated that they would lose 60%
+
+00:10:09.140 --> 00:10:11.100
+to 80% of iPhone search traffic if
+
+00:10:11.100 --> 00:10:11.860
+they didn't do this.
+
+00:10:11.960 --> 00:10:14.300
+Not because people would switch to Bing, but
+
+00:10:14.300 --> 00:10:16.880
+because people just use whatever is already there.
+
+00:10:17.100 --> 00:10:19.860
+Now, see all these examples and visuals that
+
+00:10:19.860 --> 00:10:21.300
+I've shown you in this very video.
+
+00:10:21.660 --> 00:10:24.780
+Well, these are real working components made with
+
+00:10:24.780 --> 00:10:27.120
+the sponsor of this video, Magic Patterns,
+
+00:10:27.180 --> 00:10:29.400
+because it's built exactly for this.
+
+00:10:29.400 --> 00:10:32.020
+See, Magic Patterns is not about building entire
+
+00:10:32.020 --> 00:10:33.000
+apps from scratch,
+
+00:10:33.140 --> 00:10:35.460
+but it's about allowing builders like me to
+
+00:10:35.460 --> 00:10:36.860
+quickly try different designs,
+
+00:10:36.880 --> 00:10:40.260
+iterations and components with natural language just by
+
+00:10:40.260 --> 00:10:40.600
+chatting.
+
+00:10:40.900 --> 00:10:42.660
+If you notice, all the examples I made
+
+00:10:42.660 --> 00:10:44.440
+in this video were also in the same
+
+00:10:44.440 --> 00:10:45.180
+visual style.
+
+00:10:45.400 --> 00:10:47.200
+And that's because with Magic Patterns, you can
+
+00:10:47.200 --> 00:10:49.160
+set your product's styling, colors and visuals,
+
+00:10:49.300 --> 00:10:51.340
+and have it follow it when prototyping.
+
+00:10:51.500 --> 00:10:53.540
+You can even upload screenshots as a reference
+
+00:10:53.540 --> 00:10:56.160
+to guide the AI towards what you're envisioning.
+
+00:10:56.160 --> 00:10:58.020
+Once you're happy with something, you can export
+
+00:10:58.020 --> 00:10:58.760
+it straight to Figma,
+
+00:10:59.020 --> 00:11:00.980
+sync it to GitHub, or deploy it to
+
+00:11:00.980 --> 00:11:01.680
+a custom domain.
+
+00:11:01.800 --> 00:11:03.260
+If you're working with a team, there's a
+
+00:11:03.260 --> 00:11:05.220
+shared canvas for real-time collaboration.
+
+00:11:05.560 --> 00:11:07.360
+You can join the army of designers, engineers,
+
+00:11:07.600 --> 00:11:08.720
+thinkers, and product teams,
+
+00:11:08.900 --> 00:11:10.920
+or the using Magic Patterns with the link
+
+00:11:10.920 --> 00:11:11.740
+in the description,
+
+00:11:11.940 --> 00:11:13.520
+which also gives the viewers of my channel
+
+00:11:13.520 --> 00:11:14.860
+a nice little discount.
+
+00:11:15.100 --> 00:11:16.480
+But now, let's go back to the video,
+
+00:11:16.640 --> 00:11:18.480
+because now that we get to level 5,
+
+00:11:18.700 --> 00:11:21.000
+we start to blur the boundaries between product
+
+00:11:21.000 --> 00:11:22.320
+design and product strategy.
+
+00:11:22.320 --> 00:11:23.760
+And this is where you start to see
+
+00:11:23.760 --> 00:11:26.560
+the more important product decisions that shape how
+
+00:11:26.560 --> 00:11:27.560
+we use something.
+
+00:11:27.780 --> 00:11:29.340
+So, let me show you how I personally
+
+00:11:29.340 --> 00:11:32.000
+used level 5 to build this.
+
+00:11:32.300 --> 00:11:33.400
+This is Flask.
+
+00:11:33.540 --> 00:11:35.740
+It's my own company and my own product.
+
+00:11:35.920 --> 00:11:37.440
+It's a video collaboration tool where you can
+
+00:11:37.440 --> 00:11:38.320
+collaborate on videos,
+
+00:11:38.480 --> 00:11:40.000
+record comments, and share your screen.
+
+00:11:40.120 --> 00:11:41.740
+And all of the comments appear visually right
+
+00:11:41.740 --> 00:11:42.540
+on the video's timeline.
+
+00:11:42.780 --> 00:11:44.240
+Now, for every comment, we need to give
+
+00:11:44.240 --> 00:11:46.640
+out key information that we cannot miss.
+
+00:11:46.780 --> 00:11:49.060
+For example, who created the comment, Enrico in
+
+00:11:49.060 --> 00:11:49.400
+this case,
+
+00:11:49.400 --> 00:11:51.760
+when this was added, or which timestamp it's
+
+00:11:51.760 --> 00:11:52.740
+referencing in the video.
+
+00:11:52.840 --> 00:11:54.180
+You also need a way to mark the
+
+00:11:54.180 --> 00:11:54.900
+comment as done.
+
+00:11:55.220 --> 00:11:57.620
+Now, the most basic approach that any designer
+
+00:11:57.620 --> 00:11:59.120
+would take is this.
+
+00:11:59.460 --> 00:12:00.900
+Find a nice way to get them out,
+
+00:12:01.000 --> 00:12:01.860
+and you're done.
+
+00:12:02.060 --> 00:12:04.100
+For example, this is what my main competitor
+
+00:12:04.100 --> 00:12:04.480
+does.
+
+00:12:04.640 --> 00:12:06.000
+You have all the info right here, and
+
+00:12:06.000 --> 00:12:07.460
+you can mark a comment as done right
+
+00:12:07.460 --> 00:12:07.720
+there.
+
+00:12:07.840 --> 00:12:09.540
+But instead, what if we take a level
+
+00:12:09.540 --> 00:12:11.480
+5 strategic approach to this,
+
+00:12:11.620 --> 00:12:13.380
+where we don't just think about how to
+
+00:12:13.380 --> 00:12:14.560
+arrange things visually,
+
+00:12:14.560 --> 00:12:16.940
+but how to architect the logic of the
+
+00:12:16.940 --> 00:12:19.440
+entire app to make this all much more
+
+00:12:19.440 --> 00:12:19.940
+elegant.
+
+00:12:20.080 --> 00:12:22.240
+For example, instead of deciding that this is
+
+00:12:22.240 --> 00:12:23.180
+a done toggle,
+
+00:12:23.340 --> 00:12:25.380
+why don't we create the general purpose tagging
+
+00:12:25.380 --> 00:12:25.720
+system,
+
+00:12:25.960 --> 00:12:28.060
+where each element can have custom tags.
+
+00:12:28.320 --> 00:12:30.300
+And then we'll create a default one called
+
+00:12:30.300 --> 00:12:30.760
+done,
+
+00:12:30.900 --> 00:12:32.020
+and another one called important.
+
+00:12:32.180 --> 00:12:33.540
+So we can show users that you can
+
+00:12:33.540 --> 00:12:35.300
+actually have more than one at a time.
+
+00:12:35.400 --> 00:12:37.080
+And now, these are not fixed in place.
+
+00:12:37.240 --> 00:12:38.680
+If you don't like done, and you want
+
+00:12:38.680 --> 00:12:39.600
+to use it for something else,
+
+00:12:39.740 --> 00:12:40.920
+you can just delete it.
+
+00:12:41.000 --> 00:12:42.720
+But as people started to request more and
+
+00:12:42.720 --> 00:12:43.320
+more features,
+
+00:12:43.320 --> 00:12:45.100
+they wanted to be able to filter by
+
+00:12:45.100 --> 00:12:45.460
+user,
+
+00:12:45.780 --> 00:12:47.860
+or by custom tag, or by creation date,
+
+00:12:47.960 --> 00:12:49.820
+and it was getting so complicated.
+
+00:12:50.020 --> 00:12:52.260
+So instead, we're going to make one structural
+
+00:12:52.260 --> 00:12:53.320
+design change,
+
+00:12:53.440 --> 00:12:55.640
+and say that everything is a tag.
+
+00:12:55.760 --> 00:12:57.660
+So now the creator becomes a tag.
+
+00:12:57.800 --> 00:12:59.280
+The creation time becomes a tag.
+
+00:12:59.440 --> 00:13:01.740
+Even the link timestamp becomes a tag.
+
+00:13:01.900 --> 00:13:03.980
+Now, these are not editable by the user,
+
+00:13:04.120 --> 00:13:05.360
+but watch what happens.
+
+00:13:05.580 --> 00:13:07.140
+Now I can create a filtering system
+
+00:13:07.140 --> 00:13:09.620
+that filters by multiple types of tags in
+
+00:13:09.620 --> 00:13:10.320
+the same place,
+
+00:13:10.360 --> 00:13:12.240
+and it all feels logical.
+
+00:13:12.240 --> 00:13:13.920
+Now I don't need to have a dedicated
+
+00:13:13.920 --> 00:13:15.680
+row up top with its own layout.
+
+00:13:15.860 --> 00:13:17.740
+I can just have a list of tags.
+
+00:13:18.020 --> 00:13:19.080
+And now, a while later,
+
+00:13:19.240 --> 00:13:20.540
+I had to build a system to notify
+
+00:13:20.540 --> 00:13:22.740
+users of new comments that got added
+
+00:13:22.740 --> 00:13:24.120
+since they last visited.
+
+00:13:24.300 --> 00:13:26.020
+Normally, I would have to create an entirely
+
+00:13:26.020 --> 00:13:26.600
+new view
+
+00:13:26.600 --> 00:13:27.880
+to show these comments.
+
+00:13:28.060 --> 00:13:30.240
+But now that we made this structural design
+
+00:13:30.240 --> 00:13:30.680
+decision
+
+00:13:30.680 --> 00:13:32.420
+that everything is a tag,
+
+00:13:32.580 --> 00:13:33.680
+you can see that I just need to
+
+00:13:33.680 --> 00:13:36.000
+add a tag called new to the comments.
+
+00:13:36.180 --> 00:13:38.280
+And clicking here will just trigger a filter
+
+00:13:38.280 --> 00:13:39.420
+for that tag,
+
+00:13:39.420 --> 00:13:41.760
+which uses all the existing stuff that we
+
+00:13:41.760 --> 00:13:42.620
+already built before.
+
+00:13:42.780 --> 00:13:44.900
+Having a great structural design in the logic
+
+00:13:44.900 --> 00:13:46.000
+of how your app works
+
+00:13:46.000 --> 00:13:48.440
+makes everything else simpler.
+
+00:13:48.620 --> 00:13:50.180
+That's why in a similar way to Flask,
+
+00:13:50.320 --> 00:13:52.560
+Notion took the decision to make everything a
+
+00:13:52.560 --> 00:13:52.820
+page.
+
+00:13:53.020 --> 00:13:54.700
+Even though it might be displayed as a
+
+00:13:54.700 --> 00:13:56.080
+calendar or a feed or a table,
+
+00:13:56.480 --> 00:13:57.260
+everything is a page.
+
+00:13:57.460 --> 00:13:59.600
+Or while Slack decided that everything is a
+
+00:13:59.600 --> 00:13:59.880
+channel.
+
+00:13:59.880 --> 00:14:02.440
+These are all examples of level 5.
+
+00:14:02.720 --> 00:14:04.660
+But at level 6 is where we start
+
+00:14:04.660 --> 00:14:05.860
+to leave product design
+
+00:14:05.860 --> 00:14:07.540
+as you think about it and start to
+
+00:14:07.540 --> 00:14:09.660
+enter the realm of product strategy.
+
+00:14:09.920 --> 00:14:12.000
+See, for example, video has been around forever.
+
+00:14:12.220 --> 00:14:13.600
+You can record yourself on your phone.
+
+00:14:13.720 --> 00:14:14.880
+You can have a video call on Zoom.
+
+00:14:15.020 --> 00:14:15.860
+You can upload to YouTube.
+
+00:14:16.060 --> 00:14:17.060
+Video is soft.
+
+00:14:17.180 --> 00:14:18.660
+We don't need any more video products.
+
+00:14:18.820 --> 00:14:21.120
+But then Loom came along and said,
+
+00:14:21.200 --> 00:14:23.980
+what if video wasn't for entertainment or for
+
+00:14:23.980 --> 00:14:24.560
+live calls,
+
+00:14:24.660 --> 00:14:26.480
+but for replacing meetings?
+
+00:14:26.680 --> 00:14:28.340
+What if instead of scheduling 30 minutes with
+
+00:14:28.340 --> 00:14:28.740
+your team,
+
+00:14:28.740 --> 00:14:30.980
+you just record a 3-minute video and
+
+00:14:30.980 --> 00:14:31.540
+send it out?
+
+00:14:31.700 --> 00:14:33.380
+They didn't invent video.
+
+00:14:33.560 --> 00:14:34.540
+They didn't invent recording.
+
+00:14:34.680 --> 00:14:35.680
+They didn't invent players.
+
+00:14:35.840 --> 00:14:37.980
+They reframed what video is for.
+
+00:14:38.300 --> 00:14:40.620
+And this little reframe built a company that
+
+00:14:40.620 --> 00:14:43.600
+Atlassian bought for $975 million.
+
+00:14:44.240 --> 00:14:45.660
+Or take Superhuman.
+
+00:14:45.880 --> 00:14:47.440
+Email has been around for decades.
+
+00:14:47.720 --> 00:14:48.500
+Gmail is free.
+
+00:14:48.940 --> 00:14:50.760
+What could you possibly do here?
+
+00:14:51.100 --> 00:14:54.300
+Well, Superhuman reframed email from inbox you need
+
+00:14:54.300 --> 00:14:54.760
+to manage
+
+00:14:54.760 --> 00:14:57.780
+to the fastest email out there.
+
+00:14:57.780 --> 00:14:59.820
+They added keyboard shortcuts for everything.
+
+00:14:59.940 --> 00:15:01.540
+They show you how long it takes to
+
+00:15:01.540 --> 00:15:02.760
+get through your inbox.
+
+00:15:03.000 --> 00:15:05.160
+They gamified going to inbox zero.
+
+00:15:05.340 --> 00:15:07.680
+And that's how they charge $30 a month
+
+00:15:07.680 --> 00:15:08.100
+for it.
+
+00:15:08.340 --> 00:15:09.840
+This is what level 6 is all about.
+
+00:15:10.020 --> 00:15:11.220
+The technology doesn't change.
+
+00:15:11.380 --> 00:15:12.320
+The framing doesn't change.
+
+00:15:12.480 --> 00:15:13.860
+Hell, the design might not even change.
+
+00:15:13.980 --> 00:15:15.600
+But the right strategic decision here
+
+00:15:15.600 --> 00:15:18.160
+can create billions of dollars worth of company.
+
+00:15:18.320 --> 00:15:20.560
+And now we finally get to level 7.
+
+00:15:20.860 --> 00:15:23.260
+This is Steve Jobs kind of territory.
+
+00:15:23.260 --> 00:15:26.180
+Get rid of all these buttons and just
+
+00:15:26.180 --> 00:15:27.260
+make a giant screen.
+
+00:15:27.500 --> 00:15:29.560
+See, at the time, this sounded insane.
+
+00:15:29.780 --> 00:15:30.640
+Blackberry was king.
+
+00:15:30.820 --> 00:15:32.160
+Physical keyboards were essential.
+
+00:15:32.360 --> 00:15:34.360
+The idea that you could type accurately on
+
+00:15:34.360 --> 00:15:34.740
+a touchscreen
+
+00:15:34.740 --> 00:15:36.220
+was considered fantasy.
+
+00:15:36.420 --> 00:15:37.260
+And here's the thing.
+
+00:15:37.360 --> 00:15:38.840
+It wasn't even a new idea.
+
+00:15:39.020 --> 00:15:41.200
+In 1984, a company called General Magic
+
+00:15:41.200 --> 00:15:43.380
+spun off from Apple and shipped the Sonic
+
+00:15:43.380 --> 00:15:44.000
+Magic Link,
+
+00:15:44.240 --> 00:15:45.680
+a handheld device with a touchscreen
+
+00:15:45.680 --> 00:15:47.780
+where you could do email, calendar, notes,
+
+00:15:47.780 --> 00:15:51.160
+the first smartphone 13 years before the iPhone.
+
+00:15:51.320 --> 00:15:52.420
+And it flopped.
+
+00:15:52.520 --> 00:15:53.980
+So what is the difference here?
+
+00:15:54.200 --> 00:15:55.600
+It's the same vision, the same bed,
+
+00:15:55.900 --> 00:15:57.320
+but a completely different outcome.
+
+00:15:57.520 --> 00:15:59.540
+The difference was everything underneath.
+
+00:15:59.880 --> 00:16:02.020
+General Magic, just like Steve Jobs a few
+
+00:16:02.020 --> 00:16:02.560
+years later,
+
+00:16:02.760 --> 00:16:03.820
+had level 7.
+
+00:16:03.960 --> 00:16:05.760
+It's a crazy product vision.
+
+00:16:05.960 --> 00:16:07.540
+Something that completely changes things.
+
+00:16:07.680 --> 00:16:10.060
+But they didn't have all the layers underneath.
+
+00:16:10.360 --> 00:16:11.920
+And the difference between Steve Jobs and the
+
+00:16:11.920 --> 00:16:12.420
+iPhone team
+
+00:16:12.420 --> 00:16:15.240
+and everyone else is all the levels underneath.
+
+00:16:15.240 --> 00:16:17.560
+It's going to level 6 and reframing the
+
+00:16:17.560 --> 00:16:17.800
+phone
+
+00:16:17.800 --> 00:16:19.180
+from a device that makes calls
+
+00:16:19.180 --> 00:16:20.700
+to a computer in your pocket.
+
+00:16:20.880 --> 00:16:23.020
+Not a phone with apps, but apps with
+
+00:16:23.020 --> 00:16:23.340
+a phone.
+
+00:16:23.700 --> 00:16:25.120
+It's going back to level 5.
+
+00:16:25.240 --> 00:16:27.360
+The structural decision that everything is an app,
+
+00:16:27.540 --> 00:16:30.380
+no file system, no complex desktop-like UI,
+
+00:16:30.580 --> 00:16:33.860
+everything is in this neat grid of apps.
+
+00:16:34.020 --> 00:16:36.080
+It's going back to level 4, the defaults.
+
+00:16:36.200 --> 00:16:38.220
+The App Store ships with Apple's apps front
+
+00:16:38.220 --> 00:16:38.660
+and center.
+
+00:16:38.820 --> 00:16:39.860
+Safari defaults to Google.
+
+00:16:40.080 --> 00:16:41.960
+The home button always takes you home.
+
+00:16:42.140 --> 00:16:44.080
+And of course, you need level 3,
+
+00:16:44.080 --> 00:16:45.100
+the technical innovation.
+
+00:16:45.380 --> 00:16:47.440
+Capacitive multi-touch that actually works.
+
+00:16:47.580 --> 00:16:48.900
+Gorilla Glass that doesn't break.
+
+00:16:49.060 --> 00:16:50.260
+A battery that lasts a day.
+
+00:16:50.420 --> 00:16:51.460
+And going back to level 2,
+
+00:16:51.620 --> 00:16:53.620
+the interactions, inventing pinch to zoom,
+
+00:16:54.000 --> 00:16:54.660
+slide to unlock,
+
+00:16:54.840 --> 00:16:56.940
+the rubber band bouncy feel when you scroll
+
+00:16:56.940 --> 00:16:57.440
+too far.
+
+00:16:57.660 --> 00:16:59.020
+And all the way to level 1,
+
+00:16:59.180 --> 00:17:01.160
+the details, the squircles on every icon,
+
+00:17:01.300 --> 00:17:02.180
+the weight of the animation.
+
+00:17:02.620 --> 00:17:04.720
+And Ken Cosienta, an engineer with a deadline,
+
+00:17:04.900 --> 00:17:06.620
+fingered out that you need to make
+
+00:17:06.620 --> 00:17:08.480
+the invisible hitboxes of the keyboard
+
+00:17:08.480 --> 00:17:10.700
+dynamically bigger based on the letter you were
+
+00:17:10.700 --> 00:17:11.020
+typing.
+
+00:17:11.020 --> 00:17:13.160
+Otherwise, your keyboard wouldn't work.
+
+00:17:13.280 --> 00:17:15.080
+But what you saw is just the beginning.
+
+00:17:15.360 --> 00:17:16.540
+This video is part of a series
+
+00:17:16.540 --> 00:17:17.960
+where we go behind the scenes of the
+
+00:17:17.960 --> 00:17:18.200
+design,
+
+00:17:18.320 --> 00:17:19.180
+engineering, and psychology
+
+00:17:19.180 --> 00:17:20.920
+of the tech that we use every day.
+
+00:17:21.100 --> 00:17:23.220
+And how even things that look so simple
+
+00:17:23.220 --> 00:17:23.760
+and stupid
+
+00:17:23.760 --> 00:17:25.620
+hide an absurd amount of complexity.
+
+00:17:25.820 --> 00:17:27.580
+And you can find the next video right
+
+00:17:27.580 --> 00:17:27.840
+here.

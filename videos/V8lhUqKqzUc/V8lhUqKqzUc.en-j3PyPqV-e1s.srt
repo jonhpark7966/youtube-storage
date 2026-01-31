@@ -1,0 +1,2887 @@
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:03,720
+[MUSIC PLAYING]
+
+3
+00:00:03,720 --> 00:00:05,502
+
+4
+00:00:05,502 --> 00:00:07,960
+DHAVI HARIHARAN: Hi, I'm Dhavi,
+a product manager at Google
+
+5
+00:00:07,960 --> 00:00:10,040
+DeepMind covering genomics.
+
+6
+00:00:10,040 --> 00:00:15,880
+I'm joined by Ziga, who leads
+our genomics team, Natasha, Tom,
+
+7
+00:00:15,880 --> 00:00:17,480
+and Jun.
+
+8
+00:00:17,480 --> 00:00:20,880
+We've just released our recent
+work, AlphaGenome in "Nature."
+
+9
+00:00:20,880 --> 00:00:24,760
+AlphaGenome is a unified DNA
+sequence-to-function prediction
+
+10
+00:00:24,760 --> 00:00:26,760
+model that predicts
+the functional
+
+11
+00:00:26,760 --> 00:00:28,960
+impact of genetic variants.
+
+12
+00:00:28,960 --> 00:00:32,360
+And today, we wanted to talk
+about the science behind it,
+
+13
+00:00:32,360 --> 00:00:36,460
+why we built it, how it came
+about, what we released,
+
+14
+00:00:36,460 --> 00:00:38,380
+and what we're
+excited about next.
+
+15
+00:00:38,380 --> 00:00:41,862
+[MUSIC PLAYING]
+
+16
+00:00:41,862 --> 00:00:43,360
+
+17
+00:00:43,360 --> 00:00:45,080
+Maybe the best
+place to start is,
+
+18
+00:00:45,080 --> 00:00:47,040
+why did we build AlphaGenome?
+
+19
+00:00:47,040 --> 00:00:50,137
+Ziga, how does this fit in with
+the overall mission of the team?
+
+20
+00:00:50,137 --> 00:00:51,720
+ZIGA AVSEC: So the
+mission of the team
+
+21
+00:00:51,720 --> 00:00:55,200
+is to build an AI system that
+will allow us to decipher
+
+22
+00:00:55,200 --> 00:00:56,480
+the genome sequence.
+
+23
+00:00:56,480 --> 00:00:58,880
+The genome, or the
+DNA, is the source code
+
+24
+00:00:58,880 --> 00:01:01,740
+that the evolution
+has programmed
+
+25
+00:01:01,740 --> 00:01:03,860
+across millions of
+years and millions
+
+26
+00:01:03,860 --> 00:01:06,420
+of-- for millions of species.
+
+27
+00:01:06,420 --> 00:01:10,060
+So it's the source code of life.
+
+28
+00:01:10,060 --> 00:01:12,980
+And deciphering this source
+code would have enormous benefit
+
+29
+00:01:12,980 --> 00:01:16,700
+in health and many other areas.
+
+30
+00:01:16,700 --> 00:01:19,797
+And one way to measure our
+progress towards this goal
+
+31
+00:01:19,797 --> 00:01:22,380
+is to look at how well we can
+predict the effects of mutations
+
+32
+00:01:22,380 --> 00:01:26,500
+or small changes to the
+DNA on molecular mechanisms
+
+33
+00:01:26,500 --> 00:01:28,740
+of the cell that read this DNA.
+
+34
+00:01:28,740 --> 00:01:30,800
+DHAVI HARIHARAN: And
+why is this important,
+
+35
+00:01:30,800 --> 00:01:34,580
+AI that helps us understand
+and decipher the genome?
+
+36
+00:01:34,580 --> 00:01:37,380
+JUN CHENG: Yeah, I think
+improving our understanding
+
+37
+00:01:37,380 --> 00:01:39,660
+of the genome has
+such a profound impact
+
+38
+00:01:39,660 --> 00:01:43,620
+on everyone's life if you think
+about all the people suffering
+
+39
+00:01:43,620 --> 00:01:45,220
+from genetic disease.
+
+40
+00:01:45,220 --> 00:01:49,940
+And, in fact, a large fraction
+of the rare genetic disease
+
+41
+00:01:49,940 --> 00:01:53,020
+remain in diagnosis today.
+
+42
+00:01:53,020 --> 00:01:55,220
+So AI is actually--
+
+43
+00:01:55,220 --> 00:01:58,740
+we have so poor understanding
+of the genome as a whole.
+
+44
+00:01:58,740 --> 00:02:01,800
+And AI is such a good
+tool to read the genome
+
+45
+00:02:01,800 --> 00:02:05,500
+and make meaningful predictions
+about the genetic mutations.
+
+46
+00:02:05,500 --> 00:02:09,560
+For me, I think
+understanding the genome
+
+47
+00:02:09,560 --> 00:02:13,480
+and predicting mutations is
+one of the most impactful
+
+48
+00:02:13,480 --> 00:02:15,800
+application AI can make.
+
+49
+00:02:15,800 --> 00:02:18,320
+DHAVI HARIHARAN: How did you
+get interested in this field?
+
+50
+00:02:18,320 --> 00:02:22,520
+JUN CHENG: I started working
+on predicting genetic mutation
+
+51
+00:02:22,520 --> 00:02:27,240
+during my PhD, and this has
+been my interest ever since.
+
+52
+00:02:27,240 --> 00:02:31,160
+I think when I
+joined DeepMind, I
+
+53
+00:02:31,160 --> 00:02:33,560
+was leading
+AlphaMissense project,
+
+54
+00:02:33,560 --> 00:02:36,280
+which was a method to
+predicting the genetic effects
+
+55
+00:02:36,280 --> 00:02:40,520
+from mutations from the coding
+region, which was only 2%
+
+56
+00:02:40,520 --> 00:02:41,640
+of the genome.
+
+57
+00:02:41,640 --> 00:02:45,400
+But what about the rest
+of the 98% of the genome?
+
+58
+00:02:45,400 --> 00:02:47,880
+That's why we're presenting
+AlphaGenome today.
+
+59
+00:02:47,880 --> 00:02:51,920
+And this method is focusing on
+non-coding part of the genome,
+
+60
+00:02:51,920 --> 00:02:55,840
+and hopefully share some light
+on the [INAUDIBLE] majority
+
+61
+00:02:55,840 --> 00:02:57,360
+part of the genome.
+
+62
+00:02:57,360 --> 00:03:00,800
+And also, speaking a
+bit more personally,
+
+63
+00:03:00,800 --> 00:03:04,180
+the reason I got into
+biology is because, when
+
+64
+00:03:04,180 --> 00:03:08,040
+I was at high school, I was
+reading a college textbook.
+
+65
+00:03:08,040 --> 00:03:11,040
+It was describing all these
+fantastic and complex,
+
+66
+00:03:11,040 --> 00:03:13,820
+elegant molecular
+mechanisms of life.
+
+67
+00:03:13,820 --> 00:03:16,060
+That's why I got-- so that's
+why I decided I should
+
+68
+00:03:16,060 --> 00:03:18,640
+work on biology for my career.
+
+69
+00:03:18,640 --> 00:03:20,403
+And, Tom, what's your
+experience there?
+
+70
+00:03:20,403 --> 00:03:21,820
+TOM WARD: It's
+quite great to have
+
+71
+00:03:21,820 --> 00:03:23,820
+such a multidisciplinary team.
+
+72
+00:03:23,820 --> 00:03:25,860
+We all come from
+different walks of life
+
+73
+00:03:25,860 --> 00:03:28,668
+and bring different
+things to the table.
+
+74
+00:03:28,668 --> 00:03:30,460
+So I think for me, and
+I think other people
+
+75
+00:03:30,460 --> 00:03:34,020
+who hadn't worked in
+biology, I think genetics
+
+76
+00:03:34,020 --> 00:03:35,920
+is a really fascinating field.
+
+77
+00:03:35,920 --> 00:03:39,940
+It seems like such an
+unexplored problem space.
+
+78
+00:03:39,940 --> 00:03:44,300
+And being able to work out
+what very small changes in DNA
+
+79
+00:03:44,300 --> 00:03:47,620
+can cause in humans
+and other species
+
+80
+00:03:47,620 --> 00:03:49,980
+is really quite fascinating.
+
+81
+00:03:49,980 --> 00:03:52,320
+And the field is-- and
+especially in machine learning,
+
+82
+00:03:52,320 --> 00:03:54,980
+the field in
+computational biology
+
+83
+00:03:54,980 --> 00:03:57,560
+seems to be going
+really, really fast.
+
+84
+00:03:57,560 --> 00:04:00,240
+And there's lots of things
+going on in that field.
+
+85
+00:04:00,240 --> 00:04:02,720
+So it's a really
+exciting place to work.
+
+86
+00:04:02,720 --> 00:04:04,120
+ZIGA AVSEC: I can
+still remember,
+
+87
+00:04:04,120 --> 00:04:06,340
+before I joined DeepMind,
+I worked on [? vp.net, ?]
+
+88
+00:04:06,340 --> 00:04:09,580
+which was a tiny network
+in today's standards.
+
+89
+00:04:09,580 --> 00:04:12,440
+It took as input a thousand
+base pairs of the DNA
+
+90
+00:04:12,440 --> 00:04:14,320
+and predicted transcription
+factor binding
+
+91
+00:04:14,320 --> 00:04:15,860
+at very high resolution.
+
+92
+00:04:15,860 --> 00:04:20,480
+And I was fascinated by how rich
+and precise this information
+
+93
+00:04:20,480 --> 00:04:22,240
+could be at base resolution.
+
+94
+00:04:22,240 --> 00:04:25,280
+But at the same time,
+it felt like very much
+
+95
+00:04:25,280 --> 00:04:27,660
+a zoomed-in picture
+of a specific process.
+
+96
+00:04:27,660 --> 00:04:30,040
+So when I joined
+DeepMind, I wanted
+
+97
+00:04:30,040 --> 00:04:33,620
+to work on more
+complex processes.
+
+98
+00:04:33,620 --> 00:04:36,400
+So we worked together with
+David Kelley at Calico
+
+99
+00:04:36,400 --> 00:04:38,880
+on predicting gene expression
+from DNA sequence, which
+
+100
+00:04:38,880 --> 00:04:41,200
+is a very difficult problem.
+
+101
+00:04:41,200 --> 00:04:43,880
+And for that problem,
+we had to extend
+
+102
+00:04:43,880 --> 00:04:46,760
+the length of the sequence
+quite significantly in order
+
+103
+00:04:46,760 --> 00:04:50,127
+to capture as many relevant
+pieces as possible.
+
+104
+00:04:50,127 --> 00:04:51,960
+But in order to do that,
+we had to trade off
+
+105
+00:04:51,960 --> 00:04:56,580
+the resolution that made
+[? vp.net ?] so interesting.
+
+106
+00:04:56,580 --> 00:04:59,520
+So it's always felt like a bit
+of a trade-off between these two
+
+107
+00:04:59,520 --> 00:05:01,800
+things, the sequence
+length and the resolution.
+
+108
+00:05:01,800 --> 00:05:04,380
+DHAVI HARIHARAN: I guess there
+have been many other models
+
+109
+00:05:04,380 --> 00:05:06,340
+pushing this area forward.
+
+110
+00:05:06,340 --> 00:05:09,060
+What was the real gap
+that we were trying
+
+111
+00:05:09,060 --> 00:05:10,480
+to fill with AlphaGenome?
+
+112
+00:05:10,480 --> 00:05:12,313
+NATASHA LATYSHEVA: There
+have been other DNA
+
+113
+00:05:12,313 --> 00:05:14,020
+sequence-to-function
+models before.
+
+114
+00:05:14,020 --> 00:05:15,820
+The most similar to
+AlphaGenome is probably
+
+115
+00:05:15,820 --> 00:05:20,180
+Informa, also from this team,
+and Borzoi from David Kelley's
+
+116
+00:05:20,180 --> 00:05:21,540
+group in Calico.
+
+117
+00:05:21,540 --> 00:05:25,000
+And there's also lots of more
+specialized single-task models.
+
+118
+00:05:25,000 --> 00:05:27,440
+There's SpliceAI
+for splice size.
+
+119
+00:05:27,440 --> 00:05:30,320
+There's Orca and Akita
+for contact maps,
+
+120
+00:05:30,320 --> 00:05:32,860
+Chrome [? vp.net ?] for
+accessibility, and so on.
+
+121
+00:05:32,860 --> 00:05:35,460
+I think the gap that
+AlphaGenome has filled
+
+122
+00:05:35,460 --> 00:05:39,940
+is it's modeling more modalities
+in one model than ever before.
+
+123
+00:05:39,940 --> 00:05:42,580
+The input sequence
+length is very long,
+
+124
+00:05:42,580 --> 00:05:45,480
+and the predictions are
+very finely detailed.
+
+125
+00:05:45,480 --> 00:05:48,580
+So I think it's a really
+powerful combination
+
+126
+00:05:48,580 --> 00:05:51,540
+of these three things,
+the modality coverage
+
+127
+00:05:51,540 --> 00:05:55,100
+megabase of DNA sequence and
+single-base resolution outputs
+
+128
+00:05:55,100 --> 00:05:57,540
+for many of the output types.
+
+129
+00:05:57,540 --> 00:05:59,580
+I think that makes the
+model, yeah, quite useful
+
+130
+00:05:59,580 --> 00:06:01,288
+for variant effect
+prediction and variant
+
+131
+00:06:01,288 --> 00:06:04,160
+interpretation and, of
+course, also the increased
+
+132
+00:06:04,160 --> 00:06:06,120
+predictive kind of
+accuracy across all
+
+133
+00:06:06,120 --> 00:06:07,560
+these different outputs.
+
+134
+00:06:07,560 --> 00:06:11,000
+The utility and
+convenience point, I think,
+
+135
+00:06:11,000 --> 00:06:12,740
+is very powerful, actually.
+
+136
+00:06:12,740 --> 00:06:16,920
+So now with one model, you can
+look at the effect of a variant
+
+137
+00:06:16,920 --> 00:06:19,960
+from many different lenses
+and consider the effects
+
+138
+00:06:19,960 --> 00:06:22,800
+on different layers
+of molecular biology.
+
+139
+00:06:22,800 --> 00:06:25,640
+Whereas, before you might have
+had to use many different models
+
+140
+00:06:25,640 --> 00:06:26,980
+to do that analysis.
+
+141
+00:06:26,980 --> 00:06:30,456
+[MUSIC PLAYING]
+
+142
+00:06:30,456 --> 00:06:32,258
+
+143
+00:06:32,258 --> 00:06:34,300
+DHAVI HARIHARAN: Why did
+we need separate models?
+
+144
+00:06:34,300 --> 00:06:37,620
+Why is it so hard
+to do long context,
+
+145
+00:06:37,620 --> 00:06:41,360
+high-resolution multimodalities
+all at the same time?
+
+146
+00:06:41,360 --> 00:06:43,280
+TOM WARD: DNA
+sequence-to-function models
+
+147
+00:06:43,280 --> 00:06:45,640
+work by basically
+taking a chunk of DNA
+
+148
+00:06:45,640 --> 00:06:50,200
+and getting the model to predict
+real-world experimental data.
+
+149
+00:06:50,200 --> 00:06:52,600
+And so like you
+said, the complexity
+
+150
+00:06:52,600 --> 00:06:57,360
+comes from when you want to
+make more longer range sequence
+
+151
+00:06:57,360 --> 00:06:59,760
+predictions at a
+higher resolution
+
+152
+00:06:59,760 --> 00:07:02,140
+and with lots of different
+from modalities, you
+
+153
+00:07:02,140 --> 00:07:05,860
+kind of run up against these
+kind of computational limits
+
+154
+00:07:05,860 --> 00:07:08,700
+and high-memory
+usage, which makes
+
+155
+00:07:08,700 --> 00:07:12,620
+it very difficult from an
+engineering perspective.
+
+156
+00:07:12,620 --> 00:07:15,220
+And so for AlphaGenome, we were
+really keen to try and break
+
+157
+00:07:15,220 --> 00:07:19,580
+that, those trade-offs, and
+try and do all of those things
+
+158
+00:07:19,580 --> 00:07:20,675
+in a single model.
+
+159
+00:07:20,675 --> 00:07:23,300
+DHAVI HARIHARAN: And how did you
+really get around that problem
+
+160
+00:07:23,300 --> 00:07:24,660
+then?
+
+161
+00:07:24,660 --> 00:07:26,220
+ZIGA AVSEC: Yeah,
+we ended up using--
+
+162
+00:07:26,220 --> 00:07:29,380
+we ended up taking the
+sequence and splicing it
+
+163
+00:07:29,380 --> 00:07:31,180
+into different
+subsequences and then
+
+164
+00:07:31,180 --> 00:07:34,860
+using multiple TPUs to process
+these subsequences, which are
+
+165
+00:07:34,860 --> 00:07:36,900
+then much shorter in length.
+
+166
+00:07:36,900 --> 00:07:44,380
+And that allowed us to use much
+less memory on a single TPU.
+
+167
+00:07:44,380 --> 00:07:45,900
+The key piece we
+had to make sure
+
+168
+00:07:45,900 --> 00:07:47,858
+is that they still
+communicate with each other,
+
+169
+00:07:47,858 --> 00:07:50,220
+so that the TP1 can
+still communicate
+
+170
+00:07:50,220 --> 00:07:53,980
+to the last TPU in sequence.
+
+171
+00:07:53,980 --> 00:07:55,820
+And so instead of
+sampling intervals
+
+172
+00:07:55,820 --> 00:07:59,180
+in the genome randomly, we
+sample them next to each other
+
+173
+00:07:59,180 --> 00:08:02,120
+and then allowed these
+TPUs to talk to each other.
+
+174
+00:08:02,120 --> 00:08:04,120
+I can still remember the
+day when we were having
+
+175
+00:08:04,120 --> 00:08:06,000
+lunch with my colleague, Guido.
+
+176
+00:08:06,000 --> 00:08:08,540
+And I shared this idea with
+him, and we started discussing.
+
+177
+00:08:08,540 --> 00:08:10,665
+And at the end of the lunch,
+we weren't really sure
+
+178
+00:08:10,665 --> 00:08:12,480
+if it's going to work.
+
+179
+00:08:12,480 --> 00:08:15,000
+A few days later, he
+comes to me and says,
+
+180
+00:08:15,000 --> 00:08:18,520
+I have a prototype
+running with fake data,
+
+181
+00:08:18,520 --> 00:08:23,600
+and it runs almost as fast as
+our informer training loop,
+
+182
+00:08:23,600 --> 00:08:26,200
+and it can process these
+very long sequences
+
+183
+00:08:26,200 --> 00:08:27,800
+at high resolution.
+
+184
+00:08:27,800 --> 00:08:30,040
+And at that moment,
+I was really excited
+
+185
+00:08:30,040 --> 00:08:32,679
+because I knew that
+this can theoretically
+
+186
+00:08:32,679 --> 00:08:35,380
+break this limit of long
+sequence and high resolution.
+
+187
+00:08:35,380 --> 00:08:36,880
+Although, in practice,
+it turned out
+
+188
+00:08:36,880 --> 00:08:39,280
+that we were still quite far
+away from making it actually
+
+189
+00:08:39,280 --> 00:08:40,440
+work, right, Tom?
+
+190
+00:08:40,440 --> 00:08:42,815
+TOM WARD: Yeah, so once we
+got the model parallelization
+
+191
+00:08:42,815 --> 00:08:44,440
+working, the next
+thing we needed to do
+
+192
+00:08:44,440 --> 00:08:47,600
+was be able to feed this model
+with vast amounts of training
+
+193
+00:08:47,600 --> 00:08:48,100
+data.
+
+194
+00:08:48,100 --> 00:08:49,642
+I think at one point,
+we were loading
+
+195
+00:08:49,642 --> 00:08:52,240
+kind of 40 or 50
+gigabytes of data
+
+196
+00:08:52,240 --> 00:08:54,880
+to try and keep up with
+the model's training.
+
+197
+00:08:54,880 --> 00:08:57,300
+So we had two big realizations.
+
+198
+00:08:57,300 --> 00:09:00,420
+One was that the data was
+actually really sparse.
+
+199
+00:09:00,420 --> 00:09:05,380
+It's kind of 99% zeros
+in some of the modalities
+
+200
+00:09:05,380 --> 00:09:07,060
+that we were training for.
+
+201
+00:09:07,060 --> 00:09:10,220
+So that meant that, actually,
+all we really needed to focus on
+
+202
+00:09:10,220 --> 00:09:13,220
+was being able to compress
+and decompress the data as
+
+203
+00:09:13,220 --> 00:09:15,100
+fast as possible.
+
+204
+00:09:15,100 --> 00:09:17,220
+And so by doing that,
+we managed to break
+
+205
+00:09:17,220 --> 00:09:20,260
+that loading the data
+fast enough for the model
+
+206
+00:09:20,260 --> 00:09:22,920
+to be able to feed it and train.
+
+207
+00:09:22,920 --> 00:09:24,420
+And then the second
+thing we did was
+
+208
+00:09:24,420 --> 00:09:26,060
+we were really
+ruthless on the data
+
+209
+00:09:26,060 --> 00:09:28,740
+that we were feeding
+the model to train.
+
+210
+00:09:28,740 --> 00:09:31,220
+We did kind of a pass--
+a couple of quality check
+
+211
+00:09:31,220 --> 00:09:35,060
+passes to make sure the data
+was either really high quality
+
+212
+00:09:35,060 --> 00:09:38,380
+or it was added to the
+diversity of the model
+
+213
+00:09:38,380 --> 00:09:42,020
+so that it could get--
+train, generalize, a bit more
+
+214
+00:09:42,020 --> 00:09:44,060
+or learn new capabilities.
+
+215
+00:09:44,060 --> 00:09:47,580
+So once we got the
+data loading working,
+
+216
+00:09:47,580 --> 00:09:50,300
+we were able to then train
+the model really efficiently
+
+217
+00:09:50,300 --> 00:09:54,100
+and be able to iterate on the
+modeling as much as possible.
+
+218
+00:09:54,100 --> 00:09:57,580
+And so we kind of got the 1D
+representation of data training
+
+219
+00:09:57,580 --> 00:09:58,518
+and predicting.
+
+220
+00:09:58,518 --> 00:10:01,060
+And so the next thing we were
+really excited about working on
+
+221
+00:10:01,060 --> 00:10:05,880
+was two-dimensional data, so
+content maps and splicing.
+
+222
+00:10:05,880 --> 00:10:08,300
+So, Jun, I think you worked
+quite a lot on splicing.
+
+223
+00:10:08,300 --> 00:10:10,552
+It was definitely a
+very tricky problem.
+
+224
+00:10:10,552 --> 00:10:11,260
+JUN CHENG: Right.
+
+225
+00:10:11,260 --> 00:10:12,700
+That was quite tricky.
+
+226
+00:10:12,700 --> 00:10:16,560
+So splicing is a process
+that is needed for a gene
+
+227
+00:10:16,560 --> 00:10:19,720
+to express a protein properly.
+
+228
+00:10:19,720 --> 00:10:24,360
+And it's a process-- the
+genetic information encoded
+
+229
+00:10:24,360 --> 00:10:26,440
+on the genome non-contiguously.
+
+230
+00:10:26,440 --> 00:10:29,540
+So if you want to express
+a functional protein,
+
+231
+00:10:29,540 --> 00:10:32,880
+you need to bring all these
+non-contiguous information
+
+232
+00:10:32,880 --> 00:10:33,500
+together.
+
+233
+00:10:33,500 --> 00:10:35,840
+And that process
+is called splicing.
+
+234
+00:10:35,840 --> 00:10:37,680
+As you can imagine,
+this process can easily
+
+235
+00:10:37,680 --> 00:10:40,640
+go wrong due to
+genetic mutations.
+
+236
+00:10:40,640 --> 00:10:42,440
+And, in fact, many
+genetic diseases
+
+237
+00:10:42,440 --> 00:10:46,200
+are caused because
+of splicing defect.
+
+238
+00:10:46,200 --> 00:10:48,972
+I worked on this
+problem during my PhD,
+
+239
+00:10:48,972 --> 00:10:50,680
+and the method
+[INAUDIBLE] published then
+
+240
+00:10:50,680 --> 00:10:52,820
+was called MS Splice.
+
+241
+00:10:52,820 --> 00:10:56,080
+We're trying to model the
+competition between junctions,
+
+242
+00:10:56,080 --> 00:10:59,160
+but the model wasn't
+nearly as good.
+
+243
+00:10:59,160 --> 00:11:03,480
+So I had these ideas how to do
+this properly back in my mind.
+
+244
+00:11:03,480 --> 00:11:06,540
+And when we started
+working on AlphaGenome,
+
+245
+00:11:06,540 --> 00:11:10,620
+I realized that this is
+a perfect, natural fit.
+
+246
+00:11:10,620 --> 00:11:14,300
+And with the talent team,
+Guido, and Tom, and others,
+
+247
+00:11:14,300 --> 00:11:16,900
+we finally have all the
+technical pieces together
+
+248
+00:11:16,900 --> 00:11:20,020
+to properly do
+this modeling work.
+
+249
+00:11:20,020 --> 00:11:23,820
+And, yeah, speaking of that,
+it wasn't really that easy
+
+250
+00:11:23,820 --> 00:11:27,300
+as it sounds because the
+output format and input
+
+251
+00:11:27,300 --> 00:11:29,100
+format was quite different.
+
+252
+00:11:29,100 --> 00:11:33,780
+And we were predicting these 2D
+extremely sparse arrays instead
+
+253
+00:11:33,780 --> 00:11:35,220
+of 1D track.
+
+254
+00:11:35,220 --> 00:11:38,840
+And, yeah, in the end, we
+finally got it to work.
+
+255
+00:11:38,840 --> 00:11:41,600
+And I'm really, really
+happy with that.
+
+256
+00:11:41,600 --> 00:11:44,380
+And this kind of capability
+is actually new to the field.
+
+257
+00:11:44,380 --> 00:11:47,860
+It's definitely also
+new to the team.
+
+258
+00:11:47,860 --> 00:11:50,100
+And, yeah, after
+we get this part
+
+259
+00:11:50,100 --> 00:11:54,060
+work, and the next big part is
+about contact map and, Natasha,
+
+260
+00:11:54,060 --> 00:11:55,960
+how we made that work.
+
+261
+00:11:55,960 --> 00:11:57,740
+NATASHA LATYSHEVA:
+Yeah, contact maps.
+
+262
+00:11:57,740 --> 00:12:00,620
+So contact maps are
+two-dimensional matrices
+
+263
+00:12:00,620 --> 00:12:04,360
+that capture interactions
+between DNA regions.
+
+264
+00:12:04,360 --> 00:12:06,320
+And it turns out
+these interactions
+
+265
+00:12:06,320 --> 00:12:09,100
+are very important for gene
+regulation, essentially.
+
+266
+00:12:09,100 --> 00:12:11,000
+So the genome in the
+nucleus is folded
+
+267
+00:12:11,000 --> 00:12:14,300
+in these intricate
+three-dimensional shapes.
+
+268
+00:12:14,300 --> 00:12:16,160
+And the proximity
+between regions
+
+269
+00:12:16,160 --> 00:12:18,440
+is really important
+for things like
+
+270
+00:12:18,440 --> 00:12:20,340
+promoter-enhancer interactions.
+
+271
+00:12:20,340 --> 00:12:22,440
+So these are two types
+of regulatory regions,
+
+272
+00:12:22,440 --> 00:12:25,520
+which can massively impact
+a gene's expression.
+
+273
+00:12:25,520 --> 00:12:27,960
+And then there's also insulator
+elements that specifically
+
+274
+00:12:27,960 --> 00:12:29,680
+prevent these interactions.
+
+275
+00:12:29,680 --> 00:12:32,527
+And so these are fundamental
+biological processes.
+
+276
+00:12:32,527 --> 00:12:34,360
+And it's a bit of biology
+that we definitely
+
+277
+00:12:34,360 --> 00:12:36,760
+wanted in the model.
+
+278
+00:12:36,760 --> 00:12:39,400
+So yeah, luckily, we
+managed to add it in
+
+279
+00:12:39,400 --> 00:12:41,060
+and get it training end-to-end.
+
+280
+00:12:41,060 --> 00:12:44,280
+And actually, we were happy to
+see that adding this modality
+
+281
+00:12:44,280 --> 00:12:46,960
+didn't lead to any degradation
+on the other modalities
+
+282
+00:12:46,960 --> 00:12:48,268
+we already had.
+
+283
+00:12:48,268 --> 00:12:50,560
+ZIGA AVSEC: Well, it was
+quite interesting to see that,
+
+284
+00:12:50,560 --> 00:12:54,440
+how we were able to add these
+modalities, both 1D modalities,
+
+285
+00:12:54,440 --> 00:12:57,960
+as well as then 2D modalities,
+like splicing and contact maps,
+
+286
+00:12:57,960 --> 00:13:01,820
+without hurting the model's
+performance or slowing it down
+
+287
+00:13:01,820 --> 00:13:03,500
+significantly.
+
+288
+00:13:03,500 --> 00:13:05,600
+In the hindsight, it
+kind of makes sense
+
+289
+00:13:05,600 --> 00:13:07,740
+because all of these
+modalities or measurements
+
+290
+00:13:07,740 --> 00:13:11,260
+are measuring the same
+underlying process,
+
+291
+00:13:11,260 --> 00:13:13,540
+like transcription or splicing.
+
+292
+00:13:13,540 --> 00:13:18,300
+However, it's still nice
+that this worked out.
+
+293
+00:13:18,300 --> 00:13:21,240
+DHAVI HARIHARAN: And as you
+add all these new modalities,
+
+294
+00:13:21,240 --> 00:13:23,780
+how do you check it's
+not hurting performance?
+
+295
+00:13:23,780 --> 00:13:25,120
+How do you evaluate it?
+
+296
+00:13:25,120 --> 00:13:27,370
+NATASHA LATYSHEVA: Our
+evaluation strategy was kind of
+
+297
+00:13:27,370 --> 00:13:29,560
+in two halves, two-pronged.
+
+298
+00:13:29,560 --> 00:13:31,700
+The first is checking,
+how well does the model
+
+299
+00:13:31,700 --> 00:13:35,078
+do on new DNA sequences
+that it's never seen before?
+
+300
+00:13:35,078 --> 00:13:37,620
+How accurately can it predict
+all these different modalities,
+
+301
+00:13:37,620 --> 00:13:40,740
+all these different signals
+along the DNA sequence?
+
+302
+00:13:40,740 --> 00:13:44,140
+The second half, which we think
+is more interesting, certainly,
+
+303
+00:13:44,140 --> 00:13:46,340
+for downstream
+applications is, again,
+
+304
+00:13:46,340 --> 00:13:47,740
+variant effect prediction.
+
+305
+00:13:47,740 --> 00:13:51,020
+So given a small mutation
+in the DNA sequence,
+
+306
+00:13:51,020 --> 00:13:53,360
+this might cause
+downstream changes.
+
+307
+00:13:53,360 --> 00:13:56,420
+And how well can the
+model recapitulate that?
+
+308
+00:13:56,420 --> 00:13:58,780
+The way that we do
+this is, basically, we
+
+309
+00:13:58,780 --> 00:14:02,870
+have two DNA strings, one with
+a mutation and one without,
+
+310
+00:14:02,870 --> 00:14:05,010
+so just the reference
+genome sequence.
+
+311
+00:14:05,010 --> 00:14:07,210
+We feed that into
+the model separately.
+
+312
+00:14:07,210 --> 00:14:08,450
+We get predictions out.
+
+313
+00:14:08,450 --> 00:14:11,570
+And then we basically
+look for differences.
+
+314
+00:14:11,570 --> 00:14:13,750
+We look for differences
+and we summarize them.
+
+315
+00:14:13,750 --> 00:14:17,770
+So conceptually, at
+least, it's fairly simple.
+
+316
+00:14:17,770 --> 00:14:21,010
+But technically, this
+caused endless headaches.
+
+317
+00:14:21,010 --> 00:14:23,830
+Essentially, the first
+thing that we ran into
+
+318
+00:14:23,830 --> 00:14:24,770
+was speed, actually.
+
+319
+00:14:24,770 --> 00:14:27,570
+So the model outputs are
+something like 11 gigabytes.
+
+320
+00:14:27,570 --> 00:14:30,390
+And variant scoring
+was notoriously slow.
+
+321
+00:14:30,390 --> 00:14:32,430
+TOM WARD: Yeah, so very
+much in the same vein
+
+322
+00:14:32,430 --> 00:14:35,230
+that we had with feeding
+the model data, the next one
+
+323
+00:14:35,230 --> 00:14:38,150
+we had was basically trying to
+get these large predictions back
+
+324
+00:14:38,150 --> 00:14:41,630
+and summarize them into
+useful splice statistics
+
+325
+00:14:41,630 --> 00:14:43,910
+that we could use to
+evaluate how well it's
+
+326
+00:14:43,910 --> 00:14:45,790
+doing on a particular task.
+
+327
+00:14:45,790 --> 00:14:48,055
+And so we kind of realized
+that everyone on the team
+
+328
+00:14:48,055 --> 00:14:49,930
+was kind of doing it in
+their own little way.
+
+329
+00:14:49,930 --> 00:14:52,310
+They were coming up with their
+own aggregation strategies
+
+330
+00:14:52,310 --> 00:14:55,550
+and doing it in script
+and on notebooks.
+
+331
+00:14:55,550 --> 00:14:57,350
+But it was, like you
+said, really slow.
+
+332
+00:14:57,350 --> 00:14:58,725
+It would take,
+sometimes, minutes
+
+333
+00:14:58,725 --> 00:14:59,990
+to make these predictions.
+
+334
+00:14:59,990 --> 00:15:02,490
+And so a few engineers
+kind of sat down
+
+335
+00:15:02,490 --> 00:15:04,490
+and we kind of worked
+out how to create
+
+336
+00:15:04,490 --> 00:15:07,890
+this kind of variant
+scoring API, where
+
+337
+00:15:07,890 --> 00:15:10,850
+we could make these
+variant predictions
+
+338
+00:15:10,850 --> 00:15:12,650
+and aggregate them
+on the same devices
+
+339
+00:15:12,650 --> 00:15:14,810
+that we were training--
+running the model.
+
+340
+00:15:14,810 --> 00:15:17,530
+And that meant that we could
+do it really fast and really
+
+341
+00:15:17,530 --> 00:15:20,170
+efficiently, and doing lots
+of different aggregations
+
+342
+00:15:20,170 --> 00:15:21,810
+in parallel.
+
+343
+00:15:21,810 --> 00:15:26,010
+And that allowed us to
+do lots of evaluations
+
+344
+00:15:26,010 --> 00:15:27,110
+really, really fast.
+
+345
+00:15:27,110 --> 00:15:30,510
+And we did quite a few
+evaluations for the paper.
+
+346
+00:15:30,510 --> 00:15:33,010
+NATASHA LATYSHEVA: Yeah, lots
+of evaluations and benchmarks,
+
+347
+00:15:33,010 --> 00:15:36,468
+and benchmarks and evaluations
+stuffed into the paper.
+
+348
+00:15:36,468 --> 00:15:38,010
+But I think the
+reason we did that is
+
+349
+00:15:38,010 --> 00:15:41,430
+we wanted to evaluate the model
+as comprehensively as possible,
+
+350
+00:15:41,430 --> 00:15:45,730
+really, given constraints of
+time, and space, and sanity.
+
+351
+00:15:45,730 --> 00:15:48,270
+One issue that we ran into
+very early on, actually,
+
+352
+00:15:48,270 --> 00:15:51,090
+was how are we going to
+structure our evaluation
+
+353
+00:15:51,090 --> 00:15:52,170
+strategy?
+
+354
+00:15:52,170 --> 00:15:53,930
+How do we make sure
+that we're doing it
+
+355
+00:15:53,930 --> 00:15:55,930
+in a rigorous,
+comprehensive way?
+
+356
+00:15:55,930 --> 00:15:58,150
+Because the model does
+have so many capabilities,
+
+357
+00:15:58,150 --> 00:16:00,510
+how do we handle all of that?
+
+358
+00:16:00,510 --> 00:16:05,030
+And the approach that we took
+on was, again, parallelization.
+
+359
+00:16:05,030 --> 00:16:06,510
+And so, essentially,
+what happened
+
+360
+00:16:06,510 --> 00:16:08,640
+is each individual
+would take on one
+
+361
+00:16:08,640 --> 00:16:10,910
+or two areas, maybe
+one or two modalities,
+
+362
+00:16:10,910 --> 00:16:15,370
+and kind of own that section of
+the paper, really, end-to-end.
+
+363
+00:16:15,370 --> 00:16:17,770
+So they would ingest the
+data, design the evaluation,
+
+364
+00:16:17,770 --> 00:16:20,430
+add benchmarks, make
+the paper figures.
+
+365
+00:16:20,430 --> 00:16:22,310
+And this worked
+really well, actually.
+
+366
+00:16:22,310 --> 00:16:24,870
+And the other thing is that
+a lot of these evaluations
+
+367
+00:16:24,870 --> 00:16:28,050
+were already pre-existing
+in the research community.
+
+368
+00:16:28,050 --> 00:16:32,030
+So in a lot of cases, we could
+just ingest them and use them
+
+369
+00:16:32,030 --> 00:16:32,570
+directly.
+
+370
+00:16:32,570 --> 00:16:33,898
+So that was extremely helpful.
+
+371
+00:16:33,898 --> 00:16:36,190
+DHAVI HARIHARAN: You mentioned
+different people started
+
+372
+00:16:36,190 --> 00:16:38,490
+focusing on different areas.
+
+373
+00:16:38,490 --> 00:16:41,343
+Are there different
+classes of evaluation then?
+
+374
+00:16:41,343 --> 00:16:43,010
+NATASHA LATYSHEVA:
+Jun can talk to that.
+
+375
+00:16:43,010 --> 00:16:44,052
+JUN CHENG: Yeah, exactly.
+
+376
+00:16:44,052 --> 00:16:47,430
+Whenever possible, we
+try to evaluate our model
+
+377
+00:16:47,430 --> 00:16:48,910
+in different ways.
+
+378
+00:16:48,910 --> 00:16:52,350
+For instance, we evaluate
+on the molecular level
+
+379
+00:16:52,350 --> 00:16:56,190
+if we recapitulate the
+experimental readout well,
+
+380
+00:16:56,190 --> 00:17:00,030
+and also on the organism
+level consequence
+
+381
+00:17:00,030 --> 00:17:03,730
+if we can predict well a
+mutation is going to lead
+
+382
+00:17:03,730 --> 00:17:06,490
+to higher disease risk or not.
+
+383
+00:17:06,490 --> 00:17:10,990
+Also, we also try to show as
+many examples as possible,
+
+384
+00:17:10,990 --> 00:17:13,490
+both examples where
+the model did well
+
+385
+00:17:13,490 --> 00:17:15,810
+and examples model did not well.
+
+386
+00:17:15,810 --> 00:17:19,290
+And this was just one example I
+found particularly interesting
+
+387
+00:17:19,290 --> 00:17:22,250
+that we showed in the paper.
+
+388
+00:17:22,250 --> 00:17:25,410
+The model was trying to predict
+some cancer driver mutations,
+
+389
+00:17:25,410 --> 00:17:28,650
+and we're very surprised to
+find that the model actually
+
+390
+00:17:28,650 --> 00:17:32,130
+did very well, recapitulate
+what the researchers found
+
+391
+00:17:32,130 --> 00:17:34,290
+in the wet lab.
+
+392
+00:17:34,290 --> 00:17:37,290
+And that was amazing
+to see, that the model
+
+393
+00:17:37,290 --> 00:17:39,490
+ranks the driver
+mutations much higher
+
+394
+00:17:39,490 --> 00:17:42,730
+than some other random controls.
+
+395
+00:17:42,730 --> 00:17:45,328
+Yeah, we are quite happy,
+and put in the paper.
+
+396
+00:17:45,328 --> 00:17:46,370
+DHAVI HARIHARAN: Awesome.
+
+397
+00:17:46,370 --> 00:17:47,870
+Yeah, I guess after
+the evaluations,
+
+398
+00:17:47,870 --> 00:17:49,992
+it was kind of down
+to the paper writing.
+
+399
+00:17:49,992 --> 00:17:51,950
+NATASHA LATYSHEVA: Yes,
+just the paper writing.
+
+400
+00:17:51,950 --> 00:17:53,130
+[LAUGHTER]
+
+401
+00:17:53,130 --> 00:17:56,270
+DHAVI HARIHARAN: Yeah,
+why is the paper so long?
+
+402
+00:17:56,270 --> 00:17:58,730
+It's practically a novel.
+
+403
+00:17:58,730 --> 00:18:00,690
+NATASHA LATYSHEVA:
+Yes, it's so long.
+
+404
+00:18:00,690 --> 00:18:03,150
+But I think, inevitably,
+it was always
+
+405
+00:18:03,150 --> 00:18:06,730
+going to be long, just
+because the scope is massive,
+
+406
+00:18:06,730 --> 00:18:08,830
+essentially, or at
+least I think it is.
+
+407
+00:18:08,830 --> 00:18:12,110
+We really wanted to do justice
+to all of the other models
+
+408
+00:18:12,110 --> 00:18:13,170
+that we compared against.
+
+409
+00:18:13,170 --> 00:18:15,310
+We really wanted
+to dive as deeply
+
+410
+00:18:15,310 --> 00:18:19,590
+as we could into all the
+different modalities.
+
+411
+00:18:19,590 --> 00:18:21,590
+So it is what it is.
+
+412
+00:18:21,590 --> 00:18:25,710
+And I think we also suffered a
+bit from one more eval syndrome.
+
+413
+00:18:25,710 --> 00:18:28,290
+We're all very
+excited in this field.
+
+414
+00:18:28,290 --> 00:18:33,158
+And people would go off and see
+a new paper or a new data set,
+
+415
+00:18:33,158 --> 00:18:34,950
+and they'd want to
+integrate into the model
+
+416
+00:18:34,950 --> 00:18:37,390
+and add just one more
+eval, one more figure.
+
+417
+00:18:37,390 --> 00:18:40,450
+But I do think the paper
+is a lot stronger for it.
+
+418
+00:18:40,450 --> 00:18:41,730
+So I'm happy that happened.
+
+419
+00:18:41,730 --> 00:18:43,430
+DHAVI HARIHARAN:
+Yeah, and how long
+
+420
+00:18:43,430 --> 00:18:44,990
+did this whole
+process take, I guess,
+
+421
+00:18:44,990 --> 00:18:48,475
+from that initial prototype
+to having the paper?
+
+422
+00:18:48,475 --> 00:18:50,350
+ZIGA AVSEC: I think the
+team has been working
+
+423
+00:18:50,350 --> 00:18:52,370
+in this area for quite a while.
+
+424
+00:18:52,370 --> 00:18:56,190
+But if we were to pinpoint that
+particular launch conversation
+
+425
+00:18:56,190 --> 00:18:58,090
+and to when the
+paper was published,
+
+426
+00:18:58,090 --> 00:19:00,750
+it was under two year.
+
+427
+00:19:00,750 --> 00:19:02,410
+So I think the
+team worked really
+
+428
+00:19:02,410 --> 00:19:05,010
+hard to get to that point.
+
+429
+00:19:05,010 --> 00:19:07,270
+At some point, we all
+got into one room,
+
+430
+00:19:07,270 --> 00:19:08,950
+put a lot of monitors
+on the table,
+
+431
+00:19:08,950 --> 00:19:11,710
+and we worked together on this.
+
+432
+00:19:11,710 --> 00:19:16,130
+It was a very exciting time to
+do that and to see the progress.
+
+433
+00:19:16,130 --> 00:19:18,210
+And I'm really
+excited and very proud
+
+434
+00:19:18,210 --> 00:19:20,450
+of the team, what
+we all-- how we
+
+435
+00:19:20,450 --> 00:19:24,470
+came together and were able to
+release the model and the API.
+
+436
+00:19:24,470 --> 00:19:27,970
+[MUSIC PLAYING]
+
+437
+00:19:27,970 --> 00:19:29,508
+
+438
+00:19:29,508 --> 00:19:31,050
+DHAVI HARIHARAN: So
+I joined the team
+
+439
+00:19:31,050 --> 00:19:32,982
+when the model was
+almost ready and we
+
+440
+00:19:32,982 --> 00:19:34,690
+were starting to think
+about how to share
+
+441
+00:19:34,690 --> 00:19:36,730
+this with the community.
+
+442
+00:19:36,730 --> 00:19:40,470
+And there was a real eagerness
+to both share something quickly,
+
+443
+00:19:40,470 --> 00:19:44,050
+but also try to find a way
+to make it easier to use.
+
+444
+00:19:44,050 --> 00:19:47,450
+TOM WARD: Yeah, we were really
+quite pleased with how we were--
+
+445
+00:19:47,450 --> 00:19:50,610
+built this kind of model API
+for interacting with our model,
+
+446
+00:19:50,610 --> 00:19:53,890
+and making predictions, and
+evaluating and analyzing
+
+447
+00:19:53,890 --> 00:19:55,450
+the results.
+
+448
+00:19:55,450 --> 00:19:57,130
+And I think we quite
+quickly realized
+
+449
+00:19:57,130 --> 00:20:00,450
+that we wanted to make the
+same thing available to people
+
+450
+00:20:00,450 --> 00:20:04,070
+externally as well in as
+easy and accessible way as
+
+451
+00:20:04,070 --> 00:20:06,790
+possible, whilst also keeping
+the versatility of being
+
+452
+00:20:06,790 --> 00:20:09,190
+able to do lots of
+different things.
+
+453
+00:20:09,190 --> 00:20:11,030
+So I think one of the
+cool things we did
+
+454
+00:20:11,030 --> 00:20:13,870
+was basically making this API
+available at the same time
+
+455
+00:20:13,870 --> 00:20:15,390
+as our pre-print.
+
+456
+00:20:15,390 --> 00:20:18,590
+And the cool thing was
+that you can kind of just
+
+457
+00:20:18,590 --> 00:20:21,270
+open up a notebook,
+and make a prediction,
+
+458
+00:20:21,270 --> 00:20:25,030
+and visualize the
+results really quickly
+
+459
+00:20:25,030 --> 00:20:27,910
+without the need of GPU
+or installing drivers
+
+460
+00:20:27,910 --> 00:20:31,910
+and all the other faff that
+comes along with loading
+
+461
+00:20:31,910 --> 00:20:33,355
+a model from scratch.
+
+462
+00:20:33,355 --> 00:20:34,730
+I think that was
+really powerful.
+
+463
+00:20:34,730 --> 00:20:39,190
+So we were keen to do
+that and see what people--
+
+464
+00:20:39,190 --> 00:20:40,150
+how people used it.
+
+465
+00:20:40,150 --> 00:20:41,910
+DHAVI HARIHARAN:
+With things like
+
+466
+00:20:41,910 --> 00:20:43,530
+making it simple
+and easy to use,
+
+467
+00:20:43,530 --> 00:20:46,710
+something that we spend a lot
+of time talking about as a team
+
+468
+00:20:46,710 --> 00:20:49,750
+is also, what is this
+actually allowing people
+
+469
+00:20:49,750 --> 00:20:51,870
+to do at the end of the day?
+
+470
+00:20:51,870 --> 00:20:54,015
+Jun, what are you
+most excited about?
+
+471
+00:20:54,015 --> 00:20:55,390
+JUN CHENG: Yeah,
+there's a couple
+
+472
+00:20:55,390 --> 00:20:57,870
+of things I'm quite
+excited about to see how
+
+473
+00:20:57,870 --> 00:20:59,950
+the community use AlphaGenome.
+
+474
+00:20:59,950 --> 00:21:04,450
+I think the first is as
+a tool to help scientists
+
+475
+00:21:04,450 --> 00:21:06,690
+to pinpoint what
+kind of mutations
+
+476
+00:21:06,690 --> 00:21:09,810
+could be harmful to human.
+
+477
+00:21:09,810 --> 00:21:13,990
+Another is, use this as a tool
+to understand basic biology.
+
+478
+00:21:13,990 --> 00:21:16,990
+If you think about it,
+biology is quite complex.
+
+479
+00:21:16,990 --> 00:21:19,490
+And with this tool,
+hopefully, scientists
+
+480
+00:21:19,490 --> 00:21:23,570
+can start to study--
+make predictions
+
+481
+00:21:23,570 --> 00:21:26,050
+about which part of the
+genome is functional,
+
+482
+00:21:26,050 --> 00:21:29,530
+and which part of the genome
+is responsible for regulating
+
+483
+00:21:29,530 --> 00:21:33,790
+gene expression, and which part
+is activated in which cell type.
+
+484
+00:21:33,790 --> 00:21:37,090
+Things like that, I think,
+yeah, this is a fantastic
+
+485
+00:21:37,090 --> 00:21:39,090
+tool for that purpose.
+
+486
+00:21:39,090 --> 00:21:42,650
+With our genome, hopefully,
+scientists can start using that,
+
+487
+00:21:42,650 --> 00:21:45,770
+and to maximize the return
+with the limited resource
+
+488
+00:21:45,770 --> 00:21:50,650
+and funding they have,
+and, yeah, basically,
+
+489
+00:21:50,650 --> 00:21:53,570
+to improve scientific research.
+
+490
+00:21:53,570 --> 00:21:55,570
+DHAVI HARIHARAN: Ziga,
+Natasha, you've both been
+
+491
+00:21:55,570 --> 00:21:57,678
+in this field for a while now.
+
+492
+00:21:57,678 --> 00:21:59,470
+What are some of the
+requests we've gotten?
+
+493
+00:21:59,470 --> 00:22:01,730
+And has there been
+anything surprising here?
+
+494
+00:22:01,730 --> 00:22:05,190
+ZIGA AVSEC: Yeah,
+people had lots of--
+
+495
+00:22:05,190 --> 00:22:08,070
+quite a few feature requests.
+
+496
+00:22:08,070 --> 00:22:10,670
+One of the ones where, for
+example, people are asking,
+
+497
+00:22:10,670 --> 00:22:12,630
+can they do not just
+single-letter changes
+
+498
+00:22:12,630 --> 00:22:15,270
+to the genome, but multiple
+multi-letter changes,
+
+499
+00:22:15,270 --> 00:22:18,627
+like insertions, or deletions,
+or large structural variants?
+
+500
+00:22:18,627 --> 00:22:20,710
+And for [? indels, ?]
+actually, this is a feature.
+
+501
+00:22:20,710 --> 00:22:22,010
+We already had it implemented.
+
+502
+00:22:22,010 --> 00:22:26,430
+It just wasn't highlighted
+in our quick start enough.
+
+503
+00:22:26,430 --> 00:22:28,395
+Although, one user
+did find a bug
+
+504
+00:22:28,395 --> 00:22:30,270
+in this code, which is
+actually quite tricky,
+
+505
+00:22:30,270 --> 00:22:33,270
+and we managed to fix it.
+
+506
+00:22:33,270 --> 00:22:37,542
+And the other feature
+was people were asking,
+
+507
+00:22:37,542 --> 00:22:39,250
+can they use the
+embeddings of the model?
+
+508
+00:22:39,250 --> 00:22:41,590
+Or can they fine-tune
+it on their own data?
+
+509
+00:22:41,590 --> 00:22:45,370
+Because there's quite a lot
+of more interesting data
+
+510
+00:22:45,370 --> 00:22:46,870
+sets that we weren't
+able to include
+
+511
+00:22:46,870 --> 00:22:48,322
+in our model, right, Natasha?
+
+512
+00:22:48,322 --> 00:22:50,530
+NATASHA LATYSHEVA: Yeah,
+actually, on the data front,
+
+513
+00:22:50,530 --> 00:22:53,710
+I was intrigued,
+maybe not surprised,
+
+514
+00:22:53,710 --> 00:22:56,930
+by the amount of requests
+for additional species,
+
+515
+00:22:56,930 --> 00:23:00,430
+additional modalities,
+and additional cell types.
+
+516
+00:23:00,430 --> 00:23:02,330
+So as we've sort of
+mentioned already,
+
+517
+00:23:02,330 --> 00:23:06,708
+we've tried to make the model
+have reasonably good coverage,
+
+518
+00:23:06,708 --> 00:23:07,750
+although, not in species.
+
+519
+00:23:07,750 --> 00:23:10,170
+That's still just human
+and mouse for now.
+
+520
+00:23:10,170 --> 00:23:14,490
+But basically, people want more
+capabilities under one roof.
+
+521
+00:23:14,490 --> 00:23:15,790
+And that makes sense, actually.
+
+522
+00:23:15,790 --> 00:23:17,713
+I can definitely relate to that.
+
+523
+00:23:17,713 --> 00:23:19,130
+One thing I wanted
+to highlight is
+
+524
+00:23:19,130 --> 00:23:21,730
+that this type of feedback
+signal from the community
+
+525
+00:23:21,730 --> 00:23:23,390
+is incredibly important to us.
+
+526
+00:23:23,390 --> 00:23:26,570
+It directly feeds into
+what we work on next
+
+527
+00:23:26,570 --> 00:23:27,830
+and what we build next.
+
+528
+00:23:27,830 --> 00:23:31,330
+[MUSIC PLAYING]
+
+529
+00:23:31,330 --> 00:23:32,630
+
+530
+00:23:32,630 --> 00:23:34,130
+DHAVI HARIHARAN:
+Now, for a question
+
+531
+00:23:34,130 --> 00:23:36,870
+we get asked all the
+time, what's next?
+
+532
+00:23:36,870 --> 00:23:40,810
+JUN CHENG: And if you go to our
+website and look at the API,
+
+533
+00:23:40,810 --> 00:23:42,610
+we're predicting
+tens of thousands
+
+534
+00:23:42,610 --> 00:23:45,210
+of scores per variant,
+which is obviously
+
+535
+00:23:45,210 --> 00:23:47,810
+very hard for scientists
+to read and reason.
+
+536
+00:23:47,810 --> 00:23:51,730
+So we're thinking how we can
+summarize all these scores
+
+537
+00:23:51,730 --> 00:23:56,010
+to a single score per
+variant and, basically,
+
+538
+00:23:56,010 --> 00:23:58,890
+aggregate the scores
+as much as possible
+
+539
+00:23:58,890 --> 00:24:03,350
+so that users or scientists
+can make prediction per variant
+
+540
+00:24:03,350 --> 00:24:06,070
+and look at the scores,
+and then pick the--
+
+541
+00:24:06,070 --> 00:24:08,270
+prioritize a list,
+short list, of variants
+
+542
+00:24:08,270 --> 00:24:10,590
+they want to dive deep into.
+
+543
+00:24:10,590 --> 00:24:13,990
+And then they can look at the
+very comprehensive predictions
+
+544
+00:24:13,990 --> 00:24:16,230
+per cell types and
+tissues, and then
+
+545
+00:24:16,230 --> 00:24:21,390
+answer the questions that--
+which effect this variant come
+
+546
+00:24:21,390 --> 00:24:23,270
+from, which tissue
+the effect come from,
+
+547
+00:24:23,270 --> 00:24:27,387
+and what genes are [INAUDIBLE]
+activated, things like that.
+
+548
+00:24:27,387 --> 00:24:29,470
+TOM WARD: Yeah, then the
+other thing we want to do
+
+549
+00:24:29,470 --> 00:24:32,190
+is support really
+large-scale analysis,
+
+550
+00:24:32,190 --> 00:24:36,010
+like genome-wide association
+studies and things like that.
+
+551
+00:24:36,010 --> 00:24:38,590
+Currently, the API,
+you can make many--
+
+552
+00:24:38,590 --> 00:24:40,750
+lots of predictions, but
+maybe not quite as many
+
+553
+00:24:40,750 --> 00:24:48,470
+as those kind of really wide,
+large-scale studies would need.
+
+554
+00:24:48,470 --> 00:24:51,230
+So, yeah, we're
+looking at basically
+
+555
+00:24:51,230 --> 00:24:54,270
+trying to maybe pre-compute
+as many variants as possible
+
+556
+00:24:54,270 --> 00:25:00,310
+so people can do those
+large-scale analysis much more
+
+557
+00:25:00,310 --> 00:25:01,157
+easily.
+
+558
+00:25:01,157 --> 00:25:03,490
+NATASHA LATYSHEVA: And we're
+releasing the model weights
+
+559
+00:25:03,490 --> 00:25:04,867
+as well, of course.
+
+560
+00:25:04,867 --> 00:25:05,450
+TOM WARD: Yes.
+
+561
+00:25:05,450 --> 00:25:06,010
+NATASHA LATYSHEVA:
+Yeah, we're really
+
+562
+00:25:06,010 --> 00:25:08,330
+excited to see what
+people do with those.
+
+563
+00:25:08,330 --> 00:25:09,850
+So that can be
+anything from playing
+
+564
+00:25:09,850 --> 00:25:12,530
+with the embeddings,
+or fine-tuning,
+
+565
+00:25:12,530 --> 00:25:14,370
+or extending with new data.
+
+566
+00:25:14,370 --> 00:25:17,890
+And because the model is
+good at so many tasks,
+
+567
+00:25:17,890 --> 00:25:20,310
+we're just really excited to
+see what people use it for.
+
+568
+00:25:20,310 --> 00:25:23,262
+Hopefully, it can be applicable
+to many different, diverse
+
+569
+00:25:23,262 --> 00:25:24,970
+problems, some of
+which we probably never
+
+570
+00:25:24,970 --> 00:25:26,413
+even thought of before.
+
+571
+00:25:26,413 --> 00:25:28,830
+DHAVI HARIHARAN: I'm so happy
+we're going for all of this.
+
+572
+00:25:28,830 --> 00:25:31,330
+And, hopefully, hearing it
+makes some of our scientists
+
+573
+00:25:31,330 --> 00:25:32,810
+happy as well.
+
+574
+00:25:32,810 --> 00:25:35,050
+Ziga, maybe going back
+to the team's mission
+
+575
+00:25:35,050 --> 00:25:37,590
+and how AlphaGenome was
+sort of a step towards it,
+
+576
+00:25:37,590 --> 00:25:40,465
+how are you thinking about
+what's next for the model?
+
+577
+00:25:40,465 --> 00:25:42,090
+ZIGA AVSEC: Yeah, I
+think there's still
+
+578
+00:25:42,090 --> 00:25:44,270
+a lot of headroom
+for improvement,
+
+579
+00:25:44,270 --> 00:25:47,410
+a lot both in terms of
+predictive performance,
+
+580
+00:25:47,410 --> 00:25:49,050
+as well as capabilities.
+
+581
+00:25:49,050 --> 00:25:50,630
+In terms of predictive
+performance,
+
+582
+00:25:50,630 --> 00:25:53,090
+we'll see how far we get.
+
+583
+00:25:53,090 --> 00:25:57,130
+And in terms of capabilities,
+one of the things I'm excited
+
+584
+00:25:57,130 --> 00:26:02,950
+about is to leverage these new
+amazing single-cell atlases,
+
+585
+00:26:02,950 --> 00:26:05,110
+such as--
+
+586
+00:26:05,110 --> 00:26:07,590
+because the technology has
+been really evolving quickly
+
+587
+00:26:07,590 --> 00:26:09,550
+and improving.
+
+588
+00:26:09,550 --> 00:26:14,510
+And this allows us to measure
+not just the molecular processes
+
+589
+00:26:14,510 --> 00:26:18,150
+at the tissue level, but
+at the individual cell type
+
+590
+00:26:18,150 --> 00:26:20,270
+level within the tissue.
+
+591
+00:26:20,270 --> 00:26:23,790
+And if we could extend
+the model with these,
+
+592
+00:26:23,790 --> 00:26:27,390
+then I think it would be more
+applicable to studying variants
+
+593
+00:26:27,390 --> 00:26:31,150
+associated with diseases where,
+for example, this sort of defect
+
+594
+00:26:31,150 --> 00:26:33,168
+arises in these
+individual cell types.
+
+595
+00:26:33,168 --> 00:26:34,710
+DHAVI HARIHARAN:
+Thanks for watching.
+
+596
+00:26:34,710 --> 00:26:36,110
+Those were some
+of our highlights
+
+597
+00:26:36,110 --> 00:26:39,190
+on building AlphaGenome
+and releasing it.
+
+598
+00:26:39,190 --> 00:26:41,710
+There's a lot more details
+in our "Nature" paper.
+
+599
+00:26:41,710 --> 00:26:43,590
+And we'd really love
+to hear from you
+
+600
+00:26:43,590 --> 00:26:46,150
+as you start exploring
+and using the model,
+
+601
+00:26:46,150 --> 00:26:49,430
+whether that's interesting
+case studies, or gaps, or ideas
+
+602
+00:26:49,430 --> 00:26:51,910
+that can make the work
+more useful for you.
+
+603
+00:26:51,910 --> 00:26:55,710
+Our user support
+team is basically us,
+
+604
+00:26:55,710 --> 00:26:58,530
+so please get in touch with
+us on the Discourse forum.
+
+605
+00:26:58,530 --> 00:27:01,880
+[MUSIC PLAYING]
+
+606
+00:27:01,880 --> 00:27:04,000
+

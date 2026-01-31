@@ -1,0 +1,2164 @@
+1
+00:00:00,030 --> 00:00:01,620
+So good to see you.
+Good to see you, too.
+
+2
+00:00:01,650 --> 00:00:03,020
+It was in San Francisco.
+Yes, I know.
+
+3
+00:00:03,030 --> 00:00:08,330
+You are all over the place.
+I'm curious if this year feels different
+
+4
+00:00:08,330 --> 00:00:12,140
+than the last time you were in Davos.
+Gemini three is out.
+
+5
+00:00:12,620 --> 00:00:16,219
+We've heard that opening.
+I called it a code red internally.
+
+6
+00:00:16,550 --> 00:00:19,490
+Do you feel like Google got its mojo
+back?
+
+7
+00:00:20,480 --> 00:00:24,230
+Well, I'm not sure if that's for me to
+say, but I feel like we had a very good
+
+8
+00:00:24,230 --> 00:00:27,320
+year.
+So it's been hard work, really hard work
+
+9
+00:00:27,320 --> 00:00:32,840
+getting our technology and the models
+sort of to back to state of the art.
+
+10
+00:00:32,840 --> 00:00:37,820
+I think we did that with Gemini three
+especially and nanobots on our imaging
+
+11
+00:00:37,820 --> 00:00:41,060
+software.
+And then I think we've also sort of
+
+12
+00:00:41,060 --> 00:00:44,390
+adapted really to this new world of
+shipping very fast.
+
+13
+00:00:44,630 --> 00:00:46,970
+Kind of bringing a kind of startup
+energy to what we do.
+
+14
+00:00:47,150 --> 00:00:50,300
+Do you think people underestimated
+Google or got something wrong?
+
+15
+00:00:50,330 --> 00:00:51,740
+Yes, maybe.
+I'm not sure.
+
+16
+00:00:51,770 --> 00:00:56,180
+I mean, I think we always had the
+ingredients, you know, to to to be at
+
+17
+00:00:56,180 --> 00:00:59,360
+the forefront of this.
+Obviously, we've got the long history in
+
+18
+00:00:59,360 --> 00:01:01,580
+it.
+I think, you know, over the last decade,
+
+19
+00:01:02,030 --> 00:01:05,750
+Google and DeepMind, between us, we've
+invented most of the breakthroughs that
+
+20
+00:01:05,900 --> 00:01:07,610
+the modern A.I.
+industry relies on.
+
+21
+00:01:07,610 --> 00:01:11,270
+Now see Transformers, most famously by
+AlphaGo Deep reinforcement learning
+
+22
+00:01:11,270 --> 00:01:14,120
+these things.
+And we have these incredible product
+
+23
+00:01:14,120 --> 00:01:18,590
+surfaces billions user services.
+The natural fit for A.I.
+
+24
+00:01:18,620 --> 00:01:24,830
+actually from search to email to to to
+chrome and but it's just getting all of
+
+25
+00:01:24,830 --> 00:01:28,190
+that together and organized in the right
+way.
+
+26
+00:01:28,190 --> 00:01:31,040
+And I think we've done that in the last
+couple of years, and there's still a lot
+
+27
+00:01:31,040 --> 00:01:33,380
+more work to do, but I think we're
+starting to see the fruits of that.
+
+28
+00:01:33,440 --> 00:01:37,420
+If you think you have an advantage, how
+big do you think your advantage is?
+
+29
+00:01:37,490 --> 00:01:41,600
+How long does it last?
+Well, I think everything starts with
+
+30
+00:01:41,600 --> 00:01:45,710
+research, in my opinion.
+And, you know, the models, especially
+
+31
+00:01:45,710 --> 00:01:49,670
+being at the state of the art on all the
+different benchmarks.
+
+32
+00:01:49,910 --> 00:01:53,150
+And that's what we focused on first when
+we put Google and DeepMind together.
+
+33
+00:01:53,930 --> 00:01:57,710
+And I think with the Gemini series,
+you're very happy with how that's going.
+
+34
+00:01:58,280 --> 00:02:02,510
+There's a lot more work to do there.
+But I think we're the only organization
+
+35
+00:02:02,510 --> 00:02:07,010
+that has the full stack from the TTPs
+and the and the hardware, the data
+
+36
+00:02:07,010 --> 00:02:11,330
+centers, the cloud business, the
+Frontier lab, and all of these amazing
+
+37
+00:02:11,330 --> 00:02:14,030
+products that can, you know, kind of
+natural fits for A.I..
+
+38
+00:02:14,210 --> 00:02:18,560
+So really, structurally from first
+principles, we should be doing very
+
+39
+00:02:18,560 --> 00:02:20,690
+well.
+And I think there's actually a lot more
+
+40
+00:02:20,690 --> 00:02:24,320
+headroom to come from here.
+I wonder what a day in the life of a
+
+41
+00:02:24,320 --> 00:02:28,430
+frontier model leading ACO is like.
+Like I've read that you do most of your
+
+42
+00:02:28,430 --> 00:02:31,310
+thinking between one and four.
+AM Yes, that's right.
+
+43
+00:02:32,150 --> 00:02:37,730
+Is it ever not a code red inside?
+Like, do you ever feel comfortable?
+
+44
+00:02:38,270 --> 00:02:39,920
+No.
+You never feel comfortable.
+
+45
+00:02:39,950 --> 00:02:43,730
+I mean, we try, you know, code red zone
+for very special circumstances.
+
+46
+00:02:43,730 --> 00:02:49,310
+But it's always I mean, for the last I
+would say three, four years, it's been
+
+47
+00:02:49,490 --> 00:02:53,390
+unbelievably intense.
+And, you know, 100 hour weeks,
+
+48
+00:02:54,470 --> 00:02:57,530
+50, you know, 50 weeks a year.
+And that's the norm.
+
+49
+00:02:57,800 --> 00:03:02,180
+And I think that's what you have to do
+at the forefront of this unbelievably
+
+50
+00:03:02,180 --> 00:03:05,090
+fast moving technology.
+It's ferociously competitive out there.
+
+51
+00:03:05,900 --> 00:03:09,020
+Maybe the most intense competition has
+ever been in technology.
+
+52
+00:03:09,350 --> 00:03:15,440
+And the stakes are incredibly high.
+AGI and, you know, all of that, that
+
+53
+00:03:15,440 --> 00:03:18,770
+that can mean so commercially,
+scientifically.
+
+54
+00:03:19,310 --> 00:03:23,450
+And then if you add all the excitement
+of what we're doing and, you know, using
+
+55
+00:03:23,450 --> 00:03:28,430
+it as my passion, as you know, is
+exploring scientific, you know, problems
+
+56
+00:03:28,430 --> 00:03:31,400
+with AI, accelerating scientific
+discovery itself.
+
+57
+00:03:32,000 --> 00:03:34,660
+This is what I've always dreamed about
+and I've worked my whole life on A.I.
+
+58
+00:03:34,670 --> 00:03:38,000
+towards this moment.
+So it's sort of hard to sleep because
+
+59
+00:03:38,000 --> 00:03:41,270
+there's so much work to do.
+But also, it's it's it's there's so much
+
+60
+00:03:41,270 --> 00:03:44,120
+exciting things to to look into and to
+to push forward.
+
+61
+00:03:44,370 --> 00:03:48,140
+I mean, I know you're very focused on
+driving scientific progress, just
+
+62
+00:03:48,440 --> 00:03:51,590
+discovering new materials.
+Even we've seen now Gemini being
+
+63
+00:03:51,590 --> 00:03:55,550
+integrated into humanoid robots.
+Is the alpha fold moment for the
+
+64
+00:03:55,550 --> 00:04:00,500
+physical world and I here.
+What is that and what does that look
+
+65
+00:04:00,500 --> 00:04:02,540
+like?
+Yeah, I spent a lot of the last year
+
+66
+00:04:02,540 --> 00:04:04,780
+actually looking very carefully into
+robotics.
+
+67
+00:04:04,790 --> 00:04:10,070
+I do think we're on the cusp of a kind
+of breakthrough moment in physical
+
+68
+00:04:10,070 --> 00:04:13,160
+intelligence.
+I still think we're about 18 months, two
+
+69
+00:04:13,160 --> 00:04:16,040
+years away from doing.
+We need to do more research.
+
+70
+00:04:16,040 --> 00:04:18,890
+But
+I think the foundation models like
+
+71
+00:04:18,890 --> 00:04:21,829
+Gemini show the way forward.
+I mean, from the beginning we made
+
+72
+00:04:21,829 --> 00:04:25,100
+Gemini multimodal so you could
+understand the physical world for
+
+73
+00:04:25,100 --> 00:04:28,550
+multiple reasons.
+One was so we could build a universal
+
+74
+00:04:28,550 --> 00:04:30,440
+assistant.
+Maybe that exists on your glasses or
+
+75
+00:04:30,440 --> 00:04:32,220
+your phone that understands the world
+around you.
+
+76
+00:04:32,420 --> 00:04:35,120
+But of course, a second use of that
+would be for robotics.
+
+77
+00:04:35,540 --> 00:04:38,780
+So what is this, that moment for the
+physical world look like?
+
+78
+00:04:39,380 --> 00:04:45,770
+I think it's it's having robots, you
+know, reliably do useful tasks out in
+
+79
+00:04:45,770 --> 00:04:47,870
+the world.
+And I think there's a few things holding
+
+80
+00:04:47,870 --> 00:04:48,580
+that back.
+Still.
+
+81
+00:04:48,590 --> 00:04:51,290
+Part of it is the algorithms are still
+not quite there.
+
+82
+00:04:51,580 --> 00:04:57,260
+They need a little bit more robustness.
+They have to work with less data than
+
+83
+00:04:57,260 --> 00:05:00,350
+you get for the labs or the models that
+work on just digital.
+
+84
+00:05:00,350 --> 00:05:03,830
+Well, you can sort of create synthetic
+data a lot harder to make that kind of
+
+85
+00:05:03,830 --> 00:05:06,020
+data.
+And there's still sort of some problems
+
+86
+00:05:06,020 --> 00:05:09,020
+in the hardware that are not solved
+specifically things like the arm and the
+
+87
+00:05:09,020 --> 00:05:11,210
+hand.
+Actually, when you look into robotics
+
+88
+00:05:11,270 --> 00:05:14,660
+very carefully, you get a newfound
+appreciation, at least I did, for the
+
+89
+00:05:14,660 --> 00:05:19,580
+human hand, and how exquisite evolution
+is design that it's incredible and it's
+
+90
+00:05:19,580 --> 00:05:24,110
+very hard to match the reliability, the
+strength and the dexterity that the
+
+91
+00:05:24,110 --> 00:05:27,320
+human hand has.
+So there's still quite a lot, I, in my
+
+92
+00:05:27,320 --> 00:05:30,770
+opinion, pieces that put together.
+But there's very exciting things.
+
+93
+00:05:30,770 --> 00:05:34,070
+I mean, we just announced a new deep
+collaboration with the Boston Dynamics.
+
+94
+00:05:34,310 --> 00:05:37,760
+They've got some very exciting robots
+and end die and actually applying it to
+
+95
+00:05:37,880 --> 00:05:41,120
+automotive manufacturing.
+And we'll see over the next year how
+
+96
+00:05:41,120 --> 00:05:44,570
+that goes in sort of prototype form.
+And then maybe in a year or two we'll
+
+97
+00:05:44,570 --> 00:05:46,940
+have some really impressive
+demonstrations that we can scale up.
+
+98
+00:05:47,600 --> 00:05:51,680
+A year ago, deep sea seemed cataclysmic
+for the West.
+
+99
+00:05:53,030 --> 00:05:57,140
+Now, a year later, it's it's quiet.
+China seems to have been quieter.
+
+100
+00:05:57,140 --> 00:05:59,540
+Yes.
+Has your opinion on competition from
+
+101
+00:05:59,540 --> 00:06:01,490
+China changed?
+Not really.
+
+102
+00:06:01,790 --> 00:06:04,070
+I mean, I didn't think it was
+cataclysmic in the first place.
+
+103
+00:06:04,070 --> 00:06:05,960
+I think it was a massive overreaction in
+the West.
+
+104
+00:06:05,960 --> 00:06:10,670
+It was impressive.
+And I think it shows that the Chinese
+
+105
+00:06:11,060 --> 00:06:14,900
+are very capable that the leading
+companies I think companies like
+
+106
+00:06:14,900 --> 00:06:20,540
+Bytedance actually, I would say are the
+most capable and they're maybe only six
+
+107
+00:06:20,540 --> 00:06:23,510
+months behind, not one or two years
+behind the frontier.
+
+108
+00:06:23,750 --> 00:06:27,380
+So I think that's what they showed.
+Some of the claims were overexaggerated
+
+109
+00:06:27,380 --> 00:06:30,800
+about, you know, the amount of compute
+they used and being so minimal and so
+
+110
+00:06:30,800 --> 00:06:35,060
+on, because they relied on some Western
+models and also fine tuning on the
+
+111
+00:06:35,060 --> 00:06:37,490
+outputs of some of the leading Western
+models.
+
+112
+00:06:37,760 --> 00:06:41,670
+So it wasn't sort of denied.
+MALVEAUX And the other thing I think so
+
+113
+00:06:41,670 --> 00:06:46,770
+far is not yet to be seen is can China
+actually the Chinese companies innovate
+
+114
+00:06:46,770 --> 00:06:50,610
+beyond the frontier themselves so that
+that, you know, they're gaining, that
+
+115
+00:06:50,610 --> 00:06:54,210
+they're very good at kind of catching up
+to where the frontier is and
+
+116
+00:06:54,210 --> 00:06:57,720
+increasingly capable of that.
+But I think they've yet to show they can
+
+117
+00:06:57,720 --> 00:07:01,240
+innovate beyond the frontier.
+You helped define AGI.
+
+118
+00:07:01,770 --> 00:07:05,130
+You have said we have a 50% chance of
+getting there by 2030.
+
+119
+00:07:05,730 --> 00:07:08,010
+Is that still your timeline?
+It is.
+
+120
+00:07:08,490 --> 00:07:12,270
+And is AGI still a useful target for
+you?
+
+121
+00:07:12,720 --> 00:07:15,240
+I think so.
+I think it's a very good list in my
+
+122
+00:07:15,240 --> 00:07:19,110
+timeline, and it's a little bit longer
+than some others that your observation
+
+123
+00:07:19,230 --> 00:07:21,520
+is that you're here.
+But my bar is quite high.
+
+124
+00:07:21,630 --> 00:07:25,200
+It's it's the it's the ability to, you
+know, a system that exhibits all the
+
+125
+00:07:25,200 --> 00:07:28,620
+cognitive capabilities humans have.
+And I think we're still clearly quite
+
+126
+00:07:28,620 --> 00:07:32,490
+far from that.
+That means, you know, things in like
+
+127
+00:07:32,490 --> 00:07:36,360
+scientific creativity, not just solving
+a conjecture or solving a problem in
+
+128
+00:07:36,360 --> 00:07:39,960
+science, but actually coming up with the
+hypothesis or the problem in the first
+
+129
+00:07:39,960 --> 00:07:42,750
+place.
+And as any scientist knows, finding the
+
+130
+00:07:42,750 --> 00:07:46,590
+right question is actually often way
+harder than finding the answer.
+
+131
+00:07:46,800 --> 00:07:50,910
+So I don't you know, it's not clear that
+that these systems have that capability
+
+132
+00:07:51,210 --> 00:07:53,880
+that they definitely don't right now.
+I think they will eventually, but it's
+
+133
+00:07:53,880 --> 00:07:57,010
+not clear what's needed still.
+And as things like continue learning,
+
+134
+00:07:57,010 --> 00:08:01,170
+you know, online learning, going beyond
+what they've been sort of trained for,
+
+135
+00:08:01,170 --> 00:08:04,530
+and then they're static out in the
+world, they need to learn on the fly.
+
+136
+00:08:04,710 --> 00:08:08,580
+So there's quite a few, in my view,
+missing capabilities that are quite
+
+137
+00:08:08,580 --> 00:08:12,300
+critical to what I would regard as an
+AGI system.
+
+138
+00:08:13,230 --> 00:08:16,740
+Google's a major investor, and Anthropic
+Del Rio was here earlier today.
+
+139
+00:08:17,460 --> 00:08:22,650
+Do you agree or disagree with his
+prediction that I will wipe away 50% of
+
+140
+00:08:22,950 --> 00:08:25,770
+entry level white collar jobs in five
+years?
+
+141
+00:08:26,610 --> 00:08:31,230
+I think it's that's also my time and my
+view on that would be a lot longer.
+
+142
+00:08:31,440 --> 00:08:35,400
+I mean, I think we're starting to see
+maybe the beginnings of that this year
+
+143
+00:08:35,400 --> 00:08:39,840
+in terms of maybe entry level jobs or
+internships, those types of things.
+
+144
+00:08:40,950 --> 00:08:45,630
+But I think there's we would have to
+solve a lot more of this consistency
+
+145
+00:08:45,630 --> 00:08:48,120
+that doesn't have Right.
+And I call it jacket intelligence, as
+
+146
+00:08:48,120 --> 00:08:50,730
+we're very good at certain things and
+it's very poor.
+
+147
+00:08:50,740 --> 00:08:54,090
+The current systems are other things.
+And if you want to offload or delegate
+
+148
+00:08:54,090 --> 00:08:59,580
+an entire task to say an agent,
+rather than having what we have today,
+
+149
+00:08:59,580 --> 00:09:02,340
+which are more like assistive programs,
+you're going to need a lot more
+
+150
+00:09:02,340 --> 00:09:05,940
+consistency across the board.
+It's no good for it to be good at 95% of
+
+151
+00:09:05,940 --> 00:09:08,220
+that task.
+You need it to be good at the whole task
+
+152
+00:09:08,910 --> 00:09:12,060
+for you to be able to actually just sort
+of fire and forget on it.
+
+153
+00:09:12,690 --> 00:09:15,960
+So I think this there's there's still
+quite a lot more to be done before we'll
+
+154
+00:09:15,960 --> 00:09:19,050
+see that kind of disruption.
+But that kind of disruption will happen.
+
+155
+00:09:19,470 --> 00:09:23,280
+I think eventually, sure.
+I mean, in the limit with AGI, you know,
+
+156
+00:09:23,280 --> 00:09:26,040
+if you have systems like that, I think
+that changes the whole economy.
+
+157
+00:09:26,460 --> 00:09:30,060
+But way beyond the question of jobs, I
+think potentially if we build it right,
+
+158
+00:09:30,240 --> 00:09:34,530
+we we're in a post scarcity world where
+we solve some of the kind of fundamental
+
+159
+00:09:34,740 --> 00:09:41,100
+nodes of the world like energy sources,
+new clean, renewable, basically free
+
+160
+00:09:41,100 --> 00:09:44,250
+energy sources.
+If we solve fusion, something like that,
+
+161
+00:09:44,670 --> 00:09:47,610
+with the help of A.I.
+new materials, I think we'll be, you
+
+162
+00:09:47,610 --> 00:09:51,750
+know, five, ten years past.
+AGI will be in a in a radical abandoned
+
+163
+00:09:51,750 --> 00:09:54,060
+world.
+And so what does that mean with, you
+
+164
+00:09:54,060 --> 00:09:57,570
+know, to the economy and and how how
+society works?
+
+165
+00:09:57,570 --> 00:10:00,990
+Actually, before we get to a post
+scarcity world, though, if we get there,
+
+166
+00:10:00,990 --> 00:10:04,890
+there is so much anxiety about what
+happens in between.
+
+167
+00:10:05,130 --> 00:10:07,200
+You know, I'm a mom.
+I know you have kids.
+
+168
+00:10:07,230 --> 00:10:10,740
+Like
+what scares you most for them?
+
+169
+00:10:11,070 --> 00:10:14,760
+What do you talk to them about?
+What do you tell them that's coming?
+
+170
+00:10:14,760 --> 00:10:16,530
+I mean, I've just heard so many.
+Oh, my gosh.
+
+171
+00:10:16,530 --> 00:10:19,860
+For college graduates are going to have
+such a hard time.
+
+172
+00:10:20,100 --> 00:10:23,430
+Well, I don't know about that.
+Look, I think it's it's it's going to be
+
+173
+00:10:23,450 --> 00:10:27,750
+an age of disruption, just like the
+Industrial revolution was maybe ten acts
+
+174
+00:10:27,750 --> 00:10:30,990
+of that, which is kind of unbelievable
+to think about ten times faster than I
+
+175
+00:10:30,990 --> 00:10:33,120
+usually describe it.
+It's going to be ten times bigger and
+
+176
+00:10:33,120 --> 00:10:35,090
+ten times faster.
+The Industrial Revolution, two years,
+
+177
+00:10:35,150 --> 00:10:37,830
+100 now get.
+So 100 X of it.
+
+178
+00:10:38,400 --> 00:10:41,430
+No, I say this to everyone, but I think
+that comes with it.
+
+179
+00:10:41,430 --> 00:10:44,550
+Huge opportunities.
+And I also am just a big believer in
+
+180
+00:10:44,550 --> 00:10:48,150
+human ingenuity.
+We're extremely adaptable because our
+
+181
+00:10:48,150 --> 00:10:50,820
+minds are so general.
+You know, the human mind is very
+
+182
+00:10:50,820 --> 00:10:52,830
+general.
+We've adapt to look at the modern world
+
+183
+00:10:52,830 --> 00:10:55,350
+around us.
+We, you know, our hunter gatherer minds
+
+184
+00:10:55,350 --> 00:10:57,570
+have managed to build modern
+civilization.
+
+185
+00:10:57,780 --> 00:11:01,080
+So I think we'll adapt again.
+I think it's a little bit unprecedented
+
+186
+00:11:01,080 --> 00:11:04,200
+because of the speed of it.
+Usually it takes one generation or two
+
+187
+00:11:04,200 --> 00:11:08,150
+generations for a transformation like
+this to happen and the magnitude of the
+
+188
+00:11:08,160 --> 00:11:13,350
+transformative power of this technology.
+But I think the kids today, you know,
+
+189
+00:11:13,350 --> 00:11:17,880
+I'd be encouraging them to get
+incredibly proficient with these new
+
+190
+00:11:17,880 --> 00:11:22,740
+tools and native with them, and they're
+almost equivalent of giving them
+
+191
+00:11:22,740 --> 00:11:26,610
+superpowers, you know, in the creative
+arts that you could probably do the job
+
+192
+00:11:26,610 --> 00:11:29,820
+of, you know, what would have taken ten
+people in one.
+
+193
+00:11:29,820 --> 00:11:34,320
+And I think that means, you know, if you
+entrepreneurial, if you're creative with
+
+194
+00:11:34,650 --> 00:11:38,640
+game design films, projects, you can
+probably get a lot more done and break
+
+195
+00:11:38,640 --> 00:11:41,110
+into.
+Those industries a lot more easily than
+
+196
+00:11:41,260 --> 00:11:44,770
+you could in the past, as you know.
+A new upcoming talent.
+
+197
+00:11:45,310 --> 00:11:50,590
+Some folks have advocated for a pause to
+give regulation time to catch up, to
+
+198
+00:11:50,590 --> 00:11:54,490
+give society time to sort of adjust to
+some of these changes.
+
+199
+00:11:55,000 --> 00:11:59,640
+In a perfect world, you knew that every
+other company would pause.
+
+200
+00:11:59,650 --> 00:12:02,140
+If every country would pause.
+Would you advocate for that?
+
+201
+00:12:02,170 --> 00:12:04,240
+I think so.
+I mean, I've been on record saying what
+
+202
+00:12:04,240 --> 00:12:08,230
+I'd like to see happen.
+It was always my dream of the kind of
+
+203
+00:12:08,350 --> 00:12:11,860
+the road map at least I had when I
+started out the mind 15 years ago and
+
+204
+00:12:11,860 --> 00:12:17,080
+start working in, you know, 25 years ago
+now, was that as we got close to this
+
+205
+00:12:17,080 --> 00:12:19,930
+moment, this threshold moment of AGI
+arriving,
+
+206
+00:12:21,400 --> 00:12:25,590
+we would maybe collaborate, you know, in
+a scientific way.
+
+207
+00:12:25,600 --> 00:12:30,460
+I sometimes talk about setting up an
+international CERN equivalent for AI
+
+208
+00:12:30,610 --> 00:12:36,400
+where all the best minds in the world
+would collaborate together and do the
+
+209
+00:12:36,400 --> 00:12:40,810
+final steps in a very rigorous
+scientific way involving all of society,
+
+210
+00:12:40,840 --> 00:12:44,980
+maybe philosophers and social scientists
+and economists, as well as technologists
+
+211
+00:12:45,820 --> 00:12:51,130
+to kind of figure out what we want from
+this technology and how to utilize it in
+
+212
+00:12:51,130 --> 00:12:54,100
+a in a in a way that benefits all of
+humanity.
+
+213
+00:12:54,280 --> 00:12:57,730
+And I think that's what's at stake.
+Unfortunately, it kind of needs
+
+214
+00:12:57,730 --> 00:13:01,690
+international collaboration, though,
+because even if one company or even one
+
+215
+00:13:01,690 --> 00:13:06,970
+nation or even the West decided to do
+that, it's the has no use unless the
+
+216
+00:13:06,970 --> 00:13:10,090
+whole world agrees, at least on some
+kind of minimum standards.
+
+217
+00:13:10,300 --> 00:13:14,080
+And, you know, international cooperation
+is a little bit tricky at the moment.
+
+218
+00:13:14,080 --> 00:13:19,090
+So that's going to have to change if we
+want to, to to have that kind of
+
+219
+00:13:19,660 --> 00:13:22,840
+rigorous scientific approach to the
+final steps to AGI.
+
+220
+00:13:22,900 --> 00:13:27,400
+So if AGI comes in, let's say 2030, we
+don't have the regulations set up yet.
+
+221
+00:13:27,400 --> 00:13:33,850
+Are we destined for something difficult?
+Well, then where you know, I doesn't I
+
+222
+00:13:33,850 --> 00:13:38,170
+think I'm still optimistic that enough
+of the leading players will
+
+223
+00:13:39,790 --> 00:13:43,000
+kind of communicate together and
+hopefully collaborate at least on things
+
+224
+00:13:43,000 --> 00:13:45,910
+like safety and security protocols.
+There's a lot of that already.
+
+225
+00:13:45,910 --> 00:13:50,950
+We work quite closely with Anthropic,
+for example, on those things, and that
+
+226
+00:13:50,950 --> 00:13:56,230
+would be needed then, you know, maybe
+kind of more peer based cooperation if
+
+227
+00:13:56,230 --> 00:13:58,510
+we can't get that international thing to
+work.
+
+228
+00:13:58,630 --> 00:14:02,230
+But I would, you know, that would be a
+lot more like Sam to cooperate with you.
+
+229
+00:14:03,130 --> 00:14:05,980
+I potentially I'm you know, I think I'm
+on pretty good terms with pretty much
+
+230
+00:14:05,980 --> 00:14:07,800
+all the other leaders of all the leading
+labs.
+
+231
+00:14:07,810 --> 00:14:11,290
+I mean, I think if the stakes are high
+enough and I think a lot of it is
+
+232
+00:14:11,590 --> 00:14:15,220
+understanding what's at stake and what
+the risks are.
+
+233
+00:14:15,460 --> 00:14:19,450
+And I think that will become clearer to
+everyone in the next two or three years.
+
+234
+00:14:19,570 --> 00:14:22,390
+So let's talk about the technology and
+the next curve.
+
+235
+00:14:22,930 --> 00:14:27,700
+Yang Coombs has said he doesn't think
+Transformers and lamps alone will get us
+
+236
+00:14:27,700 --> 00:14:30,760
+to AGI.
+Do you agree or disagree?
+
+237
+00:14:30,760 --> 00:14:34,220
+And and, you know, if they're dead ends
+and what are we doing?
+
+238
+00:14:34,250 --> 00:14:37,120
+Yes.
+No, I disagree that they're dead ends.
+
+239
+00:14:37,120 --> 00:14:40,750
+But
+obviously, I think that's clearly wrong.
+
+240
+00:14:40,750 --> 00:14:43,750
+I mean, they're so amazingly useful
+already.
+
+241
+00:14:44,080 --> 00:14:46,990
+But I think the way I say is an
+empirical question.
+
+242
+00:14:46,990 --> 00:14:51,340
+I think it's a scientific question
+whether they're going to be enough on
+
+243
+00:14:51,340 --> 00:14:54,760
+their own.
+I think it's a 5050 that, you know, just
+
+244
+00:14:54,760 --> 00:14:57,640
+scaling up existing methods with some
+tweaks will be enough.
+
+245
+00:14:57,640 --> 00:15:00,220
+It might be.
+And you have to do that.
+
+246
+00:15:00,220 --> 00:15:04,600
+And I think that's useful work because
+at a minimum, the way I look at it is
+
+247
+00:15:04,600 --> 00:15:08,560
+these lambs will be a component, a
+massively important component of the
+
+248
+00:15:08,560 --> 00:15:11,860
+final system.
+The only question in my mind is, is it
+
+249
+00:15:12,070 --> 00:15:13,870
+is it the only component?
+Right.
+
+250
+00:15:14,050 --> 00:15:18,040
+And I could imagine there are one or two
+breakthroughs, maybe a small handful,
+
+251
+00:15:18,280 --> 00:15:21,650
+you know, less than five that still need
+it from here, right?
+
+252
+00:15:21,940 --> 00:15:24,250
+Yes.
+And so, you know, and those might be
+
+253
+00:15:24,250 --> 00:15:27,130
+things like world models.
+That's something I've talked about we're
+
+254
+00:15:27,130 --> 00:15:29,080
+working on.
+In fact, we have the best world model
+
+255
+00:15:29,080 --> 00:15:31,450
+currently, which is GENI, our GENI
+system.
+
+256
+00:15:31,450 --> 00:15:33,670
+And I work on that directly and I think
+it's very important.
+
+257
+00:15:33,940 --> 00:15:39,130
+But also things like continue learning
+and having consistent systems that are,
+
+258
+00:15:39,430 --> 00:15:43,120
+you know, don't have these jagged edges
+that they're good at and not good at.
+
+259
+00:15:43,120 --> 00:15:45,010
+That's a general system.
+Shouldn't have that.
+
+260
+00:15:45,250 --> 00:15:48,820
+So I think, you know, better reasoning,
+more long term planning, there's quite a
+
+261
+00:15:48,820 --> 00:15:53,950
+few capabilities that are still missing.
+And it's an open question whether a new
+
+262
+00:15:54,460 --> 00:15:57,520
+architecture or new breakthrough is
+needed or more of the same.
+
+263
+00:15:57,700 --> 00:16:00,640
+And we're just, from my point of view,
+from Google, Deepmind's point of view,
+
+264
+00:16:00,640 --> 00:16:03,970
+we're pushing as hard as possible.
+And both those things, both inventing
+
+265
+00:16:03,970 --> 00:16:08,110
+new things and scaling up existing
+things, so slightly different but
+
+266
+00:16:08,110 --> 00:16:10,990
+related.
+Elias Escovedo said the era of scaling
+
+267
+00:16:10,990 --> 00:16:15,280
+and making bigger models make
+improvements is is nearly over.
+
+268
+00:16:15,610 --> 00:16:17,770
+Is that something you agree?
+I don't agree.
+
+269
+00:16:17,800 --> 00:16:20,530
+I think that his exact quote was this
+We're back to the age of research.
+
+270
+00:16:20,530 --> 00:16:25,060
+But but and you know, I love Ellie and
+we're very good friends and we agree on
+
+271
+00:16:25,060 --> 00:16:27,430
+a lot of things.
+But my view is we never left the age of
+
+272
+00:16:27,430 --> 00:16:29,290
+research, at least from the point of
+view of the point.
+
+273
+00:16:29,470 --> 00:16:32,740
+We've always invested.
+We've in my view, we've always had the
+
+274
+00:16:32,890 --> 00:16:38,600
+the deepest and broadest bench, actually
+Google and DeepMind together we have.
+
+275
+00:16:38,840 --> 00:16:42,890
+The last decade, we've invented about
+90% of the breakthroughs that, you know,
+
+276
+00:16:42,890 --> 00:16:46,520
+the modern industry relies on.
+Of course, Transformers, most famously,
+
+277
+00:16:46,880 --> 00:16:48,620
+but also, you know, deep reinforcement
+learning.
+
+278
+00:16:48,620 --> 00:16:50,960
+AlphaGo these kinds of reinforcement
+learning techniques.
+
+279
+00:16:51,170 --> 00:16:54,200
+We pioneered all of that.
+So if some new breakthroughs are
+
+280
+00:16:54,200 --> 00:16:59,990
+required in the future, I would back us
+to be the ones just like in the past, to
+
+281
+00:16:59,990 --> 00:17:03,320
+be the ones to make those breakthroughs,
+you know, in the future.
+
+282
+00:17:04,579 --> 00:17:08,720
+Last, agree or disagree, Elon says we
+have entered the singularity.
+
+283
+00:17:09,569 --> 00:17:15,339
+No, I think that's very premature.
+You know, I think the singularity is
+
+284
+00:17:15,349 --> 00:17:18,020
+another word for, you know, a full AGI
+arriving.
+
+285
+00:17:18,230 --> 00:17:22,020
+And I think I explained earlier why I
+think that we're still, you know,
+
+286
+00:17:22,130 --> 00:17:24,650
+nowhere near that.
+I think we will get there.
+
+287
+00:17:25,310 --> 00:17:28,460
+And, you know, five years, even five
+years is not a long amount of time if
+
+288
+00:17:28,460 --> 00:17:31,760
+you think about what that is.
+But I think there's still a lot of work
+
+289
+00:17:31,760 --> 00:17:34,580
+to be done before we have anything that
+looks like the singularity.
+
+290
+00:17:34,640 --> 00:17:38,650
+So talk to us a little bit about the
+culture inside Google right now to, you
+
+291
+00:17:38,650 --> 00:17:43,190
+know, win this race, but do it right.
+You know the leadership.
+
+292
+00:17:43,190 --> 00:17:45,660
+How involved are Larry and Sergey right
+now?
+
+293
+00:17:45,680 --> 00:17:48,230
+How often do you talk to them and what
+are their priorities?
+
+294
+00:17:48,620 --> 00:17:51,350
+Yeah, they're very involved in.
+And, you know, Larry, more on the
+
+295
+00:17:51,350 --> 00:17:53,600
+strategic side.
+You know, I see him at board meetings
+
+296
+00:17:53,600 --> 00:17:57,590
+and other times when I visit the valley.
+So, again, it's more hands on on the you
+
+297
+00:17:57,590 --> 00:18:00,860
+know, he's involved in the coding of,
+you know, on the Gemini team
+
+298
+00:18:00,860 --> 00:18:04,970
+specifically more in the in the in the
+algorithmic details.
+
+299
+00:18:05,690 --> 00:18:08,600
+And it's great having them both
+energized around where we are and who
+
+300
+00:18:08,600 --> 00:18:11,870
+wouldn't be, you know, this moment
+Absolutely incredible moment for
+
+301
+00:18:11,870 --> 00:18:14,330
+computer science.
+So just from a scientific point of view,
+
+302
+00:18:14,330 --> 00:18:18,890
+which both of them are, it's an
+incredibly exciting moment in history,
+
+303
+00:18:18,890 --> 00:18:22,700
+human history, really.
+And so, of course, everyone wants to be
+
+304
+00:18:23,300 --> 00:18:26,030
+hands on and heavily involved in that.
+So that's great.
+
+305
+00:18:26,310 --> 00:18:31,460
+And and for us, just as as a as an
+entity, you know, I'm trying to combine
+
+306
+00:18:31,460 --> 00:18:34,610
+the best of many worlds.
+So, you know, startup energy of shipping
+
+307
+00:18:34,610 --> 00:18:38,120
+things fast and taking risks and doing
+things like that, which I think you're
+
+308
+00:18:38,120 --> 00:18:42,980
+seeing the benefits of, you know, the
+big company resources is amazing,
+
+309
+00:18:42,980 --> 00:18:47,510
+useful, but also protecting the space
+for long term research still, and
+
+310
+00:18:47,510 --> 00:18:51,860
+exploratory research, not just
+researching what will deliver in, you
+
+311
+00:18:51,860 --> 00:18:54,440
+know, three months in a product.
+I think that would be a mistake, too.
+
+312
+00:18:54,620 --> 00:18:57,680
+So I'm trying to balance all of those
+different factors together.
+
+313
+00:18:57,680 --> 00:19:01,250
+And, you know, I think in the last year
+things have been going well and I think
+
+314
+00:19:01,250 --> 00:19:04,040
+we can still do better and I think we
+still will do better this year.
+
+315
+00:19:04,490 --> 00:19:08,810
+But I'm very happy with our trajectory.
+I think it's the steepest of actually of
+
+316
+00:19:08,810 --> 00:19:11,300
+improvement and progress of anyone in
+the industry.
+
+317
+00:19:11,750 --> 00:19:17,000
+You are a Nobel laureate and I know how
+obsessed you are with AI powering
+
+318
+00:19:17,000 --> 00:19:20,990
+scientific research.
+If I itself, let's say, makes a Nobel
+
+319
+00:19:20,990 --> 00:19:22,890
+worthy discovery, you should get the
+prize.
+
+320
+00:19:23,030 --> 00:19:27,920
+Yeah, I are the human, I think still
+human, I would say, because I feel like
+
+321
+00:19:27,920 --> 00:19:31,250
+I mean, it depends what you mean by
+completely on its own right.
+
+322
+00:19:31,430 --> 00:19:37,100
+So for now, these are still tools.
+And I view them as, you know, like very
+
+323
+00:19:37,550 --> 00:19:41,570
+maybe the ultimate scientific tool, but
+sort of better versions of telescopes
+
+324
+00:19:41,570 --> 00:19:43,730
+and microscopes.
+We've always built tools so that we can
+
+325
+00:19:43,730 --> 00:19:48,110
+investigate the natural world better.
+We're toolmaking animals, basically.
+
+326
+00:19:48,110 --> 00:19:50,780
+That's what distinguishes humans from
+from the other animals.
+
+327
+00:19:51,050 --> 00:19:55,010
+And that's how superpower and I include
+computers in that, of course.
+
+328
+00:19:55,220 --> 00:19:57,590
+And A.I.
+being the ultimate expression of that.
+
+329
+00:19:57,590 --> 00:20:00,680
+So in some ways, I think of A.I., and
+I've always thought of it as the
+
+330
+00:20:00,680 --> 00:20:05,270
+ultimate tool to do science.
+And and I think for the foreseeable
+
+331
+00:20:05,270 --> 00:20:08,420
+future, that's going to be a
+collaboration with top scientists,
+
+332
+00:20:08,930 --> 00:20:12,980
+putting in the creative ideas and maybe
+the hypotheses with these amazing tools
+
+333
+00:20:12,980 --> 00:20:17,630
+that enhance, you know, data processing
+and pattern matching and the exploration
+
+334
+00:20:17,990 --> 00:20:20,600
+of science.
+You you obviously could have sold
+
+335
+00:20:20,690 --> 00:20:26,450
+DeepMind to anyone.
+And I think all of these companies are
+
+336
+00:20:26,450 --> 00:20:29,180
+asking a lot of us to trust.
+Yes.
+
+337
+00:20:29,420 --> 00:20:34,490
+Especially if regulation doesn't keep up
+with technology, which history shows it
+
+338
+00:20:34,490 --> 00:20:36,950
+probably won't.
+Why?
+
+339
+00:20:37,130 --> 00:20:40,700
+Why should we trust you?
+And why do you think Google, which I
+
+340
+00:20:40,700 --> 00:20:45,620
+would implicitly think you believe is is
+the the place that we should believe in
+
+341
+00:20:46,340 --> 00:20:49,220
+the most?
+Well, comes to something that feels so
+
+342
+00:20:49,220 --> 00:20:50,180
+risky.
+Yes.
+
+343
+00:20:50,180 --> 00:20:54,770
+I think you need to judge these
+companies by their actions and also look
+
+344
+00:20:54,770 --> 00:20:59,390
+into, you know, the motivations, I would
+say, of the leaders involved in those
+
+345
+00:20:59,390 --> 00:21:01,910
+you know, those endeavors.
+And for me and for us.
+
+346
+00:21:01,910 --> 00:21:05,810
+And that's one reason I picked Google as
+the right home for DeepMind is several
+
+347
+00:21:05,810 --> 00:21:09,560
+reasons, the main one being that the
+founders of Google and the way Google
+
+348
+00:21:09,560 --> 00:21:12,170
+was set up by them was as a scientific
+company.
+
+349
+00:21:12,290 --> 00:21:14,860
+You know, many people forget Google
+itself was a Ph.D.
+
+350
+00:21:14,930 --> 00:21:17,570
+project, right?
+It was Larry and Sergey project.
+
+351
+00:21:17,750 --> 00:21:20,390
+So I felt an immediate affinity with
+with them.
+
+352
+00:21:20,900 --> 00:21:24,560
+And Larry led the acquisition, but also
+the board who they collected in the
+
+353
+00:21:24,560 --> 00:21:26,150
+board.
+You know, you have John Hennessy's, the
+
+354
+00:21:26,150 --> 00:21:29,660
+chair, who's a Turing Award winner
+himself, and Francis Arnold, another
+
+355
+00:21:29,660 --> 00:21:32,090
+Nobel Prize winner.
+You know, these are unusual people to
+
+356
+00:21:32,090 --> 00:21:36,290
+have on a corporate board.
+So the whole environment is very
+
+357
+00:21:36,290 --> 00:21:40,660
+scientific and science.
+Science and research led and engineering
+
+358
+00:21:40,660 --> 00:21:43,570
+led as a culture and is deeply ingrained
+in the culture.
+
+359
+00:21:43,690 --> 00:21:47,170
+And that means doing science at the
+highest level means being really
+
+360
+00:21:47,170 --> 00:21:51,010
+rigorous, being thoughtful, and applying
+the scientific method everywhere you
+
+361
+00:21:51,010 --> 00:21:52,330
+can.
+I think that's not just to the
+
+362
+00:21:52,330 --> 00:21:55,180
+technology, but it's also to the way you
+operate as an organization.
+
+363
+00:21:55,570 --> 00:22:01,150
+So I feel like, you know, we we're very
+we tried to be very thoughtful and
+
+364
+00:22:01,150 --> 00:22:05,440
+responsible and have as much force as
+possible over the technologies we put
+
+365
+00:22:05,440 --> 00:22:07,600
+out in the world.
+Doesn't mean we'll get everything right
+
+366
+00:22:07,720 --> 00:22:11,800
+because it's so complex and so new and
+nascent and so transformative, this
+
+367
+00:22:11,800 --> 00:22:14,200
+technology.
+But we hope to coast correct as quickly
+
+368
+00:22:14,200 --> 00:22:16,900
+as possible if there, you know,
+something does go wrong.
+
+369
+00:22:17,500 --> 00:22:21,940
+And then the final thing I would say is
+just the I was just attracted by the the
+
+370
+00:22:21,940 --> 00:22:23,860
+types of things Google tries to do in
+the world.
+
+371
+00:22:24,040 --> 00:22:27,280
+You know, organizing the world's
+information, I think is a very noble
+
+372
+00:22:28,030 --> 00:22:30,910
+goal, which is obviously Google's
+mission statement.
+
+373
+00:22:31,000 --> 00:22:34,300
+And I think it fitted very well with
+that, with Deepmind's mission statement
+
+374
+00:22:34,300 --> 00:22:37,690
+of solving intelligence and using it to
+to solve everything else.
+
+375
+00:22:37,690 --> 00:22:42,580
+And and that was our and I think those
+two mission statements are natural fit
+
+376
+00:22:42,940 --> 00:22:46,210
+AI and organizing the world's
+information naturally go together.
+
+377
+00:22:46,390 --> 00:22:49,840
+And I think those are the types of
+products, the types of products that
+
+378
+00:22:49,930 --> 00:22:54,670
+Google is well known for, for maps to 2
+to 2 Gmail to obviously search.
+
+379
+00:22:55,000 --> 00:22:58,600
+I think they're genuinely useful
+products in the world, and I think AI is
+
+380
+00:22:58,600 --> 00:23:01,330
+an easy fit.
+How that would work with those products
+
+381
+00:23:01,330 --> 00:23:04,330
+to enhance them for everybody to use in
+their everyday lives.
+
+382
+00:23:04,330 --> 00:23:06,190
+And I think that's a great thing for the
+world.
+
+383
+00:23:06,190 --> 00:23:09,010
+So, you know, I'm happy to be
+contributing to that.
+
+384
+00:23:09,220 --> 00:23:13,030
+Okay, so post scarcity world where there
+people no longer have jobs, what do you
+
+385
+00:23:13,030 --> 00:23:18,220
+personally plan to do with your time
+once you've achieved all your technical
+
+386
+00:23:18,220 --> 00:23:18,940
+goals?
+Yes.
+
+387
+00:23:18,940 --> 00:23:21,460
+Research is just automating itself,
+right?
+
+388
+00:23:21,880 --> 00:23:25,180
+Well, I would love to use it for what I
+will do.
+
+389
+00:23:25,180 --> 00:23:29,650
+Post the Singularity is to use it for
+exploring the limits of physics.
+
+390
+00:23:29,860 --> 00:23:34,000
+I think that was my my favorite subject
+at school was the big questions.
+
+391
+00:23:34,000 --> 00:23:37,150
+You know, what is the fabric of reality?
+What's the nature of reality?
+
+392
+00:23:37,300 --> 00:23:42,250
+What about the nature of consciousness?
+The answer to the Fermi paradox, all of
+
+393
+00:23:42,250 --> 00:23:43,450
+these things.
+What is time?
+
+394
+00:23:43,450 --> 00:23:45,670
+What is gravity?
+I'm amazed more people, you know, we
+
+395
+00:23:45,670 --> 00:23:49,330
+just go around our daily lives, not
+really thinking about these massive
+
+396
+00:23:49,330 --> 00:23:54,340
+questions that for me are always kind of
+almost screaming at me for like, what is
+
+397
+00:23:54,340 --> 00:23:56,350
+the answer to these things, these deep
+mysteries?
+
+398
+00:23:56,590 --> 00:24:01,810
+And I would like to use AI and to
+explore all of those things, maybe
+
+399
+00:24:01,810 --> 00:24:05,410
+traveling to the stars as well, with the
+help of, you know, and new energy
+
+400
+00:24:05,410 --> 00:24:08,830
+sources and materials and other things
+that's unlocked by will we all have
+
+401
+00:24:08,830 --> 00:24:10,270
+meaning and purpose if we don't have
+work?
+
+402
+00:24:10,510 --> 00:24:13,630
+Well, I think that's the to be honest
+with you, that's the thing I worry more
+
+403
+00:24:13,630 --> 00:24:16,390
+about than the economics.
+I think the economics is almost a
+
+404
+00:24:16,390 --> 00:24:19,690
+political question of like when we get
+all of these extra benefits and
+
+405
+00:24:19,690 --> 00:24:22,300
+productivity, can we make sure that it's
+shared
+
+406
+00:24:23,440 --> 00:24:26,110
+for the benefit of everyone?
+And I think obviously that's what I
+
+407
+00:24:26,110 --> 00:24:28,540
+believe in.
+But then the bigger question, and that
+
+408
+00:24:28,540 --> 00:24:32,260
+is what about purpose and meaning that a
+lot of us get from our jobs in
+
+409
+00:24:32,260 --> 00:24:36,070
+scientific endeavors?
+How will we find that in the new world?
+
+410
+00:24:36,640 --> 00:24:39,940
+And I think, you know, we will need some
+new great philosophers, in my opinion,
+
+411
+00:24:40,120 --> 00:24:45,370
+to to help with that and thinking that
+through maybe will, you know, be get
+
+412
+00:24:45,380 --> 00:24:50,080
+much more sophisticated with our art and
+and exploration that we do and things
+
+413
+00:24:50,080 --> 00:24:53,920
+like, you know, extreme sports as many
+things we do today that aren't just for
+
+414
+00:24:53,920 --> 00:24:56,590
+economic gain.
+And perhaps we'll have very esoteric
+
+415
+00:24:56,590 --> 00:24:58,510
+versions of those things in the future.
+All right.
+
+416
+00:24:58,510 --> 00:25:00,610
+So everyone in the room is wondering
+what they should be doing.
+
+417
+00:25:00,610 --> 00:25:06,040
+Like, what should I do about what do I
+do sitting here in Davos in ten years?
+
+418
+00:25:07,150 --> 00:25:10,600
+What is the biggest mistake, do you
+think people in this room will have made
+
+419
+00:25:10,750 --> 00:25:13,600
+about AI?
+Well, look, I think there's two things I
+
+420
+00:25:13,600 --> 00:25:16,210
+would say.
+One is for the younger generation and
+
+421
+00:25:16,210 --> 00:25:19,630
+our kids and so on is the only thing
+we're certain of is there's going to be
+
+422
+00:25:19,630 --> 00:25:22,810
+a huge amount of change.
+So I think in terms of learning skills,
+
+423
+00:25:23,080 --> 00:25:27,190
+get ready to because kind of learning to
+learn is the most important thing.
+
+424
+00:25:27,310 --> 00:25:31,120
+How can quickly can you adapt to new
+situations, absorb new information using
+
+425
+00:25:31,120 --> 00:25:34,990
+the tools that we have for the CEOs and
+and business folks in the room?
+
+426
+00:25:35,170 --> 00:25:39,220
+I think the most important thing to do
+now is there are many providers of
+
+427
+00:25:39,220 --> 00:25:43,150
+leading models and leading service
+providers, and they'll be more for these
+
+428
+00:25:43,150 --> 00:25:46,180
+A.I.
+models, you know, pick the partners that
+
+429
+00:25:46,180 --> 00:25:49,540
+you feel are approaching it in the right
+way.
+
+430
+00:25:49,720 --> 00:25:54,040
+And so, you know, kind of partner with
+those that are making the changes and
+
+431
+00:25:54,040 --> 00:25:57,040
+approaching this technology in the way
+that you would like to see in the world.
+
+432
+00:25:57,250 --> 00:26:01,310
+And I think together we can kind of
+build that future with, you know, A.I.
+
+433
+00:26:01,390 --> 00:26:02,950
+coming down the line that we will want.
+

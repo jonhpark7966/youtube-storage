@@ -1,0 +1,284 @@
+1
+00:00:00,000 --> 00:00:03,120
+Hi, I'm Zhilin, the founder of Kimi. Six
+
+2
+00:00:03,120 --> 00:00:06,560
+months ago, we released Kimi K2. It was
+
+3
+00:00:06,560 --> 00:00:09,000
+the first open model to scale pertaining to
+
+4
+00:00:09,000 --> 00:00:12,880
+one trillion parameters. Later, we introduced Kimi K2
+
+5
+00:00:12,880 --> 00:00:15,820
+Thinking. It scaled the thinking time of agents
+
+6
+00:00:15,820 --> 00:00:18,900
+for solving long horizon tasks. It performed interleaved
+
+7
+00:00:18,900 --> 00:00:20,840
+thinking with tool calling for up to 300
+
+8
+00:00:20,840 --> 00:00:23,800
+steps, all on its own. Today, we're dropping
+
+9
+00:00:23,800 --> 00:00:27,840
+our latest model, Kimi K2.5. K2.5
+
+10
+00:00:27,840 --> 00:00:29,920
+is a powerful model that
+
+11
+00:00:29,920 --> 00:00:34,040
+excels at agents, coding, vision, and general capabilities,
+
+12
+00:00:34,320 --> 00:00:37,560
+and it is open source. K2.5 sets
+
+13
+00:00:37,560 --> 00:00:41,200
+new records on the most challenging agentic benchmarks,
+
+14
+00:00:41,840 --> 00:00:45,900
+including Humanities Last Exam, Browse Comp, and Deep
+
+15
+00:00:45,900 --> 00:00:49,320
+Search QA. K2.5 is also a very
+
+16
+00:00:49,320 --> 00:00:53,000
+strong coding model. We didn't just want Kimi
+
+17
+00:00:53,000 --> 00:00:55,200
+to code, we wanted it to have an
+
+18
+00:00:55,200 --> 00:00:58,500
+eye for design. It weaves designer-grade websites,
+
+19
+00:00:58,840 --> 00:00:59,840
+a flow with great
+
+20
+00:00:59,840 --> 00:01:03,240
+face, and visual poetry. K2.5 and visual
+
+21
+00:01:03,240 --> 00:01:04,300
+poetry. K2.5 lowers the barrier of entry
+
+22
+00:01:04,300 --> 00:01:07,740
+with the vision capabilities. Simply upload a screen
+
+23
+00:01:07,740 --> 00:01:11,480
+recording. Kimi K2.5 will rebuild it from
+
+24
+00:01:11,480 --> 00:01:15,400
+scratch with clean professional code. Going beyond front
+
+25
+00:01:15,400 --> 00:01:18,440
+-end design, K2.5 is great at software
+
+26
+00:01:18,440 --> 00:01:21,620
+engineering. Kimi Code is our new coding product.
+
+27
+00:01:22,060 --> 00:01:25,220
+Kimi Code supports images and videos as inputs.
+
+28
+00:01:25,500 --> 00:01:29,240
+It also automatically discovers existing skills into your
+
+29
+00:01:29,240 --> 00:01:29,580
+working
+
+30
+00:01:29,580 --> 00:01:32,140
+environment in the environment in Kimi Code. Next,
+
+31
+00:01:32,380 --> 00:01:34,720
+Office. To make Kimi even more helpful in
+
+32
+00:01:34,720 --> 00:01:37,640
+your daily workflow, K2.5 has mastered the
+
+33
+00:01:37,640 --> 00:01:41,400
+core skills of the Office Suite. Whether it
+
+34
+00:01:41,400 --> 00:01:44,440
+is building a complex financial model, handling the
+
+35
+00:01:44,440 --> 00:01:47,660
+formatting of a professional PDF, or crafting a
+
+36
+00:01:47,660 --> 00:01:50,640
+consulting-level deck, we want to give that
+
+37
+00:01:50,640 --> 00:01:53,440
+power to everyone. Tasks that used to take
+
+38
+00:01:53,440 --> 00:01:57,220
+days, like merging 50 different department reports, or
+
+39
+00:01:57,220 --> 00:01:59,060
+turning a 30,000
+
+40
+00:01:59,060 --> 00:02:01,680
+work paper into a precise pitch deck, now
+
+41
+00:02:01,680 --> 00:02:05,160
+happen in 10 minutes. With K2.5, we
+
+42
+00:02:05,160 --> 00:02:08,060
+go from one agent to an agent's room.
+
+43
+00:02:08,660 --> 00:02:11,100
+Instead of asking one agent to do everything,
+
+44
+00:02:11,720 --> 00:02:14,980
+K2.5 creates and coordinates each room of
+
+45
+00:02:14,980 --> 00:02:17,280
+specialized agents to work in parallel.
+
+46
+00:02:18,240 --> 00:02:21,180
+These specialized agents are essentially copies of K2
+
+47
+00:02:21,180 --> 00:02:24,120
+.5, but with different roles and different subtasks.
+
+48
+00:02:24,480 --> 00:02:27,200
+Nothing is predefined. The roles and subtasks are
+
+49
+00:02:27,200 --> 00:02:28,600
+created on the fly
+
+50
+00:02:28,600 --> 00:02:32,180
+by K2.5. Running in parallel substantially reduces
+
+51
+00:02:32,180 --> 00:02:34,980
+the time needed for a complex task. For
+
+52
+00:02:34,980 --> 00:02:38,060
+market research spanning 100 companies, it orchestrates a
+
+53
+00:02:38,060 --> 00:02:40,360
+swarm of analysts for 10 around in minutes,
+
+54
+00:02:40,480 --> 00:02:44,100
+not weeks. For complex translation projects of 300
+
+55
+00:02:44,100 --> 00:02:47,060
+pages, it mobilizes a team of linguists for
+
+56
+00:02:47,060 --> 00:02:51,140
+rapid, accurate delivery. For literature synthesis across 50
+
+57
+00:02:51,140 --> 00:02:54,860
+papers, it fills 10 senior researchers to conduct
+
+58
+00:02:54,860 --> 00:02:57,920
+parallel analysis and generate a comprehensive survey.
+
+59
+00:02:57,920 --> 00:03:01,920
+Instantly. Training the agent swamps at scale is
+
+60
+00:03:01,920 --> 00:03:06,300
+technically challenging. We rebuild our reinforcement learning infrastructure
+
+61
+00:03:06,300 --> 00:03:09,540
+and optimize the training algorithms to ensure the
+
+62
+00:03:09,540 --> 00:03:11,340
+best efficiency and performance.
+
+63
+00:03:11,740 --> 00:03:14,800
+All of these capabilities come together in K2
+
+64
+00:03:14,800 --> 00:03:18,420
+.5, a powerful open source model. You can
+
+65
+00:03:18,420 --> 00:03:21,740
+experience all of this starting today on K2
+
+66
+00:03:21,740 --> 00:03:24,320
+.5 or the K2.5 app. For software
+
+67
+00:03:24,320 --> 00:03:27,340
+engineers, we recommend pairing K2.5 with K2
+
+68
+00:03:27,340 --> 00:03:27,640
+.5.
+
+69
+00:03:27,640 --> 00:03:30,760
+And also K2.5 is available via our
+
+70
+00:03:30,760 --> 00:03:33,040
+API. Go play with it and tell us
+
+71
+00:03:33,040 --> 00:03:34,500
+what you think. Thanks.
+

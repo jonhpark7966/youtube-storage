@@ -1,0 +1,1392 @@
+1
+00:00:02,780 --> 00:00:05,420
+Domestic helper bots are coming.
+
+2
+00:00:06,680 --> 00:00:08,519
+Billions is being poured into this new
+
+3
+00:00:08,520 --> 00:00:09,939
+AI frontier.
+
+4
+00:00:09,940 --> 00:00:12,039
+A global gold rush underway.
+
+5
+00:00:12,040 --> 00:00:13,580
+Go make us a cup of coffee.
+
+6
+00:00:15,830 --> 00:00:17,929
+But how close actually are we to
+
+7
+00:00:17,930 --> 00:00:21,109
+the sci-fi dream of a robot butler?
+
+8
+00:00:21,110 --> 00:00:23,049
+Oh, holy, I've never seen this in my
+
+9
+00:00:23,050 --> 00:00:24,149
+whole life.
+
+10
+00:00:24,150 --> 00:00:25,309
+Actually, let us start with another
+
+11
+00:00:25,310 --> 00:00:26,789
+task and we will come back to this.
+
+12
+00:00:28,950 --> 00:00:30,389
+Good accuracy.
+
+13
+00:00:30,390 --> 00:00:31,829
+Oh, I spoke too soon.
+
+14
+00:00:34,490 --> 00:00:36,649
+So this is it, but
+
+15
+00:00:36,650 --> 00:00:39,109
+it's a normal house on a normal street.
+
+16
+00:00:39,110 --> 00:00:40,169
+But that kind of makes sense, doesn't
+
+17
+00:00:40,170 --> 00:00:42,070
+it? They're building a robot for homes.
+
+18
+00:00:45,269 --> 00:00:46,539
+Hi, Bipasha, how are you?
+
+19
+00:00:46,540 --> 00:00:47,540
+Good, how are you?
+
+20
+00:00:48,539 --> 00:00:50,559
+Can you describe what we're
+
+21
+00:00:50,560 --> 00:00:51,399
+seeing here then?
+
+22
+00:00:51,400 --> 00:00:53,599
+So you've got the robot off camera,
+
+23
+00:00:53,600 --> 00:00:55,779
+there's someone wearing some
+
+24
+00:00:55,780 --> 00:00:58,139
+of the similar kit.
+
+25
+00:00:58,140 --> 00:00:59,140
+How's it all working?
+
+26
+00:01:00,300 --> 00:01:02,759
+So we have
+
+27
+00:01:02,760 --> 00:01:04,919
+a teleoperator who
+
+28
+00:01:04,920 --> 00:01:06,919
+is wearing a
+
+29
+00:01:06,920 --> 00:01:09,539
+suit to teleoperate the robot.
+
+30
+00:01:09,540 --> 00:01:11,379
+Ideally, it should have its own mind.
+
+31
+00:01:11,380 --> 00:01:12,339
+I mean, it sees a mess.
+
+32
+00:01:12,340 --> 00:01:14,399
+It should be able to go and clean it up
+
+33
+00:01:14,400 --> 00:01:15,900
+because it thinks it's messy.
+
+34
+00:01:17,480 --> 00:01:18,480
+And it should know what to do.
+
+35
+00:01:19,540 --> 00:01:21,539
+Right now, it is getting
+
+36
+00:01:21,540 --> 00:01:22,540
+trained to do that.
+
+37
+00:01:23,580 --> 00:01:25,799
+As an MIT robotics dropout, Bipasha
+
+38
+00:01:25,800 --> 00:01:27,839
+spun out a student project, quickly
+
+39
+00:01:27,840 --> 00:01:29,879
+convincing investors to put money into
+
+40
+00:01:29,880 --> 00:01:31,298
+her vision.
+
+41
+00:01:31,299 --> 00:01:33,579
+We believe today people have
+
+42
+00:01:33,580 --> 00:01:35,619
+two aspirations, usually like a car and
+
+43
+00:01:35,620 --> 00:01:36,759
+a house.
+
+44
+00:01:36,760 --> 00:01:37,919
+In the future they'll have three
+
+45
+00:01:37,920 --> 00:01:39,679
+aspirations, a car, a house and a
+
+46
+00:01:39,680 --> 00:01:40,680
+robot.
+
+47
+00:01:43,260 --> 00:01:45,599
+A few miles away, also in Palo Alto,
+
+48
+00:01:45,600 --> 00:01:47,439
+another company has trained its bot to
+
+49
+00:01:47,440 --> 00:01:49,679
+do some tasks completely on its own.
+
+50
+00:01:49,680 --> 00:01:49,859
+.
+
+51
+00:01:49,860 --> 00:01:51,060
+Tony, how's it going?
+
+52
+00:01:52,800 --> 00:01:54,099
+Wow, it's a home.
+
+53
+00:01:55,120 --> 00:01:57,159
+Tony Zhao began working on his home
+
+54
+00:01:57,160 --> 00:01:59,359
+robot while at uni, but dropped out
+
+55
+00:01:59,360 --> 00:02:00,720
+to build Memo full-time.
+
+56
+00:02:03,030 --> 00:02:04,109
+Hi, I'm Memo your future home robot
+
+57
+00:02:04,110 --> 00:02:04,849
+here at Sunday.
+
+58
+00:02:04,850 --> 00:02:06,829
+So can it
+
+59
+00:02:06,830 --> 00:02:09,209
+see me around it?
+
+60
+00:02:09,210 --> 00:02:10,049
+Yeah it can.
+
+61
+00:02:10,050 --> 00:02:12,229
+Right now it doesn't react to you, but
+
+62
+00:02:12,230 --> 00:02:14,229
+it can perceive the world with all the
+
+63
+00:02:14,230 --> 00:02:16,109
+cameras and other sensors.
+
+64
+00:02:16,110 --> 00:02:17,849
+Can you just go make us a cup of
+
+65
+00:02:17,850 --> 00:02:18,850
+coffee?
+
+66
+00:02:20,670 --> 00:02:22,069
+It's after 2 p.m.
+
+67
+00:02:22,070 --> 00:02:23,469
+Would you like me to go ahead and make
+
+68
+00:02:23,470 --> 00:02:24,710
+that cup of coffee for you?
+
+69
+00:02:25,959 --> 00:02:27,249
+Yes, please go ahead.
+
+70
+00:02:27,250 --> 00:02:28,249
+I'm on it.
+
+71
+00:02:28,250 --> 00:02:29,250
+Making your coffee now.
+
+72
+00:02:45,680 --> 00:02:47,179
+So Tony, can I just check with you?
+
+73
+00:02:47,180 --> 00:02:49,299
+There's no one that we can't see
+
+74
+00:02:49,300 --> 00:02:50,559
+doing this for the robot.
+
+75
+00:02:50,560 --> 00:02:51,629
+This is all autonomous.
+
+76
+00:02:51,630 --> 00:02:53,389
+Yes, it's one single neural network
+
+77
+00:02:53,390 --> 00:02:54,509
+controlling the whole body movement.
+
+78
+00:02:58,330 --> 00:03:00,369
+It was all going smoothly,
+
+79
+00:03:00,370 --> 00:03:02,429
+then Tony paused the demo as he
+
+80
+00:03:02,430 --> 00:03:03,909
+saw something was off.
+
+81
+00:03:03,910 --> 00:03:05,549
+Maybe we need to restart this.
+
+82
+00:03:05,550 --> 00:03:06,590
+Can I restart this?
+
+83
+00:03:08,630 --> 00:03:10,489
+I think there is a...
+
+84
+00:03:10,490 --> 00:03:12,249
+Can you stop it?
+
+85
+00:03:12,250 --> 00:03:14,389
+I think we might need to do it
+
+86
+00:03:14,390 --> 00:03:16,549
+again. I saw there is some peeling off
+
+87
+00:03:16,550 --> 00:03:18,129
+here. Sorry about that.
+
+88
+00:03:18,130 --> 00:03:19,249
+Let's just try again.
+
+89
+00:03:19,250 --> 00:03:20,550
+Maybe I'm overly cautious.
+
+90
+00:03:25,940 --> 00:03:28,179
+Oh, holy, oh,
+
+91
+00:03:28,180 --> 00:03:29,879
+I've never seen this in my whole life.
+
+92
+00:03:37,550 --> 00:03:39,749
+After a reset, Memo smoothly cleared
+
+93
+00:03:39,750 --> 00:03:40,750
+away the table.
+
+94
+00:03:42,570 --> 00:03:44,089
+There's obviously work to be done to
+
+95
+00:03:44,090 --> 00:03:45,849
+get it ready for homes, but there's no
+
+96
+00:03:45,850 --> 00:03:47,589
+doubt this is one of the most capable
+
+97
+00:03:47,590 --> 00:03:48,590
+bots in the world.
+
+98
+00:03:53,060 --> 00:03:55,599
+How have you got the robot to
+
+99
+00:03:55,600 --> 00:03:56,999
+be this advanced?
+
+100
+00:03:57,000 --> 00:03:58,249
+How have done it?
+
+101
+00:03:58,250 --> 00:04:01,109
+Normally, the way we train AI is
+
+102
+00:04:01,110 --> 00:04:03,189
+to tele-operate the robot in
+
+103
+00:04:03,190 --> 00:04:04,989
+people's homes or in other places and
+
+104
+00:04:04,990 --> 00:04:07,289
+gather the data and train the AI.
+
+105
+00:04:07,290 --> 00:04:08,869
+And what we're doing is different, as
+
+106
+00:04:08,870 --> 00:04:10,809
+in we don't need robot data to train
+
+107
+00:04:10,810 --> 00:04:12,789
+the robot. And instead, we build these
+
+108
+00:04:12,790 --> 00:04:14,569
+gloves. And people just wear their
+
+109
+00:04:14,570 --> 00:04:16,648
+gloves in their homes and collect data
+
+110
+00:04:16,649 --> 00:04:18,969
+for us. And that give us really diverse
+
+111
+00:04:18,970 --> 00:04:20,648
+data because we now see like more than
+
+112
+00:04:20,649 --> 00:04:21,648
+500 homes.
+
+113
+00:04:21,649 --> 00:04:23,469
+And also all the different ways they go
+
+114
+00:04:23,470 --> 00:04:24,869
+about doing the task.
+
+115
+00:04:24,870 --> 00:04:26,929
+Sunday's army of robot teachers are all
+
+116
+00:04:26,930 --> 00:04:28,969
+being paid to do repetitive,
+
+117
+00:04:28,970 --> 00:04:31,069
+everyday tasks, a reminder of the
+
+118
+00:04:31,070 --> 00:04:32,969
+human drudgery underpinning how these
+
+119
+00:04:32,970 --> 00:04:34,589
+machines learn.
+
+120
+00:04:34,590 --> 00:04:36,649
+The staff allow cameras and sensors to
+
+121
+00:04:36,650 --> 00:04:38,429
+record their every move at home, but
+
+122
+00:04:38,430 --> 00:04:40,189
+Sunday plans to start shipping memos
+
+123
+00:04:40,190 --> 00:04:42,169
+next year, so if the
+
+124
+00:04:42,170 --> 00:04:44,049
+bot needs to be remotely controlled it
+
+125
+00:04:44,050 --> 00:04:45,909
+will raise privacy considerations for
+
+126
+00:04:45,910 --> 00:04:47,929
+customers, as well as questions about
+
+127
+00:04:47,930 --> 00:04:50,089
+safety in a domestic setting.
+
+128
+00:04:50,090 --> 00:04:51,689
+Like, they will be kids running around,
+
+129
+00:04:51,690 --> 00:04:53,389
+kids will be climbing on the robot,
+
+130
+00:04:53,390 --> 00:04:55,669
+right? So we really want to make sure
+
+131
+00:04:55,670 --> 00:04:58,209
+that we put safety
+
+132
+00:04:58,210 --> 00:05:00,149
+as the most fundamental consideration
+
+133
+00:05:00,150 --> 00:05:01,170
+when we design these robots.
+
+134
+00:05:04,270 --> 00:05:06,249
+Some robotics companies are already
+
+135
+00:05:06,250 --> 00:05:08,109
+out in the wild, gathering training
+
+136
+00:05:08,110 --> 00:05:09,209
+data in public.
+
+137
+00:05:12,230 --> 00:05:13,669
+Isaac's been trained by watching
+
+138
+00:05:13,670 --> 00:05:15,689
+hundreds of hours of laundry folding.
+
+139
+00:05:15,690 --> 00:05:17,209
+For the last couple of months though,
+
+140
+00:05:17,210 --> 00:05:19,149
+it's been doing it on its own for real,
+
+141
+00:05:19,150 --> 00:05:21,149
+here, and in six other sites in San
+
+142
+00:05:21,150 --> 00:05:22,150
+Francisco.
+
+143
+00:05:22,710 --> 00:05:25,129
+Deployment is the strategy.
+
+144
+00:05:25,130 --> 00:05:27,569
+Nothing counts if it's sequestered
+
+145
+00:05:27,570 --> 00:05:28,889
+away in a lab.
+
+146
+00:05:28,890 --> 00:05:30,629
+This is the very task that we'll also
+
+147
+00:05:30,630 --> 00:05:31,629
+be doing in homes.
+
+148
+00:05:31,630 --> 00:05:33,189
+And here we get to prove that it works
+
+149
+00:05:33,190 --> 00:05:35,049
+in the real world, bring down the time
+
+150
+00:05:35,050 --> 00:05:37,479
+per article of clothing that we mold.
+
+151
+00:05:37,480 --> 00:05:39,759
+Here's a t-shirt, we'll do a live
+
+152
+00:05:39,760 --> 00:05:42,199
+demonstration. There we are, okay.
+
+153
+00:05:42,200 --> 00:05:44,199
+So this is a lot slower than a human.
+
+154
+00:05:45,320 --> 00:05:46,459
+So some people might be watching this
+
+155
+00:05:46,460 --> 00:05:47,699
+saying, oh, that's not very impressive,
+
+156
+00:05:47,700 --> 00:05:49,159
+but can you tell us why it is
+
+157
+00:05:49,160 --> 00:05:49,979
+impressive?
+
+158
+00:05:49,980 --> 00:05:52,219
+It is impressive because this thing can
+
+159
+00:05:52,220 --> 00:05:53,279
+run all day.
+
+160
+00:05:53,280 --> 00:05:55,219
+You often hear that robots are best
+
+161
+00:05:55,220 --> 00:05:57,359
+suited to tasks that are dull, dirty,
+
+162
+00:05:57,360 --> 00:05:58,360
+or dangerous.
+
+163
+00:05:59,120 --> 00:06:01,179
+We wanna make clothing folding
+
+164
+00:06:01,180 --> 00:06:02,609
+optional for people.
+
+165
+00:06:02,610 --> 00:06:03,949
+Oh, here we go.
+
+166
+00:06:03,950 --> 00:06:05,029
+Hang on a second.
+
+167
+00:06:05,030 --> 00:06:06,029
+Struggling with a little bit at the end
+
+168
+00:06:06,030 --> 00:06:06,979
+there.
+
+169
+00:06:06,980 --> 00:06:09,339
+You know, we kind of
+
+170
+00:06:09,340 --> 00:06:11,619
+care about getting a
+
+171
+00:06:11,620 --> 00:06:12,699
+presentation right.
+
+172
+00:06:12,700 --> 00:06:15,019
+That is way better than I would do it.
+
+173
+00:06:16,580 --> 00:06:18,839
+When you first put this robot here,
+
+174
+00:06:18,840 --> 00:06:21,069
+how long did it take to do one t-shirt?
+
+175
+00:06:21,070 --> 00:06:23,051
+I think that we were looking at 2-
+
+176
+00:06:23,052 --> 00:06:23,259
+2.30.
+
+177
+00:06:23,260 --> 00:06:25,319
+So already what, in how many
+
+178
+00:06:25,320 --> 00:06:26,299
+months?
+
+179
+00:06:26,300 --> 00:06:27,089
+That's in a month and a half.
+
+180
+00:06:27,090 --> 00:06:28,749
+In a month and a half, you've got down
+
+181
+00:06:28,750 --> 00:06:30,329
+to 1.30, just over 1.30.
+
+182
+00:06:31,710 --> 00:06:33,409
+We've planned to start shipping Isaacs
+
+183
+00:06:33,410 --> 00:06:34,849
+to homes this year.
+
+184
+00:06:34,850 --> 00:06:36,909
+They say it'll be able to tidy up and
+
+185
+00:06:36,910 --> 00:06:38,729
+fold laundry, but it's not clear how
+
+186
+00:06:38,730 --> 00:06:40,050
+much of that will be autonomous.
+
+187
+00:06:41,590 --> 00:06:42,749
+I actually didn't know how to do it
+
+188
+00:06:42,750 --> 00:06:44,560
+properly until I saw this.
+
+189
+00:06:48,930 --> 00:06:51,249
+Across town, at Physical Intelligence,
+
+190
+00:06:51,250 --> 00:06:52,449
+they're not interested in building
+
+191
+00:06:52,450 --> 00:06:53,789
+robots themselves.
+
+192
+00:06:53,790 --> 00:06:55,429
+They're focused on creating the AI
+
+193
+00:06:55,430 --> 00:06:57,409
+software that can be used to make any
+
+194
+00:06:57,410 --> 00:06:59,229
+robot capable of doing chores
+
+195
+00:06:59,230 --> 00:07:00,230
+autonomously.
+
+196
+00:07:01,570 --> 00:07:03,549
+The rest of AI, like in ChatGBT
+
+197
+00:07:03,550 --> 00:07:05,589
+for example, we're used to
+
+198
+00:07:05,590 --> 00:07:07,889
+training these models on an internet
+
+199
+00:07:07,890 --> 00:07:09,909
+of data, but we don't have that web
+
+200
+00:07:09,910 --> 00:07:11,469
+of data for robotics.
+
+201
+00:07:11,470 --> 00:07:13,389
+So we want to be able to actually, kind
+
+202
+00:07:13,390 --> 00:07:14,649
+of essentially breathe intelligence
+
+203
+00:07:14,650 --> 00:07:16,749
+into any sort of physical embodiment,
+
+204
+00:07:16,750 --> 00:07:18,269
+whether that's kind of a standard
+
+205
+00:07:18,270 --> 00:07:20,389
+typical robot, a humanoid robot,
+
+206
+00:07:20,390 --> 00:07:22,429
+or even something that looks closer to
+
+207
+00:07:22,430 --> 00:07:23,639
+an appliance, for example.
+
+208
+00:07:23,640 --> 00:07:25,239
+Like all these companies, Chelsea and
+
+209
+00:07:25,240 --> 00:07:26,519
+her team are developing their AI
+
+210
+00:07:26,520 --> 00:07:28,619
+software using reams of videos of
+
+211
+00:07:28,620 --> 00:07:30,199
+humans doing chores.
+
+212
+00:07:30,200 --> 00:07:32,799
+Their approach is proving successful.
+
+213
+00:07:32,800 --> 00:07:34,799
+Investors like AI giant OpenAI
+
+214
+00:07:34,800 --> 00:07:36,259
+are on board.
+
+215
+00:07:36,260 --> 00:07:38,359
+Another tech giant, Tesla, is deep
+
+216
+00:07:38,360 --> 00:07:40,199
+in development of its own humanoid
+
+217
+00:07:40,200 --> 00:07:41,619
+robot, Optimus.
+
+218
+00:07:41,620 --> 00:07:44,119
+But it's not yet clear what it can do.
+
+219
+00:07:44,120 --> 00:07:45,519
+And it's just not in the US where
+
+220
+00:07:45,520 --> 00:07:46,979
+people are getting excited about
+
+221
+00:07:46,980 --> 00:07:48,119
+human-like robots.
+
+222
+00:07:48,120 --> 00:07:50,319
+Chinese company Unitree is
+
+223
+00:07:50,320 --> 00:07:52,179
+already dominating the market with its
+
+224
+00:07:52,180 --> 00:07:53,119
+G1 robot.
+
+225
+00:07:53,120 --> 00:07:55,159
+Seen here in a demo given to us by
+
+226
+00:07:55,160 --> 00:07:57,149
+its UK seller, Scan.
+
+227
+00:07:57,150 --> 00:07:58,389
+This is happening right now.
+
+228
+00:07:58,390 --> 00:07:59,629
+People are buying them, people are
+
+229
+00:07:59,630 --> 00:08:01,609
+coding on them and people are
+
+230
+00:08:01,610 --> 00:08:02,610
+learning.
+
+231
+00:08:02,950 --> 00:08:04,019
+It's entirely operational.
+
+232
+00:08:04,020 --> 00:08:06,099
+It's not autonomous at all, as
+
+233
+00:08:06,100 --> 00:08:07,100
+of yet.
+
+234
+00:08:07,860 --> 00:08:09,439
+It's hard to get into China to film,
+
+235
+00:08:09,440 --> 00:08:11,599
+but the humanoid robot industry is so
+
+236
+00:08:11,600 --> 00:08:13,359
+hot there that the government recently
+
+237
+00:08:13,360 --> 00:08:15,479
+warned a bubble might be building set
+
+238
+00:08:15,480 --> 00:08:16,480
+to burst.
+
+239
+00:08:17,760 --> 00:08:18,839
+What's really interesting driving
+
+240
+00:08:18,840 --> 00:08:20,259
+around and speaking to all these
+
+241
+00:08:20,260 --> 00:08:22,219
+robotics companies in Silicon Valley is
+
+242
+00:08:22,220 --> 00:08:23,179
+there's a lot of confidence.
+
+243
+00:08:23,180 --> 00:08:24,799
+They think they are building the future
+
+244
+00:08:24,800 --> 00:08:26,859
+and they're certain it's going to be a
+
+245
+00:08:26,860 --> 00:08:28,079
+huge moneymaker.
+
+246
+00:08:28,080 --> 00:08:30,239
+But there's also some nervousness as
+
+247
+00:08:30,240 --> 00:08:31,729
+well because there's lots of things
+
+248
+00:08:31,730 --> 00:08:33,609
+that we wanted to film and we wanted to
+
+249
+00:08:33,610 --> 00:08:35,048
+show, but we can't.
+
+250
+00:08:35,049 --> 00:08:37,369
+They are scared because, of course,
+
+251
+00:08:37,370 --> 00:08:39,428
+this is a race, a race to bring
+
+252
+00:08:39,429 --> 00:08:40,889
+to market a domestic robot.
+
+253
+00:08:42,549 --> 00:08:44,589
+A company that hopes to be the first is
+
+254
+00:08:44,590 --> 00:08:45,609
+1X.
+
+255
+00:08:45,610 --> 00:08:47,209
+The Norwegian-founded company moved
+
+256
+00:08:47,210 --> 00:08:49,329
+here last year, and millions of dollars
+
+257
+00:08:49,330 --> 00:08:51,329
+are riding on its spot Neo, becoming a
+
+258
+00:08:51,330 --> 00:08:52,330
+hit.
+
+259
+00:08:52,530 --> 00:08:54,609
+We've just walked up to see Neo in
+
+260
+00:08:54,610 --> 00:08:56,889
+action, and someone is
+
+261
+00:08:56,890 --> 00:08:58,929
+operating Neo right now and watering
+
+262
+00:08:58,930 --> 00:09:00,369
+all the plants. I've just been told
+
+263
+00:09:00,370 --> 00:09:01,649
+this is what they do all day.
+
+264
+00:09:01,650 --> 00:09:03,789
+So there are people in the office
+
+265
+00:09:03,790 --> 00:09:05,789
+operating Neo with a
+
+266
+00:09:05,790 --> 00:09:07,829
+VR headset, carrying out tasks
+
+267
+00:09:07,830 --> 00:09:09,149
+and testing all day long.
+
+268
+00:09:16,740 --> 00:09:18,219
+Good accuracy.
+
+269
+00:09:18,220 --> 00:09:19,619
+Oh, spoke too soon.
+
+270
+00:09:25,430 --> 00:09:27,089
+So interestingly, Nio is struggling
+
+271
+00:09:27,090 --> 00:09:29,309
+with this particular handle,
+
+272
+00:09:29,310 --> 00:09:31,089
+but the team here change the handles
+
+273
+00:09:31,090 --> 00:09:33,189
+all the time because they're trying to
+
+274
+00:09:33,190 --> 00:09:34,869
+train the robot different ways to open
+
+275
+00:09:34,870 --> 00:09:35,870
+different handles.
+
+276
+00:09:36,970 --> 00:09:39,709
+They had it there.
+
+277
+00:09:39,710 --> 00:09:41,189
+Founder Bernt Børnich is pushing hard
+
+278
+00:09:41,190 --> 00:09:42,989
+to get Neo out to homes.
+
+279
+00:09:42,990 --> 00:09:44,909
+He says thousands of people have
+
+280
+00:09:44,910 --> 00:09:46,049
+already pre-ordered.
+
+281
+00:09:46,050 --> 00:09:48,349
+So what can Neo do right now
+
+282
+00:09:48,350 --> 00:09:50,069
+for me in my home?
+
+283
+00:09:50,070 --> 00:09:51,849
+Yeah, so let me tell you what Neo does
+
+284
+00:09:51,850 --> 00:09:53,029
+in my home.
+
+285
+00:09:53,030 --> 00:09:55,089
+So does a pretty good job of
+
+286
+00:09:55,090 --> 00:09:56,009
+like tidying.
+
+287
+00:09:56,010 --> 00:09:57,809
+So like resetting my living room and my
+
+288
+00:09:57,810 --> 00:09:59,549
+house in general.
+
+289
+00:09:59,550 --> 00:10:01,009
+Wiping surfaces, like cleaning the
+
+290
+00:10:01,010 --> 00:10:02,530
+counter, like these kind of things.
+
+291
+00:10:03,990 --> 00:10:05,689
+And that's all someone with a VR
+
+292
+00:10:05,690 --> 00:10:07,389
+headset. It's a mix.
+
+293
+00:10:07,390 --> 00:10:09,369
+It's mix. So in my own, we have
+
+294
+00:10:09,370 --> 00:10:10,349
+a lot of data.
+
+295
+00:10:10,350 --> 00:10:11,829
+So a lot other stuff in my can get
+
+296
+00:10:11,830 --> 00:10:13,349
+automated because we have data there.
+
+297
+00:10:13,350 --> 00:10:14,969
+Periodically, someone kind of steps in
+
+298
+00:10:14,970 --> 00:10:16,949
+and helps if the robot does not know
+
+299
+00:10:16,950 --> 00:10:18,939
+exactly how to move on.
+
+300
+00:10:18,940 --> 00:10:20,379
+Early adopters will have to be
+
+301
+00:10:20,380 --> 00:10:21,819
+comfortable then, waiving their
+
+302
+00:10:21,820 --> 00:10:22,719
+privacy.
+
+303
+00:10:22,720 --> 00:10:24,359
+But Bernt promises that Neo will be
+
+304
+00:10:24,360 --> 00:10:25,839
+able to carry out many tasks
+
+305
+00:10:25,840 --> 00:10:27,799
+autonomously by the time they start
+
+306
+00:10:27,800 --> 00:10:28,819
+shipping it.
+
+307
+00:10:28,820 --> 00:10:30,500
+Your first set of customers then, they
+
+308
+00:10:30,501 --> 00:10:32,559
+have to quite wealthy and they have be
+
+309
+00:10:32,560 --> 00:10:34,479
+willing for Nio to make mistakes
+
+310
+00:10:34,480 --> 00:10:35,679
+essentially. Well I don't think they
+
+311
+00:10:35,680 --> 00:10:37,659
+have quite wealthy, I think.
+
+312
+00:10:37,660 --> 00:10:38,999
+It's £20,000 isn't it?
+
+313
+00:10:39,000 --> 00:10:40,600
+I don't know how much it is, £20.000?
+
+314
+00:10:41,710 --> 00:10:43,709
+Yeah, like, most people have a
+
+315
+00:10:43,710 --> 00:10:44,710
+car?
+
+316
+00:10:45,250 --> 00:10:46,829
+so you liken it to a car.
+
+317
+00:10:46,830 --> 00:10:48,090
+For a very large subset of that, it
+
+318
+00:10:48,091 --> 00:10:49,749
+will be way higher value than having a
+
+319
+00:10:49,750 --> 00:10:50,669
+second car.
+
+320
+00:10:50,670 --> 00:10:53,109
+Getting the right customers is
+
+321
+00:10:53,110 --> 00:10:56,029
+more important in the beginning.
+
+322
+00:10:56,030 --> 00:10:57,249
+Distribution with the right customer,
+
+323
+00:10:57,250 --> 00:10:58,649
+so we can really use these amazing
+
+324
+00:10:58,650 --> 00:11:00,749
+people that are early adopters to
+
+325
+00:11:00,750 --> 00:11:01,750
+help us make this work.
+
+326
+00:11:02,910 --> 00:11:04,969
+Outside of the tech bubble, some,
+
+327
+00:11:04,970 --> 00:11:06,409
+including the International Federation
+
+328
+00:11:06,410 --> 00:11:08,889
+of Robotics, think it could take 20
+
+329
+00:11:08,890 --> 00:11:10,949
+years before domestic bots become
+
+330
+00:11:10,950 --> 00:11:13,449
+truly useful and accepted.
+
+331
+00:11:13,450 --> 00:11:15,249
+But we have heard that before about
+
+332
+00:11:15,250 --> 00:11:17,349
+other futuristic AI technologies.
+
+333
+00:11:18,480 --> 00:11:19,619
+Fasten you seatbelt please.
+
+334
+00:11:20,970 --> 00:11:23,369
+In some ways, brand new revolutionary
+
+335
+00:11:23,370 --> 00:11:25,149
+technology does just sort of creep up
+
+336
+00:11:25,150 --> 00:11:26,649
+on you. If you think about driverless
+
+337
+00:11:26,650 --> 00:11:28,149
+cars, I've been talking about driver
+
+338
+00:11:28,150 --> 00:11:29,989
+less cars in my reporting for a decade
+
+339
+00:11:29,990 --> 00:11:32,269
+at least, but now they're here.
+
+340
+00:11:32,270 --> 00:11:34,269
+And they're just sort normal.
+
+341
+00:11:34,270 --> 00:11:36,389
+In many cities across the US and in
+
+342
+00:11:36,390 --> 00:11:38,449
+China, driverless car are an
+
+343
+00:11:38,450 --> 00:11:39,549
+everyday sight.
+
+344
+00:11:40,610 --> 00:11:42,509
+AI robotics companies are convinced
+
+345
+00:11:42,510 --> 00:11:44,489
+their tech will go the same way.
+
+346
+00:11:44,490 --> 00:11:46,069
+And not only will their devices be
+
+347
+00:11:46,070 --> 00:11:48,049
+truly useful, we'll all eventually
+
+348
+00:11:48,050 --> 00:11:49,490
+want one in our homes.
+

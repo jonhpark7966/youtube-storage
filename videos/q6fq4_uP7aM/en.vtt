@@ -1,0 +1,1903 @@
+WEBVTT
+
+00:00:00.320 --> 00:00:05.440
+Hello and welcome to The Tech Download - a new CNBC Original podcast where we
+
+00:00:05.440 --> 00:00:08.000
+unpack the tech stories that matter most.
+
+00:00:08.000 --> 00:00:11.040
+Each season, we dive into one big theme - and what it means for
+
+00:00:11.040 --> 00:00:15.680
+your money - with insights from the industry's most influential voices.
+
+00:00:15.680 --> 00:00:19.680
+I've always thought that, in the end, it would be the most important technology we'll
+
+00:00:19.680 --> 00:00:24.640
+ever invent. And it's sort of the natural progression, really, of the computer age.
+
+00:00:24.640 --> 00:00:30.480
+This season, we’re looking at Google DeepMind, the powerhouse driving the tech giant's AI push.
+
+00:00:30.480 --> 00:00:34.240
+We've been given rare access to key figures at the company - including
+
+00:00:34.240 --> 00:00:39.920
+our guest for this episode DeepMind co-founder and CEO Demis Hassabis.
+
+00:00:39.920 --> 00:00:42.320
+I think there it's going to be like the industrial revolution,
+
+00:00:42.320 --> 00:00:46.400
+but maybe 10 times bigger, 10 times faster. So,
+
+00:00:46.400 --> 00:00:52.240
+it's incredible amount of transformation, but also disruption that's going to happen.
+
+00:00:54.480 --> 00:00:59.920
+Hey everyone, and welcome to The Tech download. Allow me to reintroduce myself. I'm Arjun Kharpal,
+
+00:00:59.920 --> 00:01:04.080
+Senior Technology correspondent at CNBC based in London, and I've
+
+00:01:04.080 --> 00:01:09.280
+got a very special new co host with me.
+
+00:01:09.280 --> 00:01:14.480
+I cover tech over here in New York. I mostly focus on Apple and Microsoft. But look,
+
+00:01:14.480 --> 00:01:19.680
+I've been covering the tech industry for over 15 years now. I kind of have a good grasp on
+
+00:01:19.680 --> 00:01:24.080
+everything. I'm so excited to be here with you, Arjun, because I've just admired your work from
+
+00:01:24.080 --> 00:01:28.560
+across the ocean for so long, and now we actually get to kind of collaborate and do this thing
+
+00:01:28.560 --> 00:01:32.720
+together. I think it's gonna be a good time.
+
+00:01:32.720 --> 00:01:37.040
+we think we've got nearly three decades of experience covering tech, and the crazy thing is,
+
+00:01:37.040 --> 00:01:41.440
+we've got so much to learn. And I think over the course of us doing this podcast, we're going
+
+00:01:41.440 --> 00:01:47.040
+to learn so much, speak to so many interesting people, I’m so excited that this first series,
+
+00:01:47.040 --> 00:01:52.880
+we're kicking off with an insight into Google Deep Mind, one of the world's leading AI labs as well,
+
+00:01:53.600 --> 00:01:59.120
+just for our listeners and our viewers, a quick intro, I guess, to Google DeepMind. It was a
+
+00:01:59.120 --> 00:02:04.240
+company founded in 2010 here in London, where I sit, as well. Very small company founded by three
+
+00:02:04.240 --> 00:02:09.920
+people, Demis Hassabis, is Shane Legg and Mustafa Suleiman, who's at Microsoft now, right, yeah.
+
+00:02:09.920 --> 00:02:16.720
+And in fact, I interviewed him, nearly a year ago now, Mustafa Suleiman, he's basically doing
+
+00:02:16.720 --> 00:02:21.360
+what Demis is doing over at Google. And it's just kind of interesting to see how Google was
+
+00:02:21.360 --> 00:02:26.960
+like this incubator, so to speak, for all of this top AI talent around the world, Demis obviously
+
+00:02:26.960 --> 00:02:31.760
+stuck around. He's running Deep Mind over there. What I also think is really interesting, though,
+
+00:02:31.760 --> 00:02:37.600
+is just this AI moment, Arjun, we've been living through for the last three years, and how three
+
+00:02:37.600 --> 00:02:42.480
+years ago, chat GPT comes on the scene, and Google was kind of seen as under threat. They
+
+00:02:42.480 --> 00:02:47.600
+went through this code red. They had to go through a bunch of reorganizations internally. Eventually,
+
+00:02:47.600 --> 00:02:54.320
+Demis came out on top as the leader of AI. And guess what? 2025 was a really interesting year
+
+00:02:54.320 --> 00:03:00.560
+for AI over at Google, they kind of caught up, and in some ways, even surpassed what chat GPT was
+
+00:03:00.560 --> 00:03:05.840
+already doing. And this is really interesting because the fundamental technology for all this,
+
+00:03:05.840 --> 00:03:10.720
+these large language models we've been talking about for so many years, started at Google,
+
+00:03:10.720 --> 00:03:16.800
+and the perception was Google, let chat GPT kind of take that technology and run away with it. But
+
+00:03:16.800 --> 00:03:22.400
+now, in my view, at least Gemini is pretty much on par, if not better, than chat GPT.
+
+00:03:22.400 --> 00:03:27.840
+and Google Deep Mind is integral for this. I mentioned it was founded in 2010 Google
+
+00:03:27.840 --> 00:03:33.360
+actually acquired Deep Mind in 2014 I was very new into my career as a tech reporter
+
+00:03:33.360 --> 00:03:38.880
+as well. Google paid around 400 million pounds for Deep Mind at the time in 2014
+
+00:03:38.880 --> 00:03:45.040
+about $540 million. It's a stake this day that could be worth 10s of billions,
+
+00:03:45.040 --> 00:03:50.400
+maybe hundreds of billions of dollars, according to some estimates today, and Deep Mind really is
+
+00:03:50.400 --> 00:03:57.120
+very much responsible for Google's AI. We talk about Gemini, the chat bot, the AI
+
+00:03:57.120 --> 00:04:01.920
+that Google's released to consumers. This is powered so much by the technology coming
+
+00:04:01.920 --> 00:04:06.480
+out of Deep Mind. But even before all of this Deep Mind was having some big breakthroughs,
+
+00:04:06.480 --> 00:04:12.160
+there was a big moment a few years ago when they released a system called Alpha Go. This was the
+
+00:04:12.160 --> 00:04:17.760
+first computer program that was able to defeat a world champion in a game called Go. This is a very
+
+00:04:17.760 --> 00:04:24.240
+complex game, and it was seen at the time as one of the grand challenges of AI because it was such
+
+00:04:24.240 --> 00:04:28.640
+a complex game with so many different combinations available. The other big breakthrough, of course,
+
+00:04:28.640 --> 00:04:33.520
+was was something called Alpha Fold. This was another AI system developed at DeepMind that
+
+00:04:33.520 --> 00:04:39.120
+could accurately predict 3d models of protein structures. And the idea is, here is, if you
+
+00:04:39.120 --> 00:04:44.320
+could do that, this may lead to some medical breakthrough. So this advancement of science
+
+00:04:44.320 --> 00:04:50.480
+has been pretty core to what Deep Mind's been up to. And clearly it was a significant bet from
+
+00:04:50.480 --> 00:04:56.320
+Google more than 10 years ago, because it's helped turn Google into an AI world leader today.
+
+00:04:56.320 --> 00:05:00.560
+Yeah, that's exactly right now. What really struck me about Deep Mind, having watched them
+
+00:05:00.560 --> 00:05:05.040
+for so many years, is how rooted in science they were. They weren't necessarily trying
+
+00:05:05.040 --> 00:05:10.000
+to build consumer products like they do now. They were really trying to solve fundamental
+
+00:05:10.000 --> 00:05:16.880
+problems in science and really usher in this era of AI powered drug discovery, of other big,
+
+00:05:16.880 --> 00:05:20.880
+complex problems like climate change. I know Demis talks about that a lot, and he's going
+
+00:05:20.880 --> 00:05:26.160
+to talk about that in your conversation as well.
+
+00:05:26.160 --> 00:05:33.440
+set up for Deep Mind. So let's get into the conversation with its CEO, Demis Hassabis.
+
+00:05:33.440 --> 00:05:36.560
+Demis, thanks for joining me on the tech download. Appreciate it.
+
+00:05:36.560 --> 00:05:37.680
+Thanks for having us
+
+00:05:37.680 --> 00:05:41.440
+Demis, we're going to try to get through a lot in our time here. But I want to start first with the
+
+00:05:41.440 --> 00:05:46.400
+technology itself. And we've been talking about AI, and we've been talking about the capabilities
+
+00:05:46.400 --> 00:05:51.520
+and how they've been continuously improving as well. Now in the tech world, and there's a lot of
+
+00:05:51.520 --> 00:05:56.160
+conversations about how good can these models get, how good can these systems get, and there's a lot
+
+00:05:56.160 --> 00:06:02.800
+of debate around this idea of scaling laws for our for our listeners, you know, it's this idea of of
+
+00:06:02.800 --> 00:06:08.320
+more compute, more data, bigger models eventually will lead to bigger systems as well. You said we
+
+00:06:08.320 --> 00:06:14.800
+need to push scaling laws to the maximum. There's questions over now, are we hitting any kind of
+
+00:06:14.800 --> 00:06:18.800
+walls in terms of progress of those scaling laws, in terms of the ability for these models to get
+
+00:06:18.800 --> 00:06:23.920
+better, and just from you know, what you've been developing here at DeepMind, what are you seeing?
+
+00:06:23.920 --> 00:06:31.440
+Well, look, I think scaling laws are going very well, so we're definitely seeing increased
+
+00:06:31.440 --> 00:06:36.880
+capabilities by putting in more compute, more data, and making these models generally larger,
+
+00:06:36.880 --> 00:06:43.520
+so that trends continuing may not have been as fast as it was a couple of years ago. So there's
+
+00:06:43.520 --> 00:06:49.520
+some talk of diminishing returns and but there's a big difference between sort of no returns and
+
+00:06:49.520 --> 00:06:53.680
+exponential and I think we're somewhere in the middle where there's very good returns, and
+
+00:06:53.680 --> 00:06:59.200
+that's worth doing. On top of that, if I you know in terms of, like, getting all the way to AGI,
+
+00:06:59.200 --> 00:07:05.040
+artificial general intelligence, you know, maybe that there's one or two big innovations still
+
+00:07:05.040 --> 00:07:11.040
+needed as well, and maybe missing, in addition to the scaling up of kind of the existing ideas
+
+00:07:11.040 --> 00:07:15.200
+We'll get on to AGI very shortly. But what are missing in your view?
+
+00:07:15.200 --> 00:07:18.640
+Well, if you look at, I mean, we've all, you know, played around with different chat bots,
+
+00:07:18.640 --> 00:07:25.200
+and you can see that, you know, they can do very impressive things in some dimensions,
+
+00:07:25.200 --> 00:07:28.560
+but they're kind of like jagged intelligences I like calling them in the sense of like,
+
+00:07:28.560 --> 00:07:32.480
+they're very good at certain things. But there are other things that they don't do they're not
+
+00:07:32.480 --> 00:07:38.720
+capable of at all. And and if you pose a question in a certain way, you find that they're flawed
+
+00:07:39.280 --> 00:07:44.400
+and they can't do some relatively simple things. And so for a true general intelligence,
+
+00:07:44.400 --> 00:07:48.960
+you shouldn't see that inconsistency should be consistent across the board. And also they're
+
+00:07:48.960 --> 00:07:52.880
+things like it can't continually learn it can't learn new things online. It can't
+
+00:07:52.880 --> 00:07:57.920
+truly create original things. So there's quite a few capabilities that you would like to see and
+
+00:07:57.920 --> 00:08:01.200
+you would need for general intelligence that are missing from today's systems.
+
+00:08:01.200 --> 00:08:05.520
+That's really interesting. So what would be the sort of unlock to get to those Intelligent
+
+00:08:05.520 --> 00:08:09.280
+Systems? I just want to quickly discuss the conversation I had with Thomas Wolfe,
+
+00:08:09.280 --> 00:08:13.840
+who's the co founder over at Hugging Face. Yes, he was talking to me a few months back
+
+00:08:13.840 --> 00:08:17.440
+about his view on LLMs, in particular, large language models. And just saying,
+
+00:08:17.440 --> 00:08:20.640
+they're really great. And you know, you use these chat bots, and the chat bots say, hey,
+
+00:08:20.640 --> 00:08:25.920
+great question, great idea. And here's, here's all the information you need to know. But what's
+
+00:08:25.920 --> 00:08:31.200
+missing is the ability for these systems to come up with new and novel ideas, perhaps,
+
+00:08:31.200 --> 00:08:36.240
+and particularly, I know you're so interested in science and what AI could do to unlock new
+
+00:08:36.240 --> 00:08:41.280
+drugs or discover new diseases, etc, that actually maybe the LLMs limitations are
+
+00:08:41.280 --> 00:08:45.760
+there that can't come up with these Nobel Prize winning ideas, these novel ideas.
+
+00:08:45.760 --> 00:08:46.480
+Yeah.
+
+00:08:46.480 --> 00:08:49.120
+So perhaps there needs to be some sort of new architecture. What's
+
+00:08:49.120 --> 00:08:51.120
+your what's your thinking on that at the moment?
+
+00:08:51.120 --> 00:08:56.240
+Well, look, my passion for and my whole reason I spent my whole career on AI is, I think,
+
+00:08:56.240 --> 00:09:00.240
+eventually will be the ultimate tool for science. And of course, we've shown that with things like
+
+00:09:00.240 --> 00:09:04.640
+Alpha Fold and all of the science work we've been doing over the last decade. But there's still a
+
+00:09:04.640 --> 00:09:10.960
+long way to go in terms of, can an AI actually come up with a new hypothesis itself, not just
+
+00:09:10.960 --> 00:09:15.920
+solve a conjecture that is already out there, which would be already useful and impressive. But
+
+00:09:15.920 --> 00:09:21.680
+can it actually come up with a new conjecture, a new a new idea about how the world might work? And
+
+00:09:21.680 --> 00:09:26.320
+so far, these systems can't do that. They don't really have the capability to do that. So there
+
+00:09:26.320 --> 00:09:31.680
+seems to be something missing. I think, some of the capabilities that required a kind of long term
+
+00:09:31.680 --> 00:09:38.240
+planning, better reasoning, maybe also the idea of a world model. This idea of, like, you know, the
+
+00:09:38.240 --> 00:09:43.840
+system actually understanding better the physics of the world, so that it can run simulations,
+
+00:09:44.800 --> 00:09:51.200
+kind of in its mind to test its own hypotheses. You know, these are things that you know the best
+
+00:09:51.200 --> 00:09:56.880
+scientists do, human scientists do. And so far, our AI systems, you know, are not able to do that.
+
+00:09:56.880 --> 00:10:00.160
+Can you just help us understand a bit more of this idea of world models? Because it may be
+
+00:10:00.160 --> 00:10:05.040
+a term people are hearing for the first time. You know how that gets they different differ from LLMs
+
+00:10:05.040 --> 00:10:10.240
+So LLM's, and the models we use at the moment are, you know, mostly around text. Of course,
+
+00:10:10.240 --> 00:10:16.720
+things like Gemini, our foundation model, can also cope with images and video and audio, so different
+
+00:10:16.720 --> 00:10:22.720
+modalities. But it's still actually understanding the physics of the world, the causality of the
+
+00:10:22.720 --> 00:10:28.240
+world. You know, how one thing affects another thing? Can you plan a long time into the future?
+
+00:10:28.240 --> 00:10:32.800
+These are all related concepts, and if you really want to understand how the world works,
+
+00:10:32.800 --> 00:10:37.600
+so that maybe you can invent something new in the world, or explain something about the world that
+
+00:10:37.600 --> 00:10:42.880
+was not known before, which is basically what scientific theory does, then you have to have
+
+00:10:42.880 --> 00:10:48.560
+this, this accurate model of how the world works, you know, starting with intuitive physics and
+
+00:10:48.560 --> 00:10:54.560
+and how the physics of the world works, but all the way up to biology, you know, and economics.
+
+00:10:55.120 --> 00:10:59.200
+And do you envisage the world if we get of artificial general intelligence,
+
+00:10:59.200 --> 00:11:03.120
+is sort of human level of intelligence, that that there will be a combination of llms and
+
+00:11:03.120 --> 00:11:07.600
+world models working together, or will sort of world models supersede, in some sense, LLMs
+
+00:11:07.600 --> 00:11:12.160
+No, I think there'll be some convergence of these technologies. That's at least my betting is, is
+
+00:11:13.280 --> 00:11:18.640
+there will be these LLMs, or foundation models, you know, like Gemini under the hood, that will
+
+00:11:18.640 --> 00:11:22.560
+be a key component. I think the question, I think there's almost no doubt about that in my mind,
+
+00:11:22.560 --> 00:11:29.280
+which is why we must try and scale those systems as as as big and as as powerful as we can. But
+
+00:11:29.280 --> 00:11:35.520
+the question is, is, is it the only component that's needed for an AGI and that's where I think,
+
+00:11:35.520 --> 00:11:41.520
+I suspect other types of technologies and other types of capabilities will be needed. And I think
+
+00:11:41.520 --> 00:11:48.240
+these world model capabilities, and we're working on our versions called Genie and and we have video
+
+00:11:48.240 --> 00:11:53.280
+models like VO, state of the art, video models that you can generate videos from, in from text,
+
+00:11:53.280 --> 00:11:59.360
+and you can think of video models and interactive models like Genie as kind of, you know, early
+
+00:11:59.360 --> 00:12:06.000
+embryonic world models, where, if you can generate something that's realistic about the world, then
+
+00:12:06.000 --> 00:12:10.080
+in a sense, your model understands that about the world. Otherwise, how could it have generated it?
+
+00:12:10.080 --> 00:12:13.680
+Demis, you mentioned this, AGI, artificial general intelligence. I know there's various
+
+00:12:13.680 --> 00:12:18.000
+definitions of it floating around. You've previously said you believe that reaching
+
+00:12:18.000 --> 00:12:23.520
+AGI could be somewhere in the in the realm of five to 10 years away. Is this still your view,
+
+00:12:23.520 --> 00:12:27.920
+given, I guess, some of the profound developments we've seen in 2025
+
+00:12:27.920 --> 00:12:30.720
+Yes, I think we're right on track from that. Actually, when we started DeepMind
+
+00:12:30.720 --> 00:12:35.760
+back in 2010 we thought this would be a 20 year kind of mission to build AGI,
+
+00:12:35.760 --> 00:12:41.440
+you know, a system that's capable exhibiting all the cognitive capabilities we have, including,
+
+00:12:41.440 --> 00:12:47.200
+you know, things like true innovation and creativity and planning and reasoning and
+
+00:12:47.200 --> 00:12:52.400
+things like that. And I think we're about five to 10 years away from that, but that's,
+
+00:12:52.400 --> 00:12:56.240
+you know, pretty incredible, if you think about how transformative a technology this is
+
+00:12:56.240 --> 00:12:59.120
+You mentioned there might need to be some more technology breakthroughs. We're seeing
+
+00:12:59.120 --> 00:13:03.600
+things like the models advancing. We're seeing the semiconductors advancing rapidly as well.
+
+00:13:03.600 --> 00:13:07.040
+Are there any currently bottlenecks and things you need to figure out?
+
+00:13:07.040 --> 00:13:10.080
+I know energy is something that's been brought up so much saying, Well, look,
+
+00:13:10.080 --> 00:13:13.920
+we can keep advancing chips, we can keep advancing models, but at some point we're
+
+00:13:13.920 --> 00:13:18.720
+just not going to have enough energy to run these data centers, to run these AI models.
+
+00:13:18.720 --> 00:13:23.360
+Yeah, yeah. Well, ook, there's, there's lots of physical constraints. So of course, there's,
+
+00:13:23.360 --> 00:13:26.880
+you know, no one ever has enough chips. And you know, we're lucky that we have,
+
+00:13:26.880 --> 00:13:31.520
+you know, our own TPU range, in addition to GPUs and but there just aren't enough
+
+00:13:31.520 --> 00:13:34.800
+compute chips in the world, really, for the demand. And of course, in the end,
+
+00:13:34.800 --> 00:13:38.880
+that comes down to energy as well. There's this idea of energy will be effectively is
+
+00:13:38.880 --> 00:13:44.560
+synonymous with intelligence as we get into the era towards AGI. Now, the interesting thing is,
+
+00:13:44.560 --> 00:13:50.320
+I think the AI itself will help here, in the sense of getting more efficiencies out of existing
+
+00:13:50.320 --> 00:13:55.040
+infrastructure, but helping with things like material design better better solar materials,
+
+00:13:55.040 --> 00:13:58.320
+but it could also help with new breakthrough technologies like fusion. We, you know,
+
+00:13:58.320 --> 00:14:03.680
+we have a collaboration with Commonwealth fusion in the US to help contain plasma and fusion
+
+00:14:03.680 --> 00:14:09.120
+reactors. And one of my pet projects is, can we come up with a room temperature superconductor
+
+00:14:09.120 --> 00:14:15.280
+material using AI? So I think there are multiple breakthroughs that AI could come up with and help
+
+00:14:15.280 --> 00:14:19.840
+us come up with that would help with the energy situation. In fact, indeed, that's,
+
+00:14:19.840 --> 00:14:23.760
+I think that's one of the most promising use cases of AI. And then the other thing is,
+
+00:14:23.760 --> 00:14:28.640
+as these systems are getting better, they're also getting, you know, 10x more efficient per year.
+
+00:14:28.640 --> 00:14:33.520
+So if you look at our range of models, we have our kind of Lighthouse model, our Pro versions
+
+00:14:33.520 --> 00:14:37.680
+of Gemini, but then we have our flash versions, which are way more efficient, and the sort of
+
+00:14:37.680 --> 00:14:42.400
+workhorse models that are used for everything, and they use techniques like distillation, where
+
+00:14:42.400 --> 00:14:46.720
+you have a big model that teaches a smaller model, and the smaller model is really, really efficient.
+
+00:14:46.720 --> 00:14:50.880
+And I think there are more and more innovations and techniques like that that will keep bringing
+
+00:14:50.880 --> 00:14:56.800
+the efficiency curve down, and so you get, you know, much better performance per per watt.
+
+00:14:56.800 --> 00:15:00.800
+We hear a lot about sort of AGI, and I think there's a lot of people wondering, technology,
+
+00:15:00.800 --> 00:15:05.440
+sounds amazing, sounds great. There's also a lot of fear right around the proliferation of
+
+00:15:05.440 --> 00:15:09.600
+this technology and the impact it's going to have on on people every day and their lives.
+
+00:15:09.600 --> 00:15:12.480
+I guess for you, what are some of things we need to consider,
+
+00:15:12.480 --> 00:15:12.800
+yeah
+
+00:15:12.800 --> 00:15:16.480
+from from that perspective, in terms of the impact on society, whether it's around jobs,
+
+00:15:16.480 --> 00:15:21.360
+whether it's around kind of what we're going to do with our time if we reach this goal, versus,
+
+00:15:21.360 --> 00:15:25.520
+I guess, the benefits that you believe this technology is going to bring for humanity?
+
+00:15:25.520 --> 00:15:29.040
+Well, of course, you know, I believe that overall, AI is going to be one of the most
+
+00:15:29.040 --> 00:15:35.440
+beneficial technologies humanity ever invented. That's why I spent my whole career working on it.
+
+00:15:35.440 --> 00:15:40.480
+But it's only, you know, it's not a given. It's a dual purpose technology. I dream about using
+
+00:15:40.480 --> 00:15:45.360
+AI for things like curing diseases. We have a spin out called isomorphic that builds it on,
+
+00:15:45.360 --> 00:15:50.960
+on Alpha fold work on protein folding, work that we did a few years ago to accelerate drug
+
+00:15:50.960 --> 00:15:55.440
+discovery and try and solve all disease. I think that's now, you know, within reach, that type of
+
+00:15:55.440 --> 00:16:01.600
+thing in the next decade or two. We've discussed energy. There's many benefits, I think AI is going
+
+00:16:01.600 --> 00:16:05.920
+incredible benefits AI is going to bring. But there are also risks. Obviously, there's kind
+
+00:16:05.920 --> 00:16:11.520
+of economic disruption, and I think there it's going to be like the industrial revolution, but
+
+00:16:11.520 --> 00:16:17.760
+maybe 10 times bigger, 10 times faster. So, you know, it's incredible amount of transformation,
+
+00:16:17.760 --> 00:16:22.480
+but also disruption that's going to happen. And you know, we need some new economic models,
+
+00:16:22.480 --> 00:16:28.880
+probably for that. And then on terms of the the worries about the usage of AI, I have two which I
+
+00:16:28.880 --> 00:16:33.600
+think are worth worrying about. One is bad actors repurposing these general purpose technologies,
+
+00:16:33.600 --> 00:16:39.360
+AI technologies, for harmful ends. And then the second one is AI itself, as it we get towards
+
+00:16:39.360 --> 00:16:44.560
+AGI and agent based systems. So these are systems that are able to do things more autonomously than
+
+00:16:44.560 --> 00:16:50.480
+than today's systems. They can, you know, what are the guardrails around that? How do we make
+
+00:16:50.480 --> 00:16:57.040
+sure we can keep them doing the things that we want them to do, and not veer off into something
+
+00:16:57.040 --> 00:17:03.200
+that we didn't expect. And so those are the two kind of risks that are kind of that I foresee.
+
+00:17:03.200 --> 00:17:04.640
+Do you feel that you've got systems that, or you're
+
+00:17:04.640 --> 00:17:07.360
+developing systems that you can be in control of?
+
+00:17:07.360 --> 00:17:11.760
+I think we're, we're very confident about that. You know, we've had and thought about
+
+00:17:11.760 --> 00:17:16.640
+responsibility and safety and security of these systems in the very beginning. You know,
+
+00:17:16.640 --> 00:17:20.800
+we started DeepMind back in 2010 almost no one was working on AI back then. But
+
+00:17:20.800 --> 00:17:25.040
+we planned for success, and we knew success would mean these extremely powerful systems.
+
+00:17:25.040 --> 00:17:30.080
+So we also understood the the other side of the coin of that. So from the very beginning,
+
+00:17:30.080 --> 00:17:33.920
+we've tried to be very thoughtful use the scientific method and a scientific approach
+
+00:17:33.920 --> 00:17:38.560
+to try and understand as much about our systems we're building before we deploy them. Of course,
+
+00:17:38.560 --> 00:17:41.200
+that doesn't mean we won't make any mistakes. There's two, it's, it's,
+
+00:17:41.200 --> 00:17:46.720
+it's such a incredible and fast moving technology. But I think with with something like AI,
+
+00:17:46.720 --> 00:17:52.960
+we need to be, you know, I call myself a kind of cautious optimist. I'm, I'm very big believer in
+
+00:17:52.960 --> 00:17:57.600
+human ingenuity. I think given enough time and care, we'll get this right as scientists and
+
+00:17:57.600 --> 00:18:03.600
+as a society. But it's, it's not a given, and so we shouldn't be sort of rushing into this
+
+00:18:03.600 --> 00:18:04.160
+yeah
+
+00:18:04.160 --> 00:18:06.400
+and we need to go into it with our eyes open.
+
+00:18:06.400 --> 00:18:10.160
+Because, I guess the reason I asked, because I know you've spoken to people like Yoshua, Bengio,
+
+00:18:10.160 --> 00:18:15.280
+Max Tegmark, and these are people I've also spoken to and and they're of this cohort that please do
+
+00:18:15.280 --> 00:18:20.800
+do we need to be rushing so quickly into a world of AGI and agentic systems? Maybe we need more
+
+00:18:20.800 --> 00:18:26.960
+tool based AI AI to solve specific things, rather than these all purpose or general
+
+00:18:26.960 --> 00:18:32.400
+purpose kind of systems? And I know they've called for, for perhaps a slowdown to the
+
+00:18:32.400 --> 00:18:38.560
+development of of these AGI systems. In your view, do you think you should be slowing down?
+
+00:18:38.560 --> 00:18:42.240
+Well, I've had lots of you know, I know them very well, Yoshua And Max, we've had
+
+00:18:42.240 --> 00:18:46.400
+many discussions and many others. And actually, I have some sympathy for that view, that, you know,
+
+00:18:46.400 --> 00:18:51.920
+building a tool based AI is, you know, thinking of AI as a tool, or the ultimate tool for,
+
+00:18:51.920 --> 00:18:58.480
+say, science is the right way to build AI in the initial stages. And certainly that's the way we're
+
+00:18:58.480 --> 00:19:05.440
+viewing it, and the kinds of things we apply AI to, like Alpha Fold. But the thing is, you know,
+
+00:19:05.440 --> 00:19:11.520
+it's a very complex geopolitical and corporate system that we're in. And it isn't just about,
+
+00:19:11.520 --> 00:19:15.520
+you know, there are many companies trying to build this. There are also many nations trying to build
+
+00:19:15.520 --> 00:19:21.840
+it. And it's, there's a sort of race dynamic, which I ideally wouldn't be there. So in an
+
+00:19:21.840 --> 00:19:26.800
+ideal case, this would be a scientific endeavor, and it will be very carefully, each step would be
+
+00:19:26.800 --> 00:19:31.760
+carefully considered. But unfortunately, the the prac that the real world isn't isn't like that,
+
+00:19:31.760 --> 00:19:36.880
+and we have to kind of be pragmatic about where we are. So what we're trying to do is be good
+
+00:19:36.880 --> 00:19:42.480
+role models for Yes, being on the frontier, pushing that the benefits of that as quickly
+
+00:19:42.480 --> 00:19:48.880
+as we can and as broadly as we can, but also try and be as responsible as possible with that along
+
+00:19:48.880 --> 00:19:52.880
+the way and thoughtful as possible. And I think we've got that balance pretty, pretty good right
+
+00:19:52.880 --> 00:19:56.640
+now. And hopefully that's a bit of a role model to the rest of the field in the industry, too.
+
+00:19:56.640 --> 00:19:59.280
+Yeah I want to address some of those dynamics as well. But just just first,
+
+00:19:59.280 --> 00:20:02.000
+I guess, just from a personal point of view. Have you ever you said you
+
+00:20:02.000 --> 00:20:05.120
+sort of started this mission of Deep Mind? You know, you believe in the technology,
+
+00:20:05.120 --> 00:20:09.600
+but has there ever been any moments in your career when you're like, should we be doing this?
+
+00:20:09.600 --> 00:20:16.560
+Look you when you look at how powerful the technology is, I really think that there
+
+00:20:16.560 --> 00:20:22.800
+are so many challenges confronting society today, not to do with AI, climate, poverty,
+
+00:20:22.800 --> 00:20:28.320
+you know, the access to water, there's a there's just so many issues health,
+
+00:20:28.320 --> 00:20:36.240
+aging, population, disease. So like, you know, energy we talked about earlier. So if a some,
+
+00:20:36.240 --> 00:20:40.720
+if I if there wasn't a technology transformative as AI coming down the road,
+
+00:20:40.720 --> 00:20:45.360
+I'd be really worried about society's ability to deal with these challenges.
+
+00:20:45.360 --> 00:20:49.600
+So interestingly, AI itself is one of those challenges, maybe one of the greatest ones,
+
+00:20:49.600 --> 00:20:56.240
+but it's also one which can help us cope with and resolve and solve some of these other big,
+
+00:20:56.240 --> 00:21:02.080
+grand challenges. So it's a very interesting one, right? It's sort of double edged, and I've always
+
+00:21:02.080 --> 00:21:09.040
+believed in that. I've always thought that, in the end, it would be the most important technology
+
+00:21:09.040 --> 00:21:15.440
+we'll ever invent. And I think it's sort of the natural progression, really, of the computer age.
+
+00:21:15.440 --> 00:21:20.240
+Demis, you just, just a quick aside, you started life in gaming, which is amazing.
+
+00:21:20.240 --> 00:21:21.760
+Yeah, codeveloping theme park.
+
+00:21:21.760 --> 00:21:22.200
+Yes,
+
+00:21:22.200 --> 00:21:26.320
+fantastic, fantastic game as well. Did you ever do you still play games?
+
+00:21:26.320 --> 00:21:31.600
+Yes, I love games. It's my hobby really well, like these days, like League of Legends,
+
+00:21:31.600 --> 00:21:35.840
+with my two boys and my brother and we have a little team. We've done it since lockdown.
+
+00:21:36.560 --> 00:21:39.837
+But, yeah, I love games in all its forms from football to video games
+
+00:21:39.837 --> 00:21:44.800
+in such a high impact, stressful role as you have, potentially, is that your unwind?
+
+00:21:44.800 --> 00:21:48.160
+It is, it is, I would say so. And it's also, you know, it's,
+
+00:21:48.160 --> 00:21:52.480
+it's a kind of in the past as well, has been a great creative endeavor for me,
+
+00:21:52.480 --> 00:21:56.560
+you know. And it's how I learned programming and other things was, was through making games.
+
+00:21:56.560 --> 00:22:00.480
+I have nowhere near as stressful job as you but that's my unwind too,
+
+00:22:00.480 --> 00:22:01.120
+for sure.
+
+00:22:01.120 --> 00:22:02.800
+Get home, turn the console on.
+
+00:22:02.800 --> 00:22:04.640
+Exactly, exactly
+
+00:22:07.120 --> 00:22:12.640
+Just in that small segment alone, Steve, there's so much to unpack, and I want to focus on on two
+
+00:22:12.640 --> 00:22:17.840
+kind of big buzz words right now. The first is artificial general intelligence, or AGI,
+
+00:22:17.840 --> 00:22:22.080
+this idea, and I know there's so many different definitions of it, but broadly speaking, this
+
+00:22:22.080 --> 00:22:28.400
+idea of AI that that is as smart or smarter than humans. And I think that so many of these big AI
+
+00:22:28.400 --> 00:22:35.520
+labs, including Open AI, including Deep Mind, are pushing and hoping to get to this stage of AGI,
+
+00:22:35.520 --> 00:22:40.640
+and so far, they've approached this with a technique called large language models,
+
+00:22:40.640 --> 00:22:45.360
+these AI models that are trained on huge amounts of data, but mainly text. But there's this other
+
+00:22:45.360 --> 00:22:52.720
+buzzword, right? World models, this idea of these AI models that understand the physical world.
+
+00:22:52.720 --> 00:22:56.240
+And this is this. This buzzword is really growing in popularity, right?
+
+00:22:56.240 --> 00:23:01.520
+Yeah. And I think this is going to be a big theme of AI going into the rest of 2026,
+
+00:23:01.520 --> 00:23:07.440
+and even into next year. Because the idea here is that, LLMs, sure we got the language part down.
+
+00:23:07.440 --> 00:23:13.120
+It can mimic the way humans talk and speak and write and things like that. But when it comes to
+
+00:23:13.120 --> 00:23:18.160
+the physical world, you know, we talk so much about robotics and AI and physical AI, well,
+
+00:23:18.160 --> 00:23:23.600
+they need to understand how the physical world works, how water flows, how air moves and things
+
+00:23:23.600 --> 00:23:28.800
+of that nature, and what really struck out to me when you brought this up to Demis he said, Yeah,
+
+00:23:28.800 --> 00:23:34.480
+we do need to start exploring that more. And in fact, he sees a world in which the LLM and those
+
+00:23:34.480 --> 00:23:39.920
+world models start to converge. I think that was the word he used, converge into something more
+
+00:23:39.920 --> 00:23:46.080
+unique and more powerful and capable. This is also a debate that's been playing out among AI leaders,
+
+00:23:46.080 --> 00:23:51.440
+like on social media, you could fire up X or your favorite social media site, and what really struck
+
+00:23:51.440 --> 00:23:58.560
+out to me is Yann LeCun. He was the head of AI for many years over at Meta. He recently left to start
+
+00:23:58.560 --> 00:24:03.600
+his own thing, because he kind of got superseded by Alexander Wang and that whole big talent wars
+
+00:24:03.600 --> 00:24:09.600
+that happened over last summer, he had a really interesting interview in the Financial Times,
+
+00:24:09.600 --> 00:24:14.640
+he doesn't think LLMs are what's going to get us to AGI, to your point, that's what everyone's
+
+00:24:14.640 --> 00:24:20.320
+chasing. The super intelligence AGI, whatever you want to call it. His thing is LLMs can only
+
+00:24:20.320 --> 00:24:25.520
+get you part of the way. You need world models and all sorts of other things. And he kind of
+
+00:24:25.520 --> 00:24:31.200
+harshly criticized meta for not thinking beyond the LLM and that seems to be part of the reason
+
+00:24:31.200 --> 00:24:35.760
+why he left to do his own thing. And it's really interesting to see one of Meta's big competitors,
+
+00:24:35.760 --> 00:24:40.800
+Gemini, just talk openly about it and say Demis saying, Yeah, we need to do this. We
+
+00:24:40.800 --> 00:24:46.640
+need to start thinking about this. It enables so many things, from robotics, autonomous driving
+
+00:24:46.640 --> 00:24:51.520
+and just a better understanding for these AI models and intelligent systems that we're
+
+00:24:51.520 --> 00:24:57.440
+chatting with to get you that right answer.
+
+00:24:57.440 --> 00:25:01.200
+put something in and it will say, Hey, Steve, great question. That's a really clever thought
+
+00:25:01.200 --> 00:25:04.160
+All the time. That's all that's that. It's the sycophancy of all these chatbots, right,
+
+00:25:04.160 --> 00:25:08.480
+where they're like, Oh, you're so smart and great at asking me these questions. Yeah, all the time,
+
+00:25:08.480 --> 00:25:12.240
+Exactly Because the reason I bring that up is partly to this point, this growing criticism
+
+00:25:12.240 --> 00:25:17.120
+of LLMs is that actually, yes, they're great and they'll give you the information. But actually,
+
+00:25:17.120 --> 00:25:22.320
+when it comes to LLMs as a foundation for being able to create new ideas,
+
+00:25:22.320 --> 00:25:26.480
+novel ideas, there's limitations there, and I think that's partly what Demis was
+
+00:25:26.480 --> 00:25:30.960
+speaking to and why this idea of world models is really growing in popularity.
+
+00:25:31.600 --> 00:25:35.520
+It's going to be interesting to see how this plays out, as you mentioned, into this next phase of AI,
+
+00:25:35.520 --> 00:25:40.480
+where it's key for things like robotics, driverless cars, and many other use cases too.
+
+00:25:40.480 --> 00:25:45.600
+Yeah, and you'll you'll notice, as we continue this podcast, I am incredibly cynical about the
+
+00:25:45.600 --> 00:25:50.960
+robotics angle of this AI moment we're living in all that so many of the robots we're seeing,
+
+00:25:50.960 --> 00:25:56.080
+they're literally puppets. They're tele operated. The best example, of course, is the Tesla Optimus
+
+00:25:56.080 --> 00:26:01.760
+robot, which started out as a man in a body suit dancing around. Now it's a real robot,
+
+00:26:01.760 --> 00:26:07.200
+but again, it's tele operated. There are literally people at a control room controlling it over the
+
+00:26:07.200 --> 00:26:11.920
+internet and even using their voice to talk to you and things like that. So we are , the
+
+00:26:11.920 --> 00:26:16.320
+robotics people I talked to, we had one in the office just a couple weeks ago, and they said the
+
+00:26:16.320 --> 00:26:21.440
+hardest part isn't building the actual robot, it's training it, and that's where these world models
+
+00:26:21.440 --> 00:26:28.800
+are going to come in, so they can actually operate autonomously, like we've been promised. Perfect.
+
+00:26:28.800 --> 00:26:34.400
+Demis, you mentioned some of the dynamics at play, right? And competition commercially, of course,
+
+00:26:34.400 --> 00:26:39.280
+is one of those. We've got Open AI, we've got Anthropic, we've got all these different AI labs
+
+00:26:39.280 --> 00:26:45.360
+out there. It's intense. And Gemini three has had such good reception so far. But there was
+
+00:26:45.360 --> 00:26:49.840
+a point people were doubting Google as a whole and its ability to compete. And I'd
+
+00:26:49.840 --> 00:26:55.040
+say a point. It was at some point in 2025 and it wasn't that long ago. And then, you know, Gemini
+
+00:26:55.040 --> 00:27:00.880
+3 really came out and impressed a lot of people as well. But it's a space that's ever changing.
+
+00:27:00.880 --> 00:27:04.960
+So how we how would you assess right now, the competitive environment? How do you feel it?
+
+00:27:04.960 --> 00:27:09.920
+Yeah, well, look, it's a ferocious, competitive environment at the moment. I mean, many people
+
+00:27:09.920 --> 00:27:14.000
+were telling me, you know, being in tech for 2030, years, say it's that it's the most intense
+
+00:27:14.000 --> 00:27:17.920
+environment they've ever seen, perhaps, you know, ever in the technology industry,
+
+00:27:18.960 --> 00:27:23.920
+and, and, and, you know, all the, I guess, most capable players, whether it's individual,
+
+00:27:23.920 --> 00:27:28.720
+you know, tech Titans or big tech companies, and all the best startups, they're all involved in
+
+00:27:28.720 --> 00:27:32.880
+this space now, because I think everyone has understood what we've known for 20 plus years
+
+00:27:32.880 --> 00:27:38.240
+now that this is really the most important technology. So that's sort of to be expected,
+
+00:27:38.240 --> 00:27:44.640
+but it's tough, but it's, it's also exciting. And, you know, going back to games, I sort of,
+
+00:27:44.640 --> 00:27:49.040
+I've started playing chess when I was very young for the England Junior chess team. So I've kind of
+
+00:27:49.040 --> 00:27:53.360
+been brought up in in competition. So, you know, I love competition, fortunately, in fact, many
+
+00:27:53.360 --> 00:27:58.720
+ways I live for competition. So a lot of a big part of me sort of like, likes to lean into this.
+
+00:27:58.720 --> 00:28:02.160
+But on the other hand, the only thing I would say is, at the back of my mind, I know there's
+
+00:28:02.160 --> 00:28:06.320
+something much more important than individual competition between companies or even countries,
+
+00:28:06.320 --> 00:28:11.600
+which is overall getting stewarding AGI well, for the world, for the whole, you know, for the all of
+
+00:28:11.600 --> 00:28:18.960
+humanity. And I think that's incumbent of all of us who are leaders of the AI labs and and can have
+
+00:28:18.960 --> 00:28:23.760
+an influence over this, is to have that sort of in the front of their minds, in amongst this sort
+
+00:28:23.760 --> 00:28:28.720
+of ferocious capitalist competition that we're in as well. So both are true at the same time
+
+00:28:28.720 --> 00:28:32.080
+I mentioned, kind of the moment people were questioning what Google was going to do
+
+00:28:32.080 --> 00:28:36.800
+with with AI at earlier in the year. Yeah. Did you do anything different?
+
+00:28:36.800 --> 00:28:42.240
+Yeah, I think I feel like, you know, if we go back over the last decade, actually, you know,
+
+00:28:42.240 --> 00:28:47.680
+Google, Google Brain, specifically the research division in Google and DeepMind as it was.
+
+00:28:47.680 --> 00:28:52.720
+Are sort of fairly independent. We kind of invented about 90% of the technologies
+
+00:28:52.720 --> 00:28:56.800
+that everybody's using today, you know, whether it's transformers, of course, most famously,
+
+00:28:56.800 --> 00:29:01.360
+the architecture behind all the LLMs or AlphaGo, you know, sort of introduced reinforcement
+
+00:29:01.360 --> 00:29:07.200
+learning at scale on a really hard problem. So we've invented all this technology, but then
+
+00:29:07.200 --> 00:29:11.760
+maybe we were, in hindsight, we were a little bit slow to commercialize it and scale it. And
+
+00:29:12.320 --> 00:29:16.640
+you know, that's what Open AI and others did very well. And then the last two, three years,
+
+00:29:16.640 --> 00:29:23.760
+I think we've had to come back to almost our startup or entrepreneurial roots and be scrappier,
+
+00:29:23.760 --> 00:29:29.920
+be faster, ship things really quickly and and sort of make really rapid progress. And
+
+00:29:29.920 --> 00:29:34.480
+I think what you're seeing over the last couple of years, culminating in Gemini, the Gemini series,
+
+00:29:34.480 --> 00:29:40.480
+which we're very happy with Gemini three is, as you mentioned, our latest version has sort of put
+
+00:29:40.480 --> 00:29:45.280
+us back, you know, near the top of, you know, the top of the leaderboards, where we feel we belong.
+
+00:29:45.280 --> 00:29:46.960
+And you feel like you can stay there.
+
+00:29:46.960 --> 00:29:49.600
+I feel like we can stay there, of course, yeah.
+
+00:29:49.600 --> 00:29:56.320
+Amid all this competition, there's obviously a lot of talk about bubbles in AI, yes, particularly
+
+00:29:56.320 --> 00:30:02.000
+around valuations of certain companies, companies rating raising astronomical sums of money. The
+
+00:30:02.000 --> 00:30:07.360
+tech giant spending hundreds of billions on infrastructure, and companies out there,
+
+00:30:07.360 --> 00:30:11.840
+quite frankly, raising large sums of money with very little product, or even very little
+
+00:30:11.840 --> 00:30:17.040
+profitability, if any. And so where do you think we are right now in terms of this, this
+
+00:30:17.040 --> 00:30:21.360
+kind of bubble discussion? Do you think we're in a financial bubble when it comes to AI industry?
+
+00:30:21.360 --> 00:30:25.440
+I think, I think it's not a binary thing, this bubble discussion. I don't I think
+
+00:30:25.440 --> 00:30:29.440
+some parts of the industry might be in a bubble. To me, that's what it looks like,
+
+00:30:29.440 --> 00:30:33.440
+and others probably not. You know, fundamentally, AI is going to be the most transformative
+
+00:30:33.440 --> 00:30:38.880
+technology ever invented. So that's that's that part that underpins everything. So in the end,
+
+00:30:38.880 --> 00:30:42.960
+it's a bit like the internet bubble. In the end, the Internet was critical, and there were
+
+00:30:42.960 --> 00:30:48.800
+some generational companies that were created in during that time, right? So I think, you know,
+
+00:30:48.800 --> 00:30:52.960
+that's sort of almost inevitable. There'll be over exuberance, once everyone realizes how
+
+00:30:52.960 --> 00:30:59.600
+transformative a specific technology is, and then there'll be a, probably a reckoning, and then the
+
+00:30:59.600 --> 00:31:05.120
+things that are real will survive and flourish. Where, it seems to me, is, you know, maybe like
+
+00:31:05.120 --> 00:31:09.600
+in the private markets, where there's sort of seed rounds, of 10s of billions of dollars,
+
+00:31:09.600 --> 00:31:14.400
+where basically there's just almost nothing there yet, and that seems a little bit unsustainable
+
+00:31:14.400 --> 00:31:18.800
+over the long run. As far as I'm concerned, I don't really worry about bubbles. My point of
+
+00:31:18.800 --> 00:31:24.320
+view is sort of leading Google DeepMind. I've got to make sure that whichever way it goes, whether
+
+00:31:24.320 --> 00:31:28.960
+it continues to go all rosy and exponential, like it is now, or there's a bubble that, you know,
+
+00:31:28.960 --> 00:31:34.240
+there's some kind of bubble bursting, that we're in the right position to, to win either way,
+
+00:31:34.240 --> 00:31:38.640
+and to take advantage of that either way. And I think we've got a good position, given Google's
+
+00:31:38.640 --> 00:31:44.720
+underlying business and how AI fits with that, to to to benefit, whichever way it goes from here.
+
+00:31:44.720 --> 00:31:48.640
+Some I guess some of your biggest competitors are the ones who have managed to raise huge sums
+
+00:31:48.640 --> 00:31:52.640
+of money in the private markets at this point. So do you feel confident that even if there is
+
+00:31:52.640 --> 00:31:56.720
+some sort of correction at some point that, you know, you'll be able to weather it out I guess
+
+00:31:56.720 --> 00:32:00.880
+Yeah I mean, look, you know, that's the whole point of Google's balance sheet, and also all
+
+00:32:00.880 --> 00:32:06.640
+the incredible products that and surfaces that, that we have, you know, I think it's, you know,
+
+00:32:06.640 --> 00:32:13.680
+dozens of multibillion user products and and AI kind of naturally fits into all of those products,
+
+00:32:13.680 --> 00:32:19.200
+whether it's, you know, email workspace or or, you know, new things like the Gemini app.
+
+00:32:19.200 --> 00:32:23.680
+Yeah, you mentioned dynamics at play as well. We talked competition. The other one is geopolitics,
+
+00:32:23.680 --> 00:32:27.440
+which you mentioned as well, when huge discussions around China, of course,
+
+00:32:27.440 --> 00:32:31.840
+in this kind of competition battle between China and the US. But there was a point where
+
+00:32:31.840 --> 00:32:38.080
+people were discounting the ability of China and its companies to come up with strong AI
+
+00:32:38.080 --> 00:32:44.400
+models and technologies. But actually we saw with kind of what Deep Seek did. It kind of brought a
+
+00:32:44.400 --> 00:32:48.480
+bit of shock to our but actually, more than that, some of the big tech companies like Alibaba,
+
+00:32:48.480 --> 00:32:53.200
+coming up with some very competitive open source models. So China's not out of this game, right?
+
+00:32:53.200 --> 00:32:57.760
+Not at all. And actually, you know, I think they are closer to the US front, you know,
+
+00:32:57.760 --> 00:33:02.560
+US and West Frontier models, than maybe we thought one or two years ago. Maybe
+
+00:33:02.560 --> 00:33:06.880
+they're only a matter of months behind at this point. The interesting thing is,
+
+00:33:06.880 --> 00:33:11.040
+and they're very there's from very capable teams, of course, like the deep seek team and Alibaba you
+
+00:33:11.040 --> 00:33:18.400
+mentioned. And the question is, is, can they innovate something new beyond the frontier?
+
+00:33:18.400 --> 00:33:23.200
+So I think they've shown they can catch up, you know, and be very close to the frontier
+
+00:33:23.200 --> 00:33:28.720
+and catch up very quickly. But can they actually innovate something new, like a new Transformers,
+
+00:33:29.280 --> 00:33:32.480
+you know, that gets Beyond the Frontier? I don't think that's been shown yet.
+
+00:33:32.480 --> 00:33:35.600
+Is that going to be, in your view, difficult because of
+
+00:33:35.600 --> 00:33:39.200
+restrictions on access to technology, like leading edge chips, for example?
+
+00:33:39.200 --> 00:33:44.240
+No, I think it's more a mentality issue, you know. So I think it's something that at least the
+
+00:33:44.240 --> 00:33:49.440
+leading. Labs, the leading frontier labs in the West have nurtured, I can say for ourselves, you
+
+00:33:49.440 --> 00:33:55.600
+know, we, you can think of DeepMind as a bit like a try to be a modern day Bell Labs and encourage
+
+00:33:55.600 --> 00:34:00.640
+innovation and exploratory innovation, not just kind of, you know, scaling out what's what's known
+
+00:34:01.360 --> 00:34:04.400
+today. And of course, that's already very difficult, because you need world class
+
+00:34:04.400 --> 00:34:10.320
+engineering already to be able to do that. And China definitely have that. The question is,
+
+00:34:10.320 --> 00:34:15.440
+is the scientific innovation part that's a lot harder to, you know, to invent something is about
+
+00:34:15.440 --> 00:34:21.200
+100 times harder than it is to to copy it. So the question that's the next frontier release is,
+
+00:34:21.200 --> 00:34:27.680
+and I haven't seen evidence of that yet, but it's very difficult.
+
+00:34:27.680 --> 00:34:33.440
+So one of the most striking parts of that part of the conversation for me, Steve was around China.
+
+00:34:33.440 --> 00:34:38.960
+I used to live in China for just over three years. Report out of China for CNBC,
+
+00:34:38.960 --> 00:34:43.760
+covering the tech sector there. And there was this growing view recently that actually China is so
+
+00:34:43.760 --> 00:34:50.560
+far behind the US when it comes to AI for multiple reasons. One of those is that, oh, it may not be
+
+00:34:50.560 --> 00:34:55.120
+able to get its hands on the most advanced chips so its industry could fall behind. One view is
+
+00:34:55.120 --> 00:34:59.680
+that it's just not innovating, and it doesn't have the capital the way US companies do. But actually
+
+00:34:59.680 --> 00:35:04.800
+what was really interesting from Demis is he said that he believes Chinese AI models are just months
+
+00:35:04.800 --> 00:35:12.080
+behind where the US is, so actually not far behind. And remember when last year we had Deep
+
+00:35:12.080 --> 00:35:18.960
+Seek really shock the world and markets. It showed I think China is in the game. And since then,
+
+00:35:18.960 --> 00:35:25.760
+whilst Deep Seek hasn't quite made the waves, it did when it first kind of came out, Alibaba,
+
+00:35:25.760 --> 00:35:30.800
+one of the world's biggest or one of China's biggest tech companies, has been a leader there.
+
+00:35:30.800 --> 00:35:36.000
+It's developed some really interesting models, which, if you look at the opensource communities,
+
+00:35:36.000 --> 00:35:40.720
+such as on a site called Hugging Face, you see Alibaba's models are amongst some of the most
+
+00:35:40.720 --> 00:35:45.680
+popular experts who I've spoken to in the space say they're amongst some of the most advanced in
+
+00:35:45.680 --> 00:35:50.160
+the world. So you are seeing there. And one of the things I can tell you, just from living and
+
+00:35:50.160 --> 00:35:56.320
+working out there, is Chinese companies move fast. They have the expertise and they can innovate,
+
+00:35:56.320 --> 00:36:02.400
+so you can't discount them out of this kind of AI race. But also, take Demis's point that he said,
+
+00:36:02.400 --> 00:36:06.800
+whilst the Chinese companies are sort of catching up and are very much in this race,
+
+00:36:06.800 --> 00:36:11.440
+one thing they haven't proven is their abilities to kind of make these big breakthroughs. So,
+
+00:36:11.440 --> 00:36:15.120
+you know, I thought that was a really interesting and nuanced view. I guess the other part here,
+
+00:36:15.120 --> 00:36:20.000
+Steve is something you picked up on is Demis's comments on bubbles and AI bubbles.
+
+00:36:20.000 --> 00:36:24.320
+Yeah, that, by the way, just talking, let's go back to what he said first, about the months
+
+00:36:24.320 --> 00:36:29.760
+thing. Deep Seek a year ago. It wasn't just about the fact that China can do it and make a really
+
+00:36:29.760 --> 00:36:34.320
+good large language model or a chat bot. It was also the idea that they did it without the most
+
+00:36:34.320 --> 00:36:38.640
+powerful Nvidia chips that kind of rattled the markets as well, and that's what we're seeing here
+
+00:36:38.640 --> 00:36:45.040
+in the United States now Arjun is trying to limit China's ability to get those Nvidia chips. There's
+
+00:36:45.040 --> 00:36:49.760
+all this talk about maybe they'll get those H200 chips, which aren't the best chips, but they're
+
+00:36:49.760 --> 00:36:53.840
+better, probably than what China has access to. And then you get into the whole smuggling thing.
+
+00:36:53.840 --> 00:37:00.240
+But to Demis's point, you know, if they really are months behind without full access to these chips,
+
+00:37:00.240 --> 00:37:05.760
+you know, that kind of questions Nvidia's prominence and dominance in the chip space as
+
+00:37:05.760 --> 00:37:11.920
+well. But yes, what you said about the bubble is also super interesting too, because you asked him
+
+00:37:11.920 --> 00:37:16.080
+about that, are we in a bubble? What do you think all this sort of things. And he basically said,
+
+00:37:16.080 --> 00:37:20.320
+we're Google. We're rich. It doesn't matter. We have the money. We have the free cash flow to
+
+00:37:20.320 --> 00:37:25.680
+spend this our balance sheet is our superpower. If for some reason we need to rein back the spending,
+
+00:37:25.680 --> 00:37:31.040
+we can do it and we'll be fine. But guess who can't do that? That's OpenAI and Anthropic,
+
+00:37:31.040 --> 00:37:36.080
+the other two leaders, X ai, we can throw them in here too. Their whole thing is they have to
+
+00:37:36.080 --> 00:37:41.600
+raise money indefinitely in order to get to the point where they can finally show some revenue
+
+00:37:41.600 --> 00:37:48.720
+and revenue growth to sustain themselves without continuous fundraising if things start to dry up,
+
+00:37:48.720 --> 00:37:54.960
+open AI and anthropic are at extreme risk, Google, Microsoft, meta, they have the cash
+
+00:37:54.960 --> 00:37:58.960
+flow to move on to another project. Meta has already done it with the metaverse. These
+
+00:37:58.960 --> 00:38:08.480
+companies can pivot very easily because they had these big, high margin businesses already
+
+00:38:08.480 --> 00:38:14.160
+Demis lot of people, I guess, forget how much of Google's AI capabilities come out from DeepMind
+
+00:38:14.160 --> 00:38:18.640
+and yourself and your teams. How do you work with Google? There's a lot of fascination around
+
+00:38:18.640 --> 00:38:23.680
+that. Does Sundar Pichai call you up one day? Say, Hey, Demis, we need this thing, or we have this
+
+00:38:23.680 --> 00:38:29.040
+idea for Gemini or for some other AI product. Can you build it? How is that relationship?
+
+00:38:29.040 --> 00:38:33.040
+Yeah, so the last three years, we've combined everything together as into Google Deep Mind this,
+
+00:38:33.040 --> 00:38:37.520
+this one entity that that that all the AI research at Google goes on in and it's a kind
+
+00:38:37.520 --> 00:38:43.360
+of combination of Google research, Google Brain and Deep Mind and and I run that group, and it's,
+
+00:38:43.360 --> 00:38:48.480
+it's like the engine room of Google. You should think of it like that. So all the AI technologies
+
+00:38:48.480 --> 00:38:53.760
+is done by this group, by our group, and then it's diffused across, you know, all of these incredible
+
+00:38:53.760 --> 00:38:59.120
+products right across Google. And the last couple of years, we've been building that backbone,
+
+00:38:59.120 --> 00:39:03.520
+so not just the models, but also almost in we architecting the entire infrastructure of
+
+00:39:03.520 --> 00:39:08.080
+Google so that it can, you know, these things can ship incredibly quickly. These models,
+
+00:39:08.080 --> 00:39:12.880
+it's almost sim ship to all the main surfaces. So, you know, when we release a new Gemini model,
+
+00:39:12.880 --> 00:39:18.160
+it's there the next day or the same day in search and and that's been going really well. I think I
+
+00:39:18.160 --> 00:39:23.760
+would say we really got into our groove with the 2.5 Gemini models. And for the last sort
+
+00:39:23.760 --> 00:39:30.160
+of year that's becoming really a smooth process now, and I think you'll see that more over the
+
+00:39:30.160 --> 00:39:35.280
+next next 12 months. And so, you know, we think of ourselves as the and describe ourselves sort
+
+00:39:35.280 --> 00:39:39.840
+of as the engine room for that. And you know, Sundar and I pretty much talk every day about
+
+00:39:39.840 --> 00:39:46.240
+strategic things and where should the technology go, and what does the wider Google need. And then,
+
+00:39:46.240 --> 00:39:50.640
+you know, we adjust the roadmaps and the plans, you know, on a daily basis,
+
+00:39:50.640 --> 00:39:55.920
+whilst keeping in mind the long term goals of, you know, getting to AGI first, fast and safely.
+
+00:39:55.920 --> 00:40:00.160
+So we should, we should expect more of the ability to come up with with new things,
+
+00:40:00.160 --> 00:40:04.080
+new AI tools and that be shipped across the Google portfolio,
+
+00:40:04.080 --> 00:40:06.200
+etc, because of that kind of change you've made in that relationship.
+
+00:40:06.200 --> 00:40:11.840
+Yes thats right. So it's an incredibly tight sort of iteration loop and and,
+
+00:40:11.840 --> 00:40:14.160
+you know, we're all on the same tech stack and so on
+
+00:40:14.160 --> 00:40:17.520
+A lot of what you're building is going into Google products, but I know kind
+
+00:40:17.520 --> 00:40:21.200
+of covering companies like Samsung. You help companies like Samsung to build out some of
+
+00:40:21.200 --> 00:40:26.000
+the AI tools within their smartphones, for example, and that kind of thing as well.
+
+00:40:26.000 --> 00:40:30.960
+Well, look, we work with a lot of partners as you, as you mentioned, you know, we're very proud of
+
+00:40:30.960 --> 00:40:36.560
+the fact that our technology selected by those partners because they see how capable it is and,
+
+00:40:36.560 --> 00:40:41.600
+and actually, you know, it comes to Samsung and other devices, I think there's really interesting
+
+00:40:41.600 --> 00:40:47.600
+way. I'm very interested in the idea of edge compute and and faster versions of these models
+
+00:40:47.600 --> 00:40:52.080
+working on these edge devices, be those phones, but also new devices like glasses that we're
+
+00:40:52.080 --> 00:40:58.160
+working on. And, you know, partners like Warby Parker and the idea of smart glasses, and I think
+
+00:40:58.160 --> 00:41:03.200
+Google's worked on smart glasses for a long time, as you know, but I think that they, you know,
+
+00:41:03.200 --> 00:41:08.000
+finally we have the killer app, I would say, for it, which is this idea of a universal assistant,
+
+00:41:08.000 --> 00:41:14.160
+and, and, and sort of helping you in your everyday life. And I think all the, all the,
+
+00:41:14.160 --> 00:41:17.840
+all the big device players are going to be interested in that type of technology.
+
+00:41:17.840 --> 00:41:21.840
+Demis. We've only got a few minutes left but I do want to ask a little bit about I was a
+
+00:41:21.840 --> 00:41:26.640
+brand new tech reporter when Google bought Deep Mind 2014 I think it was a 400 million
+
+00:41:26.640 --> 00:41:30.640
+pound 100 million pound deal back then. So many people didn't know what you what you
+
+00:41:30.640 --> 00:41:35.520
+did. And why is Google buying this British company? What's going what's going on here?
+
+00:41:36.160 --> 00:41:40.240
+Do you ever look back to that and and think, oh, maybe we should have stayed independent at all.
+
+00:41:40.240 --> 00:41:42.080
+Yeah Or Are you happy with how things have turned out
+
+00:41:42.080 --> 00:41:47.360
+Well, look, we I knew it's funny. So, so the the head of search at the time Alan Eustace,
+
+00:41:47.360 --> 00:41:52.640
+he was sort of in charge with Larry. Larry was sponsoring, Larry Page was sponsoring the deal,
+
+00:41:52.640 --> 00:41:56.800
+as he was CEO at the time but Alan Eustace was delegated the head of search to kind of close
+
+00:41:56.800 --> 00:42:01.440
+the deal. And I did tell Alan that this would be the most important acquisition Google ever made,
+
+00:42:01.440 --> 00:42:07.360
+which is, which is quite something, given they've, you know, there's YouTube and AdWords and other
+
+00:42:07.360 --> 00:42:12.160
+things that they previously acquired. But I kind of knew how important this was going to be, and
+
+00:42:12.160 --> 00:42:17.520
+also how good a fit it was with Google's mission, which is organize the world's information,
+
+00:42:17.520 --> 00:42:22.960
+and AI is a very natural fit to that and organizing and understanding information. I mean,
+
+00:42:22.960 --> 00:42:27.040
+what better tool than AI for that. So I kind of knew that would be a natural fit. And we
+
+00:42:27.040 --> 00:42:32.640
+sort of knew that this, you know, maybe it's now worth, I don't know, 100x 1,000x of, you know,
+
+00:42:32.640 --> 00:42:37.600
+what, of what we sold it for. But the thing is, I wanted to get back to the science at the time and
+
+00:42:38.320 --> 00:42:43.360
+push forward the research, which was still very nascent back in 2014 and, you know, fair play
+
+00:42:43.360 --> 00:42:47.200
+to Google is they were one of the few companies in the world, I think that could recognize and
+
+00:42:47.200 --> 00:42:51.440
+specifically Larry at the time, how important this technology was going to be, what it could become,
+
+00:42:51.440 --> 00:42:55.680
+and what we see it for it today. And I don't think we could have done the great work we did
+
+00:42:55.680 --> 00:43:01.840
+with AlphaGo and Alpha Fold and all the science we've done and if we hadn't had their backing and
+
+00:43:01.840 --> 00:43:07.040
+the amount of compute that they could bring to play. So I don't have any regrets at all.
+
+00:43:07.040 --> 00:43:12.080
+So Tech CEOs, AI CEOs, the new rock stars of the world. I've seen Jensen Huang here in Europe,
+
+00:43:12.080 --> 00:43:17.760
+and the CEO of Nvidia, being followed around by everyone as well. Jensen,
+
+00:43:17.760 --> 00:43:22.320
+I think, said recently that you and him talk he had great things to say about nano banana,
+
+00:43:22.320 --> 00:43:26.160
+the new image generation tool, as well. What do you guys discuss?
+
+00:43:26.800 --> 00:43:30.400
+I mean, Jensen's great, you know, incredible pioneer, also somebody,
+
+00:43:30.400 --> 00:43:36.320
+you know, I admire him for sticking to his vision for 2030, years now, in fact, I first
+
+00:43:36.320 --> 00:43:42.960
+started using GPUs in the 90s on for gaming, of course, for writing graphics engines and physics
+
+00:43:42.960 --> 00:43:48.240
+engines. So it's funny that it's come full circle to me that that, you know, my early gaming days,
+
+00:43:48.240 --> 00:43:52.320
+even the hardware that was pushed then, is now useful for AI, ironically. But yeah,
+
+00:43:52.320 --> 00:43:56.400
+we talk about, he's very interested in science and AI for science. And actually, you know,
+
+00:43:56.400 --> 00:44:01.120
+Alpha fold was trained on GPUs, so we and he loves Alpha fold and the work that we're doing,
+
+00:44:01.120 --> 00:44:06.000
+you know, in drug discovery. So we most, mostly talk about AI for science.
+
+00:44:06.000 --> 00:44:11.920
+I know a lot of the data centers are built in Nvidia systems, but I know Google also has its
+
+00:44:11.920 --> 00:44:16.800
+Tensor Processing Units, TPU chips. Is there any kind of competitive friendliness there?
+
+00:44:17.520 --> 00:44:23.120
+We're lucky. We have our own we love our TPUs. We generally use them internally for training our
+
+00:44:23.760 --> 00:44:30.160
+our best models. And actually we found there's a big demand for that from the elite AI teams
+
+00:44:30.160 --> 00:44:36.960
+who are trying to build large models or serve very large AI models. They're specifically built for
+
+00:44:36.960 --> 00:44:40.880
+that. So TPUs are sort of they're a little bit more special case than GPUs. You can think of
+
+00:44:40.880 --> 00:44:46.720
+GPUs as being more general. So, you know, maybe we would use a GPU when we're trying to explore some
+
+00:44:46.720 --> 00:44:52.880
+new architecture, like alpha fold was, or some new application. But then once we're when we're trying
+
+00:44:52.880 --> 00:44:59.840
+to sort of scale to the maximum, things we know, then, you know, custom silicon can be a lot more
+
+00:44:59.840 --> 00:45:05.680
+efficient. So we're lucky. We have, we have both. We get to use both here at at Google and DeepMind,
+
+00:45:05.680 --> 00:45:10.400
+Great Demis. Just looking to the future. You're obviously so focused on science and the potential
+
+00:45:10.400 --> 00:45:16.720
+for AI to create new drug breakthroughs. Do discover new diseases. Lots of potential
+
+00:45:16.720 --> 00:45:23.680
+things there. You've also got isomorphic labs, of course, as well. Where are we on this path to your
+
+00:45:23.680 --> 00:45:29.680
+your vision of AI unlocking all of these, these kind of breakthroughs in the world of science.
+
+00:45:29.680 --> 00:45:35.520
+Well, look, I love, I always point to Alpha fold as probably the best example so far of AI applied
+
+00:45:35.520 --> 00:45:39.840
+to science. You know, I'm very proud of that project. And, you know, we solved a 50 Year
+
+00:45:39.840 --> 00:45:44.400
+grand challenge in science of protein folding, how the structure of the structure of proteins,
+
+00:45:44.400 --> 00:45:48.960
+and over 3 million researchers around the world are using it in their critical work.
+
+00:45:48.960 --> 00:45:55.440
+So I can't imagine a more transformative sort of technology. And what I would love is to see have
+
+00:45:55.440 --> 00:46:01.040
+be able to point to a dozen Alpha Folds, and you know, each of them revolutionizing their area of
+
+00:46:01.040 --> 00:46:05.520
+science or mathematics. And I think we're well on the way to that. And we're working on half
+
+00:46:05.520 --> 00:46:12.080
+a dozen projects like that, in material science, in physics, in in maths, in weather prediction and
+
+00:46:12.080 --> 00:46:16.400
+and I think that the next 10 years, if, if AI, goes well and progress as well,
+
+00:46:16.400 --> 00:46:21.760
+and we use it in the right way, could usher in a new golden age of scientific discovery.
+
+00:46:21.760 --> 00:46:26.000
+What do you think are going to be the big things in AI in 2026 any big breakthroughs,
+
+00:46:26.000 --> 00:46:28.160
+any big progresses that you think will happen?
+
+00:46:28.160 --> 00:46:30.960
+Agentic system, systems able to do things more autonomously,
+
+00:46:30.960 --> 00:46:35.760
+are going to start becoming reliable enough to be useful. I think we're going to see some
+
+00:46:35.760 --> 00:46:39.280
+really interesting things in robotics in the next 12 to 18 months, we're working really
+
+00:46:39.280 --> 00:46:44.160
+hard on some very ambitious projects with Gemini robotics. And then finally, maybe,
+
+00:46:44.960 --> 00:46:50.560
+you know, AI systems on devices, I think we're going to start seeing them really useful in the
+
+00:46:50.560 --> 00:46:55.840
+real world. And then maybe the thing I'm most excited about is advancing world models further,
+
+00:46:55.840 --> 00:47:00.320
+making them more efficient so they can actually be used, maybe for planning in our general models.
+
+00:47:00.320 --> 00:47:04.720
+Great. Demis, I'm going to take that last answer as a sort of teaser trailer for the next time you
+
+00:47:04.720 --> 00:47:08.960
+and I get to catch up, hopefully at some point this year. Thank you so much for joining me.
+
+00:47:08.960 --> 00:47:12.211
+Thank you. Thanks for having me
+
+00:47:12.211 --> 00:47:13.600
+into the chat. Great. There's just the final part, yeah, yeah, yeah, and
+
+00:47:13.600 --> 00:47:17.600
+So Steve, just in that final part of the conversation, I thought what was interesting
+
+00:47:17.600 --> 00:47:24.000
+is the relationship between kind of the Deep Mind entity and the broader Google business. And there
+
+00:47:24.000 --> 00:47:29.680
+was a part where Demis was saying he speaks to Sundar Pichai, the CEO of Google, or Alphabet,
+
+00:47:29.680 --> 00:47:36.800
+every day and and how sort of more integrated they've become, I think, if I'm thinking about
+
+00:47:36.800 --> 00:47:43.600
+that this AI race, what that signals to me is that Google has clearly. Figured out how to become
+
+00:47:43.600 --> 00:47:48.640
+speedy at getting AI products to market. But also you got to think about all these Google products
+
+00:47:48.640 --> 00:47:54.640
+right, whether it's Chrome, whether it's Gmail, whatever it might be they are wanting, whatever
+
+00:47:54.640 --> 00:47:59.840
+Google AI is being developed to spread all across, all across those products that gives them an
+
+00:47:59.840 --> 00:48:05.680
+absolutely mammoth user base to kind of almost instantly tap into with some of these products.
+
+00:48:05.680 --> 00:48:10.000
+And I've always, I've said this for a while now, I think one of Google's biggest strengths,
+
+00:48:10.000 --> 00:48:15.360
+really, is that when you think about the Android operating system and and you know how large it is,
+
+00:48:15.360 --> 00:48:21.680
+70% odd market share globally, you know that is a huge amount of people and devices where
+
+00:48:21.680 --> 00:48:26.560
+Google AI could be instantly, effectively installed on and used quickly. So they're
+
+00:48:26.560 --> 00:48:32.480
+in a good position in terms of going to market, I think. And clearly, this relationship between
+
+00:48:32.480 --> 00:48:37.200
+Deep Mind and the broader Google business is going to be integral for Google to sustain
+
+00:48:37.200 --> 00:48:42.320
+any success over the over the longer run here
+
+00:48:42.320 --> 00:48:46.000
+Samsung, the biggest manufacturer of Android phones, they're already putting Gemini is
+
+00:48:46.000 --> 00:48:50.560
+their main chat bot. Gemini is their main AI. I was a little surprised. Samsung didn't try
+
+00:48:50.560 --> 00:48:54.720
+to build their own, which, like they have in the past, but No, they've completely gone all
+
+00:48:54.720 --> 00:49:01.200
+in on Gemini. They're partnering with Google on those the new mixed reality headset that
+
+00:49:01.200 --> 00:49:06.080
+they have. There are some upcoming glasses that they're working on in partnership, also
+
+00:49:06.080 --> 00:49:11.840
+with companies like Warby Parker to design them. So yeah, Samsung is, like, really adopted this,
+
+00:49:11.840 --> 00:49:19.120
+and that is a huge platform for Gemini, just just that, just the Samsung angle of it, just that huge
+
+00:49:19.120 --> 00:49:23.920
+market share they already have is great. And then let's talk about Apple. Gemini is actually going
+
+00:49:23.920 --> 00:49:29.760
+to be the engine that powers this new version of Siri we're expecting in just a couple months time.
+
+00:49:29.760 --> 00:49:36.560
+He did talk about his excitement to see Gemini kind of spread on more devices. So I think it's
+
+00:49:36.560 --> 00:49:41.680
+a really smart move by Apple to kind of realize it can't build this on its own and honestly do
+
+00:49:41.680 --> 00:49:46.960
+what Samsung is doing, and say, Okay, let's just integrate this proven technology. We already have
+
+00:49:46.960 --> 00:49:50.720
+a great relationship with Google. And this is honestly a different kind of Google that I've
+
+00:49:50.720 --> 00:49:55.600
+been seeing, that I've seen for so many years, where you had so many different groups kind of
+
+00:49:55.600 --> 00:50:01.280
+working on the same thing. I mean, before this big reorg, and Demis got all that control over
+
+00:50:01.280 --> 00:50:06.720
+all of AI. There were multiple groups within Google working on artificial intelligence, kind
+
+00:50:06.720 --> 00:50:12.160
+of bumping against each other. And Sudar Pichai was really smart saying we got to, this is a huge
+
+00:50:12.160 --> 00:50:19.840
+moment. We got to reorganize everything. He folded everything under Demis, and put it into Deep Mind,
+
+00:50:19.840 --> 00:50:25.760
+and that's where we are now. And it's really paid off in 2025 in a big way with Gemini three.
+
+00:50:26.320 --> 00:50:32.000
+Yeah, and that consumer space really is getting more and more intense when it comes to the the AI
+
+00:50:32.000 --> 00:50:35.760
+side of things, particularly, as you know, you mentioned before when you were talking
+
+00:50:35.760 --> 00:50:41.280
+about some some of the talk about bubbles, these competitors, like Open AI, you know, Google has
+
+00:50:42.160 --> 00:50:46.800
+big balance sheet, strong cash flow, and it has a huge user base of users, and continues
+
+00:50:46.800 --> 00:50:51.760
+to innovate. And I think this really does, given that kind of, that reorg, and this kind of speed
+
+00:50:51.760 --> 00:50:56.640
+you're seeing now from Google, I think this is adding, going to add a lot of competitive
+
+00:50:56.640 --> 00:51:04.240
+pressure onto open AI, particularly on the consumer side in 2026 so it's all up for grabs.
+
+00:51:04.240 --> 00:51:08.800
+Yeah, and we're going to see a lot of different stuff. I anticipate from open AI this year.
+
+00:51:08.800 --> 00:51:12.320
+They're going to throw all the spaghetti at the wall they can to see what sticks,
+
+00:51:12.320 --> 00:51:17.040
+because they've put enormous pressure on themselves to generate enormous amounts of
+
+00:51:17.040 --> 00:51:23.040
+revenue in order to fulfill all of these promises they made about capital expenditure build out of
+
+00:51:23.040 --> 00:51:27.120
+these big data centers with Oracle and all these sorts of things like that,
+
+00:51:27.120 --> 00:51:32.320
+it cannot happen all these committed spending they have unless they productize it better and
+
+00:51:32.320 --> 00:51:35.920
+more effectively. But like to your point, we're seeing this with meta. By the way,
+
+00:51:35.920 --> 00:51:41.280
+Meta has a huge opportunity to leverage its user base. And it hasn't figured out how to do that
+
+00:51:41.280 --> 00:51:46.560
+in the way Google has. So right now, Google feels like they're kind of on top of things.
+
+00:51:46.560 --> 00:51:50.720
+Well, look, part two of this miniseries on Deep Mind is going to be out next week,
+
+00:51:50.720 --> 00:51:56.560
+and we're speaking to Lila Ibrahim, who is the COO over at DeepMind. So catch that. And
+
+00:51:56.560 --> 00:52:01.760
+if you've got any comments or thoughts about this episode, please reach out to us. You can
+
+00:52:01.760 --> 00:52:06.305
+reach us pretty much everywhere. I think You're on multiple social media platforms
+
+00:52:06.305 --> 00:52:07.840
+I'm a blue sky guy. I'm a blue sky guy
+
+00:52:07.840 --> 00:52:09.200
+Yeah, we're all over the place.
+
+00:52:09.840 --> 00:52:13.360
+I quit Instagram seven and a half years ago, and I do not regret it.
+
+00:52:13.360 --> 00:52:16.400
+Wow, that's amazing. Yeah, no more Doom scrolling. Love it.
+
+00:52:16.400 --> 00:52:19.280
+No more Doom scrolling for this guy
+
+00:52:19.280 --> 00:52:32.851
+Thank you all for listening and watching. We'll catch you next time you.

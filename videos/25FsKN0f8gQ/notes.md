@@ -1,3 +1,0 @@
-- `videos/25FsKN0f8gQ/notes.md:1`에 `merge.prompt.txt` 규칙대로(제목 → 요약 3줄 → Chapter 형식) 전체 내용을 병합해 최종 Markdown을 생성했습니다.
-- 누락/오염돼 있던 청크를 실제 내용으로 복원했습니다: `videos/25FsKN0f8gQ/chunks/chunk_009.md:1`, `videos/25FsKN0f8gQ/chunks/chunk_012.md:1`
-- `videos/25FsKN0f8gQ/notes.md`는 `## Chapter 1`~`## Chapter 17`까지 타임스탬프 순서/형식 검사도 통과했습니다.

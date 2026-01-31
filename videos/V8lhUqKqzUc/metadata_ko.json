@@ -1,0 +1,4 @@
+{
+  "title": "AlphaGenome 저자 라운드테이블",
+  "description": "Google DeepMind Genomics 팀과 함께 AlphaGenome을 깊이 있게 살펴보세요. 이 영상에서 Dhavi(제품 관리자)는 Ziga(Genomics Lead)와 AlphaGenome 논문의 공동 제1저자 Natasha, Jun, Tom과 함께, Nature에 최근 게재된 통합 DNA 서열-기능 모델 AlphaGenome의 뒷이야기를 나눕니다.\n\n팀이 비코딩인 인간 유전체 98%를 해독하는 데 유용한 시스템을 어떻게 구축했는지 - 이를 통해 과학자들이 유전 변이의 기능적 영향을 전례 없는 정확도로 예측할 수 있게 된 과정을 논의합니다.\n\n또한 TPU에서 긴 서열을 고해상도로 처리하고, 스플라이싱과 contact maps 같은 복잡한 생물학적 과정을 모델링하기 위해 필요했던 엔지니어링적 돌파구, 그리고 API가 연구자들이 변이를 빠르게 스코어링하여 질병 이해를 가속화할 수 있게 하는 방법도 들어보세요.\n\n논문을 읽어보세요 https://www.nature.com/articles/s41586-025-10014-0 그리고 AlphaGenome 커뮤니티에 참여하세요 https://www.alphagenomecommunity.com/\n\n챕터\n00:00 - 소개\n00:39 - 파트 1 큰 그림: 왜 AlphaGenome인가?\n06:28 - 파트 2 모델: 무엇이 새롭고 어떻게 만들었나\n19:26 - 파트 3 모델에서 API로: 공개하기\n23:29 - 파트 4 미래: 다음 단계와 참여 방법"
+}

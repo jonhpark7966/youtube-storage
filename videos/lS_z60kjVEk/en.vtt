@@ -1,0 +1,220 @@
+WEBVTT
+
+00:00:19.400 --> 00:00:22.340
+NEO can now turn any prompt into autonomous
+
+00:00:22.340 --> 00:00:24.980
+action. With the latest update to the 1X
+
+00:00:24.980 --> 00:00:27.740
+World Model, NEO learns from internet-scale data
+
+00:00:27.740 --> 00:00:29.440
+and applies it to the real world.
+
+00:00:29.440 --> 00:00:32.760
+By visualizing future actions with a video model
+
+00:00:32.760 --> 00:00:35.780
+grounded in physics, NEO can generalize to new
+
+00:00:35.780 --> 00:00:38.700
+tasks it's never seen before. This opens a
+
+00:00:38.700 --> 00:00:41.640
+new path for robotics learning, one where robots
+
+00:00:41.640 --> 00:00:44.280
+learn by teaching themselves, using the data they
+
+00:00:44.280 --> 00:00:46.740
+generated on their own, and grow in AI
+
+00:00:46.740 --> 00:00:49.880
+capabilities alongside the rapidly improving video models.
+
+00:00:55.520 --> 00:00:58.080
+Our world model is pre-trained on web
+
+00:00:58.080 --> 00:01:01.480
+-scale video data that captures human interaction, and
+
+00:01:01.480 --> 00:01:03.860
+then post-trained on robot data to ground
+
+00:01:03.860 --> 00:01:07.000
+that understanding in real-world physics and NEO's
+
+00:01:07.000 --> 00:01:10.580
+humanoid embodiment. This allows NEO to visualize future
+
+00:01:10.580 --> 00:01:13.320
+actions and use a built-in inverse dynamics
+
+00:01:13.320 --> 00:01:16.480
+model to turn those visualizations into movement.
+
+00:01:17.160 --> 00:01:20.040
+Today, we'll use the world model as NEO's
+
+00:01:20.040 --> 00:01:23.760
+cognitive core to execute autonomous action sequences several
+
+00:01:23.760 --> 00:01:24.400
+seconds long.
+
+00:01:24.700 --> 00:01:26.720
+How it works is you'll give NEO a
+
+00:01:26.720 --> 00:01:29.480
+prompt with voice or text. For this example,
+
+00:01:29.720 --> 00:01:32.420
+I'll use the world model desktop interface to
+
+00:01:32.420 --> 00:01:34.880
+illustrate how it comes together. And start with
+
+00:01:34.880 --> 00:01:37.480
+something simple, like having NEO pack this orange
+
+00:01:37.480 --> 00:01:38.700
+into the lunchbox.
+
+00:01:45.280 --> 00:01:47.760
+Once you prompt NEO, it'll take what it
+
+00:01:47.760 --> 00:01:50.600
+sees as input to generate a visualization of
+
+00:01:50.600 --> 00:01:52.480
+how to complete the request. As you can
+
+00:01:52.480 --> 00:01:55.000
+see on the screen below, NEO is visualizing
+
+00:01:55.000 --> 00:01:57.280
+how to perform this task using its world
+
+00:01:57.280 --> 00:01:57.580
+model.
+
+00:01:58.280 --> 00:02:00.880
+You can either have NEO automatically execute the
+
+00:02:00.880 --> 00:02:03.180
+generation or choose the best one to run
+
+00:02:03.180 --> 00:02:05.400
+from among several parallel generations.
+
+00:02:10.520 --> 00:02:13.000
+While NEO has never seen these objects before,
+
+00:02:13.240 --> 00:02:15.440
+there are still some examples of pick and
+
+00:02:15.440 --> 00:02:18.200
+place tasks in our dataset. So one might
+
+00:02:18.200 --> 00:02:21.440
+assume it's generalizing to a similar task to
+
+00:02:21.440 --> 00:02:22.480
+create this visualization.
+
+00:02:22.480 --> 00:02:25.240
+But this is not the case. With the
+
+00:02:25.240 --> 00:02:28.140
+world model, NEO can perform any task with
+
+00:02:28.140 --> 00:02:31.040
+any object, whether there is existing data or
+
+00:02:31.040 --> 00:02:31.280
+not.
+
+00:02:34.180 --> 00:02:36.560
+Not only has NEO never seen this toilet,
+
+00:02:36.900 --> 00:02:39.660
+but it has never performed a task anywhere
+
+00:02:39.660 --> 00:02:42.480
+near similar. Without any prior data on how
+
+00:02:42.480 --> 00:02:44.860
+to operate a toilet seat, the transfer of
+
+00:02:44.860 --> 00:02:47.020
+human knowledge becomes a lot more apparent.
+
+00:02:53.040 --> 00:02:56.000
+The world model is also really useful for
+
+00:02:56.000 --> 00:02:57.700
+handling unpredictable environments.
+
+00:02:58.560 --> 00:03:01.720
+Traditional AI models for robots are often overly
+
+00:03:01.720 --> 00:03:04.680
+sensitive to the surroundings, like changes in lighting
+
+00:03:04.680 --> 00:03:07.060
+or even random objects in the environment.
+
+00:03:07.760 --> 00:03:11.560
+NEO's world model, by contrast, applies human knowledge
+
+00:03:11.560 --> 00:03:14.580
+of how to navigate highly dynamic settings to
+
+00:03:14.580 --> 00:03:17.100
+handle even the most extreme changes in environment.
+
+00:03:24.420 --> 00:03:27.200
+Given a world model can generate just about
+
+00:03:27.200 --> 00:03:29.740
+anything you can imagine, there is no limit
+
+00:03:29.740 --> 00:03:32.520
+to what NEO can try and execute autonomously.
+
+00:03:35.900 --> 00:03:36.120
+While NEO's world model is trusted, they are
+
+00:03:36.120 --> 00:03:37.700
+consistentlyendre learning and successful watches in activity momento
+
+00:03:37.700 --> 00:03:37.740
+inbetween.
+
+00:03:58.720 --> 00:04:00.940
+We still have work to do to increase
+
+00:04:00.940 --> 00:04:04.040
+the length and success rate of each generated
+
+00:04:04.040 --> 00:04:04.500
+ability
+
+00:04:04.500 --> 00:04:06.960
+to make the world model more useful.
+
+00:04:07.280 --> 00:04:09.840
+But with the world model, NEO can create
+
+00:04:09.840 --> 00:04:12.940
+unlimited data of itself doing real-world tasks,
+
+00:04:13.300 --> 00:04:16.620
+creating a flywheel that enables NEO to teach
+
+00:04:16.620 --> 00:04:19.980
+itself anything, marking a true paradigm shift in
+
+00:04:19.980 --> 00:04:21.600
+AI and robotics.

@@ -1,0 +1,1189 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.520
+This year at CES, Intel brought its latest laptop processors.
+
+00:00:03.520 --> 00:00:05.772
+Intel’s 3rd-gen Core Ultra processors.
+
+00:00:05.772 --> 00:00:07.357
+Codenamed Panther Lake.
+
+00:00:07.357 --> 00:00:11.428
+This is the first new product you can buy that uses Intel’s 18A process.
+
+00:00:11.428 --> 00:00:14.731
+This processor’s performance will directly decide whether Intel’s process is
+
+00:00:14.731 --> 00:00:16.332
+truly Great Again.
+
+00:00:16.332 --> 00:00:21.287
+And its specs are also clearly different from Intel’s previous standard-power laptop processors.
+
+00:00:21.287 --> 00:00:26.459
+Today we’ll use this Lenovo Xiaoxin Pro 16 GT AI Yuanqi Edition that packs it,
+
+00:00:26.459 --> 00:00:32.932
+to take a good look at how this 18A flagship, which Intel is pinning big hopes on, really performs.
+
+00:00:32.932 --> 00:00:34.401
+How good is the efficiency?
+
+00:00:34.401 --> 00:00:36.503
+Enough talk, let’s officially get started.
+
+00:00:36.503 --> 00:00:40.256
+In a previous episode, we already introduced the improvements to the 18A process.
+
+00:00:40.256 --> 00:00:44.561
+Simply put, it’s Intel’s first post-FinFET-era product.
+
+00:00:44.561 --> 00:00:47.897
+It’s Intel’s first GAA transistor process.
+
+00:00:47.897 --> 00:00:52.068
+And it also uses Intel’s PowerVia back-side power delivery technology.
+
+00:00:52.068 --> 00:00:55.371
+So the efficiency of this new processor should be something to look forward to.
+
+00:00:55.371 --> 00:00:58.691
+Next, come with me and take a look at Panther Lake’s specs.
+
+00:00:58.691 --> 00:01:02.228
+As Intel’s biggest laptop-side product for the next year,
+
+00:01:02.228 --> 00:01:05.715
+Panther Lake’s specs are quite different from before.
+
+00:01:05.715 --> 00:01:07.667
+For the CPU, in total core count,
+
+00:01:07.667 --> 00:01:10.086
+a full-spec Panther Lake is still 16 cores.
+
+00:01:10.086 --> 00:01:14.290
+But it’s not the 6+8+2 layout of Arrow Lake and Meteor Lake.
+
+00:01:14.290 --> 00:01:17.861
+This time the P-cores drop from 6 to 4.
+
+00:01:17.861 --> 00:01:19.963
+And the E-core count stays at 8.
+
+00:01:19.963 --> 00:01:23.600
+While the LPE cores go from 2 to 4.
+
+00:01:23.600 --> 00:01:25.769
+Just looking at the spec changes, you’re definitely thinking,
+
+00:01:25.769 --> 00:01:27.070
+isn’t this a step backward?
+
+00:01:27.070 --> 00:01:28.238
+There are fewer P-cores.
+
+00:01:28.238 --> 00:01:29.923
+If you think that, you’re wrong.
+
+00:01:29.923 --> 00:01:34.928
+These LPE cores aren’t like the LPE cores in Arrow Lake or Meteor Lake.
+
+00:01:34.928 --> 00:01:37.530
+The previous LPE cores were placed in the SoC Tile.
+
+00:01:37.530 --> 00:01:40.066
+In other words, they were separate from the main CPU.
+
+00:01:40.066 --> 00:01:44.821
+That meant they couldn’t access the CPU’s L3 cache and SLC cache at all.
+
+00:01:44.821 --> 00:01:45.555
+And even funnier,
+
+00:01:45.555 --> 00:01:48.725
+almost no software could actually make use of those LPE cores.
+
+00:01:48.725 --> 00:01:53.897
+You could say back then the LPE cores were like the Android camp’s A5xx.
+
+00:01:53.897 --> 00:01:56.015
+In my view they were basically useless.
+
+00:01:56.015 --> 00:01:57.133
+What’s worse is,
+
+00:01:57.133 --> 00:02:00.753
+Meteor Lake upgrading to Arrow Lake didn’t even change the SoC Tile,
+
+00:02:00.753 --> 00:02:04.591
+so Arrow Lake basically inherited those two trash tiny cores.
+
+00:02:04.591 --> 00:02:06.776
+You could say their most important contribution in Arrow Lake
+
+00:02:06.776 --> 00:02:09.395
+was just two extra boxes in Task Manager.
+
+00:02:09.395 --> 00:02:13.967
+But Panther Lake’s LPE cores this time aren’t that weak stuff.
+
+00:02:13.967 --> 00:02:17.821
+These new LPE cores are the same concept as the ones in Lunar Lake.
+
+00:02:17.821 --> 00:02:21.024
+They’re proper E-cores in another cluster.
+
+00:02:21.024 --> 00:02:23.243
+They just don’t share the ring bus with the other cores.
+
+00:02:23.243 --> 00:02:26.796
+But performance is almost the same as the other eight E-cores.
+
+00:02:26.796 --> 00:02:28.865
+And they can access the SLC cache as well.
+
+00:02:28.865 --> 00:02:31.434
+They can also be scheduled and used normally like other cores.
+
+00:02:31.434 --> 00:02:32.435
+Their clocks aren’t low either.
+
+00:02:32.435 --> 00:02:33.253
+With that,
+
+00:02:33.253 --> 00:02:34.754
+Panther Lake’s CPU side
+
+00:02:34.754 --> 00:02:37.790
+is split into a performance cluster made up of P-cores plus E-cores,
+
+00:02:37.790 --> 00:02:40.293
+and an efficiency cluster made up of four LPE cores,
+
+00:02:40.293 --> 00:02:42.395
+a combination of two clusters in total.
+
+00:02:42.395 --> 00:02:46.466
+This design is mainly for better battery life and efficiency,
+
+00:02:46.466 --> 00:02:51.454
+because some light workloads can clearly be fully handled by today’s LPE cores.
+
+00:02:51.454 --> 00:02:55.141
+When they’re not needed, the performance cluster can save a lot of power.
+
+00:02:55.141 --> 00:02:58.628
+This approach has already been fully validated on Lunar Lake.
+
+00:02:58.628 --> 00:03:02.415
+I believe it will effectively boost Panther Lake laptops’ battery-life potential.
+
+00:03:02.415 --> 00:03:04.968
+We also tested the latency between the various cores.
+
+00:03:04.968 --> 00:03:07.353
+You can clearly see a tri-cluster style.
+
+00:03:07.353 --> 00:03:10.406
+Latency between P-cores is in the 20–30 ns range.
+
+00:03:10.406 --> 00:03:14.194
+Between P-cores and E-cores it’s around 40–50 ns.
+
+00:03:14.194 --> 00:03:17.113
+Between E-cores it’s about 100 ns.
+
+00:03:17.113 --> 00:03:19.933
+Cross-cluster latency to the LPE cores is a bit higher,
+
+00:03:19.933 --> 00:03:21.901
+coming in at around 125 ns.
+
+00:03:21.901 --> 00:03:25.822
+Overall, you can clearly see the latency differences between different cores.
+
+00:03:25.822 --> 00:03:28.191
+Inter-core latency between E-cores is a bit higher than expected.
+
+00:03:28.191 --> 00:03:31.527
+Overall the latency is normal for a multi-cluster processor.
+
+00:03:31.527 --> 00:03:33.796
+As for improvements to the CPU core architectures specifically,
+
+00:03:33.796 --> 00:03:35.515
+it’s more about optimization,
+
+00:03:35.515 --> 00:03:37.951
+rather than a completely new design from scratch.
+
+00:03:37.951 --> 00:03:39.752
+The Cougar Cove P-core architecture,
+
+00:03:39.752 --> 00:03:42.455
+compared with the Lion Cove used in Arrow Lake and Lunar Lake,
+
+00:03:42.455 --> 00:03:43.856
+improves branch prediction,
+
+00:03:43.856 --> 00:03:45.158
+increases TLB capacity,
+
+00:03:45.158 --> 00:03:47.594
+and adds more capability for memory disambiguation,
+
+00:03:47.594 --> 00:03:51.564
+with the goal of fully realizing Lion Cove’s IPC potential.
+
+00:03:51.564 --> 00:03:54.601
+After all, even though Lion Cove made quite a few architectural changes,
+
+00:03:54.601 --> 00:03:56.603
+the IPC uplift wasn’t as high as expected.
+
+00:03:56.603 --> 00:03:59.956
+So Cougar Cove is here to raise the ceiling.
+
+00:03:59.956 --> 00:04:05.878
+The Darkmont architecture for the E-cores and LPE cores is also developed from the previous-gen Skymont.
+
+00:04:05.878 --> 00:04:08.765
+Skymont left a deep impression on us last year.
+
+00:04:08.765 --> 00:04:09.799
+As a small core,
+
+00:04:09.799 --> 00:04:14.454
+its same-clock performance was almost on par with Zen 4 and the Raptor Cove big cores.
+
+00:04:14.454 --> 00:04:17.357
+Darkmont continues to strengthen Skymont on that basis,
+
+00:04:17.357 --> 00:04:19.859
+including branch prediction, dynamic prefetch control,
+
+00:04:19.859 --> 00:04:23.012
+improved microcode throughput, and memory disambiguation capability.
+
+00:04:23.012 --> 00:04:27.917
+Darkmont’s decoder clusters also go from 20b instruction-stream width to 24b.
+
+00:04:27.917 --> 00:04:29.869
+Suppose I’m handling 8b-wide instructions,
+
+00:04:29.869 --> 00:04:32.388
+Each cluster’s instruction throughput used to be only 2 IPC.
+
+00:04:32.388 --> 00:04:34.257
+Now it’s 3 IPC per cluster.
+
+00:04:34.257 --> 00:04:36.259
+Three decoders add up to 9 IPC.
+
+00:04:36.259 --> 00:04:38.728
+For the already very wide Darkmont cores,
+
+00:04:38.728 --> 00:04:41.197
+in cases like this where a single instruction is relatively long,
+
+00:04:41.197 --> 00:04:43.216
+it can significantly improve execution efficiency.
+
+00:04:43.216 --> 00:04:46.135
+Panther Lake doesn’t just have major changes on the CPU side;
+
+00:04:46.135 --> 00:04:49.455
+the off-core parts of the entire SoC change even more dramatically.
+
+00:04:49.455 --> 00:04:51.808
+One very important change is that
+
+00:04:51.808 --> 00:04:55.778
+the memory controller has finally returned to the CPU’s Compute Tile.
+
+00:04:55.778 --> 00:04:59.082
+Do you know how big a difference this makes?
+
+00:04:59.082 --> 00:05:01.668
+We measured the memory-access latency curves for each core,
+
+00:05:01.668 --> 00:05:02.635
+and you can see that
+
+00:05:02.635 --> 00:05:05.722
+it’s still paired with LPDDR5X memory as well.
+
+00:05:05.722 --> 00:05:11.811
+On the ARL platform, latency at 128 MB depth reached 140 ns,
+
+00:05:11.811 --> 00:05:17.233
+while on the PTL platform it drops straight to 100 ns!
+
+00:05:17.233 --> 00:05:19.235
+That gap is absolutely huge.
+
+00:05:19.235 --> 00:05:20.720
+You have to remember that with Arrow Lake,
+
+00:05:20.720 --> 00:05:23.222
+the main reason desktop gaming performance fell off a cliff
+
+00:05:23.222 --> 00:05:25.875
+was the memory-latency hit from the off-die memory controller.
+
+00:05:25.875 --> 00:05:31.064
+Panther Lake clearly fixes a major issue from the previous generation.
+
+00:05:31.064 --> 00:05:33.366
+Another very important improvement comes from the GPU.
+
+00:05:33.366 --> 00:05:36.736
+First, Panther Lake’s iGPU moves to the brand-new Xe3 architecture
+
+00:05:36.736 --> 00:05:38.821
+and supports XeSS 4× frame generation.
+
+00:05:38.821 --> 00:05:40.373
+Depending on the spec positioning,
+
+00:05:40.373 --> 00:05:44.077
+the currently announced Panther Lake processors include a CPU 4+0+4
+
+00:05:44.077 --> 00:05:46.095
+paired with a low-power 4 Xe iGPU,
+
+00:05:46.095 --> 00:05:48.798
+a CPU 4+8+4 paired with a 4 Xe iGPU,
+
+00:05:48.798 --> 00:05:53.236
+and a top-spec CPU 4+8+4 paired with a flagship 12 Xe iGPU.
+
+00:05:53.236 --> 00:05:55.321
+The SoC die paired with them is different as well,
+
+00:05:55.321 --> 00:05:57.874
+so the number of PCIe lanes also differs.
+
+00:05:57.874 --> 00:06:01.394
+But unlike the Compute Tile, which uses Intel’s own 18A process,
+
+00:06:01.394 --> 00:06:05.915
+the 12 Xe GPU Tile uses TSMC’s N3E process,
+
+00:06:05.915 --> 00:06:09.886
+while the 4 Xe GPU uses Intel’s own Intel 3 process.
+
+00:06:09.886 --> 00:06:10.686
+Likewise,
+
+00:06:10.686 --> 00:06:12.538
+the process nodes for the other parts are all different too.
+
+00:06:12.538 --> 00:06:15.308
+The IO Tile uses TSMC’s N6 process,
+
+00:06:15.308 --> 00:06:17.293
+and the Base Tile that connects all the chiplets
+
+00:06:17.293 --> 00:06:20.563
+has also been upgraded from 22 nm to 14 nm.
+
+00:06:20.563 --> 00:06:23.666
+So, we’ve quickly looked through Panther Lake’s technical changes;
+
+00:06:23.666 --> 00:06:27.520
+now it’s time to get to today’s review star,
+
+00:06:27.520 --> 00:06:31.391
+the 3rd-gen Intel Core Ultra X9 388H.
+
+00:06:31.391 --> 00:06:35.328
+Panther Lake’s naming rules have changed again compared to last gen.
+
+00:06:35.328 --> 00:06:39.165
+This time, models with the 12 Xe big iGPU all end in an 8.
+
+00:06:39.165 --> 00:06:42.802
+The three models using the full-fat 12 Xe B390 iGPU
+
+00:06:42.802 --> 00:06:45.855
+have even changed their naming from Ultra 7 and Ultra 9 to
+
+00:06:45.855 --> 00:06:49.992
+Ultra X7 and X9 to reinforce the impression.
+
+00:06:49.992 --> 00:06:52.061
+The Ultra X9 388H we tested this time
+
+00:06:52.061 --> 00:06:54.030
+is, across the entire Panther Lake lineup,
+
+00:06:54.030 --> 00:06:56.332
+the fullest-spec and highest-performance version.
+
+00:06:56.332 --> 00:06:59.385
+Its single-core boost clock is slightly lower than the previous 285H,
+
+00:06:59.385 --> 00:07:01.154
+dropping from 5.4 to 5.1.
+
+00:07:01.154 --> 00:07:04.257
+Later in the performance tests we’ll also come back to single-core,
+
+00:07:04.257 --> 00:07:06.109
+to see whether it got stronger or weaker.
+
+00:07:06.109 --> 00:07:08.995
+The boost clocks for the E-cores and LPE-cores are similar,
+
+00:07:08.995 --> 00:07:10.913
+with the LPE cores a bit lower.
+
+00:07:10.913 --> 00:07:14.834
+Under full all-core load, the P-cores can run at 4.8 GHz,
+
+00:07:14.834 --> 00:07:17.487
+while the E-cores and LPE-cores are both 3.6 GHz.
+
+00:07:17.487 --> 00:07:21.090
+On the memory side, it supports LPDDR5X-9600,
+
+00:07:21.090 --> 00:07:24.994
+which should be quite important for the 12 Xe iGPU’s performance.
+
+00:07:24.994 --> 00:07:27.313
+Next, it’s time to really put it to the test
+
+00:07:27.313 --> 00:07:30.416
+and see how this Ultra X9 388H performs.
+
+00:07:30.416 --> 00:07:34.487
+For testing, we used Lenovo’s Xiaoxin Pro 16 GT AI Yuanqi Edition.
+
+00:07:34.487 --> 00:07:37.523
+This laptop uses a 16-inch 2.8K
+
+00:07:37.523 --> 00:07:39.842
+120 Hz, 1100-nit OLED display
+
+00:07:39.842 --> 00:07:42.278
+and a huge 99.9 Wh battery.
+
+00:07:42.278 --> 00:07:45.047
+Inside, it uses a dual-heatpipe, dual-fan cooling module,
+
+00:07:45.047 --> 00:07:46.365
+and for an iGPU-only model,
+
+00:07:46.365 --> 00:07:49.485
+this cooling setup can basically unleash its full potential.
+
+00:07:49.485 --> 00:07:54.140
+It’s very suitable as our launch test machine for the new Core Ultra generation.
+
+00:07:54.140 --> 00:07:57.510
+First, let’s look at SPEC CPU 2017.
+
+00:07:57.510 --> 00:07:59.045
+Let’s start with the P-core results.
+
+00:07:59.045 --> 00:08:02.815
+Even with lower clocks than the 285H,
+
+00:08:02.815 --> 00:08:04.534
+the 388H actually scores higher.
+
+00:08:04.534 --> 00:08:06.402
+The big-core architectural changes are small,
+
+00:08:06.402 --> 00:08:08.771
+but you can indeed see IPC gains,
+
+00:08:08.771 --> 00:08:13.059
+about 10% in integer and about 7% in floating point.
+
+00:08:13.059 --> 00:08:17.864
+That’s a sizable uplift for an architecture without major changes.
+
+00:08:17.864 --> 00:08:21.651
+The 388H’s E-cores and LPE-cores scored quite similarly,
+
+00:08:21.651 --> 00:08:23.386
+because the core microarchitecture is exactly the same.
+
+00:08:23.386 --> 00:08:26.589
+What affects their performance is only frequency and cache configuration.
+
+00:08:26.589 --> 00:08:30.026
+You can see that this generation’s LPE-core performance is not weak,
+
+00:08:30.026 --> 00:08:33.429
+especially compared with the previous 285H’s LPE cores,
+
+00:08:33.429 --> 00:08:35.314
+the gap is simply enormous.
+
+00:08:35.314 --> 00:08:37.266
+E-core IPC has also improved further.
+
+00:08:37.266 --> 00:08:40.303
+Most absurdly, if they both run at 3.8 GHz,
+
+00:08:40.303 --> 00:08:44.257
+the new E-cores’ IPC is even roughly on par with last gen’s P-cores.
+
+00:08:44.257 --> 00:08:48.344
+And remember, this CPU has 12 such cores!
+
+00:08:48.344 --> 00:08:50.263
+From the SPEC2017 results,
+
+00:08:50.263 --> 00:08:53.566
+Panther Lake’s P-core and E-core IPC both improve to some extent;
+
+00:08:53.566 --> 00:08:55.518
+although peak frequency is slightly lower,
+
+00:08:55.518 --> 00:08:57.236
+single-core performance hasn’t regressed.
+
+00:08:57.236 --> 00:09:00.556
+So how does the X9 388H perform in more tests?
+
+00:09:00.556 --> 00:09:02.658
+First, let’s look at the Cinebench series.
+
+00:09:02.658 --> 00:09:06.862
+This time we tested three generations: R23, 2024, and 2026.
+
+00:09:06.862 --> 00:09:11.817
+You can see the 388H is slightly ahead of the previous 285H in both single-core and multi-core.
+
+00:09:11.817 --> 00:09:15.021
+In the older R23, the advantage is a bit smaller.
+
+00:09:15.021 --> 00:09:17.974
+HX370 is also slightly stronger than 388H in R23.
+
+00:09:17.974 --> 00:09:22.395
+Overall, the three CPUs’ multi-core performance is in the same tier.
+
+00:09:22.395 --> 00:09:25.114
+But during testing I noticed something interesting.
+
+00:09:25.114 --> 00:09:27.083
+In high-load tests like Cinebench,
+
+00:09:27.083 --> 00:09:31.921
+this X9 388H never hit the 80W PL1 power limit.
+
+00:09:31.921 --> 00:09:34.156
+I thought it had run into some other limit,
+
+00:09:34.156 --> 00:09:38.561
+but on a closer look, it turns out the frequency was already maxed out at full all-core turbo.
+
+00:09:38.561 --> 00:09:42.181
+In other words, its peak power was only 78W.
+
+00:09:42.181 --> 00:09:46.285
+That’s a clear advantage compared to the previous 285H when it’s fully pushed.
+
+00:09:46.285 --> 00:09:48.904
+And that advantage shows up directly in efficiency.
+
+00:09:48.904 --> 00:09:50.773
+On the Cinebench 2024 efficiency curve,
+
+00:09:50.773 --> 00:09:53.726
+this X9 388H versus the previous 285H
+
+00:09:53.726 --> 00:09:55.211
+shows a significant improvement.
+
+00:09:55.211 --> 00:09:57.597
+Basically, at 45W,
+
+00:09:57.597 --> 00:10:00.416
+it’s already reaching what the previous gen needed around 70W to achieve.
+
+00:10:00.416 --> 00:10:03.202
+That multi-core efficiency gain is obviously huge.
+
+00:10:03.202 --> 00:10:05.288
+If we compare it with HX370,
+
+00:10:05.288 --> 00:10:08.991
+you can see its efficiency is also slightly better than HX370’s.
+
+00:10:08.991 --> 00:10:11.794
+After all, HX370’s 12 Zen 5 cores
+
+00:10:11.794 --> 00:10:14.981
+with homogeneous big cores are still very strong in Cinebench.
+
+00:10:14.981 --> 00:10:17.450
+In the older Cinebench R23,
+
+00:10:17.450 --> 00:10:19.852
+the 388H’s efficiency improvement is also obvious,
+
+00:10:19.852 --> 00:10:22.088
+but the gap isn’t as large as in 2024.
+
+00:10:22.088 --> 00:10:25.224
+That’s mainly because R23 is less sensitive to memory,
+
+00:10:25.224 --> 00:10:27.126
+and focuses more on raw CPU performance.
+
+00:10:27.126 --> 00:10:31.614
+And one huge highlight of the 388H comes from the memory subsystem upgrade.
+
+00:10:31.614 --> 00:10:34.984
+Next, let’s look at another rendering test: Blender.
+
+00:10:34.984 --> 00:10:38.537
+The X9 388H has a small uplift over the previous 285H,
+
+00:10:38.537 --> 00:10:40.706
+but is slightly behind HX370.
+
+00:10:40.706 --> 00:10:42.525
+In the VS compile Dolphin test,
+
+00:10:42.525 --> 00:10:46.162
+the X9 388H is also improved versus 285H,
+
+00:10:46.162 --> 00:10:49.765
+and here the 388H is noticeably stronger than HX370.
+
+00:10:49.765 --> 00:10:53.202
+That result mainly comes down to stronger single-core and memory performance.
+
+00:10:53.202 --> 00:10:56.072
+Next up, 7-Zip compression and decompression.
+
+00:10:56.072 --> 00:10:58.324
+Because the memory controller is back in the right place,
+
+00:10:58.324 --> 00:11:01.694
+the 388H makes some performance gains in 7-Zip compression,
+
+00:11:01.694 --> 00:11:04.747
+though decompression is slightly weaker than HX370.
+
+00:11:04.747 --> 00:11:06.532
+Overall, it’s a bit of give-and-take.
+
+00:11:06.532 --> 00:11:08.284
+In pure CPU performance tests,
+
+00:11:08.284 --> 00:11:10.586
+this Ultra X9 388H’s performance level
+
+00:11:10.586 --> 00:11:14.140
+is basically a small step up from the previous 285H.
+
+00:11:14.140 --> 00:11:15.558
+Compared with peak performance gains,
+
+00:11:15.558 --> 00:11:18.494
+the efficiency improvements this generation are more impressive.
+
+00:11:18.494 --> 00:11:21.630
+And that great efficiency isn’t just from the CPU;
+
+00:11:21.630 --> 00:11:24.417
+its GPU is even more eye-opening.
+
+00:11:24.417 --> 00:11:26.419
+In the 3DMark SNL efficiency test,
+
+00:11:26.419 --> 00:11:29.588
+we also brought in the monster iGPU AI Max 395 for comparison.
+
+00:11:29.588 --> 00:11:32.491
+As you know, the 395’s 8060s iGPU
+
+00:11:32.491 --> 00:11:35.010
+isn’t in the same class of specs as the other processors.
+
+00:11:35.010 --> 00:11:36.862
+It’s clearly larger and more expensive,
+
+00:11:36.862 --> 00:11:38.764
+but it still works as a reference point
+
+00:11:38.764 --> 00:11:42.051
+to see just how strong the 388H’s GPU efficiency is.
+
+00:11:42.051 --> 00:11:43.052
+And it’s not hard to see that
+
+00:11:43.052 --> 00:11:48.174
+the 388H’s iGPU absolutely demolishes the previous 285H’s iGPU in efficiency.
+
+00:11:48.174 --> 00:11:53.412
+Even at just 15W it can easily beat the previous gen running flat out.
+
+00:11:53.412 --> 00:11:57.066
+It’s already close to double the performance of both 285H and HX370.
+
+00:11:57.066 --> 00:12:01.187
+This 12Xe big iGPU’s performance really caught me off guard.
+
+00:12:01.187 --> 00:12:02.405
+I knew it would be strong,
+
+00:12:02.405 --> 00:12:04.123
+but I didn’t expect it to be this strong.
+
+00:12:04.123 --> 00:12:06.459
+Obviously, this is a big help for today’s thin-and-light iGPU laptops
+
+00:12:06.459 --> 00:12:09.779
+and even for handheld gaming PCs.
+
+00:12:09.779 --> 00:12:13.399
+Later we’ll also put this iGPU through real games
+
+00:12:13.399 --> 00:12:16.285
+to see whether it’s a “high score, low real-world performance” kind of GPU.
+
+00:12:16.285 --> 00:12:17.770
+Looking at peak performance,
+
+00:12:17.770 --> 00:12:21.340
+its SNL score is a major improvement over the previous iGPU.
+
+00:12:21.340 --> 00:12:23.509
+So how does it compare with discrete GPUs?
+
+00:12:23.509 --> 00:12:27.246
+We specifically found two laptops with full-power 95W 3050 Ti
+
+00:12:27.246 --> 00:12:30.332
+and a 130W 3060 as references.
+
+00:12:30.332 --> 00:12:35.771
+You can see that in SNL, this iGPU scores almost exactly the same as a full-power 3050 Ti.
+
+00:12:35.771 --> 00:12:37.673
+We also tested its performance in Time Spy,
+
+00:12:37.673 --> 00:12:42.244
+and here the 388H’s Arc B390 iGPU score is pretty crazy—
+
+00:12:42.244 --> 00:12:44.079
+well ahead of the 3050 Ti.
+
+00:12:44.079 --> 00:12:48.350
+But as you know, Intel iGPUs generally score unusually high in Time Spy,
+
+00:12:48.350 --> 00:12:53.439
+so from what I’ve seen, SNL is a more cross-platform-relevant benchmark.
+
+00:12:53.439 --> 00:12:55.925
+After looking at the GPU’s 3DMark performance,
+
+00:12:55.925 --> 00:12:58.360
+we also tested its rendering performance in Blender.
+
+00:12:58.360 --> 00:13:01.981
+You can see it has evolved a lot compared to the previous gen,
+
+00:13:01.981 --> 00:13:04.917
+almost matching the AI Max 395’s iGPU.
+
+00:13:04.917 --> 00:13:08.254
+And its score here is also about the same as the 3050 Ti.
+
+00:13:08.254 --> 00:13:11.791
+It seems the ray-tracing improvements across these two generations of Intel Xe graphics
+
+00:13:11.791 --> 00:13:13.776
+also pay off in Blender.
+
+00:13:13.776 --> 00:13:17.913
+In Photoshop, the 388H laptop lands between the 285H and HX370 models.
+
+00:13:17.913 --> 00:13:21.684
+In After Effects, it pulls noticeably ahead of both 285H and HX370.
+
+00:13:21.684 --> 00:13:25.688
+And in the more GPU-heavy Premiere, it extends its lead even further.
+
+00:13:25.688 --> 00:13:28.808
+It looks like Panther Lake’s 12Xe big iGPU
+
+00:13:28.808 --> 00:13:30.426
+Paired with a more powerful codec.
+
+00:13:30.426 --> 00:13:34.213
+It’s obviously very suitable for productivity uses like audio and video editing.
+
+00:13:34.213 --> 00:13:37.183
+But if we’re talking about where the 12Xe iGPU really shines,
+
+00:13:37.183 --> 00:13:40.369
+then we have to look at its performance in games.
+
+00:13:40.369 --> 00:13:44.139
+Let’s start with Arknights: Endfield, which just went online recently.
+
+00:13:44.139 --> 00:13:46.609
+Here we tested it at two quality presets.
+
+00:13:46.609 --> 00:13:48.828
+First is 1080P at the very lowest settings.
+
+00:13:48.828 --> 00:13:53.415
+The X9 388H here even outperformed laptops with a 3060.
+
+00:13:53.415 --> 00:13:56.118
+That’s actually because the other two ran into a CPU bottleneck.
+
+00:13:56.118 --> 00:14:00.656
+After all, the 11800H’s performance is a bit stretched thin today.
+
+00:14:00.656 --> 00:14:03.175
+At 2K resolution, the results are more representative.
+
+00:14:03.175 --> 00:14:06.078
+You can see the iGPU in the 388H is seriously capable.
+
+00:14:06.078 --> 00:14:09.281
+It’s 72% faster than the iGPU in the 285H.
+
+00:14:09.281 --> 00:14:10.232
+That’s outrageous.
+
+00:14:10.232 --> 00:14:13.669
+It also easily beats the 95W 3050 Ti.
+
+00:14:13.669 --> 00:14:16.472
+Only slightly behind the much larger 3060.
+
+00:14:16.472 --> 00:14:18.607
+Next, let’s look at CS2.
+
+00:14:18.607 --> 00:14:22.027
+As an FPS online game that puts plenty of load on both CPU and GPU,
+
+00:14:22.027 --> 00:14:27.149
+the 388H is about 50% faster than 285H machines at both resolutions.
+
+00:14:27.149 --> 00:14:30.736
+But the strongest here are still the 3060 and 3050 Ti.
+
+00:14:30.736 --> 00:14:34.473
+The HX370 also isn’t that far behind the 388H.
+
+00:14:34.473 --> 00:14:35.407
+And pay attention to power draw.
+
+00:14:35.407 --> 00:14:38.878
+At this level of performance it’s only around 45W.
+
+00:14:38.878 --> 00:14:41.430
+That means a thin-and-light with even modest cooling
+
+00:14:41.430 --> 00:14:44.366
+can let this 388H deliver full-power gaming performance.
+
+00:14:44.366 --> 00:14:45.801
+That’s the craziest part.
+
+00:14:45.801 --> 00:14:49.455
+Next, let’s look at AAA games where the pressure is more concentrated on the GPU.
+
+00:14:49.455 --> 00:14:50.956
+Starting with Black Myth: Wukong.
+
+00:14:50.956 --> 00:14:53.108
+At 1080P without upscaling,
+
+00:14:53.108 --> 00:14:58.397
+the 388H iGPU nearly doubles performance versus the 285H.
+
+00:14:58.397 --> 00:15:01.634
+It’s almost identical to a full-power 3050 Ti.
+
+00:15:01.634 --> 00:15:03.586
+And it’s much faster than the HX370 too.
+
+00:15:03.586 --> 00:15:08.574
+At 2K, turning on quality-mode upscaling like XeSS and DLSS,
+
+00:15:08.574 --> 00:15:11.894
+the 388H still goes toe-to-toe with the 3050 Ti.
+
+00:15:11.894 --> 00:15:14.980
+XeSS is also very close to DLSS in quality.
+
+00:15:14.980 --> 00:15:19.385
+Image quality is clearly better than the FSR supported by the 890M iGPU.
+
+00:15:19.385 --> 00:15:21.270
+Black Myth puts less load on the CPU,
+
+00:15:21.270 --> 00:15:24.323
+so the SoC power draw during testing was lower too.
+
+00:15:24.323 --> 00:15:27.376
+In most cases it was only 35–40W.
+
+00:15:27.376 --> 00:15:29.795
+That efficiency is pretty astonishing.
+
+00:15:29.795 --> 00:15:33.015
+Next up, the classic AAA title, Cyberpunk 2077.
+
+00:15:33.015 --> 00:15:38.270
+Here, the 388H also achieved nearly double the performance compared with the 285H.
+
+00:15:38.270 --> 00:15:42.441
+Whether at 1080P without upscaling or at 2K+ with quality-mode upscaling,
+
+00:15:42.441 --> 00:15:45.044
+this B390 iGPU performed extremely well.
+
+00:15:45.044 --> 00:15:47.479
+Even at 2K with quality-mode XeSS,
+
+00:15:47.479 --> 00:15:49.365
+thanks to more flexible VRAM management,
+
+00:15:49.365 --> 00:15:52.434
+it has already pulled ahead of the 3050 Ti with 4GB of VRAM.
+
+00:15:52.434 --> 00:15:54.553
+It’s closer to 3060-level performance.
+
+00:15:54.553 --> 00:15:57.339
+In the TGA Game of the Year—Expedition 33,
+
+00:15:57.339 --> 00:16:02.594
+the 388H also delivered close to a doubling in performance at both resolutions.
+
+00:16:02.594 --> 00:16:07.299
+The 3050 Ti can still hang with the 388H at 1080P without upscaling.
+
+00:16:07.299 --> 00:16:09.134
+But once you turn on upscaling at 2K,
+
+00:16:09.134 --> 00:16:11.203
+4GB of VRAM immediately becomes a limitation.
+
+00:16:11.203 --> 00:16:16.191
+So the 388H is able to overtake the 95W 3050 Ti.
+
+00:16:16.191 --> 00:16:18.844
+The same situation continues in Kingdom Come: Deliverance II.
+
+00:16:18.844 --> 00:16:20.663
+The 388H’s B390 iGPU,
+
+00:16:20.663 --> 00:16:23.282
+whether at native 1080P
+
+00:16:23.282 --> 00:16:26.468
+or at 2K with quality-mode upscaling, performs very well.
+
+00:16:26.468 --> 00:16:29.772
+It can also deliver nearly double the performance of the 285H.
+
+00:16:29.772 --> 00:16:31.373
+The gaming experience it can provide
+
+00:16:31.373 --> 00:16:36.545
+is clearly worlds apart from traditional iGPUs like the HX370 and 285H.
+
+00:16:36.545 --> 00:16:38.097
+After testing several games,
+
+00:16:38.097 --> 00:16:42.001
+Ultra X9 388H’s gaming performance left a deep impression on me.
+
+00:16:42.001 --> 00:16:45.004
+This new 12Xe iGPU’s performance in real games
+
+00:16:45.004 --> 00:16:47.873
+is as stunning as its performance in 3DMark SNL.
+
+00:16:47.873 --> 00:16:48.891
+Compared to absolute performance,
+
+00:16:48.891 --> 00:16:51.377
+what’s more surprising is its efficiency in games.
+
+00:16:51.377 --> 00:16:54.446
+Basically, in games its power draw is around 30–50W.
+
+00:16:54.446 --> 00:16:57.149
+That’s not much different from the previous-gen 285H.
+
+00:16:57.149 --> 00:17:01.653
+That means if a 14-inch laptop has about 65W of cooling capacity,
+
+00:17:01.653 --> 00:17:05.774
+it’s enough to unleash almost all of the 388H’s potential.
+
+00:17:05.774 --> 00:17:06.975
+In other words,
+
+00:17:06.975 --> 00:17:09.128
+an iGPU laptop with the 388H
+
+00:17:09.128 --> 00:17:14.516
+can absolutely achieve nearly full, uncompromised gaming performance on battery.
+
+00:17:14.516 --> 00:17:18.303
+That’s something dGPU laptops are almost incapable of doing.
+
+00:17:18.303 --> 00:17:23.208
+Take this Lenovo Xiaoxin Pro 16 GT AI (Yuanqi Edition) we have on hand as an example.
+
+00:17:23.208 --> 00:17:27.229
+I specifically tested the frame rates in CS2 and Black Myth on battery.
+
+00:17:27.229 --> 00:17:30.165
+You can see the performance loss is very slight.
+
+00:17:30.165 --> 00:17:32.484
+And this is only on the launch BIOS.
+
+00:17:32.484 --> 00:17:34.937
+After further tuning in future BIOS versions,
+
+00:17:34.937 --> 00:17:38.273
+I have every reason to believe laptops with Panther Lake
+
+00:17:38.273 --> 00:17:43.245
+can achieve exactly the same gaming performance on battery and on AC power.
+
+00:17:43.245 --> 00:17:44.446
+At this point in the testing,
+
+00:17:44.446 --> 00:17:46.582
+I believe you already have your own take on the performance of the Panther Lake architecture
+
+00:17:46.582 --> 00:17:50.319
+Core Ultra X9 388H.
+
+00:17:50.319 --> 00:17:53.956
+In my view, this generation’s 12Xe is excellent,
+
+00:17:53.956 --> 00:17:57.359
+especially its efficiency, which left a very deep impression on me.
+
+00:17:57.359 --> 00:17:59.244
+Whether it’s the CPU or the GPU,
+
+00:17:59.244 --> 00:18:01.080
+You can see that this generation’s direction of evolution is
+
+00:18:01.080 --> 00:18:04.133
+moving toward lower power consumption and higher performance.
+
+00:18:04.133 --> 00:18:05.584
+That makes me very curious:
+
+00:18:05.584 --> 00:18:09.571
+will this generation’s battery life also see a clear improvement?
+
+00:18:09.571 --> 00:18:15.077
+In the end, this Lenovo Xiaoxin Pro 16 GT AI Yuanqi Edition we have, at 120 Hz,
+
+00:18:15.077 --> 00:18:19.131
+ran for over 12 hours in our Geekerwan laptop battery-life model.
+
+00:18:19.131 --> 00:18:21.583
+Even considering the battery capacity increased by 19%,
+
+00:18:21.583 --> 00:18:24.720
+reaching 99.9 Wh, the maximum you can take on a plane,
+
+00:18:24.720 --> 00:18:28.657
+it’s still easy to see this generation made a clear leap in endurance.
+
+00:18:28.657 --> 00:18:33.028
+We also tested battery life with the screen refresh rate set to 60 Hz.
+
+00:18:33.028 --> 00:18:35.948
+It actually reached 14 and a half hours!
+
+00:18:35.948 --> 00:18:38.851
+No wonder it’s an SoC that inherits Lunar Lake’s design philosophy.
+
+00:18:38.851 --> 00:18:42.654
+I’d guess that this year, Windows iGPU laptops with Panther Lake
+
+00:18:42.654 --> 00:18:46.258
+should have no trouble hitting 10 hours of battery life.
+
+00:18:46.258 --> 00:18:48.577
+After finishing this launch-day testing,
+
+00:18:48.577 --> 00:18:51.914
+Panther Lake’s performance left a deep impression on me.
+
+00:18:51.914 --> 00:18:53.098
+On the CPU side,
+
+00:18:53.098 --> 00:18:55.801
+Intel 18A’s debut performance is excellent,
+
+00:18:55.801 --> 00:19:01.273
+with efficiency even better than the 285H built on TSMC N3B.
+
+00:19:01.273 --> 00:19:03.625
+It gives people hope that Intel’s process tech is back on track.
+
+00:19:03.625 --> 00:19:06.094
+On the GPU side, it gave us a big surprise:
+
+00:19:06.094 --> 00:19:09.198
+whether it’s gaming, productivity, or efficiency,
+
+00:19:09.198 --> 00:19:13.352
+among the SoCs currently available in the Windows camp, it’s second to none.
+
+00:19:13.352 --> 00:19:17.723
+This generation of Panther Lake is a laptop SoC that strongly prioritizes efficiency.
+
+00:19:17.723 --> 00:19:22.477
+It even makes me a bit worried about Qualcomm’s X2 Elite, still not officially launched—
+
+00:19:22.477 --> 00:19:25.297
+what approach it will use to compete.
+
+00:19:25.297 --> 00:19:28.750
+Now the only question is the pricing of Panther Lake models.
+
+00:19:28.750 --> 00:19:33.071
+The Lenovo Xiaoxin Pro 16 GT AI Yuanqi Edition we tested today
+
+00:19:33.071 --> 00:19:34.940
+will go on sale in China in March.
+
+00:19:34.940 --> 00:19:36.542
+Something to look forward to.
+
+00:19:36.542 --> 00:19:39.261
+Let’s see what the pricing ends up being then.
+
+00:19:39.261 --> 00:19:43.265
+Alright, that’s everything for our Panther Lake launch-day testing.
+
+00:19:43.265 --> 00:19:46.001
+If you like our show, don’t forget to long-press the Like button to support us.
+
+00:19:46.001 --> 00:19:48.020
+And don’t forget to subscribe to our channel.
+
+00:19:48.020 --> 00:19:49.805
+See you in the next episode.

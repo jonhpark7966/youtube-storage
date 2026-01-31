@@ -1,0 +1,7436 @@
+1
+00:00:00,000 --> 00:00:02,480
+What virtually everybody finds, including Elon Musk, is
+
+2
+00:00:02,480 --> 00:00:04,620
+the real world is just really, really big
+
+3
+00:00:04,620 --> 00:00:06,100
+and really, really messy.
+
+4
+00:00:06,220 --> 00:00:07,500
+The AI thing is so interesting, right? Because
+
+5
+00:00:07,500 --> 00:00:09,440
+from a technology perspective, it feels like you
+
+6
+00:00:09,440 --> 00:00:11,320
+can build products pretty immediately that are going
+
+7
+00:00:11,320 --> 00:00:11,600
+to win.
+
+8
+00:00:11,740 --> 00:00:14,280
+Our entire way of doing everything as humans,
+
+9
+00:00:14,380 --> 00:00:16,640
+we think is going to change. We reinvented
+
+10
+00:00:16,640 --> 00:00:19,800
+the computer and the new computer is far
+
+11
+00:00:19,800 --> 00:00:21,660
+better than the one that we have been
+
+12
+00:00:21,660 --> 00:00:23,640
+building on for the last 50 or so
+
+13
+00:00:23,640 --> 00:00:23,960
+years.
+
+14
+00:00:24,120 --> 00:00:25,860
+The purpose of building the dominant venture brand
+
+15
+00:00:25,860 --> 00:00:27,420
+was precisely to be able to have the
+
+16
+00:00:27,420 --> 00:00:28,920
+companies be able to borrow that at the
+
+17
+00:00:28,920 --> 00:00:29,940
+most critical points of their development.
+
+18
+00:00:29,940 --> 00:00:31,440
+So that the companies can kind of use
+
+19
+00:00:31,440 --> 00:00:33,040
+our force in the world as a slingshot
+
+20
+00:00:33,040 --> 00:00:34,220
+to basically build their own force.
+
+21
+00:00:34,520 --> 00:00:37,300
+You cannot join the firm unless you sign
+
+22
+00:00:37,300 --> 00:00:38,360
+the culture document.
+
+23
+00:00:38,580 --> 00:00:39,720
+If you had to pick a thing, what
+
+24
+00:00:39,720 --> 00:00:40,420
+are you compounding?
+
+25
+00:00:40,840 --> 00:00:41,160
+Reputation.
+
+26
+00:00:45,200 --> 00:00:47,220
+We have a very special guest, Packy McCormick,
+
+27
+00:00:47,320 --> 00:00:49,300
+who just wrote an excellent profile of A6
+
+28
+00:00:49,300 --> 00:00:50,760
+and Z. Packy, thanks for coming on the
+
+29
+00:00:50,760 --> 00:00:51,040
+podcast.
+
+30
+00:00:51,600 --> 00:00:52,180
+Thanks for having me.
+
+31
+00:00:52,740 --> 00:00:53,900
+Packy, I want to start by saying thank
+
+32
+00:00:53,900 --> 00:00:55,880
+you for the amazing piece. Like, it's just
+
+33
+00:00:55,880 --> 00:00:57,520
+like incredible. Like, absolutely incredible.
+
+34
+00:00:57,520 --> 00:01:00,040
+So we just really appreciate all the work
+
+35
+00:01:00,040 --> 00:01:01,560
+that you put into it because that was
+
+36
+00:01:01,560 --> 00:01:01,900
+a big one.
+
+37
+00:01:02,400 --> 00:01:04,460
+Thank you. I mean, I appreciate being able
+
+38
+00:01:04,460 --> 00:01:05,700
+to tell the story. It's such a cool
+
+39
+00:01:05,700 --> 00:01:08,880
+one. And I appreciate getting to work with
+
+40
+00:01:08,880 --> 00:01:09,340
+you guys on it.
+
+41
+00:01:09,540 --> 00:01:10,880
+Everybody, welcome to the Ben and Mark Show,
+
+42
+00:01:11,020 --> 00:01:12,900
+first of 2026. And we're now getting into
+
+43
+00:01:12,900 --> 00:01:14,640
+how the media ecosystem has changed.
+
+44
+00:01:14,640 --> 00:01:17,900
+We talked about this great, great Tad Friend
+
+45
+00:01:17,900 --> 00:01:20,300
+profile in The New Yorker in 2015 that
+
+46
+00:01:20,300 --> 00:01:22,100
+I referenced in the piece that I wrote
+
+47
+00:01:22,100 --> 00:01:25,620
+on A16Z this past week, saying that that
+
+48
+00:01:25,620 --> 00:01:26,500
+kind of kicked off.
+
+49
+00:01:26,520 --> 00:01:28,160
+It was the last kind of point in
+
+50
+00:01:28,160 --> 00:01:31,100
+an era where journalism cared about free speech.
+
+51
+00:01:31,220 --> 00:01:32,120
+I think Mark will do a better job
+
+52
+00:01:32,120 --> 00:01:33,840
+kind of summarizing what happened over the past
+
+53
+00:01:33,840 --> 00:01:34,160
+decade.
+
+54
+00:01:34,160 --> 00:01:36,200
+Now we're at the end of that point.
+
+55
+00:01:36,400 --> 00:01:38,140
+And I was asking, you know, to what
+
+56
+00:01:38,140 --> 00:01:39,840
+extent Mark thinks that he and kind of
+
+57
+00:01:39,840 --> 00:01:41,580
+a few people who stood up against this
+
+58
+00:01:41,580 --> 00:01:44,880
+actually kind of shifted back to this anarchic
+
+59
+00:01:44,880 --> 00:01:49,060
+or liberated view of the press or relationship
+
+60
+00:01:49,060 --> 00:01:49,980
+with the media that we have now.
+
+61
+00:01:51,000 --> 00:01:52,240
+Yeah. And I was just saying, I think
+
+62
+00:01:52,240 --> 00:01:53,780
+you could describe what's happening kind of going
+
+63
+00:01:53,780 --> 00:01:55,940
+forward, the information environment being, you know, you
+
+64
+00:01:55,940 --> 00:01:56,820
+could use kind of three words.
+
+65
+00:01:56,920 --> 00:01:58,460
+You could say uncontrolled is maybe the neutral
+
+66
+00:01:58,460 --> 00:01:59,820
+word. You could say anarchic is the negative
+
+67
+00:01:59,820 --> 00:02:01,680
+word. You could say liberated is the positive
+
+68
+00:02:01,680 --> 00:02:03,900
+word, you know, in terms of freedom of
+
+69
+00:02:03,900 --> 00:02:05,400
+speech, freedom of thought, you know, and I
+
+70
+00:02:05,400 --> 00:02:06,780
+would say at least in the U.S.,
+
+71
+00:02:06,780 --> 00:02:07,880
+I think generally on the Internet.
+
+72
+00:02:07,960 --> 00:02:09,240
+And then, you know, we can talk about
+
+73
+00:02:09,240 --> 00:02:11,260
+what other countries are doing, but at least
+
+74
+00:02:11,260 --> 00:02:12,240
+in the U.S., you know, we're clearly
+
+75
+00:02:12,240 --> 00:02:13,480
+entering a much more free speech world.
+
+76
+00:02:15,140 --> 00:02:16,120
+So I have to start by saying, like,
+
+77
+00:02:16,180 --> 00:02:17,540
+I don't think I should claim any moral
+
+78
+00:02:17,540 --> 00:02:19,680
+heroism at all here, like at all, because,
+
+79
+00:02:19,840 --> 00:02:21,280
+you know, I, you know, I mean, I
+
+80
+00:02:21,280 --> 00:02:22,440
+have my own version of my own story
+
+81
+00:02:22,440 --> 00:02:25,080
+going all the way back to, I turned
+
+82
+00:02:25,080 --> 00:02:26,260
+down one of my claims to, I turned
+
+83
+00:02:26,260 --> 00:02:28,540
+down the opportunity at the time in 1993
+
+84
+00:02:28,540 --> 00:02:31,360
+to implement censorship in the web browser, you
+
+85
+00:02:31,360 --> 00:02:32,680
+know, which would have been a completely different
+
+86
+00:02:32,680 --> 00:02:35,040
+and, you know, very dystopian world.
+
+87
+00:02:35,040 --> 00:02:36,180
+So I don't know, maybe I get a
+
+88
+00:02:36,180 --> 00:02:37,920
+little bit of credit for that. But, you
+
+89
+00:02:37,920 --> 00:02:39,100
+know, I think for the last decade, like
+
+90
+00:02:39,100 --> 00:02:40,180
+I was kind of on the same ride
+
+91
+00:02:40,180 --> 00:02:40,860
+as everybody else.
+
+92
+00:02:41,020 --> 00:02:42,220
+And, you know, we, you know, we, you
+
+93
+00:02:42,220 --> 00:02:43,320
+know, I've been on the, I've been on
+
+94
+00:02:43,320 --> 00:02:44,700
+the, you know, Facebook board since 2007.
+
+95
+00:02:44,740 --> 00:02:45,960
+So I kind of went through the entire
+
+96
+00:02:45,960 --> 00:02:47,760
+kind of crazy roller coaster that that company
+
+97
+00:02:47,760 --> 00:02:49,700
+went through over the last decade.
+
+98
+00:02:49,720 --> 00:02:51,420
+And then, you know, we've been involved in,
+
+99
+00:02:51,480 --> 00:02:52,400
+you know, lots of these companies.
+
+100
+00:02:53,260 --> 00:02:54,100
+You know, I was, you know, I was
+
+101
+00:02:54,100 --> 00:02:56,020
+an angel investor in Twitter, angel investor in
+
+102
+00:02:56,020 --> 00:02:57,580
+LinkedIn, you know, they both, you know, became
+
+103
+00:02:57,580 --> 00:02:59,180
+kind of key parts of the censorship machine
+
+104
+00:02:59,180 --> 00:03:00,540
+at certain points.
+
+105
+00:03:00,580 --> 00:03:01,740
+And so I don't want to claim like
+
+106
+00:03:01,740 --> 00:03:02,600
+huge moral heroism.
+
+107
+00:03:03,180 --> 00:03:04,980
+I do think a couple of things. One
+
+108
+00:03:04,980 --> 00:03:07,500
+is obviously Elon's purchase of Twitter, you know,
+
+109
+00:03:07,580 --> 00:03:09,840
+obviously was like a gigantic turning point.
+
+110
+00:03:10,060 --> 00:03:11,660
+I also want to give just like enormous
+
+111
+00:03:11,660 --> 00:03:14,380
+credit to the Substack guys, you know, and
+
+112
+00:03:14,380 --> 00:03:15,500
+they were very proud because we were the
+
+113
+00:03:15,500 --> 00:03:17,460
+original investor and we're the largest outside investor
+
+114
+00:03:17,460 --> 00:03:17,980
+in Substack.
+
+115
+00:03:18,120 --> 00:03:19,720
+And, you know, I think they did a
+
+116
+00:03:19,720 --> 00:03:21,600
+really, really great job holding the line of
+
+117
+00:03:21,600 --> 00:03:23,100
+freedom of speech under, and I would tell
+
+118
+00:03:23,100 --> 00:03:26,260
+you, under enormous pressure, you know, especially.
+
+119
+00:03:26,480 --> 00:03:29,500
+And took a very consistent and totally principled
+
+120
+00:03:29,500 --> 00:03:30,260
+stand on it.
+
+121
+00:03:31,240 --> 00:03:33,460
+Yeah, that's right. And they got, I don't
+
+122
+00:03:33,460 --> 00:03:34,540
+know if people remember this or not, but
+
+123
+00:03:34,540 --> 00:03:37,040
+I mean, they got really lit up, you
+
+124
+00:03:37,040 --> 00:03:38,600
+know, by a lot of the sort of,
+
+125
+00:03:38,600 --> 00:03:40,180
+you know, anti-speech forces for, you know,
+
+126
+00:03:40,720 --> 00:03:41,980
+I mean, the whole litany of, you know,
+
+127
+00:03:42,080 --> 00:03:45,100
+kind of standard accusations of just being absolutely
+
+128
+00:03:45,100 --> 00:03:45,460
+horrible.
+
+129
+00:03:45,460 --> 00:03:47,700
+And yeah, they stuck to their principles the
+
+130
+00:03:47,700 --> 00:03:49,260
+whole time. And then they, you know, you
+
+131
+00:03:49,260 --> 00:03:51,520
+know, at least with Elon, it acts like
+
+132
+00:03:51,520 --> 00:03:52,000
+he's Elon.
+
+133
+00:03:52,200 --> 00:03:53,580
+And so when he wants to go to
+
+134
+00:03:53,580 --> 00:03:55,220
+war with like, you know, somebody who's like
+
+135
+00:03:55,220 --> 00:03:56,420
+trying to get him to censor more, like
+
+136
+00:03:56,420 --> 00:03:57,480
+he does it in a very kind of
+
+137
+00:03:57,480 --> 00:03:59,100
+forced, you know, public visible and forceful way.
+
+138
+00:03:59,100 --> 00:04:00,900
+You know, the Substack, you know, Substack's still,
+
+139
+00:04:00,960 --> 00:04:03,140
+you know, a younger company. And so they
+
+140
+00:04:03,140 --> 00:04:04,480
+don't have that level of kind of just
+
+141
+00:04:04,480 --> 00:04:05,580
+throw weight in the world yet.
+
+142
+00:04:06,140 --> 00:04:07,620
+And so they have the harder version of
+
+143
+00:04:07,620 --> 00:04:09,020
+the challenge and they had to fight, you
+
+144
+00:04:09,020 --> 00:04:10,020
+know, a whole bunch of fights, including, you
+
+145
+00:04:10,020 --> 00:04:12,200
+know, fights that aren't even public, you know,
+
+146
+00:04:12,300 --> 00:04:14,700
+to basically keep the service with high integrity.
+
+147
+00:04:15,120 --> 00:04:17,000
+So I think a good place to kind
+
+148
+00:04:17,000 --> 00:04:18,080
+of talk about a bunch of the themes
+
+149
+00:04:18,080 --> 00:04:21,080
+that we covered in the piece, one of
+
+150
+00:04:21,080 --> 00:04:23,000
+which is, I mean, the Substack investment.
+
+151
+00:04:23,220 --> 00:04:24,420
+I remember at the time I was on
+
+152
+00:04:24,420 --> 00:04:26,580
+Substack, my career was starting because of Substack,
+
+153
+00:04:26,660 --> 00:04:27,880
+and I still at the time thought it
+
+154
+00:04:27,880 --> 00:04:29,360
+was kind of a crazy investment.
+
+155
+00:04:29,780 --> 00:04:32,280
+Were you thinking about it from the perspective
+
+156
+00:04:32,280 --> 00:04:33,340
+of this is going to be a great
+
+157
+00:04:33,340 --> 00:04:34,900
+returner, this is something that is good for
+
+158
+00:04:34,900 --> 00:04:35,360
+the future?
+
+159
+00:04:36,040 --> 00:04:37,560
+Is it a mix of the two of
+
+160
+00:04:37,560 --> 00:04:39,300
+those things? And then to what extent have
+
+161
+00:04:39,300 --> 00:04:41,760
+you allowed Substack to fight that fight by
+
+162
+00:04:41,760 --> 00:04:43,580
+being on their side that they wouldn't have
+
+163
+00:04:43,580 --> 00:04:44,520
+been able to do if you weren't there?
+
+164
+00:04:45,400 --> 00:04:47,380
+Yeah, so, you know, we never make it,
+
+165
+00:04:47,420 --> 00:04:48,640
+you know, we never make investments for just
+
+166
+00:04:48,640 --> 00:04:50,120
+purely kind of social and political reasons.
+
+167
+00:04:50,320 --> 00:04:52,100
+Like, so, you know, the goal, obviously, always
+
+168
+00:04:52,100 --> 00:04:55,000
+as sort of fiduciaries is to generate returns.
+
+169
+00:04:55,000 --> 00:04:57,320
+And so, you know, in the main business.
+
+170
+00:04:57,440 --> 00:04:59,740
+And so, you know, we always invest with
+
+171
+00:04:59,740 --> 00:05:01,220
+the intention that the company that we invest
+
+172
+00:05:01,220 --> 00:05:02,780
+in, you know, has the opportunity to become
+
+173
+00:05:02,780 --> 00:05:04,280
+what we call kind of a cornerstone franchise,
+
+174
+00:05:04,500 --> 00:05:06,220
+you know, in the industry and an important
+
+175
+00:05:06,220 --> 00:05:06,880
+force in the world.
+
+176
+00:05:07,660 --> 00:05:09,460
+And, you know, we certainly believe that as
+
+177
+00:05:09,460 --> 00:05:10,540
+Substack at the time. And, you know, we
+
+178
+00:05:10,540 --> 00:05:12,260
+believe that more than ever today. So I
+
+179
+00:05:12,260 --> 00:05:12,780
+think that's true.
+
+180
+00:05:12,780 --> 00:05:15,140
+But I also think, you know, I think
+
+181
+00:05:15,140 --> 00:05:16,500
+this is kind of the magic in a
+
+182
+00:05:16,500 --> 00:05:17,540
+lot of what we do, you know, in
+
+183
+00:05:17,540 --> 00:05:19,320
+Silicon Valley, which is I think the companies
+
+184
+00:05:19,320 --> 00:05:21,060
+in many, not in every case, but in
+
+185
+00:05:21,060 --> 00:05:22,800
+many cases, the companies that become the best
+
+186
+00:05:22,800 --> 00:05:24,440
+version of themselves also become the most successful
+
+187
+00:05:24,440 --> 00:05:24,820
+businesses.
+
+188
+00:05:25,640 --> 00:05:27,460
+And I think Substack is a great example
+
+189
+00:05:27,460 --> 00:05:30,160
+of that. And Substack is actually a very,
+
+190
+00:05:30,160 --> 00:05:32,180
+very, very good example of that, because if
+
+191
+00:05:32,180 --> 00:05:34,120
+Substack is making its writers successful, then it's
+
+192
+00:05:34,120 --> 00:05:35,020
+making itself successful.
+
+193
+00:05:35,020 --> 00:05:37,320
+Right. And so it's got this just like
+
+194
+00:05:37,320 --> 00:05:39,860
+extremely direct alignment of interest between its success
+
+195
+00:05:39,860 --> 00:05:41,580
+and its writers success. And then as a
+
+196
+00:05:41,580 --> 00:05:43,180
+consequence of that, if its writers are successful,
+
+197
+00:05:43,360 --> 00:05:45,740
+kind of by definition, you know, those writers,
+
+198
+00:05:45,960 --> 00:05:47,460
+you know, readers are successful. They're getting what
+
+199
+00:05:47,460 --> 00:05:47,780
+they want.
+
+200
+00:05:48,600 --> 00:05:50,520
+And so, you know, I would say, you
+
+201
+00:05:50,520 --> 00:05:51,820
+know, there were sort of a bunch of
+
+202
+00:05:51,820 --> 00:05:53,820
+reasons we invested in Substack. You know, one
+
+203
+00:05:53,820 --> 00:05:55,520
+was just, you know, we fell in love
+
+204
+00:05:55,520 --> 00:05:56,460
+with the guys.
+
+205
+00:05:56,700 --> 00:05:58,360
+And, you know, you probably know the guys
+
+206
+00:05:58,360 --> 00:05:59,320
+they're easy to fall in love with. So
+
+207
+00:05:59,320 --> 00:06:01,140
+that was the that was the easy part.
+
+208
+00:06:01,880 --> 00:06:02,980
+And then, you know, look, I had been
+
+209
+00:06:02,980 --> 00:06:04,880
+around, you know, we had been around, you
+
+210
+00:06:04,880 --> 00:06:06,220
+know, you know, the web going all the
+
+211
+00:06:06,220 --> 00:06:07,840
+way back and then, you know, particularly the,
+
+212
+00:06:07,900 --> 00:06:08,920
+you know, the kind of golden age of
+
+213
+00:06:08,920 --> 00:06:10,400
+blogging, you know, was kind of this kind
+
+214
+00:06:10,400 --> 00:06:11,720
+of very, you know, special time.
+
+215
+00:06:12,860 --> 00:06:14,940
+And, you know, you know, and blogging really,
+
+216
+00:06:15,120 --> 00:06:16,200
+you know, I think, you know, maybe gets
+
+217
+00:06:16,200 --> 00:06:18,080
+underestimated because maybe there was no single company
+
+218
+00:06:18,080 --> 00:06:19,240
+that kind of got full credit for it
+
+219
+00:06:19,240 --> 00:06:19,540
+or something.
+
+220
+00:06:19,540 --> 00:06:22,020
+But, you know, it really created the phenomenon
+
+221
+00:06:22,020 --> 00:06:24,080
+of blogging created an enormous amount of intellectual
+
+222
+00:06:24,080 --> 00:06:26,700
+content, you know, that basically was not going
+
+223
+00:06:26,700 --> 00:06:27,320
+to exist otherwise.
+
+224
+00:06:28,180 --> 00:06:29,700
+And then it just, you know, blogging kind
+
+225
+00:06:29,700 --> 00:06:31,680
+of just always had a series of problems
+
+226
+00:06:31,680 --> 00:06:33,320
+because there was no single company behind it.
+
+227
+00:06:33,400 --> 00:06:34,960
+But, you know, one of the problems was
+
+228
+00:06:34,960 --> 00:06:36,680
+bloggers just could it's very hard for bloggers
+
+229
+00:06:36,680 --> 00:06:37,720
+to make money. Right.
+
+230
+00:06:38,240 --> 00:06:40,240
+And so, you know, the Substack guys basically
+
+231
+00:06:40,240 --> 00:06:41,300
+said, well, we're, you know, we're going to
+
+232
+00:06:41,300 --> 00:06:42,440
+do that. But, you know, we solved the
+
+233
+00:06:42,440 --> 00:06:42,980
+economic model.
+
+234
+00:06:43,120 --> 00:06:44,380
+People are ready to pay now for content.
+
+235
+00:06:44,900 --> 00:06:45,800
+And this makes sense.
+
+236
+00:06:45,800 --> 00:06:47,500
+And then, you know, there was this chicken
+
+237
+00:06:47,500 --> 00:06:48,760
+and egg thing right up front, which was
+
+238
+00:06:48,760 --> 00:06:50,300
+like, well, you know, can you really see
+
+239
+00:06:50,300 --> 00:06:51,420
+that, you know, the Internet's a wash with
+
+240
+00:06:51,420 --> 00:06:51,800
+content.
+
+241
+00:06:52,020 --> 00:06:53,800
+People aren't paying for almost any of it.
+
+242
+00:06:53,960 --> 00:06:54,980
+Like, are they really going to, you know,
+
+243
+00:06:55,040 --> 00:06:55,960
+you have to kind of squint and kind
+
+244
+00:06:55,960 --> 00:06:57,460
+of say, OK, are people actually going to
+
+245
+00:06:57,460 --> 00:06:58,400
+pay for any of the stuff that they're
+
+246
+00:06:58,400 --> 00:06:58,800
+getting today?
+
+247
+00:06:58,940 --> 00:07:00,640
+And I think the thing that in that
+
+248
+00:07:00,640 --> 00:07:02,380
+case that we were that we had faith
+
+249
+00:07:02,380 --> 00:07:03,920
+in was basically this could be what we
+
+250
+00:07:03,920 --> 00:07:06,800
+call a supply driven market, which is, right,
+
+251
+00:07:06,880 --> 00:07:08,700
+if you provide the monetization capability,
+
+252
+00:07:09,360 --> 00:07:11,460
+then you're going to bring into existence writers
+
+253
+00:07:11,460 --> 00:07:12,820
+and content that don't exist today.
+
+254
+00:07:13,540 --> 00:07:15,160
+And that is the way to create new
+
+255
+00:07:15,160 --> 00:07:17,560
+demand that's not visible today. And then that
+
+256
+00:07:17,560 --> 00:07:19,020
+demand is going to come back around and
+
+257
+00:07:19,020 --> 00:07:20,280
+is going to incent more writers and more
+
+258
+00:07:20,280 --> 00:07:20,620
+content.
+
+259
+00:07:20,840 --> 00:07:22,400
+And so it was basically a bet that
+
+260
+00:07:22,400 --> 00:07:24,640
+there's like an entire generation of high quality
+
+261
+00:07:24,640 --> 00:07:27,120
+content that doesn't exist because the monetization mechanism
+
+262
+00:07:27,120 --> 00:07:27,620
+doesn't exist.
+
+263
+00:07:27,620 --> 00:07:29,700
+And that's, you know, that's certainly what Chris
+
+264
+00:07:29,700 --> 00:07:32,060
+and his partners believe. And I think that's
+
+265
+00:07:32,060 --> 00:07:33,200
+that's absolutely what's proven out.
+
+266
+00:07:33,340 --> 00:07:34,780
+And so, yeah, I think it's like a
+
+267
+00:07:34,780 --> 00:07:36,460
+great example of founders that like really see
+
+268
+00:07:36,460 --> 00:07:37,520
+a future that doesn't exist yet.
+
+269
+00:07:37,620 --> 00:07:40,180
+And it's obvious to them. And unfortunately, in
+
+270
+00:07:40,180 --> 00:07:41,600
+that case, they were able to, you know,
+
+271
+00:07:41,800 --> 00:07:42,320
+convince us.
+
+272
+00:07:43,300 --> 00:07:45,220
+Whenever we really screw up, it's because there's
+
+273
+00:07:45,220 --> 00:07:46,380
+a founder who can see the future and
+
+274
+00:07:46,380 --> 00:07:47,420
+they come and they sit in our office.
+
+275
+00:07:47,420 --> 00:07:48,520
+They tell us what the future is and
+
+276
+00:07:48,520 --> 00:07:51,060
+we say, yeah, I don't really buy it.
+
+277
+00:07:51,800 --> 00:07:52,120
+Right.
+
+278
+00:07:52,280 --> 00:07:53,700
+And then for the next 30 years, you
+
+279
+00:07:53,700 --> 00:07:54,840
+know, we have to read about the, you
+
+280
+00:07:54,840 --> 00:07:56,300
+know, glorious success of this thing as that
+
+281
+00:07:56,300 --> 00:07:57,140
+future actually develops.
+
+282
+00:07:57,260 --> 00:07:59,180
+And like that really sucks. And I don't
+
+283
+00:07:59,180 --> 00:07:59,980
+like to talk about those.
+
+284
+00:08:00,100 --> 00:08:01,640
+But I will say, you know, Substack is,
+
+285
+00:08:01,740 --> 00:08:03,360
+you know, maybe they're just really good at
+
+286
+00:08:03,360 --> 00:08:04,900
+sales, but they fully convinced us.
+
+287
+00:08:04,960 --> 00:08:06,640
+And I'm really thrilled that that's what's happening.
+
+288
+00:08:06,640 --> 00:08:09,360
+They were kind of ahead of the the
+
+289
+00:08:09,360 --> 00:08:11,500
+kind of change from old media to new
+
+290
+00:08:11,500 --> 00:08:14,120
+media in that, you know, as the brand
+
+291
+00:08:14,120 --> 00:08:17,140
+moved from The New York Times or The
+
+292
+00:08:17,140 --> 00:08:19,760
+Wall Street Journal to the actual writers themselves,
+
+293
+00:08:21,120 --> 00:08:23,520
+Substack was like a massive enabler for that.
+
+294
+00:08:23,760 --> 00:08:25,880
+And, you know, they created this thing which
+
+295
+00:08:25,880 --> 00:08:27,940
+they call the non-fungible writer, which is,
+
+296
+00:08:28,020 --> 00:08:29,260
+you know, like how many things in the
+
+297
+00:08:29,260 --> 00:08:31,420
+newspaper could anybody write?
+
+298
+00:08:31,420 --> 00:08:34,820
+And including AI, by the way. And, you
+
+299
+00:08:34,820 --> 00:08:37,440
+know, how much is like truly like interesting
+
+300
+00:08:37,440 --> 00:08:38,060
+and valuable.
+
+301
+00:08:38,420 --> 00:08:41,120
+And they really wanted all the truly interesting
+
+302
+00:08:41,120 --> 00:08:43,640
+and valuable things to be able to build
+
+303
+00:08:43,640 --> 00:08:45,380
+their people, to build their own brands and
+
+304
+00:08:45,380 --> 00:08:47,380
+their own businesses on Substack.
+
+305
+00:08:47,500 --> 00:08:49,800
+And that that would that that also turned
+
+306
+00:08:49,800 --> 00:08:50,680
+out to be very true.
+
+307
+00:08:51,520 --> 00:08:53,160
+Yeah. And that was where, you know, Hamish
+
+308
+00:08:53,160 --> 00:08:54,380
+in particular, right, turned out to be really
+
+309
+00:08:54,380 --> 00:08:56,040
+critical on their team, you know, and, you
+
+310
+00:08:56,040 --> 00:08:57,540
+know, he and I had a conversation early
+
+311
+00:08:57,540 --> 00:08:58,840
+on this where, you know, I was like,
+
+312
+00:08:58,880 --> 00:08:59,920
+well, you know, I don't know, are these
+
+313
+00:08:59,920 --> 00:09:01,160
+people ever going to leave their publications?
+
+314
+00:09:01,160 --> 00:09:02,680
+Are they ever going to actually write content
+
+315
+00:09:02,680 --> 00:09:04,480
+that's that, you know, like, you know, when
+
+316
+00:09:04,480 --> 00:09:06,120
+Substack was gearing up, it's when, in my
+
+317
+00:09:06,120 --> 00:09:07,260
+view, the press kind of became this kind
+
+318
+00:09:07,260 --> 00:09:08,580
+of extreme and negative monoculture.
+
+319
+00:09:09,220 --> 00:09:10,240
+And so I was like, all right, you've
+
+320
+00:09:10,240 --> 00:09:11,120
+got, you know, because he's like, you've got
+
+321
+00:09:11,120 --> 00:09:12,220
+all these writers kind of trapped at these
+
+322
+00:09:12,220 --> 00:09:12,500
+places.
+
+323
+00:09:12,540 --> 00:09:13,760
+And I'm like, well, are they really trapped?
+
+324
+00:09:13,880 --> 00:09:14,820
+Like, are they, you know, are they in
+
+325
+00:09:14,820 --> 00:09:16,140
+jail or have they built the jail? Like,
+
+326
+00:09:16,220 --> 00:09:18,500
+you know, like, and if they leave, are
+
+327
+00:09:18,500 --> 00:09:19,260
+they going to be any different?
+
+328
+00:09:19,260 --> 00:09:21,080
+Right. And he's like, look, if their only
+
+329
+00:09:21,080 --> 00:09:23,160
+option to basically put food on the table
+
+330
+00:09:23,160 --> 00:09:25,760
+is to work for a publication that basically,
+
+331
+00:09:25,760 --> 00:09:27,640
+you know, requires them to write a certain
+
+332
+00:09:27,640 --> 00:09:28,980
+way, then they're going to write that way,
+
+333
+00:09:29,060 --> 00:09:30,260
+you know, because they need to pay the
+
+334
+00:09:30,260 --> 00:09:30,500
+bills.
+
+335
+00:09:30,500 --> 00:09:32,200
+But he said, he basically said, I guarantee
+
+336
+00:09:32,200 --> 00:09:33,380
+you that there's a lot of these folks,
+
+337
+00:09:33,740 --> 00:09:35,140
+you know, where if they had an independent
+
+338
+00:09:35,140 --> 00:09:36,600
+path, they would take, you know, they would
+
+339
+00:09:36,600 --> 00:09:38,380
+be thrilled to be able to, you know,
+
+340
+00:09:38,460 --> 00:09:39,640
+maybe break themselves out of jail.
+
+341
+00:09:39,640 --> 00:09:41,400
+And they would be thrilled to, you know,
+
+342
+00:09:41,480 --> 00:09:43,040
+write about things, you know, from different angles
+
+343
+00:09:43,040 --> 00:09:45,340
+and have different tastes on things.
+
+344
+00:09:45,520 --> 00:09:46,900
+And, you know, you'd see this basically, you
+
+345
+00:09:46,900 --> 00:09:49,700
+know, this liberation phenomenon take place where you'd
+
+346
+00:09:49,700 --> 00:09:51,200
+have actually many different kinds of voices even
+
+347
+00:09:51,200 --> 00:09:52,660
+coming from people where you wouldn't expect it
+
+348
+00:09:52,660 --> 00:09:53,760
+based on the work that they did for,
+
+349
+00:09:53,780 --> 00:09:54,860
+you know, the New York Times or whoever.
+
+350
+00:09:55,080 --> 00:09:56,640
+And, of course, he was 100% right.
+
+351
+00:09:57,220 --> 00:09:59,520
+You can see a world where because it
+
+352
+00:09:59,520 --> 00:10:00,960
+attracts kind of all of the best writers
+
+353
+00:10:00,960 --> 00:10:02,280
+from all of these different places who can
+
+354
+00:10:02,280 --> 00:10:05,340
+build their own businesses, Substack becomes 10 times
+
+355
+00:10:05,340 --> 00:10:07,720
+larger than any of the media organizations that
+
+356
+00:10:07,720 --> 00:10:08,160
+are places.
+
+357
+00:10:08,160 --> 00:10:11,300
+I love the email that you sent to
+
+358
+00:10:11,300 --> 00:10:13,960
+Ali at Databricks, Ben, where you talk about
+
+359
+00:10:13,960 --> 00:10:15,420
+the fact that, you know, the business was
+
+360
+00:10:15,420 --> 00:10:16,100
+underselling itself.
+
+361
+00:10:16,100 --> 00:10:17,720
+He was underselling the business and it was
+
+362
+00:10:17,720 --> 00:10:19,000
+going to be 10 times bigger than Oracle.
+
+363
+00:10:19,200 --> 00:10:19,980
+So $2 trillion.
+
+364
+00:10:20,960 --> 00:10:21,180
+Yeah.
+
+365
+00:10:21,300 --> 00:10:22,780
+I want to understand like the mechanism of
+
+366
+00:10:22,780 --> 00:10:22,900
+that.
+
+367
+00:10:22,980 --> 00:10:25,180
+Like, do you think that happens every generation
+
+368
+00:10:25,180 --> 00:10:27,160
+that the new companies are 10 times bigger?
+
+369
+00:10:27,500 --> 00:10:28,620
+Why does that happen?
+
+370
+00:10:28,760 --> 00:10:29,560
+Is it just software?
+
+371
+00:10:31,140 --> 00:10:31,540
+Yeah.
+
+372
+00:10:31,660 --> 00:10:33,480
+So on that one, it was actually pretty
+
+373
+00:10:33,480 --> 00:10:36,740
+simple because if you compared the on-premise
+
+374
+00:10:36,740 --> 00:10:38,140
+software companies to the cloud,
+
+375
+00:10:38,140 --> 00:10:42,580
+software companies, so compare PeopleSoft to Workday or
+
+376
+00:10:42,580 --> 00:10:47,920
+compare Siebel Software to Salesforce, the cloud version
+
+377
+00:10:47,920 --> 00:10:49,220
+was just 10 times bigger.
+
+378
+00:10:49,680 --> 00:10:52,220
+And Oracle was kind of the on-premise
+
+379
+00:10:52,220 --> 00:10:53,260
+version of Databricks.
+
+380
+00:10:53,260 --> 00:10:55,160
+You know, kind of, you know, rough analog,
+
+381
+00:10:55,460 --> 00:10:56,280
+you know, things are different.
+
+382
+00:10:57,120 --> 00:11:00,420
+You know, data is bigger and so forth.
+
+383
+00:11:00,440 --> 00:11:02,820
+But if you look at like who is
+
+384
+00:11:02,820 --> 00:11:06,820
+going to be the data kind of provider
+
+385
+00:11:06,820 --> 00:11:09,720
+in the cloud, the provider of technology to
+
+386
+00:11:09,720 --> 00:11:12,140
+manage your data in the cloud, it was
+
+387
+00:11:12,140 --> 00:11:13,860
+going to, I mean, I was very confident
+
+388
+00:11:13,860 --> 00:11:14,860
+Databricks would win that.
+
+389
+00:11:14,860 --> 00:11:16,520
+And so then if you say, well, what's
+
+390
+00:11:16,520 --> 00:11:17,520
+the market size of that?
+
+391
+00:11:18,580 --> 00:11:20,380
+And by the way, you know, when I
+
+392
+00:11:20,380 --> 00:11:23,240
+said that AI wasn't as big as it
+
+393
+00:11:23,240 --> 00:11:25,520
+is, so I think that that's helping my
+
+394
+00:11:25,520 --> 00:11:25,900
+prediction.
+
+395
+00:11:27,340 --> 00:11:28,980
+But, you know, like it was just clearly
+
+396
+00:11:28,980 --> 00:11:29,980
+going to be 10 times bigger.
+
+397
+00:11:30,320 --> 00:11:32,520
+And I was like, Ali, why are you
+
+398
+00:11:32,520 --> 00:11:34,720
+trying to convince this candidate that you're going
+
+399
+00:11:34,720 --> 00:11:35,500
+to be worth $10 billion?
+
+400
+00:11:36,400 --> 00:11:38,760
+Like that's the, what are you even talking
+
+401
+00:11:38,760 --> 00:11:39,000
+about?
+
+402
+00:11:39,640 --> 00:11:41,360
+But, you know, Ali is super paranoid.
+
+403
+00:11:43,000 --> 00:11:44,560
+So, you know, God bless him.
+
+404
+00:11:45,720 --> 00:11:47,500
+So, you know, those are kinds of things.
+
+405
+00:11:47,600 --> 00:11:49,360
+And like, you have to know your entrepreneur.
+
+406
+00:11:49,360 --> 00:11:52,580
+I mean, I think this is, you know,
+
+407
+00:11:52,620 --> 00:11:54,180
+one of the things that I think Mark
+
+408
+00:11:54,180 --> 00:11:58,180
+does very well is like, you know, that
+
+409
+00:11:58,180 --> 00:12:01,520
+advice isn't advice you give to every entrepreneur.
+
+410
+00:12:01,820 --> 00:12:03,740
+It's, you know, it was very worked well
+
+411
+00:12:03,740 --> 00:12:04,780
+specifically for him.
+
+412
+00:12:04,780 --> 00:12:09,300
+And I think that, you know, that's always
+
+413
+00:12:09,300 --> 00:12:09,820
+the case.
+
+414
+00:12:09,820 --> 00:12:13,660
+Like it's a very psychological game running a
+
+415
+00:12:13,660 --> 00:12:14,040
+company.
+
+416
+00:12:14,220 --> 00:12:15,860
+And so you have to kind of tap
+
+417
+00:12:15,860 --> 00:12:20,980
+in to that person's particular psychology to kind
+
+418
+00:12:20,980 --> 00:12:23,480
+of change the trajectory of what the company
+
+419
+00:12:23,480 --> 00:12:24,880
+is doing into the right direction.
+
+420
+00:12:25,540 --> 00:12:26,820
+And I'd also add, you know, back to
+
+421
+00:12:26,820 --> 00:12:28,080
+you on the Substack point, like I think
+
+422
+00:12:28,080 --> 00:12:29,760
+Substack could be like a thousand times the
+
+423
+00:12:29,760 --> 00:12:31,980
+size of the existing like content industry, whatever
+
+424
+00:12:31,980 --> 00:12:33,140
+you want to call it, media news industry,
+
+425
+00:12:33,360 --> 00:12:35,380
+the collective, you know, kind of value.
+
+426
+00:12:35,800 --> 00:12:37,900
+And the reason is because, and, you know,
+
+427
+00:12:37,940 --> 00:12:38,840
+you're an example of this yourself.
+
+428
+00:12:39,720 --> 00:12:41,220
+So, you know, my whole life, so I'm
+
+429
+00:12:41,220 --> 00:12:42,440
+like, you know, mid fifties.
+
+430
+00:12:42,640 --> 00:12:43,880
+And so like I grew up, you know,
+
+431
+00:12:43,920 --> 00:12:45,680
+when I was a kid and teenager, you
+
+432
+00:12:45,680 --> 00:12:47,380
+know, the moral panic of the era was
+
+433
+00:12:47,380 --> 00:12:47,720
+television.
+
+434
+00:12:47,980 --> 00:12:49,540
+And it was just this like endless litany
+
+435
+00:12:49,540 --> 00:12:51,440
+of sort of social criticism, you know, from
+
+436
+00:12:51,440 --> 00:12:53,160
+kind of, you know, fancy people basically saying,
+
+437
+00:12:53,280 --> 00:12:55,120
+you know, consumers are, you know, basically normal
+
+438
+00:12:55,120 --> 00:12:55,780
+people are idiots.
+
+439
+00:12:55,980 --> 00:12:56,840
+They just want to sit in front of
+
+440
+00:12:56,840 --> 00:12:57,280
+the boob tube.
+
+441
+00:12:57,420 --> 00:12:58,700
+They just want to like be couch potatoes.
+
+442
+00:12:59,300 --> 00:13:01,220
+You know, the line everybody used at the
+
+443
+00:13:01,220 --> 00:13:02,740
+time was Americans watch six hours of TV
+
+444
+00:13:02,740 --> 00:13:03,080
+a day.
+
+445
+00:13:03,080 --> 00:13:04,360
+And then you turned on TV and you
+
+446
+00:13:04,360 --> 00:13:06,140
+just saw this, they have this term, the
+
+447
+00:13:06,140 --> 00:13:07,740
+vast wasteland of, you know, game shows and
+
+448
+00:13:07,740 --> 00:13:08,000
+bullshit.
+
+449
+00:13:08,940 --> 00:13:10,580
+And it was just like this, like very
+
+450
+00:13:10,580 --> 00:13:12,400
+dystopian kind of thing of just like people
+
+451
+00:13:12,400 --> 00:13:13,100
+are just morons.
+
+452
+00:13:13,260 --> 00:13:15,000
+And then, you know, the internet version of
+
+453
+00:13:15,000 --> 00:13:17,800
+that is, of course, you know, that kind
+
+454
+00:13:17,800 --> 00:13:19,620
+of moral panic is transferred straight over onto
+
+455
+00:13:19,620 --> 00:13:20,540
+the internet in the form of, you know,
+
+456
+00:13:20,640 --> 00:13:22,140
+of course, you know, short form videos, TikTok.
+
+457
+00:13:22,980 --> 00:13:24,560
+You know, people just want to watch, you
+
+458
+00:13:24,560 --> 00:13:26,040
+know, these stupid short form videos.
+
+459
+00:13:26,180 --> 00:13:27,680
+And it's just playing the piano is the
+
+460
+00:13:27,680 --> 00:13:28,400
+original one, right?
+
+461
+00:13:29,020 --> 00:13:29,740
+Yeah, exactly.
+
+462
+00:13:30,040 --> 00:13:30,620
+Cat videos.
+
+463
+00:13:30,860 --> 00:13:32,360
+By the way, I'm an aficionado of cat
+
+464
+00:13:32,360 --> 00:13:32,600
+videos.
+
+465
+00:13:32,840 --> 00:13:33,860
+I do not look down on cat videos
+
+466
+00:13:33,860 --> 00:13:34,280
+whatsoever.
+
+467
+00:13:34,640 --> 00:13:36,320
+AI cat videos are my current favorite genre
+
+468
+00:13:36,320 --> 00:13:37,660
+of any form of entertainment.
+
+469
+00:13:37,900 --> 00:13:38,440
+So I will.
+
+470
+00:13:38,440 --> 00:13:40,320
+The AI cat videos are very good.
+
+471
+00:13:41,020 --> 00:13:41,380
+I will.
+
+472
+00:13:41,480 --> 00:13:41,700
+I will.
+
+473
+00:13:41,800 --> 00:13:42,540
+Yes, Ben can confirm.
+
+474
+00:13:42,940 --> 00:13:44,020
+I send her out a lot of AI
+
+475
+00:13:44,020 --> 00:13:44,440
+cat videos.
+
+476
+00:13:44,580 --> 00:13:46,300
+However, there is an enormous market for just
+
+477
+00:13:46,300 --> 00:13:48,120
+like mass media, just for like whatever, you
+
+478
+00:13:48,120 --> 00:13:49,840
+know, for whatever game shows or sitcoms or,
+
+479
+00:13:49,860 --> 00:13:51,800
+you know, soap operas or their modern versions
+
+480
+00:13:51,800 --> 00:13:52,140
+of those.
+
+481
+00:13:52,140 --> 00:13:54,420
+And there's a giant, you know, mass media
+
+482
+00:13:54,420 --> 00:13:56,680
+market for cat videos.
+
+483
+00:13:56,840 --> 00:13:59,120
+But this goes back to this idea of
+
+484
+00:13:59,120 --> 00:13:59,860
+supply driven market.
+
+485
+00:14:00,040 --> 00:14:01,980
+There's also, I think, just like enormous latent
+
+486
+00:14:01,980 --> 00:14:05,760
+demand for actual smart, high quality stuff and
+
+487
+00:14:05,760 --> 00:14:08,540
+particularly in media and in every kind of
+
+488
+00:14:08,540 --> 00:14:08,760
+media.
+
+489
+00:14:08,960 --> 00:14:11,560
+And I think the issue is not lack
+
+490
+00:14:11,560 --> 00:14:11,820
+of demand.
+
+491
+00:14:11,900 --> 00:14:12,920
+I think the issue is lack of supply.
+
+492
+00:14:14,360 --> 00:14:16,160
+Because like this goes back to, you know,
+
+493
+00:14:16,220 --> 00:14:17,780
+kind of consumer marketing 101, which is consumer
+
+494
+00:14:17,780 --> 00:14:19,280
+people don't know what they want until it's
+
+495
+00:14:19,280 --> 00:14:19,680
+given to them.
+
+496
+00:14:19,820 --> 00:14:19,880
+Right.
+
+497
+00:14:20,400 --> 00:14:21,900
+You know, nobody ever asked for a Macintosh.
+
+498
+00:14:22,020 --> 00:14:23,040
+Nobody ever asked for an iPhone.
+
+499
+00:14:23,220 --> 00:14:24,280
+Like, you know, these things had to be
+
+500
+00:14:24,280 --> 00:14:26,020
+designed and built, you know, provided on the
+
+501
+00:14:26,020 --> 00:14:27,760
+supply side before the demand materialized.
+
+502
+00:14:28,200 --> 00:14:29,380
+And then the demand, of course, turned out
+
+503
+00:14:29,380 --> 00:14:30,700
+to be, you know, far higher than anybody
+
+504
+00:14:30,700 --> 00:14:31,280
+expected.
+
+505
+00:14:31,620 --> 00:14:33,460
+And I think that that same thing is
+
+506
+00:14:33,460 --> 00:14:34,260
+exactly true of media.
+
+507
+00:14:34,420 --> 00:14:36,720
+I think a great early existence proof of
+
+508
+00:14:36,720 --> 00:14:38,580
+this was the success of long form podcasting,
+
+509
+00:14:38,660 --> 00:14:40,900
+you know, which is I remember my early
+
+510
+00:14:40,900 --> 00:14:42,360
+conversations with some of the early long form
+
+511
+00:14:42,360 --> 00:14:42,840
+podcasters.
+
+512
+00:14:42,840 --> 00:14:44,300
+And they're like, it's the strangest thing we've
+
+513
+00:14:44,300 --> 00:14:46,320
+ever seen because everybody tells us that the
+
+514
+00:14:46,320 --> 00:14:48,240
+consumers have short attention spans.
+
+515
+00:14:48,420 --> 00:14:50,440
+But, you know, people are literally watching three
+
+516
+00:14:50,440 --> 00:14:52,020
+hour podcasts and we get the analytics and
+
+517
+00:14:52,020 --> 00:14:53,020
+people are watching all the way to the
+
+518
+00:14:53,020 --> 00:14:53,960
+end of the three hour podcast.
+
+519
+00:14:54,500 --> 00:14:55,920
+And so I view this very much as
+
+520
+00:14:55,920 --> 00:14:57,240
+like, you know, this is one of these
+
+521
+00:14:57,240 --> 00:14:58,900
+classic markets that's a barbell, which is, yeah,
+
+522
+00:14:58,960 --> 00:15:00,400
+you have a certain amount of whatever, just,
+
+523
+00:15:00,500 --> 00:15:02,640
+you know, whatever, you know, mainstream, you know,
+
+524
+00:15:02,760 --> 00:15:04,920
+sort of mainstream, whatever, you know, filler or
+
+525
+00:15:04,920 --> 00:15:05,820
+whatever on the one side.
+
+526
+00:15:05,820 --> 00:15:08,540
+But you have this massive sort of untapped
+
+527
+00:15:08,540 --> 00:15:10,820
+market for high quality content and basically every
+
+528
+00:15:10,820 --> 00:15:11,160
+domain.
+
+529
+00:15:11,780 --> 00:15:15,580
+And they're just, you know, technological transformation, the
+
+530
+00:15:15,580 --> 00:15:17,900
+existing structure of the media company was a
+
+531
+00:15:17,900 --> 00:15:19,340
+structure that was designed for a world of
+
+532
+00:15:19,340 --> 00:15:19,980
+centralized media.
+
+533
+00:15:20,620 --> 00:15:22,100
+You need, you need a new structure today.
+
+534
+00:15:22,240 --> 00:15:23,260
+And, you know, of course, that's, you know,
+
+535
+00:15:23,300 --> 00:15:24,460
+that's why we're so high on Substack.
+
+536
+00:15:24,560 --> 00:15:26,400
+But yeah, when we look at Substack, it's
+
+537
+00:15:26,400 --> 00:15:27,560
+the exact same thing that you were just
+
+538
+00:15:27,560 --> 00:15:28,820
+talking about with Databricks, which is like, wow,
+
+539
+00:15:28,920 --> 00:15:30,960
+this thing could be orders of magnitude,
+
+540
+00:15:32,140 --> 00:15:36,040
+orders of magnitude multiples larger, you know, than
+
+541
+00:15:36,040 --> 00:15:36,940
+anything we've seen so far.
+
+542
+00:15:36,940 --> 00:15:38,580
+And, you know, frankly, I think we're starting
+
+543
+00:15:38,580 --> 00:15:41,440
+to see that implicit in kind of the
+
+544
+00:15:41,440 --> 00:15:44,480
+fund sizes that you raise is some kind
+
+545
+00:15:44,480 --> 00:15:46,080
+of view on how big the future is
+
+546
+00:15:46,080 --> 00:15:46,420
+going to be
+
+547
+00:15:46,420 --> 00:15:48,020
+or how much of the world technology is
+
+548
+00:15:48,020 --> 00:15:50,160
+going to eat over the next decade or
+
+549
+00:15:50,160 --> 00:15:50,400
+so.
+
+550
+00:15:50,700 --> 00:15:53,100
+What does 15 billion say about kind of
+
+551
+00:15:53,100 --> 00:15:54,740
+what the world looks like in a decade
+
+552
+00:15:54,740 --> 00:15:56,540
+and how many substacks there are that are
+
+553
+00:15:56,540 --> 00:15:58,360
+much bigger than whoever they're replacing?
+
+554
+00:15:59,040 --> 00:16:03,560
+Well, I think that we reinvented the computer.
+
+555
+00:16:04,480 --> 00:16:09,440
+So and the new computer is far better
+
+556
+00:16:09,440 --> 00:16:11,160
+than the one that we have been kind
+
+557
+00:16:11,160 --> 00:16:13,620
+of building on for the last 50 or
+
+558
+00:16:13,620 --> 00:16:14,100
+so years.
+
+559
+00:16:15,280 --> 00:16:18,180
+Well, really longer than that, but 50 in
+
+560
+00:16:18,180 --> 00:16:22,600
+earnest. And, you know, so there is that
+
+561
+00:16:22,600 --> 00:16:23,700
+I mean, we talk about this all the
+
+562
+00:16:23,700 --> 00:16:24,240
+time in the firm.
+
+563
+00:16:24,240 --> 00:16:25,820
+And there's not a problem that we can
+
+564
+00:16:25,820 --> 00:16:29,220
+think of that you can't that you won't
+
+565
+00:16:29,220 --> 00:16:30,420
+be able to solve with A.I.
+
+566
+00:16:30,540 --> 00:16:32,600
+So like almost every problem in the world
+
+567
+00:16:32,600 --> 00:16:37,520
+and you, you know, from cancer to transportation,
+
+568
+00:16:37,580 --> 00:16:40,700
+transportation to massive fraud in the U.S.,
+
+569
+00:16:40,700 --> 00:16:42,420
+you just name a problem in the headlines.
+
+570
+00:16:42,660 --> 00:16:45,060
+And we're like, oh, yeah, we can solve
+
+571
+00:16:45,060 --> 00:16:49,660
+that. And so it's kind of the reinvention
+
+572
+00:16:49,660 --> 00:16:50,240
+of everything.
+
+573
+00:16:50,240 --> 00:16:52,500
+So like all our our entire way of
+
+574
+00:16:52,500 --> 00:16:56,240
+doing everything as humans, we think is going
+
+575
+00:16:56,240 --> 00:16:56,720
+to change.
+
+576
+00:16:57,040 --> 00:17:00,500
+And so, you know, I would view it
+
+577
+00:17:00,500 --> 00:17:02,580
+as 15 billion to start for us because
+
+578
+00:17:02,580 --> 00:17:06,220
+there's so much to do and there's so
+
+579
+00:17:06,220 --> 00:17:07,500
+many things that are going to get built.
+
+580
+00:17:07,500 --> 00:17:08,720
+And, you know, like some of it is
+
+581
+00:17:08,720 --> 00:17:10,920
+just timing with the entrepreneurs, but we think
+
+582
+00:17:10,920 --> 00:17:12,900
+the number of entrepreneurs is going to multiply
+
+583
+00:17:12,900 --> 00:17:17,540
+as well, because the kind of the the
+
+584
+00:17:17,540 --> 00:17:20,500
+ease of going from an idea to a
+
+585
+00:17:20,500 --> 00:17:25,740
+really fantastic solution and a fantastic product is
+
+586
+00:17:25,740 --> 00:17:27,960
+just going to be so much simpler.
+
+587
+00:17:27,960 --> 00:17:29,280
+Because, you know, one of the things that
+
+588
+00:17:29,280 --> 00:17:30,780
+A.I. is best at, of course, is
+
+589
+00:17:30,780 --> 00:17:35,160
+kind of building stuff. And and so, yeah,
+
+590
+00:17:35,240 --> 00:17:38,740
+it's just a very unique time in kind
+
+591
+00:17:38,740 --> 00:17:39,680
+of the history of the world.
+
+592
+00:17:40,460 --> 00:17:42,380
+Yeah. Yeah. The audio body experience I have
+
+593
+00:17:42,380 --> 00:17:43,360
+with the A.I. on a regular basis
+
+594
+00:17:43,360 --> 00:17:44,720
+now is, you know, it's like, OK, I
+
+595
+00:17:44,720 --> 00:17:45,760
+think about the way Ben does and then
+
+596
+00:17:45,760 --> 00:17:46,920
+I'm like, all right, how might you apply
+
+597
+00:17:46,920 --> 00:17:47,540
+A.I. to solve?
+
+598
+00:17:47,640 --> 00:17:49,320
+Yeah. For example, the fraud scandal, you know,
+
+599
+00:17:49,360 --> 00:17:50,420
+the kind of fraud that we're seeing play
+
+600
+00:17:50,420 --> 00:17:53,080
+out or, you know, any anything like that.
+
+601
+00:17:53,200 --> 00:17:54,680
+And it's like, oh, OK, I need to
+
+602
+00:17:54,680 --> 00:17:55,920
+think and think about how to how to
+
+603
+00:17:55,920 --> 00:17:56,940
+have A.I. solve this. And I'm like,
+
+604
+00:17:57,020 --> 00:17:57,900
+oh, wait a minute. Why don't I ask
+
+605
+00:17:57,900 --> 00:17:58,540
+the A.I.?
+
+606
+00:17:58,540 --> 00:18:01,840
+Yeah. Right. And then I go in there
+
+607
+00:18:01,840 --> 00:18:03,460
+and I'm like, you know, how should I
+
+608
+00:18:03,460 --> 00:18:03,720
+do this?
+
+609
+00:18:04,180 --> 00:18:05,520
+And it's like, oh, well, here it's obvious
+
+610
+00:18:05,520 --> 00:18:06,080
+how you would do it.
+
+611
+00:18:06,120 --> 00:18:07,240
+And here's, you know, the 18 steps that
+
+612
+00:18:07,240 --> 00:18:07,620
+you would take.
+
+613
+00:18:08,600 --> 00:18:09,720
+And then I tell it, well, you know,
+
+614
+00:18:09,820 --> 00:18:11,120
+OK, like, you know, interview me, you know,
+
+615
+00:18:11,220 --> 00:18:12,860
+interview me on all the open questions in
+
+616
+00:18:12,860 --> 00:18:13,940
+the topic, you know, to get my thoughts
+
+617
+00:18:13,940 --> 00:18:14,220
+on them.
+
+618
+00:18:14,300 --> 00:18:15,520
+And then it starts, you know, it starts
+
+619
+00:18:15,520 --> 00:18:16,940
+interrogating me. Right.
+
+620
+00:18:17,040 --> 00:18:18,120
+And then I'm like, OK, now give me
+
+621
+00:18:18,120 --> 00:18:20,080
+your point. And so it's just like, you
+
+622
+00:18:20,080 --> 00:18:21,620
+know, as you know, like if you had
+
+623
+00:18:21,620 --> 00:18:22,680
+tried to do that with a normal computer
+
+624
+00:18:22,680 --> 00:18:23,840
+in the old days, it just like stare
+
+625
+00:18:23,840 --> 00:18:24,040
+at you.
+
+626
+00:18:24,520 --> 00:18:28,700
+Right. So like this is really, really, really
+
+627
+00:18:28,700 --> 00:18:29,000
+different.
+
+628
+00:18:29,640 --> 00:18:31,160
+And then, you know, I think the venture
+
+629
+00:18:31,160 --> 00:18:32,960
+lens I would put on this is, you
+
+630
+00:18:32,960 --> 00:18:34,280
+know, in terms of the mechanics of venture
+
+631
+00:18:34,280 --> 00:18:36,840
+capital, you know, the sort of classic, you
+
+632
+00:18:36,840 --> 00:18:38,900
+know, venture capital triangle is team, product and
+
+633
+00:18:38,900 --> 00:18:39,160
+market.
+
+634
+00:18:39,420 --> 00:18:40,920
+And you're always trying to kind of evaluate
+
+635
+00:18:40,920 --> 00:18:41,520
+all three of those.
+
+636
+00:18:41,660 --> 00:18:42,900
+And people have always had, you know, different
+
+637
+00:18:42,900 --> 00:18:44,340
+theories over the years of which of those
+
+638
+00:18:44,340 --> 00:18:45,500
+are more important than the others and how
+
+639
+00:18:45,500 --> 00:18:46,660
+they how they interact.
+
+640
+00:18:47,180 --> 00:18:50,980
+But the thing that basically every investor, public
+
+641
+00:18:50,980 --> 00:18:53,200
+market investors, private investors, the thing that we're
+
+642
+00:18:53,200 --> 00:18:55,020
+all trained to do is basically market sizing.
+
+643
+00:18:55,380 --> 00:18:57,320
+Like, you know, we're, you know, we're trained
+
+644
+00:18:57,320 --> 00:18:58,200
+to do technology analysis.
+
+645
+00:18:58,380 --> 00:18:59,520
+We're trained to do like, you know, background
+
+646
+00:18:59,520 --> 00:19:00,140
+checks on people.
+
+647
+00:19:00,240 --> 00:19:01,640
+And then we're trained to do market sizing.
+
+648
+00:19:01,920 --> 00:19:03,180
+Like, you know, OK, how big is this
+
+649
+00:19:03,180 --> 00:19:03,420
+market?
+
+650
+00:19:03,540 --> 00:19:05,880
+Because, you know, the classic adage, right, is
+
+651
+00:19:05,880 --> 00:19:06,960
+if you if you put a huge amount
+
+652
+00:19:06,960 --> 00:19:08,200
+of effort into going after a small market,
+
+653
+00:19:08,300 --> 00:19:09,140
+you still get a small outcome.
+
+654
+00:19:10,320 --> 00:19:12,260
+But there's a presumption in there, which is
+
+655
+00:19:12,260 --> 00:19:15,080
+that you can actually predict market sizes on
+
+656
+00:19:15,080 --> 00:19:15,400
+these things.
+
+657
+00:19:15,780 --> 00:19:17,940
+And the problem with that, again, is this
+
+658
+00:19:17,940 --> 00:19:19,420
+sort of this presumption that you can predict
+
+659
+00:19:19,420 --> 00:19:21,240
+market sizes based on the dynamics that exist
+
+660
+00:19:21,240 --> 00:19:21,960
+in the market today.
+
+661
+00:19:23,140 --> 00:19:25,000
+But if there's a fundamental change on the
+
+662
+00:19:25,000 --> 00:19:26,820
+supply side, if there's if there's a fundamental
+
+663
+00:19:26,820 --> 00:19:29,180
+breakthrough, a fundamental capability that doesn't exist yet,
+
+664
+00:19:29,520 --> 00:19:31,940
+you're not going to be able to accurately
+
+665
+00:19:31,940 --> 00:19:33,680
+model the market size because you can't you
+
+666
+00:19:33,680 --> 00:19:34,400
+can't see it yet.
+
+667
+00:19:34,400 --> 00:19:36,320
+Like, you've changed one of the major variables
+
+668
+00:19:36,320 --> 00:19:37,460
+and you can't do that.
+
+669
+00:19:37,900 --> 00:19:39,020
+And, you know, and then you could call
+
+670
+00:19:39,020 --> 00:19:40,000
+that the leap of faith or whatever.
+
+671
+00:19:40,120 --> 00:19:41,280
+But it's like, OK, if you if you
+
+672
+00:19:41,280 --> 00:19:42,600
+make the change in the supply side, then
+
+673
+00:19:42,600 --> 00:19:43,840
+all of a sudden the market gets ten
+
+674
+00:19:43,840 --> 00:19:45,040
+or a hundred or a thousand times larger.
+
+675
+00:19:45,740 --> 00:19:48,020
+Like, you can almost never validate that with
+
+676
+00:19:48,020 --> 00:19:49,240
+math at the time of the investment.
+
+677
+00:19:49,300 --> 00:19:52,040
+But that's the thing that makes the outperformers,
+
+678
+00:19:52,080 --> 00:19:52,880
+you know, really go.
+
+679
+00:19:53,820 --> 00:19:55,620
+And I just I just think like as
+
+680
+00:19:55,620 --> 00:19:56,620
+Ben and I kind of go through our
+
+681
+00:19:56,620 --> 00:19:58,340
+careers, we just see more and more examples
+
+682
+00:19:58,340 --> 00:19:59,980
+where the mistake that we or others make
+
+683
+00:19:59,980 --> 00:20:01,900
+is, oh, this must be, you know, the
+
+684
+00:20:01,900 --> 00:20:03,100
+market for Uber and Lyft must be the
+
+685
+00:20:03,100 --> 00:20:04,000
+market for taxi cabs.
+
+686
+00:20:04,400 --> 00:20:06,440
+Right. Or, you know, the market. Yeah. Or
+
+687
+00:20:06,440 --> 00:20:08,200
+the market for cloud software must be the
+
+688
+00:20:08,200 --> 00:20:10,540
+same as the market for on prem software.
+
+689
+00:20:10,720 --> 00:20:10,800
+Right.
+
+690
+00:20:11,560 --> 00:20:14,180
+Or the market for GPUs must be the
+
+691
+00:20:14,180 --> 00:20:15,840
+market for people who like to play games.
+
+692
+00:20:16,740 --> 00:20:19,240
+Yes, exactly. And we just keep seeing example
+
+693
+00:20:19,240 --> 00:20:22,340
+after example after example where the significant enough
+
+694
+00:20:22,340 --> 00:20:24,500
+technology change, product change on the supply side
+
+695
+00:20:24,500 --> 00:20:25,740
+unlocks much larger markets.
+
+696
+00:20:25,740 --> 00:20:27,600
+And I think that's going to be I
+
+697
+00:20:27,600 --> 00:20:28,900
+mean, I think, frankly, that's going to be
+
+698
+00:20:28,900 --> 00:20:30,840
+like the single like dominant trend in investing
+
+699
+00:20:30,840 --> 00:20:31,820
+for like the next 30 years.
+
+700
+00:20:32,020 --> 00:20:33,540
+I think that's just going to like telescope
+
+701
+00:20:33,540 --> 00:20:33,880
+way out.
+
+702
+00:20:34,040 --> 00:20:35,860
+The I think is so interesting, right, because
+
+703
+00:20:35,860 --> 00:20:38,280
+from a technology perspective, it feels like you
+
+704
+00:20:38,280 --> 00:20:40,160
+can build products pretty immediately that are going
+
+705
+00:20:40,160 --> 00:20:40,460
+to win.
+
+706
+00:20:41,080 --> 00:20:43,040
+And then A16Z starts to make a lot
+
+707
+00:20:43,040 --> 00:20:44,400
+more sense in that context where it's like
+
+708
+00:20:44,400 --> 00:20:45,460
+all of these other things.
+
+709
+00:20:45,660 --> 00:20:46,940
+It's how do you do go to market?
+
+710
+00:20:47,160 --> 00:20:48,400
+How do you do policy? Like, how do
+
+711
+00:20:48,400 --> 00:20:50,260
+you set the conditions for the actual best
+
+712
+00:20:50,260 --> 00:20:52,760
+technology to win as quickly as possible?
+
+713
+00:20:53,040 --> 00:20:54,200
+Like, how do you think about all the
+
+714
+00:20:54,200 --> 00:20:55,540
+different things that you do there? And is
+
+715
+00:20:55,540 --> 00:20:56,640
+that the right way to think about it?
+
+716
+00:20:56,740 --> 00:20:58,760
+Like the best technology should win and the
+
+717
+00:20:58,760 --> 00:21:00,260
+platform is there to make sure that that
+
+718
+00:21:00,260 --> 00:21:00,620
+happens?
+
+719
+00:21:02,040 --> 00:21:03,520
+You know, the way we always thought about
+
+720
+00:21:03,520 --> 00:21:08,280
+the firm was what can a partner do
+
+721
+00:21:08,280 --> 00:21:12,260
+for an entrepreneur that will not only help
+
+722
+00:21:12,260 --> 00:21:13,400
+them ensure their success,
+
+723
+00:21:13,460 --> 00:21:15,960
+but help them kind of build the company
+
+724
+00:21:15,960 --> 00:21:17,180
+they want to build and the way they
+
+725
+00:21:17,180 --> 00:21:18,380
+want to build it with the people they
+
+726
+00:21:18,380 --> 00:21:21,240
+want to build it with and the culture
+
+727
+00:21:21,240 --> 00:21:22,740
+that they are proud of.
+
+728
+00:21:22,740 --> 00:21:26,580
+And to do that, there's many, many pieces.
+
+729
+00:21:26,900 --> 00:21:28,460
+And a lot of it, you know, some
+
+730
+00:21:28,460 --> 00:21:30,000
+of it is just like very fundamental.
+
+731
+00:21:30,200 --> 00:21:32,560
+Like, can you do your business in the
+
+732
+00:21:32,560 --> 00:21:34,680
+United States of America? Can you do it
+
+733
+00:21:34,680 --> 00:21:35,120
+in the world?
+
+734
+00:21:35,240 --> 00:21:37,600
+And so that's where the policy comes in.
+
+735
+00:21:37,720 --> 00:21:39,280
+It's just like a very basic question.
+
+736
+00:21:40,000 --> 00:21:42,400
+And look, governments have a huge interest in
+
+737
+00:21:42,400 --> 00:21:45,680
+technology these days, so like it's a necessary
+
+738
+00:21:45,680 --> 00:21:46,100
+one.
+
+739
+00:21:46,540 --> 00:21:48,760
+A lot of the other things come down
+
+740
+00:21:48,760 --> 00:21:51,160
+to, you know, how do you go from
+
+741
+00:21:51,160 --> 00:21:53,880
+being an inventor to being a competent CEO?
+
+742
+00:21:53,880 --> 00:21:58,760
+And that really is a confidence game, for
+
+743
+00:21:58,760 --> 00:21:59,920
+lack of a better word.
+
+744
+00:22:00,040 --> 00:22:02,020
+And that, you know, it's very difficult to
+
+745
+00:22:02,020 --> 00:22:03,860
+run an organization when you don't know what
+
+746
+00:22:03,860 --> 00:22:06,680
+you're doing, which nobody does when they're an
+
+747
+00:22:06,680 --> 00:22:07,040
+inventor.
+
+748
+00:22:07,040 --> 00:22:09,700
+And you get tremendous amount of advice and
+
+749
+00:22:09,700 --> 00:22:14,480
+advice that's often extremely bad and almost the
+
+750
+00:22:14,480 --> 00:22:16,000
+opposite of what you should be doing.
+
+751
+00:22:16,720 --> 00:22:18,600
+And there are very few like the people
+
+752
+00:22:18,600 --> 00:22:21,140
+who've actually built things don't have time to
+
+753
+00:22:21,140 --> 00:22:21,620
+talk to.
+
+754
+00:22:22,200 --> 00:22:24,340
+They're often away building things. So you get
+
+755
+00:22:24,340 --> 00:22:27,440
+these like advisors and, you know, Silicon Valley
+
+756
+00:22:27,440 --> 00:22:30,260
+people who tell you how to run your
+
+757
+00:22:30,260 --> 00:22:31,900
+company, who to hire, this and that and
+
+758
+00:22:31,900 --> 00:22:32,220
+the other.
+
+759
+00:22:32,220 --> 00:22:34,160
+And then those things turn out to be
+
+760
+00:22:34,160 --> 00:22:36,100
+wrong and you get to this confidence spiral.
+
+761
+00:22:36,600 --> 00:22:38,560
+And so we, you know, the whole firm
+
+762
+00:22:38,560 --> 00:22:39,880
+is built to put you in a kind
+
+763
+00:22:39,880 --> 00:22:42,240
+of a virtuous confidence cycle as opposed to
+
+764
+00:22:42,240 --> 00:22:43,560
+a vicious confidence cycle.
+
+765
+00:22:44,020 --> 00:22:47,200
+And that means like, oh, I need to
+
+766
+00:22:47,200 --> 00:22:49,580
+call somebody who's hard to get to like
+
+767
+00:22:49,580 --> 00:22:52,600
+an important CEO or like, you know, I've
+
+768
+00:22:52,600 --> 00:22:54,700
+got to recruit a top end engineer or
+
+769
+00:22:54,700 --> 00:22:57,360
+I have to figure out how to market
+
+770
+00:22:57,360 --> 00:22:59,600
+my product or I have to get to
+
+771
+00:22:59,600 --> 00:23:01,500
+somebody important in the government.
+
+772
+00:23:02,380 --> 00:23:05,360
+If I can do that, my confidence builds.
+
+773
+00:23:05,580 --> 00:23:07,320
+If I can't do that, my confidence sinks.
+
+774
+00:23:07,600 --> 00:23:10,000
+And so then, you know, once you're confident,
+
+775
+00:23:10,040 --> 00:23:11,540
+you can make decisions faster.
+
+776
+00:23:11,540 --> 00:23:14,280
+You can, you know, build the company more
+
+777
+00:23:14,280 --> 00:23:16,860
+effectively. You can go for what you actually
+
+778
+00:23:16,860 --> 00:23:17,160
+want.
+
+779
+00:23:17,160 --> 00:23:19,000
+You can have confidence that, OK, what I
+
+780
+00:23:19,000 --> 00:23:20,600
+want is the right thing as opposed to
+
+781
+00:23:20,600 --> 00:23:22,900
+what somebody is whispering in my ear, you
+
+782
+00:23:22,900 --> 00:23:25,820
+know, who is whatever, a CEO coach or
+
+783
+00:23:25,820 --> 00:23:27,300
+a VC or this or that or the
+
+784
+00:23:27,300 --> 00:23:27,480
+other.
+
+785
+00:23:27,480 --> 00:23:30,260
+And so the whole firm is designed to
+
+786
+00:23:30,260 --> 00:23:34,540
+kind of enable that inventor to become a
+
+787
+00:23:34,540 --> 00:23:37,500
+CEO and run their own company and put
+
+788
+00:23:37,500 --> 00:23:40,760
+their mark not just, you know, locally, but
+
+789
+00:23:40,760 --> 00:23:44,080
+in the world by being able to kind
+
+790
+00:23:44,080 --> 00:23:44,960
+of network to anyone.
+
+791
+00:23:44,960 --> 00:23:47,580
+And so that's that's a lot of what
+
+792
+00:23:47,580 --> 00:23:48,060
+we're about.
+
+793
+00:23:49,340 --> 00:23:49,660
+Yeah.
+
+794
+00:23:49,840 --> 00:23:51,200
+And I just add the sort of macro,
+
+795
+00:23:51,340 --> 00:23:52,540
+you know, kind of outside inlines on that
+
+796
+00:23:52,540 --> 00:23:55,600
+is it's just like, you know, we get
+
+797
+00:23:55,600 --> 00:23:57,280
+to work with these, you know, super geniuses,
+
+798
+00:23:57,320 --> 00:23:59,320
+but they're specifically they are super geniuses at
+
+799
+00:23:59,320 --> 00:24:00,540
+building products, building technologies.
+
+800
+00:24:01,400 --> 00:24:02,720
+You know, to be a super genius at
+
+801
+00:24:02,720 --> 00:24:04,720
+building technologies generally requires you to have been
+
+802
+00:24:04,720 --> 00:24:05,860
+sitting in a lab or, you know, in
+
+803
+00:24:05,860 --> 00:24:07,000
+front of a screen for, you know, 10
+
+804
+00:24:07,000 --> 00:24:07,540
+or 20 years.
+
+805
+00:24:08,260 --> 00:24:11,860
+You know, these folks are fully capable of
+
+806
+00:24:11,860 --> 00:24:13,320
+understanding everything about the world at large.
+
+807
+00:24:13,440 --> 00:24:15,100
+They just haven't done it yet.
+
+808
+00:24:15,440 --> 00:24:17,560
+They just haven't been out and they haven't
+
+809
+00:24:17,560 --> 00:24:18,740
+met all the people and they haven't dealt
+
+810
+00:24:18,740 --> 00:24:19,820
+with all the issues in the real world.
+
+811
+00:24:20,340 --> 00:24:22,040
+And so that leads to this kind of
+
+812
+00:24:22,040 --> 00:24:23,340
+recurring, you know, kind of, I would say,
+
+813
+00:24:23,440 --> 00:24:25,520
+misimpression sometimes that people have.
+
+814
+00:24:25,620 --> 00:24:26,900
+It's just like, well, if you build the
+
+815
+00:24:26,900 --> 00:24:28,060
+right product, you know, if you build the
+
+816
+00:24:28,060 --> 00:24:30,560
+breakthrough, whatever XYZ widget, like it's just the
+
+817
+00:24:30,560 --> 00:24:32,100
+world is obviously going to adopt it.
+
+818
+00:24:32,100 --> 00:24:33,080
+Everybody's going to use it.
+
+819
+00:24:33,200 --> 00:24:34,620
+It's just obviously going to, you know, kind
+
+820
+00:24:34,620 --> 00:24:35,140
+of suit things.
+
+821
+00:24:35,300 --> 00:24:37,620
+And, you know, and basically if it doesn't,
+
+822
+00:24:37,620 --> 00:24:38,700
+the answer is the product is not good
+
+823
+00:24:38,700 --> 00:24:38,900
+enough.
+
+824
+00:24:39,040 --> 00:24:40,300
+And, you know, there's there's a little bit
+
+825
+00:24:40,300 --> 00:24:40,840
+of truth to that.
+
+826
+00:24:40,940 --> 00:24:42,360
+Like, obviously, the better, the more breakthrough the
+
+827
+00:24:42,360 --> 00:24:43,560
+product, you know, the more there will just
+
+828
+00:24:43,560 --> 00:24:44,260
+be organic traction.
+
+829
+00:24:44,420 --> 00:24:47,420
+But what virtually everybody finds, you know, up
+
+830
+00:24:47,420 --> 00:24:49,460
+to and including Elon Musk, right, what everybody
+
+831
+00:24:49,460 --> 00:24:51,180
+finds is the real world is just like
+
+832
+00:24:51,180 --> 00:24:53,980
+really, really big and really, really messy.
+
+833
+00:24:54,280 --> 00:24:54,600
+Right.
+
+834
+00:24:55,140 --> 00:24:57,100
+And there are, you know, 8 billion people
+
+835
+00:24:57,100 --> 00:24:59,380
+out there with like opinions that are not
+
+836
+00:24:59,380 --> 00:25:00,760
+necessarily, you know, your opinions.
+
+837
+00:25:01,260 --> 00:25:03,280
+And, you know, many of them have a
+
+838
+00:25:03,280 --> 00:25:04,740
+real vote as to what is going to
+
+839
+00:25:04,740 --> 00:25:06,240
+happen with your product and with your company,
+
+840
+00:25:06,700 --> 00:25:08,420
+you know, including whether anybody buys, you know,
+
+841
+00:25:08,480 --> 00:25:10,220
+your thing or, you know, all of the
+
+842
+00:25:10,220 --> 00:25:11,940
+X factors that kick in, you know, all
+
+843
+00:25:11,940 --> 00:25:13,220
+the different ways that, you know, people are
+
+844
+00:25:13,220 --> 00:25:14,040
+going to come and try to, you know,
+
+845
+00:25:14,120 --> 00:25:16,560
+cripple what you're doing or, you know, or
+
+846
+00:25:16,560 --> 00:25:17,760
+maybe even worse than that, you know, just
+
+847
+00:25:17,760 --> 00:25:18,220
+ignore you.
+
+848
+00:25:18,780 --> 00:25:19,100
+Right.
+
+849
+00:25:19,100 --> 00:25:19,120
+Right.
+
+850
+00:25:20,040 --> 00:25:22,560
+And so there is this there is this
+
+851
+00:25:22,560 --> 00:25:24,140
+just there is this really big world out
+
+852
+00:25:24,140 --> 00:25:24,260
+there.
+
+853
+00:25:24,360 --> 00:25:25,040
+It's really complicated.
+
+854
+00:25:25,160 --> 00:25:25,660
+It's really messy.
+
+855
+00:25:25,780 --> 00:25:27,540
+It's not necessarily in favor of new ideas.
+
+856
+00:25:27,920 --> 00:25:29,780
+In many cases, it really, really doesn't like
+
+857
+00:25:29,780 --> 00:25:30,680
+them and wants to reject them.
+
+858
+00:25:30,680 --> 00:25:33,980
+And there's real art and science, you know,
+
+859
+00:25:34,100 --> 00:25:36,400
+to Ben's point, to building the company around
+
+860
+00:25:36,400 --> 00:25:38,400
+the product and the founder to be able
+
+861
+00:25:38,400 --> 00:25:39,820
+to take the breakthrough and be able to
+
+862
+00:25:39,820 --> 00:25:41,180
+take it successfully into the world.
+
+863
+00:25:41,900 --> 00:25:43,440
+And as far as we can tell, as
+
+864
+00:25:43,440 --> 00:25:44,900
+far as I can tell, like that that
+
+865
+00:25:44,900 --> 00:25:47,520
+process is getting, you know, hairier and more
+
+866
+00:25:47,520 --> 00:25:48,480
+complicated over time.
+
+867
+00:25:48,960 --> 00:25:49,200
+Right.
+
+868
+00:25:49,520 --> 00:25:50,340
+It's not getting easier.
+
+869
+00:25:50,500 --> 00:25:52,440
+It seems like it's actually getting significantly harder.
+
+870
+00:25:53,060 --> 00:25:54,620
+And so, yeah, that's that's a big part
+
+871
+00:25:54,620 --> 00:25:55,540
+of what the what the firm is built
+
+872
+00:25:55,540 --> 00:25:57,600
+to do is really help founders work through
+
+873
+00:25:57,600 --> 00:25:57,740
+that.
+
+874
+00:25:58,000 --> 00:25:59,720
+And one of the things that Mark said
+
+875
+00:25:59,720 --> 00:26:01,080
+in the past, which is really true, is
+
+876
+00:26:01,080 --> 00:26:03,440
+like, look, as an inventor, you're looking for
+
+877
+00:26:03,440 --> 00:26:05,000
+power, like a power boost.
+
+878
+00:26:05,520 --> 00:26:08,260
+So how do I go from little old
+
+879
+00:26:08,260 --> 00:26:11,560
+me with my invention to like I'm the
+
+880
+00:26:11,560 --> 00:26:13,160
+important company in the space in the world?
+
+881
+00:26:13,280 --> 00:26:14,000
+I can build momentum.
+
+882
+00:26:14,160 --> 00:26:15,360
+I can get the best engineers.
+
+883
+00:26:15,600 --> 00:26:17,840
+I can get the, you know, customers faster.
+
+884
+00:26:17,840 --> 00:26:19,760
+And that that turns into a snowball and
+
+885
+00:26:19,760 --> 00:26:20,480
+I'm rolling downhill.
+
+886
+00:26:20,860 --> 00:26:23,180
+And so the whole firm is designed as
+
+887
+00:26:23,180 --> 00:26:26,220
+like a very powerful entity that you can
+
+888
+00:26:26,220 --> 00:26:29,480
+just tap into and, you know, take our
+
+889
+00:26:29,480 --> 00:26:33,100
+brand, take our connections, take our expertise and
+
+890
+00:26:33,100 --> 00:26:34,340
+become extremely powerful.
+
+891
+00:26:34,760 --> 00:26:35,320
+Very fast.
+
+892
+00:26:36,140 --> 00:26:36,380
+Yeah.
+
+893
+00:26:36,700 --> 00:26:37,920
+And by the way, this, this, this, you
+
+894
+00:26:37,920 --> 00:26:39,060
+know, this, this is the solution to the
+
+895
+00:26:39,060 --> 00:26:40,320
+puzzle that people have had about us for
+
+896
+00:26:40,320 --> 00:26:41,480
+a long time, which is, wow, it seems
+
+897
+00:26:41,480 --> 00:26:43,060
+like those guys are like, you know, awfully
+
+898
+00:26:43,060 --> 00:26:43,500
+promotional.
+
+899
+00:26:43,820 --> 00:26:45,040
+You know, they're, they're, you know, they're, you
+
+900
+00:26:45,040 --> 00:26:46,300
+know, they do all this marketing stuff that,
+
+901
+00:26:46,360 --> 00:26:47,460
+you know, they're doing all this politics stuff.
+
+902
+00:26:47,780 --> 00:26:48,980
+You know, they, they must be doing this
+
+903
+00:26:48,980 --> 00:26:49,600
+for ego reasons.
+
+904
+00:26:49,720 --> 00:26:50,680
+They must be really fool themselves.
+
+905
+00:26:50,940 --> 00:26:51,800
+You know, this must be about, you know,
+
+906
+00:26:51,840 --> 00:26:52,640
+They talk so much shit.
+
+907
+00:26:53,180 --> 00:26:54,800
+They talk so much shit, like the whole
+
+908
+00:26:54,800 --> 00:26:54,980
+thing.
+
+909
+00:26:55,060 --> 00:26:56,220
+And at least, you know, for, and maybe,
+
+910
+00:26:56,300 --> 00:26:58,480
+maybe, maybe, maybe it's possible, possible we talk
+
+911
+00:26:58,480 --> 00:26:58,880
+too much shit.
+
+912
+00:26:59,020 --> 00:27:01,520
+I'll let other people judge that from time
+
+913
+00:27:01,520 --> 00:27:02,780
+to time, maybe.
+
+914
+00:27:04,440 --> 00:27:07,460
+However, however, from the beginning, the goal was
+
+915
+00:27:07,460 --> 00:27:09,680
+to build the, the purpose of building the
+
+916
+00:27:09,680 --> 00:27:11,600
+dominant venture brand was precisely to be able
+
+917
+00:27:11,600 --> 00:27:13,060
+to have the companies be able to borrow
+
+918
+00:27:13,060 --> 00:27:14,880
+that at the most critical points in their
+
+919
+00:27:14,880 --> 00:27:17,060
+development so that the companies can kind of
+
+920
+00:27:17,060 --> 00:27:19,020
+use, use, use our force in the world
+
+921
+00:27:19,020 --> 00:27:20,580
+as a slingshot to basically build their own
+
+922
+00:27:20,580 --> 00:27:20,840
+force.
+
+923
+00:27:21,200 --> 00:27:22,560
+And, and I think that's worked really well.
+
+924
+00:27:22,640 --> 00:27:23,720
+And that's why we don't, you know, shrink
+
+925
+00:27:23,720 --> 00:27:24,560
+back from a lot of these things.
+
+926
+00:27:25,460 --> 00:27:25,480
+Yeah.
+
+927
+00:27:25,700 --> 00:27:27,620
+I wanted like, just squeeze something in and
+
+928
+00:27:27,620 --> 00:27:28,760
+then get right back on this conversation.
+
+929
+00:27:29,080 --> 00:27:30,560
+Talking too much shit is so interesting, but
+
+930
+00:27:30,560 --> 00:27:31,540
+I really love it.
+
+931
+00:27:31,560 --> 00:27:32,600
+I think the thing that impressed me the
+
+932
+00:27:32,600 --> 00:27:34,720
+most when I started working with the crypto
+
+933
+00:27:34,720 --> 00:27:37,160
+team was seeing never take the negative in
+
+934
+00:27:37,160 --> 00:27:39,400
+person and like never talk shit on a
+
+935
+00:27:39,400 --> 00:27:41,960
+technology, never talk shit on a founder, never
+
+936
+00:27:41,960 --> 00:27:42,780
+talk shit on a company.
+
+937
+00:27:42,780 --> 00:27:44,800
+Like, how do you even train for that?
+
+938
+00:27:44,900 --> 00:27:46,140
+Cause that really, really impressed me.
+
+939
+00:27:46,340 --> 00:27:47,020
+Well, we train for that.
+
+940
+00:27:47,980 --> 00:27:49,020
+We train for that.
+
+941
+00:27:49,180 --> 00:27:54,160
+So, uh, we have a culture, um, that
+
+942
+00:27:54,160 --> 00:27:57,520
+is written culture that you cannot join the
+
+943
+00:27:57,520 --> 00:28:02,020
+firm unless you sign a document, uh, the
+
+944
+00:28:02,020 --> 00:28:03,740
+culture document and says you will adhere to
+
+945
+00:28:03,740 --> 00:28:04,240
+this culture.
+
+946
+00:28:04,940 --> 00:28:07,620
+And, uh, then you must sit through one
+
+947
+00:28:07,620 --> 00:28:11,220
+hour with me, uh, understanding the culture and
+
+948
+00:28:11,220 --> 00:28:15,560
+fundamentally on that, you know, our whole point
+
+949
+00:28:15,560 --> 00:28:18,600
+is if you want to do something larger
+
+950
+00:28:18,600 --> 00:28:20,200
+than yourself and make the world a better
+
+951
+00:28:20,200 --> 00:28:21,960
+place, we are a hundred percent for it.
+
+952
+00:28:22,040 --> 00:28:23,240
+And we do not care.
+
+953
+00:28:24,500 --> 00:28:26,800
+Uh, you know, like if in the moment
+
+954
+00:28:26,800 --> 00:28:29,340
+we think you're making a mistake or like
+
+955
+00:28:29,340 --> 00:28:30,900
+the ideas and good, and it doesn't matter
+
+956
+00:28:30,900 --> 00:28:32,280
+if we invest in you or don't invest
+
+957
+00:28:32,280 --> 00:28:32,700
+in you.
+
+958
+00:28:32,700 --> 00:28:34,360
+Um, we're for that.
+
+959
+00:28:34,460 --> 00:28:35,320
+We are dream builders.
+
+960
+00:28:35,580 --> 00:28:36,400
+We're not dream killers.
+
+961
+00:28:36,640 --> 00:28:40,700
+We're not here to be like the analytical
+
+962
+00:28:40,700 --> 00:28:43,880
+smarty pants who makes ourselves look smart by
+
+963
+00:28:43,880 --> 00:28:45,260
+making somebody else look stupid.
+
+964
+00:28:45,460 --> 00:28:49,160
+And that's just, that's fundamental to how we
+
+965
+00:28:49,160 --> 00:28:50,080
+think about the world.
+
+966
+00:28:50,260 --> 00:28:54,120
+Um, so like anybody who's trying to push
+
+967
+00:28:54,120 --> 00:28:56,520
+the world forward and make it better, like
+
+968
+00:28:56,520 --> 00:28:59,020
+whether we agree with their method or not,
+
+969
+00:28:59,180 --> 00:29:00,080
+like we're for it.
+
+970
+00:29:00,080 --> 00:29:03,720
+And so, uh, you, we just ask you
+
+971
+00:29:03,720 --> 00:29:05,840
+to sign up to that idea before you
+
+972
+00:29:05,840 --> 00:29:06,280
+ever join.
+
+973
+00:29:07,120 --> 00:29:09,480
+Catherine said that, that, uh, you know, we
+
+974
+00:29:09,480 --> 00:29:10,940
+believe in the future and bet the firm
+
+975
+00:29:10,940 --> 00:29:12,360
+that way was, should actually be the number
+
+976
+00:29:12,360 --> 00:29:14,100
+one, uh, kind of value in the, in
+
+977
+00:29:14,100 --> 00:29:14,400
+the culture.
+
+978
+00:29:14,440 --> 00:29:16,180
+By the way, that, that, that was Mark's.
+
+979
+00:29:16,300 --> 00:29:18,460
+Um, you know, I, I did the wording,
+
+980
+00:29:18,500 --> 00:29:19,800
+so I give myself a little credit, but
+
+981
+00:29:19,800 --> 00:29:20,640
+that was Mark's idea.
+
+982
+00:29:22,780 --> 00:29:24,020
+Do you think that should be number one?
+
+983
+00:29:24,140 --> 00:29:25,400
+Do you think that is number one in,
+
+984
+00:29:25,400 --> 00:29:26,040
+in practice?
+
+985
+00:29:26,220 --> 00:29:27,220
+Do you think first class business in a
+
+986
+00:29:27,220 --> 00:29:28,700
+first class way is like, if you were
+
+987
+00:29:28,700 --> 00:29:30,860
+to rewrite the doc today, what is the
+
+988
+00:29:30,860 --> 00:29:31,940
+most important thing in the, in the firm?
+
+989
+00:29:33,460 --> 00:29:35,720
+Well, look, I mean, the culture document is
+
+990
+00:29:35,720 --> 00:29:39,520
+seven things that, um, you know, and the
+
+991
+00:29:39,520 --> 00:29:40,420
+culture is more than that.
+
+992
+00:29:40,560 --> 00:29:42,540
+Every culture is more than seven, seven ideas
+
+993
+00:29:42,540 --> 00:29:44,680
+and kind of seven sets of behaviors.
+
+994
+00:29:45,580 --> 00:29:48,660
+But those are the ones that all seven
+
+995
+00:29:48,660 --> 00:29:51,080
+of them that we really expect everybody to
+
+996
+00:29:51,080 --> 00:29:51,480
+live to.
+
+997
+00:29:51,860 --> 00:29:53,560
+Um, so I, I don't know if I
+
+998
+00:29:53,560 --> 00:29:56,060
+rank them in that sense because they all
+
+999
+00:29:56,060 --> 00:29:56,540
+go together.
+
+1000
+00:29:56,660 --> 00:29:58,420
+They're part of a single thing.
+
+1001
+00:29:58,640 --> 00:30:01,720
+So, um, you know, we believe in the
+
+1002
+00:30:01,720 --> 00:30:04,300
+future means that we believe in the people
+
+1003
+00:30:04,300 --> 00:30:06,000
+who build the future, which means we're not
+
+1004
+00:30:06,000 --> 00:30:08,540
+going to criticize them, which means, you know,
+
+1005
+00:30:09,100 --> 00:30:11,040
+we're not going to, we're not going to
+
+1006
+00:30:11,040 --> 00:30:12,240
+be on the attack side of that.
+
+1007
+00:30:12,240 --> 00:30:13,680
+We're never going to attack the future. We're
+
+1008
+00:30:13,680 --> 00:30:15,320
+going to try and make, you know, there
+
+1009
+00:30:15,320 --> 00:30:16,560
+are going to be problems with how we
+
+1010
+00:30:16,560 --> 00:30:17,860
+build the future, but we're going to try
+
+1011
+00:30:17,860 --> 00:30:19,120
+and make it the best future we can.
+
+1012
+00:30:19,260 --> 00:30:21,160
+We're not going to try and live in
+
+1013
+00:30:21,160 --> 00:30:21,660
+the past.
+
+1014
+00:30:21,920 --> 00:30:24,840
+Uh, and so that you can't do that.
+
+1015
+00:30:25,160 --> 00:30:27,540
+If you're attacking entrepreneurs all the time, you
+
+1016
+00:30:27,540 --> 00:30:28,320
+can't do that.
+
+1017
+00:30:28,620 --> 00:30:31,420
+If you show up, you know, an hour
+
+1018
+00:30:31,420 --> 00:30:33,120
+late to meet with somebody who's trying to
+
+1019
+00:30:33,120 --> 00:30:34,840
+build a company, you can't do those kinds
+
+1020
+00:30:34,840 --> 00:30:35,280
+of things.
+
+1021
+00:30:35,280 --> 00:30:38,460
+And so every part of the culture, I
+
+1022
+00:30:38,460 --> 00:30:41,340
+think, is in support of, we want to
+
+1023
+00:30:41,340 --> 00:30:43,200
+build a better future. Like that is, that's
+
+1024
+00:30:43,200 --> 00:30:43,740
+why we're here.
+
+1025
+00:30:45,900 --> 00:30:48,360
+Haber, uh, in his piece, firm kind of
+
+1026
+00:30:48,360 --> 00:30:50,140
+greater than fund talks about, you know, a
+
+1027
+00:30:50,140 --> 00:30:51,600
+firm is something that tries to build a
+
+1028
+00:30:51,600 --> 00:30:52,900
+compounding competitive advantage.
+
+1029
+00:30:52,960 --> 00:30:54,440
+And he points to one thing for Apollo,
+
+1030
+00:30:55,000 --> 00:30:56,860
+one thing for Goldman. If you had to
+
+1031
+00:30:56,860 --> 00:30:58,600
+pick a thing, what are you compounding?
+
+1032
+00:30:58,680 --> 00:31:00,340
+Like, what is the competitive advantage that you're,
+
+1033
+00:31:00,440 --> 00:31:01,580
+that you're building over time? Do you think
+
+1034
+00:31:01,580 --> 00:31:01,740
+here?
+
+1035
+00:31:02,980 --> 00:31:03,380
+Reputation.
+
+1036
+00:31:05,700 --> 00:31:07,660
+We, Mark and I talked about that from
+
+1037
+00:31:07,660 --> 00:31:08,800
+the day we started the firm.
+
+1038
+00:31:09,020 --> 00:31:11,260
+And, and by, by the way, there were
+
+1039
+00:31:11,260 --> 00:31:13,060
+times when it was like, well, we're investing
+
+1040
+00:31:13,060 --> 00:31:14,340
+an awful lot in reputation.
+
+1041
+00:31:14,480 --> 00:31:17,120
+Um, and you know, it's taken a while.
+
+1042
+00:31:17,320 --> 00:31:20,080
+Uh, but it is, that's what we compete
+
+1043
+00:31:20,080 --> 00:31:20,260
+on.
+
+1044
+00:31:20,340 --> 00:31:21,740
+Like when we, when we talk to an
+
+1045
+00:31:21,740 --> 00:31:25,140
+entrepreneur, um, and they're comparing us to another
+
+1046
+00:31:25,140 --> 00:31:29,040
+firm, we say, find an entrepreneur that's taken
+
+1047
+00:31:29,040 --> 00:31:30,900
+investment from both firms, see what they say.
+
+1048
+00:31:30,900 --> 00:31:32,480
+Like that's our answer to everything.
+
+1049
+00:31:32,820 --> 00:31:35,900
+Uh, we, we build reputation.
+
+1050
+00:31:36,160 --> 00:31:37,360
+Every relationship matters.
+
+1051
+00:31:37,580 --> 00:31:39,260
+Everybody who we touch, we try and touch
+
+1052
+00:31:39,260 --> 00:31:40,420
+as many people as we can.
+
+1053
+00:31:40,480 --> 00:31:43,060
+And we try and, um, represent in the
+
+1054
+00:31:43,060 --> 00:31:45,840
+very, very best way possible to build reputation
+
+1055
+00:31:45,840 --> 00:31:46,340
+over time.
+
+1056
+00:31:46,340 --> 00:31:49,000
+And that compounds and compounds and compounds across,
+
+1057
+00:31:49,260 --> 00:31:53,620
+uh, entrepreneurs, across industries, across sectors, across, you
+
+1058
+00:31:53,620 --> 00:31:55,420
+know, everybody from, you know, people in the
+
+1059
+00:31:55,420 --> 00:31:58,980
+government to, uh, you know, people in, uh,
+
+1060
+00:31:59,620 --> 00:32:02,400
+in companies that, that we don't invest in.
+
+1061
+00:32:02,400 --> 00:32:05,180
+And, um, anybody who is anywhere in the
+
+1062
+00:32:05,180 --> 00:32:06,800
+world of technology, we want, we want them
+
+1063
+00:32:06,800 --> 00:32:08,640
+to know us and we want them to,
+
+1064
+00:32:08,640 --> 00:32:11,180
+uh, think of us as the best, uh,
+
+1065
+00:32:11,400 --> 00:32:12,500
+firm to do business with.
+
+1066
+00:32:13,400 --> 00:32:13,680
+Yeah.
+
+1067
+00:32:13,680 --> 00:32:15,360
+And then that, and then that transfers, of
+
+1068
+00:32:15,360 --> 00:32:17,840
+course, that transfers from us, that transfers to
+
+1069
+00:32:17,840 --> 00:32:18,740
+the portfolio companies, right?
+
+1070
+00:32:18,880 --> 00:32:20,200
+So that, which is the goal of it,
+
+1071
+00:32:20,280 --> 00:32:21,640
+which is that then as a consequence, when
+
+1072
+00:32:21,640 --> 00:32:23,340
+a, when a company takes investment from us,
+
+1073
+00:32:23,400 --> 00:32:25,460
+now they, they're basically able to use our
+
+1074
+00:32:25,460 --> 00:32:27,660
+reputation to get themselves through the, through those,
+
+1075
+00:32:27,700 --> 00:32:28,700
+those, those, those, you know, kind of key
+
+1076
+00:32:28,700 --> 00:32:30,780
+growth phases with, you know, with, with potential
+
+1077
+00:32:30,780 --> 00:32:33,260
+customers and with recruits and with downstream investors
+
+1078
+00:32:33,260 --> 00:32:35,020
+and with, you know, regulators and with, you
+
+1079
+00:32:35,020 --> 00:32:36,880
+know, all, all these different, you know, forces
+
+1080
+00:32:36,880 --> 00:32:37,760
+in the external society.
+
+1081
+00:32:38,220 --> 00:32:40,280
+Um, so the, the, the, the, the reputation
+
+1082
+00:32:40,280 --> 00:32:41,800
+pays off, not just for us, but it
+
+1083
+00:32:41,800 --> 00:32:43,420
+pays off in the form of, uh, what
+
+1084
+00:32:43,420 --> 00:32:44,720
+our, what our portfolio companies are able to
+
+1085
+00:32:44,720 --> 00:32:45,220
+do as a result.
+
+1086
+00:32:45,700 --> 00:32:47,600
+So having done this for 16, 17 years,
+
+1087
+00:32:47,720 --> 00:32:49,760
+like, are there things about building and transferring
+
+1088
+00:32:49,760 --> 00:32:51,760
+reputation that you've learned that are not obvious?
+
+1089
+00:32:51,900 --> 00:32:53,420
+Because to me, like, it would almost seem
+
+1090
+00:32:53,420 --> 00:32:54,100
+that it's a battery.
+
+1091
+00:32:54,280 --> 00:32:55,440
+And if you give it to one company
+
+1092
+00:32:55,440 --> 00:32:57,520
+that messes it up, then the whole thing
+
+1093
+00:32:57,520 --> 00:32:58,280
+kind of falls apart.
+
+1094
+00:32:58,320 --> 00:33:00,260
+But actually it, maybe it's like love to
+
+1095
+00:33:00,260 --> 00:33:01,620
+be like super cheap, like it just grows
+
+1096
+00:33:01,620 --> 00:33:02,320
+the more you give it.
+
+1097
+00:33:02,800 --> 00:33:04,540
+Are there other things like that, that, that
+
+1098
+00:33:04,540 --> 00:33:04,860
+you've learned?
+
+1099
+00:33:05,900 --> 00:33:07,880
+Well, look, I, I, I do think that
+
+1100
+00:33:07,880 --> 00:33:10,980
+that's a correct insight in that, you know,
+
+1101
+00:33:12,100 --> 00:33:16,480
+one mistake is much more powerful than, you
+
+1102
+00:33:16,480 --> 00:33:18,180
+know, one good deed.
+
+1103
+00:33:18,440 --> 00:33:22,760
+Um, so, you know, one person being obnoxious,
+
+1104
+00:33:22,940 --> 00:33:25,380
+uh, who's in the firm or lying to
+
+1105
+00:33:25,380 --> 00:33:28,160
+an entrepreneur or doing something like that is
+
+1106
+00:33:28,160 --> 00:33:30,340
+causes much more damage than you can do
+
+1107
+00:33:30,340 --> 00:33:31,740
+by doing that correctly.
+
+1108
+00:33:31,740 --> 00:33:34,760
+Uh, you know, five or 10 times, um,
+
+1109
+00:33:35,440 --> 00:33:36,880
+which is why you have to be so
+
+1110
+00:33:36,880 --> 00:33:38,040
+vigilant about it.
+
+1111
+00:33:38,200 --> 00:33:40,560
+Like you, you, you can't, you cannot tolerate
+
+1112
+00:33:40,560 --> 00:33:42,060
+that kind of behavior.
+
+1113
+00:33:42,920 --> 00:33:47,480
+Um, but I, I, I think that the,
+
+1114
+00:33:47,480 --> 00:33:49,060
+the thing, the biggest thing that I've learned
+
+1115
+00:33:49,060 --> 00:33:52,140
+is it takes a long time to build
+
+1116
+00:33:52,140 --> 00:33:52,800
+a reputation.
+
+1117
+00:33:52,800 --> 00:33:56,560
+Uh, and, but once you do, it's, it's,
+
+1118
+00:33:56,580 --> 00:33:57,520
+it's the most powerful thing.
+
+1119
+00:33:57,640 --> 00:33:58,700
+It really does compound.
+
+1120
+00:33:58,940 --> 00:34:00,700
+Um, and just to give you an example,
+
+1121
+00:34:00,820 --> 00:34:03,100
+look, when Mark and I raised fund one,
+
+1122
+00:34:03,340 --> 00:34:05,420
+it was a $300 million fund.
+
+1123
+00:34:05,640 --> 00:34:09,200
+Um, I think it took about six months
+
+1124
+00:34:09,200 --> 00:34:09,740
+to raise.
+
+1125
+00:34:09,740 --> 00:34:15,580
+Uh, we had a lot of meetings.
+
+1126
+00:34:15,780 --> 00:34:17,640
+I can't, I can't count how many meetings.
+
+1127
+00:34:17,900 --> 00:34:19,500
+Um, some people did not treat us very
+
+1128
+00:34:19,500 --> 00:34:21,840
+well as, uh, Trump might say, they didn't
+
+1129
+00:34:21,840 --> 00:34:22,640
+treat me well at all.
+
+1130
+00:34:24,320 --> 00:34:25,680
+Uh, very badly.
+
+1131
+00:34:26,480 --> 00:34:29,480
+Um, and you know, this raise, which was
+
+1132
+00:34:29,480 --> 00:34:32,000
+$15 billion when we actually raised the fund,
+
+1133
+00:34:32,220 --> 00:34:35,700
+I think Mark did one AMA and I
+
+1134
+00:34:35,700 --> 00:34:36,680
+did one AMA.
+
+1135
+00:34:36,680 --> 00:34:38,160
+And I don't, I don't know that I
+
+1136
+00:34:38,160 --> 00:34:40,080
+took another meeting on this fundraise.
+
+1137
+00:34:40,200 --> 00:34:42,480
+Uh, and it was done on the, on
+
+1138
+00:34:42,480 --> 00:34:43,060
+the reputation.
+
+1139
+00:34:43,360 --> 00:34:47,880
+And so, um, that's a, that's a heck
+
+1140
+00:34:47,880 --> 00:34:49,860
+of a change, you know, and look, a
+
+1141
+00:34:49,860 --> 00:34:51,800
+lot of, not that we don't, we talk
+
+1142
+00:34:51,800 --> 00:34:52,920
+to our investors all the time.
+
+1143
+00:34:53,080 --> 00:34:54,680
+I mean, I've been all around the world,
+
+1144
+00:34:54,980 --> 00:34:56,920
+uh, building relationships and so forth, but when
+
+1145
+00:34:56,920 --> 00:35:00,000
+we came to ask for money, uh, it
+
+1146
+00:35:00,000 --> 00:35:01,560
+was raised entirely on the reputation.
+
+1147
+00:35:03,000 --> 00:35:04,940
+I think, Paki, I think the, um, the
+
+1148
+00:35:04,940 --> 00:35:06,260
+external environment has changed, you know, enormously.
+
+1149
+00:35:06,560 --> 00:35:08,820
+Um, and so, you know, we've, we've lived
+
+1150
+00:35:08,820 --> 00:35:10,580
+this, you know, as you have and many
+
+1151
+00:35:10,580 --> 00:35:12,520
+others, we've, you know, this incredible transformation where
+
+1152
+00:35:12,520 --> 00:35:14,680
+tech both is like much, much, much larger
+
+1153
+00:35:14,680 --> 00:35:16,380
+and more central now than it was in
+
+1154
+00:35:16,380 --> 00:35:17,320
+2009 when we started.
+
+1155
+00:35:17,320 --> 00:35:19,060
+But also, you know, the, the level of,
+
+1156
+00:35:19,200 --> 00:35:21,660
+let's just say engagement on the, on the
+
+1157
+00:35:21,660 --> 00:35:23,380
+part of the world attack is, you know,
+
+1158
+00:35:23,460 --> 00:35:25,220
+the, the level of intensity on everything from,
+
+1159
+00:35:25,280 --> 00:35:27,200
+you know, you know, attacks, you know, criticism,
+
+1160
+00:35:27,520 --> 00:35:29,000
+you know, by the way, you know, completely
+
+1161
+00:35:29,000 --> 00:35:31,480
+justifiable questions, you know, impact on society.
+
+1162
+00:35:31,480 --> 00:35:33,420
+You know, the, the, the intensity level is,
+
+1163
+00:35:33,480 --> 00:35:34,220
+you know, I don't know, it's like a,
+
+1164
+00:35:34,280 --> 00:35:35,560
+I don't know, like a thousand X of
+
+1165
+00:35:35,560 --> 00:35:37,040
+what it was 16 years ago.
+
+1166
+00:35:37,180 --> 00:35:38,480
+And so I, I think, you know, I
+
+1167
+00:35:38,480 --> 00:35:39,720
+think to your question, I think we've, we've
+
+1168
+00:35:39,720 --> 00:35:40,820
+really tried to kind of rise to that,
+
+1169
+00:35:40,980 --> 00:35:42,520
+uh, on both sides.
+
+1170
+00:35:42,520 --> 00:35:43,700
+Like we're really trying to help these, you
+
+1171
+00:35:43,700 --> 00:35:45,460
+know, these companies get to levels of scale
+
+1172
+00:35:45,460 --> 00:35:47,160
+that nobody ever thought was possible before.
+
+1173
+00:35:47,200 --> 00:35:48,540
+But at the same time, we're trying to
+
+1174
+00:35:48,540 --> 00:35:50,200
+help them deal with pressures that previous generations
+
+1175
+00:35:50,200 --> 00:35:51,600
+of founders, you know, generally didn't have to
+
+1176
+00:35:51,600 --> 00:35:51,900
+deal with.
+
+1177
+00:35:52,120 --> 00:35:52,160
+Yeah.
+
+1178
+00:35:52,940 --> 00:35:55,040
+You seem like you uniquely maybe of anybody
+
+1179
+00:35:55,040 --> 00:35:57,700
+that I know have fun taking, you know,
+
+1180
+00:35:57,740 --> 00:35:59,080
+like engaging in these conversations.
+
+1181
+00:35:59,080 --> 00:36:00,200
+And I wrote about it a little bit
+
+1182
+00:36:00,200 --> 00:36:01,700
+in the piece, but like kind of stepping
+
+1183
+00:36:01,700 --> 00:36:03,180
+outside the situation and viewing it.
+
+1184
+00:36:03,240 --> 00:36:04,500
+I don't like what goes on in your
+
+1185
+00:36:04,500 --> 00:36:05,540
+head in these situations.
+
+1186
+00:36:05,720 --> 00:36:06,760
+Like, are you having as much fun as
+
+1187
+00:36:06,760 --> 00:36:07,320
+it looks like?
+
+1188
+00:36:07,520 --> 00:36:08,740
+Does it take a toll ever kind of
+
+1189
+00:36:08,740 --> 00:36:09,480
+like taking the arrows?
+
+1190
+00:36:09,840 --> 00:36:11,320
+What does it feel like in these?
+
+1191
+00:36:13,040 --> 00:36:13,360
+Yeah.
+
+1192
+00:36:13,480 --> 00:36:13,740
+Ben, what?
+
+1193
+00:36:13,840 --> 00:36:13,900
+Yeah.
+
+1194
+00:36:14,060 --> 00:36:14,620
+Why don't you, yeah.
+
+1195
+00:36:14,900 --> 00:36:15,880
+Ben will give the rational response.
+
+1196
+00:36:17,040 --> 00:36:17,360
+Yeah.
+
+1197
+00:36:18,740 --> 00:36:20,160
+I would say it's.
+
+1198
+00:36:20,500 --> 00:36:20,600
+I'll give the vote.
+
+1199
+00:36:21,680 --> 00:36:23,440
+I mean, it gets emotional from time to
+
+1200
+00:36:23,440 --> 00:36:23,660
+time.
+
+1201
+00:36:23,780 --> 00:36:23,860
+Right.
+
+1202
+00:36:23,960 --> 00:36:24,280
+Because.
+
+1203
+00:36:25,560 --> 00:36:27,900
+You know what goes into building these things
+
+1204
+00:36:27,900 --> 00:36:31,860
+and, you know, the intentions of the people
+
+1205
+00:36:31,860 --> 00:36:33,720
+building them and, you know, like the kind
+
+1206
+00:36:33,720 --> 00:36:34,980
+of impact they have on the world.
+
+1207
+00:36:35,140 --> 00:36:38,500
+And then to just get like, you know,
+
+1208
+00:36:38,560 --> 00:36:40,800
+and a lot of the attacks tend to
+
+1209
+00:36:40,800 --> 00:36:42,920
+be in the form of character assassinations and
+
+1210
+00:36:42,920 --> 00:36:43,380
+so forth.
+
+1211
+00:36:43,380 --> 00:36:48,540
+And now everybody thinks Mark's Jewish, you know,
+
+1212
+00:36:48,560 --> 00:36:49,960
+just so they can attack him more.
+
+1213
+00:36:50,100 --> 00:36:51,920
+It turns out people love to attack Jewish
+
+1214
+00:36:51,920 --> 00:36:52,280
+people.
+
+1215
+00:36:53,080 --> 00:36:55,340
+So I welcome him into that.
+
+1216
+00:36:56,180 --> 00:36:56,960
+My new name.
+
+1217
+00:36:56,960 --> 00:36:57,420
+My new name.
+
+1218
+00:36:57,420 --> 00:36:57,880
+My new name.
+
+1219
+00:36:58,120 --> 00:36:59,640
+Packy is in certain political circles is Andy.
+
+1220
+00:36:59,900 --> 00:37:02,120
+Uh, as, as, uh, as, um, Andy Horowitz.
+
+1221
+00:37:02,320 --> 00:37:04,600
+Because people think that people think Andrew and
+
+1222
+00:37:04,600 --> 00:37:06,280
+the, and the, and the swamp fringes of
+
+1223
+00:37:06,280 --> 00:37:06,440
+the internet.
+
+1224
+00:37:06,600 --> 00:37:08,240
+People think Andrew Horowitz is a Jewish person.
+
+1225
+00:37:08,400 --> 00:37:08,680
+Yeah.
+
+1226
+00:37:09,120 --> 00:37:10,760
+Um, and so I, I now introduce myself
+
+1227
+00:37:10,760 --> 00:37:11,000
+as.
+
+1228
+00:37:12,100 --> 00:37:12,420
+Yeah.
+
+1229
+00:37:12,560 --> 00:37:13,580
+I didn't have that in my Twitter bio.
+
+1230
+00:37:13,700 --> 00:37:14,600
+I did have it in my Twitter bio.
+
+1231
+00:37:14,700 --> 00:37:15,360
+My real name is Andy.
+
+1232
+00:37:15,540 --> 00:37:17,080
+It's Andy Horowitz, but, uh, and I am
+
+1233
+00:37:17,080 --> 00:37:18,060
+Jewish, but I took it down.
+
+1234
+00:37:18,540 --> 00:37:18,780
+Yeah.
+
+1235
+00:37:18,940 --> 00:37:21,960
+But I, I would say mostly it, it's
+
+1236
+00:37:21,960 --> 00:37:24,640
+just like, it's an amazing, um,
+
+1237
+00:37:26,540 --> 00:37:28,580
+it's just like an amazing thing and amazing
+
+1238
+00:37:28,580 --> 00:37:32,580
+privilege, uh, to kind of be in the
+
+1239
+00:37:32,580 --> 00:37:33,220
+center of it all.
+
+1240
+00:37:33,720 --> 00:37:37,040
+Uh, and, you know, like, and then the
+
+1241
+00:37:37,040 --> 00:37:39,280
+responsibility that goes with it, that you, you
+
+1242
+00:37:39,280 --> 00:37:41,060
+have to kind of try and help drive
+
+1243
+00:37:41,060 --> 00:37:42,120
+the world to the right answer.
+
+1244
+00:37:42,880 --> 00:37:49,000
+Uh, but like, it's, I don't know if
+
+1245
+00:37:49,000 --> 00:37:51,500
+fun is the right word, but like, it's
+
+1246
+00:37:51,500 --> 00:37:51,820
+special.
+
+1247
+00:37:51,820 --> 00:37:53,640
+It's like, we've gotten to a very special
+
+1248
+00:37:53,640 --> 00:37:56,440
+position and I think, you know, both of
+
+1249
+00:37:56,440 --> 00:37:58,580
+us try and take it as seriously as
+
+1250
+00:37:58,580 --> 00:37:59,060
+we can.
+
+1251
+00:37:59,280 --> 00:38:01,480
+And, you know, like things happen and we
+
+1252
+00:38:01,480 --> 00:38:05,700
+have very, very long discussions about how we
+
+1253
+00:38:05,700 --> 00:38:07,120
+should react to certain things.
+
+1254
+00:38:07,240 --> 00:38:09,180
+Um, how we should not react to certain
+
+1255
+00:38:09,180 --> 00:38:11,480
+things, um, what we can take a position
+
+1256
+00:38:11,480 --> 00:38:13,320
+on, what we shouldn't take a position on.
+
+1257
+00:38:13,320 --> 00:38:16,560
+Um, uh, and, you know, just to have,
+
+1258
+00:38:16,700 --> 00:38:17,800
+just to be, you know, at this stage
+
+1259
+00:38:17,800 --> 00:38:19,380
+of life, to be able to be talking
+
+1260
+00:38:19,380 --> 00:38:22,140
+about that as opposed to, um, the things
+
+1261
+00:38:22,140 --> 00:38:23,580
+that we had to talk about when we
+
+1262
+00:38:23,580 --> 00:38:25,700
+were building Netscape or, or, or Opsware.
+
+1263
+00:38:25,700 --> 00:38:27,520
+Like it's, it's amazing.
+
+1264
+00:38:27,740 --> 00:38:30,480
+Uh, and, uh, you know, I, I definitely
+
+1265
+00:38:30,480 --> 00:38:31,060
+wouldn't trade it.
+
+1266
+00:38:31,400 --> 00:38:35,000
+Um, and, and look, we're, we've been through,
+
+1267
+00:38:35,100 --> 00:38:36,720
+we've been criticized so much at this point
+
+1268
+00:38:36,720 --> 00:38:40,540
+that like it really, it bothers interestingly, which
+
+1269
+00:38:40,540 --> 00:38:41,940
+I never thought I'd see is it kind
+
+1270
+00:38:41,940 --> 00:38:43,840
+of bothers people inside the firm much more
+
+1271
+00:38:43,840 --> 00:38:45,000
+than it bothers Mark or me.
+
+1272
+00:38:45,920 --> 00:38:46,320
+Sure.
+
+1273
+00:38:46,620 --> 00:38:48,400
+And I am just for the record studying
+
+1274
+00:38:48,400 --> 00:38:49,120
+for my bar mitzvah.
+
+1275
+00:38:49,120 --> 00:38:49,600
+Yeah.
+
+1276
+00:38:50,740 --> 00:38:51,140
+Yeah.
+
+1277
+00:38:51,280 --> 00:38:51,400
+Yeah.
+
+1278
+00:38:51,400 --> 00:38:52,200
+The half Torah.
+
+1279
+00:38:52,440 --> 00:38:53,800
+You, you need to learn your, your half
+
+1280
+00:38:53,800 --> 00:38:54,420
+Torah tropes.
+
+1281
+00:38:54,660 --> 00:38:55,060
+Yeah.
+
+1282
+00:38:56,560 --> 00:38:58,580
+How do you avoid at this point becoming
+
+1283
+00:38:58,580 --> 00:38:59,840
+a big company?
+
+1284
+00:38:59,980 --> 00:39:01,700
+Like this is becoming a big organization.
+
+1285
+00:39:01,720 --> 00:39:03,660
+How do you avoid being a big company?
+
+1286
+00:39:03,780 --> 00:39:04,780
+Google wanted to avoid that.
+
+1287
+00:39:04,860 --> 00:39:05,840
+Like everyone wants to avoid that.
+
+1288
+00:39:06,020 --> 00:39:07,140
+How do you actually do that?
+
+1289
+00:39:08,620 --> 00:39:09,020
+Yeah.
+
+1290
+00:39:09,100 --> 00:39:10,620
+So I think a lot of that is
+
+1291
+00:39:10,620 --> 00:39:11,700
+organizational design.
+
+1292
+00:39:11,880 --> 00:39:16,580
+I mean, it, so if you look at
+
+1293
+00:39:16,580 --> 00:39:19,100
+the companies that didn't feel like big companies,
+
+1294
+00:39:19,120 --> 00:39:20,440
+companies for a long time, they, they had
+
+1295
+00:39:20,440 --> 00:39:22,860
+very, very, very thoughtful design to the organization.
+
+1296
+00:39:23,140 --> 00:39:26,040
+And if you look at the firm, um,
+
+1297
+00:39:26,480 --> 00:39:28,260
+you know, the crypto group or the infra
+
+1298
+00:39:28,260 --> 00:39:31,760
+group or the, um, you know, the apps
+
+1299
+00:39:31,760 --> 00:39:33,820
+group or the American dynamism group, they, they
+
+1300
+00:39:33,820 --> 00:39:36,240
+all feel like small companies.
+
+1301
+00:39:36,240 --> 00:39:38,440
+And they're, they're, they're small companies with a
+
+1302
+00:39:38,440 --> 00:39:40,400
+kind of very specific kind of support.
+
+1303
+00:39:40,860 --> 00:39:43,300
+Uh, you know, in terms of the brand,
+
+1304
+00:39:43,460 --> 00:39:46,060
+in terms of, uh, fundraising and other kinds
+
+1305
+00:39:46,060 --> 00:39:46,540
+of things.
+
+1306
+00:39:46,860 --> 00:39:48,700
+Um, but he, you know, the, the, the
+
+1307
+00:39:48,700 --> 00:39:50,240
+fundraising team is a small group.
+
+1308
+00:39:50,340 --> 00:39:52,440
+And so the every, and every group is
+
+1309
+00:39:52,440 --> 00:39:54,680
+very autonomous from every other group.
+
+1310
+00:39:54,680 --> 00:39:58,020
+Like, uh, there's integration points, but they're, they're
+
+1311
+00:39:58,020 --> 00:39:58,600
+very simple.
+
+1312
+00:39:59,380 --> 00:40:01,180
+And so, you know, for the most part,
+
+1313
+00:40:01,320 --> 00:40:02,880
+there, there's some that are more complicated than
+
+1314
+00:40:02,880 --> 00:40:03,180
+others.
+
+1315
+00:40:03,540 --> 00:40:07,400
+Um, and so, you know, that's what makes
+
+1316
+00:40:07,400 --> 00:40:09,420
+it, you know, the, the beauty of a,
+
+1317
+00:40:09,420 --> 00:40:12,300
+of a small place is you can just
+
+1318
+00:40:12,300 --> 00:40:13,020
+sketch it done.
+
+1319
+00:40:13,380 --> 00:40:15,360
+The beauty of a big place is you're
+
+1320
+00:40:15,360 --> 00:40:16,060
+very powerful.
+
+1321
+00:40:16,060 --> 00:40:17,960
+Um, and so we try and kind of
+
+1322
+00:40:17,960 --> 00:40:18,620
+blend those two.
+
+1323
+00:40:18,800 --> 00:40:19,500
+We took a lot.
+
+1324
+00:40:19,620 --> 00:40:20,980
+We, Mark and I borrowed a lot.
+
+1325
+00:40:21,240 --> 00:40:24,660
+Um, early on, we really studied Hewlett Packard,
+
+1326
+00:40:24,880 --> 00:40:28,820
+uh, which the, the original Hewlett Packard before
+
+1327
+00:40:28,820 --> 00:40:31,660
+the computer business kind of swallowed the company
+
+1328
+00:40:31,660 --> 00:40:32,780
+was very much like this.
+
+1329
+00:40:32,920 --> 00:40:35,120
+They had, uh, they were like a series
+
+1330
+00:40:35,120 --> 00:40:37,720
+of companies inside a company and, and that's
+
+1331
+00:40:37,720 --> 00:40:38,340
+a lot how we are.
+
+1332
+00:40:38,860 --> 00:40:41,180
+How do you vet GPs or like, it
+
+1333
+00:40:41,180 --> 00:40:42,140
+seems like you have to put a lot
+
+1334
+00:40:42,140 --> 00:40:43,500
+of trust in the people that are running
+
+1335
+00:40:43,500 --> 00:40:44,400
+the different teams.
+
+1336
+00:40:44,400 --> 00:40:46,620
+If the whole thing is reputation, but you
+
+1337
+00:40:46,620 --> 00:40:47,800
+need to be able to scale by having
+
+1338
+00:40:47,800 --> 00:40:49,040
+these kinds of decentralized teams.
+
+1339
+00:40:49,500 --> 00:40:51,120
+Is there anything that you do there that's,
+
+1340
+00:40:51,120 --> 00:40:54,520
+that's unique or, or weird, uh, that ensures
+
+1341
+00:40:54,520 --> 00:40:56,140
+that kind of like no one group can
+
+1342
+00:40:56,140 --> 00:40:57,020
+infect the whole?
+
+1343
+00:40:58,440 --> 00:41:00,320
+Well, I think, look, first of all, in
+
+1344
+00:41:00,320 --> 00:41:02,880
+order to lead one of those groups, you
+
+1345
+00:41:02,880 --> 00:41:06,040
+just have to have been here and performed
+
+1346
+00:41:06,040 --> 00:41:06,860
+for a long time.
+
+1347
+00:41:07,080 --> 00:41:09,220
+So that, that, that's kind of the first
+
+1348
+00:41:09,220 --> 00:41:09,420
+thing.
+
+1349
+00:41:09,520 --> 00:41:10,880
+So we just know you extremely well.
+
+1350
+00:41:11,000 --> 00:41:12,900
+We're not, we're not interviewing people for that
+
+1351
+00:41:12,900 --> 00:41:13,800
+job from the outside.
+
+1352
+00:41:13,800 --> 00:41:15,400
+Like you can't get that job from the
+
+1353
+00:41:15,400 --> 00:41:15,740
+outside.
+
+1354
+00:41:16,400 --> 00:41:21,420
+And then, you know, I would say because
+
+1355
+00:41:21,420 --> 00:41:26,100
+our culture is so different than other venture
+
+1356
+00:41:26,100 --> 00:41:28,460
+firms, you know, for, for better or worse,
+
+1357
+00:41:28,520 --> 00:41:31,260
+we're just different that we don't hire a
+
+1358
+00:41:31,260 --> 00:41:33,140
+lot of outside GPs anymore.
+
+1359
+00:41:33,140 --> 00:41:37,200
+We generally try to hire people at an
+
+1360
+00:41:37,200 --> 00:41:39,080
+earlier stage of their career and kind of
+
+1361
+00:41:39,080 --> 00:41:40,420
+grow them into what we do.
+
+1362
+00:41:40,700 --> 00:41:43,200
+Um, and that's where much, much better for
+
+1363
+00:41:43,200 --> 00:41:43,400
+us.
+
+1364
+00:41:43,500 --> 00:41:46,060
+I would say in general, although we have
+
+1365
+00:41:46,060 --> 00:41:47,600
+like, uh, all of us came from the
+
+1366
+00:41:47,600 --> 00:41:50,340
+outside at one point of the original cast.
+
+1367
+00:41:51,140 --> 00:41:51,800
+That makes sense.
+
+1368
+00:41:52,360 --> 00:41:55,140
+Um, kind of winding down here, but Mark,
+
+1369
+00:41:55,240 --> 00:41:56,580
+you said that, uh, I think you got
+
+1370
+00:41:56,580 --> 00:41:58,140
+shit at one point for saying the VC
+
+1371
+00:41:58,140 --> 00:41:59,800
+was going to be the last job, uh,
+
+1372
+00:42:00,080 --> 00:42:00,880
+in, in the world.
+
+1373
+00:42:01,140 --> 00:42:03,620
+Uh, you know, if you, if the vision
+
+1374
+00:42:03,620 --> 00:42:05,500
+of the future that you believe is true,
+
+1375
+00:42:05,540 --> 00:42:07,280
+and this is going to be an institution
+
+1376
+00:42:07,280 --> 00:42:09,180
+that, that lasts for a century, like what
+
+1377
+00:42:09,180 --> 00:42:11,740
+does A16Z look like and do a century
+
+1378
+00:42:11,740 --> 00:42:12,140
+to now?
+
+1379
+00:42:13,020 --> 00:42:13,340
+Right.
+
+1380
+00:42:13,760 --> 00:42:13,800
+Yeah.
+
+1381
+00:42:13,940 --> 00:42:15,100
+So I'll start with, I believe I was
+
+1382
+00:42:15,100 --> 00:42:15,440
+misquoted.
+
+1383
+00:42:15,580 --> 00:42:16,820
+I believe it was a, it was one
+
+1384
+00:42:16,820 --> 00:42:19,000
+of these, uh, hypothetical, uh, thought experiment things
+
+1385
+00:42:19,000 --> 00:42:20,840
+that, uh, kind of got, got, uh, overly,
+
+1386
+00:42:20,840 --> 00:42:23,240
+um, extrapolated, but, uh, I, I guess I
+
+1387
+00:42:23,240 --> 00:42:25,000
+shouldn't just, uh, defend myself.
+
+1388
+00:42:25,280 --> 00:42:27,420
+Um, so I, the, the, the, the point
+
+1389
+00:42:27,420 --> 00:42:28,220
+of what I was trying to get across
+
+1390
+00:42:28,220 --> 00:42:30,300
+in that discussion, um, which we, you know,
+
+1391
+00:42:30,360 --> 00:42:31,840
+I think if you both the original, it's,
+
+1392
+00:42:31,840 --> 00:42:32,840
+it's a longer form discussion on it.
+
+1393
+00:42:33,060 --> 00:42:35,120
+It is, goes back to what, what Ben
+
+1394
+00:42:35,120 --> 00:42:37,560
+said early on, which is there is this
+
+1395
+00:42:37,560 --> 00:42:39,000
+repeating pattern in history.
+
+1396
+00:42:39,000 --> 00:42:40,360
+I mean, we, we can find examples of
+
+1397
+00:42:40,360 --> 00:42:41,720
+it for sure going back 500 years.
+
+1398
+00:42:42,300 --> 00:42:45,060
+Um, uh, is this repeating pattern, which is
+
+1399
+00:42:45,060 --> 00:42:46,740
+basically a person with a dream.
+
+1400
+00:42:47,320 --> 00:42:49,280
+Um, a person with a deep level of
+
+1401
+00:42:49,280 --> 00:42:52,420
+domain knowledge, um, and a dream, um, operating
+
+1402
+00:42:52,420 --> 00:42:55,880
+in a domain with asymmetric payoff, um, right,
+
+1403
+00:42:55,980 --> 00:42:57,840
+with, with risk and reward, where, you know,
+
+1404
+00:42:57,900 --> 00:42:58,980
+by the way, the, the dream may be
+
+1405
+00:42:58,980 --> 00:42:59,180
+wrong.
+
+1406
+00:42:59,300 --> 00:43:00,260
+Like they, they may not be able to
+
+1407
+00:43:00,260 --> 00:43:00,740
+do the thing.
+
+1408
+00:43:00,880 --> 00:43:02,020
+Um, but if they can do the thing,
+
+1409
+00:43:02,140 --> 00:43:03,760
+it will, it will have disproportionately high returns.
+
+1410
+00:43:03,760 --> 00:43:07,880
+Um, you know, the traditional institutional, you know,
+
+1411
+00:43:07,980 --> 00:43:10,020
+places people go to get support and funding,
+
+1412
+00:43:10,300 --> 00:43:12,180
+you know, for the dream, you know, for,
+
+1413
+00:43:12,180 --> 00:43:13,900
+for, for, for new projects, just turn it
+
+1414
+00:43:13,900 --> 00:43:16,020
+down because, you know, a bank can't finance,
+
+1415
+00:43:16,200 --> 00:43:17,700
+you know, a bank, a bank can't issue
+
+1416
+00:43:17,700 --> 00:43:19,980
+a loan against something with a 50%, you
+
+1417
+00:43:19,980 --> 00:43:21,360
+know, 50% chance of a 10 accident,
+
+1418
+00:43:21,480 --> 00:43:22,340
+50% chance of failure.
+
+1419
+00:43:22,340 --> 00:43:23,760
+Like a bank just can't underwrite that.
+
+1420
+00:43:24,180 --> 00:43:25,220
+So a bank won't do that.
+
+1421
+00:43:25,320 --> 00:43:26,420
+Big companies, you know, for the most part,
+
+1422
+00:43:26,560 --> 00:43:27,000
+won't do that.
+
+1423
+00:43:27,380 --> 00:43:29,260
+Um, uh, you know, almost nobody will do
+
+1424
+00:43:29,260 --> 00:43:29,520
+that.
+
+1425
+00:43:30,020 --> 00:43:32,040
+Um, but, but somebody has a dream and
+
+1426
+00:43:32,040 --> 00:43:33,600
+then, you know, when the dream works and
+
+1427
+00:43:33,600 --> 00:43:35,440
+especially if you can construct a portfolio of
+
+1428
+00:43:35,440 --> 00:43:36,960
+those dreams and of those people, you know,
+
+1429
+00:43:37,020 --> 00:43:38,460
+then the expected, you know, value on that
+
+1430
+00:43:38,460 --> 00:43:39,680
+is, is going to be very high.
+
+1431
+00:43:39,860 --> 00:43:42,280
+Like, like that's a very special thing.
+
+1432
+00:43:42,520 --> 00:43:44,080
+Um, I, I've had long conversations with Tyler
+
+1433
+00:43:44,080 --> 00:43:46,360
+Cohen, who's very, particularly is very thoughtful on
+
+1434
+00:43:46,360 --> 00:43:46,480
+this.
+
+1435
+00:43:46,480 --> 00:43:48,960
+And he has a term, forget the exact
+
+1436
+00:43:48,960 --> 00:43:50,120
+term that he is, it's like, it's, it's
+
+1437
+00:43:50,120 --> 00:43:52,800
+like some combination talent picker, project picker.
+
+1438
+00:43:53,360 --> 00:43:55,560
+Um, and it's, it's this thing, you know,
+
+1439
+00:43:55,560 --> 00:43:56,420
+it's like, we were talking about earlier about
+
+1440
+00:43:56,420 --> 00:43:56,880
+market size.
+
+1441
+00:43:56,980 --> 00:43:58,100
+It's this thing where like, there is an
+
+1442
+00:43:58,100 --> 00:44:00,540
+analytical scientific component to it, but there's also
+
+1443
+00:44:00,540 --> 00:44:01,860
+like an art to it.
+
+1444
+00:44:01,920 --> 00:44:03,680
+And there's, there, there's some intangible cause you're,
+
+1445
+00:44:03,680 --> 00:44:05,160
+you're dealing with human beings at a very
+
+1446
+00:44:05,160 --> 00:44:07,320
+kind of primordial level, you know, kind of,
+
+1447
+00:44:07,440 --> 00:44:08,800
+you know, kind of very early in the
+
+1448
+00:44:08,800 --> 00:44:10,040
+process of doing something that hasn't been done
+
+1449
+00:44:10,040 --> 00:44:10,320
+before.
+
+1450
+00:44:10,700 --> 00:44:13,400
+Um, and, you know, quite honestly, like, you
+
+1451
+00:44:13,400 --> 00:44:14,680
+know, an early example of this was, you
+
+1452
+00:44:14,680 --> 00:44:16,220
+know, Queen Isabella with Christopher Columbus.
+
+1453
+00:44:16,220 --> 00:44:16,580
+Right.
+
+1454
+00:44:16,820 --> 00:44:18,080
+Um, and I, I was just like, I
+
+1455
+00:44:18,080 --> 00:44:20,100
+was just, I was trying to picture the
+
+1456
+00:44:20,100 --> 00:44:20,460
+pitch.
+
+1457
+00:44:20,700 --> 00:44:20,920
+Right.
+
+1458
+00:44:21,100 --> 00:44:22,500
+You know, Christopher Columbus rolls in.
+
+1459
+00:44:22,940 --> 00:44:23,220
+Right.
+
+1460
+00:44:23,340 --> 00:44:25,020
+And he's like, you know, all right, you
+
+1461
+00:44:25,020 --> 00:44:25,900
+know, here's, you know, I'm going to find
+
+1462
+00:44:25,900 --> 00:44:27,180
+a new route, you know, route to India,
+
+1463
+00:44:27,340 --> 00:44:27,660
+by the way.
+
+1464
+00:44:27,780 --> 00:44:28,660
+You know, there's like a, I don't know,
+
+1465
+00:44:28,760 --> 00:44:30,640
+whatever 50, 60% chance that, you know,
+
+1466
+00:44:30,680 --> 00:44:31,560
+you'll never hear from me again.
+
+1467
+00:44:32,180 --> 00:44:33,900
+Um, and you know, you know, maybe, you
+
+1468
+00:44:33,900 --> 00:44:35,800
+know, maybe, maybe I've, you know, died 2000
+
+1469
+00:44:35,800 --> 00:44:37,120
+miles away from Spain.
+
+1470
+00:44:37,260 --> 00:44:38,300
+Maybe I may, by the way, maybe I
+
+1471
+00:44:38,300 --> 00:44:39,260
+just like ran away with the money.
+
+1472
+00:44:39,420 --> 00:44:40,500
+It's not like they had Interpol in those
+
+1473
+00:44:40,500 --> 00:44:40,700
+days.
+
+1474
+00:44:40,980 --> 00:44:41,260
+Yeah.
+
+1475
+00:44:41,560 --> 00:44:43,260
+Um, and I'm going to go do that.
+
+1476
+00:44:43,260 --> 00:44:44,500
+And then, and by the way, the, the
+
+1477
+00:44:44,500 --> 00:44:45,980
+fact that that bet paid off, but like,
+
+1478
+00:44:46,100 --> 00:44:46,960
+that, that, that, that, like.
+
+1479
+00:44:47,220 --> 00:44:48,880
+The whole, the whole idea was wrong.
+
+1480
+00:44:49,240 --> 00:44:49,380
+Yeah.
+
+1481
+00:44:49,720 --> 00:44:51,360
+But the whole, the whole idea was wrong.
+
+1482
+00:44:51,360 --> 00:44:52,220
+The whole idea was wrong.
+
+1483
+00:44:52,340 --> 00:44:53,480
+He discovered a completely different continent.
+
+1484
+00:44:53,620 --> 00:44:54,820
+And he himself did not believe that he
+
+1485
+00:44:54,820 --> 00:44:56,040
+had discovered a completely different continent.
+
+1486
+00:44:56,880 --> 00:44:57,200
+Right.
+
+1487
+00:44:57,200 --> 00:44:58,900
+Um, and I don't even know that Spain
+
+1488
+00:44:58,900 --> 00:45:00,080
+was the main beneficiary of that in the
+
+1489
+00:45:00,080 --> 00:45:00,400
+long run.
+
+1490
+00:45:00,500 --> 00:45:00,580
+Right.
+
+1491
+00:45:00,680 --> 00:45:02,680
+Like, and so like, but like, you know,
+
+1492
+00:45:02,880 --> 00:45:04,680
+like she funded it and like, wow.
+
+1493
+00:45:05,140 --> 00:45:05,240
+Right.
+
+1494
+00:45:05,620 --> 00:45:05,900
+Yeah.
+
+1495
+00:45:05,900 --> 00:45:07,060
+And then there's, there's a lot of gold.
+
+1496
+00:45:08,440 --> 00:45:08,700
+Yeah.
+
+1497
+00:45:08,820 --> 00:45:09,220
+Yeah, exactly.
+
+1498
+00:45:09,380 --> 00:45:09,480
+Yes.
+
+1499
+00:45:09,580 --> 00:45:10,600
+They, they did, they did find some gold.
+
+1500
+00:45:10,820 --> 00:45:12,080
+They're very similar story, by the way.
+
+1501
+00:45:12,140 --> 00:45:13,780
+The Puritans have a, you know, the Plymouth
+
+1502
+00:45:13,780 --> 00:45:15,380
+Rock, the, that whole thing, the Mayflower, they
+
+1503
+00:45:15,380 --> 00:45:17,360
+have a very similar story, uh, to that.
+
+1504
+00:45:17,360 --> 00:45:18,880
+It took, I think 20 years to raise
+
+1505
+00:45:18,880 --> 00:45:20,400
+the financing, uh, to be able to make
+
+1506
+00:45:20,400 --> 00:45:21,480
+the, uh, make the Mayflower
+
+1507
+00:45:21,480 --> 00:45:21,940
+Expedition.
+
+1508
+00:45:22,400 --> 00:45:23,940
+Um, and they needed, they needed, you know,
+
+1509
+00:45:23,940 --> 00:45:24,640
+backers like that.
+
+1510
+00:45:24,760 --> 00:45:25,760
+You know, that we, we always talk now
+
+1511
+00:45:25,760 --> 00:45:27,180
+about in the venture industry, you know, the
+
+1512
+00:45:27,180 --> 00:45:27,480
+whaling
+
+1513
+00:45:27,480 --> 00:45:30,100
+industry 400 years ago, um, you know, operated
+
+1514
+00:45:30,100 --> 00:45:30,980
+in a very similar way.
+
+1515
+00:45:31,160 --> 00:45:32,660
+The, the movie industry has always worked this
+
+1516
+00:45:32,660 --> 00:45:32,800
+way.
+
+1517
+00:45:32,880 --> 00:45:34,220
+The book publishing industry has always worked this
+
+1518
+00:45:34,220 --> 00:45:34,440
+way.
+
+1519
+00:45:34,760 --> 00:45:36,560
+By the way, politics has always, you know,
+
+1520
+00:45:36,620 --> 00:45:38,200
+worked, political campaigns work this way that,
+
+1521
+00:45:38,320 --> 00:45:39,940
+you know, any, any, any new, you know,
+
+1522
+00:45:40,040 --> 00:45:41,500
+future president starts out as a long shot,
+
+1523
+00:45:41,940 --> 00:45:42,660
+somebody bets on them.
+
+1524
+00:45:42,740 --> 00:45:44,760
+And so there's, there's this intangible that has
+
+1525
+00:45:44,760 --> 00:45:46,440
+to do with making, making these long dated
+
+1526
+00:45:46,440 --> 00:45:46,680
+bets
+
+1527
+00:45:46,680 --> 00:45:48,700
+with very uncertain outcomes and with high failure
+
+1528
+00:45:48,700 --> 00:45:48,980
+rates.
+
+1529
+00:45:49,240 --> 00:45:51,580
+And I mean, like if, yes, like I
+
+1530
+00:45:51,580 --> 00:45:52,500
+think what I said in the original interview
+
+1531
+00:45:52,500 --> 00:45:52,760
+is like,
+
+1532
+00:45:52,820 --> 00:45:53,940
+look, if we're gonna have AI do that,
+
+1533
+00:45:54,060 --> 00:45:55,600
+like, God bless, like, I'm gonna, like, I'm
+
+1534
+00:45:55,600 --> 00:45:55,660
+gonna
+
+1535
+00:45:55,660 --> 00:45:56,780
+hit the beach and like, it's all good.
+
+1536
+00:45:57,440 --> 00:46:00,600
+Um, but you know, uh, like, I, I
+
+1537
+00:46:00,600 --> 00:46:02,340
+guess maybe make the following claim and see,
+
+1538
+00:46:02,520 --> 00:46:02,780
+Ben, what
+
+1539
+00:46:02,780 --> 00:46:04,840
+you think of this, the intangibles seem to
+
+1540
+00:46:04,840 --> 00:46:06,500
+be becoming more important, not less important
+
+1541
+00:46:06,500 --> 00:46:06,880
+over time.
+
+1542
+00:46:07,400 --> 00:46:09,560
+Um, it seems to be becoming more like
+
+1543
+00:46:09,560 --> 00:46:10,980
+an art and less like a science as
+
+1544
+00:46:10,980 --> 00:46:11,240
+we go.
+
+1545
+00:46:11,440 --> 00:46:12,040
+Would you agree with that?
+
+1546
+00:46:12,540 --> 00:46:14,660
+I, I definitely think that's right because, uh,
+
+1547
+00:46:15,380 --> 00:46:16,520
+history, um,
+
+1548
+00:46:17,600 --> 00:46:18,920
+is a bad guide.
+
+1549
+00:46:19,280 --> 00:46:22,240
+Uh, so you can't like the, the, the,
+
+1550
+00:46:22,400 --> 00:46:24,040
+the interesting thing about VC for me, probably
+
+1551
+00:46:24,040 --> 00:46:24,440
+the biggest
+
+1552
+00:46:24,440 --> 00:46:26,840
+lesson is you gotta be very careful about
+
+1553
+00:46:26,840 --> 00:46:28,160
+a highly trained neural net.
+
+1554
+00:46:28,280 --> 00:46:30,880
+Um, because that's when you make the mistakes
+
+1555
+00:46:30,880 --> 00:46:32,080
+because things change.
+
+1556
+00:46:32,180 --> 00:46:34,460
+And I would say things have changed more
+
+1557
+00:46:34,460 --> 00:46:34,900
+rapidly.
+
+1558
+00:46:34,900 --> 00:46:37,040
+Like the thing that we never thought would
+
+1559
+00:46:37,040 --> 00:46:39,300
+ever, ever, ever go away is the mythical
+
+1560
+00:46:39,300 --> 00:46:39,880
+man month.
+
+1561
+00:46:39,880 --> 00:46:42,940
+Um, you know, nine women can't have a
+
+1562
+00:46:42,940 --> 00:46:43,660
+baby in a month.
+
+1563
+00:46:43,860 --> 00:46:46,980
+Well, with AI, you can, um, you know,
+
+1564
+00:46:47,100 --> 00:46:50,300
+with software, it's a metaphor for software.
+
+1565
+00:46:50,480 --> 00:46:51,480
+It's a metaphor for software.
+
+1566
+00:46:51,720 --> 00:46:52,160
+Yes, exactly.
+
+1567
+00:46:52,260 --> 00:46:52,980
+Sorry, sorry, sorry.
+
+1568
+00:46:52,980 --> 00:46:54,480
+Uh, so in the old days, right?
+
+1569
+00:46:54,600 --> 00:46:57,040
+Like no matter how many engineers you put
+
+1570
+00:46:57,040 --> 00:46:59,220
+on a team, you still, you know, more
+
+1571
+00:46:59,220 --> 00:46:59,600
+engineers
+
+1572
+00:46:59,600 --> 00:47:01,840
+would actually slow down the project as opposed
+
+1573
+00:47:01,840 --> 00:47:02,540
+to speed it up.
+
+1574
+00:47:02,640 --> 00:47:04,900
+But now, uh, so you couldn't throw money
+
+1575
+00:47:04,900 --> 00:47:06,280
+at a problem.
+
+1576
+00:47:06,440 --> 00:47:09,660
+You couldn't throw money at somebody's technological lead.
+
+1577
+00:47:09,660 --> 00:47:11,060
+You'd have to do something different.
+
+1578
+00:47:11,520 --> 00:47:13,400
+Um, now you can throw money at it.
+
+1579
+00:47:13,680 --> 00:47:15,600
+Uh, uh, you know, Elon did an amazing
+
+1580
+00:47:15,600 --> 00:47:18,500
+job of throwing money, um, at the foundation
+
+1581
+00:47:18,500 --> 00:47:18,760
+model
+
+1582
+00:47:18,760 --> 00:47:20,380
+problem and he caught up very, very fast.
+
+1583
+00:47:20,660 --> 00:47:23,000
+And that's something that in the whole history
+
+1584
+00:47:23,000 --> 00:47:24,780
+of our industry could never have happened before.
+
+1585
+00:47:25,100 --> 00:47:28,480
+So if you had asked an AI, if
+
+1586
+00:47:28,480 --> 00:47:31,340
+Elon had any prayer of catching, um, open
+
+1587
+00:47:31,340 --> 00:47:32,580
+AI or anthropic,
+
+1588
+00:47:32,640 --> 00:47:33,880
+they would have said no way.
+
+1589
+00:47:34,080 --> 00:47:37,420
+Uh, and so that's where you're getting into.
+
+1590
+00:47:37,860 --> 00:47:39,940
+Um, I mean, maybe if the AI was
+
+1591
+00:47:39,940 --> 00:47:42,120
+smart enough, I suppose, but like there, there
+
+1592
+00:47:42,120 --> 00:47:42,600
+are these,
+
+1593
+00:47:42,800 --> 00:47:44,540
+a lot of it has to do with
+
+1594
+00:47:44,540 --> 00:47:45,720
+like, how much do you believe in the
+
+1595
+00:47:45,720 --> 00:47:46,040
+person?
+
+1596
+00:47:46,960 --> 00:47:47,400
+Yeah.
+
+1597
+00:47:47,400 --> 00:47:48,480
+And then, and then the other part is
+
+1598
+00:47:48,480 --> 00:47:49,580
+what we talked about already, but it's, it's
+
+1599
+00:47:49,580 --> 00:47:50,540
+the long and twisting path.
+
+1600
+00:47:50,700 --> 00:47:51,860
+You know, the investment's just the beginning.
+
+1601
+00:47:52,000 --> 00:47:52,040
+Right.
+
+1602
+00:47:52,140 --> 00:47:53,360
+And it's the long and twisting path that
+
+1603
+00:47:53,360 --> 00:47:54,860
+that person and that company take over time,
+
+1604
+00:47:54,960 --> 00:47:55,440
+um,
+
+1605
+00:47:55,500 --> 00:47:56,520
+and all the different ways that we, you
+
+1606
+00:47:56,520 --> 00:47:57,620
+know, we try to try to try to
+
+1607
+00:47:57,620 --> 00:47:58,180
+help them succeed.
+
+1608
+00:47:58,300 --> 00:47:59,620
+And so I, I think that, yeah, I,
+
+1609
+00:47:59,700 --> 00:48:01,900
+yeah, if yes, I, I don't know how
+
+1610
+00:48:01,900 --> 00:48:02,720
+to have AI do all that.
+
+1611
+00:48:02,880 --> 00:48:04,240
+Um, but maybe we'll figure it out.
+
+1612
+00:48:04,500 --> 00:48:04,660
+Yeah.
+
+1613
+00:48:05,020 --> 00:48:06,780
+Uh, you, you could imagine an AI who
+
+1614
+00:48:06,780 --> 00:48:07,300
+could do it all.
+
+1615
+00:48:07,440 --> 00:48:08,900
+Of course, if an AI was smart about
+
+1616
+00:48:08,900 --> 00:48:12,940
+every single thing, including human psychology, then certainly.
+
+1617
+00:48:13,840 --> 00:48:14,020
+Could be.
+
+1618
+00:48:14,500 --> 00:48:16,960
+You're, you're, you're tasked with training this AI.
+
+1619
+00:48:16,960 --> 00:48:18,180
+Like what are the things that you've learned
+
+1620
+00:48:18,180 --> 00:48:19,300
+on this art that you can put into
+
+1621
+00:48:19,300 --> 00:48:19,720
+words?
+
+1622
+00:48:19,820 --> 00:48:21,060
+Like if it is, and this is the
+
+1623
+00:48:21,060 --> 00:48:22,660
+most optimistic view of the future I can
+
+1624
+00:48:22,660 --> 00:48:23,360
+think of, the tools
+
+1625
+00:48:23,360 --> 00:48:25,360
+are getting better, but the human piece really,
+
+1626
+00:48:25,380 --> 00:48:25,820
+really matters.
+
+1627
+00:48:26,220 --> 00:48:28,040
+Like what have you learned about the art
+
+1628
+00:48:28,040 --> 00:48:29,460
+that you can, that you can describe?
+
+1629
+00:48:29,620 --> 00:48:31,140
+Like, what do you look for in, in
+
+1630
+00:48:31,140 --> 00:48:31,800
+a Christopher Columbus?
+
+1631
+00:48:32,560 --> 00:48:34,720
+Well, I mean, I think that, um, the
+
+1632
+00:48:34,720 --> 00:48:36,700
+first thing, and I, you know, I hesitate
+
+1633
+00:48:36,700 --> 00:48:37,960
+to, to name things
+
+1634
+00:48:37,960 --> 00:48:39,840
+in, in some sense, cause they're also different,
+
+1635
+00:48:39,940 --> 00:48:40,100
+right?
+
+1636
+00:48:40,280 --> 00:48:42,320
+Like Elon is really not at all.
+
+1637
+00:48:42,560 --> 00:48:44,020
+Like, uh, Mark Zuckerberg.
+
+1638
+00:48:44,160 --> 00:48:44,660
+Who's not at all.
+
+1639
+00:48:44,860 --> 00:48:45,580
+Like Ali Goetze.
+
+1640
+00:48:45,700 --> 00:48:48,300
+Who's not like at all.
+
+1641
+00:48:48,480 --> 00:48:49,220
+Like Brian Chesky.
+
+1642
+00:48:49,220 --> 00:48:50,840
+So like, like they're all different.
+
+1643
+00:48:51,220 --> 00:48:55,360
+Um, and the, but the things that they
+
+1644
+00:48:55,360 --> 00:48:58,860
+all do, I would say is, um, they
+
+1645
+00:48:58,860 --> 00:49:00,280
+all think for themselves.
+
+1646
+00:49:00,540 --> 00:49:02,020
+They're not people who read the room and
+
+1647
+00:49:02,020 --> 00:49:03,620
+try and like figure out what people want
+
+1648
+00:49:03,620 --> 00:49:03,920
+them to
+
+1649
+00:49:03,920 --> 00:49:04,060
+do.
+
+1650
+00:49:04,220 --> 00:49:07,040
+They, they, they have original ideas.
+
+1651
+00:49:07,240 --> 00:49:09,720
+So original idea is probably the thing that
+
+1652
+00:49:09,720 --> 00:49:12,260
+every great entrepreneur has their original
+
+1653
+00:49:12,260 --> 00:49:12,640
+thinkers.
+
+1654
+00:49:13,140 --> 00:49:18,900
+Um, and then, you know, they, they all
+
+1655
+00:49:18,900 --> 00:49:25,000
+also have some combination of enough charisma.
+
+1656
+00:49:25,280 --> 00:49:28,780
+They're interesting enough, um, that people want to
+
+1657
+00:49:28,780 --> 00:49:29,360
+follow them.
+
+1658
+00:49:29,560 --> 00:49:33,060
+Um, because, you know, ultimately you, you kind
+
+1659
+00:49:33,060 --> 00:49:35,660
+of need people to go, okay, that is
+
+1660
+00:49:35,660 --> 00:49:36,120
+the leader.
+
+1661
+00:49:36,360 --> 00:49:37,740
+And that's somebody who I want to work
+
+1662
+00:49:37,740 --> 00:49:39,100
+with, work for, and so forth.
+
+1663
+00:49:39,580 --> 00:49:42,240
+Uh, so that's, those are the things that
+
+1664
+00:49:42,240 --> 00:49:43,960
+I would say almost all of them have.
+
+1665
+00:49:44,100 --> 00:49:46,200
+And then, and I think all of them
+
+1666
+00:49:46,200 --> 00:49:47,300
+have those to be great.
+
+1667
+00:49:47,480 --> 00:49:51,520
+Uh, but everything else, I, you know, like
+
+1668
+00:49:51,520 --> 00:49:53,340
+Steve Jobs is a very different kind of
+
+1669
+00:49:53,340 --> 00:49:53,600
+guy.
+
+1670
+00:49:53,900 --> 00:49:56,380
+Um, they're all, they're all different.
+
+1671
+00:49:56,620 --> 00:49:58,300
+I would say very, like Steve Jobs, nothing
+
+1672
+00:49:58,300 --> 00:49:59,680
+like Andy Grove, like nothing.
+
+1673
+00:50:00,000 --> 00:50:02,160
+Uh, but you know, they're both great.
+
+1674
+00:50:02,960 --> 00:50:04,580
+To close this out, I guess, from, from
+
+1675
+00:50:04,580 --> 00:50:06,360
+each of you, what is the thing that
+
+1676
+00:50:06,360 --> 00:50:06,960
+you're personally
+
+1677
+00:50:06,960 --> 00:50:08,520
+most excited about in the next kind of
+
+1678
+00:50:08,520 --> 00:50:10,300
+couple of years of a 16 Z, but
+
+1679
+00:50:10,300 --> 00:50:11,580
+just tech more broadly?
+
+1680
+00:50:12,560 --> 00:50:13,840
+Well, I mean, I mean, you know, you
+
+1681
+00:50:13,840 --> 00:50:15,840
+know, Mark, Mark had a great line.
+
+1682
+00:50:15,960 --> 00:50:17,480
+Like, well, this is on the order of
+
+1683
+00:50:17,480 --> 00:50:19,900
+like the steam engine or electricity or like,
+
+1684
+00:50:19,900 --> 00:50:20,320
+like this
+
+1685
+00:50:20,320 --> 00:50:24,380
+is such a big invention, um, that we're
+
+1686
+00:50:24,380 --> 00:50:25,520
+gonna end up in a different world.
+
+1687
+00:50:25,520 --> 00:50:29,120
+And the thing that's most exciting to me
+
+1688
+00:50:29,120 --> 00:50:31,940
+about it is, you know, I, I wouldn't
+
+1689
+00:50:31,940 --> 00:50:32,480
+want to live
+
+1690
+00:50:32,480 --> 00:50:33,840
+in the pre-electricity world.
+
+1691
+00:50:34,220 --> 00:50:36,340
+Um, like I like this world way, way,
+
+1692
+00:50:36,480 --> 00:50:36,940
+way better.
+
+1693
+00:50:37,440 --> 00:50:40,260
+And so I think that like odds are,
+
+1694
+00:50:40,420 --> 00:50:42,080
+we're gonna get to a world that's just
+
+1695
+00:50:42,080 --> 00:50:43,400
+way, way better than
+
+1696
+00:50:43,400 --> 00:50:45,780
+we can even like, we can't even get
+
+1697
+00:50:45,780 --> 00:50:47,180
+our heads around it, which is why it
+
+1698
+00:50:47,180 --> 00:50:47,960
+freaks people out.
+
+1699
+00:50:47,960 --> 00:50:50,920
+Like all these stuff that we have to
+
+1700
+00:50:50,920 --> 00:50:53,100
+do and so forth that we've just learned
+
+1701
+00:50:53,100 --> 00:50:54,340
+to live with that sucks,
+
+1702
+00:50:54,560 --> 00:50:56,800
+um, isn't gonna be required anymore.
+
+1703
+00:50:56,940 --> 00:50:59,000
+And so like, you know, what does that
+
+1704
+00:50:59,000 --> 00:50:59,300
+mean?
+
+1705
+00:50:59,540 --> 00:51:00,680
+What do we think of them?
+
+1706
+00:51:01,080 --> 00:51:02,300
+Like what is life become?
+
+1707
+00:51:02,460 --> 00:51:05,580
+It could be, uh, you know, super exciting.
+
+1708
+00:51:05,740 --> 00:51:08,480
+Now, the one thing with humans, that's a
+
+1709
+00:51:08,480 --> 00:51:11,280
+little messed up is, you know, if that
+
+1710
+00:51:11,280 --> 00:51:12,600
+takes us too far away,
+
+1711
+00:51:12,600 --> 00:51:14,260
+like one of the, you know, too far
+
+1712
+00:51:14,260 --> 00:51:19,580
+away from some grounded purpose, uh, about, um,
+
+1713
+00:51:20,840 --> 00:51:21,520
+you know, and
+
+1714
+00:51:21,520 --> 00:51:24,920
+beliefs, uh, and spirituality, then, you know, you
+
+1715
+00:51:24,920 --> 00:51:26,600
+can attach on to some dumb stuff.
+
+1716
+00:51:26,900 --> 00:51:29,540
+Uh, so, you know, that, that, that would
+
+1717
+00:51:29,540 --> 00:51:31,080
+be actually my only worry, but I think
+
+1718
+00:51:31,080 --> 00:51:31,640
+life just
+
+1719
+00:51:31,640 --> 00:51:33,820
+the quality of life for everybody's about to
+
+1720
+00:51:33,820 --> 00:51:35,680
+get like way, way better than it's ever
+
+1721
+00:51:35,680 --> 00:51:35,880
+been.
+
+1722
+00:51:36,620 --> 00:51:37,920
+I'm excited about the zoomers.
+
+1723
+00:51:41,460 --> 00:51:42,780
+I am psyched for the zoomers.
+
+1724
+00:51:42,960 --> 00:51:44,760
+Um, I was with a, uh, I was
+
+1725
+00:51:44,760 --> 00:51:46,400
+with a, uh, a founder, a founder team
+
+1726
+00:51:46,400 --> 00:51:46,800
+the other day.
+
+1727
+00:51:46,960 --> 00:51:48,840
+Um, and, uh, I was, who are zoomers
+
+1728
+00:51:48,840 --> 00:51:50,340
+and I was explaining to them, you know,
+
+1729
+00:51:50,400 --> 00:51:51,500
+why the zoomers are so much better than
+
+1730
+00:51:51,500 --> 00:51:52,840
+the millennials and why they're gonna save us.
+
+1731
+00:51:52,900 --> 00:51:53,760
+And like, the whole thing is gonna be
+
+1732
+00:51:53,760 --> 00:51:53,960
+great.
+
+1733
+00:51:54,060 --> 00:51:54,520
+This is so great.
+
+1734
+00:51:54,580 --> 00:51:56,180
+And of course, they're just like staring at
+
+1735
+00:51:56,180 --> 00:51:58,000
+me, like I'm speaking Greek because like they
+
+1736
+00:51:58,000 --> 00:51:59,740
+did, you know, they're, you know, they're, you
+
+1737
+00:51:59,740 --> 00:52:00,860
+know, they just think like millennials are like
+
+1738
+00:52:00,860 --> 00:52:02,060
+old farts that are like completely out of
+
+1739
+00:52:02,060 --> 00:52:02,280
+touch.
+
+1740
+00:52:03,100 --> 00:52:05,240
+Um, and of course, you know, us, Ben
+
+1741
+00:52:05,240 --> 00:52:06,260
+and I are Gen Xers, we might as
+
+1742
+00:52:06,260 --> 00:52:07,160
+well be, you know, Stone Age.
+
+1743
+00:52:07,160 --> 00:52:08,800
+Um, and, and I was like, but I
+
+1744
+00:52:08,800 --> 00:52:10,240
+was like, but I was like, this is
+
+1745
+00:52:10,240 --> 00:52:11,100
+what's so great about the zoomers.
+
+1746
+00:52:11,180 --> 00:52:13,420
+Like they just like, they're, they're, it's, it's
+
+1747
+00:52:13,420 --> 00:52:15,540
+the, it's the post that I would describe
+
+1748
+00:52:15,540 --> 00:52:18,320
+it as 2015 to 2024 was just, it
+
+1749
+00:52:18,320 --> 00:52:19,840
+was a very, very strange period.
+
+1750
+00:52:20,220 --> 00:52:22,140
+Um, and a lot of just things got
+
+1751
+00:52:22,140 --> 00:52:22,700
+really weird.
+
+1752
+00:52:22,900 --> 00:52:25,960
+Um, and the zoomers are the generation that
+
+1753
+00:52:25,960 --> 00:52:27,500
+basically was on the receiving end of that.
+
+1754
+00:52:27,840 --> 00:52:29,880
+And I, they're at least for the zoomers
+
+1755
+00:52:29,880 --> 00:52:31,080
+we get to deal with, like, they're just
+
+1756
+00:52:31,080 --> 00:52:32,100
+not having it.
+
+1757
+00:52:32,240 --> 00:52:34,280
+Um, and they're not walking around feeling guilty
+
+1758
+00:52:34,280 --> 00:52:35,100
+about everything all the time.
+
+1759
+00:52:35,260 --> 00:52:36,700
+They're not feeling like they have to like
+
+1760
+00:52:36,700 --> 00:52:37,820
+deny that they want to be successful.
+
+1761
+00:52:38,320 --> 00:52:39,300
+You know, they don't have any of the
+
+1762
+00:52:39,300 --> 00:52:40,740
+moral, you know, kind of hair shirt stuff.
+
+1763
+00:52:41,020 --> 00:52:42,660
+Um, they're, they're just like, they're there.
+
+1764
+00:52:42,980 --> 00:52:44,700
+If anything, they were like that too.
+
+1765
+00:52:44,820 --> 00:52:46,400
+Gen X kind of let go of all
+
+1766
+00:52:46,400 --> 00:52:49,300
+the craziness of the sixties and early seventies.
+
+1767
+00:52:49,880 --> 00:52:50,580
+Yeah, that's right.
+
+1768
+00:52:50,720 --> 00:52:50,960
+That's right.
+
+1769
+00:52:51,400 --> 00:52:51,800
+You're right.
+
+1770
+00:52:51,980 --> 00:52:52,100
+Exactly.
+
+1771
+00:52:52,220 --> 00:52:53,420
+Gen X was the reaction of the boomers
+
+1772
+00:52:53,420 --> 00:52:54,720
+in the same way the zoomers are reaction
+
+1773
+00:52:54,720 --> 00:52:55,140
+to the millennials.
+
+1774
+00:52:55,420 --> 00:52:57,300
+Um, and so the, the, the zoomer founders
+
+1775
+00:52:57,300 --> 00:52:58,780
+that we get to deal with, I, my
+
+1776
+00:52:58,780 --> 00:53:00,280
+view is like, it's the best, it's the
+
+1777
+00:53:00,280 --> 00:53:02,620
+best, it's the best, most competent, most capable.
+
+1778
+00:53:02,780 --> 00:53:04,660
+By the way, they're just like incredibly well,
+
+1779
+00:53:04,860 --> 00:53:06,960
+they come in all just incredibly well trained
+
+1780
+00:53:06,960 --> 00:53:08,260
+and indicated because they grew up online.
+
+1781
+00:53:08,440 --> 00:53:09,860
+You know, they've seen, you know, a thousand
+
+1782
+00:53:09,860 --> 00:53:11,540
+hours of YouTube videos from all the great,
+
+1783
+00:53:11,640 --> 00:53:12,920
+you know, people in tech talking about how
+
+1784
+00:53:12,920 --> 00:53:13,420
+to do everything.
+
+1785
+00:53:13,880 --> 00:53:15,000
+You know, they just know so much more
+
+1786
+00:53:15,000 --> 00:53:16,480
+than previous generations of founders did.
+
+1787
+00:53:16,480 --> 00:53:18,440
+Um, and you know, they're, by the way,
+
+1788
+00:53:18,580 --> 00:53:19,680
+they're, now they're all AI native.
+
+1789
+00:53:20,000 --> 00:53:21,300
+Um, you know, they all, you know, basically
+
+1790
+00:53:21,300 --> 00:53:22,680
+learned AI from scratch and, you know, in
+
+1791
+00:53:22,680 --> 00:53:24,480
+college and, you know, they're coming out and
+
+1792
+00:53:24,480 --> 00:53:25,840
+they, they totally understand it.
+
+1793
+00:53:26,260 --> 00:53:28,280
+Um, and so, and they're just like tremendously
+
+1794
+00:53:28,280 --> 00:53:30,440
+fired up and like completely, you know, completely,
+
+1795
+00:53:30,740 --> 00:53:32,780
+you know, they wear their, you know, they
+
+1796
+00:53:32,780 --> 00:53:33,480
+wear the heart on their sleeve.
+
+1797
+00:53:33,640 --> 00:53:35,040
+They're like, they're, they're gonna build something, they're
+
+1798
+00:53:35,040 --> 00:53:35,580
+gonna build something great.
+
+1799
+00:53:35,680 --> 00:53:37,080
+And they're completely unapologetic about it.
+
+1800
+00:53:37,080 --> 00:53:38,480
+Uh, they're very forceful.
+
+1801
+00:53:38,580 --> 00:53:39,080
+They're very determined.
+
+1802
+00:53:39,440 --> 00:53:41,180
+Um, yeah, I, I, I just think it's
+
+1803
+00:53:41,180 --> 00:53:41,460
+fantastic.
+
+1804
+00:53:41,620 --> 00:53:42,580
+I, I've been waiting this bit.
+
+1805
+00:53:42,660 --> 00:53:43,580
+Eric and Ben will tell you, I've been
+
+1806
+00:53:43,580 --> 00:53:46,660
+waiting for this, uh, for, for a long
+
+1807
+00:53:46,660 --> 00:53:46,960
+time.
+
+1808
+00:53:48,120 --> 00:53:49,440
+We may have to edit this out, but
+
+1809
+00:53:49,440 --> 00:53:50,920
+one of the things I do really like
+
+1810
+00:53:50,920 --> 00:53:51,580
+about the Zoomers,
+
+1811
+00:53:51,660 --> 00:53:55,080
+I haven't ever heard anybody say anything like,
+
+1812
+00:53:55,260 --> 00:53:57,200
+I'm gonna do well by doing good.
+
+1813
+00:53:57,760 --> 00:53:58,120
+Exactly.
+
+1814
+00:53:58,520 --> 00:53:59,540
+Like they never fucking say that bullshit.
+
+1815
+00:53:59,920 --> 00:54:00,720
+No, no.
+
+1816
+00:54:00,980 --> 00:54:01,620
+None of that stuff.
+
+1817
+00:54:01,780 --> 00:54:02,120
+And they have a good sense of humor
+
+1818
+00:54:02,120 --> 00:54:02,340
+too.
+
+1819
+00:54:02,480 --> 00:54:02,940
+They're funny.
+
+1820
+00:54:02,940 --> 00:54:03,480
+Yes.
+
+1821
+00:54:03,740 --> 00:54:04,020
+Yes.
+
+1822
+00:54:04,140 --> 00:54:04,780
+They're extremely funny.
+
+1823
+00:54:04,900 --> 00:54:05,440
+Well, they're extremely funny.
+
+1824
+00:54:05,520 --> 00:54:06,000
+They get, they get it.
+
+1825
+00:54:06,080 --> 00:54:07,140
+They get, they, they lived through, they were
+
+1826
+00:54:07,140 --> 00:54:08,440
+on the receiving end of just a tremendous
+
+1827
+00:54:08,440 --> 00:54:08,660
+amount
+
+1828
+00:54:08,660 --> 00:54:09,020
+of bullshit.
+
+1829
+00:54:09,240 --> 00:54:10,620
+And they're just like, they're just not having
+
+1830
+00:54:10,620 --> 00:54:10,780
+it.
+
+1831
+00:54:11,380 --> 00:54:13,160
+Um, and so it's just, I find it
+
+1832
+00:54:13,160 --> 00:54:14,980
+just like tremendously exciting, uh, to, to be
+
+1833
+00:54:14,980 --> 00:54:15,120
+able to
+
+1834
+00:54:15,120 --> 00:54:15,480
+work with them.
+
+1835
+00:54:15,540 --> 00:54:16,900
+And I, um, I, if, if I, if
+
+1836
+00:54:16,900 --> 00:54:18,700
+I had total control over my time, it
+
+1837
+00:54:18,700 --> 00:54:19,320
+would be a hundred percent.
+
+1838
+00:54:19,420 --> 00:54:19,840
+That was the worst.
+
+1839
+00:54:20,460 --> 00:54:22,740
+Well, I appreciate you spending an hour with
+
+1840
+00:54:22,740 --> 00:54:23,280
+a millennial.
+
+1841
+00:54:23,480 --> 00:54:24,500
+This was a ton of fun.
+
+1842
+00:54:24,980 --> 00:54:26,200
+Thank you for letting me write about, uh,
+
+1843
+00:54:26,320 --> 00:54:28,580
+about A16Z and thanks for, thanks for the
+
+1844
+00:54:28,580 --> 00:54:29,000
+conversation.
+
+1845
+00:54:29,700 --> 00:54:31,300
+We're, we're talking about all your future guests.
+
+1846
+00:54:31,700 --> 00:54:32,260
+Yeah, exactly.
+
+1847
+00:54:32,260 --> 00:54:32,800
+Yeah.
+
+1848
+00:54:33,300 --> 00:54:35,000
+Vacci, this was an excellent piece.
+
+1849
+00:54:35,140 --> 00:54:36,140
+Thank you so much for writing.
+
+1850
+00:54:36,420 --> 00:54:36,560
+Yeah.
+
+1851
+00:54:36,720 --> 00:54:36,800
+Yeah.
+
+1852
+00:54:36,980 --> 00:54:37,080
+Yes.
+
+1853
+00:54:37,460 --> 00:54:38,100
+A hundred percent.
+
+1854
+00:54:38,740 --> 00:54:38,820
+Good.
+
+1855
+00:54:41,020 --> 00:54:41,340
+Yeah.
+
+1856
+00:54:52,500 --> 00:54:52,540
+Yeah.
+
+1857
+00:54:52,540 --> 00:54:52,600
+Yeah.
+
+1858
+00:54:52,600 --> 00:54:52,640
+Yeah.
+
+1859
+00:54:52,640 --> 00:54:52,840
+You
+

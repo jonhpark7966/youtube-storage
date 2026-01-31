@@ -1,0 +1,1179 @@
+1
+00:00:25,316 --> 00:00:27,652
+So why does Altman seem so upset here?
+
+2
+00:00:27,652 --> 00:00:28,570
+After all, this interviewer
+
+3
+00:00:28,570 --> 00:00:33,158
+was just pointing out a basic fact
+that OpenAI has committed to spend over $1
+
+4
+00:00:33,158 --> 00:00:36,995
+trillion on AI infrastructure
+over the next eight years, despite only
+
+5
+00:00:36,995 --> 00:00:40,915
+bringing in around
+$13 billion a year in recurring revenue,
+
+6
+00:00:40,915 --> 00:00:44,044
+less than 1% of what
+they're promising to spend.
+
+7
+00:00:44,294 --> 00:00:47,172
+I'm no money genius-
+and I'm personally terrible
+
+8
+00:00:47,172 --> 00:00:50,175
+at budgeting-but that doesn't seem great.
+
+9
+00:00:50,258 --> 00:00:52,302
+Most of the supposed growth
+in the American
+
+10
+00:00:52,302 --> 00:00:55,889
+economy
+in 2025 was caused by investment in AI.
+
+11
+00:00:56,139 --> 00:01:00,435
+That's all part of a promise being made
+by the industry, led by Sam Altman,
+
+12
+00:01:00,810 --> 00:01:04,439
+that once a certain level of machine
+learning intelligence is reached,
+
+13
+00:01:04,647 --> 00:01:06,357
+all of our problems will be solved.
+
+14
+00:01:06,608 --> 00:01:07,442
+The housing crisis,
+
+15
+00:01:07,442 --> 00:01:07,901
+cancer,
+
+16
+00:01:07,901 --> 00:01:08,443
+poverty,
+
+17
+00:01:08,443 --> 00:01:09,027
+climate change
+
+18
+00:01:09,027 --> 00:01:09,527
+mental health,
+
+19
+00:01:09,527 --> 00:01:10,153
+democracy,
+
+20
+00:01:10,195 --> 00:01:12,822
+universal basic income
+care, a bunch of diseases, this cancer
+
+21
+00:01:12,822 --> 00:01:14,074
+and that one, and heart disease
+
+22
+00:01:14,074 --> 00:01:16,618
+helping you try to accomplish your goals
+and be your best.
+
+23
+00:01:16,618 --> 00:01:17,702
+Very high quality health care.
+
+24
+00:01:17,702 --> 00:01:19,370
+The important new scientific discoveries
+
+25
+00:01:19,370 --> 00:01:21,998
+the marginal cost of energy
+are going to trend rapidly toward zero.
+
+26
+00:01:21,998 --> 00:01:24,542
+The more equal world
+universal extreme health for everybody.
+
+27
+00:01:24,918 --> 00:01:26,294
+In exchange for all that
+
+28
+00:01:26,294 --> 00:01:30,215
+Altman is asking all of society
+to put all of our eggs-our data,
+
+29
+00:01:30,381 --> 00:01:35,261
+our economy, our water
+and resources... everything-into one basket:
+
+30
+00:01:35,762 --> 00:01:38,348
+his. He's offering us one, massive,
+
+31
+00:01:38,348 --> 00:01:40,308
+
+32
+00:01:40,308 --> 00:01:42,060
+So, should we trust Altman?
+
+33
+00:01:42,060 --> 00:01:43,603
+Should we accept his deal?
+
+34
+00:01:43,603 --> 00:01:45,730
+Is it even our choice?
+
+35
+00:01:45,730 --> 00:01:48,108
+Altman isn't a technologist or scientist,
+
+36
+00:01:48,108 --> 00:01:52,737
+He's an investor and dealmaker
+and really good at it... supposedly.
+
+37
+00:01:52,904 --> 00:01:56,324
+But his whole career is a series
+of 'just trust me, bro' moments.
+
+38
+00:01:56,741 --> 00:01:58,118
+So let's examine the deal
+
+39
+00:01:58,118 --> 00:01:59,702
+Altman is offering all of us.
+
+40
+00:01:59,702 --> 00:02:01,830
+Should we believe Sam Altman's promises?
+
+41
+00:02:01,830 --> 00:02:05,625
+And what's the cost to the rest of us
+if those promises
+
+42
+00:02:05,625 --> 00:02:08,628
+turn out to be... lies?
+
+43
+00:02:10,380 --> 00:02:11,965
+So let's go back and look closer
+
+44
+00:02:11,965 --> 00:02:14,968
+at Altman's early days
+in the tech industry.
+
+45
+00:02:15,176 --> 00:02:18,221
+Altman's first big deal was selling
+his first company,
+
+46
+00:02:18,513 --> 00:02:21,933
+Loopt a service
+for locating your friends.
+
+47
+00:02:22,100 --> 00:02:26,020
+That's something that inherently needs
+lots of users to work, or else you're just
+
+48
+00:02:26,146 --> 00:02:27,438
+locating yourself.
+
+49
+00:02:27,605 --> 00:02:29,774
+The operative idea seems to be ubiquity.
+
+50
+00:02:29,774 --> 00:02:33,736
+I mean, get get it out there in more ways
+than you can possibly imagine.
+
+51
+00:02:37,532 --> 00:02:39,742
+This whole time, Loopt refused to say how many users
+they had.
+
+52
+00:02:40,034 --> 00:02:42,912
+Altman just insisted
+there were "way
+
+53
+00:02:42,912 --> 00:02:45,915
+more users" than any other similar service.
+
+54
+00:02:45,957 --> 00:02:50,837
+It turns out, though, that towards
+the end, Loopt only had 500 users.
+
+55
+00:02:51,129 --> 00:02:54,883
+When Reuters reported this,
+Altman insisted it was "100 times"
+
+56
+00:02:54,883 --> 00:02:58,553
+more than that and that he'd
+provide evidence... He never did.
+
+57
+00:02:58,803 --> 00:03:00,847
+Just trust me, bro.
+
+58
+00:03:00,847 --> 00:03:03,349
+Loopt sold to the Green Dot Corporation,
+
+59
+00:03:03,349 --> 00:03:06,895
+who shut it down immediately
+and never used any of the tech.
+
+60
+00:03:07,187 --> 00:03:10,857
+Green Dot investors allege
+it was a dirty deal done to enrich
+
+61
+00:03:10,857 --> 00:03:14,652
+Sequoia Capital,
+a VC firm with a stake in Loopt
+
+62
+00:03:14,819 --> 00:03:18,948
+and two board members at Green Dot
+who helped approve the deal.
+
+63
+00:03:19,240 --> 00:03:21,951
+Altman left Green Dot
+as soon as he was legally able,
+
+64
+00:03:21,951 --> 00:03:26,706
+walking away with millions for building
+an app that no longer existed in any form.
+
+65
+00:03:26,998 --> 00:03:30,001
+And luckily for Altman,
+someone saw something in him.
+
+66
+00:03:30,126 --> 00:03:34,464
+Peter Thiel. Thiel, who once said that Altman
+should be treated as
+
+67
+00:03:34,672 --> 00:03:37,842
+"more of a messiah figure"
+gave Altman millions
+
+68
+00:03:37,842 --> 00:03:40,887
+to start his own VC
+firm, Hydrazine Capital.
+
+69
+00:03:41,763 --> 00:03:44,098
+And that's not all the capital
+Altman controlled.
+
+70
+00:03:44,098 --> 00:03:47,936
+He was also hired
+as president of Y Combinator, or YC,
+
+71
+00:03:47,936 --> 00:03:51,898
+an influential venture
+capital firm and startup incubator,
+
+72
+00:03:51,898 --> 00:03:55,568
+where Loopt got its original funding.
+"I think the president of YC
+
+73
+00:03:55,777 --> 00:03:58,321
+is sort of the unofficial leader
+of the startup movement."
+
+74
+00:03:58,321 --> 00:04:01,324
+And Altman
+personally traded on that influence.
+
+75
+00:04:01,366 --> 00:04:04,953
+The New Yorker reports that up
+to 75% of Hydrazine
+
+76
+00:04:05,036 --> 00:04:08,039
+Capital was invested in YC companies.
+
+77
+00:04:08,039 --> 00:04:11,292
+Altman used his inside view
+to get a cut of
+
+78
+00:04:11,292 --> 00:04:12,085
+YC's power.
+
+79
+00:04:12,085 --> 00:04:16,172
+Despite Altman promising
+he didn't cross invest in YC companies.
+
+80
+00:04:16,798 --> 00:04:20,176
+That's two big lies so far:
+the user base of LOOPT
+
+81
+00:04:20,176 --> 00:04:23,972
+that needed users to exist,
+and his investments.
+
+82
+00:04:24,264 --> 00:04:28,977
+In 2015, Altman leads YC into the
+investment you likely most know him for:
+
+83
+00:04:29,352 --> 00:04:34,023
+"Sort of a semi-company,
+semi-nonprofit, doing AI safety research."
+
+84
+00:04:34,107 --> 00:04:39,362
+OpenAI was launched as the supposed
+nonprofit OpenAI Foundation with a charter
+
+85
+00:04:39,362 --> 00:04:43,783
+with a lot of lofty goals,
+"a primary fiduciary duty to humanity"
+
+86
+00:04:43,783 --> 00:04:47,161
+and "avoiding enabling uses of AI or AGI
+
+87
+00:04:47,161 --> 00:04:50,164
+that harm humanity
+or unduly concentrate power," while
+
+88
+00:04:50,331 --> 00:04:54,252
+acting to "minimize conflicts of interest
+among our employees and stakeholders."
+
+89
+00:04:54,794 --> 00:04:57,880
+The evidence that they'd do that?
+"Just trust me, bro."
+
+90
+00:04:58,631 --> 00:05:00,258
+OpenAI's primary financial
+
+91
+00:05:00,258 --> 00:05:03,428
+backers were tech billionaires
+and millionaires like Altman
+
+92
+00:05:03,428 --> 00:05:07,015
+himself, Peter Thiel, Reid
+Hoffman and Elon Musk,
+
+93
+00:05:07,140 --> 00:05:10,893
+and tech companies
+like Amazon Web Services and Infosys.
+
+94
+00:05:11,269 --> 00:05:14,522
+We wanted to build this with humanity’s
+best interest at heart.
+
+95
+00:05:14,522 --> 00:05:17,025
+But in
+exchange, OpenAI is asking for a lot...
+
+96
+00:05:17,025 --> 00:05:20,361
+Putting all of society's
+eggs in one basket, if you will.
+
+97
+00:05:20,361 --> 00:05:24,866
+They want electricity,
+water, infrastructure...
+
+98
+00:05:25,366 --> 00:05:26,284
+Capital...
+
+99
+00:05:26,284 --> 00:05:29,120
+Your data... Your writing... 
+Your art...
+
+100
+00:05:29,120 --> 00:05:32,290
+And for humanity to adjust to job
+
+101
+00:05:32,290 --> 00:05:35,251
+loss, deepfakes and everything else.
+
+102
+00:05:35,335 --> 00:05:40,381
+All in exchange for some future promise
+of technology that fixes everything.
+
+103
+00:05:40,631 --> 00:05:43,259
+So, can we trust him with all of this?
+
+104
+00:05:43,259 --> 00:05:45,345
+Let's look
+at some of his biggest statements
+
+105
+00:05:45,345 --> 00:05:50,308
+and promises to show how they tie
+to all the eggs in the basket.
+
+106
+00:05:50,725 --> 00:05:53,770
+Altman insists
+he doesn't own any of OpenAI
+
+107
+00:05:53,770 --> 00:05:56,314
+and he barely takes a salary.
+
+108
+00:05:56,314 --> 00:05:58,691
+I’m paid enough for health insurance.
+I have no equity in OpenAI.
+
+109
+00:05:58,691 --> 00:05:59,859
+I'm doing this because I love it.
+
+110
+00:05:59,942 --> 00:06:02,403
+But he doesn't hide that he's already rich
+
+111
+00:06:02,403 --> 00:06:05,531
+trying to do a rich-guy-using money-for-good
+Batman thing.
+
+112
+00:06:05,823 --> 00:06:07,325
+That Batman.
+
+113
+00:06:07,325 --> 00:06:09,285
+Such a wonderful person.
+
+114
+00:06:09,285 --> 00:06:10,953
+I don't deserve it.
+
+115
+00:06:10,953 --> 00:06:13,206
+But we millionaires decided that you do.
+
+116
+00:06:13,748 --> 00:06:16,751
+But let's look at how this is
+part of his honesty problem.
+
+117
+00:06:16,834 --> 00:06:20,463
+And it ties in to the eggs in the basket,
+because Altman is invested
+
+118
+00:06:20,463 --> 00:06:23,841
+in all the stuff
+necessary to build OpenAI.
+
+119
+00:06:24,050 --> 00:06:27,261
+One of the eggs
+OpenAI needs is a ton of data:
+
+120
+00:06:27,470 --> 00:06:31,265
+you can't build a large language model
+without examples of language
+
+121
+00:06:31,265 --> 00:06:34,977
+and content,
+and one source of that data is Reddit.
+
+122
+00:06:35,311 --> 00:06:35,978
+Altman owns
+
+123
+00:06:35,978 --> 00:06:40,733
+a big share of the social networking site
+and was on its board until 2022.
+
+124
+00:06:40,900 --> 00:06:44,695
+Reddit got its start in the same inaugural
+Y Combinator class as Loopt.
+
+125
+00:06:45,113 --> 00:06:49,826
+Here's Altman standing next to Reddit
+co-founder Aaron Swartz in 2005.
+
+126
+00:06:50,159 --> 00:06:54,747
+Swartz died by suicide in 2013
+after being criminally charged
+
+127
+00:06:54,747 --> 00:07:00,044
+for reproducing academic articles
+online and breaking copyright law. 
+
+128
+00:07:00,086 --> 00:07:04,048
+In 2015., Altman made a deal with Reddit,
+allowing OpenAI to "basically
+
+129
+00:07:04,048 --> 00:07:08,636
+aggressively scrape everything posted
+on the site" to feed into OpenAI's tech.
+
+130
+00:07:08,845 --> 00:07:13,307
+Reddit co-founder Alex Ohanian
+"felt in his bones" the deal was wrong.
+
+131
+00:07:13,558 --> 00:07:16,436
+It's a less noble version
+of what Reddit co-founder
+
+132
+00:07:16,436 --> 00:07:19,522
+Aaron Swartz
+was targeted by law enforcement for.
+
+133
+00:07:19,856 --> 00:07:22,859
+Swartz wanted to open the knowledge
+up to everyone.
+
+134
+00:07:22,900 --> 00:07:25,903
+Altman wanted to put it in his product.
+
+135
+00:07:26,446 --> 00:07:29,449
+In 2014, Altman promised
+that he and other investors
+
+136
+00:07:29,449 --> 00:07:33,286
+would give 10% of Reddit's value
+back to the Reddit community.
+
+137
+00:07:33,494 --> 00:07:37,248
+That never happened,
+due to "regulatory issues."
+
+138
+00:07:37,582 --> 00:07:41,419
+But just like Reddit's data
+going to OpenAI, a look at the areas
+
+139
+00:07:41,419 --> 00:07:42,712
+Altman's wealth is invested
+
+140
+00:07:42,712 --> 00:07:46,090
+in show a deep connection
+to other needs of the organization.
+
+141
+00:07:46,424 --> 00:07:51,345
+He's invested in AI networking equipment
+companies, thermal battery companies,
+
+142
+00:07:51,345 --> 00:07:55,766
+and even companies mining the rare
+earth metals that server farms require.
+
+143
+00:07:56,267 --> 00:08:01,689
+And once it's all built, Altman
+will profit off the problems AI creates.
+
+144
+00:08:02,064 --> 00:08:05,818
+We're going to focus on three: 
+Rising energy demands and costs.
+
+145
+00:08:06,027 --> 00:08:08,696
+Misuse like fraud and deep fakes.
+
+146
+00:08:08,696 --> 00:08:10,990
+And job loss and economic collapse.
+
+147
+00:08:12,700 --> 00:08:13,576
+Altman says
+
+148
+00:08:13,576 --> 00:08:17,497
+again
+and again that OpenAI needs more power.
+
+149
+00:08:17,497 --> 00:08:20,875
+The, "audacious
+long term goal is to build
+
+150
+00:08:20,875 --> 00:08:24,504
+250GW of capacity by 2033."
+
+151
+00:08:24,670 --> 00:08:28,049
+That much compute will require
+as much electricity as 1.5
+
+152
+00:08:28,174 --> 00:08:31,761
+billion people, the equivalent
+of the entire population of India.
+
+153
+00:08:32,345 --> 00:08:36,224
+But Altman has a solution:
+since they first met in the early 2000s,
+
+154
+00:08:36,349 --> 00:08:39,268
+Peter Thiel
+and Sam Altman have had a shared interest
+
+155
+00:08:39,268 --> 00:08:42,647
+investing in nuclear power,
+which isn't inherently bad.
+
+156
+00:08:42,688 --> 00:08:45,024
+Of course,
+nuclear can be an extremely efficient
+
+157
+00:08:45,024 --> 00:08:48,861
+and clean form of energy,
+but Thiel and Altman want to own it.
+
+158
+00:08:49,237 --> 00:08:51,989
+Altman is invested in Helion and Oklo.
+
+159
+00:08:51,989 --> 00:08:55,910
+Helion is working to build the first ever
+nuclear fusion power plant,
+
+160
+00:08:55,910 --> 00:08:59,705
+a type of energy creation
+that many scientists say won't work
+
+161
+00:09:00,081 --> 00:09:01,332
+and Oklo is building
+
+162
+00:09:01,332 --> 00:09:05,211
+microreactors,
+literally truck sized nuclear reactors,
+
+163
+00:09:05,253 --> 00:09:08,923
+which is a bit concerning
+considering this investment strategy.
+
+164
+00:09:09,131 --> 00:09:13,302
+"Part of our model is make
+the cost of mistakes really low,
+
+165
+00:09:13,594 --> 00:09:15,263
+and then make a lot of mistakes."
+
+166
+00:09:15,263 --> 00:09:18,307
+But for now, Oklo hasn't
+figured their reactors out yet,
+
+167
+00:09:18,307 --> 00:09:21,561
+and they're just using gas
+to keep up the promises they made.
+
+168
+00:09:21,644 --> 00:09:25,231
+Nuclear startup Oklo and natural gas
+firm Liberty Energy today
+
+169
+00:09:25,231 --> 00:09:28,734
+announcing a partnership to provide energy
+to large scale customers.
+
+170
+00:09:30,069 --> 00:09:30,736
+Altman is also
+
+171
+00:09:30,736 --> 00:09:34,115
+invested in multiple companies
+offering protection against 
+
+172
+00:09:34,115 --> 00:09:38,578
+AI bad actors, identity verification
+to prevent deep fakes, and even companies
+
+173
+00:09:38,578 --> 00:09:42,415
+offering insurance for losses
+due to AI scams and hacking.
+
+174
+00:09:42,748 --> 00:09:46,168
+That's like Batman not making
+any money off of crimefighting,
+
+175
+00:09:46,210 --> 00:09:49,755
+but then selling "Batmobile
+drove into my house" insurance
+
+176
+00:09:50,381 --> 00:09:54,427
+while also running the Uber for henchman
+startup that The Riddler uses,
+
+177
+00:09:54,427 --> 00:09:57,430
+and selling The Joker white makeup.
+
+178
+00:10:00,057 --> 00:10:00,683
+One other
+
+179
+00:10:00,683 --> 00:10:04,520
+big promise Altman makes
+is that when the AI he sees as inevitable
+
+180
+00:10:04,520 --> 00:10:05,479
+makes many jobs
+
+181
+00:10:05,479 --> 00:10:09,317
+obsolete, it'll create so much wealth
+that it can be shared with everyone.
+
+182
+00:10:09,317 --> 00:10:14,071
+just like his smaller scale Reddit
+promise that turned out to be bullshit.
+
+183
+00:10:14,780 --> 00:10:18,159
+And in 2024, he announced the product
+that would supposedly
+
+184
+00:10:18,159 --> 00:10:20,411
+offer that shared abundance.
+
+185
+00:10:20,494 --> 00:10:23,289
+Worldcoin.
+
+186
+00:10:23,289 --> 00:10:26,667
+Worldcoin is a technology company
+and cryptocurrency
+
+187
+00:10:26,667 --> 00:10:30,296
+funded by all the usual suspects of techno
+fascism.
+
+188
+00:10:30,630 --> 00:10:33,674
+Worldcoin's backers
+say it can be a way to give out some form
+
+189
+00:10:33,674 --> 00:10:35,426
+of universal basic income.
+
+190
+00:10:35,426 --> 00:10:38,054
+When AI starts replacing jobs,
+
+191
+00:10:38,054 --> 00:10:42,308
+I think
+this idea that we have a global currency
+
+192
+00:10:42,308 --> 00:10:45,311
+that is outside
+of the control of any government
+
+193
+00:10:45,311 --> 00:10:50,399
+is a super logical
+and important step on the tech tree.
+
+194
+00:10:50,524 --> 00:10:53,027
+But it also sells itself as a solution
+
+195
+00:10:53,027 --> 00:10:57,073
+to identity verification
+problems created by AI.
+
+196
+00:10:57,615 --> 00:11:02,244
+They want to use these orbs
+as a method of trusted identity check,
+
+197
+00:11:02,453 --> 00:11:05,581
+and you don't get your universal
+basic income
+
+198
+00:11:05,790 --> 00:11:08,751
+until you scan your eyes into the orb
+
+199
+00:11:09,085 --> 00:11:12,296
+and like many of Altman's other projects,
+from Loopt to ChatGPT
+
+200
+00:11:12,296 --> 00:11:17,093
+ it requires universal adoption
+to be of any business use.
+
+201
+00:11:17,176 --> 00:11:21,138
+A currency and identification system
+are pretty useless if other people don't
+
+202
+00:11:21,138 --> 00:11:24,100
+use them. So again,
+Altman is making an offer.
+
+203
+00:11:24,100 --> 00:11:27,520
+Give us your identity
+and we'll give you cryptocurrency.
+
+204
+00:11:27,770 --> 00:11:29,647
+It's a classic Altman deal.
+
+205
+00:11:29,647 --> 00:11:32,525
+I'll fix everything
+if you sign over everything.
+
+206
+00:11:32,525 --> 00:11:34,151
+Just trust me, bro.
+
+207
+00:11:34,151 --> 00:11:37,988
+It's almost like Altman
+wants to build a whole other economy.
+
+208
+00:11:38,030 --> 00:11:40,991
+Just in case
+the one we have now falls apart.
+
+209
+00:11:40,991 --> 00:11:41,992
+Which, well, we'll get to that.
+
+210
+00:11:41,992 --> 00:11:45,621
+In 2019, OpenAI gave up any pretense
+
+211
+00:11:45,621 --> 00:11:49,333
+of being nonprofit
+and started a for-profit branch,
+
+212
+00:11:49,583 --> 00:11:53,838
+then spun the for-profit out
+into its own entity in 2024.
+
+213
+00:11:54,171 --> 00:11:57,717
+That for-profit organization
+has none of the same legal
+
+214
+00:11:57,717 --> 00:12:01,637
+responsibilities as the nonprofit did,
+and brought in new investors
+
+215
+00:12:01,637 --> 00:12:05,182
+like Microsoft,
+which invested $13 billion,
+
+216
+00:12:05,391 --> 00:12:09,103
+which OpenAI
+largely spent on Microsoft products.
+
+217
+00:12:09,562 --> 00:12:13,482
+And it's not just Microsoft,
+Nvidia has promised invest 100 billion
+
+218
+00:12:13,482 --> 00:12:17,695
+in OpenAI over the next few years, money
+that OpenAI will spend buying
+
+219
+00:12:17,695 --> 00:12:19,238
+Nvidia chips.
+
+220
+00:12:19,238 --> 00:12:22,241
+OpenAI has similar circular deals
+with AMD,
+
+221
+00:12:22,575 --> 00:12:26,078
+the Qatari government,
+and Larry Ellison's Oracle.
+
+222
+00:12:26,287 --> 00:12:29,874
+How about the 20 bucks you owe me? Well,
+I only got ten, so here's ten and I owe you ten.
+
+223
+00:12:29,874 --> 00:12:32,001
+Hey, Moe, you owe me 20.
+
+224
+00:12:32,084 --> 00:12:34,253
+Well, here's ten, I’ll owe you ten.
+You owe me 20.
+
+225
+00:12:34,253 --> 00:12:35,045
+Here's ten, I’ll owe you ten.
+
+226
+00:12:35,045 --> 00:12:36,756
+Here’s the ten I owe you.
+
+227
+00:12:36,756 --> 00:12:37,882
+Good. Now we're all even.
+
+228
+00:12:39,091 --> 00:12:39,759
+The entire
+
+229
+00:12:39,759 --> 00:12:43,137
+economy is tied to the success
+of Altman's project.
+
+230
+00:12:43,554 --> 00:12:46,682
+"We might screw it up,
+like this is the bet that we're making
+
+231
+00:12:46,682 --> 00:12:50,394
+and we're taking a risk along with that."
+who is the we taking the bet?
+
+232
+00:12:50,561 --> 00:12:52,772
+Here's OpenAI's CFO
+
+233
+00:12:52,772 --> 00:12:55,775
+Banks, private equity, maybe even,
+
+234
+00:12:56,442 --> 00:12:59,445
+governmental,
+
+235
+00:12:59,487 --> 00:13:02,656
+the ways governments can come to bear
+meaning like a federal subsidy or,
+
+236
+00:13:03,115 --> 00:13:05,576
+meaning like just first of all, the,
+
+237
+00:13:05,576 --> 00:13:09,288
+the backstop, the guarantee
+that allows the financing to happen.
+
+238
+00:13:09,747 --> 00:13:10,873
+Through all of that
+
+239
+00:13:10,873 --> 00:13:14,627
+stammering, the CFO of OpenAI
+is making a clear point:
+
+240
+00:13:14,794 --> 00:13:19,840
+The government, your tax dollars, are
+responsible for saving the AI project.
+
+241
+00:13:20,132 --> 00:13:22,927
+That's more eggs
+
+242
+00:13:22,927 --> 00:13:24,386
+in the basket.
+
+243
+00:13:24,386 --> 00:13:27,681
+And that basket is based on the promises
+of Sam Altman, who
+
+244
+00:13:27,681 --> 00:13:31,101
+as we've illustrated, lies
+and breaks promises a lot.
+
+245
+00:13:32,311 --> 00:13:34,772
+So if we really look
+
+246
+00:13:34,772 --> 00:13:36,065
+at the basket,
+
+247
+00:13:36,065 --> 00:13:39,068
+maybe we shouldn't
+have been putting all those eggs in there.
+
+248
+00:13:39,401 --> 00:13:40,528
+And it gets worse.
+
+249
+00:13:40,528 --> 00:13:45,574
+While we were editing this video,
+news broke that OpenAI is seeking a $750
+
+250
+00:13:45,574 --> 00:13:48,786
+billion valuation and is in talks
+
+251
+00:13:48,786 --> 00:13:51,789
+with Amazon for a $10 billion investment.
+
+252
+00:13:52,039 --> 00:13:54,834
+That's money that OpenAI would spend on
+
+253
+00:13:54,834 --> 00:13:57,837
+Amazon infrastructure. So
+
+254
+00:13:58,587 --> 00:14:00,130
+I'm going to need more eggs.
+

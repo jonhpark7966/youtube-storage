@@ -1,0 +1,4315 @@
+WEBVTT
+
+00:00:04.880 --> 00:00:08.160
+So, without further delay, let's get started. Today,
+
+00:00:08.220 --> 00:00:10.560
+I'm gonna talk about my work on robot
+
+00:00:10.560 --> 00:00:13.720
+motion learning with physics-based PDE priors.
+
+00:00:15.600 --> 00:00:18.360
+So, first, let me introduce, like, what is
+
+00:00:18.360 --> 00:00:21.400
+the problem of motion planning? And motion planning
+
+00:00:21.400 --> 00:00:23.760
+is a way for an agent to coordinate
+
+00:00:23.760 --> 00:00:26.320
+its behavior from a given start to a
+
+00:00:26.320 --> 00:00:28.820
+given goal while satisfying all the desired constraints.
+
+00:00:28.820 --> 00:00:32.740
+So, whenever a dynamical system or a robot
+
+00:00:32.740 --> 00:00:35.440
+needs to move, they need to solve this
+
+00:00:35.440 --> 00:00:37.700
+motion planning problem, okay?
+
+00:00:38.080 --> 00:00:40.340
+And it has application, or these are the
+
+00:00:40.340 --> 00:00:42.840
+applications that my lab focus on, like, ranging
+
+00:00:42.840 --> 00:00:45.180
+from full-body motion planning.
+
+00:00:45.400 --> 00:00:48.500
+Here, there is a mobile robot, mobile regular
+
+00:00:48.500 --> 00:00:51.000
+robot. It is moving an object from a
+
+00:00:51.000 --> 00:00:52.560
+given start to a given goal.
+
+00:00:52.560 --> 00:00:55.840
+Then, we also solve this problem in dynamic
+
+00:00:55.840 --> 00:00:59.600
+environment where we dynamically place an obstacle in
+
+00:00:59.600 --> 00:01:00.560
+front of the robot.
+
+00:01:01.000 --> 00:01:04.240
+Another area that we are very excited, interested
+
+00:01:04.240 --> 00:01:06.380
+in, is in reactive manipulation.
+
+00:01:06.620 --> 00:01:09.260
+While a robot is solving manipulation planning problems
+
+00:01:09.260 --> 00:01:12.000
+under constraint, they may experience some disturbances.
+
+00:01:12.000 --> 00:01:15.920
+How robots dynamically adapt to those disturbances and
+
+00:01:15.920 --> 00:01:17.760
+continue to solve the assigned task?
+
+00:01:19.840 --> 00:01:22.540
+Lastly, we are also exploring,
+
+00:01:22.560 --> 00:01:26.340
+applying these motion planning tools to reactive multi
+
+00:01:26.340 --> 00:01:28.300
+-agent planning, where you have large number of
+
+00:01:28.300 --> 00:01:28.700
+agents,
+
+00:01:28.720 --> 00:01:31.940
+they are performing their assigned task, and then
+
+00:01:31.940 --> 00:01:34.840
+they will have to reactively avoid cooling with
+
+00:01:34.840 --> 00:01:35.280
+each other.
+
+00:01:35.980 --> 00:01:40.620
+So, spreading across all these problems, the core
+
+00:01:40.620 --> 00:01:43.460
+issue is how to solve these motion planning
+
+00:01:43.460 --> 00:01:43.780
+problems,
+
+00:01:43.880 --> 00:01:45.840
+how to come up with tools that are
+
+00:01:45.840 --> 00:01:51.040
+efficient, and the focus my lab has is
+
+00:01:51.040 --> 00:01:53.820
+on, like, developing these tools that are real
+
+00:01:53.820 --> 00:01:54.120
+-time,
+
+00:01:54.120 --> 00:01:57.420
+that enable real-time coordination of robot movement
+
+00:01:57.420 --> 00:02:01.200
+in unstructured constrained environments with minimal pre-training
+
+00:02:01.200 --> 00:02:02.000
+or trial and error.
+
+00:02:02.460 --> 00:02:05.680
+I have been trying to solve or achieve
+
+00:02:05.680 --> 00:02:07.280
+this objective for quite some time.
+
+00:02:07.520 --> 00:02:10.220
+During my undergrad, I started with a sampling
+
+00:02:10.220 --> 00:02:13.620
+-based motion planning method, and my focus was
+
+00:02:13.620 --> 00:02:16.140
+on coming up with adaptive sampling techniques,
+
+00:02:16.140 --> 00:02:18.960
+so that these sampling-based methods can construct
+
+00:02:18.960 --> 00:02:20.700
+their tree as quickly as possible.
+
+00:02:20.700 --> 00:02:22.800
+Then one branch of that tree is your
+
+00:02:22.800 --> 00:02:24.560
+path solution from your start and goal.
+
+00:02:25.320 --> 00:02:29.420
+And then, during my PhD, I moved toward
+
+00:02:29.420 --> 00:02:33.220
+extending these methods to data-driven approaches.
+
+00:02:33.460 --> 00:02:36.140
+So, the issue with a classical sampling-based
+
+00:02:36.140 --> 00:02:39.160
+techniques were they were computationally very slow.
+
+00:02:39.320 --> 00:02:41.680
+As the robot dimension increases, like, let's say
+
+00:02:41.680 --> 00:02:44.560
+you are planning, uh, motion for a human
+
+00:02:44.560 --> 00:02:45.000
+-art robot,
+
+00:02:45.160 --> 00:02:46.880
+it's a huge degree of freedom.
+
+00:02:46.880 --> 00:02:49.720
+For those kind of systems, their computation time
+
+00:02:49.720 --> 00:02:50.940
+became very slow.
+
+00:02:51.040 --> 00:02:53.460
+So, we could not do many real-time
+
+00:02:53.460 --> 00:02:56.600
+applications because of the slow computational speed of
+
+00:02:56.600 --> 00:02:57.060
+those methods.
+
+00:02:57.180 --> 00:03:00.560
+Then I moved toward data-driven approaches.
+
+00:03:02.020 --> 00:03:05.120
+In, in 2018 or 19, before that, many
+
+00:03:05.120 --> 00:03:07.340
+people were trying to solve motion-turning problems
+
+00:03:07.340 --> 00:03:08.940
+with these, uh, neural networks,
+
+00:03:08.980 --> 00:03:12.000
+but they were missing one key piece.
+
+00:03:12.000 --> 00:03:14.300
+And in this, these papers, I gave the
+
+00:03:14.300 --> 00:03:18.080
+recipe that just having neural network is not
+
+00:03:18.080 --> 00:03:18.540
+sufficient.
+
+00:03:18.540 --> 00:03:21.240
+Like, you can do imitation learning, and still
+
+00:03:21.240 --> 00:03:21.940
+it won't learn.
+
+00:03:22.100 --> 00:03:24.720
+You need stochasticity in these models.
+
+00:03:24.780 --> 00:03:27.600
+And you can incorporate stochasticity in different ways.
+
+00:03:27.900 --> 00:03:29.920
+In our work, we used dropout.
+
+00:03:30.360 --> 00:03:33.220
+Then people moved, took up that idea, moved
+
+00:03:33.220 --> 00:03:35.000
+toward using variational autoencoder.
+
+00:03:35.060 --> 00:03:36.800
+Now you use the diffusion model.
+
+00:03:36.980 --> 00:03:38.960
+They, they have some sort of stochasticity.
+
+00:03:38.960 --> 00:03:42.120
+They start with some noise and then denoise
+
+00:03:42.120 --> 00:03:42.760
+it over time.
+
+00:03:42.920 --> 00:03:45.820
+So there is some sort of randomness incorporated
+
+00:03:45.820 --> 00:03:48.940
+into the process that helps these models plan
+
+00:03:48.940 --> 00:03:49.980
+motion.
+
+00:03:50.340 --> 00:03:53.100
+So the core recipe is, you need neural
+
+00:03:53.100 --> 00:03:53.440
+network.
+
+00:03:53.620 --> 00:03:55.820
+Then you also need some sort of, uh,
+
+00:03:56.000 --> 00:03:58.780
+stochasticity in the process so that, uh,
+
+00:03:59.260 --> 00:04:01.860
+because the neural network, they are approximating the
+
+00:04:01.860 --> 00:04:03.980
+solution, they can get stuck into local minima.
+
+00:04:03.980 --> 00:04:06.820
+There's a denoising process or starting with some
+
+00:04:06.820 --> 00:04:08.700
+multiple, uh, seeds.
+
+00:04:09.000 --> 00:04:11.580
+You basically help these neural network come out
+
+00:04:11.580 --> 00:04:12.780
+of those local minimas.
+
+00:04:12.980 --> 00:04:13.520
+Okay?
+
+00:04:13.920 --> 00:04:16.720
+But my main issue with these models were,
+
+00:04:16.900 --> 00:04:20.120
+like, the training cost.
+
+00:04:20.400 --> 00:04:23.260
+So offline, you, we had to run these
+
+00:04:23.260 --> 00:04:25.480
+classical methods to gather all the data.
+
+00:04:25.480 --> 00:04:28.560
+And then you were training these models on
+
+00:04:28.560 --> 00:04:29.460
+that data.
+
+00:04:29.700 --> 00:04:32.080
+And yes, during inference, it was giving fast
+
+00:04:32.080 --> 00:04:32.440
+inference.
+
+00:04:33.160 --> 00:04:35.660
+But if we think about it, were they
+
+00:04:35.660 --> 00:04:39.180
+really solving, like, uh, overcoming these, uh,
+
+00:04:39.560 --> 00:04:42.480
+slow computational, uh, speed of these methods?
+
+00:04:42.580 --> 00:04:44.520
+Like, because if you add the training time
+
+00:04:44.520 --> 00:04:47.160
+or time spent on getting the data
+
+00:04:47.160 --> 00:04:48.980
+and then combine it with inference time, you
+
+00:04:48.980 --> 00:04:51.120
+may think that it's not really beneficial.
+
+00:04:51.120 --> 00:04:53.680
+So when I started as a faculty at
+
+00:04:53.680 --> 00:04:56.360
+Purdue, I started looking at some other ways
+
+00:04:56.360 --> 00:04:59.920
+to train these neural networks without expert demonstration.
+
+00:05:00.820 --> 00:05:03.460
+And there are three features that my lab
+
+00:05:03.460 --> 00:05:04.060
+focus on.
+
+00:05:04.240 --> 00:05:05.600
+Like, one is inference efficiency.
+
+00:05:05.880 --> 00:05:08.240
+I want to develop methods that allow immediate
+
+00:05:08.240 --> 00:05:10.760
+execution, the infer plans as quickly as possible.
+
+00:05:11.620 --> 00:05:13.900
+Then second feature that we look for is
+
+00:05:13.900 --> 00:05:14.680
+training efficiency.
+
+00:05:14.680 --> 00:05:17.700
+We want to reduce model training cost.
+
+00:05:17.840 --> 00:05:20.080
+We want to eliminate expert, need for expert
+
+00:05:20.080 --> 00:05:20.820
+annotation.
+
+00:05:21.440 --> 00:05:23.560
+And this is cellular transferability.
+
+00:05:23.820 --> 00:05:26.940
+Like, right now, if you, whenever you talk
+
+00:05:26.940 --> 00:05:28.700
+to someone who is doing imitation learning
+
+00:05:28.700 --> 00:05:30.560
+or training very large models, the second question
+
+00:05:30.560 --> 00:05:30.980
+come up,
+
+00:05:31.280 --> 00:05:33.820
+can they transfer to a different environment or
+
+00:05:33.820 --> 00:05:34.660
+unseen environment?
+
+00:05:34.720 --> 00:05:36.840
+Because the issue is, when you move to
+
+00:05:36.840 --> 00:05:37.800
+a different environment,
+
+00:05:37.800 --> 00:05:40.120
+you may need to re-gather all the
+
+00:05:40.120 --> 00:05:40.380
+data.
+
+00:05:40.380 --> 00:05:43.240
+But if you have a model that, whose
+
+00:05:43.240 --> 00:05:44.440
+training cost is very low,
+
+00:05:44.620 --> 00:05:47.340
+and that eliminates needs for expert demonstration,
+
+00:05:47.740 --> 00:05:50.060
+then you can transfer that model very easily
+
+00:05:50.060 --> 00:05:51.720
+to, to a new domain.
+
+00:05:52.740 --> 00:05:54.540
+Third feature, which is very important.
+
+00:05:54.740 --> 00:05:56.400
+Like, we want to design these models so
+
+00:05:56.400 --> 00:05:59.160
+that they adapt to high degree of freedom,
+
+00:05:59.340 --> 00:06:03.020
+very complex brains, unknown environment, or, uh, very
+
+00:06:03.020 --> 00:06:03.860
+complex constraint,
+
+00:06:03.900 --> 00:06:06.580
+like involved in, uh, manipulation problem.
+
+00:06:06.580 --> 00:06:08.940
+And they should also scale to large number
+
+00:06:08.940 --> 00:06:10.800
+of agents so that we can deploy multiple
+
+00:06:10.800 --> 00:06:11.860
+robots operating in,
+
+00:06:11.860 --> 00:06:13.660
+uh, in a given environment.
+
+00:06:13.800 --> 00:06:15.740
+And then they can solve some task in
+
+00:06:15.740 --> 00:06:19.000
+a coordination or, or in a decentralization.
+
+00:06:20.700 --> 00:06:23.640
+So just to give a overview, like, where
+
+00:06:23.640 --> 00:06:25.520
+we stand in terms of these features.
+
+00:06:25.880 --> 00:06:28.320
+So we have optimization-based techniques.
+
+00:06:29.300 --> 00:06:33.700
+And these techniques, they have high inference efficiency.
+
+00:06:33.920 --> 00:06:36.220
+We have very nice optimization-based tools that
+
+00:06:36.220 --> 00:06:39.520
+can find a trajectory, uh, very efficiently.
+
+00:06:39.520 --> 00:06:42.480
+They have very high, uh, training efficiency.
+
+00:06:42.480 --> 00:06:44.800
+You don't need to re-, pre-train your
+
+00:06:44.800 --> 00:06:45.500
+optimizer.
+
+00:06:45.700 --> 00:06:48.200
+But they do not adapt to very complex
+
+00:06:48.200 --> 00:06:48.480
+scenarios.
+
+00:06:48.600 --> 00:06:51.180
+They are prone to, uh, local minima, and
+
+00:06:51.180 --> 00:06:52.460
+they can often get stuck there.
+
+00:06:52.460 --> 00:06:56.600
+Then we have, like, a classical, uh, tools
+
+00:06:56.600 --> 00:06:59.040
+for solving robot planning and control problem.
+
+00:06:59.240 --> 00:07:02.820
+We have, like, um, uh, discretization-based approaches.
+
+00:07:03.000 --> 00:07:04.560
+You may know ASTART. You should.
+
+00:07:04.720 --> 00:07:07.280
+And then there are sampling-based approaches.
+
+00:07:07.580 --> 00:07:10.380
+There are other classical tools within control, like
+
+00:07:10.380 --> 00:07:13.240
+random shooting method and, uh, techniques like that.
+
+00:07:13.240 --> 00:07:18.580
+These methods, they have low training efficiency, uh,
+
+00:07:18.780 --> 00:07:20.460
+high training efficiency.
+
+00:07:20.640 --> 00:07:21.940
+You do not need to train them.
+
+00:07:22.440 --> 00:07:24.800
+But their inference efficiency is very slow.
+
+00:07:25.060 --> 00:07:27.960
+Because these methods, they need to either discretize
+
+00:07:27.960 --> 00:07:30.080
+your entire space or construct a graph.
+
+00:07:30.220 --> 00:07:32.440
+And then, uh, find a path through that.
+
+00:07:32.880 --> 00:07:35.740
+Recent advancement, I, I should acknowledge that people
+
+00:07:35.740 --> 00:07:37.980
+are exploring, like, how can we use massive
+
+00:07:37.980 --> 00:07:41.000
+parallelization within these methods to speed up their
+
+00:07:41.000 --> 00:07:41.460
+performance.
+
+00:07:41.460 --> 00:07:43.580
+But it is, we still have to see
+
+00:07:43.580 --> 00:07:47.780
+how these methods care to complex, uh, kinematic
+
+00:07:47.780 --> 00:07:48.240
+constraints.
+
+00:07:49.220 --> 00:07:51.780
+Then we have data-driven approaches, like imitation
+
+00:07:51.780 --> 00:07:53.900
+learning or enforcement learning.
+
+00:07:54.200 --> 00:07:56.600
+We know they have, like, uh, very low
+
+00:07:56.600 --> 00:07:57.840
+training efficiency.
+
+00:07:58.160 --> 00:08:01.000
+But once trained, their inference efficiency is very
+
+00:08:01.000 --> 00:08:01.260
+high.
+
+00:08:01.380 --> 00:08:04.000
+And they also adapt to very complex scenarios.
+
+00:08:04.440 --> 00:08:07.360
+But can we have a method, like, I
+
+00:08:07.360 --> 00:08:09.440
+have mentioned all these three categories.
+
+00:08:09.440 --> 00:08:13.260
+They were missing either one or more of
+
+00:08:13.260 --> 00:08:13.860
+those features.
+
+00:08:15.000 --> 00:08:17.800
+Optimization-based, they could not adapt to complexity.
+
+00:08:18.040 --> 00:08:20.840
+Sampling or classical method, they had, like, uh,
+
+00:08:21.120 --> 00:08:22.860
+low, uh, inference efficiency.
+
+00:08:23.060 --> 00:08:24.620
+And then data-driven, they have, like, very
+
+00:08:24.620 --> 00:08:25.860
+low training efficiency.
+
+00:08:25.960 --> 00:08:28.140
+Can we have method that have all these
+
+00:08:28.140 --> 00:08:28.780
+three features?
+
+00:08:29.320 --> 00:08:30.760
+So our answer is yes.
+
+00:08:30.760 --> 00:08:34.540
+Like, if you incorporate some, uh, priors that
+
+00:08:34.540 --> 00:08:36.880
+are available to us from physics, you can
+
+00:08:36.880 --> 00:08:38.640
+achieve all these three features.
+
+00:08:38.640 --> 00:08:41.000
+And that will be the focus of my,
+
+00:08:41.000 --> 00:08:42.820
+uh, rest of this talk.
+
+00:08:43.160 --> 00:08:45.900
+So, one question that come up, like, when
+
+00:08:45.900 --> 00:08:47.940
+I say we use physics priors.
+
+00:08:48.060 --> 00:08:49.720
+Like, what physics priors do you use?
+
+00:08:50.500 --> 00:08:50.980
+Okay?
+
+00:08:51.340 --> 00:08:53.840
+Often people confuse this physics prior with a
+
+00:08:53.840 --> 00:08:55.620
+physics engine or a simulator.
+
+00:08:55.620 --> 00:08:58.800
+But here, in my talk, I specified very
+
+00:08:58.800 --> 00:09:00.600
+clearly, like, we use PDE priors.
+
+00:09:00.600 --> 00:09:02.840
+Because I was getting this question again and
+
+00:09:02.840 --> 00:09:03.040
+again.
+
+00:09:03.140 --> 00:09:04.520
+But where is the simulation here?
+
+00:09:04.660 --> 00:09:06.240
+So it's not a physics simulation.
+
+00:09:06.240 --> 00:09:09.060
+It's a PDE that we use as a
+
+00:09:09.060 --> 00:09:09.260
+prior.
+
+00:09:09.600 --> 00:09:12.360
+So when we discuss PDE, one PDE that
+
+00:09:12.360 --> 00:09:15.040
+is, you may have heard, is, uh, H
+
+00:09:15.040 --> 00:09:15.740
+-J-B PDE.
+
+00:09:16.020 --> 00:09:18.160
+Hamiltonian Jacobi Bellman equation.
+
+00:09:18.540 --> 00:09:21.180
+And it governs the motion of some dynamical
+
+00:09:21.180 --> 00:09:21.520
+systems.
+
+00:09:21.800 --> 00:09:23.700
+But that PDE is very hard to solve.
+
+00:09:23.700 --> 00:09:26.940
+It has, like, singularities and multimodal problems.
+
+00:09:27.000 --> 00:09:29.920
+And then when you apply both kinematic and
+
+00:09:29.920 --> 00:09:33.100
+dynamical constraints, it becomes very, uh, difficult to
+
+00:09:33.100 --> 00:09:33.280
+solve.
+
+00:09:33.560 --> 00:09:35.920
+Then we analyzed that equation and we said,
+
+00:09:35.940 --> 00:09:38.520
+if you assume trivial dynamics,
+
+00:09:38.800 --> 00:09:42.340
+that equation boils down to this econel PDE.
+
+00:09:42.340 --> 00:09:46.100
+So this econel PDE has two functions.
+
+00:09:46.580 --> 00:09:48.020
+One is this T.
+
+00:09:48.340 --> 00:09:49.940
+And other is that S.
+
+00:09:50.760 --> 00:09:52.740
+So T is an unknown function.
+
+00:09:52.940 --> 00:09:54.660
+And it is a value function.
+
+00:09:54.660 --> 00:09:56.760
+We want to solve this PDE to find
+
+00:09:56.760 --> 00:09:57.980
+this unknown function T.
+
+00:09:58.700 --> 00:10:00.260
+S is a known function.
+
+00:10:00.480 --> 00:10:03.180
+And it is basically, it defines your constraints.
+
+00:10:03.400 --> 00:10:05.740
+So it could be distance to obstacles.
+
+00:10:06.060 --> 00:10:08.820
+So given the configuration of the robot, let's
+
+00:10:08.820 --> 00:10:09.440
+say QS.
+
+00:10:09.440 --> 00:10:12.220
+This S will tell me how far my
+
+00:10:12.220 --> 00:10:15.060
+robot is from the nearest obstacle.
+
+00:10:15.500 --> 00:10:16.360
+Is that clear?
+
+00:10:16.860 --> 00:10:18.960
+Or I can even change that constraint to
+
+00:10:18.960 --> 00:10:19.500
+something else.
+
+00:10:19.660 --> 00:10:22.220
+Like, instead of having a distance to obstacle,
+
+00:10:22.300 --> 00:10:24.380
+it could be distance to nearest manifold.
+
+00:10:24.920 --> 00:10:25.460
+Okay?
+
+00:10:25.820 --> 00:10:27.840
+It could be manipulation manifold or something.
+
+00:10:28.080 --> 00:10:29.740
+So this S function is known.
+
+00:10:30.080 --> 00:10:32.320
+I want to solve this PDE to find
+
+00:10:32.320 --> 00:10:34.840
+this T, which is a value function.
+
+00:10:34.840 --> 00:10:37.500
+And once you solve this equation, it gives
+
+00:10:37.500 --> 00:10:41.700
+you these wave fronts using which robot can
+
+00:10:41.700 --> 00:10:43.540
+navigate from one point to another.
+
+00:10:43.800 --> 00:10:46.460
+So given the source point, you solve this,
+
+00:10:46.460 --> 00:10:49.120
+uh, PDE, it gives you this travel time
+
+00:10:49.120 --> 00:10:51.540
+function, which is this T.
+
+00:10:51.880 --> 00:10:53.880
+This travel time function is also a value
+
+00:10:53.880 --> 00:10:54.200
+function.
+
+00:10:54.400 --> 00:10:56.500
+So just following the gradient of this T,
+
+00:10:56.640 --> 00:10:59.280
+you can navigate to any point in the
+
+00:10:59.280 --> 00:10:59.980
+environment.
+
+00:10:59.980 --> 00:11:03.640
+So numerically, there is a method called FFM,
+
+00:11:03.720 --> 00:11:04.800
+fast marching method.
+
+00:11:04.940 --> 00:11:07.560
+It solves this PDE, but it's a numerical
+
+00:11:07.560 --> 00:11:08.020
+approach.
+
+00:11:08.120 --> 00:11:10.340
+It cannot scale beyond three dimensions.
+
+00:11:10.380 --> 00:11:12.660
+So when, uh, we started this PDE, we,
+
+00:11:12.720 --> 00:11:15.340
+our main interest was, can we scale it
+
+00:11:15.340 --> 00:11:18.740
+beyond three dimensions to actual complex robot systems?
+
+00:11:20.040 --> 00:11:22.780
+So neural network gave us, like, uh, a
+
+00:11:22.780 --> 00:11:24.900
+possible way, like we can, instead of using
+
+00:11:24.900 --> 00:11:27.400
+numerical solver, we can use neural network to
+
+00:11:27.400 --> 00:11:29.800
+solve this PDE in high dimension.
+
+00:11:30.160 --> 00:11:33.120
+So the first work that we did, you
+
+00:11:33.120 --> 00:11:36.540
+have this neural network that tries to solve
+
+00:11:36.540 --> 00:11:38.040
+this Econel PDE.
+
+00:11:38.040 --> 00:11:40.700
+So the input to this neural network, so
+
+00:11:40.700 --> 00:11:43.200
+this neural network is a black box, but
+
+00:11:43.200 --> 00:11:45.480
+we put structure into this neural network that
+
+00:11:45.480 --> 00:11:48.820
+respect the properties of, uh, this PDE.
+
+00:11:48.880 --> 00:11:50.740
+I will briefly discuss that, but if you
+
+00:11:50.740 --> 00:11:53.480
+are interested, check out the paper in order
+
+00:11:53.480 --> 00:11:55.300
+to understand the structure of this neural network.
+
+00:11:55.380 --> 00:11:57.420
+But for simplicity, I will assume it's a
+
+00:11:57.420 --> 00:12:01.340
+simple black box neural network that take robot
+
+00:12:01.340 --> 00:12:05.600
+start, QS, robot goal, QG, and environment perception
+
+00:12:05.600 --> 00:12:06.300
+as an input.
+
+00:12:06.300 --> 00:12:09.080
+The output is this travel time function.
+
+00:12:09.600 --> 00:12:11.280
+So this is an unknown function.
+
+00:12:11.320 --> 00:12:13.280
+So I want to train this neural network
+
+00:12:13.280 --> 00:12:15.840
+to solve this PDE so that once trained,
+
+00:12:16.000 --> 00:12:19.220
+I have this accurate or approximately accurate travel
+
+00:12:19.220 --> 00:12:19.780
+time function.
+
+00:12:20.120 --> 00:12:23.500
+Now, the way we train this model is
+
+00:12:23.500 --> 00:12:26.860
+you give this input and it, uh, predict
+
+00:12:26.860 --> 00:12:27.680
+this travel time.
+
+00:12:27.680 --> 00:12:30.920
+Then Econel PDE says if you take the
+
+00:12:30.920 --> 00:12:33.700
+gradient of this travel time with respect to
+
+00:12:33.700 --> 00:12:37.060
+input, QS in this case, this is equal
+
+00:12:37.060 --> 00:12:38.860
+to inverse of your constraint function.
+
+00:12:39.440 --> 00:12:41.860
+So this PDE is giving us some structure.
+
+00:12:42.380 --> 00:12:44.340
+So the training become very simple.
+
+00:12:44.580 --> 00:12:47.320
+So you, you sample a bunch of robot
+
+00:12:47.320 --> 00:12:48.600
+start and goal configurations.
+
+00:12:48.600 --> 00:12:50.600
+You have environment perception.
+
+00:12:50.880 --> 00:12:51.460
+You have environment perception.
+
+00:12:51.460 --> 00:12:52.980
+For each of these pairs, they go through
+
+00:12:52.980 --> 00:12:53.600
+neural network.
+
+00:12:53.780 --> 00:12:55.020
+You predict their travel time.
+
+00:12:55.220 --> 00:12:59.700
+Then you backprop to compute this approximated constraint
+
+00:12:59.700 --> 00:13:02.120
+function according to your Econel PDE.
+
+00:13:02.320 --> 00:13:03.280
+Then you're locked.
+
+00:13:03.420 --> 00:13:03.600
+Yes?
+
+00:13:04.920 --> 00:13:05.540
+I have a question.
+
+00:13:05.960 --> 00:13:07.920
+So how, how do you encode the problem
+
+00:13:07.920 --> 00:13:08.860
+in your efficiency?
+
+00:13:09.120 --> 00:13:13.440
+Uh, is it using, uh, SQ or, uh?
+
+00:13:14.020 --> 00:13:14.900
+That's a good question.
+
+00:13:15.080 --> 00:13:16.020
+I, I will come to that.
+
+00:13:16.140 --> 00:13:16.420
+Okay.
+
+00:13:16.580 --> 00:13:17.100
+In a moment.
+
+00:13:17.380 --> 00:13:20.120
+So QS is, in this case, is, so
+
+00:13:20.120 --> 00:13:22.640
+the motion planning problem is defined by robot
+
+00:13:22.640 --> 00:13:24.900
+start, goal, and environment perception.
+
+00:13:25.680 --> 00:13:26.120
+Right?
+
+00:13:26.280 --> 00:13:28.340
+Standard motion planning problem, you give it to
+
+00:13:28.340 --> 00:13:30.220
+classical method or optimizer.
+
+00:13:30.400 --> 00:13:32.240
+It take the start and goal and your
+
+00:13:32.240 --> 00:13:35.140
+environment, like distance to obstacle or whatever observation
+
+00:13:35.140 --> 00:13:35.920
+you have available.
+
+00:13:36.300 --> 00:13:36.800
+Right?
+
+00:13:37.020 --> 00:13:38.400
+So that's defined the problem.
+
+00:13:39.120 --> 00:13:41.560
+And in this case, we are giving only
+
+00:13:41.560 --> 00:13:42.500
+this problem set.
+
+00:13:42.500 --> 00:13:45.780
+So QS and QG and environment perception goes
+
+00:13:45.780 --> 00:13:47.420
+through neural network and you predict this
+
+00:13:47.420 --> 00:13:47.620
+T.
+
+00:13:48.160 --> 00:13:51.140
+Then the way we train this loss, uh,
+
+00:13:51.340 --> 00:13:53.800
+this neural network is through gradient matching loss
+
+00:13:53.800 --> 00:13:54.160
+function.
+
+00:13:54.440 --> 00:13:57.620
+So we backprop, compute this gradient with respect
+
+00:13:57.620 --> 00:13:58.400
+to QS.
+
+00:13:58.680 --> 00:14:01.580
+And then Econel PDE says inverse of this
+
+00:14:01.580 --> 00:14:05.820
+gradient norm is basically your constraint function.
+
+00:14:07.140 --> 00:14:07.780
+Okay?
+
+00:14:07.780 --> 00:14:11.020
+So we approximate this constraint function and compare
+
+00:14:11.020 --> 00:14:13.280
+it with ground truth constraint function.
+
+00:14:13.420 --> 00:14:15.440
+Like your ground truth distance to obstacle.
+
+00:14:16.500 --> 00:14:17.460
+Is that clear?
+
+00:14:17.620 --> 00:14:20.740
+So the loss function is on the gradients
+
+00:14:20.740 --> 00:14:21.520
+of the neural network.
+
+00:14:21.640 --> 00:14:23.380
+It's not on the forward path and then
+
+00:14:23.380 --> 00:14:25.760
+you compute some output and then you define.
+
+00:14:25.760 --> 00:14:29.500
+The loss function is on the gradient of
+
+00:14:29.500 --> 00:14:30.820
+the neural network.
+
+00:14:31.260 --> 00:14:31.740
+Yes.
+
+00:14:31.980 --> 00:14:32.200
+Okay.
+
+00:14:32.380 --> 00:14:32.700
+Question.
+
+00:14:33.240 --> 00:14:34.920
+Could you clarify about the output of the
+
+00:14:34.920 --> 00:14:36.280
+neural network case and how do we use
+
+00:14:36.280 --> 00:14:36.700
+the output
+
+00:14:36.700 --> 00:14:39.080
+to gather the desired, uh, poses of the
+
+00:14:39.080 --> 00:14:39.440
+robots?
+
+00:14:39.740 --> 00:14:42.060
+So, yeah, I will come to that shortly,
+
+00:14:42.100 --> 00:14:43.460
+but that's a very good question.
+
+00:14:43.460 --> 00:14:46.560
+So the output in this case is a
+
+00:14:46.560 --> 00:14:48.960
+travel time T in this case.
+
+00:14:49.120 --> 00:14:50.260
+It's a value of function.
+
+00:14:50.560 --> 00:14:52.200
+So in order to get the gradient, you
+
+00:14:52.200 --> 00:14:54.780
+just have to follow the gradient of that
+
+00:14:54.780 --> 00:14:55.360
+value of function
+
+00:14:55.360 --> 00:14:56.700
+and it will give you a trajectory.
+
+00:14:57.200 --> 00:14:57.560
+Okay?
+
+00:14:58.320 --> 00:15:00.820
+So we use this simple gradient matching loss
+
+00:15:00.820 --> 00:15:01.100
+function.
+
+00:15:01.140 --> 00:15:02.880
+So if you think about the only data
+
+00:15:02.880 --> 00:15:04.960
+that I need is randomly simple start and
+
+00:15:04.960 --> 00:15:05.200
+goal
+
+00:15:06.640 --> 00:15:08.380
+and their distance to obstacle.
+
+00:15:09.200 --> 00:15:09.840
+That's it.
+
+00:15:09.840 --> 00:15:12.360
+So this is your standard motion planning tool
+
+00:15:12.360 --> 00:15:14.740
+is like if you use, for example, sampling
+
+00:15:14.740 --> 00:15:16.860
+based method like RRT or RRT star,
+
+00:15:17.100 --> 00:15:19.640
+they require some client checker and way to
+
+00:15:19.640 --> 00:15:21.120
+randomly sample your configuration.
+
+00:15:21.120 --> 00:15:23.560
+And then they have some machinery to find
+
+00:15:23.560 --> 00:15:24.740
+the trajectory, right?
+
+00:15:25.220 --> 00:15:26.200
+Our data is similar.
+
+00:15:26.380 --> 00:15:30.660
+We are requiring randomly sample robot configurations and
+
+00:15:30.660 --> 00:15:33.380
+their distance to constraint or client in this
+
+00:15:33.380 --> 00:15:33.600
+case.
+
+00:15:33.740 --> 00:15:36.740
+And then we use that constraint function as
+
+00:15:36.740 --> 00:15:39.280
+an expert to train our model.
+
+00:15:39.280 --> 00:15:44.220
+Because over neural network gradient leads to approximation
+
+00:15:44.220 --> 00:15:45.200
+of constraint function.
+
+00:15:45.360 --> 00:15:47.760
+And then we compare this approximated constraint function
+
+00:15:47.760 --> 00:15:48.320
+with actual.
+
+00:15:48.880 --> 00:15:49.480
+Does that answer?
+
+00:15:49.780 --> 00:15:54.200
+So theoretically, it all sounds simple, but when
+
+00:15:54.200 --> 00:15:55.260
+we actually applied this,
+
+00:15:55.400 --> 00:15:57.720
+we could not scale this method beyond four
+
+00:15:57.720 --> 00:15:58.060
+dimension.
+
+00:15:58.800 --> 00:16:02.440
+So numerical solver was solving it for three
+
+00:16:02.440 --> 00:16:02.740
+dimension.
+
+00:16:02.740 --> 00:16:04.860
+We showed that, okay, we can do four
+
+00:16:04.860 --> 00:16:07.520
+dimension, but numerical method could also do four
+
+00:16:07.520 --> 00:16:07.800
+dimension.
+
+00:16:07.960 --> 00:16:09.240
+It was just a little bit faster.
+
+00:16:09.640 --> 00:16:12.680
+And then we started investigating, like, what's the
+
+00:16:12.680 --> 00:16:13.040
+issue?
+
+00:16:13.540 --> 00:16:15.220
+There were, and we found out there are
+
+00:16:15.220 --> 00:16:16.860
+two main limitations.
+
+00:16:17.160 --> 00:16:20.720
+One, there is, like, Econal PDE has multiple
+
+00:16:20.720 --> 00:16:23.060
+solution and our neural network is unable to
+
+00:16:23.060 --> 00:16:24.380
+capture those multiple solution.
+
+00:16:24.380 --> 00:16:27.820
+So, so it, it is suffering from, from
+
+00:16:27.820 --> 00:16:29.400
+that, uh, multi-model problem.
+
+00:16:29.960 --> 00:16:33.320
+Second, because I am training this model on
+
+00:16:33.320 --> 00:16:35.020
+randomly sample start and goal,
+
+00:16:35.940 --> 00:16:40.260
+the gradient between my consecutive configuration remains uncontrolled.
+
+00:16:40.360 --> 00:16:43.400
+But if you think about the trajectory, it's
+
+00:16:43.400 --> 00:16:45.280
+like you start from start, you go to
+
+00:16:45.280 --> 00:16:46.140
+next configuration,
+
+00:16:46.360 --> 00:16:48.020
+then you go to next configuration, and it
+
+00:16:48.020 --> 00:16:48.760
+gives you a trajectory.
+
+00:16:48.760 --> 00:16:52.000
+So if my gradient between my consecutive configuration
+
+00:16:52.000 --> 00:16:54.800
+remains uncontrolled, it can lead to error.
+
+00:16:54.900 --> 00:16:56.800
+And I will show you shortly, like, how,
+
+00:16:56.800 --> 00:16:57.680
+how that looks.
+
+00:16:58.520 --> 00:17:00.740
+So these were the two limitations we found
+
+00:17:00.740 --> 00:17:04.380
+that we thought is basically limiting our model
+
+00:17:04.380 --> 00:17:04.580
+for,
+
+00:17:04.720 --> 00:17:07.100
+from scaling beyond four, four dimension.
+
+00:17:07.840 --> 00:17:10.720
+So the first solution we explored, like, can
+
+00:17:10.720 --> 00:17:13.840
+we use viscosity Econal PDE?
+
+00:17:14.040 --> 00:17:16.780
+So one of the problem I highlighted, Econal
+
+00:17:16.780 --> 00:17:18.080
+PDE has multiple solution.
+
+00:17:18.080 --> 00:17:21.460
+So if you add this Laplacian, then this
+
+00:17:21.460 --> 00:17:23.100
+Econal PDE has a unique solution.
+
+00:17:24.980 --> 00:17:28.080
+And that did lead to, like, much better
+
+00:17:28.080 --> 00:17:28.580
+performance.
+
+00:17:28.860 --> 00:17:31.120
+With this model, we were able to scale
+
+00:17:31.120 --> 00:17:33.120
+it to up to, like, a six dwarf
+
+00:17:33.120 --> 00:17:33.860
+robot arm.
+
+00:17:34.120 --> 00:17:36.440
+And it could apply in motion in very
+
+00:17:36.440 --> 00:17:37.060
+narrow passage.
+
+00:17:37.340 --> 00:17:41.180
+But this, uh, viscosity Econal PDE came with
+
+00:17:41.180 --> 00:17:41.600
+a cost.
+
+00:17:41.780 --> 00:17:45.060
+So now I have this double derivative of
+
+00:17:45.060 --> 00:17:46.300
+neural network with respect.
+
+00:17:46.300 --> 00:17:47.900
+So I have this Laplacian.
+
+00:17:48.080 --> 00:17:51.200
+So that was very computationally expensive to compute.
+
+00:17:51.580 --> 00:17:53.580
+And training cost went very high.
+
+00:17:53.780 --> 00:17:56.540
+So that, again, was against the objective that
+
+00:17:56.540 --> 00:17:59.040
+I wanted some model that is very fast
+
+00:17:59.040 --> 00:17:59.480
+to train.
+
+00:17:59.700 --> 00:18:03.600
+But this viscosity Econal PDE did lead to
+
+00:18:03.600 --> 00:18:04.620
+better performance.
+
+00:18:04.980 --> 00:18:08.640
+However, we still did not do anything to
+
+00:18:08.640 --> 00:18:12.100
+regulate the gradient between my consecutive configuration.
+
+00:18:12.100 --> 00:18:14.600
+We still train this model on randomly sampled
+
+00:18:14.600 --> 00:18:15.760
+start and goal.
+
+00:18:16.520 --> 00:18:19.240
+There was another technique that we proposed along
+
+00:18:19.240 --> 00:18:21.940
+the way that you can approximate this Laplacian
+
+00:18:21.940 --> 00:18:23.920
+with Grishley energy minimization.
+
+00:18:23.920 --> 00:18:26.000
+I won't go into the details, but if
+
+00:18:26.000 --> 00:18:28.800
+you are interested, check out this paper.
+
+00:18:29.060 --> 00:18:31.360
+It's a recent IROS publication.
+
+00:18:31.700 --> 00:18:34.780
+So it discusses, like, how can you use
+
+00:18:34.780 --> 00:18:38.940
+Grishley energy minimization to approximate Laplacian as you
+
+00:18:38.940 --> 00:18:39.760
+train your model.
+
+00:18:40.400 --> 00:18:44.780
+That's a cheaper approximation of this Laplacian.
+
+00:18:44.780 --> 00:18:46.920
+Still, it takes a lot of iteration to
+
+00:18:46.920 --> 00:18:49.940
+train because you are, over time, approximating this
+
+00:18:49.940 --> 00:18:50.420
+Laplacian.
+
+00:18:50.460 --> 00:18:52.240
+So at the beginning, your model will perform
+
+00:18:52.240 --> 00:18:52.700
+very bad.
+
+00:18:54.200 --> 00:18:58.880
+So coming back to those properties, that it
+
+00:18:58.880 --> 00:18:59.960
+has multiple solutions.
+
+00:19:01.340 --> 00:19:04.320
+This, and it has, like, um, and the
+
+00:19:04.320 --> 00:19:07.720
+gradient between conductive, uh, configuration remains uncontrolled.
+
+00:19:07.720 --> 00:19:10.780
+We found out that solution to these problems
+
+00:19:10.780 --> 00:19:14.480
+rely on within the properties of Econal PDE.
+
+00:19:14.740 --> 00:19:17.740
+So Econal PDE is a, is a geodesic
+
+00:19:17.740 --> 00:19:18.080
+distance.
+
+00:19:18.220 --> 00:19:21.180
+The solution of Econal PDE is a geodesic
+
+00:19:21.180 --> 00:19:21.780
+function.
+
+00:19:22.400 --> 00:19:25.300
+So it should respect the properties of a
+
+00:19:25.300 --> 00:19:27.360
+geodesic distance, like triangular inequality,
+
+00:19:27.360 --> 00:19:29.880
+and there are different properties of those geodesic
+
+00:19:29.880 --> 00:19:32.360
+distances that it should satisfy.
+
+00:19:32.880 --> 00:19:36.140
+And geodesic distance, it also has, like, multiple
+
+00:19:36.140 --> 00:19:36.620
+solutions.
+
+00:19:36.620 --> 00:19:40.500
+There are, it covers, captures multiple geodesic, like,
+
+00:19:40.600 --> 00:19:41.980
+for example, if you have start and goal,
+
+00:19:42.160 --> 00:19:43.760
+I can either go this way or I
+
+00:19:43.760 --> 00:19:44.800
+can also go this way.
+
+00:19:44.920 --> 00:19:48.940
+So there are multiple solutions available, and all
+
+00:19:48.940 --> 00:19:51.140
+of these solutions may also be shorter,
+
+00:19:51.380 --> 00:19:53.440
+uh, or travel time solution.
+
+00:19:53.680 --> 00:19:56.540
+So there could be some symmetry in your
+
+00:19:56.540 --> 00:19:58.000
+configuration space or something.
+
+00:19:58.120 --> 00:19:59.260
+There could be multiple solutions.
+
+00:19:59.680 --> 00:20:02.440
+All of them can be equally relevant.
+
+00:20:02.440 --> 00:20:06.380
+Second property is that the solution of Econal
+
+00:20:06.380 --> 00:20:07.920
+PDE is a value function.
+
+00:20:08.340 --> 00:20:11.540
+So it should satisfy Bellman principle of optimality
+
+00:20:11.540 --> 00:20:13.100
+that I will discuss shortly.
+
+00:20:13.300 --> 00:20:15.560
+So let's start with, uh, first property.
+
+00:20:15.800 --> 00:20:18.140
+The solution of Econal PDE is a geodesic
+
+00:20:18.140 --> 00:20:18.520
+distance.
+
+00:20:20.400 --> 00:20:24.100
+So, so we should use a metric learning
+
+00:20:24.100 --> 00:20:28.100
+that enforce the prediction to a valid metric
+
+00:20:28.100 --> 00:20:28.520
+space,
+
+00:20:28.520 --> 00:20:31.280
+so that we respect all the properties of
+
+00:20:31.280 --> 00:20:32.180
+a geodesic distance.
+
+00:20:32.180 --> 00:20:35.380
+So we should ensure consistency with geodesic distances.
+
+00:20:36.000 --> 00:20:38.660
+Like, it has, uh, symmetry property.
+
+00:20:38.980 --> 00:20:41.060
+Uh, it has, uh, triangular inequality.
+
+00:20:41.520 --> 00:20:45.620
+Like your, your path, straight line path between
+
+00:20:45.620 --> 00:20:46.340
+start and goal,
+
+00:20:46.540 --> 00:20:50.220
+and your path through some middle point, the
+
+00:20:50.220 --> 00:20:51.900
+length of that path should be higher than
+
+00:20:51.900 --> 00:20:52.540
+the straight line.
+
+00:20:53.020 --> 00:20:53.540
+Okay?
+
+00:20:53.580 --> 00:20:54.980
+So that's the triangular inequality.
+
+00:20:55.260 --> 00:20:58.660
+So this geodesic distance, it should, neural network
+
+00:20:58.660 --> 00:20:59.960
+should satisfy that property.
+
+00:20:59.960 --> 00:21:04.200
+So we propose this, uh, structure for this
+
+00:21:04.200 --> 00:21:04.880
+neural network.
+
+00:21:05.180 --> 00:21:07.780
+What this structure is doing before we were
+
+00:21:07.780 --> 00:21:08.240
+doing this.
+
+00:21:08.340 --> 00:21:09.620
+So consider this problem.
+
+00:21:09.760 --> 00:21:11.440
+I have two paths from A to B.
+
+00:21:13.020 --> 00:21:15.400
+If I just use L2 norm in my
+
+00:21:15.400 --> 00:21:17.500
+loss function, it will squash them into this
+
+00:21:17.500 --> 00:21:18.000
+straight line.
+
+00:21:19.300 --> 00:21:21.680
+But if you use this loss function, this
+
+00:21:21.680 --> 00:21:22.800
+structure that we have,
+
+00:21:22.940 --> 00:21:26.560
+it is taking your QS, pushing them to
+
+00:21:26.560 --> 00:21:27.480
+some latent state,
+
+00:21:27.480 --> 00:21:29.760
+and then it is applying some max pooling
+
+00:21:29.760 --> 00:21:30.100
+on them.
+
+00:21:30.680 --> 00:21:33.080
+So what it is doing, it is piecewise
+
+00:21:33.080 --> 00:21:34.480
+approximating the solution.
+
+00:21:34.640 --> 00:21:36.660
+So you see, you get this diamond shape
+
+00:21:36.660 --> 00:21:38.700
+approximation of your path.
+
+00:21:38.800 --> 00:21:41.640
+Instead of these circles, you are piecewise approximating
+
+00:21:41.640 --> 00:21:43.100
+all those multiple solutions.
+
+00:21:43.260 --> 00:21:46.020
+So, so this metric learning here, it takes
+
+00:21:46.020 --> 00:21:47.280
+your QS and QG,
+
+00:21:47.500 --> 00:21:49.380
+pass them through some neural network,
+
+00:21:49.380 --> 00:21:53.500
+and then it does something with the latent
+
+00:21:53.500 --> 00:21:55.840
+features of those QS and QG,
+
+00:21:55.840 --> 00:21:57.940
+like it applied this max operation, and then
+
+00:21:57.940 --> 00:22:01.140
+it applies this, uh, infinite norm, uh,
+
+00:22:01.340 --> 00:22:02.600
+on that latent recording.
+
+00:22:02.720 --> 00:22:05.200
+So if you think about it, we move
+
+00:22:05.200 --> 00:22:07.400
+this start and go to some latent space,
+
+00:22:07.400 --> 00:22:10.100
+and then learn the geodesic distance in that
+
+00:22:10.100 --> 00:22:10.860
+latent space.
+
+00:22:11.880 --> 00:22:12.780
+Is that clear?
+
+00:22:14.840 --> 00:22:15.360
+Okay.
+
+00:22:15.480 --> 00:22:17.040
+So that was the first change we did.
+
+00:22:17.700 --> 00:22:20.640
+Second, the solution of this Econel PD should,
+
+00:22:20.860 --> 00:22:21.900
+is a value function.
+
+00:22:21.900 --> 00:22:24.620
+So it should respect Bellman principle of optimality.
+
+00:22:25.200 --> 00:22:27.680
+And then we found out this is actually
+
+00:22:27.680 --> 00:22:28.180
+solving,
+
+00:22:28.400 --> 00:22:31.080
+this can solve the problem of our gradient
+
+00:22:31.080 --> 00:22:33.860
+being uncontrolled between my consecutive point.
+
+00:22:34.060 --> 00:22:36.540
+So think of this simple Econel PD.
+
+00:22:36.860 --> 00:22:39.200
+So it is absolute function.
+
+00:22:40.080 --> 00:22:42.200
+So I have this absolute function,
+
+00:22:42.200 --> 00:22:43.940
+and the way I am training my neural
+
+00:22:43.940 --> 00:22:46.660
+network is to randomly sample those green points.
+
+00:22:47.440 --> 00:22:50.280
+So if I train my neural network on
+
+00:22:50.280 --> 00:22:50.820
+those points,
+
+00:22:50.960 --> 00:22:53.200
+it will only minimize loss function on those
+
+00:22:53.200 --> 00:22:53.640
+points.
+
+00:22:53.880 --> 00:22:56.600
+It won't do anything on those segments.
+
+00:22:57.140 --> 00:23:01.300
+So for that neural network, both functions are
+
+00:23:01.300 --> 00:23:01.720
+accurate,
+
+00:23:03.240 --> 00:23:05.820
+because my error on those green points is
+
+00:23:05.820 --> 00:23:06.100
+zero.
+
+00:23:06.280 --> 00:23:08.420
+But if I have a little bit jump
+
+00:23:08.420 --> 00:23:09.340
+in between them,
+
+00:23:09.480 --> 00:23:11.540
+my neural network is unaware of that,
+
+00:23:11.540 --> 00:23:14.480
+because I did not do anything to regulate
+
+00:23:14.480 --> 00:23:17.460
+the gradient between those consecutive points.
+
+00:23:17.580 --> 00:23:19.780
+But if you think of robot trajectory,
+
+00:23:20.100 --> 00:23:22.400
+it starts from one point and then you,
+
+00:23:22.400 --> 00:23:23.360
+you keep going.
+
+00:23:23.640 --> 00:23:25.820
+If you have these little errors in between,
+
+00:23:26.220 --> 00:23:29.000
+your trajectory can go away from your desired
+
+00:23:29.000 --> 00:23:29.240
+goal.
+
+00:23:29.440 --> 00:23:30.440
+Does that make sense?
+
+00:23:32.080 --> 00:23:34.600
+So we had to regulate this gradient so
+
+00:23:34.600 --> 00:23:37.360
+that these bumps that you are seeing,
+
+00:23:37.380 --> 00:23:39.880
+it should capture this absolute function.
+
+00:23:41.360 --> 00:23:43.740
+So the solution to this problem is,
+
+00:23:43.880 --> 00:23:47.320
+uh, by treating Econal PD solution as optimal
+
+00:23:47.320 --> 00:23:48.480
+value of function,
+
+00:23:48.680 --> 00:23:52.060
+and it must satisfy Bellman principle of optimality.
+
+00:23:53.060 --> 00:23:56.200
+So when we say it must satisfy Bellman
+
+00:23:56.200 --> 00:23:57.360
+principle of optimality,
+
+00:23:57.560 --> 00:23:59.760
+we have to do temporal difference learning.
+
+00:24:02.500 --> 00:24:05.460
+How many of you are aware of standard
+
+00:24:05.460 --> 00:24:07.600
+Q learning, deep Q learning?
+
+00:24:09.300 --> 00:24:11.100
+Some, like most of you are aware.
+
+00:24:11.280 --> 00:24:13.080
+So in Q learning, you have your reward
+
+00:24:13.080 --> 00:24:13.480
+function,
+
+00:24:14.540 --> 00:24:17.680
+Q function at your next state, next action,
+
+00:24:17.980 --> 00:24:20.620
+minus Q function at your current state, current
+
+00:24:20.620 --> 00:24:21.300
+action, right?
+
+00:24:21.300 --> 00:24:22.940
+So that's your Q learning.
+
+00:24:24.120 --> 00:24:27.380
+And it came from your temporal difference value,
+
+00:24:27.540 --> 00:24:30.100
+like value function, you have reward value at
+
+00:24:30.100 --> 00:24:30.540
+next state,
+
+00:24:30.540 --> 00:24:33.260
+minus value at your current state, right?
+
+00:24:33.580 --> 00:24:35.300
+So this equation is similar.
+
+00:24:35.600 --> 00:24:38.700
+We show complete derivation on how we arrive
+
+00:24:38.700 --> 00:24:39.680
+at this equation.
+
+00:24:39.680 --> 00:24:42.720
+But the main point is, this is a
+
+00:24:42.720 --> 00:24:43.400
+value function.
+
+00:24:43.640 --> 00:24:45.260
+So you have your Qs.
+
+00:24:45.640 --> 00:24:48.600
+We perturb that Qs towards some direction.
+
+00:24:48.600 --> 00:24:50.860
+So we have value at next state,
+
+00:24:52.440 --> 00:24:54.440
+plus some reward,
+
+00:24:54.660 --> 00:24:58.200
+and value at your next, uh, previous or
+
+00:24:58.200 --> 00:24:59.160
+your current state.
+
+00:24:59.160 --> 00:25:01.060
+So T is a value function.
+
+00:25:01.980 --> 00:25:05.180
+We perturb over Qs in some direction to
+
+00:25:05.180 --> 00:25:06.220
+get the next state.
+
+00:25:06.560 --> 00:25:08.280
+So this is value at your next state.
+
+00:25:08.960 --> 00:25:10.780
+That's value at your current state.
+
+00:25:10.900 --> 00:25:13.100
+And this is the cost function,
+
+00:25:13.220 --> 00:25:15.800
+which is inverse of your, uh, constraint,
+
+00:25:15.900 --> 00:25:17.540
+whatever you give, like it's a distance.
+
+00:25:17.780 --> 00:25:20.740
+So if I want to minimize or maximize
+
+00:25:20.740 --> 00:25:21.900
+distance to obstacle,
+
+00:25:22.120 --> 00:25:24.120
+so that's your reward function or the cost
+
+00:25:24.120 --> 00:25:24.420
+function.
+
+00:25:26.740 --> 00:25:30.880
+So when you combine this temporal difference learning,
+
+00:25:30.980 --> 00:25:33.480
+so in our paper, we show how you
+
+00:25:33.480 --> 00:25:35.400
+can analytically compute this U.
+
+00:25:35.640 --> 00:25:38.180
+So how can you perturb this Qs in
+
+00:25:38.180 --> 00:25:38.720
+a direction
+
+00:25:38.720 --> 00:25:41.320
+that will give you the next conservative state?
+
+00:25:41.520 --> 00:25:44.440
+So basically this U is, uh, short answer,
+
+00:25:44.820 --> 00:25:47.660
+just the gradient of your travel time.
+
+00:25:47.700 --> 00:25:51.540
+So you move a small step to,
+
+00:25:51.540 --> 00:25:54.280
+uh, in the direction of your gradient of
+
+00:25:54.280 --> 00:25:55.120
+your travel time.
+
+00:25:55.220 --> 00:25:56.160
+So that's your next state.
+
+00:25:56.920 --> 00:25:57.440
+Okay?
+
+00:25:57.760 --> 00:26:00.160
+And we can analytically compute that gradient.
+
+00:26:01.540 --> 00:26:04.740
+So then we combined over gradient matching loss
+
+00:26:04.740 --> 00:26:06.000
+with this 3D loss,
+
+00:26:06.740 --> 00:26:10.640
+and then this model was able to perform
+
+00:26:10.640 --> 00:26:11.300
+really well.
+
+00:26:11.380 --> 00:26:13.060
+We were able to scale it to very
+
+00:26:13.060 --> 00:26:14.120
+high dimension problems
+
+00:26:14.120 --> 00:26:15.660
+that I will show you shortly.
+
+00:26:15.980 --> 00:26:19.040
+So first, on a very simple problem,
+
+00:26:19.580 --> 00:26:21.340
+so this is maze-like environment.
+
+00:26:21.340 --> 00:26:24.460
+If you combine your, uh,
+
+00:26:24.620 --> 00:26:27.120
+over approach like gradient matching loss with 3D
+
+00:26:27.120 --> 00:26:27.420
+learning,
+
+00:26:27.740 --> 00:26:29.320
+you get these kind of contour,
+
+00:26:29.380 --> 00:26:31.800
+and you can see it is matching this
+
+00:26:31.800 --> 00:26:35.580
+expert, uh, FFM.
+
+00:26:35.680 --> 00:26:36.960
+It is a numerical approach.
+
+00:26:37.060 --> 00:26:38.940
+It can only go to three dimension,
+
+00:26:39.120 --> 00:26:40.640
+and if you have a very good computer,
+
+00:26:40.760 --> 00:26:41.640
+it can do four dimension.
+
+00:26:41.940 --> 00:26:44.360
+But you can see time contours are almost
+
+00:26:44.360 --> 00:26:44.800
+similar.
+
+00:26:45.400 --> 00:26:49.120
+So when you do this, uh, uh, neural
+
+00:26:49.120 --> 00:26:49.780
+network approach,
+
+00:26:49.900 --> 00:26:51.160
+it can capture similar solution.
+
+00:26:51.320 --> 00:26:53.100
+However, these are two method.
+
+00:26:53.460 --> 00:26:54.780
+It's our first method.
+
+00:26:54.980 --> 00:26:57.280
+It was without any 3D learning or metric
+
+00:26:57.280 --> 00:26:57.620
+learning.
+
+00:26:57.620 --> 00:27:01.100
+You can see the gradients at the source
+
+00:27:01.100 --> 00:27:01.840
+at the beginning
+
+00:27:01.840 --> 00:27:02.520
+are very good,
+
+00:27:02.540 --> 00:27:04.820
+but as you go far from your source
+
+00:27:04.820 --> 00:27:05.100
+point,
+
+00:27:05.240 --> 00:27:07.120
+the gradient start becoming very bad.
+
+00:27:07.500 --> 00:27:10.120
+So the error between your conductive state
+
+00:27:10.120 --> 00:27:12.860
+start propagating and everything goes wrong.
+
+00:27:13.660 --> 00:27:16.260
+And this is Viskowski Econel PDE.
+
+00:27:16.500 --> 00:27:19.340
+It still has better solution than this one,
+
+00:27:19.500 --> 00:27:21.020
+but still it could,
+
+00:27:21.140 --> 00:27:22.940
+it did not regularize, uh,
+
+00:27:24.060 --> 00:27:26.020
+gradient between my conductive state.
+
+00:27:26.200 --> 00:27:29.380
+So still there are some artifacts that you
+
+00:27:29.380 --> 00:27:30.360
+see in that plot.
+
+00:27:30.720 --> 00:27:34.420
+So combining gradient matching with TD learning leads
+
+00:27:34.420 --> 00:27:34.600
+to,
+
+00:27:34.660 --> 00:27:36.220
+like, much better result.
+
+00:27:37.380 --> 00:27:39.780
+So now I will discuss one by one
+
+00:27:39.780 --> 00:27:41.580
+inference efficiency,
+
+00:27:41.580 --> 00:27:42.540
+training efficiency,
+
+00:27:42.900 --> 00:27:44.500
+and adaptability of this model.
+
+00:27:46.580 --> 00:27:48.640
+So let's start with inference efficiency.
+
+00:27:50.280 --> 00:27:52.060
+So this is on a simple, uh,
+
+00:27:52.240 --> 00:27:54.080
+7DOF, uh, setup.
+
+00:27:54.400 --> 00:27:55.700
+So over, as you can see here,
+
+00:27:55.760 --> 00:27:59.060
+it's, like, take 0.07 seconds to find
+
+00:27:59.060 --> 00:27:59.660
+that plan.
+
+00:28:00.320 --> 00:28:03.280
+And this is, uh, MpyNet is, uh, from
+
+00:28:03.280 --> 00:28:03.840
+NVIDIA.
+
+00:28:03.840 --> 00:28:06.660
+It was trained on huge amount of data.
+
+00:28:06.820 --> 00:28:07.480
+I will show you.
+
+00:28:07.660 --> 00:28:09.700
+It took them several weeks to gather that
+
+00:28:09.700 --> 00:28:09.980
+data,
+
+00:28:10.100 --> 00:28:11.720
+and it took them one week to train
+
+00:28:11.720 --> 00:28:12.260
+that model.
+
+00:28:12.900 --> 00:28:14.920
+Compared to our model, it took us,
+
+00:28:15.580 --> 00:28:17.440
+I think I will show you less than,
+
+00:28:17.680 --> 00:28:17.800
+uh,
+
+00:28:19.500 --> 00:28:20.860
+less than a minute to gather data,
+
+00:28:21.520 --> 00:28:23.920
+less than an hour to train, like, uh,
+
+00:28:24.140 --> 00:28:26.260
+this model on 300 environments.
+
+00:28:26.260 --> 00:28:29.300
+So this is one model generalizing to 300
+
+00:28:29.300 --> 00:28:31.040
+different environments.
+
+00:28:31.400 --> 00:28:33.500
+Still MpyNet and, uh,
+
+00:28:33.660 --> 00:28:35.480
+over, you can see success rate are very
+
+00:28:35.480 --> 00:28:35.900
+similar.
+
+00:28:36.600 --> 00:28:40.000
+And planning time, uh, is much faster in
+
+00:28:40.000 --> 00:28:40.560
+our case.
+
+00:28:40.840 --> 00:28:45.180
+And for lazy PRM, these times only show
+
+00:28:45.180 --> 00:28:46.500
+graph query time.
+
+00:28:46.820 --> 00:28:50.020
+We did not count graph construction time.
+
+00:28:50.680 --> 00:28:52.780
+So we pre-constructed the graph
+
+00:28:52.780 --> 00:28:54.960
+and then use that graph to, uh, query
+
+00:28:54.960 --> 00:28:55.380
+the time.
+
+00:28:58.960 --> 00:29:01.120
+Then it, it also steered to, like,
+
+00:29:01.240 --> 00:29:03.680
+a very complex, uh, indoor environment.
+
+00:29:03.700 --> 00:29:05.460
+So this is multi-floor environment.
+
+00:29:05.740 --> 00:29:08.440
+And success rate, again, you can see are
+
+00:29:08.440 --> 00:29:09.020
+very high.
+
+00:29:09.460 --> 00:29:11.280
+And planning times are very low
+
+00:29:11.280 --> 00:29:13.440
+compared to, like, uh, other approaches.
+
+00:29:13.780 --> 00:29:15.260
+So there is a difference, like,
+
+00:29:15.400 --> 00:29:16.680
+because it's a value function,
+
+00:29:16.980 --> 00:29:20.260
+you can incorporate this value function into MPC
+
+00:29:20.260 --> 00:29:21.180
+or MPPI.
+
+00:29:21.180 --> 00:29:25.520
+So any, uh, available tool, uh, that can
+
+00:29:25.520 --> 00:29:26.600
+use your value function.
+
+00:29:26.780 --> 00:29:29.160
+You can even incorporate it into trajectory optimization.
+
+00:29:29.500 --> 00:29:31.540
+So we show if you combine it with
+
+00:29:31.540 --> 00:29:32.180
+MPPI,
+
+00:29:32.460 --> 00:29:35.120
+it perform, it is much faster,
+
+00:29:35.120 --> 00:29:37.520
+because then you don't need to compute the
+
+00:29:37.520 --> 00:29:37.800
+gradient.
+
+00:29:37.960 --> 00:29:40.660
+You just use the, uh, prediction directly,
+
+00:29:40.940 --> 00:29:43.260
+the cost to go or the value function
+
+00:29:43.260 --> 00:29:44.120
+output.
+
+00:29:44.480 --> 00:29:47.160
+But this gradient, you can also use the
+
+00:29:47.160 --> 00:29:47.480
+gradient
+
+00:29:47.480 --> 00:29:49.280
+of this travel time to find the trajectory
+
+00:29:49.280 --> 00:29:49.700
+still.
+
+00:29:50.220 --> 00:29:54.040
+Uh, uh, the computation time does not increase
+
+00:29:54.040 --> 00:29:54.480
+significantly,
+
+00:29:55.000 --> 00:29:56.480
+and the success rate is high.
+
+00:29:57.940 --> 00:29:59.980
+And then we were able to scale it
+
+00:29:59.980 --> 00:30:01.060
+to trial DOS.
+
+00:30:01.200 --> 00:30:03.440
+This is a very complex environment for these
+
+00:30:03.440 --> 00:30:03.720
+models
+
+00:30:03.720 --> 00:30:05.640
+because it has very thin obstacles,
+
+00:30:05.860 --> 00:30:07.620
+and these PD solutions struggle
+
+00:30:07.620 --> 00:30:09.220
+when you have these thin obstacles.
+
+00:30:09.240 --> 00:30:11.060
+So we specifically picked this environment
+
+00:30:11.060 --> 00:30:14.580
+to show it can nicely capture these thin
+
+00:30:14.580 --> 00:30:14.920
+obstacles
+
+00:30:14.920 --> 00:30:16.560
+and still, uh, do planning.
+
+00:30:17.560 --> 00:30:19.140
+This is 15 DOS,
+
+00:30:20.980 --> 00:30:24.760
+and this environment is particularly challenging for this
+
+00:30:24.760 --> 00:30:24.960
+robot.
+
+00:30:25.060 --> 00:30:26.260
+This robot is very huge,
+
+00:30:26.280 --> 00:30:27.660
+and this room was very small,
+
+00:30:27.680 --> 00:30:29.380
+so it's a very confined environment
+
+00:30:29.380 --> 00:30:31.280
+for this robot to be able to move
+
+00:30:31.280 --> 00:30:33.000
+from one point to another.
+
+00:30:34.020 --> 00:30:36.460
+So that's about, like, inference efficiency.
+
+00:30:36.720 --> 00:30:38.640
+I-I showed you these models, like,
+
+00:30:38.760 --> 00:30:40.100
+as you scale to high dimension,
+
+00:30:40.280 --> 00:30:42.220
+they retain their computational benefit.
+
+00:30:42.860 --> 00:30:44.160
+Now my favorite slide,
+
+00:30:44.240 --> 00:30:46.080
+I-I want to talk about training efficiency.
+
+00:30:50.300 --> 00:30:52.340
+So these are different environments,
+
+00:30:52.480 --> 00:30:54.260
+so if you just pick this 7-DOS
+
+00:30:54.260 --> 00:30:54.920
+environment,
+
+00:30:56.460 --> 00:30:57.940
+for that environment,
+
+00:30:58.200 --> 00:31:00.100
+it took, like, several, uh,
+
+00:31:00.100 --> 00:31:02.460
+like, uh, for us, it took us 50
+
+00:31:02.460 --> 00:31:02.880
+minutes
+
+00:31:02.880 --> 00:31:04.120
+to gather data.
+
+00:31:04.360 --> 00:31:05.600
+So per environment,
+
+00:31:05.600 --> 00:31:06.980
+it was taking a few seconds,
+
+00:31:07.180 --> 00:31:08.640
+so multiply by 50,
+
+00:31:08.780 --> 00:31:10.040
+it took us, like, 50 minutes.
+
+00:31:10.460 --> 00:31:13.260
+Training took, uh, 46 minutes compared to,
+
+00:31:13.320 --> 00:31:15.220
+and we compared it with EmpireNet,
+
+00:31:15.380 --> 00:31:17.720
+and these numbers are taken from their paper.
+
+00:31:17.900 --> 00:31:19.520
+It took them several weeks on a large
+
+00:31:19.520 --> 00:31:19.880
+amount,
+
+00:31:20.040 --> 00:31:21.460
+to gather a large amount of data,
+
+00:31:21.480 --> 00:31:22.900
+and then one week to train.
+
+00:31:23.180 --> 00:31:25.640
+We trained over model on one GPU,
+
+00:31:26.340 --> 00:31:27.340
+standard 3090,
+
+00:31:28.000 --> 00:31:30.080
+and, but EmpireNet was trained
+
+00:31:30.100 --> 00:31:32.800
+on, uh, eight NVIDIA Tesla GPUs.
+
+00:31:32.960 --> 00:31:34.860
+So it took several, uh,
+
+00:31:34.940 --> 00:31:36.300
+huge amount of compute power
+
+00:31:36.300 --> 00:31:37.280
+to train that model.
+
+00:31:38.540 --> 00:31:39.460
+And, uh,
+
+00:31:39.780 --> 00:31:41.020
+these Gibson environment,
+
+00:31:41.260 --> 00:31:42.080
+like you can see,
+
+00:31:42.400 --> 00:31:44.380
+uh, it, it takes 24 seconds
+
+00:31:44.380 --> 00:31:45.160
+to gather data,
+
+00:31:45.260 --> 00:31:46.120
+nine minutes to train.
+
+00:31:46.260 --> 00:31:46.960
+So what I'm,
+
+00:31:46.980 --> 00:31:48.200
+I want to highlight here,
+
+00:31:48.340 --> 00:31:50.540
+when you use these PDE priors,
+
+00:31:52.380 --> 00:31:53.400
+you have, like,
+
+00:31:53.480 --> 00:31:55.100
+much higher training efficiency.
+
+00:31:55.840 --> 00:31:57.700
+Like, the way I see,
+
+00:31:58.660 --> 00:32:00.780
+physicists gave us these physics models
+
+00:32:01.320 --> 00:32:03.380
+that govern some dynamical system.
+
+00:32:03.680 --> 00:32:06.160
+Now we are regathering the trajectories,
+
+00:32:06.340 --> 00:32:07.400
+ignoring these models,
+
+00:32:07.620 --> 00:32:09.640
+just to reproduce these models.
+
+00:32:10.460 --> 00:32:10.980
+Okay?
+
+00:32:11.160 --> 00:32:12.640
+So why not just use them?
+
+00:32:12.740 --> 00:32:13.260
+They are there,
+
+00:32:13.300 --> 00:32:14.360
+and if you use them,
+
+00:32:14.520 --> 00:32:16.880
+you will have very high training efficiency,
+
+00:32:16.940 --> 00:32:19.040
+you will have very high inference efficiency,
+
+00:32:19.040 --> 00:32:20.860
+and these models can still adapt to
+
+00:32:20.860 --> 00:32:22.440
+very complex environment.
+
+00:32:22.640 --> 00:32:24.360
+And these models are transferable.
+
+00:32:24.820 --> 00:32:27.100
+So when I started this research,
+
+00:32:28.320 --> 00:32:29.880
+our models were training,
+
+00:32:29.900 --> 00:32:31.560
+like, two days to train.
+
+00:32:32.220 --> 00:32:33.960
+Like, uh, training would go two days,
+
+00:32:34.000 --> 00:32:36.460
+because we were not satisfying properly
+
+00:32:36.460 --> 00:32:37.880
+the properties of these PDEs.
+
+00:32:37.940 --> 00:32:39.780
+But with these properties we satisfied,
+
+00:32:40.040 --> 00:32:42.160
+it came down to, like, less than an
+
+00:32:42.160 --> 00:32:42.300
+hour,
+
+00:32:42.300 --> 00:32:44.320
+and my lab is still pushing further
+
+00:32:45.020 --> 00:32:46.260
+to go beyond that.
+
+00:32:46.800 --> 00:32:49.580
+Like, uh, we, we've,
+
+00:32:49.580 --> 00:32:51.600
+we are still in preparation for a paper.
+
+00:32:51.800 --> 00:32:53.420
+I think our latest model, like,
+
+00:32:53.620 --> 00:32:55.360
+uh, on, on, on 12 DOF,
+
+00:32:55.540 --> 00:32:57.720
+it takes, like, less than five minutes to
+
+00:32:57.720 --> 00:32:57.960
+train.
+
+00:32:58.860 --> 00:33:00.120
+So it's much faster.
+
+00:33:00.280 --> 00:33:00.500
+Yes?
+
+00:33:01.460 --> 00:33:03.680
+Any constraints that you have in, like,
+
+00:33:03.800 --> 00:33:06.260
+the S, uh, in the S function,
+
+00:33:06.440 --> 00:33:07.940
+is that only just the travel time?
+
+00:33:08.120 --> 00:33:09.220
+Or you have other constraints?
+
+00:33:09.220 --> 00:33:11.640
+No, S is the constraint function.
+
+00:33:11.820 --> 00:33:12.960
+It's a distance to collegian.
+
+00:33:13.200 --> 00:33:13.680
+Yeah.
+
+00:33:14.160 --> 00:33:15.240
+So it's not a travel time.
+
+00:33:15.360 --> 00:33:17.360
+Travel time is the unknown function,
+
+00:33:17.600 --> 00:33:19.200
+given this constraint function.
+
+00:33:19.340 --> 00:33:21.680
+So we solved that PDE to find this
+
+00:33:21.680 --> 00:33:22.200
+travel time.
+
+00:33:23.680 --> 00:33:25.440
+And also, is the model architecture
+
+00:33:25.740 --> 00:33:28.080
+between, I guess, like, between, like,
+
+00:33:28.200 --> 00:33:31.480
+the MPI and your paper,
+
+00:33:31.600 --> 00:33:33.060
+how different model architecture?
+
+00:33:33.180 --> 00:33:34.780
+So our model architecture are very different.
+
+00:33:35.040 --> 00:33:37.420
+So our model architecture is designed
+
+00:33:37.420 --> 00:33:39.760
+to respect some properties of Econal PDE.
+
+00:33:39.780 --> 00:33:41.420
+For example, I will give you one property,
+
+00:33:42.160 --> 00:33:44.160
+like, it has the symmetry property.
+
+00:33:44.360 --> 00:33:46.660
+So travel time from your start to goal
+
+00:33:46.660 --> 00:33:48.400
+and travel time from your goal to start
+
+00:33:48.400 --> 00:33:49.160
+should be same.
+
+00:33:49.540 --> 00:33:50.920
+So it has the symmetry.
+
+00:33:51.200 --> 00:33:53.100
+And our architecture is designed
+
+00:33:53.100 --> 00:33:54.480
+to respect that symmetry.
+
+00:33:54.740 --> 00:33:57.620
+It enforces that this value function respect.
+
+00:33:57.840 --> 00:33:59.580
+And then, other thing I mentioned,
+
+00:33:59.700 --> 00:34:01.660
+our value function is a geodesic distance.
+
+00:34:02.020 --> 00:34:03.660
+So architecture is designed
+
+00:34:03.660 --> 00:34:05.520
+to respect those triangular, uh,
+
+00:34:05.680 --> 00:34:06.960
+inequality and those kind of things.
+
+00:34:06.960 --> 00:34:09.680
+Whereas MPI net is a, is a standard,
+
+00:34:10.020 --> 00:34:14.140
+um, standard architecture that we usually use
+
+00:34:14.140 --> 00:34:15.300
+for large models.
+
+00:34:17.140 --> 00:34:17.720
+Yes.
+
+00:34:18.360 --> 00:34:20.420
+Um, so I think it's a very good
+
+00:34:20.420 --> 00:34:20.660
+idea
+
+00:34:20.660 --> 00:34:23.940
+to apply Econal PDE for a manipulator task,
+
+00:34:24.120 --> 00:34:26.440
+uh, because I see in the Econal PDE
+
+00:34:26.440 --> 00:34:29.680
+you don't have the dynamical constraint, uh, in
+
+00:34:29.680 --> 00:34:29.860
+it.
+
+00:34:29.860 --> 00:34:33.100
+So in every state, you probably assume the
+
+00:34:33.100 --> 00:34:33.820
+manipulator
+
+00:34:33.820 --> 00:34:35.540
+can move good any direction.
+
+00:34:35.940 --> 00:34:38.760
+Uh, but in reality it still has some
+
+00:34:38.760 --> 00:34:41.560
+dynamical constraint and you have singularity
+
+00:34:41.560 --> 00:34:42.500
+in the manipulator.
+
+00:34:42.800 --> 00:34:45.160
+So have you experienced any?
+
+00:34:45.160 --> 00:34:45.260
+Econal PDE.
+
+00:34:45.380 --> 00:34:46.780
+So that's a very good question.
+
+00:34:46.940 --> 00:34:49.400
+So currently, uh, we, like, in this work
+
+00:34:49.400 --> 00:34:50.540
+we consider kinematic.
+
+00:34:50.700 --> 00:34:53.240
+We have a paper accepted at Neoreps this
+
+00:34:53.240 --> 00:34:53.500
+year
+
+00:34:53.500 --> 00:34:56.100
+where we saw the kinodynamic problem
+
+00:34:56.100 --> 00:34:57.320
+with these Econal PDE.
+
+00:34:57.320 --> 00:35:01.080
+And, uh, we basically show that this Econal
+
+00:35:01.080 --> 00:35:01.700
+PDE
+
+00:35:01.700 --> 00:35:04.700
+can still regular, regularize the solution
+
+00:35:04.700 --> 00:35:05.840
+to HJB PDE.
+
+00:35:06.420 --> 00:35:08.660
+So it can, you can think of precondition
+
+00:35:08.660 --> 00:35:10.920
+of warm start to some HJB PDE solver
+
+00:35:10.920 --> 00:35:13.720
+and we showed, like, some kinodynamic
+
+00:35:13.720 --> 00:35:16.520
+like, uh, on a humanoid task, like,
+
+00:35:16.600 --> 00:35:19.840
+how we can do contact-rich, uh, uh,
+
+00:35:20.060 --> 00:35:20.620
+locomotion.
+
+00:35:20.780 --> 00:35:22.900
+And we also showed manipulation, if I remember
+
+00:35:22.900 --> 00:35:23.300
+correctly.
+
+00:35:23.300 --> 00:35:27.300
+But in a second point, you pointed out
+
+00:35:27.300 --> 00:35:27.960
+to something else
+
+00:35:27.960 --> 00:35:29.540
+as well, like, uh, in manipulation,
+
+00:35:29.620 --> 00:35:31.100
+I'm coming to manipulation shortly.
+
+00:35:31.840 --> 00:35:32.280
+Yeah.
+
+00:35:32.660 --> 00:35:32.900
+Yes.
+
+00:35:33.540 --> 00:35:34.500
+Just, just wondering,
+
+00:35:34.660 --> 00:35:36.380
+wouldn't you need to do the data generation
+
+00:35:36.380 --> 00:35:36.920
+and training?
+
+00:35:37.180 --> 00:35:39.800
+Uh, see, uh, on a channel,
+
+00:35:40.700 --> 00:35:41.520
+a location,
+
+00:35:41.720 --> 00:35:42.360
+are we obstinate?
+
+00:35:43.940 --> 00:35:45.360
+So in this case, yes.
+
+00:35:45.560 --> 00:35:48.240
+So we have, uh, uh, I will discuss
+
+00:35:48.240 --> 00:35:49.040
+one more work.
+
+00:35:49.200 --> 00:35:52.040
+Like, we can selectively retrain neural network.
+
+00:35:52.040 --> 00:35:53.280
+Like, I will show you how you can
+
+00:35:53.280 --> 00:35:54.100
+select parameters
+
+00:35:54.100 --> 00:35:55.460
+that you need to retrain
+
+00:35:55.460 --> 00:35:57.060
+if some part of the environment has changed.
+
+00:35:57.160 --> 00:35:59.160
+You, you do not need to retrain everything.
+
+00:35:59.400 --> 00:35:59.860
+Cool, cool.
+
+00:36:00.020 --> 00:36:02.300
+And the powerful training, I...
+
+00:36:02.300 --> 00:36:04.640
+You can give the, the network
+
+00:36:04.640 --> 00:36:06.760
+arbitrary start and default location.
+
+00:36:06.920 --> 00:36:07.060
+Yeah, right.
+
+00:36:07.180 --> 00:36:07.580
+Okay, cool.
+
+00:36:07.700 --> 00:36:07.880
+Yeah.
+
+00:36:09.500 --> 00:36:12.100
+So, so far we have discussed training efficiency,
+
+00:36:12.240 --> 00:36:13.520
+adaptability to complexity.
+
+00:36:13.700 --> 00:36:15.480
+Like, I have shown you that it's scared
+
+00:36:15.480 --> 00:36:17.100
+to very high dimension, but I want to
+
+00:36:17.100 --> 00:36:17.820
+discuss, like,
+
+00:36:17.880 --> 00:36:19.800
+how it can steer to manipulation
+
+00:36:19.800 --> 00:36:21.880
+or, or very large environment.
+
+00:36:22.020 --> 00:36:23.340
+Neural network has this problem.
+
+00:36:23.480 --> 00:36:25.120
+Like, if you have a very large environment,
+
+00:36:25.420 --> 00:36:26.420
+it struggles.
+
+00:36:26.580 --> 00:36:28.860
+It, uh, suffer from spectral bias issue
+
+00:36:28.860 --> 00:36:30.800
+of, uh, your neural networks.
+
+00:36:31.140 --> 00:36:34.300
+So, first, to scale it to manifold
+
+00:36:34.300 --> 00:36:35.580
+or manipulation problem,
+
+00:36:36.020 --> 00:36:38.380
+all you have to change is your expert
+
+00:36:38.380 --> 00:36:39.360
+speed function.
+
+00:36:39.640 --> 00:36:41.120
+Instead of distance to obstacle,
+
+00:36:41.520 --> 00:36:43.340
+make a distance to constraint manifold.
+
+00:36:43.340 --> 00:36:45.160
+Like, if, for example, you are doing door
+
+00:36:45.160 --> 00:36:45.840
+opening tasks,
+
+00:36:46.000 --> 00:36:46.880
+that's one manifold.
+
+00:36:47.320 --> 00:36:49.600
+And if you can compute the distance of
+
+00:36:49.600 --> 00:36:50.400
+robot configuration
+
+00:36:50.400 --> 00:36:51.340
+to that manifold,
+
+00:36:51.540 --> 00:36:54.080
+you can use that as a, uh, training
+
+00:36:54.080 --> 00:36:54.500
+function.
+
+00:36:55.120 --> 00:36:58.020
+And then we were able to solve this,
+
+00:36:58.180 --> 00:36:58.640
+like, uh,
+
+00:36:58.900 --> 00:37:01.300
+so this model is, like, opening door,
+
+00:37:01.320 --> 00:37:03.000
+and then it will move that cup
+
+00:37:03.000 --> 00:37:05.520
+without tilting from one point to another
+
+00:37:05.520 --> 00:37:07.200
+in, in this confined space.
+
+00:37:08.280 --> 00:37:10.060
+So, again, you can see, uh,
+
+00:37:10.200 --> 00:37:11.960
+computation times are very low.
+
+00:37:12.120 --> 00:37:13.400
+Success rate is very high.
+
+00:37:13.660 --> 00:37:16.020
+And we compare it with C by RRT,
+
+00:37:16.140 --> 00:37:17.420
+which is a sampling-based approach.
+
+00:37:17.900 --> 00:37:19.940
+CompNet X is a data, like,
+
+00:37:20.100 --> 00:37:21.760
+imitation learning-based approach.
+
+00:37:22.100 --> 00:37:24.640
+So, the CompNet X I proposed during my
+
+00:37:24.640 --> 00:37:25.100
+PhD,
+
+00:37:25.400 --> 00:37:27.700
+uh, to solve these, uh, manipulation problem.
+
+00:37:27.820 --> 00:37:30.520
+But you have to gather data using some
+
+00:37:30.520 --> 00:37:31.460
+C by RRT
+
+00:37:31.460 --> 00:37:33.320
+or classical planner to train that model.
+
+00:37:35.060 --> 00:37:36.940
+And then question come, like,
+
+00:37:37.080 --> 00:37:38.980
+how can we scale to multi-modal problem?
+
+00:37:39.140 --> 00:37:40.920
+Like, for example, if you have this cup,
+
+00:37:40.960 --> 00:37:42.820
+you are moving it, keeping it upright,
+
+00:37:43.000 --> 00:37:43.680
+then you are tilting.
+
+00:37:43.800 --> 00:37:44.920
+These are two different constraints.
+
+00:37:45.120 --> 00:37:46.980
+And then this robot also need to open
+
+00:37:46.980 --> 00:37:47.440
+cabinet,
+
+00:37:47.600 --> 00:37:48.240
+retrieve something.
+
+00:37:48.700 --> 00:37:50.300
+And if you are doing steering,
+
+00:37:50.760 --> 00:37:53.180
+so that spoon motion is one manifold,
+
+00:37:53.400 --> 00:37:54.820
+then steering is another manifold.
+
+00:37:55.040 --> 00:37:56.500
+If you are doing hammering
+
+00:37:56.500 --> 00:37:58.080
+or all your tool manipulation,
+
+00:37:58.300 --> 00:38:02.480
+they are multi-modal, uh, uh, constraint problems.
+
+00:38:02.480 --> 00:38:05.440
+So, how can we extend these methods
+
+00:38:05.440 --> 00:38:07.440
+to solve those multi-modal constraint?
+
+00:38:07.780 --> 00:38:11.560
+So, the, the solution relies, uh, in,
+
+00:38:11.780 --> 00:38:14.440
+in, in classical PDE literature,
+
+00:38:14.660 --> 00:38:16.840
+like, in, if you study classical PDE literature,
+
+00:38:17.080 --> 00:38:19.960
+they used to represent PDE solution
+
+00:38:19.960 --> 00:38:22.260
+as a sum of finite basis functions.
+
+00:38:23.360 --> 00:38:23.690
+Okay?
+
+00:38:24.260 --> 00:38:26.540
+So, if each of these basis function
+
+00:38:26.540 --> 00:38:28.340
+represents a manifold,
+
+00:38:28.660 --> 00:38:30.820
+then I can combine them to get my
+
+00:38:30.820 --> 00:38:31.760
+global trajectory.
+
+00:38:31.760 --> 00:38:33.000
+So, this is what we do.
+
+00:38:33.200 --> 00:38:36.240
+So, we decompose our problem into,
+
+00:38:36.520 --> 00:38:38.280
+so, this is just for depiction.
+
+00:38:38.720 --> 00:38:40.080
+Think of this 2D environment.
+
+00:38:40.320 --> 00:38:43.000
+I can break it down into multiple pieces.
+
+00:38:43.660 --> 00:38:45.360
+And then for each piece,
+
+00:38:45.440 --> 00:38:47.160
+I can learn some basis function.
+
+00:38:48.120 --> 00:38:50.520
+And then I can combine the basis function
+
+00:38:50.520 --> 00:38:52.860
+to get my global value function.
+
+00:38:53.040 --> 00:38:55.560
+But there, there was a challenge there.
+
+00:38:55.560 --> 00:38:58.420
+So, I want my value function to be
+
+00:38:58.420 --> 00:38:58.880
+continuous,
+
+00:38:58.900 --> 00:39:00.460
+like, fully spatially connected,
+
+00:39:00.520 --> 00:39:01.820
+because in trajectories,
+
+00:39:02.000 --> 00:39:03.560
+if you have the decomposition,
+
+00:39:04.160 --> 00:39:07.260
+you can have singularities at all of these
+
+00:39:07.260 --> 00:39:07.840
+partitions.
+
+00:39:08.500 --> 00:39:10.940
+So, how can we get this global value
+
+00:39:10.940 --> 00:39:11.260
+function
+
+00:39:11.260 --> 00:39:13.060
+so that I can go from any point
+
+00:39:13.060 --> 00:39:13.780
+to any point,
+
+00:39:13.900 --> 00:39:15.720
+from this segment to that segment,
+
+00:39:15.860 --> 00:39:19.820
+without experiencing any discontinuities or local minima?
+
+00:39:20.280 --> 00:39:21.540
+So, that was the challenge.
+
+00:39:21.740 --> 00:39:23.620
+And then we propose some architectures.
+
+00:39:24.100 --> 00:39:24.960
+If you're interested,
+
+00:39:24.980 --> 00:39:26.960
+you can go into the details there.
+
+00:39:27.400 --> 00:39:29.520
+But, uh, this architecture basically,
+
+00:39:30.220 --> 00:39:32.220
+decompose your problem into subdomains
+
+00:39:32.220 --> 00:39:34.620
+and then learn this global function.
+
+00:39:34.780 --> 00:39:36.540
+So, that addresses your question,
+
+00:39:36.640 --> 00:39:38.420
+like, if some part of the environment change,
+
+00:39:39.080 --> 00:39:40.780
+you don't need to retrain everything.
+
+00:39:40.920 --> 00:39:42.800
+You just need to retrain that basis function.
+
+00:39:42.800 --> 00:39:44.180
+And that's very fast.
+
+00:39:46.500 --> 00:39:48.180
+So, we were able to scale it to
+
+00:39:48.180 --> 00:39:49.280
+very large environments.
+
+00:39:50.160 --> 00:39:53.960
+Uh, and, uh, it still retains, like, very
+
+00:39:53.960 --> 00:39:54.720
+high success rate.
+
+00:39:54.840 --> 00:39:56.520
+Another advantage of this decomposition,
+
+00:39:56.880 --> 00:40:01.500
+you need fewer parameters compared to your end
+
+00:40:01.500 --> 00:40:02.120
+-to-end function.
+
+00:40:02.280 --> 00:40:03.440
+So, that's what we found.
+
+00:40:03.860 --> 00:40:06.200
+And then this is, like, on a rail
+
+00:40:06.200 --> 00:40:07.620
+over campus,
+
+00:40:07.660 --> 00:40:10.520
+like, this robot is navigating these multiple narrow
+
+00:40:10.520 --> 00:40:11.000
+passages
+
+00:40:11.000 --> 00:40:12.200
+from one point to another,
+
+00:40:12.200 --> 00:40:15.660
+and this entire environment was decomposed into, uh,
+
+00:40:16.000 --> 00:40:17.140
+multiple basis functions.
+
+00:40:19.320 --> 00:40:22.000
+And then the same idea applies to your
+
+00:40:22.000 --> 00:40:23.080
+multi-modal manipulation.
+
+00:40:23.280 --> 00:40:25.980
+You have multi-modal, multiple manifolds.
+
+00:40:26.200 --> 00:40:28.840
+You can represent them as basis function.
+
+00:40:29.060 --> 00:40:31.200
+You can combine them to get trajectories.
+
+00:40:31.280 --> 00:40:34.300
+So, this is one neural model doing, uh,
+
+00:40:34.600 --> 00:40:35.160
+door opening,
+
+00:40:35.180 --> 00:40:37.400
+and then it will retrieve this cup without
+
+00:40:37.400 --> 00:40:37.920
+tilting,
+
+00:40:37.960 --> 00:40:40.580
+and then it will do this pouring task.
+
+00:40:48.220 --> 00:40:50.640
+We recently moved to humanoid robots.
+
+00:40:50.820 --> 00:40:52.760
+So, all these tasks are being solved by
+
+00:40:52.760 --> 00:40:53.220
+humanoid.
+
+00:40:53.380 --> 00:40:57.460
+So, this decomposition is also on the space.
+
+00:40:57.680 --> 00:40:59.500
+So, a robot can move anywhere in the
+
+00:40:59.500 --> 00:40:59.860
+environment.
+
+00:40:59.860 --> 00:41:02.640
+So, that's, uh, decomposition on the plane.
+
+00:41:02.820 --> 00:41:04.840
+Then we have decomposition on the manifolds.
+
+00:41:05.220 --> 00:41:08.160
+So, all these, like, multi-modal problem is
+
+00:41:08.160 --> 00:41:08.860
+being solved.
+
+00:41:09.020 --> 00:41:11.400
+And this paper, hopefully, we plan to submit
+
+00:41:11.400 --> 00:41:13.660
+to a conference very soon.
+
+00:41:13.660 --> 00:41:16.920
+Uh, but we can solve multi-modal manipulation
+
+00:41:16.920 --> 00:41:18.080
+problem that you see.
+
+00:41:18.540 --> 00:41:21.520
+Very popular with imitation learning or data-driven
+
+00:41:21.520 --> 00:41:22.340
+approaches nowadays.
+
+00:41:22.340 --> 00:41:25.020
+We can solve all those problems, uh, with
+
+00:41:25.020 --> 00:41:25.600
+these models.
+
+00:41:26.760 --> 00:41:29.660
+Another area that we extended to, like, unknown
+
+00:41:29.660 --> 00:41:30.140
+environment.
+
+00:41:30.320 --> 00:41:32.620
+Right now, we assumed we know the environment,
+
+00:41:32.640 --> 00:41:34.040
+and then from that environment,
+
+00:41:34.040 --> 00:41:36.440
+we computed the, uh, distance to obstacle.
+
+00:41:36.620 --> 00:41:38.100
+I need to speed up.
+
+00:41:38.600 --> 00:41:42.700
+So, so, one thing that we think the
+
+00:41:42.700 --> 00:41:44.900
+motion planning problem is computationally expensive
+
+00:41:44.900 --> 00:41:48.440
+is because your mapping feature is not good
+
+00:41:48.440 --> 00:41:49.200
+for motion planning.
+
+00:41:49.360 --> 00:41:52.220
+There is a huge gap between your mapping
+
+00:41:52.220 --> 00:41:53.760
+features and your motion planner.
+
+00:41:53.920 --> 00:41:55.740
+Like, you have the sign-distance field or
+
+00:41:55.740 --> 00:41:59.780
+occupancy map that necessitate the building
+
+00:41:59.780 --> 00:42:03.360
+of some computationally expensive tools for motion planning.
+
+00:42:03.640 --> 00:42:06.400
+Like, for example, to translate those map into
+
+00:42:06.400 --> 00:42:06.820
+C-space,
+
+00:42:07.000 --> 00:42:08.780
+you either have to use sampling-based technique
+
+00:42:08.780 --> 00:42:09.520
+or optimization.
+
+00:42:09.760 --> 00:42:12.440
+Then you find a trajectory in your C
+
+00:42:12.440 --> 00:42:12.680
+-space.
+
+00:42:12.680 --> 00:42:15.320
+So can we have a better mapping that
+
+00:42:15.320 --> 00:42:18.600
+does not require this, uh, very complex, uh,
+
+00:42:19.020 --> 00:42:19.280
+tools?
+
+00:42:19.440 --> 00:42:20.640
+So answer is yes.
+
+00:42:20.840 --> 00:42:25.200
+If you can learn, uh, maps as a
+
+00:42:25.200 --> 00:42:27.660
+travel time function, then you don't need any
+
+00:42:27.660 --> 00:42:27.920
+planner.
+
+00:42:27.980 --> 00:42:30.120
+You just follow the gradient of that travel
+
+00:42:30.120 --> 00:42:32.320
+time, and it will give you a trajectory.
+
+00:42:32.600 --> 00:42:36.120
+So we, we investigated that.
+
+00:42:36.120 --> 00:42:38.340
+So as your robot explores the environment, it
+
+00:42:38.340 --> 00:42:39.620
+gets the depth perception,
+
+00:42:39.620 --> 00:42:43.060
+and you can locally approximate your constraint function.
+
+00:42:43.640 --> 00:42:46.640
+So as your data is coming, you can
+
+00:42:46.640 --> 00:42:47.520
+train this model.
+
+00:42:47.680 --> 00:42:49.340
+So you, uh, here, this video is showing
+
+00:42:49.340 --> 00:42:51.160
+that robot is exploring the environment.
+
+00:42:52.240 --> 00:42:54.280
+Perception is coming in stream, and it is
+
+00:42:54.280 --> 00:42:56.580
+building this arrival time field map.
+
+00:42:59.380 --> 00:43:01.200
+And then once you have this map, you
+
+00:43:01.200 --> 00:43:02.500
+don't need any motion planning tool.
+
+00:43:02.600 --> 00:43:04.720
+Just follow the gradient of this map.
+
+00:43:04.880 --> 00:43:09.100
+It, it incorporates that geometrical representation that helps
+
+00:43:09.100 --> 00:43:10.580
+robot navigate the environment.
+
+00:43:12.320 --> 00:43:16.800
+And so over this paper, the mapping time
+
+00:43:16.800 --> 00:43:20.700
+was twice than, uh, standard mapping, like, occupancy
+
+00:43:20.700 --> 00:43:21.040
+maps.
+
+00:43:21.240 --> 00:43:23.200
+But our latest model, we were able to
+
+00:43:23.200 --> 00:43:25.620
+reduce this time by, like, 40%.
+
+00:43:25.620 --> 00:43:29.020
+So, uh, each time, like, in each frame,
+
+00:43:29.200 --> 00:43:31.680
+neural network just take two seconds to train
+
+00:43:31.680 --> 00:43:32.300
+in this case.
+
+00:43:32.300 --> 00:43:34.360
+But our latest model, I think it takes
+
+00:43:34.360 --> 00:43:36.220
+less than one second to train as robot
+
+00:43:36.220 --> 00:43:37.240
+explores the environment.
+
+00:43:37.740 --> 00:43:41.920
+And it even scales to, like, uh, uh,
+
+00:43:43.080 --> 00:43:45.780
+so this is a rare robot mapping this
+
+00:43:45.780 --> 00:43:46.260
+environment.
+
+00:43:51.460 --> 00:43:53.380
+So you can see as it is exploring,
+
+00:43:53.420 --> 00:43:55.460
+it is training the model on the fly,
+
+00:43:55.480 --> 00:43:58.340
+and, uh, to get those, uh, travel time.
+
+00:43:58.340 --> 00:44:00.180
+So if we can get these maps in
+
+00:44:00.180 --> 00:44:02.980
+almost same amount of time as your occupancy
+
+00:44:02.980 --> 00:44:03.260
+map,
+
+00:44:03.460 --> 00:44:05.200
+then you don't need any motion planner.
+
+00:44:05.420 --> 00:44:08.320
+You can just deploy your robot anywhere in
+
+00:44:08.320 --> 00:44:09.140
+unknown environment,
+
+00:44:09.200 --> 00:44:10.900
+and it will figure out how to move
+
+00:44:10.900 --> 00:44:13.640
+in that environment with these plug-and-play
+
+00:44:13.640 --> 00:44:14.160
+models.
+
+00:44:16.000 --> 00:44:18.320
+And another advantage of this, like, you can
+
+00:44:18.320 --> 00:44:19.700
+even do manipulation with it.
+
+00:44:19.800 --> 00:44:21.940
+You can equip robot with your in-hand
+
+00:44:21.940 --> 00:44:22.320
+camera,
+
+00:44:22.340 --> 00:44:24.800
+and it will explore and construct these arrival
+
+00:44:24.800 --> 00:44:26.400
+time field maps in C space.
+
+00:44:27.200 --> 00:44:29.720
+And still, uh, yet it can still, like,
+
+00:44:29.800 --> 00:44:30.180
+navigate.
+
+00:44:30.440 --> 00:44:32.880
+So we show that in our, uh, TRO
+
+00:44:32.880 --> 00:44:33.240
+paper.
+
+00:44:33.580 --> 00:44:35.580
+If you are interested, check this out.
+
+00:44:38.000 --> 00:44:38.480
+Okay.
+
+00:44:39.780 --> 00:44:42.140
+So this is, like, the robot arm setup
+
+00:44:42.140 --> 00:44:42.560
+we had.
+
+00:44:42.660 --> 00:44:44.400
+It was using this in-hand camera to
+
+00:44:44.400 --> 00:44:46.840
+construct this arrival time field map in six
+
+00:44:46.840 --> 00:44:47.800
+-dimension C space.
+
+00:44:49.900 --> 00:44:51.960
+Another area we are interested in, like, how
+
+00:44:51.960 --> 00:44:54.220
+can we solve these PDEs for, uh,
+
+00:44:55.560 --> 00:44:56.620
+uh, multi-agent settings.
+
+00:44:56.900 --> 00:44:59.820
+So basically, instead of, like, HGBPD, you basically
+
+00:44:59.820 --> 00:45:01.200
+solve HGR.
+
+00:45:01.200 --> 00:45:04.200
+You may know work from Sumel Benson here.
+
+00:45:04.200 --> 00:45:07.780
+And, uh, the way we differ from his
+
+00:45:07.780 --> 00:45:09.280
+work is, like, we want to push the
+
+00:45:09.280 --> 00:45:10.480
+scalability of these methods
+
+00:45:10.480 --> 00:45:13.920
+to very complex robot manipulator with very complex
+
+00:45:13.920 --> 00:45:15.420
+geometry of obstacles.
+
+00:45:16.620 --> 00:45:18.880
+And this is one of our work, like,
+
+00:45:18.960 --> 00:45:22.300
+uh, uh, here robots are trying to reach
+
+00:45:22.300 --> 00:45:22.840
+their target
+
+00:45:22.840 --> 00:45:24.440
+while we actively awarding client.
+
+00:45:24.720 --> 00:45:28.200
+We also scaled it to, like, uh, assembly
+
+00:45:28.200 --> 00:45:30.740
+line tasks where multiple robots are performing their,
+
+00:45:30.900 --> 00:45:31.180
+uh,
+
+00:45:32.320 --> 00:45:34.020
+uh, their tasks while awarding client.
+
+00:45:34.160 --> 00:45:36.260
+So, uh, if you are interested, like, check
+
+00:45:36.260 --> 00:45:37.060
+out this work.
+
+00:45:37.060 --> 00:45:40.280
+So in conclusion, if you should use physics
+
+00:45:40.280 --> 00:45:42.840
+priors because it gives you all these three
+
+00:45:42.840 --> 00:45:43.300
+features,
+
+00:45:43.480 --> 00:45:46.400
+inference efficiency, training efficiency, adaptability.
+
+00:45:46.700 --> 00:45:50.080
+In our future direction, we are, first, we
+
+00:45:50.080 --> 00:45:52.060
+want to improve our training efficiency.
+
+00:45:52.320 --> 00:45:54.140
+Our current models take, like, five minutes.
+
+00:45:54.160 --> 00:45:56.300
+I want to achieve, like, real-time training.
+
+00:45:56.540 --> 00:45:59.000
+So, so that this neural network will be
+
+00:45:59.000 --> 00:46:00.200
+a plug-and-play model.
+
+00:46:00.760 --> 00:46:01.620
+That's my vision.
+
+00:46:01.820 --> 00:46:03.280
+Like, if you have this plug-and-play
+
+00:46:03.280 --> 00:46:06.500
+model, transferability generalizing to new environment
+
+00:46:06.500 --> 00:46:08.920
+won't be an issue because the robot can
+
+00:46:08.920 --> 00:46:10.600
+just go there and train on, on the
+
+00:46:10.600 --> 00:46:10.860
+fly
+
+00:46:10.860 --> 00:46:13.700
+and perform all your manipulation motion planning problems.
+
+00:46:14.480 --> 00:46:16.860
+And other areas that we are interested in
+
+00:46:16.860 --> 00:46:19.760
+is reactive because these methods are very fast.
+
+00:46:20.220 --> 00:46:23.180
+So if they can generalize to very different
+
+00:46:23.180 --> 00:46:26.220
+settings, even if you disturb the environment,
+
+00:46:26.440 --> 00:46:28.300
+they can still recover from it very quickly.
+
+00:46:30.480 --> 00:46:33.400
+And this is, like, a multimodal problem, like,
+
+00:46:33.440 --> 00:46:36.240
+where robots are planning for grasp and manipulation
+
+00:46:36.240 --> 00:46:38.420
+together, so that's another area that we are
+
+00:46:38.420 --> 00:46:38.860
+extending.
+
+00:46:39.640 --> 00:46:42.800
+This is a new problem I recently got
+
+00:46:42.800 --> 00:46:43.580
+interested into.
+
+00:46:43.800 --> 00:46:48.520
+It's called assistive manipulation, where robots are manipulating
+
+00:46:48.520 --> 00:46:51.440
+human body to do different tasks.
+
+00:46:51.560 --> 00:46:54.900
+Like, for example, assisted dressing is a manipulation
+
+00:46:54.900 --> 00:46:55.320
+problem.
+
+00:46:55.320 --> 00:46:58.500
+You have to respect biomechanical constraint in order
+
+00:46:58.500 --> 00:46:59.360
+to move human body.
+
+00:46:59.360 --> 00:47:01.400
+I think it's a very nice motion planning
+
+00:47:01.400 --> 00:47:04.080
+problem to study, and we are extending these
+
+00:47:04.080 --> 00:47:04.440
+methods
+
+00:47:04.440 --> 00:47:05.880
+to those domains as well.
+
+00:47:06.100 --> 00:47:09.140
+So this is a bed-wiping task in
+
+00:47:09.140 --> 00:47:09.760
+the simulation.
+
+00:47:10.000 --> 00:47:12.060
+Like, robot is moving a human limb from
+
+00:47:12.060 --> 00:47:14.140
+one point to another, and other robot is
+
+00:47:14.140 --> 00:47:15.780
+wiping the body.
+
+00:47:16.340 --> 00:47:18.140
+So with this, I will conclude.
+
+00:47:18.140 --> 00:47:19.320
+I'm almost on time.
+
+00:47:19.580 --> 00:47:21.260
+So this is my lab.
+
+00:47:21.440 --> 00:47:23.360
+So without them, nothing would have been possible.
+
+00:47:23.360 --> 00:47:25.060
+So if you are interested, check out our
+
+00:47:25.060 --> 00:47:25.720
+lab website.
+
+00:47:27.860 --> 00:47:29.500
+And that would be it.
+
+00:47:29.580 --> 00:47:29.940
+Thank you.
+
+00:47:30.220 --> 00:47:30.820
+Any questions?
+
+00:47:35.760 --> 00:47:36.280
+Yes.
+
+00:47:37.720 --> 00:47:38.880
+Thank you for the great talking.
+
+00:47:39.200 --> 00:47:41.700
+I just wanted to ask you, how would
+
+00:47:41.700 --> 00:47:43.520
+you compare, like, your method to, say, some
+
+00:47:43.520 --> 00:47:43.920
+of the other
+
+00:47:44.740 --> 00:47:47.480
+more recent motion planning method, like, say, geometric
+
+00:47:47.480 --> 00:47:48.920
+pattern, or the drop from all
+
+00:47:48.920 --> 00:47:51.700
+except, like, if you could, and it turns
+
+00:47:51.700 --> 00:47:53.040
+out, like, say, .
+
+00:47:57.020 --> 00:48:00.240
+So, so, graph of concept, like, I think
+
+00:48:00.240 --> 00:48:03.280
+there are assumptions these methods are performing,
+
+00:48:03.280 --> 00:48:07.300
+like, for example, having a convex obstacle.
+
+00:48:07.580 --> 00:48:09.560
+So that's one of the assumptions.
+
+00:48:09.820 --> 00:48:13.060
+Like, for example, if you see, what's the
+
+00:48:13.060 --> 00:48:13.740
+name of that?
+
+00:48:14.180 --> 00:48:15.580
+There's a, Kurobo.
+
+00:48:16.020 --> 00:48:18.840
+If you see how Kurobo works, they assume
+
+00:48:18.840 --> 00:48:23.020
+robot environment is represented with multiple spheres.
+
+00:48:23.380 --> 00:48:26.220
+Then they solve motion planning problem very fast.
+
+00:48:26.560 --> 00:48:26.920
+Okay?
+
+00:48:27.300 --> 00:48:30.280
+And even these parallelization, like, their test work
+
+00:48:30.280 --> 00:48:33.260
+on parallelization, they heavily rely on this parallelization.
+
+00:48:33.260 --> 00:48:36.060
+Like, a spherical representation of the robot and
+
+00:48:36.060 --> 00:48:36.540
+environment.
+
+00:48:36.840 --> 00:48:39.620
+And they solve this motion planning problem in,
+
+00:48:39.620 --> 00:48:40.540
+basically, in workspace.
+
+00:48:41.260 --> 00:48:43.120
+But there's an inherent issue there.
+
+00:48:43.300 --> 00:48:45.320
+Like, if you are doing, solving this problem
+
+00:48:45.320 --> 00:48:49.140
+in workspace, a lot of current work, like,
+
+00:48:49.220 --> 00:48:50.040
+in imitation learning,
+
+00:48:50.160 --> 00:48:51.780
+they are solving this problem in workspace.
+
+00:48:52.420 --> 00:48:54.880
+There is no guarantee that you can map
+
+00:48:54.880 --> 00:48:56.760
+this trajectory into C-space trajectory.
+
+00:48:56.980 --> 00:48:58.820
+Your robot may run into local minima.
+
+00:48:59.360 --> 00:49:01.960
+Oftentimes, like, if you are performing very complex
+
+00:49:01.960 --> 00:49:05.200
+tasks, you will see that you don't have
+
+00:49:05.200 --> 00:49:07.660
+direct mapping from this workspace trajectory to C
+
+00:49:07.660 --> 00:49:07.880
+-space.
+
+00:49:08.100 --> 00:49:11.280
+Like, if you really study motion planning and
+
+00:49:11.280 --> 00:49:16.060
+check out the literature from early 1990s, they
+
+00:49:16.060 --> 00:49:17.540
+were doing workspace motion planning.
+
+00:49:17.540 --> 00:49:19.320
+Then they figured out this is the problem,
+
+00:49:19.360 --> 00:49:21.240
+and then they moved to C-space planning.
+
+00:49:21.820 --> 00:49:24.640
+Unfortunately, we are going back to workspace planning.
+
+00:49:25.040 --> 00:49:27.900
+So these latest methods, they are very fast,
+
+00:49:28.100 --> 00:49:31.880
+but they rely on these assumptions, which eventually
+
+00:49:31.880 --> 00:49:33.860
+will lead to problem of mapping to C
+
+00:49:33.860 --> 00:49:34.660
+-space trajectories.
+
+00:49:34.660 --> 00:49:37.080
+Yeah, I don't think either, or, and I'm
+
+00:49:37.080 --> 00:49:37.760
+exposed to it as nice.
+
+00:49:38.800 --> 00:49:41.060
+So, geometric fabric, I'm unaware of that.
+
+00:49:41.200 --> 00:49:42.640
+But I think the other paper you mentioned,
+
+00:49:42.800 --> 00:49:44.720
+they assume fair spherical representation.
+
+00:49:45.460 --> 00:49:45.660
+No?
+
+00:49:46.180 --> 00:49:48.500
+Maybe I'm thinking of some other paper there.
+
+00:49:49.040 --> 00:49:49.280
+Yeah.
+
+00:49:49.560 --> 00:49:51.080
+I am then not aware of that.
+
+00:49:51.320 --> 00:49:55.460
+I guess, like, maybe for, like, geometrical systems
+
+00:49:55.460 --> 00:49:56.640
+could be very sick.
+
+00:49:56.880 --> 00:49:57.160
+Sorry?
+
+00:49:57.160 --> 00:50:01.180
+So, basically, you model your system as a
+
+00:50:01.180 --> 00:50:03.560
+dynamical system, and then you try to essentially
+
+00:50:03.560 --> 00:50:04.140
+extract
+
+00:50:04.140 --> 00:50:05.540
+load vector fields.
+
+00:50:05.660 --> 00:50:05.980
+Yeah.
+
+00:50:06.080 --> 00:50:06.740
+On and out.
+
+00:50:06.960 --> 00:50:08.800
+Like, I guess maybe, in that sense, it
+
+00:50:08.800 --> 00:50:10.120
+would also be an app.
+
+00:50:10.200 --> 00:50:10.680
+Yeah, yeah.
+
+00:50:10.920 --> 00:50:11.300
+So...
+
+00:50:11.300 --> 00:50:13.740
+How does that converge class, say, trying to
+
+00:50:13.740 --> 00:50:14.880
+take other functions?
+
+00:50:15.180 --> 00:50:17.560
+Well, I think there's a very strong relevance.
+
+00:50:17.800 --> 00:50:21.240
+Like, over recent work that we submitted to
+
+00:50:21.240 --> 00:50:24.980
+Neoreps, it's basically on kinodynamic, like, how
+
+00:50:24.980 --> 00:50:27.400
+can you come up with these travel time
+
+00:50:27.400 --> 00:50:29.580
+fields in dynamic space?
+
+00:50:30.360 --> 00:50:32.440
+I'm unaware of work that you are discussing,
+
+00:50:32.500 --> 00:50:35.140
+so I cannot comment on their relation.
+
+00:50:35.560 --> 00:50:38.460
+But, in general, we want to go toward
+
+00:50:38.460 --> 00:50:38.980
+vector fear.
+
+00:50:39.220 --> 00:50:41.500
+But we want to go toward that without
+
+00:50:41.500 --> 00:50:43.700
+expert demonstration, without learning from expert
+
+00:50:43.700 --> 00:50:46.100
+data, or just by solving those PDEs.
+
+00:50:46.580 --> 00:50:47.080
+Okay?
+
+00:50:47.320 --> 00:50:49.220
+I'm unaware of what the work.
+
+00:50:49.340 --> 00:50:50.880
+Maybe you can share, and I will be
+
+00:50:50.880 --> 00:50:52.820
+happy to get back to you.
+
+00:50:53.300 --> 00:50:53.520
+Yeah.
+
+00:50:53.520 --> 00:50:55.140
+Any other questions?
+
+00:50:59.560 --> 00:51:00.760
+I have a question.
+
+00:51:02.080 --> 00:51:07.060
+One problem I only have is that if
+
+00:51:07.060 --> 00:51:09.900
+the ball is close to a constraint, then
+
+00:51:09.900 --> 00:51:10.520
+the solution
+
+00:51:11.060 --> 00:51:12.060
+can be pretty unstable.
+
+00:51:15.040 --> 00:51:18.060
+During solving the process, the process is, like,
+
+00:51:18.360 --> 00:51:20.040
+the force around the constraint.
+
+00:51:20.780 --> 00:51:23.180
+Does your problem have a similar problem?
+
+00:51:23.720 --> 00:51:24.300
+Yes.
+
+00:51:24.500 --> 00:51:27.080
+So the way you sample data is very
+
+00:51:27.080 --> 00:51:27.560
+important.
+
+00:51:28.540 --> 00:51:31.460
+Like, I think it's, in my, in our
+
+00:51:31.460 --> 00:51:34.120
+experience, like, creating a curriculum helps, like, starting
+
+00:51:34.120 --> 00:51:37.020
+with a simpler problem and then slowly coming
+
+00:51:37.020 --> 00:51:38.520
+up with start and goal that are very
+
+00:51:38.520 --> 00:51:40.000
+far helps.
+
+00:51:40.340 --> 00:51:43.080
+And then another thing that helps is, like,
+
+00:51:43.080 --> 00:51:46.600
+having more samples that are near obstacles, because
+
+00:51:46.600 --> 00:51:48.540
+those are the areas where you have sharp
+
+00:51:48.540 --> 00:51:50.480
+features and you want your neural network to
+
+00:51:50.480 --> 00:51:51.240
+learn those better.
+
+00:51:51.240 --> 00:51:54.700
+So, yes, so we, we do suffer from
+
+00:51:54.700 --> 00:51:57.900
+those problems and having some adaptive sampling helps.
+
+00:51:57.900 --> 00:51:58.000
+Yes.
+
+00:51:58.120 --> 00:51:58.720
+I see.
+
+00:51:58.820 --> 00:52:02.040
+But after you finish your training successfully, that
+
+00:52:02.040 --> 00:52:04.160
+means, uh, it's equally
+
+00:52:04.760 --> 00:52:07.220
+cheaper to, uh, sample go up in your
+
+00:52:07.220 --> 00:52:07.740
+off-store.
+
+00:52:09.560 --> 00:52:12.300
+If you're following the gradients and because it's
+
+00:52:12.300 --> 00:52:14.580
+an approximation, it can go to local minima.
+
+00:52:14.700 --> 00:52:16.460
+But if you use this neural network as
+
+00:52:16.460 --> 00:52:19.060
+a value function and incorporate within some MPPI,
+
+00:52:19.300 --> 00:52:20.220
+then
+
+00:52:20.220 --> 00:52:23.020
+it helps overcome those local minima issue and
+
+00:52:23.020 --> 00:52:24.400
+it, it does better.
+
+00:52:24.560 --> 00:52:24.940
+I see.
+
+00:52:25.240 --> 00:52:25.340
+I see.
+
+00:52:25.580 --> 00:52:26.140
+Of course.
+
+00:52:26.640 --> 00:52:26.760
+Yes.
+
+00:52:26.880 --> 00:52:27.120
+Thank you.
+
+00:52:27.300 --> 00:52:29.700
+And there was...
+
+00:52:29.700 --> 00:52:30.260
+Yeah.
+
+00:52:33.040 --> 00:52:35.320
+Uh, do we know what methods the, uh,
+
+00:52:35.720 --> 00:52:36.440
+commercial...
+
+00:52:39.580 --> 00:52:41.600
+I see maybe, uh, usually they are, like,
+
+00:52:41.860 --> 00:52:44.280
+I don't know what they are using, but
+
+00:52:44.280 --> 00:52:44.520
+usually
+
+00:52:44.520 --> 00:52:47.460
+it would be some classical technique or, or,
+
+00:52:47.700 --> 00:52:50.140
+or some classical motion planner or something
+
+00:52:50.140 --> 00:52:50.500
+like that.
+
+00:52:51.120 --> 00:52:52.960
+I, I would assume that would be the
+
+00:52:52.960 --> 00:52:53.600
+case, but I'd...
+
+00:52:53.600 --> 00:52:54.020
+I'd...
+
+00:52:54.320 --> 00:52:55.020
+I'd...
+
+00:52:55.080 --> 00:52:55.780
+I'd...
+
+00:52:55.780 --> 00:52:56.300
+I'd...
+
+00:52:59.300 --> 00:53:00.700
+I'd...
+
+00:53:00.700 --> 00:53:00.780
+I'd...
+
+00:53:00.780 --> 00:53:00.960
+I'd...

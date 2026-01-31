@@ -1,0 +1,2671 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.600
+All right everybody we're thrilled to have the
+
+00:00:02.600 --> 00:00:05.360
+one the only Satya Nadella here the third
+
+00:00:05.360 --> 00:00:10.480
+CEO of Microsoft for a impromptu fireside chat
+
+00:00:10.480 --> 00:00:14.420
+with David Sachs our czar of AI and
+
+00:00:14.420 --> 00:00:20.840
+crypto Satya third CEO of Microsoft born in
+
+00:00:20.840 --> 00:00:24.400
+India what an incredible story came here right
+
+00:00:24.400 --> 00:00:27.980
+after college and you had a little round
+
+00:00:27.980 --> 00:00:29.820
+trip to pick up your wife
+
+00:00:29.820 --> 00:00:31.720
+in your book to bring her here tell
+
+00:00:31.720 --> 00:00:35.780
+everybody briefly uh how that occurred well um
+
+00:00:35.780 --> 00:00:38.900
+uh you know so that's that's a great
+
+00:00:38.900 --> 00:00:42.760
+story of uh the uh the labyrinth that
+
+00:00:42.760 --> 00:00:45.940
+is the immigration policies of the united states
+
+00:00:45.940 --> 00:00:49.300
+i think um i uh but my wife
+
+00:00:49.300 --> 00:00:50.940
+and i went to college together in india
+
+00:00:50.940 --> 00:00:53.000
+i came here for grad school we then
+
+00:00:53.000 --> 00:00:56.040
+got married uh i got my green card
+
+00:00:56.040 --> 00:00:59.800
+um and she couldn't come join me
+
+00:00:59.800 --> 00:01:01.260
+because we got married um because we got
+
+00:01:01.260 --> 00:01:04.440
+married so the story goes basically i had
+
+00:01:04.440 --> 00:01:05.800
+to give up my green card so the
+
+00:01:05.800 --> 00:01:07.680
+funny thing is i went to the american
+
+00:01:07.680 --> 00:01:10.360
+embassy in delhi and i said where's the
+
+00:01:10.360 --> 00:01:12.000
+line to give up my green card and
+
+00:01:12.000 --> 00:01:13.460
+they said there is no such a line
+
+00:01:13.460 --> 00:01:15.940
+um that would be a crazy thing to
+
+00:01:15.940 --> 00:01:17.840
+do in the 90s so it was a
+
+00:01:17.840 --> 00:01:19.520
+strange thing to give up your green card
+
+00:01:19.520 --> 00:01:21.640
+get an h1 so that she could join
+
+00:01:21.640 --> 00:01:23.760
+but it all worked out so um you
+
+00:01:23.760 --> 00:01:25.780
+know it's a long lost memory but it
+
+00:01:25.780 --> 00:01:27.780
+was you know a way to work around
+
+00:01:27.780 --> 00:01:29.720
+it um i wanted to ask
+
+00:01:29.720 --> 00:01:35.140
+to ask you uh having launched a copilot
+
+00:01:35.140 --> 00:01:38.720
+first with github then having a copilot on
+
+00:01:38.720 --> 00:01:40.420
+the desktop you made a very bold move
+
+00:01:40.420 --> 00:01:42.660
+for microsoft to put that in the windows
+
+00:01:42.660 --> 00:01:44.620
+product which i use every day on the
+
+00:01:44.620 --> 00:01:47.320
+desktop but you did that before it really
+
+00:01:47.320 --> 00:01:49.720
+could recognize the file system and interact with
+
+00:01:49.720 --> 00:01:52.420
+applications got a little bit of a lukewarm
+
+00:01:52.420 --> 00:01:55.300
+reception but now you've been doubling down doubling
+
+00:01:55.300 --> 00:01:56.900
+down and there seems to be
+
+00:01:56.900 --> 00:02:00.260
+in my estimation three modalities for knowledge workers
+
+00:02:00.260 --> 00:02:05.200
+elon's building at xai what they're calling a
+
+00:02:05.200 --> 00:02:06.880
+human emulator if you saw that leak
+
+00:02:06.880 --> 00:02:09.940
+this week yeah uh where they're just building
+
+00:02:09.940 --> 00:02:12.120
+employees and just putting them into their chat
+
+00:02:12.120 --> 00:02:12.900
+rooms and email
+
+00:02:12.900 --> 00:02:15.560
+then you have claude came out with co
+
+00:02:15.560 --> 00:02:17.960
+-work this week incredibly powerful people are kind
+
+00:02:17.960 --> 00:02:18.880
+of losing their minds
+
+00:02:18.880 --> 00:02:20.560
+over it i've been playing with it for
+
+00:02:20.560 --> 00:02:24.120
+the last 40 hours truly impressive what's your
+
+00:02:24.120 --> 00:02:24.740
+vision for
+
+00:02:24.740 --> 00:02:28.320
+microsoft and how knowledge workers will actually put
+
+00:02:28.320 --> 00:02:29.580
+this to use because there seems to be
+
+00:02:29.580 --> 00:02:30.340
+a gap between
+
+00:02:30.920 --> 00:02:33.000
+you know playing around with chat tpt and
+
+00:02:33.000 --> 00:02:36.020
+getting some interesting results and getting business results
+
+00:02:36.020 --> 00:02:38.120
+yeah so i think it one of the
+
+00:02:38.120 --> 00:02:43.520
+most uh perhaps illustrative examples um of trying
+
+00:02:43.520 --> 00:02:44.200
+to understand these
+
+00:02:44.200 --> 00:02:46.400
+various form factors is looking at coding which
+
+00:02:46.400 --> 00:02:49.220
+is obviously a form of knowledge work or
+
+00:02:49.220 --> 00:02:50.120
+uh probably
+
+00:02:50.120 --> 00:02:52.420
+the best example of knowledge work and if
+
+00:02:52.420 --> 00:02:54.460
+you think about the journey coding has been
+
+00:02:54.460 --> 00:02:55.520
+it started with
+
+00:02:56.560 --> 00:03:00.820
+essentially uh uh the next edit suggest right
+
+00:03:00.820 --> 00:03:02.420
+that was the first time in fact my
+
+00:03:02.420 --> 00:03:04.100
+own belief in this entire
+
+00:03:04.780 --> 00:03:08.560
+generation of tech really sort of got formulated
+
+00:03:08.560 --> 00:03:10.140
+when i started seeing i think this you
+
+00:03:10.140 --> 00:03:10.760
+know there's a
+
+00:03:10.760 --> 00:03:12.520
+codex model back in the day it was
+
+00:03:12.520 --> 00:03:15.680
+pre-gpt 3.5 uh that's when next
+
+00:03:15.680 --> 00:03:17.580
+edit suggestions started working
+
+00:03:17.580 --> 00:03:19.920
+with some real accuracy then we went to
+
+00:03:19.920 --> 00:03:23.140
+chat then we went to actions and now
+
+00:03:23.140 --> 00:03:24.720
+to full autonomous agents
+
+00:03:24.720 --> 00:03:27.680
+and then the autonomous agents can be both
+
+00:03:27.680 --> 00:03:31.060
+a foreground background in the cloud or local
+
+00:03:31.060 --> 00:03:31.800
+right so that's
+
+00:03:31.800 --> 00:03:34.300
+all the form factors that exist today when
+
+00:03:34.300 --> 00:03:36.000
+you're coding and interestingly enough if you look
+
+00:03:36.000 --> 00:03:36.280
+at it
+
+00:03:36.280 --> 00:03:38.560
+you use all of them right it's not
+
+00:03:38.560 --> 00:03:40.620
+like there's only one form factor so that's
+
+00:03:40.620 --> 00:03:41.340
+i think probably one
+
+00:03:41.340 --> 00:03:42.720
+of the other lessons so for example when
+
+00:03:42.720 --> 00:03:45.160
+i'm in a cli i can you go
+
+00:03:45.160 --> 00:03:48.200
+a foreground agent background agent
+
+00:03:48.200 --> 00:03:51.160
+and then just literally go edit in vs
+
+00:03:51.160 --> 00:03:53.740
+code right there all happening in parallel right
+
+00:03:53.740 --> 00:03:54.680
+so that sort of
+
+00:03:54.680 --> 00:03:58.560
+shows how these form factors even compose so
+
+00:03:58.560 --> 00:04:01.260
+then you bring that to knowledge work to
+
+00:04:01.260 --> 00:04:02.160
+your point we
+
+00:04:02.160 --> 00:04:06.460
+started with chat chat with reasoning sort of
+
+00:04:06.460 --> 00:04:09.300
+goes beyond just request response because you now
+
+00:04:09.300 --> 00:04:09.660
+have
+
+00:04:09.660 --> 00:04:11.940
+that chain of thought uh where you can
+
+00:04:11.940 --> 00:04:15.560
+see it work now they're actions right essentially
+
+00:04:15.560 --> 00:04:16.200
+either through
+
+00:04:16.200 --> 00:04:19.580
+computer use or through uh if you know
+
+00:04:19.580 --> 00:04:23.160
+basically skills uh and agent calls so you
+
+00:04:23.160 --> 00:04:24.180
+can do actions so
+
+00:04:24.180 --> 00:04:25.980
+that's kind of the state of the copilot
+
+00:04:25.980 --> 00:04:29.800
+today now there is a way to think
+
+00:04:29.800 --> 00:04:31.780
+about you know the the
+
+00:04:31.780 --> 00:04:34.060
+theory of the mind evolution right because you
+
+00:04:34.060 --> 00:04:35.620
+need like if you remember you know jobs
+
+00:04:35.620 --> 00:04:36.260
+had the best
+
+00:04:36.260 --> 00:04:38.740
+line i would say for pcs or computers
+
+00:04:38.740 --> 00:04:41.660
+was to say if you it's a bicycle
+
+00:04:41.660 --> 00:04:43.840
+for the mind uh bill had a line
+
+00:04:43.840 --> 00:04:45.760
+which i liked as well which was it's
+
+00:04:45.760 --> 00:04:48.400
+information at your fingertips we kind of need
+
+00:04:48.400 --> 00:04:50.420
+now a new concept
+
+00:04:50.420 --> 00:04:53.600
+metaphor for how we use computers in the
+
+00:04:53.600 --> 00:04:55.320
+ai age and you have one and the
+
+00:04:55.320 --> 00:04:56.600
+one i like actually came from
+
+00:04:56.600 --> 00:04:58.220
+the ceo notion which i like you know
+
+00:04:58.220 --> 00:05:00.760
+that manager of incredible product yeah you haven't
+
+00:05:00.760 --> 00:05:01.260
+bought it yet
+
+00:05:01.260 --> 00:05:04.360
+yeah i've not bought that uh but the
+
+00:05:04.360 --> 00:05:07.600
+it's both even management you know basically um
+
+00:05:07.600 --> 00:05:09.380
+a manager of
+
+00:05:09.380 --> 00:05:11.740
+infinite minds that's a nice way to think
+
+00:05:11.740 --> 00:05:12.920
+about it right when you sort of really
+
+00:05:12.920 --> 00:05:14.080
+look at all the
+
+00:05:14.080 --> 00:05:17.100
+agents that you are working with you kind
+
+00:05:17.100 --> 00:05:19.400
+of need to understand what i in fact
+
+00:05:19.400 --> 00:05:20.860
+the other term i like is we
+
+00:05:20.860 --> 00:05:25.220
+macro delegate and micro steal in fact you
+
+00:05:25.220 --> 00:05:27.140
+kind of need that in in in coding
+
+00:05:27.140 --> 00:05:28.100
+you kind of have it right
+
+00:05:28.100 --> 00:05:30.240
+so you do a macro delegation and then
+
+00:05:30.240 --> 00:05:32.540
+i can in parallel give it instructions while
+
+00:05:32.540 --> 00:05:33.320
+it is doing
+
+00:05:33.320 --> 00:05:36.480
+work so that's sort of the state even
+
+00:05:36.480 --> 00:05:38.580
+today of copilot or what have you you
+
+00:05:38.580 --> 00:05:39.800
+bring up a little bit
+
+00:05:39.800 --> 00:05:41.380
+of one of one of the form factors
+
+00:05:41.380 --> 00:05:43.020
+i'm very excited about and you'll see us
+
+00:05:43.020 --> 00:05:44.700
+even in the next week even
+
+00:05:44.700 --> 00:05:48.520
+do things is while i'm sitting in github
+
+00:05:48.520 --> 00:05:52.520
+copilot what it's not as if software developers
+
+00:05:52.520 --> 00:05:52.960
+sit in
+
+00:05:52.960 --> 00:05:55.180
+isolation right it's not like the only thing
+
+00:05:55.180 --> 00:05:57.380
+i work on is my repo i attend
+
+00:05:57.380 --> 00:06:00.640
+meetings um i write specs or
+
+00:06:00.640 --> 00:06:03.960
+others have written specs that i'm implementing i
+
+00:06:03.960 --> 00:06:06.320
+need to have my repo be consistent with
+
+00:06:06.320 --> 00:06:06.600
+that
+
+00:06:06.600 --> 00:06:09.360
+so that means using either a straightforward mcp
+
+00:06:09.360 --> 00:06:11.460
+server or a skill i want to be
+
+00:06:11.460 --> 00:06:12.660
+able to call into
+
+00:06:12.660 --> 00:06:15.460
+my work iq which is the copilot bring
+
+00:06:15.460 --> 00:06:19.580
+that in that's the type of composition uh
+
+00:06:19.580 --> 00:06:20.620
+of knowledge work
+
+00:06:20.620 --> 00:06:22.720
+that'll happen same thing with security say you're
+
+00:06:22.720 --> 00:06:24.720
+a security professional you have lots of logs
+
+00:06:24.720 --> 00:06:25.300
+uh
+
+00:06:25.300 --> 00:06:27.600
+how do you sort of really analyze them
+
+00:06:27.600 --> 00:06:29.660
+you drop them into a file system then
+
+00:06:29.660 --> 00:06:30.960
+write code on top of
+
+00:06:30.960 --> 00:06:33.420
+it create a dashboard what have you those
+
+00:06:33.420 --> 00:06:35.300
+are the types of knowledge work that we
+
+00:06:35.300 --> 00:06:35.860
+can enable
+
+00:06:36.420 --> 00:06:38.100
+then i think you bring up one more
+
+00:06:38.100 --> 00:06:40.140
+thing which is can you create quote unquote
+
+00:06:40.140 --> 00:06:41.200
+digital employees
+
+00:06:41.200 --> 00:06:43.280
+digital co-workers or what have you and
+
+00:06:43.280 --> 00:06:45.360
+it's all about credentials right so the i
+
+00:06:45.360 --> 00:06:46.580
+today you could like
+
+00:06:46.580 --> 00:06:48.080
+you can literally assign you working on that
+
+00:06:48.080 --> 00:06:49.960
+as well yeah so in fact we introduced
+
+00:06:49.960 --> 00:06:50.320
+something
+
+00:06:50.320 --> 00:06:52.860
+called agent 365 as a way to give
+
+00:06:52.860 --> 00:06:56.260
+identities in fact extending the identities we have
+
+00:06:56.260 --> 00:06:56.880
+for humans
+
+00:06:56.880 --> 00:06:59.720
+today uh and the endpoint protection we have
+
+00:06:59.720 --> 00:07:02.340
+for their compute devices to agents so you
+
+00:07:02.340 --> 00:07:02.860
+might clone
+
+00:07:02.860 --> 00:07:05.260
+me working in the hr department or working
+
+00:07:05.260 --> 00:07:07.500
+in the marketing department and have a virtual
+
+00:07:07.500 --> 00:07:08.340
+version of me
+
+00:07:08.340 --> 00:07:10.560
+inside of office that's correct so so there
+
+00:07:10.560 --> 00:07:12.500
+are two sort of modalities there one is
+
+00:07:12.500 --> 00:07:13.460
+you give every
+
+00:07:13.460 --> 00:07:16.700
+knowledge worker infinite minds that's kind of one
+
+00:07:16.700 --> 00:07:20.820
+and then you create even infinite minds independent
+
+00:07:20.820 --> 00:07:23.220
+of the your identity because the identity is
+
+00:07:23.220 --> 00:07:24.420
+one of the key things you got to
+
+00:07:24.420 --> 00:07:26.040
+get right even for it to
+
+00:07:26.040 --> 00:07:29.360
+work right so for permissions and decision making
+
+00:07:29.360 --> 00:07:31.660
+permission decision making and like one of the
+
+00:07:31.660 --> 00:07:31.960
+key
+
+00:07:32.620 --> 00:07:34.860
+things is who did what to whom is
+
+00:07:34.860 --> 00:07:37.040
+sort of the most important query in an
+
+00:07:37.040 --> 00:07:38.440
+organization right at the end of
+
+00:07:38.440 --> 00:07:41.660
+the day the organization needs to understand what
+
+00:07:41.660 --> 00:07:44.720
+work got done and what's the provenance of
+
+00:07:44.720 --> 00:07:45.340
+that work
+
+00:07:45.340 --> 00:07:47.400
+and how do you trace it back right
+
+00:07:47.400 --> 00:07:49.220
+so therefore you kind of want either what
+
+00:07:49.220 --> 00:07:51.480
+if it's a human with a lot
+
+00:07:51.480 --> 00:07:55.020
+of agents then it's really macro delegation micro
+
+00:07:55.020 --> 00:07:57.600
+stating by the human whose identity was passed
+
+00:07:57.600 --> 00:07:57.820
+on
+
+00:07:57.820 --> 00:08:01.120
+so it's delegation versus a separate identity and
+
+00:08:01.120 --> 00:08:03.540
+that was done by a level of management
+
+00:08:03.540 --> 00:08:04.220
+product
+
+00:08:04.220 --> 00:08:08.680
+management that you've eliminated that alphabet's eliminated meta
+
+00:08:08.680 --> 00:08:10.500
+has started to eliminate in their
+
+00:08:10.500 --> 00:08:13.180
+organization four years ago you had the same
+
+00:08:13.180 --> 00:08:14.980
+number of employees you have at microsoft now
+
+00:08:14.980 --> 00:08:16.420
+but you put a
+
+00:08:16.420 --> 00:08:18.900
+90 billion dollars onto the top line of
+
+00:08:18.900 --> 00:08:21.000
+the revenue in that time and you doubled
+
+00:08:21.000 --> 00:08:23.340
+your income during that
+
+00:08:23.340 --> 00:08:26.040
+time so how did that happen is that
+
+00:08:26.040 --> 00:08:28.500
+automation of those jobs is that you were
+
+00:08:28.500 --> 00:08:30.380
+a little bit over staffed
+
+00:08:30.380 --> 00:08:33.120
+and i think it's it's actually you're pulling
+
+00:08:33.120 --> 00:08:35.140
+on a very interesting thread which is at
+
+00:08:35.140 --> 00:08:35.580
+some level
+
+00:08:35.580 --> 00:08:38.580
+what's the big structural change that needs to
+
+00:08:38.580 --> 00:08:40.520
+happen in fact i would say this is
+
+00:08:40.520 --> 00:08:41.440
+probably the
+
+00:08:41.440 --> 00:08:45.500
+biggest change in knowledge work since pcs i
+
+00:08:45.500 --> 00:08:47.100
+mean i always you know think about like
+
+00:08:47.100 --> 00:08:48.040
+how did work happen
+
+00:08:48.040 --> 00:08:50.400
+pre-pcs right i mean think about a
+
+00:08:50.400 --> 00:08:52.360
+multinational company like ours trying to do a
+
+00:08:52.360 --> 00:08:54.120
+forecast uh right
+
+00:08:54.120 --> 00:08:57.420
+faxes went around inter-office memos got sent
+
+00:08:57.420 --> 00:08:59.220
+and then you kind of created a you
+
+00:08:59.220 --> 00:09:00.200
+know a forecast
+
+00:09:00.200 --> 00:09:03.100
+then suddenly you know pcs became standard issue
+
+00:09:03.100 --> 00:09:05.380
+uh you put an excel spreadsheet put some
+
+00:09:05.380 --> 00:09:05.760
+numbers
+
+00:09:05.760 --> 00:09:07.760
+sent it in email everybody entered numbers and
+
+00:09:07.760 --> 00:09:09.980
+you had a forecast so the work the
+
+00:09:09.980 --> 00:09:11.580
+work artifact and the
+
+00:09:11.580 --> 00:09:15.040
+workflow all changed that's what's happening so for
+
+00:09:15.040 --> 00:09:18.060
+example i'll give you uh at linkedin uh
+
+00:09:18.060 --> 00:09:19.020
+we used to
+
+00:09:19.020 --> 00:09:22.800
+have product managers we had designers uh we
+
+00:09:22.800 --> 00:09:24.580
+had front-end engineers and then we had
+
+00:09:24.580 --> 00:09:25.800
+back-end engineers
+
+00:09:25.800 --> 00:09:27.820
+and so on so what we did is
+
+00:09:27.820 --> 00:09:29.980
+we sort of took those first four roles
+
+00:09:29.980 --> 00:09:32.140
+and combined them in fact increased
+
+00:09:32.140 --> 00:09:34.700
+scope and said let's they're all full stack
+
+00:09:34.700 --> 00:09:37.600
+builders so i like that because that's a
+
+00:09:37.600 --> 00:09:38.580
+structural change
+
+00:09:38.580 --> 00:09:42.260
+that allows for us to increase the change
+
+00:09:42.260 --> 00:09:45.360
+both the work and the workflow between these
+
+00:09:45.360 --> 00:09:46.180
+functions and i
+
+00:09:46.180 --> 00:09:47.820
+would assume the velocity because you don't have
+
+00:09:47.820 --> 00:09:50.520
+four people communicating and that throughput of ideas
+
+00:09:50.520 --> 00:09:52.600
+it's just one person and vibe coding exactly
+
+00:09:52.600 --> 00:09:54.680
+and there's a new workflow so at the
+
+00:09:54.680 --> 00:09:55.480
+same time as you
+
+00:09:55.480 --> 00:09:57.500
+can imagine if to build an ai product
+
+00:09:57.500 --> 00:09:59.920
+today there's a complete new workflow right it
+
+00:09:59.920 --> 00:10:01.060
+starts with evals
+
+00:10:01.060 --> 00:10:05.340
+right so basically there's this eval to science
+
+00:10:05.340 --> 00:10:09.120
+to infrastructure and so evals are done by
+
+00:10:09.120 --> 00:10:09.540
+these full
+
+00:10:09.540 --> 00:10:11.660
+stack builders and what have you and product
+
+00:10:11.660 --> 00:10:14.340
+managers in the new form the infrastructure is
+
+00:10:14.340 --> 00:10:14.520
+built
+
+00:10:14.520 --> 00:10:16.340
+by the systems engineers at the back end
+
+00:10:16.340 --> 00:10:18.560
+because they support the science that supports the
+
+00:10:18.560 --> 00:10:19.220
+product so in
+
+00:10:19.220 --> 00:10:22.040
+some sense there's a new loop uh and
+
+00:10:22.040 --> 00:10:24.620
+you have to structurally change and so a
+
+00:10:24.620 --> 00:10:25.240
+lot of what is
+
+00:10:25.240 --> 00:10:29.140
+happening inside of tech is that change uh
+
+00:10:29.140 --> 00:10:30.720
+which is i think going to be pretty
+
+00:10:30.720 --> 00:10:32.140
+massive uh and at the
+
+00:10:32.140 --> 00:10:33.760
+same time a company like ours i have
+
+00:10:33.760 --> 00:10:35.540
+to do everything it's not like i can
+
+00:10:35.540 --> 00:10:37.100
+just so go live in the future i
+
+00:10:37.100 --> 00:10:39.100
+have to make sure we're doing a fantastic
+
+00:10:39.100 --> 00:10:41.740
+job of doing hot patching on windows is
+
+00:10:41.740 --> 00:10:42.780
+done with quality
+
+00:10:43.380 --> 00:10:45.580
+while at the same time building the evals
+
+00:10:45.580 --> 00:10:47.620
+that are improving co-pilot quality right and
+
+00:10:47.620 --> 00:10:48.300
+so both of
+
+00:10:48.300 --> 00:10:50.540
+those have to be first class i assume
+
+00:10:50.540 --> 00:10:52.420
+this is the most challenging moment of your
+
+00:10:52.420 --> 00:10:53.260
+career because
+
+00:10:53.260 --> 00:10:57.440
+microsoft was so dominant duopoly in some spaces
+
+00:10:57.440 --> 00:11:00.860
+um but you really weren't up against the
+
+00:11:00.860 --> 00:11:01.480
+competition
+
+00:11:01.480 --> 00:11:04.060
+level you're up against now i was talking
+
+00:11:04.060 --> 00:11:05.760
+to elon you know and he was sort
+
+00:11:05.760 --> 00:11:06.940
+of saying well building
+
+00:11:06.940 --> 00:11:09.240
+cars was pretty easy uh because i was
+
+00:11:09.240 --> 00:11:11.160
+up against the legacy car makers and now
+
+00:11:11.160 --> 00:11:13.720
+i'm up against just look
+
+00:11:13.720 --> 00:11:16.760
+at the set you're up against yeah it's
+
+00:11:16.760 --> 00:11:18.700
+a pretty intense time i mean so the
+
+00:11:18.700 --> 00:11:20.140
+way i i always think
+
+00:11:20.140 --> 00:11:23.200
+is it's always helpful uh when you have
+
+00:11:23.200 --> 00:11:25.780
+a complete new set of competitors every decade
+
+00:11:25.780 --> 00:11:26.380
+because that
+
+00:11:26.380 --> 00:11:28.400
+keeps you fit uh if you think about
+
+00:11:28.400 --> 00:11:31.380
+it i joined uh microsoft in 92 when
+
+00:11:31.380 --> 00:11:33.080
+i had novell as the big
+
+00:11:33.080 --> 00:11:37.280
+existential competitor we had um uh and here
+
+00:11:37.280 --> 00:11:40.120
+we are in 2026 uh and you're absolutely
+
+00:11:40.120 --> 00:11:40.620
+right it's a
+
+00:11:40.620 --> 00:11:43.320
+pretty intense time i'm glad there's the competition
+
+00:11:43.320 --> 00:11:45.540
+it's it's quite honestly at the end of
+
+00:11:45.540 --> 00:11:46.040
+the day when
+
+00:11:46.040 --> 00:11:47.480
+i look at it right as a percentage
+
+00:11:47.480 --> 00:11:50.100
+of gdp five years from now where will
+
+00:11:50.100 --> 00:11:52.540
+tech be right uh it will be higher
+
+00:11:53.140 --> 00:11:54.900
+so we are blessed to be in this
+
+00:11:54.900 --> 00:11:58.660
+industry it's a lot of intense competition but
+
+00:11:58.660 --> 00:12:00.420
+it's not so zero sum
+
+00:12:00.420 --> 00:12:02.220
+as some people make it out high it's
+
+00:12:02.220 --> 00:12:04.400
+getting much bigger much the tam and the
+
+00:12:04.400 --> 00:12:05.380
+it's just the impact
+
+00:12:05.380 --> 00:12:06.820
+of this tech is going to be so
+
+00:12:06.820 --> 00:12:09.900
+massive um the question then of course is
+
+00:12:09.900 --> 00:12:11.440
+what is like i i'm always
+
+00:12:11.440 --> 00:12:13.740
+go back to what's the brand identity microsoft
+
+00:12:13.740 --> 00:12:16.720
+has brand permission we have what do customers
+
+00:12:16.720 --> 00:12:17.240
+expect
+
+00:12:17.240 --> 00:12:20.620
+from us it's sometimes we kind of overthink
+
+00:12:20.620 --> 00:12:23.260
+somehow that every customer wants the same thing
+
+00:12:23.260 --> 00:12:25.580
+from all of the competitors and finding that
+
+00:12:25.580 --> 00:12:27.380
+out right it's kind of a different take
+
+00:12:27.380 --> 00:12:27.960
+on the peter
+
+00:12:27.960 --> 00:12:29.680
+deal thing which is you've got to avoid
+
+00:12:29.680 --> 00:12:35.000
+competition by really understanding what customers really want
+
+00:12:35.000 --> 00:12:38.220
+from you uh versus thinking everybody's a competitor
+
+00:12:38.220 --> 00:12:40.960
+david yeah so there are a lot of
+
+00:12:40.960 --> 00:12:41.540
+heads of state
+
+00:12:41.540 --> 00:12:44.100
+here obviously at davos as well as ceos
+
+00:12:44.100 --> 00:12:46.360
+of fortune 500 companies and i think you
+
+00:12:46.360 --> 00:12:47.060
+got asked a question
+
+00:12:47.060 --> 00:12:49.500
+last night at the dinner about how they
+
+00:12:49.500 --> 00:12:51.700
+should think about ai and how to be
+
+00:12:51.700 --> 00:12:53.600
+successful and i recall
+
+00:12:53.600 --> 00:12:56.160
+they used the word diffusion and i was
+
+00:12:56.160 --> 00:12:58.000
+wondering if you could expand on those remarks
+
+00:12:58.000 --> 00:12:58.680
+because that
+
+00:12:58.680 --> 00:13:00.580
+really resonated with some of the policy work
+
+00:13:00.580 --> 00:13:02.500
+i've been doing no absolutely in fact uh
+
+00:13:02.500 --> 00:13:03.160
+what you all have
+
+00:13:03.160 --> 00:13:05.740
+been doing to make sure in in this
+
+00:13:05.740 --> 00:13:08.800
+context of the american tech stack um is
+
+00:13:08.800 --> 00:13:11.280
+broadly used around the world
+
+00:13:11.280 --> 00:13:13.500
+and is trusted around the world because i
+
+00:13:13.500 --> 00:13:16.300
+think uh when i look back david to
+
+00:13:16.300 --> 00:13:19.040
+me um uh at the end of the
+
+00:13:19.040 --> 00:13:19.260
+day
+
+00:13:20.100 --> 00:13:24.460
+uh you create the technology but really the
+
+00:13:24.460 --> 00:13:29.280
+benefits come only by intense use in fact
+
+00:13:29.280 --> 00:13:30.560
+one of my favorite
+
+00:13:30.560 --> 00:13:33.520
+studies has always been this work that uh
+
+00:13:33.520 --> 00:13:35.520
+an economist i think or a dartman did
+
+00:13:35.520 --> 00:13:36.820
+uh his name is diego
+
+00:13:36.820 --> 00:13:40.000
+common where he studied uh basically what happened
+
+00:13:40.000 --> 00:13:43.280
+during the industrial revolution um how did countries
+
+00:13:43.280 --> 00:13:46.020
+get ahead um and the simple sort of
+
+00:13:46.020 --> 00:13:49.240
+take away from that was any country uh
+
+00:13:49.240 --> 00:13:50.760
+that brought the latest
+
+00:13:50.760 --> 00:13:54.900
+technology into their uh country and then did
+
+00:13:54.900 --> 00:13:57.040
+value add technology on top of it right
+
+00:13:57.040 --> 00:13:57.600
+so it's like
+
+00:13:57.600 --> 00:14:00.180
+don't reinvent the wheel bring the latest and
+
+00:14:00.180 --> 00:14:02.500
+then build on top of it that's to
+
+00:14:02.500 --> 00:14:04.160
+me uh what happens you
+
+00:14:04.160 --> 00:14:05.860
+know when you have diffusion so especially with
+
+00:14:05.860 --> 00:14:08.840
+general purpose technology like ai it needs to
+
+00:14:08.840 --> 00:14:09.140
+spread
+
+00:14:09.140 --> 00:14:10.720
+like right in our you know in our
+
+00:14:10.720 --> 00:14:12.720
+own country in the united states we now
+
+00:14:12.720 --> 00:14:14.520
+need we have the tech the
+
+00:14:14.520 --> 00:14:16.240
+question is is it being used in healthcare
+
+00:14:16.240 --> 00:14:19.180
+is it being used um in financial services
+
+00:14:19.180 --> 00:14:20.080
+is it being used
+
+00:14:20.080 --> 00:14:22.140
+in every sector of the economy by large
+
+00:14:22.140 --> 00:14:25.340
+businesses small business public sector um so to
+
+00:14:25.340 --> 00:14:26.960
+me under unless
+
+00:14:26.960 --> 00:14:29.840
+and until we see that diffusion and intense
+
+00:14:29.840 --> 00:14:32.200
+use uh we're not going to have the
+
+00:14:32.200 --> 00:14:34.740
+success um uh and so that's
+
+00:14:34.740 --> 00:14:36.340
+the phase we are in it's you know
+
+00:14:36.340 --> 00:14:38.940
+it's diffusing faster um and so some of
+
+00:14:38.940 --> 00:14:40.200
+the work policy work you
+
+00:14:40.200 --> 00:14:43.220
+have done um and in general all you
+
+00:14:43.220 --> 00:14:45.140
+know the good news here is the technology
+
+00:14:45.140 --> 00:14:47.000
+is there the rails around
+
+00:14:47.000 --> 00:14:49.860
+cloud and mobile that were laid out make
+
+00:14:49.860 --> 00:14:51.800
+it possible for this thing to spread right
+
+00:14:51.800 --> 00:14:52.720
+it's not you know
+
+00:14:52.720 --> 00:14:55.140
+impossible to get the tokens the question is
+
+00:14:55.140 --> 00:14:57.020
+what are the use cases how do and
+
+00:14:57.020 --> 00:14:58.120
+how do you manage the
+
+00:14:58.120 --> 00:15:00.020
+change in all of that um you know
+
+00:15:00.020 --> 00:15:01.640
+like one of the questions at least in
+
+00:15:01.640 --> 00:15:02.960
+davos is it's one thing for
+
+00:15:02.960 --> 00:15:05.040
+the west and the developed nations what about
+
+00:15:05.040 --> 00:15:07.720
+the global south um i think global south
+
+00:15:07.720 --> 00:15:08.240
+has a huge
+
+00:15:08.240 --> 00:15:11.520
+opportunity to quite frankly because to me like
+
+00:15:11.520 --> 00:15:14.120
+let's say you know 40 50 of the
+
+00:15:14.120 --> 00:15:15.260
+gdp of most global
+
+00:15:15.260 --> 00:15:18.780
+south countries is public sector so just imagine
+
+00:15:18.780 --> 00:15:22.380
+this tech making a difference in how the
+
+00:15:22.380 --> 00:15:22.840
+governments
+
+00:15:23.500 --> 00:15:26.940
+really parlay the taxpayer money into services for
+
+00:15:26.940 --> 00:15:29.060
+citizens and there's if there's efficiency gains
+
+00:15:29.060 --> 00:15:31.400
+that's probably a couple of points of gdp
+
+00:15:31.400 --> 00:15:34.460
+growth right there and so i'm very optimistic
+
+00:15:34.460 --> 00:15:35.220
+that there's
+
+00:15:35.220 --> 00:15:37.360
+going to be a poll uh and that
+
+00:15:37.360 --> 00:15:39.800
+we should as the united states given the
+
+00:15:39.800 --> 00:15:41.260
+technology stack we have
+
+00:15:41.260 --> 00:15:44.640
+uh in europe in asia in you know
+
+00:15:44.640 --> 00:15:47.420
+in south america in africa and everywhere else
+
+00:15:47.420 --> 00:15:48.960
+uh get it to be broadly
+
+00:15:48.960 --> 00:15:51.220
+deployed one of the questions i get asked
+
+00:15:51.220 --> 00:15:54.200
+a lot about the ai race is how
+
+00:15:54.200 --> 00:15:56.020
+do you know if you're winning
+
+00:15:56.020 --> 00:15:57.480
+or how do you know if the united
+
+00:15:57.480 --> 00:16:00.540
+states is ahead of its global competitors and
+
+00:16:00.540 --> 00:16:01.400
+the answer i give is
+
+00:16:01.400 --> 00:16:03.480
+market share you know if we look around
+
+00:16:03.480 --> 00:16:06.320
+the world in five years and we see
+
+00:16:06.320 --> 00:16:08.200
+that american companies
+
+00:16:08.200 --> 00:16:11.200
+american technology has say 80 market share it
+
+00:16:11.200 --> 00:16:12.580
+means we did a good job if we
+
+00:16:12.580 --> 00:16:13.260
+look around the world in
+
+00:16:13.260 --> 00:16:15.460
+five years and see that it's say chinese
+
+00:16:15.460 --> 00:16:17.900
+chips and chinese models that are being used
+
+00:16:17.900 --> 00:16:18.300
+all over the
+
+00:16:18.300 --> 00:16:21.060
+world well means we probably lost so you
+
+00:16:21.060 --> 00:16:23.620
+know ultimately usage is the proof of the
+
+00:16:23.620 --> 00:16:25.120
+pudding is in the
+
+00:16:25.120 --> 00:16:26.320
+eating of it i mean the in this
+
+00:16:26.320 --> 00:16:29.540
+case the way that you know that you're
+
+00:16:29.540 --> 00:16:31.620
+succeeding is through market
+
+00:16:31.620 --> 00:16:34.060
+shares through usage i and i i would
+
+00:16:34.060 --> 00:16:36.160
+agree with that but david since you even
+
+00:16:36.160 --> 00:16:36.900
+worked at microsoft
+
+00:16:36.900 --> 00:16:39.940
+for a few years um you know one
+
+00:16:39.940 --> 00:16:41.660
+of the things that i'm very grounded on
+
+00:16:41.660 --> 00:16:43.240
+is always uh that bill
+
+00:16:43.240 --> 00:16:45.320
+gates line of a platform right so one
+
+00:16:45.320 --> 00:16:46.800
+of the things that i always think about
+
+00:16:46.800 --> 00:16:48.900
+is it's market share but
+
+00:16:48.900 --> 00:16:51.360
+it's also ecosystem effects right see what the
+
+00:16:51.360 --> 00:16:54.160
+united states always has done is not just
+
+00:16:54.160 --> 00:16:54.440
+about
+
+00:16:54.440 --> 00:16:58.180
+our market share or even um the revenues
+
+00:16:58.180 --> 00:17:00.080
+to u.s companies in fact one of
+
+00:17:00.080 --> 00:17:01.060
+the things i learned at
+
+00:17:01.060 --> 00:17:03.340
+microsoft is whenever i did a country visit
+
+00:17:03.340 --> 00:17:06.480
+the data i would first study is in
+
+00:17:06.480 --> 00:17:07.980
+let's say in the uk or in
+
+00:17:07.980 --> 00:17:09.720
+switzerland or what have you is what is
+
+00:17:09.720 --> 00:17:14.300
+the total employment created in switzerland uh in
+
+00:17:14.300 --> 00:17:14.900
+our channel
+
+00:17:14.900 --> 00:17:16.600
+that used to be like the number one
+
+00:17:16.600 --> 00:17:19.420
+thing uh in our country reports right and
+
+00:17:19.420 --> 00:17:20.680
+the total number like the
+
+00:17:20.680 --> 00:17:24.100
+number of it workers the number of office
+
+00:17:24.100 --> 00:17:27.600
+workers channel so channel partners is isvs so
+
+00:17:27.600 --> 00:17:28.080
+the number of
+
+00:17:28.080 --> 00:17:31.140
+isvs uh who were there so we used
+
+00:17:31.140 --> 00:17:33.160
+to have a complete marker of how did
+
+00:17:33.160 --> 00:17:35.380
+the ecosystem around the platform
+
+00:17:35.380 --> 00:17:38.020
+get built one country at a time and
+
+00:17:38.020 --> 00:17:40.080
+that is what the united states has always
+
+00:17:40.080 --> 00:17:41.740
+done in fact the u.s tech
+
+00:17:41.740 --> 00:17:46.440
+stack including in china got built because others
+
+00:17:46.440 --> 00:17:49.340
+built around our text the same thing is
+
+00:17:49.340 --> 00:17:49.560
+going to
+
+00:17:49.560 --> 00:17:50.960
+happen so that's why i think the work
+
+00:17:50.960 --> 00:17:54.200
+you're doing around diffusion right is about really
+
+00:17:54.200 --> 00:17:55.100
+increasing
+
+00:17:55.100 --> 00:17:57.400
+the size of the pie the trust in
+
+00:17:57.400 --> 00:18:00.320
+the platform so that there is true economic
+
+00:18:00.320 --> 00:18:01.860
+opportunity quite frankly
+
+00:18:01.860 --> 00:18:04.300
+well you're right and i remember actually you're
+
+00:18:04.300 --> 00:18:06.320
+you brought back some memories from this is
+
+00:18:06.320 --> 00:18:06.600
+about a
+
+00:18:06.600 --> 00:18:08.920
+decade ago when my company yamra was acquired
+
+00:18:08.920 --> 00:18:11.420
+by microsoft we were part of uh the
+
+00:18:11.420 --> 00:18:12.220
+sharepoint group and
+
+00:18:12.220 --> 00:18:15.200
+i remember that the um the product managers
+
+00:18:15.200 --> 00:18:16.860
+there were very proud of the fact that
+
+00:18:16.860 --> 00:18:19.200
+the revenue from the
+
+00:18:19.200 --> 00:18:24.080
+sharepoint ecosystem meaning non-microsoft the um the
+
+00:18:24.080 --> 00:18:26.740
+consulting community the implementers who would
+
+00:18:26.740 --> 00:18:28.880
+go into companies implement sharepoint i think their
+
+00:18:28.880 --> 00:18:31.500
+revenue is something like seven times greater than
+
+00:18:31.500 --> 00:18:34.580
+microsoft's own software revenue and i think in
+
+00:18:34.580 --> 00:18:37.320
+aggregate and i think and i think bill
+
+00:18:37.320 --> 00:18:37.920
+had a line
+
+00:18:37.920 --> 00:18:40.160
+about you're not an ecosystem or a platform
+
+00:18:40.160 --> 00:18:43.080
+until the revenue on top of your platform
+
+00:18:43.080 --> 00:18:44.820
+is some you know
+
+00:18:44.820 --> 00:18:46.920
+factor of your own revenue that's right and
+
+00:18:46.920 --> 00:18:48.600
+and i and i think that i think
+
+00:18:48.600 --> 00:18:49.280
+what's really important
+
+00:18:49.280 --> 00:18:51.540
+about this is when we talk about diffusion
+
+00:18:51.540 --> 00:18:54.020
+and obviously want the united states to have
+
+00:18:54.020 --> 00:18:54.940
+this leading
+
+00:18:54.940 --> 00:18:57.100
+position it doesn't mean it's bad for the
+
+00:18:57.100 --> 00:18:58.820
+rest of the world because they're able to
+
+00:18:58.820 --> 00:18:59.760
+build on top of
+
+00:18:59.760 --> 00:19:02.660
+those platforms and create even more value 100
+
+00:19:02.660 --> 00:19:04.820
+in fact that's sort of the most important
+
+00:19:04.820 --> 00:19:05.440
+point right
+
+00:19:05.440 --> 00:19:07.020
+so this is not that this is not
+
+00:19:07.020 --> 00:19:11.160
+about american tech um and american revenues to
+
+00:19:11.160 --> 00:19:12.060
+the united states it's
+
+00:19:12.060 --> 00:19:15.420
+actually creating opportunity using a new platform everywhere
+
+00:19:15.420 --> 00:19:17.620
+and in fact you know you know like
+
+00:19:17.620 --> 00:19:18.040
+i
+
+00:19:18.040 --> 00:19:20.560
+remember i worked on our database products uh
+
+00:19:20.560 --> 00:19:23.100
+in the 90s uh you know with sap
+
+00:19:23.100 --> 00:19:24.420
+in fact the combination
+
+00:19:24.420 --> 00:19:28.940
+of uh sql server and r3 were successful
+
+00:19:28.940 --> 00:19:30.700
+on both sides there's a lot talked about
+
+00:19:30.700 --> 00:19:31.720
+intel and microsoft
+
+00:19:31.720 --> 00:19:33.620
+but one of the other things that i
+
+00:19:33.620 --> 00:19:34.960
+grew up in which has sort of been
+
+00:19:34.960 --> 00:19:36.620
+foundational in how i look at the
+
+00:19:36.620 --> 00:19:39.080
+world is what we did with a european
+
+00:19:39.080 --> 00:19:41.080
+software company that is still uh you know
+
+00:19:41.080 --> 00:19:42.280
+a giant and so
+
+00:19:42.280 --> 00:19:43.960
+that you know who knows what the next
+
+00:19:43.960 --> 00:19:46.360
+big ai app will be and where and
+
+00:19:46.360 --> 00:19:48.720
+what will happen but uh i i sort
+
+00:19:48.720 --> 00:19:50.880
+of go in with the attitude that there
+
+00:19:50.880 --> 00:19:53.740
+will be tech companies uh maybe even top
+
+00:19:53.740 --> 00:19:55.300
+five tech companies that
+
+00:19:55.300 --> 00:19:58.100
+could emerge everywhere with even the american tech
+
+00:19:58.100 --> 00:20:02.140
+stack you have um done some amazing acquisitions
+
+00:20:02.140 --> 00:20:02.300
+and
+
+00:20:02.300 --> 00:20:03.700
+you're quite a deal maker on top of
+
+00:20:03.700 --> 00:20:05.860
+being a technologist it's probably the least reported
+
+00:20:06.900 --> 00:20:09.900
+aspect of your spectacular tenure and the massive
+
+00:20:09.900 --> 00:20:13.760
+growth you've had but you did a deal
+
+00:20:13.760 --> 00:20:14.700
+with open ai
+
+00:20:15.260 --> 00:20:18.300
+and probably one of the most savvy slash
+
+00:20:18.300 --> 00:20:20.620
+controversial deal makers of all time sam altman
+
+00:20:20.620 --> 00:20:22.400
+that deal was
+
+00:20:22.400 --> 00:20:26.940
+looked at as you you you're you're set
+
+00:20:26.940 --> 00:20:28.460
+up to get a windfall in cash which
+
+00:20:28.460 --> 00:20:29.700
+you don't need as microsoft
+
+00:20:29.700 --> 00:20:32.020
+always nice i'm guess guessing if they ipo
+
+00:20:32.020 --> 00:20:34.680
+but did you create potentially and this was
+
+00:20:34.680 --> 00:20:35.540
+the criticism of
+
+00:20:35.540 --> 00:20:40.320
+it an ultimate competitor to microsoft and how
+
+00:20:40.320 --> 00:20:42.140
+do you think about that and how can
+
+00:20:42.140 --> 00:20:43.160
+microsoft which
+
+00:20:43.160 --> 00:20:46.020
+missed steve bomber's biggest regret missing the mobile
+
+00:20:46.020 --> 00:20:49.940
+revolution how can you not have a gemini
+
+00:20:49.940 --> 00:20:53.200
+an xai a claude that is your own
+
+00:20:53.200 --> 00:20:55.620
+or in your mind do you have that
+
+00:20:55.620 --> 00:20:57.160
+because you have the source code of open
+
+00:20:57.160 --> 00:20:58.740
+ai yeah i think that that's right so
+
+00:20:58.740 --> 00:21:00.700
+when when people say uh where is your
+
+00:21:00.700 --> 00:21:01.760
+foundation model i mean
+
+00:21:01.760 --> 00:21:02.720
+at the end of the day we do
+
+00:21:02.720 --> 00:21:05.020
+have the ip but that said i think
+
+00:21:05.020 --> 00:21:06.380
+you bring up a couple different things
+
+00:21:06.380 --> 00:21:09.140
+right one is to us the most important
+
+00:21:09.140 --> 00:21:11.680
+thing when i look at what is microsoft's
+
+00:21:11.680 --> 00:21:14.100
+strategy today one is
+
+00:21:14.100 --> 00:21:16.480
+we want to build token factories right so
+
+00:21:16.480 --> 00:21:18.920
+our biggest business today is azure business and
+
+00:21:18.920 --> 00:21:19.740
+the azure business
+
+00:21:19.740 --> 00:21:22.040
+the tam given what's going to happen is
+
+00:21:22.040 --> 00:21:23.900
+is so huge that we now need to
+
+00:21:23.900 --> 00:21:25.860
+be fantastic uh at building
+
+00:21:25.860 --> 00:21:28.420
+these token factories and um that means a
+
+00:21:28.420 --> 00:21:31.600
+heterogeneous fleet of infrastructure and that
+
+00:21:31.600 --> 00:21:33.860
+every hyperscaler is always done which is use
+
+00:21:33.860 --> 00:21:36.640
+software to make maximum use of it and
+
+00:21:36.640 --> 00:21:37.600
+for tco and
+
+00:21:37.600 --> 00:21:40.200
+utilization so that's one side of it then
+
+00:21:40.200 --> 00:21:42.140
+there's the app server business right which is
+
+00:21:42.140 --> 00:21:42.820
+everybody
+
+00:21:42.820 --> 00:21:44.700
+we you talked about like if everyone's going
+
+00:21:44.700 --> 00:21:47.140
+to be building agents have infinite minds have
+
+00:21:47.140 --> 00:21:48.000
+these rl
+
+00:21:48.000 --> 00:21:50.660
+gems have evals what have you there's an
+
+00:21:50.660 --> 00:21:52.560
+entire just like every platform has had an
+
+00:21:52.560 --> 00:21:53.060
+app server
+
+00:21:53.060 --> 00:21:55.160
+server this one has an app server that's
+
+00:21:55.160 --> 00:21:57.000
+what we're doing with foundry and what have
+
+00:21:57.000 --> 00:21:57.240
+you right
+
+00:21:57.240 --> 00:21:59.500
+so there's an app server business in that
+
+00:21:59.500 --> 00:22:02.220
+app server one of the things that structurally
+
+00:22:02.220 --> 00:22:02.900
+now is pretty
+
+00:22:02.900 --> 00:22:06.360
+clear is anyone building any application or any
+
+00:22:06.360 --> 00:22:08.620
+company is going to use not one model
+
+00:22:08.620 --> 00:22:09.300
+but all the
+
+00:22:09.300 --> 00:22:11.260
+models right why would i not right which
+
+00:22:11.260 --> 00:22:14.220
+is in fact i will orchestrate for any
+
+00:22:14.220 --> 00:22:15.840
+given task even multiple
+
+00:22:15.840 --> 00:22:18.400
+models right there's this one nice thing that
+
+00:22:18.400 --> 00:22:20.340
+we came out in our healthcare practice called
+
+00:22:20.340 --> 00:22:21.020
+the decision
+
+00:22:21.020 --> 00:22:24.880
+orchestrator what it proves is that by assigning
+
+00:22:24.880 --> 00:22:28.820
+roles right so investigator data analyst domain
+
+00:22:28.820 --> 00:22:32.520
+expert just giving even prompted roles to models
+
+00:22:32.520 --> 00:22:36.140
+and then orchestrating them gets better results than
+
+00:22:36.140 --> 00:22:38.560
+any one single frontier model am i right
+
+00:22:38.560 --> 00:22:41.380
+to read into that then that you're bullish
+
+00:22:41.380 --> 00:22:42.280
+on the open source
+
+00:22:42.280 --> 00:22:44.900
+models and think large language models will largely
+
+00:22:44.900 --> 00:22:47.300
+be commoditized and that's not where the value
+
+00:22:47.300 --> 00:22:47.520
+will
+
+00:22:47.520 --> 00:22:48.900
+accrue in fact the way i think about
+
+00:22:48.900 --> 00:22:51.280
+it is that just like what happened apple
+
+00:22:51.280 --> 00:22:52.260
+thinks that too by
+
+00:22:52.260 --> 00:22:54.280
+the way what the way you think about
+
+00:22:54.280 --> 00:22:56.280
+what happened in the database market right you
+
+00:22:56.280 --> 00:22:57.480
+know i used to be
+
+00:22:57.480 --> 00:22:59.740
+like everything is just a sql database until
+
+00:22:59.740 --> 00:23:01.500
+it was not right there was i mean
+
+00:23:01.500 --> 00:23:02.040
+think about it there
+
+00:23:02.040 --> 00:23:05.400
+dock databases there is no sql databases the
+
+00:23:05.400 --> 00:23:08.480
+proliferation of database right who would have thought
+
+00:23:08.480 --> 00:23:10.820
+that the database market would have such a
+
+00:23:10.820 --> 00:23:12.760
+richness to it or that it could ever
+
+00:23:12.760 --> 00:23:14.060
+be open source that was
+
+00:23:14.060 --> 00:23:16.040
+that's my i mean talk about postgres or
+
+00:23:16.040 --> 00:23:17.580
+what has happened even with mongo which is
+
+00:23:17.580 --> 00:23:18.360
+open but there
+
+00:23:18.360 --> 00:23:19.940
+are even companies that have backed it and
+
+00:23:19.940 --> 00:23:21.820
+so so to me that's what's going to
+
+00:23:21.820 --> 00:23:23.420
+happen and to me a model
+
+00:23:23.420 --> 00:23:25.940
+is like the database market you know it's
+
+00:23:25.940 --> 00:23:27.920
+got it's gone differences but i sort of
+
+00:23:27.920 --> 00:23:28.940
+somehow think that
+
+00:23:29.420 --> 00:23:31.400
+it's not they're definitely going to be frontier
+
+00:23:31.400 --> 00:23:33.520
+models that are close source you know they're
+
+00:23:33.520 --> 00:23:33.600
+going
+
+00:23:33.600 --> 00:23:35.000
+to be open source models that are going
+
+00:23:35.000 --> 00:23:37.980
+to be uh uh frontier class in fact
+
+00:23:37.980 --> 00:23:39.560
+if anything i think in this
+
+00:23:39.560 --> 00:23:42.340
+next year what will be probably a big
+
+00:23:42.340 --> 00:23:45.660
+part of the discussion is what's the future
+
+00:23:45.660 --> 00:23:47.880
+of a firm a firm
+
+00:23:48.680 --> 00:23:51.620
+should be able to take the tacit knowledge
+
+00:23:51.620 --> 00:23:56.400
+it has and embed it inside awaits in
+
+00:23:56.400 --> 00:23:57.460
+a model that they
+
+00:23:57.460 --> 00:23:59.900
+control right so when somebody asked me how
+
+00:23:59.900 --> 00:24:01.560
+many models should be there i'll say as
+
+00:24:01.560 --> 00:24:02.400
+many models as
+
+00:24:02.400 --> 00:24:04.400
+firms in the world right that's sort of
+
+00:24:04.400 --> 00:24:07.640
+the extreme way uh because because to me
+
+00:24:07.640 --> 00:24:08.920
+that's how i think
+
+00:24:08.920 --> 00:24:12.380
+this this knowledge economy becomes an ai economy
+
+00:24:12.380 --> 00:24:14.840
+are you secretly and you can say it
+
+00:24:14.840 --> 00:24:15.140
+here since
+
+00:24:15.140 --> 00:24:18.300
+we're on all in working on an llm
+
+00:24:18.300 --> 00:24:21.580
+to exist on the windows desktop because that
+
+00:24:21.580 --> 00:24:22.860
+you are you have it like
+
+00:24:22.860 --> 00:24:25.560
+today there's a phi silica model which is
+
+00:24:25.560 --> 00:24:29.460
+completely resident using npus and of course using
+
+00:24:29.460 --> 00:24:30.580
+uh gpus in
+
+00:24:30.580 --> 00:24:34.120
+fact the largest installation um of high power
+
+00:24:34.120 --> 00:24:35.460
+in fact it's one of the fascinating the
+
+00:24:35.460 --> 00:24:36.180
+workstation is
+
+00:24:36.180 --> 00:24:37.540
+back i'm one of the most if you
+
+00:24:37.540 --> 00:24:40.420
+went to cus great it's so microsoft because
+
+00:24:40.420 --> 00:24:41.620
+yeah you have a nice
+
+00:24:41.620 --> 00:24:44.400
+desktop business oh absolutely and so we and
+
+00:24:44.400 --> 00:24:46.120
+in fact we think that that form factor
+
+00:24:46.120 --> 00:24:47.460
+especially i mean
+
+00:24:47.460 --> 00:24:49.560
+i i always say this which is uh
+
+00:24:49.560 --> 00:24:52.080
+you know i started my career on a
+
+00:24:52.080 --> 00:24:53.980
+command line who knows i may just end
+
+00:24:53.980 --> 00:24:55.480
+it in a command line but you started
+
+00:24:55.480 --> 00:24:57.780
+at sun which was the original five ten
+
+00:24:57.780 --> 00:24:59.080
+thousand dollar workstation do
+
+00:24:59.080 --> 00:25:01.240
+you see a time where you'll be meeting
+
+00:25:01.240 --> 00:25:03.560
+with your customers here and advocating a ten
+
+00:25:03.560 --> 00:25:04.240
+twenty thousand
+
+00:25:04.240 --> 00:25:07.320
+dollar desktop machine that has an llm and
+
+00:25:07.320 --> 00:25:10.140
+the hardware you can put a dgx card
+
+00:25:10.140 --> 00:25:11.440
+and you can have
+
+00:25:11.440 --> 00:25:14.100
+like just a fantastic machine and the models
+
+00:25:14.100 --> 00:25:15.600
+i and by the way you know we
+
+00:25:15.600 --> 00:25:17.460
+are one architecture tweak away
+
+00:25:17.460 --> 00:25:20.140
+from even having some kind of a distributed
+
+00:25:20.140 --> 00:25:23.100
+model architecture right even an moe architecture that
+
+00:25:23.100 --> 00:25:26.360
+shows knows how to really distribute itself right
+
+00:25:26.360 --> 00:25:29.160
+that's the type of breakthrough that can completely
+
+00:25:29.160 --> 00:25:32.260
+change uh what hybrid ai may look like
+
+00:25:32.260 --> 00:25:35.460
+but we're absolutely committed and focused on making
+
+00:25:35.460 --> 00:25:36.240
+the pc
+
+00:25:36.240 --> 00:25:39.480
+a great place for local models uh and
+
+00:25:39.480 --> 00:25:41.680
+local models that then do even a lot
+
+00:25:41.680 --> 00:25:43.120
+of the prompt processing and
+
+00:25:43.120 --> 00:25:44.760
+call into the cloud right so there's a
+
+00:25:44.760 --> 00:25:46.240
+whole lot of work that can happen and
+
+00:25:46.240 --> 00:25:47.060
+that's sort of definitely
+
+00:25:47.060 --> 00:25:49.020
+something that's in that way yeah i think
+
+00:25:49.020 --> 00:25:51.040
+that the clog co-work has kind of
+
+00:25:51.040 --> 00:25:52.100
+shown the power of tapping
+
+00:25:52.100 --> 00:25:53.620
+into the local file drive and be able
+
+00:25:53.620 --> 00:25:55.780
+to use that that that brings up another
+
+00:25:55.780 --> 00:25:56.540
+point you you got me
+
+00:25:56.540 --> 00:25:58.500
+thinking about yammer and for people don't know
+
+00:25:58.500 --> 00:26:00.540
+um you know yammer's claim to fame this
+
+00:26:00.540 --> 00:26:01.280
+is about 15
+
+00:26:01.280 --> 00:26:03.380
+years ago was that it pioneered a lot
+
+00:26:03.380 --> 00:26:05.140
+of um well it used a lot of
+
+00:26:05.140 --> 00:26:06.880
+consumer growth tactics to attack
+
+00:26:06.880 --> 00:26:09.500
+enterprise software i'm wondering as you think about
+
+00:26:09.500 --> 00:26:13.500
+enterprise adoption of ai how do you think
+
+00:26:13.500 --> 00:26:13.940
+it's
+
+00:26:13.940 --> 00:26:15.620
+going to spread over the next year it
+
+00:26:15.620 --> 00:26:17.360
+feels like we're at sort of a a
+
+00:26:17.360 --> 00:26:19.660
+a critical point do you think it's
+
+00:26:19.660 --> 00:26:21.040
+going to be top down is it going
+
+00:26:21.040 --> 00:26:23.080
+to come from the ceo directing a team
+
+00:26:23.080 --> 00:26:24.520
+giving them a strategic
+
+00:26:24.520 --> 00:26:27.120
+transformation project or they're going to do an
+
+00:26:27.120 --> 00:26:29.400
+rfp or do you think it's going to
+
+00:26:29.400 --> 00:26:30.520
+spread bottom up
+
+00:26:30.520 --> 00:26:33.600
+in the enterprise through ai native employees who
+
+00:26:33.600 --> 00:26:36.320
+are adaptable who are using the tools in
+
+00:26:36.320 --> 00:26:36.580
+their own
+
+00:26:36.580 --> 00:26:38.700
+lives and they start to bring these things
+
+00:26:38.700 --> 00:26:41.960
+to work and start accomplishing amazing things yeah
+
+00:26:41.960 --> 00:26:42.280
+no i
+
+00:26:42.280 --> 00:26:44.120
+think you know like all things david i
+
+00:26:44.120 --> 00:26:45.760
+think it's both the top down bottom up
+
+00:26:45.760 --> 00:26:47.540
+right uh the the reason i
+
+00:26:47.540 --> 00:26:49.580
+say that uh top down is if i
+
+00:26:49.580 --> 00:26:52.620
+look at the roi uh of uh applying
+
+00:26:52.620 --> 00:26:55.440
+ai and customer service uh or in supply
+
+00:26:55.440 --> 00:26:58.560
+chain or in hr self-service those are
+
+00:26:58.560 --> 00:27:03.320
+the easy projects where uh it and cxos
+
+00:27:03.320 --> 00:27:04.600
+can make calls and
+
+00:27:04.600 --> 00:27:06.980
+that's where you're seeing the first drop of
+
+00:27:06.980 --> 00:27:10.140
+uh real ai adoption but the bottom up
+
+00:27:10.140 --> 00:27:11.660
+is what ultimately
+
+00:27:11.660 --> 00:27:13.800
+will happen right i mean even with the
+
+00:27:13.800 --> 00:27:15.760
+pcs in fact if you think back at
+
+00:27:15.760 --> 00:27:17.500
+it the lawyers brought word in
+
+00:27:17.500 --> 00:27:20.240
+and then finance bought excel in and then
+
+00:27:20.240 --> 00:27:22.360
+email came and then it became standard issue
+
+00:27:22.360 --> 00:27:23.440
+that's what's
+
+00:27:23.440 --> 00:27:26.240
+happening right now so for example these agents
+
+00:27:26.240 --> 00:27:28.460
+when i sort of talk about everybody's building
+
+00:27:28.460 --> 00:27:28.980
+agents
+
+00:27:28.980 --> 00:27:32.460
+they're figuring out a way to go create
+
+00:27:32.460 --> 00:27:36.100
+these things that are changing workflow and removing
+
+00:27:36.100 --> 00:27:36.640
+drudgery
+
+00:27:36.640 --> 00:27:38.980
+in their work right that's sort of the
+
+00:27:38.980 --> 00:27:42.100
+beginning of what is a bottom-up transformation
+
+00:27:42.100 --> 00:27:43.760
+um you didn't
+
+00:27:43.760 --> 00:27:45.880
+i was in fact the thing that i'm
+
+00:27:45.880 --> 00:27:47.920
+most excited about is this bottom-up change
+
+00:27:47.920 --> 00:27:48.860
+even at microsoft for
+
+00:27:48.860 --> 00:27:52.520
+example we manage something like 500 odd fiber
+
+00:27:52.520 --> 00:27:55.240
+operators around the world in in azure today
+
+00:27:55.240 --> 00:27:55.860
+and
+
+00:27:55.860 --> 00:27:57.440
+by the way i had not myself realized
+
+00:27:57.440 --> 00:27:58.600
+it a lot of it you know it's
+
+00:27:58.600 --> 00:28:00.740
+called devops but it's a it's a physical
+
+00:28:00.740 --> 00:28:03.580
+asset things get cut and when you sort
+
+00:28:03.580 --> 00:28:05.540
+of say devops that means you literally are
+
+00:28:05.540 --> 00:28:06.580
+emailing people and
+
+00:28:06.580 --> 00:28:08.180
+saying hey what happened to that fiber cut
+
+00:28:08.180 --> 00:28:09.560
+how do we repair it so there's a
+
+00:28:09.560 --> 00:28:11.000
+lot of back and forth
+
+00:28:11.000 --> 00:28:13.880
+so this network the person who runs our
+
+00:28:13.880 --> 00:28:16.680
+global network basically has built to your point
+
+00:28:16.680 --> 00:28:16.900
+about
+
+00:28:16.900 --> 00:28:20.300
+these personas they're just digital employees essentially that
+
+00:28:20.300 --> 00:28:22.700
+are doing all of that devops
+
+00:28:23.360 --> 00:28:26.080
+and so that's and those are completely bottoms
+
+00:28:26.080 --> 00:28:28.480
+up uh where you see the tools it's
+
+00:28:28.480 --> 00:28:29.060
+kind of like hey i
+
+00:28:29.060 --> 00:28:31.320
+have the new way to build agents it's
+
+00:28:31.320 --> 00:28:33.580
+there i'm going to use it to create
+
+00:28:33.580 --> 00:28:34.720
+levels of automation
+
+00:28:35.360 --> 00:28:39.100
+that remove drudgery improve efficiency improve quality and
+
+00:28:39.100 --> 00:28:41.560
+that ultimately is a skilling thing
+
+00:28:41.560 --> 00:28:43.420
+which is sort of the big issue which
+
+00:28:43.420 --> 00:28:46.000
+is uh and skilling is not mystical it's
+
+00:28:46.000 --> 00:28:47.040
+just by doing right
+
+00:28:47.040 --> 00:28:48.240
+so it's not like i go to a
+
+00:28:48.240 --> 00:28:50.520
+class per se it's like the diffusion of
+
+00:28:50.520 --> 00:28:53.500
+the tools uh and using the tools and
+
+00:28:53.500 --> 00:28:55.440
+that i think is what's really going to
+
+00:28:55.440 --> 00:28:57.280
+be happening and we're in a very interesting
+
+00:28:57.280 --> 00:28:59.960
+moment empowering an
+
+00:28:59.960 --> 00:29:03.220
+existing employee with these tools is so much
+
+00:29:03.220 --> 00:29:06.320
+easier than hiring and mentoring and bringing up
+
+00:29:06.320 --> 00:29:08.060
+the next generation so it feels like we're
+
+00:29:08.060 --> 00:29:09.820
+in a little bit of an indigestion moment
+
+00:29:10.440 --> 00:29:13.160
+at microsoft do you think who's going to
+
+00:29:13.160 --> 00:29:16.020
+have my job in 30 or 40 years
+
+00:29:16.020 --> 00:29:18.200
+if the company stays the same
+
+00:29:18.200 --> 00:29:23.020
+size because given your technology first approach there's
+
+00:29:23.020 --> 00:29:25.100
+really no reason to ever add another microsoft
+
+00:29:25.100 --> 00:29:27.800
+employee at the pace this is going and
+
+00:29:27.800 --> 00:29:31.180
+you haven't for four years so how you
+
+00:29:31.180 --> 00:29:31.860
+may have swapped some
+
+00:29:31.860 --> 00:29:33.540
+in and out and changed the texture of
+
+00:29:33.540 --> 00:29:36.180
+it so how do you think about maybe
+
+00:29:36.180 --> 00:29:37.820
+this next generation what
+
+00:29:37.820 --> 00:29:39.780
+advice would you have for these college graduates
+
+00:29:39.780 --> 00:29:41.700
+who maybe don't have an offer for microsoft
+
+00:29:41.700 --> 00:29:41.940
+right
+
+00:29:41.940 --> 00:29:43.260
+now and you used to spend a lot
+
+00:29:43.260 --> 00:29:45.840
+of time on that building that group but
+
+00:29:45.840 --> 00:29:46.840
+maybe you don't have that
+
+00:29:46.840 --> 00:29:49.020
+luxury now do you think about it ever
+
+00:29:49.020 --> 00:29:51.120
+i mean it's a great question i you
+
+00:29:51.120 --> 00:29:52.260
+know there's a little bit of a
+
+00:29:52.260 --> 00:29:54.640
+debate what happens to early in korea and
+
+00:29:54.640 --> 00:29:56.620
+how is college recruiting i still am a
+
+00:29:56.620 --> 00:29:57.660
+big believer in
+
+00:29:57.660 --> 00:29:59.440
+college recruiting because at the end of the
+
+00:29:59.440 --> 00:30:03.960
+day um this is going to change the
+
+00:30:03.960 --> 00:30:06.120
+curve by which anyone
+
+00:30:06.120 --> 00:30:08.720
+can pick up proficiency in a code base
+
+00:30:08.720 --> 00:30:10.640
+let's just it takes sort of just regular
+
+00:30:10.640 --> 00:30:13.020
+cs hiring uh what has
+
+00:30:13.020 --> 00:30:16.120
+changed is perhaps for someone who comes in
+
+00:30:16.120 --> 00:30:19.200
+new into a team and to be able
+
+00:30:19.200 --> 00:30:21.180
+to ramp up thanks to
+
+00:30:21.180 --> 00:30:26.020
+all of uh the markdowns the skills uh
+
+00:30:26.020 --> 00:30:27.920
+the fact that i can go ask the
+
+00:30:27.920 --> 00:30:29.140
+agent let me think about it
+
+00:30:29.140 --> 00:30:32.940
+right it's like having an unbelievable mentor who's
+
+00:30:32.940 --> 00:30:35.520
+getting you onboarded onto a code base faster
+
+00:30:35.520 --> 00:30:36.080
+so in
+
+00:30:36.080 --> 00:30:39.360
+some sense the productivity curve uh of a
+
+00:30:39.360 --> 00:30:42.100
+college hire is going to be much steeper
+
+00:30:42.100 --> 00:30:43.060
+than it ever before
+
+00:30:43.060 --> 00:30:45.320
+so i think there might be a difference
+
+00:30:45.320 --> 00:30:46.840
+in fact one of the things we're experimenting
+
+00:30:46.840 --> 00:30:47.540
+with is a different
+
+00:30:47.540 --> 00:30:50.060
+type of apprenticeship right which is you take
+
+00:30:50.060 --> 00:30:53.720
+somebody who's an ic senior dev have like
+
+00:30:53.720 --> 00:30:54.400
+a cohort
+
+00:30:54.400 --> 00:30:58.020
+of college uh hires working with them because
+
+00:30:58.020 --> 00:30:59.740
+it's a new way of working it's like
+
+00:30:59.740 --> 00:31:00.600
+i remember like all
+
+00:31:00.600 --> 00:31:02.240
+you know everybody who joined microsoft would say
+
+00:31:02.240 --> 00:31:04.480
+go how did uh you know whatever um
+
+00:31:04.480 --> 00:31:05.980
+cutler implement
+
+00:31:05.980 --> 00:31:07.940
+malloc or what have you right he would
+
+00:31:07.940 --> 00:31:10.500
+go try to read uh his code to
+
+00:31:10.500 --> 00:31:12.280
+understand uh what great
+
+00:31:12.280 --> 00:31:15.440
+craftsmanship looks like nowadays i think that great
+
+00:31:15.440 --> 00:31:18.540
+craftsmanship uh comes by looking at even how
+
+00:31:18.540 --> 00:31:23.420
+the 10x 100x engineers use ai to build
+
+00:31:23.420 --> 00:31:26.520
+great quality products uh and that is what
+
+00:31:26.520 --> 00:31:27.580
+these new college
+
+00:31:27.580 --> 00:31:30.140
+guys will learn and learn faster and so
+
+00:31:30.140 --> 00:31:32.020
+that's a beneficial thing for a company like
+
+00:31:32.020 --> 00:31:32.680
+us because at
+
+00:31:32.680 --> 00:31:34.120
+the end of the day you know until
+
+00:31:34.120 --> 00:31:37.500
+we saw longevity or something we need people
+
+00:31:37.500 --> 00:31:38.900
+to come into the workforce
+
+00:31:38.900 --> 00:31:40.840
+be successful at microsoft so we are very
+
+00:31:40.840 --> 00:31:43.400
+committed but we are also making sure that
+
+00:31:43.400 --> 00:31:44.340
+the scopes of the
+
+00:31:44.340 --> 00:31:47.700
+jobs make sense for what the aspirations of
+
+00:31:47.700 --> 00:31:49.080
+people are going to be both who are
+
+00:31:49.080 --> 00:31:50.100
+currently in the workforce
+
+00:31:50.100 --> 00:31:52.860
+and people who are entering the workforce okay
+
+00:31:52.860 --> 00:31:55.900
+on that note satya nadella thank you so
+
+00:31:55.900 --> 00:31:56.160
+much

@@ -1,0 +1,1408 @@
+1
+00:00:00,000 --> 00:00:02,720
+Dario Amodei is the CEO of Anthropic. He's
+
+2
+00:00:02,720 --> 00:00:04,640
+also, I think, one of the most vocal
+
+3
+00:00:04,640 --> 00:00:07,240
+truth-tellers about the good, the bad, and
+
+4
+00:00:07,240 --> 00:00:10,000
+the potential ugly and destruction from AI.
+
+5
+00:00:10,380 --> 00:00:11,700
+We had a spur-of-the-moment chance
+
+6
+00:00:11,700 --> 00:00:14,620
+to talk to Dario. His memo was out.
+
+7
+00:00:14,720 --> 00:00:15,900
+We said we wanted to go a little
+
+8
+00:00:15,900 --> 00:00:18,380
+deeper with him. The way that Dario says,
+
+9
+00:00:18,500 --> 00:00:21,940
+if five words, humanity needs to wake up.
+
+10
+00:00:24,280 --> 00:00:26,100
+Last year, when he made that warning that
+
+11
+00:00:26,100 --> 00:00:28,620
+50% of white-collar jobs could be
+
+12
+00:00:28,620 --> 00:00:30,940
+obsolete within a couple years because of AI,
+
+13
+00:00:31,280 --> 00:00:33,720
+he ignited a national conversation. With this memo,
+
+14
+00:00:33,880 --> 00:00:35,340
+he's taking a different track. He's trying to
+
+15
+00:00:35,340 --> 00:00:37,720
+say it's not just jobs. It could be
+
+16
+00:00:37,720 --> 00:00:40,020
+your national security. It could be your way
+
+17
+00:00:40,020 --> 00:00:42,020
+of life. And it was written to be
+
+18
+00:00:42,020 --> 00:00:43,720
+provocative. It is provocative.
+
+19
+00:00:43,720 --> 00:00:47,540
+One of his biggest warnings, along with authoritarian
+
+20
+00:00:47,540 --> 00:00:51,360
+governments, was AI companies. He said, it's awkward
+
+21
+00:00:51,360 --> 00:00:52,680
+for me to say this as the head
+
+22
+00:00:52,680 --> 00:00:55,640
+of an AI company, but look at all
+
+23
+00:00:55,640 --> 00:00:58,400
+of the users that they have. Look at
+
+24
+00:00:58,400 --> 00:01:00,460
+all the data centers they have. Look at
+
+25
+00:01:00,460 --> 00:01:03,900
+all the power they have. And what if
+
+26
+00:01:03,900 --> 00:01:08,340
+they were to brainwash this massive consumer use
+
+27
+00:01:08,340 --> 00:01:09,800
+base? That was new to me, Jim.
+
+28
+00:01:09,800 --> 00:01:11,640
+It's a wake-up call that people need
+
+29
+00:01:11,640 --> 00:01:13,880
+to answer. They need to listen. You might
+
+30
+00:01:13,880 --> 00:01:15,700
+be skeptical. You might be scared. You might
+
+31
+00:01:15,700 --> 00:01:19,160
+be enthusiastic. What Dario has to say is
+
+32
+00:01:19,160 --> 00:01:23,020
+important. And by the way, it synthesizes provocatively,
+
+33
+00:01:23,020 --> 00:01:25,340
+but I think accurately, what we hear in
+
+34
+00:01:25,340 --> 00:01:28,920
+conversation after conversation with other people. It's not
+
+35
+00:01:28,920 --> 00:01:31,080
+him just being hysterical. I don't think it's
+
+36
+00:01:31,080 --> 00:01:33,580
+him just hyping the technology. I think it
+
+37
+00:01:33,580 --> 00:01:36,220
+is he reflects a concern we hear time
+
+38
+00:01:36,220 --> 00:01:38,080
+and time again, at least in off-the
+
+39
+00:01:38,080 --> 00:01:39,000
+-record conversations,
+
+40
+00:01:39,000 --> 00:01:41,360
+with the people that are building these technologies
+
+41
+00:01:41,360 --> 00:01:43,180
+and using them. And we wanted to go
+
+42
+00:01:43,180 --> 00:01:45,900
+beyond the memo. We wanted to talk specifically
+
+43
+00:01:45,900 --> 00:01:49,300
+about what message, if it was delivered in
+
+44
+00:01:49,300 --> 00:01:52,340
+its bluntest form, would Dario want to deliver
+
+45
+00:01:52,340 --> 00:01:54,620
+to members of Congress and members of the
+
+46
+00:01:54,620 --> 00:01:55,460
+federal government?
+
+47
+00:02:05,000 --> 00:02:08,640
+What are the three things that you wish
+
+48
+00:02:08,640 --> 00:02:11,940
+Congress would do now? And then also, what
+
+49
+00:02:11,940 --> 00:02:14,360
+do you wish they would tell their constituents
+
+50
+00:02:14,360 --> 00:02:16,680
+if they were really fluent on what's going
+
+51
+00:02:16,680 --> 00:02:19,220
+on and they were completely leveling with them?
+
+52
+00:02:19,220 --> 00:02:22,020
+Yeah. So I think three things to do
+
+53
+00:02:22,020 --> 00:02:27,200
+now. One would be like transparency legislation as
+
+54
+00:02:27,200 --> 00:02:30,180
+robust as possible. What tests did you run?
+
+55
+00:02:30,340 --> 00:02:32,100
+What are you seeing with respect to your
+
+56
+00:02:32,100 --> 00:02:34,660
+model? Companies have the capability to study these
+
+57
+00:02:34,660 --> 00:02:36,600
+things and they often do. And so kind
+
+58
+00:02:36,600 --> 00:02:38,860
+of requiring that they not only study these
+
+59
+00:02:38,860 --> 00:02:41,640
+risks, but show those risks to the public,
+
+60
+00:02:42,060 --> 00:02:43,280
+put a label on the product.
+
+61
+00:02:43,880 --> 00:02:45,880
+I think that's really helpful to the consumer.
+
+62
+00:02:46,080 --> 00:02:48,920
+And it's also helpful in that it allows
+
+63
+00:02:48,920 --> 00:02:51,160
+companies to learn from each other. If each
+
+64
+00:02:51,160 --> 00:02:53,260
+company is studying these things on its own
+
+65
+00:02:53,260 --> 00:02:55,100
+and is afraid to show what it's finding
+
+66
+00:02:55,100 --> 00:02:58,700
+to others because of competition, we can't learn
+
+67
+00:02:58,700 --> 00:03:00,520
+about these things as a scientific community.
+
+68
+00:03:00,520 --> 00:03:02,200
+I think the second thing, and I've said
+
+69
+00:03:02,200 --> 00:03:06,080
+it many times, but it's hard enough between
+
+70
+00:03:06,080 --> 00:03:08,580
+the companies in the U.S. to handle
+
+71
+00:03:08,580 --> 00:03:12,840
+this crazy commercial race. But in theory, we
+
+72
+00:03:12,840 --> 00:03:15,480
+could pass laws like I just described that
+
+73
+00:03:15,480 --> 00:03:17,180
+help to rein the companies in.
+
+74
+00:03:17,180 --> 00:03:20,280
+But it's almost impossible to do that if
+
+75
+00:03:20,280 --> 00:03:23,400
+we have an authoritarian adversary who's out there
+
+76
+00:03:23,400 --> 00:03:27,320
+building the technology almost as fast as we
+
+77
+00:03:27,320 --> 00:03:30,220
+are, right? It creates a terrible dilemma. And
+
+78
+00:03:30,220 --> 00:03:31,660
+I think we need to cut off the
+
+79
+00:03:31,660 --> 00:03:34,400
+supply chain. We're years ahead of them in
+
+80
+00:03:34,400 --> 00:03:36,900
+chips. We really can. We really can cut
+
+81
+00:03:36,900 --> 00:03:37,980
+off the supply chain.
+
+82
+00:03:37,980 --> 00:03:39,980
+And that gives us the time and the
+
+83
+00:03:39,980 --> 00:03:42,960
+buffer to deal with these dangers properly. And
+
+84
+00:03:42,960 --> 00:03:45,360
+then third, I think we need to think
+
+85
+00:03:45,360 --> 00:03:51,940
+about the distribution of benefits of this technology.
+
+86
+00:03:51,940 --> 00:03:56,300
+I see AI creating a world where there's
+
+87
+00:03:56,300 --> 00:03:59,800
+enormous economic growth, right? We can cure cancer.
+
+88
+00:03:59,800 --> 00:04:03,480
+We can, you know, develop energy for cheaper.
+
+89
+00:04:03,660 --> 00:04:06,580
+We can develop enormous new materials. And those
+
+90
+00:04:06,580 --> 00:04:10,120
+things will grow the economy enormously. But precisely
+
+91
+00:04:10,120 --> 00:04:13,400
+because AI does the jobs that, you know,
+
+92
+00:04:13,500 --> 00:04:17,020
+many current white collar workers do, you know,
+
+93
+00:04:17,140 --> 00:04:19,300
+that there's going to be some concentration of
+
+94
+00:04:19,300 --> 00:04:21,580
+this wealth from labor to capital.
+
+95
+00:04:21,940 --> 00:04:23,380
+And so we're going to have this weird
+
+96
+00:04:23,380 --> 00:04:26,140
+world that we've really never seen before where,
+
+97
+00:04:26,140 --> 00:04:28,640
+you know, we have enormous wealth, but distribution
+
+98
+00:04:28,640 --> 00:04:31,160
+is a problem. That's a different world. I
+
+99
+00:04:31,160 --> 00:04:32,900
+don't think it's an ideological thing, but I
+
+100
+00:04:32,900 --> 00:04:34,940
+think we just need to adjust to that
+
+101
+00:04:34,940 --> 00:04:35,280
+world.
+
+102
+00:04:35,840 --> 00:04:37,700
+How do you adjust to that now? Like,
+
+103
+00:04:37,840 --> 00:04:39,680
+obviously, we don't have that. That's not the
+
+104
+00:04:39,680 --> 00:04:43,320
+reality today. So, like, how would Congress prepare
+
+105
+00:04:43,320 --> 00:04:45,040
+the country to do that so we're not
+
+106
+00:04:45,040 --> 00:04:47,180
+caught napping and having to do it retroactively?
+
+107
+00:04:47,180 --> 00:04:49,340
+Maybe the most obvious one is, you know,
+
+108
+00:04:49,420 --> 00:04:51,480
+we kind of need to think about more
+
+109
+00:04:51,480 --> 00:04:54,980
+robust tax policies, you know, and, you know,
+
+110
+00:04:55,080 --> 00:04:57,560
+I don't think this is the tax policies
+
+111
+00:04:57,560 --> 00:04:59,660
+of old. This is for a world where
+
+112
+00:04:59,660 --> 00:05:02,400
+people are trillionaires. We're almost there already with
+
+113
+00:05:02,400 --> 00:05:03,300
+Elon Musk.
+
+114
+00:05:03,300 --> 00:05:06,860
+And I think the effect of AI and
+
+115
+00:05:06,860 --> 00:05:08,500
+the effect of the AI companies is going
+
+116
+00:05:08,500 --> 00:05:09,780
+to make that more extreme. And, you know,
+
+117
+00:05:09,820 --> 00:05:11,700
+I say that as, you know, one of
+
+118
+00:05:11,700 --> 00:05:12,920
+the people who's benefiting from it, right?
+
+119
+00:05:13,660 --> 00:05:17,540
+If we don't find a well-designed answer
+
+120
+00:05:17,540 --> 00:05:20,820
+to this problem, we may get poorly designed
+
+121
+00:05:20,820 --> 00:05:23,340
+answers, right? We may get, you know, kind
+
+122
+00:05:23,340 --> 00:05:25,900
+of very aggressive, poorly designed answers.
+
+123
+00:05:26,060 --> 00:05:27,520
+And so I guess my ask would be,
+
+124
+00:05:27,980 --> 00:05:30,180
+look, there's going to be this skew in
+
+125
+00:05:30,180 --> 00:05:32,700
+distribution of wealth. What are ways of handling
+
+126
+00:05:32,700 --> 00:05:35,760
+it that are economically literate and economically sensible
+
+127
+00:05:35,760 --> 00:05:38,700
+so that we don't get this crazy knee
+
+128
+00:05:38,700 --> 00:05:39,200
+-jerk stuff?
+
+129
+00:05:39,200 --> 00:05:42,900
+Dario, these are heavy, heavy lifts. Members of
+
+130
+00:05:42,900 --> 00:05:45,000
+Congress I talk to are afraid to even
+
+131
+00:05:45,000 --> 00:05:48,900
+talk about this issue, like their constituents either
+
+132
+00:05:48,900 --> 00:05:51,060
+are worried about their jobs or pissed about
+
+133
+00:05:51,060 --> 00:05:54,180
+their power bills or they think it's icky
+
+134
+00:05:54,180 --> 00:05:55,220
+or they're queasy.
+
+135
+00:05:55,220 --> 00:05:59,940
+How do you convince policy lawmakers, both ends
+
+136
+00:05:59,940 --> 00:06:03,840
+of Pennsylvania Avenue, that they can, must talk
+
+137
+00:06:03,840 --> 00:06:05,260
+about these issues, dig in?
+
+138
+00:06:05,260 --> 00:06:07,880
+So it's not going to happen in a
+
+139
+00:06:07,880 --> 00:06:09,740
+day. But what I will say is as
+
+140
+00:06:09,740 --> 00:06:12,100
+we see the effects of AI, you know,
+
+141
+00:06:12,200 --> 00:06:15,720
+I expect the public to understand that AI
+
+142
+00:06:15,720 --> 00:06:18,440
+is bringing us all these wonders, all these
+
+143
+00:06:18,440 --> 00:06:21,060
+medical wonders, all this, you know, abundance.
+
+144
+00:06:21,120 --> 00:06:23,800
+Eventually we'll get cheap robots that will, you
+
+145
+00:06:23,800 --> 00:06:25,920
+know, will do everything. But these problems will
+
+146
+00:06:25,920 --> 00:06:28,600
+emerge. People will say, where are my jobs?
+
+147
+00:06:28,600 --> 00:06:31,200
+People will say, why is that person a
+
+148
+00:06:31,200 --> 00:06:33,760
+trillionaire and my wage has gone down because
+
+149
+00:06:33,760 --> 00:06:37,300
+I've been de-skilled, right? People ask these
+
+150
+00:06:37,300 --> 00:06:40,880
+questions. And I think it's better if you
+
+151
+00:06:40,880 --> 00:06:42,440
+get ahead of it and you start to
+
+152
+00:06:42,440 --> 00:06:43,040
+think about it now.
+
+153
+00:06:43,120 --> 00:06:44,100
+And by the way, I don't think it'll
+
+154
+00:06:44,100 --> 00:06:46,020
+be a partisan thing. It's not even a
+
+155
+00:06:46,020 --> 00:06:49,640
+partisan thing now. Even people on the two
+
+156
+00:06:49,640 --> 00:06:53,420
+extremes of the political spectrum I've talked to,
+
+157
+00:06:53,560 --> 00:06:56,320
+and it's remarkable how similar the things they
+
+158
+00:06:56,320 --> 00:06:56,780
+say are.
+
+159
+00:06:56,780 --> 00:06:59,000
+Do you think that any of your fellow
+
+160
+00:06:59,000 --> 00:07:04,700
+future trillionaires will be for this, will discuss
+
+161
+00:07:04,700 --> 00:07:06,340
+it, or will they fight it?
+
+162
+00:07:07,280 --> 00:07:10,100
+You know, I can't say what anyone else
+
+163
+00:07:10,100 --> 00:07:11,740
+is going to do, right? Like, you know,
+
+164
+00:07:11,820 --> 00:07:13,080
+I don't...
+
+165
+00:07:13,080 --> 00:07:13,140
+But you know these...
+
+166
+00:07:13,140 --> 00:07:17,660
+You know the future fellow trillionaires. What can
+
+167
+00:07:17,660 --> 00:07:20,300
+you do to bring them along with how
+
+168
+00:07:20,300 --> 00:07:21,640
+you're thinking? As I can tell you, a
+
+169
+00:07:21,640 --> 00:07:22,580
+lot of them aren't there now.
+
+170
+00:07:23,000 --> 00:07:25,560
+Yeah, yeah. I agree many are not there
+
+171
+00:07:25,560 --> 00:07:26,700
+now. I mean, there's, you know, there's a
+
+172
+00:07:26,700 --> 00:07:29,160
+wide range of views. And again, I can't
+
+173
+00:07:29,160 --> 00:07:31,000
+speak for anyone else. But I would just
+
+174
+00:07:31,000 --> 00:07:32,780
+say the thing I said before.
+
+175
+00:07:33,420 --> 00:07:36,820
+You can't just go around saying like, okay,
+
+176
+00:07:37,360 --> 00:07:40,500
+you know, we're going to create all this
+
+177
+00:07:40,500 --> 00:07:43,040
+abundance. A lot of it is going to
+
+178
+00:07:43,040 --> 00:07:45,540
+go to us. And, you know, we're going
+
+179
+00:07:45,540 --> 00:07:47,760
+to be trillionaires. And, you know, no one's
+
+180
+00:07:47,760 --> 00:07:49,480
+going to complain about that.
+
+181
+00:07:49,480 --> 00:07:50,840
+No one's going to try and do anything,
+
+182
+00:07:51,260 --> 00:07:53,940
+right? You know, if your answer is just
+
+183
+00:07:53,940 --> 00:07:56,580
+screw you, there's nothing we can or should
+
+184
+00:07:56,580 --> 00:07:58,960
+do about this, then, you know, that's going
+
+185
+00:07:58,960 --> 00:08:00,040
+to create a lot of discontent.
+
+186
+00:08:00,040 --> 00:08:02,420
+It already has. We're already starting to see
+
+187
+00:08:02,420 --> 00:08:04,460
+the beginnings of it. And it's just going
+
+188
+00:08:04,460 --> 00:08:06,260
+to get worse. And so my view is
+
+189
+00:08:06,260 --> 00:08:07,480
+we should do this because it's the right
+
+190
+00:08:07,480 --> 00:08:07,900
+thing to do.
+
+191
+00:08:08,000 --> 00:08:09,240
+But if I were to talk to others,
+
+192
+00:08:09,400 --> 00:08:10,740
+if that isn't compelling to them, and I
+
+193
+00:08:10,740 --> 00:08:12,220
+hope it is, but if that isn't compelling
+
+194
+00:08:12,220 --> 00:08:14,900
+to them, then I would say, look, you're
+
+195
+00:08:14,900 --> 00:08:16,780
+going to get a mob coming for you
+
+196
+00:08:16,780 --> 00:08:19,480
+if you don't do this in the right
+
+197
+00:08:19,480 --> 00:08:19,680
+way.
+
+198
+00:08:19,680 --> 00:08:20,760
+If you don't do this in the wrong
+
+199
+00:08:20,760 --> 00:08:22,080
+way, in the right way, it's going to
+
+200
+00:08:22,080 --> 00:08:23,420
+happen in a very wrong way.
+
+201
+00:08:23,920 --> 00:08:25,980
+What should members of Congress be telling their
+
+202
+00:08:25,980 --> 00:08:28,320
+constituents about the state of AI and where
+
+203
+00:08:28,320 --> 00:08:29,640
+we're headed over the next year?
+
+204
+00:08:30,140 --> 00:08:32,940
+We have an interesting situation in AI in
+
+205
+00:08:32,940 --> 00:08:36,780
+that, you know, people are concerned about it.
+
+206
+00:08:36,980 --> 00:08:39,460
+Broadly, that concern is, you know, is well
+
+207
+00:08:39,460 --> 00:08:42,580
+justified. But I don't know that it's all
+
+208
+00:08:42,580 --> 00:08:43,780
+that well targeted.
+
+209
+00:08:43,780 --> 00:08:46,320
+You know, there are risks like, say, you
+
+210
+00:08:46,320 --> 00:08:49,260
+know, the water use of AI that, you
+
+211
+00:08:49,260 --> 00:08:51,420
+know, if you look into it, AI actually
+
+212
+00:08:51,420 --> 00:08:52,340
+doesn't use that much water.
+
+213
+00:08:52,480 --> 00:08:53,940
+There are many problems with AI, but that's
+
+214
+00:08:53,940 --> 00:08:55,940
+not one of them. And then, of course,
+
+215
+00:08:56,000 --> 00:08:57,700
+people are worried about their power bills, which
+
+216
+00:08:57,700 --> 00:09:00,220
+I think is understandable and kind of well
+
+217
+00:09:00,220 --> 00:09:00,700
+targeted.
+
+218
+00:09:00,740 --> 00:09:03,800
+But, you know, I think in the long
+
+219
+00:09:03,800 --> 00:09:06,560
+run, it's not about power bills. It's about
+
+220
+00:09:06,560 --> 00:09:09,200
+enormous abundance and whether they get their piece
+
+221
+00:09:09,200 --> 00:09:09,620
+of the abundance.
+
+222
+00:09:09,620 --> 00:09:13,840
+Maybe power bills is like a little tiny
+
+223
+00:09:13,840 --> 00:09:17,260
+piece of that. So, you know, I would
+
+224
+00:09:17,260 --> 00:09:21,460
+say constituents are concerned, but, you know, helping
+
+225
+00:09:21,460 --> 00:09:24,300
+to educate them about where things are going,
+
+226
+00:09:24,620 --> 00:09:26,040
+helping to bring them along.
+
+227
+00:09:26,040 --> 00:09:28,220
+Because, again, I'd say the same thing. Like,
+
+228
+00:09:28,360 --> 00:09:30,640
+if you don't lead, if you don't say
+
+229
+00:09:30,640 --> 00:09:34,300
+this is where things are going and we're,
+
+230
+00:09:34,300 --> 00:09:37,340
+you know, we're looking hard for solutions, you
+
+231
+00:09:37,340 --> 00:09:38,560
+know, even if we don't have all the
+
+232
+00:09:38,560 --> 00:09:41,180
+answers yet, like we've got your back, we're
+
+233
+00:09:41,180 --> 00:09:42,660
+trying to find the solutions here.
+
+234
+00:09:42,740 --> 00:09:45,440
+I think that will end much better than
+
+235
+00:09:45,440 --> 00:09:48,280
+saying there's nothing to worry about here or
+
+236
+00:09:48,280 --> 00:09:50,180
+only, you know, we're only looking at these
+
+237
+00:09:50,180 --> 00:09:53,080
+very, these kind of very limited problems.
+
+238
+00:09:53,080 --> 00:09:55,960
+And the assumption in Washington is because President
+
+239
+00:09:55,960 --> 00:09:58,500
+Trump, David Sachs and others want to be
+
+240
+00:09:58,500 --> 00:10:01,040
+hands off on AI and have the U
+
+241
+00:10:01,040 --> 00:10:02,420
+.S. win the race against China.
+
+242
+00:10:02,720 --> 00:10:05,160
+Congress seems to have no appetite to intervene.
+
+243
+00:10:05,720 --> 00:10:08,980
+What outlined the risks of waiting three years
+
+244
+00:10:08,980 --> 00:10:10,720
+to do anything, which seems like the most
+
+245
+00:10:10,720 --> 00:10:12,780
+likely scenario right now, if we're being honest.
+
+246
+00:10:12,780 --> 00:10:15,080
+Yeah. So, you know, you know, I think,
+
+247
+00:10:15,200 --> 00:10:16,500
+I think, I think if we wait three
+
+248
+00:10:16,500 --> 00:10:20,140
+years, like this technology is progressing exponentially, right?
+
+249
+00:10:20,300 --> 00:10:22,640
+Three years ago in 2023, the models were
+
+250
+00:10:22,640 --> 00:10:24,280
+maybe as smart as like a smart high
+
+251
+00:10:24,280 --> 00:10:24,840
+school student.
+
+252
+00:10:25,280 --> 00:10:28,180
+Now we have engineers at Anthropic where the
+
+253
+00:10:28,180 --> 00:10:30,200
+model writes all the code for them, you
+
+254
+00:10:30,200 --> 00:10:32,480
+know, and the engineer maybe edits it.
+
+255
+00:10:32,620 --> 00:10:35,820
+But we're very close to, you know, mid
+
+256
+00:10:35,820 --> 00:10:37,920
+to high professional level. Right.
+
+257
+00:10:37,920 --> 00:10:39,540
+And so that was just in three years.
+
+258
+00:10:39,700 --> 00:10:42,780
+If we wait another year, three years, I
+
+259
+00:10:42,780 --> 00:10:44,200
+think we'll get what I call in the
+
+260
+00:10:44,200 --> 00:10:46,820
+essay, our country of geniuses in the data
+
+261
+00:10:46,820 --> 00:10:48,480
+center, maybe less than three years.
+
+262
+00:10:49,020 --> 00:10:51,860
+And so, you know, three years is an
+
+263
+00:10:51,860 --> 00:10:53,060
+eternity in this field.
+
+264
+00:10:53,220 --> 00:10:56,140
+And so I think we absolutely need to
+
+265
+00:10:56,140 --> 00:10:57,000
+act before then.
+
+266
+00:10:57,000 --> 00:10:59,840
+One place where I really have hope is
+
+267
+00:10:59,840 --> 00:11:02,660
+I think as these problems start to manifest,
+
+268
+00:11:03,220 --> 00:11:05,400
+again, they're not going to be partisan, right?
+
+269
+00:11:05,580 --> 00:11:08,060
+Like, you know, it may start with, you
+
+270
+00:11:08,060 --> 00:11:10,300
+know, one party or one side having an
+
+271
+00:11:10,300 --> 00:11:12,320
+anti-regulatory ideology.
+
+272
+00:11:12,340 --> 00:11:14,720
+But I think as these problems become real,
+
+273
+00:11:14,960 --> 00:11:16,960
+there's going to be a demand among everyone.
+
+274
+00:11:16,960 --> 00:11:19,700
+And in the note, you outline the different
+
+275
+00:11:19,700 --> 00:11:22,480
+risks, whether it's bioterror or whether it's authoritarian
+
+276
+00:11:22,480 --> 00:11:26,760
+regimes with too many tools to do subversive
+
+277
+00:11:26,760 --> 00:11:27,360
+behavior.
+
+278
+00:11:27,560 --> 00:11:28,000
+Like what?
+
+279
+00:11:28,760 --> 00:11:30,180
+Like how worried are you?
+
+280
+00:11:30,260 --> 00:11:31,980
+I mean, you're obviously worried enough to state
+
+281
+00:11:31,980 --> 00:11:34,140
+it and you're worried enough to raise it.
+
+282
+00:11:34,240 --> 00:11:36,740
+But like in your mind, how likely is
+
+283
+00:11:36,740 --> 00:11:38,920
+that outcome, particularly if we don't do anything
+
+284
+00:11:38,920 --> 00:11:40,000
+for the next three years?
+
+285
+00:11:40,140 --> 00:11:41,600
+Is it like a 1% or like,
+
+286
+00:11:41,680 --> 00:11:42,840
+no, no, if you don't do anything for
+
+287
+00:11:42,840 --> 00:11:44,660
+three years, like we could be screwed.
+
+288
+00:11:45,700 --> 00:11:47,400
+Yeah, it's always hard to tell.
+
+289
+00:11:47,540 --> 00:11:48,640
+One of the things I say in the
+
+290
+00:11:48,640 --> 00:11:52,220
+essay is, you know, we just don't know,
+
+291
+00:11:52,360 --> 00:11:52,420
+right?
+
+292
+00:11:52,500 --> 00:11:53,780
+We could look back and we could say,
+
+293
+00:11:53,880 --> 00:11:55,540
+ha-ha, AI-driven bioterror.
+
+294
+00:11:55,660 --> 00:11:58,220
+You know, that was, you know, that sounded
+
+295
+00:11:58,220 --> 00:11:59,440
+like it could happen at the time.
+
+296
+00:11:59,600 --> 00:12:04,140
+But like, you know, it just didn't happen
+
+297
+00:12:04,140 --> 00:12:04,480
+at all.
+
+298
+00:12:04,620 --> 00:12:06,200
+And it's very unpredictable.
+
+299
+00:12:06,480 --> 00:12:07,500
+You know, the way I would say it
+
+300
+00:12:07,500 --> 00:12:11,260
+is we're taking a paranoid stance with respect
+
+301
+00:12:11,260 --> 00:12:14,040
+to our operational behavior, with respect to them.
+
+302
+00:12:14,040 --> 00:12:16,700
+We always assume that everything that can go
+
+303
+00:12:16,700 --> 00:12:18,000
+wrong does go wrong.
+
+304
+00:12:18,160 --> 00:12:19,680
+That's how you build things that are reliable,
+
+305
+00:12:19,920 --> 00:12:20,000
+right?
+
+306
+00:12:20,080 --> 00:12:21,780
+If you're building a rocket, you're not like,
+
+307
+00:12:22,120 --> 00:12:23,560
+oh, yeah, I'm sure this part will work
+
+308
+00:12:23,560 --> 00:12:23,780
+out.
+
+309
+00:12:23,880 --> 00:12:25,420
+I'm sure this thing will survive the tensile
+
+310
+00:12:25,420 --> 00:12:25,840
+forces.
+
+311
+00:12:26,040 --> 00:12:27,460
+You're like, no, I'm going to do a
+
+312
+00:12:27,460 --> 00:12:29,280
+scenario analysis of this and that and that
+
+313
+00:12:29,280 --> 00:12:30,060
+and the other thing.
+
+314
+00:12:30,240 --> 00:12:32,520
+You know, I'm not going to take anything
+
+315
+00:12:32,520 --> 00:12:33,120
+for granted.
+
+316
+00:12:33,120 --> 00:12:36,660
+And, yeah, you know, if government steps in
+
+317
+00:12:36,660 --> 00:12:39,100
+and takes the appropriate actions, then I think
+
+318
+00:12:39,100 --> 00:12:41,440
+our chances of success go up a lot.
+
+319
+00:12:41,660 --> 00:12:43,240
+We'll do the best we can, even if
+
+320
+00:12:43,240 --> 00:12:43,980
+that doesn't happen.
+
+321
+00:12:44,140 --> 00:12:46,080
+But, you know, I think a lot of
+
+322
+00:12:46,080 --> 00:12:49,600
+things get easier if our policymakers are not
+
+323
+00:12:49,600 --> 00:12:50,260
+asleep at the wheel.
+
+324
+00:12:50,440 --> 00:12:52,040
+I think we're getting the hook, Daria.
+
+325
+00:12:52,120 --> 00:12:53,920
+We appreciate you taking time to do this.
+
+326
+00:12:54,540 --> 00:12:55,560
+Memo is fascinating.
+
+327
+00:12:55,800 --> 00:12:56,660
+The manifesto is great.
+
+328
+00:12:56,840 --> 00:12:57,300
+So we appreciate it.
+
+329
+00:12:57,300 --> 00:12:58,140
+Thank you for the conversation.
+
+330
+00:12:58,140 --> 00:13:00,080
+How long did you work on the memo?
+
+331
+00:13:01,000 --> 00:13:02,560
+So I wrote it.
+
+332
+00:13:02,720 --> 00:13:05,260
+I wrote the first draft in 72 hours
+
+333
+00:13:05,260 --> 00:13:06,200
+over winter break.
+
+334
+00:13:07,120 --> 00:13:09,900
+You know, honestly, my winter break is like
+
+335
+00:13:09,900 --> 00:13:11,780
+I spend a week just zoning out and
+
+336
+00:13:11,780 --> 00:13:12,640
+playing video games.
+
+337
+00:13:12,800 --> 00:13:14,040
+And then, like, in the last three days
+
+338
+00:13:14,040 --> 00:13:15,240
+of winter break, I was like, oh, man,
+
+339
+00:13:15,300 --> 00:13:17,040
+I should I should, like, try and get
+
+340
+00:13:17,040 --> 00:13:17,520
+something right.
+
+341
+00:13:17,700 --> 00:13:19,120
+And so and so I wrote for, like,
+
+342
+00:13:19,580 --> 00:13:22,640
+72 hours, almost almost without almost without sleeping.
+
+343
+00:13:22,980 --> 00:13:24,420
+How much of it was Claude?
+
+344
+00:13:26,100 --> 00:13:28,460
+Claude did not write any of it.
+
+345
+00:13:28,680 --> 00:13:31,140
+Claude helped me, though, to do a fair
+
+346
+00:13:31,140 --> 00:13:32,800
+amount of fair amount of research.
+
+347
+00:13:32,980 --> 00:13:33,900
+And Claude gave feedback.
+
+348
+00:13:34,080 --> 00:13:35,240
+I would I would say I was the
+
+349
+00:13:35,240 --> 00:13:37,380
+writer and Claude was kind of my editor
+
+350
+00:13:37,380 --> 00:13:38,520
+and my research assistant.
+
+351
+00:13:39,160 --> 00:13:39,940
+Drop the mic.
+
+352
+00:13:40,140 --> 00:13:40,740
+Thanks for the time.
+

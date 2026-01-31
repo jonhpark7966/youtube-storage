@@ -1,0 +1,1944 @@
+1
+00:00:00,000 --> 00:00:01,860
+All right, welcome to 2026.
+
+2
+00:00:02,280 --> 00:00:04,400
+So here's a section of our internal strategy
+
+3
+00:00:04,400 --> 00:00:05,000
+presentation
+
+4
+00:00:05,000 --> 00:00:07,220
+to talk to you about where we're going.
+
+5
+00:00:08,060 --> 00:00:10,820
+Okay, Evry is the only subscription that you
+
+6
+00:00:10,820 --> 00:00:11,060
+need
+
+7
+00:00:11,060 --> 00:00:12,160
+to stay at the edge of AI.
+
+8
+00:00:12,380 --> 00:00:13,120
+That's what we're building.
+
+9
+00:00:13,600 --> 00:00:15,440
+We have three main components of the business.
+
+10
+00:00:15,560 --> 00:00:17,860
+We do ideas, so that's a daily newsletter
+
+11
+00:00:17,860 --> 00:00:18,380
+about AI.
+
+12
+00:00:18,680 --> 00:00:20,840
+We've got apps, so we have four different
+
+13
+00:00:20,840 --> 00:00:21,500
+AI apps
+
+14
+00:00:21,500 --> 00:00:23,660
+that help you write with AI, help you
+
+15
+00:00:23,660 --> 00:00:24,400
+email with AI,
+
+16
+00:00:24,600 --> 00:00:25,940
+help you organize your files with AI,
+
+17
+00:00:26,180 --> 00:00:27,360
+does speech-to-text with AI.
+
+18
+00:00:28,420 --> 00:00:30,380
+Then we have training, so we do camps
+
+19
+00:00:30,380 --> 00:00:30,780
+and courses
+
+20
+00:00:30,780 --> 00:00:32,420
+where we teach you about how to use
+
+21
+00:00:32,420 --> 00:00:32,780
+these tools
+
+22
+00:00:32,780 --> 00:00:34,840
+like CloudCode or Codex in a really hands
+
+23
+00:00:34,840 --> 00:00:35,160
+-on way.
+
+24
+00:00:36,360 --> 00:00:37,960
+We do that all under one subscription.
+
+25
+00:00:38,420 --> 00:00:40,940
+And we build things in this loop where,
+
+26
+00:00:41,180 --> 00:00:42,340
+at the start of the loop, we live
+
+27
+00:00:42,340 --> 00:00:42,740
+in the future.
+
+28
+00:00:42,860 --> 00:00:44,580
+So we're all of us, it's this really
+
+29
+00:00:44,580 --> 00:00:45,720
+cool creative playground
+
+30
+00:00:45,720 --> 00:00:46,940
+where all of us are using all these
+
+31
+00:00:46,940 --> 00:00:47,700
+tools every day.
+
+32
+00:00:48,140 --> 00:00:49,480
+It's AI first in every way.
+
+33
+00:00:49,780 --> 00:00:51,700
+Writing code into a code editor, you're weird.
+
+34
+00:00:51,860 --> 00:00:52,800
+So we're living in the future.
+
+35
+00:00:53,080 --> 00:00:54,640
+We write what we see.
+
+36
+00:00:54,780 --> 00:00:56,340
+Writing, I think, is the soul of Evry,
+
+37
+00:00:56,340 --> 00:00:58,520
+and by articulating the future that you're living
+
+38
+00:00:58,520 --> 00:00:58,760
+in,
+
+39
+00:00:58,960 --> 00:01:00,540
+you bring that future into being
+
+40
+00:01:00,540 --> 00:01:01,800
+because you can now talk about it
+
+41
+00:01:01,800 --> 00:01:02,980
+with the people that you work with.
+
+42
+00:01:03,140 --> 00:01:05,140
+And so we write in order to make
+
+43
+00:01:05,140 --> 00:01:06,120
+that future visible
+
+44
+00:01:06,120 --> 00:01:07,780
+to each other and to the people who
+
+45
+00:01:07,780 --> 00:01:08,200
+read us.
+
+46
+00:01:09,620 --> 00:01:11,920
+And one of the consequences of that is
+
+47
+00:01:12,360 --> 00:01:14,380
+it makes it really easy to tell what's
+
+48
+00:01:14,380 --> 00:01:14,680
+missing,
+
+49
+00:01:14,680 --> 00:01:15,860
+and then we go build that.
+
+50
+00:01:15,960 --> 00:01:17,300
+And that becomes all the apps that we
+
+51
+00:01:17,300 --> 00:01:17,520
+make.
+
+52
+00:01:17,620 --> 00:01:19,440
+Quora, which is an email agent,
+
+53
+00:01:19,600 --> 00:01:21,800
+or Monologue, which is a speech-to-text
+
+54
+00:01:21,800 --> 00:01:22,180
+app.
+
+55
+00:01:22,180 --> 00:01:24,200
+These are all things that come from our
+
+56
+00:01:24,200 --> 00:01:25,900
+own needs.
+
+57
+00:01:26,360 --> 00:01:27,400
+And then we teach what works.
+
+58
+00:01:27,500 --> 00:01:28,520
+So we take all of that stuff,
+
+59
+00:01:28,560 --> 00:01:30,820
+and we teach it in camps and courses,
+
+60
+00:01:30,880 --> 00:01:32,700
+and we do big enterprise deals
+
+61
+00:01:32,700 --> 00:01:34,040
+where we do trainings to teach people how
+
+62
+00:01:34,040 --> 00:01:34,420
+to use AI.
+
+63
+00:01:35,680 --> 00:01:37,160
+So that's the quick background.
+
+64
+00:01:37,260 --> 00:01:38,800
+I actually did that whole background for the
+
+65
+00:01:38,800 --> 00:01:39,140
+team, too,
+
+66
+00:01:39,200 --> 00:01:40,900
+because after 10 days of vacation,
+
+67
+00:01:41,060 --> 00:01:41,600
+who knows what?
+
+68
+00:01:41,840 --> 00:01:43,120
+I barely remember what we do.
+
+69
+00:01:43,600 --> 00:01:44,880
+This is such a cool time
+
+70
+00:01:44,880 --> 00:01:47,360
+because 2025 was a huge breakout year for
+
+71
+00:01:47,360 --> 00:01:47,600
+us.
+
+72
+00:01:47,600 --> 00:01:49,200
+We hit $3 million in total revenue,
+
+73
+00:01:49,640 --> 00:01:50,760
+which is 3x growth.
+
+74
+00:01:50,980 --> 00:01:52,120
+We hit $2 million in ARR,
+
+75
+00:01:52,220 --> 00:01:53,360
+which is, again, 3x growth.
+
+76
+00:01:53,460 --> 00:01:54,140
+So that's amazing.
+
+77
+00:01:54,320 --> 00:01:54,760
+And it's just,
+
+78
+00:01:54,900 --> 00:01:56,220
+I've been running this business for six years,
+
+79
+00:01:56,240 --> 00:01:57,480
+so having a year like this,
+
+80
+00:01:57,560 --> 00:01:59,120
+it's just, we finally hit it.
+
+81
+00:02:00,040 --> 00:02:01,620
+I also feel like we really cemented our
+
+82
+00:02:01,620 --> 00:02:02,060
+status
+
+83
+00:02:02,060 --> 00:02:03,940
+where people think of us
+
+84
+00:02:03,940 --> 00:02:05,140
+and the vibe checks that we do.
+
+85
+00:02:05,220 --> 00:02:06,260
+Whenever a new model comes out
+
+86
+00:02:06,260 --> 00:02:07,060
+or a new product comes out,
+
+87
+00:02:07,140 --> 00:02:09,280
+they think, what is every's take,
+
+88
+00:02:09,340 --> 00:02:10,280
+which is really important to me.
+
+89
+00:02:10,340 --> 00:02:11,160
+And I think we've done a really good
+
+90
+00:02:11,160 --> 00:02:11,380
+job
+
+91
+00:02:11,380 --> 00:02:13,560
+of having these hands-on vibe checks
+
+92
+00:02:13,560 --> 00:02:14,260
+on the day it comes out
+
+93
+00:02:14,260 --> 00:02:15,300
+that tell us what you need to pay
+
+94
+00:02:15,300 --> 00:02:15,580
+attention
+
+95
+00:02:15,580 --> 00:02:16,180
+and what you don't.
+
+96
+00:02:17,000 --> 00:02:18,640
+And we also have four products in market.
+
+97
+00:02:18,820 --> 00:02:19,360
+And that's crazy.
+
+98
+00:02:19,680 --> 00:02:21,000
+We're a team of about 20 people
+
+99
+00:02:21,000 --> 00:02:23,660
+and we have four separate software products
+
+100
+00:02:23,660 --> 00:02:24,100
+that we run.
+
+101
+00:02:24,240 --> 00:02:26,120
+We also have our own custom CMS
+
+102
+00:02:26,120 --> 00:02:26,960
+that runs our website.
+
+103
+00:02:27,440 --> 00:02:28,820
+And we have a consulting business.
+
+104
+00:02:29,120 --> 00:02:30,980
+And that's just like crazy shape
+
+105
+00:02:30,980 --> 00:02:31,900
+for a business to have.
+
+106
+00:02:31,980 --> 00:02:32,860
+So I'm super proud of that.
+
+107
+00:02:33,380 --> 00:02:34,900
+And it sets us up for 2026
+
+108
+00:02:34,900 --> 00:02:36,740
+where I want to double down again.
+
+109
+00:02:37,020 --> 00:02:38,720
+Our current plan is to 3x our revenue
+
+110
+00:02:38,720 --> 00:02:38,940
+again.
+
+111
+00:02:39,100 --> 00:02:40,300
+So that would take us to about
+
+112
+00:02:41,200 --> 00:02:42,440
+6 million in ARR
+
+113
+00:02:42,440 --> 00:02:43,640
+and 10 million overall revenue,
+
+114
+00:02:44,560 --> 00:02:45,720
+which I think is really doable.
+
+115
+00:02:45,720 --> 00:02:47,900
+The growth from last year was purely organic.
+
+116
+00:02:48,080 --> 00:02:50,240
+So I think we have a very good
+
+117
+00:02:50,240 --> 00:02:50,420
+shot
+
+118
+00:02:50,420 --> 00:02:51,340
+to do this or better.
+
+119
+00:02:51,900 --> 00:02:53,000
+The next thing that we're going to do
+
+120
+00:02:53,000 --> 00:02:55,080
+is double down on a unified platform
+
+121
+00:02:55,080 --> 00:02:55,760
+and ecosystem.
+
+122
+00:02:57,140 --> 00:02:58,040
+So right now,
+
+123
+00:02:58,180 --> 00:02:59,960
+all the apps and the content,
+
+124
+00:02:59,980 --> 00:03:01,420
+they all live in separate silos.
+
+125
+00:03:01,680 --> 00:03:03,040
+And what we're doing in 2026
+
+126
+00:03:03,040 --> 00:03:04,660
+is we're going to build
+
+127
+00:03:04,660 --> 00:03:05,940
+a unified platform layer
+
+128
+00:03:05,940 --> 00:03:07,280
+where all the apps can talk to each
+
+129
+00:03:07,280 --> 00:03:07,500
+other.
+
+130
+00:03:07,640 --> 00:03:09,180
+And we build a centralized idea
+
+131
+00:03:09,180 --> 00:03:10,960
+of who you are and what you care
+
+132
+00:03:10,960 --> 00:03:11,160
+about
+
+133
+00:03:11,160 --> 00:03:12,260
+that makes all the apps better
+
+134
+00:03:12,260 --> 00:03:13,320
+and also makes the content
+
+135
+00:03:13,320 --> 00:03:14,220
+that we write better for you.
+
+136
+00:03:14,680 --> 00:03:16,160
+And then we're going to be fully agent
+
+137
+00:03:16,160 --> 00:03:16,420
+native.
+
+138
+00:03:16,660 --> 00:03:17,460
+This is something I'll talk about
+
+139
+00:03:17,460 --> 00:03:19,340
+a little bit more deeply later on.
+
+140
+00:03:19,460 --> 00:03:21,840
+But I think being agent native
+
+141
+00:03:21,840 --> 00:03:24,000
+is a new kind of software development
+
+142
+00:03:24,000 --> 00:03:25,400
+where apps that are agent native
+
+143
+00:03:25,400 --> 00:03:26,700
+are basically cloud code
+
+144
+00:03:26,700 --> 00:03:27,760
+and all the UI,
+
+145
+00:03:27,880 --> 00:03:28,300
+all the buttons.
+
+146
+00:03:28,300 --> 00:03:30,000
+It just kicks off an agent
+
+147
+00:03:30,000 --> 00:03:30,720
+to do all the work
+
+148
+00:03:30,720 --> 00:03:32,280
+instead of having code manually written
+
+149
+00:03:32,280 --> 00:03:33,180
+that gets executed.
+
+150
+00:03:34,060 --> 00:03:35,080
+And I really think
+
+151
+00:03:35,080 --> 00:03:36,440
+we're in a moment for that right now.
+
+152
+00:03:36,560 --> 00:03:37,880
+And we're moving all of our software
+
+153
+00:03:37,880 --> 00:03:39,140
+to be fully agent native
+
+154
+00:03:39,140 --> 00:03:40,480
+over the next couple months.
+
+155
+00:03:41,360 --> 00:03:42,340
+Here's what I told the team
+
+156
+00:03:42,340 --> 00:03:44,180
+about what it looks like
+
+157
+00:03:44,180 --> 00:03:45,140
+if things are working.
+
+158
+00:03:46,260 --> 00:03:47,740
+One is by the end of Q1,
+
+159
+00:03:48,180 --> 00:03:49,460
+if our products can talk to each other.
+
+160
+00:03:49,600 --> 00:03:50,340
+So we're going to have
+
+161
+00:03:50,900 --> 00:03:52,120
+Quora talking to Spiral.
+
+162
+00:03:52,240 --> 00:03:53,440
+When Quora wants to compose an email,
+
+163
+00:03:53,540 --> 00:03:54,300
+it can talk to Spiral,
+
+164
+00:03:54,380 --> 00:03:55,200
+which is our writing agent,
+
+165
+00:03:55,320 --> 00:03:56,980
+and ask it to write something great
+
+166
+00:03:56,980 --> 00:03:58,200
+or ask it for a writing style.
+
+167
+00:03:58,900 --> 00:03:59,620
+When Monologue,
+
+168
+00:03:59,740 --> 00:04:01,140
+which is our smart dictation app,
+
+169
+00:04:01,500 --> 00:04:02,280
+when you're using it,
+
+170
+00:04:02,380 --> 00:04:03,300
+it has a custom dictionary
+
+171
+00:04:03,300 --> 00:04:04,400
+to know what to transcribe
+
+172
+00:04:04,400 --> 00:04:05,860
+for hard to transcribe words.
+
+173
+00:04:06,200 --> 00:04:07,720
+And it'll be able to talk to Quora
+
+174
+00:04:07,720 --> 00:04:08,260
+to say,
+
+175
+00:04:08,400 --> 00:04:09,400
+okay, what are the kinds of words
+
+176
+00:04:09,400 --> 00:04:10,240
+that I should pre-fill
+
+177
+00:04:10,240 --> 00:04:11,120
+in the custom dictionary?
+
+178
+00:04:11,360 --> 00:04:12,260
+So we're going to have
+
+179
+00:04:12,260 --> 00:04:13,480
+the ability for all of our products
+
+180
+00:04:13,480 --> 00:04:14,200
+to talk to each other.
+
+181
+00:04:14,680 --> 00:04:15,660
+By the end of Q2,
+
+182
+00:04:17,060 --> 00:04:17,640
+we're going to have
+
+183
+00:04:17,640 --> 00:04:18,720
+a central concept
+
+184
+00:04:19,260 --> 00:04:20,420
+of who our users are
+
+185
+00:04:20,420 --> 00:04:21,440
+and what they care about.
+
+186
+00:04:21,600 --> 00:04:22,760
+So we're going to basically
+
+187
+00:04:22,760 --> 00:04:23,960
+gather all the context
+
+188
+00:04:23,960 --> 00:04:25,000
+from what you write,
+
+189
+00:04:25,140 --> 00:04:26,080
+what you say to your computer,
+
+190
+00:04:26,100 --> 00:04:26,540
+your emails,
+
+191
+00:04:26,640 --> 00:04:27,180
+and your files,
+
+192
+00:04:27,660 --> 00:04:30,380
+and build a view for you
+
+193
+00:04:30,380 --> 00:04:31,600
+of who you are
+
+194
+00:04:31,600 --> 00:04:32,260
+and what you care about
+
+195
+00:04:32,260 --> 00:04:33,600
+that goes into all of our apps,
+
+196
+00:04:33,740 --> 00:04:34,480
+goes into our content,
+
+197
+00:04:34,500 --> 00:04:35,660
+and that you can take with you
+
+198
+00:04:35,660 --> 00:04:37,120
+to chat to your cloud
+
+199
+00:04:37,120 --> 00:04:38,200
+to enhance the context
+
+200
+00:04:38,200 --> 00:04:39,000
+that they have about you.
+
+201
+00:04:39,700 --> 00:04:40,920
+By the end of Q3,
+
+202
+00:04:41,180 --> 00:04:41,620
+what I want to do
+
+203
+00:04:41,620 --> 00:04:42,800
+is use all of this
+
+204
+00:04:42,800 --> 00:04:43,960
+to make our content
+
+205
+00:04:43,960 --> 00:04:45,020
+more personalized and better.
+
+206
+00:04:45,220 --> 00:04:46,200
+It's very important to me
+
+207
+00:04:46,200 --> 00:04:47,700
+that we keep the human soul,
+
+208
+00:04:47,880 --> 00:04:48,860
+the human storytelling
+
+209
+00:04:48,860 --> 00:04:50,460
+as the core of every.
+
+210
+00:04:50,800 --> 00:04:52,020
+And I think it's clear
+
+211
+00:04:52,020 --> 00:04:53,960
+that it's weird
+
+212
+00:04:53,960 --> 00:04:54,400
+for everyone
+
+213
+00:04:54,400 --> 00:04:55,260
+to get the same newsletter
+
+214
+00:04:55,260 --> 00:04:55,940
+every day.
+
+215
+00:04:56,200 --> 00:04:57,120
+And if we really want
+
+216
+00:04:57,120 --> 00:04:57,980
+to keep you on the edge of AI,
+
+217
+00:04:58,200 --> 00:04:58,920
+we need to know
+
+218
+00:04:58,920 --> 00:04:59,700
+what you care about
+
+219
+00:04:59,700 --> 00:05:00,400
+and then tailor
+
+220
+00:05:00,400 --> 00:05:01,260
+what we tell you about
+
+221
+00:05:01,260 --> 00:05:02,180
+to what you care about.
+
+222
+00:05:03,460 --> 00:05:04,960
+And the last thing is,
+
+223
+00:05:05,340 --> 00:05:06,240
+by the end of Q4,
+
+224
+00:05:06,340 --> 00:05:06,900
+I think you'll be able
+
+225
+00:05:06,900 --> 00:05:07,840
+to see the ecosystem
+
+226
+00:05:07,840 --> 00:05:08,980
+not as an ecosystem
+
+227
+00:05:08,980 --> 00:05:09,880
+of apps and content,
+
+228
+00:05:10,020 --> 00:05:10,920
+but as an ecosystem
+
+229
+00:05:10,920 --> 00:05:11,340
+of agents
+
+230
+00:05:11,340 --> 00:05:12,320
+that all know about each other
+
+231
+00:05:12,320 --> 00:05:13,400
+and all collaborate really well
+
+232
+00:05:13,400 --> 00:05:14,580
+to help you get your work done.
+
+233
+00:05:15,440 --> 00:05:16,640
+I think a couple other things
+
+234
+00:05:16,640 --> 00:05:17,440
+that we really want to do,
+
+235
+00:05:17,520 --> 00:05:18,360
+we really want to be
+
+236
+00:05:18,360 --> 00:05:19,040
+the number one place
+
+237
+00:05:19,040 --> 00:05:19,620
+where people go
+
+238
+00:05:19,620 --> 00:05:20,660
+to learn, to code,
+
+239
+00:05:20,800 --> 00:05:21,780
+write, and design with AI.
+
+240
+00:05:22,700 --> 00:05:23,840
+I think we're on our way there,
+
+241
+00:05:23,980 --> 00:05:25,600
+but there's always more work to do.
+
+242
+00:05:26,020 --> 00:05:27,160
+I really also think
+
+243
+00:05:27,160 --> 00:05:28,540
+that the writing that we do,
+
+244
+00:05:28,740 --> 00:05:30,140
+right now the audience is humans,
+
+245
+00:05:30,220 --> 00:05:30,860
+but it needs to be
+
+246
+00:05:30,860 --> 00:05:32,180
+both humans and agents.
+
+247
+00:05:32,180 --> 00:05:33,380
+So a really good example
+
+248
+00:05:33,380 --> 00:05:34,620
+is we write a lot
+
+249
+00:05:34,620 --> 00:05:35,700
+about compound engineering,
+
+250
+00:05:35,880 --> 00:05:36,200
+which is our
+
+251
+00:05:36,200 --> 00:05:36,980
+engineering philosophy.
+
+252
+00:05:37,240 --> 00:05:38,540
+We have a CloudCode plugin
+
+253
+00:05:38,540 --> 00:05:39,520
+that teaches CloudCode
+
+254
+00:05:39,520 --> 00:05:40,500
+about compound engineering.
+
+255
+00:05:40,720 --> 00:05:41,440
+That's an example
+
+256
+00:05:41,440 --> 00:05:42,460
+of writing for both humans
+
+257
+00:05:42,460 --> 00:05:43,040
+and for agents.
+
+258
+00:05:43,940 --> 00:05:45,220
+I also want to be in a place
+
+259
+00:05:45,220 --> 00:05:46,860
+where by the end of the year,
+
+260
+00:05:46,980 --> 00:05:47,740
+we're all pushing
+
+261
+00:05:47,740 --> 00:05:48,820
+to each other's apps,
+
+262
+00:05:49,500 --> 00:05:51,160
+and that's already happening.
+
+263
+00:05:51,340 --> 00:05:52,240
+Everyone is committing code
+
+264
+00:05:52,240 --> 00:05:53,100
+to everyone else's apps,
+
+265
+00:05:53,760 --> 00:05:54,780
+but there's a lot
+
+266
+00:05:54,780 --> 00:05:55,580
+that needs to be done.
+
+267
+00:05:55,720 --> 00:05:57,020
+There's a lot of organizational stuff
+
+268
+00:05:57,020 --> 00:05:57,520
+to make sure
+
+269
+00:05:57,520 --> 00:05:58,400
+that everyone's repo
+
+270
+00:05:58,400 --> 00:05:59,060
+is set up well
+
+271
+00:05:59,060 --> 00:06:00,220
+to allow this kind of collaboration.
+
+272
+00:06:00,220 --> 00:06:02,300
+There's also a lot of etiquette
+
+273
+00:06:02,300 --> 00:06:03,060
+to be done about
+
+274
+00:06:03,060 --> 00:06:04,540
+when you should submit
+
+275
+00:06:04,540 --> 00:06:05,360
+a new feature
+
+276
+00:06:05,360 --> 00:06:06,340
+or bug fix to an app
+
+277
+00:06:06,340 --> 00:06:07,080
+and how to do it
+
+278
+00:06:07,080 --> 00:06:08,260
+to take the pressure off
+
+279
+00:06:08,260 --> 00:06:09,200
+or the work off
+
+280
+00:06:09,200 --> 00:06:10,780
+of the app GM
+
+281
+00:06:10,780 --> 00:06:12,120
+in order to allow them
+
+282
+00:06:12,120 --> 00:06:12,960
+to merge it.
+
+283
+00:06:13,080 --> 00:06:14,220
+So that's really interesting.
+
+284
+00:06:14,600 --> 00:06:15,740
+And the next level of that,
+
+285
+00:06:15,820 --> 00:06:16,500
+once we figure that out,
+
+286
+00:06:16,620 --> 00:06:18,120
+is allowing customers
+
+287
+00:06:18,120 --> 00:06:20,120
+to essentially write PRs
+
+288
+00:06:20,120 --> 00:06:21,900
+that we can really detail
+
+289
+00:06:21,900 --> 00:06:22,460
+bug reports
+
+290
+00:06:22,460 --> 00:06:23,260
+or feature specs
+
+291
+00:06:23,260 --> 00:06:23,880
+that we can then
+
+292
+00:06:23,880 --> 00:06:24,700
+one-shot with Cloud.
+
+293
+00:06:25,060 --> 00:06:26,240
+And I think that would be really cool.
+
+294
+00:06:26,320 --> 00:06:26,720
+So that's where
+
+295
+00:06:26,720 --> 00:06:27,420
+we're trying to go.
+
+296
+00:06:28,240 --> 00:06:29,220
+I want to talk for a little bit
+
+297
+00:06:29,220 --> 00:06:30,340
+about why this is even important.
+
+298
+00:06:31,260 --> 00:06:32,240
+Why are we doing this?
+
+299
+00:06:32,640 --> 00:06:34,180
+The world just changed recently.
+
+300
+00:06:34,520 --> 00:06:34,860
+Right now,
+
+301
+00:06:35,040 --> 00:06:36,060
+software agents are great.
+
+302
+00:06:36,380 --> 00:06:37,160
+That's crazy.
+
+303
+00:06:37,520 --> 00:06:38,800
+And the really interesting thing
+
+304
+00:06:38,800 --> 00:06:40,760
+is a couple companies,
+
+305
+00:06:40,920 --> 00:06:42,140
+Anthropic is a big one of them,
+
+306
+00:06:42,240 --> 00:06:42,840
+that made this bet
+
+307
+00:06:42,840 --> 00:06:43,320
+that if you make
+
+308
+00:06:43,320 --> 00:06:44,180
+a great software agent,
+
+309
+00:06:44,260 --> 00:06:45,260
+it becomes a really good
+
+310
+00:06:45,260 --> 00:06:45,900
+general agent.
+
+311
+00:06:45,940 --> 00:06:46,600
+And I think that's true.
+
+312
+00:06:46,700 --> 00:06:47,160
+And we're seeing that
+
+313
+00:06:47,160 --> 00:06:47,700
+with Cloud Code
+
+314
+00:06:47,700 --> 00:06:48,720
+and the Cloud Agent SDK.
+
+315
+00:06:50,040 --> 00:06:51,620
+And this has gigantic consequences
+
+316
+00:06:51,620 --> 00:06:52,200
+for software,
+
+317
+00:06:52,340 --> 00:06:52,600
+for writing,
+
+318
+00:06:52,700 --> 00:06:53,040
+for design,
+
+319
+00:06:53,140 --> 00:06:53,740
+for company building,
+
+320
+00:06:53,780 --> 00:06:54,500
+and for really
+
+321
+00:06:54,500 --> 00:06:55,460
+how we see ourselves
+
+322
+00:06:55,460 --> 00:06:56,760
+and our role
+
+323
+00:06:56,760 --> 00:06:57,360
+in the future.
+
+324
+00:06:57,900 --> 00:06:59,120
+And it is creating
+
+325
+00:06:59,120 --> 00:06:59,900
+a tremendous amount
+
+326
+00:06:59,900 --> 00:07:00,860
+of anxiety and FOMO
+
+327
+00:07:00,860 --> 00:07:01,320
+and excitement
+
+328
+00:07:01,320 --> 00:07:02,880
+and just people feeling
+
+329
+00:07:02,880 --> 00:07:03,640
+like I can't keep up
+
+330
+00:07:03,640 --> 00:07:04,040
+and I don't want
+
+331
+00:07:04,040 --> 00:07:04,560
+to be left behind
+
+332
+00:07:04,560 --> 00:07:05,000
+and I don't know
+
+333
+00:07:05,000 --> 00:07:05,420
+how this is going
+
+334
+00:07:05,420 --> 00:07:06,020
+to change my job
+
+335
+00:07:06,020 --> 00:07:06,820
+and all that kind of stuff.
+
+336
+00:07:07,220 --> 00:07:08,500
+And there's so many good things,
+
+337
+00:07:08,580 --> 00:07:09,540
+but there's a real need
+
+338
+00:07:09,540 --> 00:07:10,440
+for people to actually
+
+339
+00:07:10,440 --> 00:07:11,000
+figure out
+
+340
+00:07:11,520 --> 00:07:12,480
+how do you live
+
+341
+00:07:12,480 --> 00:07:13,140
+a more creative,
+
+342
+00:07:13,320 --> 00:07:14,020
+more human future
+
+343
+00:07:14,020 --> 00:07:14,880
+with this technology?
+
+344
+00:07:15,180 --> 00:07:16,280
+I think that's probably
+
+345
+00:07:16,280 --> 00:07:17,560
+not the people
+
+346
+00:07:17,560 --> 00:07:18,880
+building the underlying models.
+
+347
+00:07:19,080 --> 00:07:20,080
+I think that's asking
+
+348
+00:07:20,080 --> 00:07:21,180
+an oven maker
+
+349
+00:07:21,180 --> 00:07:22,340
+how to bake a souffle.
+
+350
+00:07:22,600 --> 00:07:23,800
+It's people on the edge
+
+351
+00:07:23,800 --> 00:07:24,540
+who are doing work
+
+352
+00:07:24,540 --> 00:07:25,500
+that need to figure out
+
+353
+00:07:25,500 --> 00:07:26,940
+how these tools
+
+354
+00:07:26,940 --> 00:07:27,860
+fit into our lives
+
+355
+00:07:27,860 --> 00:07:28,380
+and I think
+
+356
+00:07:28,380 --> 00:07:29,760
+that's why we're here.
+
+357
+00:07:29,920 --> 00:07:30,540
+It's why we build
+
+358
+00:07:30,540 --> 00:07:31,700
+this bundled subscription.
+
+359
+00:07:32,280 --> 00:07:33,180
+If our goal is
+
+360
+00:07:33,180 --> 00:07:33,820
+to help people learn
+
+361
+00:07:33,820 --> 00:07:34,800
+to live and work with AI
+
+362
+00:07:34,800 --> 00:07:35,740
+in a more flourishing,
+
+363
+00:07:35,840 --> 00:07:36,380
+creative, better,
+
+364
+00:07:36,460 --> 00:07:37,120
+more human way,
+
+365
+00:07:37,240 --> 00:07:38,680
+that maps very cleanly
+
+366
+00:07:38,680 --> 00:07:39,280
+onto the bundle
+
+367
+00:07:39,280 --> 00:07:39,860
+that we're building.
+
+368
+00:07:40,060 --> 00:07:41,260
+So you need to spread the words.
+
+369
+00:07:41,360 --> 00:07:43,180
+You need to tell stories
+
+370
+00:07:43,180 --> 00:07:43,980
+about the future
+
+371
+00:07:43,980 --> 00:07:44,540
+that we see,
+
+372
+00:07:44,700 --> 00:07:45,300
+that we live in.
+
+373
+00:07:46,120 --> 00:07:47,120
+You need to build tools
+
+374
+00:07:47,120 --> 00:07:47,780
+that they'll use
+
+375
+00:07:47,780 --> 00:07:49,160
+and the tools that we sell
+
+376
+00:07:49,160 --> 00:07:49,960
+are tools that we build
+
+377
+00:07:49,960 --> 00:07:50,560
+for ourselves
+
+378
+00:07:50,560 --> 00:07:51,460
+and then we need
+
+379
+00:07:51,460 --> 00:07:52,180
+to teach them hands-on
+
+380
+00:07:52,180 --> 00:07:52,700
+and those are all
+
+381
+00:07:52,700 --> 00:07:53,380
+the components
+
+382
+00:07:53,380 --> 00:07:54,120
+of the company
+
+383
+00:07:54,120 --> 00:07:54,660
+that we're building
+
+384
+00:07:55,300 --> 00:07:56,300
+and I hope that
+
+385
+00:07:56,300 --> 00:07:57,260
+we have an opportunity
+
+386
+00:07:57,260 --> 00:07:59,480
+to be an archetypal
+
+387
+00:07:59,480 --> 00:08:00,440
+AI native company
+
+388
+00:08:01,380 --> 00:08:02,220
+and what that means
+
+389
+00:08:02,220 --> 00:08:02,720
+to me is
+
+390
+00:08:02,720 --> 00:08:03,760
+we figure out
+
+391
+00:08:03,760 --> 00:08:04,300
+for ourselves
+
+392
+00:08:04,300 --> 00:08:05,060
+how to build
+
+393
+00:08:05,060 --> 00:08:05,420
+and work
+
+394
+00:08:05,420 --> 00:08:05,940
+and live
+
+395
+00:08:05,940 --> 00:08:06,880
+in this new future
+
+396
+00:08:07,380 --> 00:08:08,500
+and then we become
+
+397
+00:08:08,500 --> 00:08:08,960
+an example
+
+398
+00:08:08,960 --> 00:08:09,460
+for other people
+
+399
+00:08:09,460 --> 00:08:09,900
+to follow
+
+400
+00:08:09,900 --> 00:08:10,800
+and in doing that
+
+401
+00:08:10,800 --> 00:08:11,280
+they subscribe
+
+402
+00:08:11,280 --> 00:08:12,140
+to read our ideas
+
+403
+00:08:12,140 --> 00:08:12,660
+and they use
+
+404
+00:08:12,660 --> 00:08:13,160
+the tool set
+
+405
+00:08:13,160 --> 00:08:13,520
+that we build
+
+406
+00:08:13,520 --> 00:08:14,280
+and all that kind of stuff
+
+407
+00:08:15,300 --> 00:08:16,760
+and my hope then
+
+408
+00:08:16,760 --> 00:08:18,520
+is that creates
+
+409
+00:08:18,520 --> 00:08:19,280
+the way that people
+
+410
+00:08:19,280 --> 00:08:20,160
+build and write
+
+411
+00:08:20,160 --> 00:08:21,260
+and think
+
+412
+00:08:21,260 --> 00:08:22,120
+in this new future
+
+413
+00:08:22,120 --> 00:08:23,080
+and that's really exciting
+
+414
+00:08:23,080 --> 00:08:23,520
+and I think
+
+415
+00:08:23,520 --> 00:08:24,320
+also very important
+
+416
+00:08:24,320 --> 00:08:24,720
+to me
+
+417
+00:08:25,280 --> 00:08:25,900
+and I think
+
+418
+00:08:25,900 --> 00:08:26,800
+we're in this moment
+
+419
+00:08:26,800 --> 00:08:27,500
+that I want to talk
+
+420
+00:08:27,500 --> 00:08:28,240
+about for one second
+
+421
+00:08:29,300 --> 00:08:30,240
+I've seen a lot
+
+422
+00:08:30,240 --> 00:08:31,120
+of technology waves
+
+423
+00:08:31,580 --> 00:08:32,340
+when everyone
+
+424
+00:08:32,340 --> 00:08:33,440
+first started in 2020
+
+425
+00:08:33,440 --> 00:08:34,980
+it was right before
+
+426
+00:08:34,980 --> 00:08:36,360
+the creator economy wave
+
+427
+00:08:36,360 --> 00:08:38,220
+and I was seeing
+
+428
+00:08:38,220 --> 00:08:39,260
+our numbers
+
+429
+00:08:39,260 --> 00:08:39,900
+just go up
+
+430
+00:08:39,900 --> 00:08:40,340
+and I was like
+
+431
+00:08:40,340 --> 00:08:41,180
+okay there's something
+
+432
+00:08:41,180 --> 00:08:42,260
+really special here
+
+433
+00:08:42,260 --> 00:08:42,860
+that's happening
+
+434
+00:08:42,860 --> 00:08:43,920
+we're growing super fast
+
+435
+00:08:43,920 --> 00:08:45,560
+I had that tingle feeling
+
+436
+00:08:45,560 --> 00:08:46,260
+and that's one of the reasons
+
+437
+00:08:46,260 --> 00:08:46,840
+why we really
+
+438
+00:08:46,840 --> 00:08:48,140
+went all in on the company
+
+439
+00:08:48,140 --> 00:08:49,480
+in 2022
+
+440
+00:08:49,480 --> 00:08:50,100
+one day
+
+441
+00:08:50,100 --> 00:08:50,800
+I think I'd be away
+
+442
+00:08:50,800 --> 00:08:51,660
+it was just GPT-3
+
+443
+00:08:51,660 --> 00:08:52,160
+but I was like
+
+444
+00:08:52,160 --> 00:08:53,480
+this is the next big thing
+
+445
+00:08:55,280 --> 00:08:56,880
+and after ChatGPT
+
+446
+00:08:56,880 --> 00:08:58,240
+we just really
+
+447
+00:08:58,240 --> 00:08:59,520
+focused the whole company
+
+448
+00:08:59,520 --> 00:09:00,100
+around AI
+
+449
+00:09:00,100 --> 00:09:01,180
+and that has really
+
+450
+00:09:01,180 --> 00:09:01,720
+paid off
+
+451
+00:09:01,720 --> 00:09:03,740
+and I am getting
+
+452
+00:09:03,740 --> 00:09:04,760
+that same feeling
+
+453
+00:09:04,760 --> 00:09:05,780
+right now
+
+454
+00:09:05,780 --> 00:09:07,660
+and that feeling
+
+455
+00:09:07,660 --> 00:09:08,220
+is about
+
+456
+00:09:08,220 --> 00:09:09,140
+what I call
+
+457
+00:09:09,140 --> 00:09:10,440
+agent native apps
+
+458
+00:09:10,440 --> 00:09:11,340
+which is basically
+
+459
+00:09:11,340 --> 00:09:12,420
+apps that are
+
+460
+00:09:12,420 --> 00:09:12,800
+cloud code
+
+461
+00:09:12,800 --> 00:09:13,420
+and a trench coat
+
+462
+00:09:13,420 --> 00:09:14,880
+there's a lot more detail
+
+463
+00:09:14,880 --> 00:09:15,940
+about what makes
+
+464
+00:09:15,940 --> 00:09:16,640
+something agent native
+
+465
+00:09:16,640 --> 00:09:18,100
+and how traditional software
+
+466
+00:09:18,100 --> 00:09:18,640
+fits into that
+
+467
+00:09:18,640 --> 00:09:19,480
+I think that cloud code
+
+468
+00:09:19,480 --> 00:09:20,280
+and trench coat metaphor
+
+469
+00:09:20,280 --> 00:09:20,820
+should tell you
+
+470
+00:09:20,820 --> 00:09:21,680
+most of what you need to know
+
+471
+00:09:21,680 --> 00:09:22,060
+and there's
+
+472
+00:09:22,060 --> 00:09:23,400
+a ginormous number
+
+473
+00:09:23,400 --> 00:09:24,540
+of implications for it
+
+474
+00:09:24,540 --> 00:09:24,760
+but
+
+475
+00:09:25,640 --> 00:09:26,600
+we're going all in
+
+476
+00:09:26,600 --> 00:09:27,560
+on that in 2026
+
+477
+00:09:28,020 --> 00:09:29,060
+and that means
+
+478
+00:09:29,060 --> 00:09:29,920
+the content that we write
+
+479
+00:09:29,920 --> 00:09:30,740
+the stuff that we build
+
+480
+00:09:30,740 --> 00:09:31,580
+all that stuff is
+
+481
+00:09:32,320 --> 00:09:33,060
+going to be really
+
+482
+00:09:33,060 --> 00:09:33,820
+focused around this
+
+483
+00:09:34,500 --> 00:09:35,300
+and yeah
+
+484
+00:09:35,300 --> 00:09:35,720
+that's it
+
+485
+00:09:35,720 --> 00:09:36,920
+that's our 2026 strategy
+
+486
+00:09:36,920 --> 00:09:37,440
+thanks for watching
+

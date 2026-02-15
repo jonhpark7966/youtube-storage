@@ -374,17 +374,14 @@ def step_add_to_web(
     upload_info_path = out_dir / "upload_info.json"
 
     if not notes_path.exists():
-        logger.warning(f"Notes not found: {notes_path}, skipping web archive")
-        return None
+        raise RuntimeError(f"Notes not found: {notes_path}")
 
     if not upload_info_path.exists():
-        logger.warning(f"Upload info not found: {upload_info_path}, skipping web archive")
-        return None
+        logger.info("upload_info.json not found, PR will be created without upload link")
 
     # Check web repo exists
     if not WEB_REPO_PATH.exists():
-        logger.warning(f"Web repo not found: {WEB_REPO_PATH}, skipping web archive")
-        return None
+        raise RuntimeError(f"Web repo not found: {WEB_REPO_PATH}")
 
     # Check if archive already exists
     if check_archive_exists(original_video_id, logger):
@@ -403,7 +400,7 @@ Video folder: {out_dir}
 Original video ID: {original_video_id}
 
 Instructions:
-1. Read notes.md, upload_info.json, and meta.json from the video folder
+1. Read notes.md and meta.json from the video folder. Also read upload_info.json if it exists (it's optional).
 2. Curate the content (select important points, don't copy everything)
 3. IMPORTANT: Preserve timestamps in [MM:SS] format for each bullet point (e.g., "[01:23] 내용...")
    - Timestamps are essential for users to jump to specific parts of the video
@@ -436,8 +433,7 @@ Web repo path: {WEB_REPO_PATH}
         )
 
         if proc.returncode != 0:
-            logger.error(f"Claude CLI failed: {proc.stderr}")
-            return None
+            raise RuntimeError(f"Claude CLI failed (exit {proc.returncode}): {proc.stderr[:500]}")
 
         output = proc.stdout
         logger.info("Claude CLI completed")
@@ -446,8 +442,6 @@ Web repo path: {WEB_REPO_PATH}
         pr_url = None
         for line in output.split("\n"):
             if "github.com" in line and "/pull/" in line:
-                # Extract URL from line
-                import re
                 match = re.search(r'https://github\.com/[^\s]+/pull/\d+', line)
                 if match:
                     pr_url = match.group(0)
@@ -456,18 +450,17 @@ Web repo path: {WEB_REPO_PATH}
         if pr_url:
             logger.info(f"Created PR: {pr_url}")
         else:
-            logger.info("Claude completed but PR URL not found in output")
-            # Log full output for debugging
+            logger.warning(f"Claude completed but PR URL not found in output")
             logger.debug(f"Claude output:\n{output}")
 
         return pr_url
 
     except subprocess.TimeoutExpired:
-        logger.error("Claude CLI timed out after 10 minutes")
-        return None
+        raise RuntimeError("Claude CLI timed out after 10 minutes")
+    except RuntimeError:
+        raise
     except Exception as e:
-        logger.error(f"Failed to run Claude CLI: {e}")
-        return None
+        raise RuntimeError(f"Failed to run Claude CLI: {e}") from e
 
 
 def main() -> None:

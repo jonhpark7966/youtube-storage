@@ -7,6 +7,7 @@ Type=exec
 User=jonhpark
 WorkingDirectory=/home/jonhpark/workspace/youtube-storage
 EnvironmentFile=/home/jonhpark/workspace/youtube-storage/.env
+Environment=PATH=/home/jonhpark/.nvm/versions/node/v25.3.0/bin:/home/jonhpark/.deno/bin:/home/jonhpark/.npm-global/bin:/home/jonhpark/.local/bin:/usr/local/bin:/usr/bin:/bin
 ExecStart=/home/jonhpark/workspace/youtube-storage/.venv/bin/uvicorn server.main:app --host 127.0.0.1 --port 32500
 Restart=always
 RestartSec=5

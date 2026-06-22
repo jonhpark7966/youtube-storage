@@ -8,6 +8,7 @@ Type=exec
 User=jonhpark
 WorkingDirectory=/home/jonhpark/workspace/youtube-storage
 EnvironmentFile=/home/jonhpark/workspace/youtube-storage/.env
+Environment=PATH=/home/jonhpark/.nvm/versions/node/v25.3.0/bin:/home/jonhpark/.deno/bin:/home/jonhpark/.npm-global/bin:/home/jonhpark/.local/bin:/usr/local/bin:/usr/bin:/bin
 ExecStart=/home/jonhpark/workspace/youtube-storage/.venv/bin/python -m bot.main
 Restart=always
 RestartSec=5
